@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PaintingContext class - object library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the PaintingContext class from the object library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="object/object-library.html">object</a></li>
+                  <li class="self-crumb">PaintingContext</li>
+              </ol>
+              <div class="self-name">PaintingContext</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="object/object-library.html">object</a></li>
+              <li class="self-crumb">PaintingContext</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> PaintingContext
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="object/PaintingContext-class.html#instance-properties">Properties</a></li>
+              <li><a href="object/PaintingContext-class.html#constructors">Constructors</a></li>
+              <li><a href="object/PaintingContext-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="object/object-library.html">object</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="object/object-library.html#typedefs">Typedefs</a></li>
+      <li><a href="object/DimensionCallback.html">DimensionCallback</a></li>
+      <li><a href="object/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a href="object/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+    
+    
+      <li class="section-title"><a href="object/object-library.html#functions">Functions</a></li>
+      <li><a href="object/clamp.html">clamp</a></li>
+    
+      <li class="section-title"><a href="object/object-library.html#enums">Enums</a></li>
+      <li><a href="object/EventDisposition-class.html">EventDisposition</a></li>
+    
+      <li class="section-title"><a href="object/object-library.html#classes">Classes</a></li>
+      <li><a href="object/Color-class.html">Color</a></li>
+      <li><a href="object/Constraints-class.html">Constraints</a></li>
+      <li><a href="object/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a></li>
+      <li><a href="object/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+      <li><a href="object/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="object/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="object/HitTestTarget-class.html">HitTestTarget</a></li>
+      <li><a href="object/Offset-class.html">Offset</a></li>
+      <li><a href="object/Paint-class.html">Paint</a></li>
+      <li><a href="object/PaintingCanvas-class.html">PaintingCanvas</a></li>
+      <li><a href="object/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="object/ParentData-class.html">ParentData</a></li>
+      <li><a href="object/Path-class.html">Path</a></li>
+      <li><a href="object/Point-class.html">Point</a></li>
+      <li><a href="object/Rect-class.html">Rect</a></li>
+      <li><a href="object/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="object/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+      <li><a href="object/Size-class.html">Size</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="canvas" class="property">
+                <span class="name"><a href="object/PaintingContext/canvas.html">canvas</a></span>
+                <span class="signature">&#8594; <a href="object/PaintingCanvas-class.html">PaintingCanvas</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="containerLayer" class="property">
+                <span class="name"><a href="object/PaintingContext/containerLayer.html">containerLayer</a></span>
+                <span class="signature">&#8594; <a href="layer/ContainerLayer-class.html">ContainerLayer</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="PaintingContext.forTesting" class="callable">
+                <span class="name"><a href="object/PaintingContext/PaintingContext.forTesting.html">PaintingContext.forTesting</a></span><span class="signature">(<span class="parameter" id="forTesting-param-_canvas"><span class="type-annotation"><a href="object/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">_canvas</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PaintingContext.withLayer" class="callable">
+                <span class="name"><a href="object/PaintingContext/PaintingContext.withLayer.html">PaintingContext.withLayer</a></span><span class="signature">(<span class="parameter" id="withLayer-param-containerLayer"><span class="type-annotation"><a href="layer/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">containerLayer</span></span>, <span class="parameter" id="withLayer-param-paintBounds"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">paintBounds</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PaintingContext.withOffset" class="callable">
+                <span class="name"><a href="object/PaintingContext/PaintingContext.withOffset.html">PaintingContext.withOffset</a></span><span class="signature">(<span class="parameter" id="withOffset-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="withOffset-param-paintBounds"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">paintBounds</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="compositeChild" class="callable">
+                  <a href="object/PaintingContext/compositeChild.html"><span class="name ">compositeChild</span></a><span class="signature">(<wbr><span class="parameter" id="compositeChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, {<span class="parameter" id="compositeChild-param-childOffset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">childOffset</span>: <span class="default-value">Offset.zero</span></span>, <span class="parameter" id="compositeChild-param-parentLayer"><span class="type-annotation"><a href="layer/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">parentLayer</span></span>})
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="debugCanPaintChild" class="callable">
+                  <a href="object/PaintingContext/debugCanPaintChild.html"><span class="name ">debugCanPaintChild</span></a><span class="signature">(<wbr><span class="parameter" id="debugCanPaintChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="endRecording" class="callable">
+                  <a href="object/PaintingContext/endRecording.html"><span class="name ">endRecording</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="insertChild" class="callable">
+                  <a href="object/PaintingContext/insertChild.html"><span class="name ">insertChild</span></a><span class="signature">(<wbr><span class="parameter" id="insertChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="insertChild-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChild" class="callable">
+                  <a href="object/PaintingContext/paintChild.html"><span class="name ">paintChild</span></a><span class="signature">(<wbr><span class="parameter" id="paintChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChild-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChildWithClipPath" class="callable">
+                  <a href="object/PaintingContext/paintChildWithClipPath.html"><span class="name ">paintChildWithClipPath</span></a><span class="signature">(<wbr><span class="parameter" id="paintChildWithClipPath-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithClipPath-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithClipPath-param-bounds"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>, <span class="parameter" id="paintChildWithClipPath-param-clipPath"><span class="type-annotation"><a href="basic/Path-class.html">Path</a></span> <span class="parameter-name">clipPath</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChildWithClipRect" class="callable">
+                  <a href="object/PaintingContext/paintChildWithClipRect.html"><span class="name ">paintChildWithClipRect</span></a><span class="signature">(<wbr><span class="parameter" id="paintChildWithClipRect-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithClipRect-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithClipRect-param-clipRect"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">clipRect</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChildWithClipRRect" class="callable">
+                  <a href="object/PaintingContext/paintChildWithClipRRect.html"><span class="name ">paintChildWithClipRRect</span></a><span class="signature">(<wbr><span class="parameter" id="paintChildWithClipRRect-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithClipRRect-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithClipRRect-param-bounds"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>, <span class="parameter" id="paintChildWithClipRRect-param-clipRRect"><span class="type-annotation">RRect</span> <span class="parameter-name">clipRRect</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChildWithColorFilter" class="callable">
+                  <a href="object/PaintingContext/paintChildWithColorFilter.html"><span class="name ">paintChildWithColorFilter</span></a><span class="signature">(<wbr><span class="parameter" id="paintChildWithColorFilter-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithColorFilter-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithColorFilter-param-bounds"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>, <span class="parameter" id="paintChildWithColorFilter-param-color"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>, <span class="parameter" id="paintChildWithColorFilter-param-transferMode"><span class="type-annotation">TransferMode</span> <span class="parameter-name">transferMode</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChildWithOpacity" class="callable">
+                  <a href="object/PaintingContext/paintChildWithOpacity.html"><span class="name ">paintChildWithOpacity</span></a><span class="signature">(<wbr><span class="parameter" id="paintChildWithOpacity-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithOpacity-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithOpacity-param-bounds"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>, <span class="parameter" id="paintChildWithOpacity-param-alpha"><span class="type-annotation">int</span> <span class="parameter-name">alpha</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paintChildWithTransform" class="callable">
+                  <a href="object/PaintingContext/paintChildWithTransform.html"><span class="name ">paintChildWithTransform</span></a><span class="signature">(<wbr><span class="parameter" id="paintChildWithTransform-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithTransform-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithTransform-param-transform"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>PaintingContext</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="object/PaintingContext/canvas.html">canvas</a>
+</li>
+      <li><a href="object/PaintingContext/containerLayer.html">containerLayer</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="object/PaintingContext/PaintingContext.forTesting.html">forTesting</a></li>
+      <li><a href="object/PaintingContext/PaintingContext.withLayer.html">withLayer</a></li>
+      <li><a href="object/PaintingContext/PaintingContext.withOffset.html">withOffset</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="object/PaintingContext/compositeChild.html">compositeChild</a>
+</li>
+      <li><a href="object/PaintingContext/debugCanPaintChild.html">debugCanPaintChild</a>
+</li>
+      <li><a href="object/PaintingContext/endRecording.html">endRecording</a>
+</li>
+      <li><a href="object/PaintingContext/insertChild.html">insertChild</a>
+</li>
+      <li><a href="object/PaintingContext/paintChild.html">paintChild</a>
+</li>
+      <li><a href="object/PaintingContext/paintChildWithClipPath.html">paintChildWithClipPath</a>
+</li>
+      <li><a href="object/PaintingContext/paintChildWithClipRect.html">paintChildWithClipRect</a>
+</li>
+      <li><a href="object/PaintingContext/paintChildWithClipRRect.html">paintChildWithClipRRect</a>
+</li>
+      <li><a href="object/PaintingContext/paintChildWithColorFilter.html">paintChildWithColorFilter</a>
+</li>
+      <li><a href="object/PaintingContext/paintChildWithOpacity.html">paintChildWithOpacity</a>
+</li>
+      <li><a href="object/PaintingContext/paintChildWithTransform.html">paintChildWithTransform</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

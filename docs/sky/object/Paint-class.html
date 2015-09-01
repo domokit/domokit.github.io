@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paint class - object library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the Paint class from the object library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="object/object-library.html">object</a></li>
+                  <li class="self-crumb">Paint</li>
+              </ol>
+              <div class="self-name">Paint</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="object/object-library.html">object</a></li>
+              <li class="self-crumb">Paint</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> Paint
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="object/Paint-class.html#instance-properties">Properties</a></li>
+              <li><a href="object/Paint-class.html#constructors">Constructors</a></li>
+              <li><a href="object/Paint-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="object/object-library.html">object</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="object/object-library.html#typedefs">Typedefs</a></li>
+      <li><a href="object/DimensionCallback.html">DimensionCallback</a></li>
+      <li><a href="object/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a href="object/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+    
+    
+      <li class="section-title"><a href="object/object-library.html#functions">Functions</a></li>
+      <li><a href="object/clamp.html">clamp</a></li>
+    
+      <li class="section-title"><a href="object/object-library.html#enums">Enums</a></li>
+      <li><a href="object/EventDisposition-class.html">EventDisposition</a></li>
+    
+      <li class="section-title"><a href="object/object-library.html#classes">Classes</a></li>
+      <li><a href="object/Color-class.html">Color</a></li>
+      <li><a href="object/Constraints-class.html">Constraints</a></li>
+      <li><a href="object/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a></li>
+      <li><a href="object/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+      <li><a href="object/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="object/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="object/HitTestTarget-class.html">HitTestTarget</a></li>
+      <li><a href="object/Offset-class.html">Offset</a></li>
+      <li><a href="object/Paint-class.html">Paint</a></li>
+      <li><a href="object/PaintingCanvas-class.html">PaintingCanvas</a></li>
+      <li><a href="object/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="object/ParentData-class.html">ParentData</a></li>
+      <li><a href="object/Path-class.html">Path</a></li>
+      <li><a href="object/Point-class.html">Point</a></li>
+      <li><a href="object/Rect-class.html">Rect</a></li>
+      <li><a href="object/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="object/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+      <li><a href="object/Size-class.html">Size</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="color" class="property">
+                <span class="name"><a href="object/Paint/color.html">color</a></span>
+                <span class="signature">&#8594; <a href="basic/Color-class.html">Color</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="isAntiAlias" class="property">
+                <span class="name"><a href="object/Paint/isAntiAlias.html">isAntiAlias</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="strokeWidth" class="property">
+                <span class="name"><a href="object/Paint/strokeWidth.html">strokeWidth</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="Paint" class="callable">
+                <span class="name"><a href="object/Paint/Paint.html">Paint</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="setColorFilter" class="callable">
+                  <a href="object/Paint/setColorFilter.html"><span class="name ">setColorFilter</span></a><span class="signature">(<wbr><span class="parameter" id="setColorFilter-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setDrawLooper" class="callable">
+                  <a href="object/Paint/setDrawLooper.html"><span class="name ">setDrawLooper</span></a><span class="signature">(<wbr><span class="parameter" id="setDrawLooper-param-drawLooper"><span class="type-annotation">DrawLooper</span> <span class="parameter-name">drawLooper</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setFilterQuality" class="callable">
+                  <a href="object/Paint/setFilterQuality.html"><span class="name ">setFilterQuality</span></a><span class="signature">(<wbr><span class="parameter" id="setFilterQuality-param-filterQuality"><span class="type-annotation">FilterQuality</span> <span class="parameter-name">filterQuality</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setMaskFilter" class="callable">
+                  <a href="object/Paint/setMaskFilter.html"><span class="name ">setMaskFilter</span></a><span class="signature">(<wbr><span class="parameter" id="setMaskFilter-param-maskFilter"><span class="type-annotation">MaskFilter</span> <span class="parameter-name">maskFilter</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setShader" class="callable">
+                  <a href="object/Paint/setShader.html"><span class="name ">setShader</span></a><span class="signature">(<wbr><span class="parameter" id="setShader-param-shader"><span class="type-annotation">Shader</span> <span class="parameter-name">shader</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setStyle" class="callable">
+                  <a href="object/Paint/setStyle.html"><span class="name ">setStyle</span></a><span class="signature">(<wbr><span class="parameter" id="setStyle-param-style"><span class="type-annotation">PaintingStyle</span> <span class="parameter-name">style</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setTransferMode" class="callable">
+                  <a href="object/Paint/setTransferMode.html"><span class="name ">setTransferMode</span></a><span class="signature">(<wbr><span class="parameter" id="setTransferMode-param-transferMode"><span class="type-annotation">TransferMode</span> <span class="parameter-name">transferMode</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <a href="object/Paint/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Paint</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="object/Paint/color.html">color</a>
+</li>
+      <li><a href="object/Paint/isAntiAlias.html">isAntiAlias</a>
+</li>
+      <li><a href="object/Paint/strokeWidth.html">strokeWidth</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="object/Paint/Paint.html">Paint</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="object/Paint/setColorFilter.html">setColorFilter</a>
+</li>
+      <li><a href="object/Paint/setDrawLooper.html">setDrawLooper</a>
+</li>
+      <li><a href="object/Paint/setFilterQuality.html">setFilterQuality</a>
+</li>
+      <li><a href="object/Paint/setMaskFilter.html">setMaskFilter</a>
+</li>
+      <li><a href="object/Paint/setShader.html">setShader</a>
+</li>
+      <li><a href="object/Paint/setStyle.html">setStyle</a>
+</li>
+      <li><a href="object/Paint/setTransferMode.html">setTransferMode</a>
+</li>
+      <li><a href="object/Paint/toString.html">toString</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

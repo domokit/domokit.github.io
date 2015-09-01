@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>activity library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="activity library API docs, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li class="self-crumb">activity</li>
+              </ol>
+              <div class="self-name">activity</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li class="self-crumb">activity</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">library</div> activity
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="activity/activity-library.html#constants">Constants</a></li>
+              <li><a href="activity/activity-library.html#properties">Properties</a></li>
+              <li><a href="activity/activity-library.html#functions">Functions</a></li>
+              <li><a href="activity/activity-library.html#classes">Classes</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="activity/activity-library.html">activity</a></li>
+      <li><a href="animated_component/animated_component-library.html">animated_component</a></li>
+      <li><a href="animated_container/animated_container-library.html">animated_container</a></li>
+      <li><a href="animated_simulation/animated_simulation-library.html">animated_simulation</a></li>
+      <li><a href="animated_value/animated_value-library.html">animated_value</a></li>
+      <li><a href="animation_performance/animation_performance-library.html">animation_performance</a></li>
+      <li><a href="arena/arena-library.html">arena</a></li>
+      <li><a href="asset_bundle/asset_bundle-library.html">asset_bundle</a></li>
+      <li><a href="auto_layout/auto_layout-library.html">auto_layout</a></li>
+      <li><a href="basic/basic-library.html">basic</a></li>
+      <li><a href="block/block-library.html">block</a></li>
+      <li><a href="box/box-library.html">box</a></li>
+      <li><a href="box_painter/box_painter-library.html">box_painter</a></li>
+      <li><a href="button_base/button_base-library.html">button_base</a></li>
+      <li><a href="card/card-library.html">card</a></li>
+      <li><a href="checkbox/checkbox-library.html">checkbox</a></li>
+      <li><a href="colors/colors-library.html">colors</a></li>
+      <li><a href="constants/constants-library.html">constants</a></li>
+      <li><a href="curves/curves-library.html">curves</a></li>
+      <li><a href="date_picker/date_picker-library.html">date_picker</a></li>
+      <li><a href="debug/debug-library.html">debug</a></li>
+      <li><a href="default_text_style/default_text_style-library.html">default_text_style</a></li>
+      <li><a href="dialog/dialog-library.html">dialog</a></li>
+      <li><a href="direction/direction-library.html">direction</a></li>
+      <li><a href="dismissable/dismissable-library.html">dismissable</a></li>
+      <li><a href="drag_target/drag_target-library.html">drag_target</a></li>
+      <li><a href="drawer/drawer-library.html">drawer</a></li>
+      <li><a href="drawer_divider/drawer_divider-library.html">drawer_divider</a></li>
+      <li><a href="drawer_header/drawer_header-library.html">drawer_header</a></li>
+      <li><a href="drawer_item/drawer_item-library.html">drawer_item</a></li>
+      <li><a href="edges/edges-library.html">edges</a></li>
+      <li><a href="editable_string/editable_string-library.html">editable_string</a></li>
+      <li><a href="editable_text/editable_text-library.html">editable_text</a></li>
+      <li><a href="embedder/embedder-library.html">embedder</a></li>
+      <li><a href="fetch/fetch-library.html">fetch</a></li>
+      <li><a href="flat_button/flat_button-library.html">flat_button</a></li>
+      <li><a href="flex/flex-library.html">flex</a></li>
+      <li><a href="floating_action_button/floating_action_button-library.html">floating_action_button</a></li>
+      <li><a href="focus/focus-library.html">focus</a></li>
+      <li><a href="forces/forces-library.html">forces</a></li>
+      <li><a href="framework/framework-library.html">framework</a></li>
+      <li><a href="gesture_detector/gesture_detector-library.html">gesture_detector</a></li>
+      <li><a href="grid/grid-library.html">grid</a></li>
+      <li><a href="hit_test/hit_test-library.html">hit_test</a></li>
+      <li><a href="homogeneous_viewport/homogeneous_viewport-library.html">homogeneous_viewport</a></li>
+      <li><a href="icon/icon-library.html">icon</a></li>
+      <li><a href="icon_button/icon_button-library.html">icon_button</a></li>
+      <li><a href="image/image-library.html">image</a></li>
+      <li><a href="image_cache/image_cache-library.html">image_cache</a></li>
+      <li><a href="image_resource/image_resource-library.html">image_resource</a></li>
+      <li><a href="ink_well/ink_well-library.html">ink_well</a></li>
+      <li><a href="input/input-library.html">input</a></li>
+      <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
+      <li><a href="layer/layer-library.html">layer</a></li>
+      <li><a href="lerp/lerp-library.html">lerp</a></li>
+      <li><a href="long_press/long_press-library.html">long_press</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="material_button/material_button-library.html">material_button</a></li>
+      <li><a href="mimic/mimic-library.html">mimic</a></li>
+      <li><a href="mimic_overlay/mimic_overlay-library.html">mimic_overlay</a></li>
+      <li><a href="mixed_viewport/mixed_viewport-library.html">mixed_viewport</a></li>
+      <li><a href="modal_overlay/modal_overlay-library.html">modal_overlay</a></li>
+      <li><a href="navigator/navigator-library.html">navigator</a></li>
+      <li><a href="node/node-library.html">node</a></li>
+      <li><a href="object/object-library.html">object</a></li>
+      <li><a href="paragraph/paragraph-library.html">paragraph</a></li>
+      <li><a href="pointer_router/pointer_router-library.html">pointer_router</a></li>
+      <li><a href="popup_menu/popup_menu-library.html">popup_menu</a></li>
+      <li><a href="popup_menu_item/popup_menu_item-library.html">popup_menu_item</a></li>
+      <li><a href="progress_indicator/progress_indicator-library.html">progress_indicator</a></li>
+      <li><a href="proxy_box/proxy_box-library.html">proxy_box</a></li>
+      <li><a href="radial_reaction/radial_reaction-library.html">radial_reaction</a></li>
+      <li><a href="radio/radio-library.html">radio</a></li>
+      <li><a href="raised_button/raised_button-library.html">raised_button</a></li>
+      <li><a href="recognizer/recognizer-library.html">recognizer</a></li>
+      <li><a href="rendering/rendering-library.html">rendering</a></li>
+      <li><a href="scaffold/scaffold-library.html">scaffold</a></li>
+      <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+      <li><a href="scroll/scroll-library.html">scroll</a></li>
+      <li><a href="scroll_behavior/scroll_behavior-library.html">scroll_behavior</a></li>
+      <li><a href="scrollable/scrollable-library.html">scrollable</a></li>
+      <li><a href="shadows/shadows-library.html">shadows</a></li>
+      <li><a href="shadows/shadows-library.html">shadows</a></li>
+      <li><a href="shell/shell-library.html">shell</a></li>
+      <li><a href="shifted_box/shifted_box-library.html">shifted_box</a></li>
+      <li><a href="show_press/show_press-library.html">show_press</a></li>
+      <li><a href="sky_binding/sky_binding-library.html">sky_binding</a></li>
+      <li><a href="snack_bar/snack_bar-library.html">snack_bar</a></li>
+      <li><a href="stack/stack-library.html">stack</a></li>
+      <li><a href="switch/switch-library.html">switch</a></li>
+      <li><a href="tabs/tabs-library.html">tabs</a></li>
+      <li><a href="tap/tap-library.html">tap</a></li>
+      <li><a href="text_painter/text_painter-library.html">text_painter</a></li>
+      <li><a href="text_style/text_style-library.html">text_style</a></li>
+      <li><a href="theme/theme-library.html">theme</a></li>
+      <li><a href="theme_data/theme_data-library.html">theme_data</a></li>
+      <li><a href="timeline/timeline-library.html">timeline</a></li>
+      <li><a href="title/title-library.html">title</a></li>
+      <li><a href="toggleable/toggleable-library.html">toggleable</a></li>
+      <li><a href="tool_bar/tool_bar-library.html">tool_bar</a></li>
+      <li><a href="transitions/transitions-library.html">transitions</a></li>
+      <li><a href="typography/typography-library.html">typography</a></li>
+      <li><a href="view/view-library.html">view</a></li>
+      <li><a href="view_configuration/view_configuration-library.html">view_configuration</a></li>
+      <li><a href="viewport/viewport-library.html">viewport</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+        <h2>Constants</h2>
+
+        <dl class="properties">
+            <dt id="ActivityName" class="constant">
+                <span class="top-level-variable-type">String</span>
+                <span class="name "><a href="activity/ActivityName.html">ActivityName</a></span>
+                <span class="signature">= 'activity::Activity'</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="AuralFeedbackType_CLICK" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/AuralFeedbackType_CLICK.html">AuralFeedbackType_CLICK</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="AuralFeedbackType_NAVIGATION_DOWN" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/AuralFeedbackType_NAVIGATION_DOWN.html">AuralFeedbackType_NAVIGATION_DOWN</a></span>
+                <span class="signature">= 4</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="AuralFeedbackType_NAVIGATION_LEFT" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/AuralFeedbackType_NAVIGATION_LEFT.html">AuralFeedbackType_NAVIGATION_LEFT</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="AuralFeedbackType_NAVIGATION_RIGHT" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/AuralFeedbackType_NAVIGATION_RIGHT.html">AuralFeedbackType_NAVIGATION_RIGHT</a></span>
+                <span class="signature">= 3</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="AuralFeedbackType_NAVIGATION_UP" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/AuralFeedbackType_NAVIGATION_UP.html">AuralFeedbackType_NAVIGATION_UP</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="HapticFeedbackType_CLOCK_TICK" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/HapticFeedbackType_CLOCK_TICK.html">HapticFeedbackType_CLOCK_TICK</a></span>
+                <span class="signature">= 3</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="HapticFeedbackType_KEYBOARD_TAP" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/HapticFeedbackType_KEYBOARD_TAP.html">HapticFeedbackType_KEYBOARD_TAP</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="HapticFeedbackType_LONG_PRESS" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/HapticFeedbackType_LONG_PRESS.html">HapticFeedbackType_LONG_PRESS</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="HapticFeedbackType_VIRTUAL_KEY" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/HapticFeedbackType_VIRTUAL_KEY.html">HapticFeedbackType_VIRTUAL_KEY</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_finishCurrentActivity_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_finishCurrentActivity_name.html">kActivity_finishCurrentActivity_name</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_getCacheDir_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_getCacheDir_name.html">kActivity_getCacheDir_name</a></span>
+                <span class="signature">= 7</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_getFilesDir_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_getFilesDir_name.html">kActivity_getFilesDir_name</a></span>
+                <span class="signature">= 6</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_getUserFeedback_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_getUserFeedback_name.html">kActivity_getUserFeedback_name</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_setRequestedOrientation_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_setRequestedOrientation_name.html">kActivity_setRequestedOrientation_name</a></span>
+                <span class="signature">= 5</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_setSystemUiVisibility_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_setSystemUiVisibility_name.html">kActivity_setSystemUiVisibility_name</a></span>
+                <span class="signature">= 4</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_setTaskDescription_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_setTaskDescription_name.html">kActivity_setTaskDescription_name</a></span>
+                <span class="signature">= 3</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kActivity_startActivity_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kActivity_startActivity_name.html">kActivity_startActivity_name</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kUserFeedback_performAuralFeedback_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kUserFeedback_performAuralFeedback_name.html">kUserFeedback_performAuralFeedback_name</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kUserFeedback_performHapticFeedback_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/kUserFeedback_performHapticFeedback_name.html">kUserFeedback_performHapticFeedback_name</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="MULTIPLE_TASK" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/MULTIPLE_TASK.html">MULTIPLE_TASK</a></span>
+                <span class="signature">= 0x08000000</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="NEW_DOCUMENT" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/NEW_DOCUMENT.html">NEW_DOCUMENT</a></span>
+                <span class="signature">= 0x00080000</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p>Dart wrapper around Activity mojo service available in Sky on Android.</p>
+            </dd>
+            <dt id="NEW_TASK" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/NEW_TASK.html">NEW_TASK</a></span>
+                <span class="signature">= 0x10000000</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="ScreenOrientation_LANDSCAPE" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/ScreenOrientation_LANDSCAPE.html">ScreenOrientation_LANDSCAPE</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="ScreenOrientation_NOSENSOR" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/ScreenOrientation_NOSENSOR.html">ScreenOrientation_NOSENSOR</a></span>
+                <span class="signature">= 3</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="ScreenOrientation_PORTRAIT" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/ScreenOrientation_PORTRAIT.html">ScreenOrientation_PORTRAIT</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="ScreenOrientation_UNSPECIFIED" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/ScreenOrientation_UNSPECIFIED.html">ScreenOrientation_UNSPECIFIED</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="SystemUIVisibility_FULLSCREEN" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/SystemUIVisibility_FULLSCREEN.html">SystemUIVisibility_FULLSCREEN</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="SystemUIVisibility_IMMERSIVE" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/SystemUIVisibility_IMMERSIVE.html">SystemUIVisibility_IMMERSIVE</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="SystemUIVisibility_STANDARD" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="activity/SystemUIVisibility_STANDARD.html">SystemUIVisibility_STANDARD</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="UserFeedbackName" class="constant">
+                <span class="top-level-variable-type">String</span>
+                <span class="name "><a href="activity/UserFeedbackName.html">UserFeedbackName</a></span>
+                <span class="signature">= 'activity::UserFeedback'</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="activity" class="property">
+                <span class="name"><a href="activity/activity.html">activity</a></span>
+                <span class="signature">&#8594; <a href="activity/Activity-class.html">Activity</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="userFeedback" class="property">
+                <span class="name"><a href="activity/userFeedback.html">userFeedback</a></span>
+                <span class="signature">&#8594; <a href="activity/UserFeedback-class.html">UserFeedback</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="functions">
+        <h2>Functions</h2>
+
+        <dl class="callables">
+            <dt id="getCacheDir" class="callable">
+                <a href="activity/getCacheDir.html"><span class="name ">getCacheDir</span></a><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">Future&lt;String&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="getFilesDir" class="callable">
+                <a href="activity/getFilesDir.html"><span class="name ">getFilesDir</span></a><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">Future&lt;String&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="updateTaskDescription" class="callable">
+                <a href="activity/updateTaskDescription.html"><span class="name ">updateTaskDescription</span></a><span class="signature">(<wbr><span class="parameter" id="updateTaskDescription-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span></span>, <span class="parameter" id="updateTaskDescription-param-color"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sets the TaskDescription for the current Activity</p>
+            </dd>
+        </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="classes">
+        <h2>Classes</h2>
+
+        <dl>
+            <dt id="Activity">
+                <span class="name "><a href="activity/Activity-class.html">Activity</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityFinishCurrentActivityParams">
+                <span class="name "><a href="activity/ActivityFinishCurrentActivityParams-class.html">ActivityFinishCurrentActivityParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityGetCacheDirParams">
+                <span class="name "><a href="activity/ActivityGetCacheDirParams-class.html">ActivityGetCacheDirParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityGetCacheDirResponseParams">
+                <span class="name "><a href="activity/ActivityGetCacheDirResponseParams-class.html">ActivityGetCacheDirResponseParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityGetFilesDirParams">
+                <span class="name "><a href="activity/ActivityGetFilesDirParams-class.html">ActivityGetFilesDirParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityGetFilesDirResponseParams">
+                <span class="name "><a href="activity/ActivityGetFilesDirResponseParams-class.html">ActivityGetFilesDirResponseParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityGetUserFeedbackParams">
+                <span class="name "><a href="activity/ActivityGetUserFeedbackParams-class.html">ActivityGetUserFeedbackParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityProxy">
+                <span class="name "><a href="activity/ActivityProxy-class.html">ActivityProxy</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityProxyImpl">
+                <span class="name "><a href="activity/ActivityProxyImpl-class.html">ActivityProxyImpl</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivitySetRequestedOrientationParams">
+                <span class="name "><a href="activity/ActivitySetRequestedOrientationParams-class.html">ActivitySetRequestedOrientationParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivitySetSystemUiVisibilityParams">
+                <span class="name "><a href="activity/ActivitySetSystemUiVisibilityParams-class.html">ActivitySetSystemUiVisibilityParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivitySetTaskDescriptionParams">
+                <span class="name "><a href="activity/ActivitySetTaskDescriptionParams-class.html">ActivitySetTaskDescriptionParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityStartActivityParams">
+                <span class="name "><a href="activity/ActivityStartActivityParams-class.html">ActivityStartActivityParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ActivityStub">
+                <span class="name "><a href="activity/ActivityStub-class.html">ActivityStub</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ComponentName">
+                <span class="name "><a href="activity/ComponentName-class.html">ComponentName</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Intent">
+                <span class="name "><a href="activity/Intent-class.html">Intent</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="StringExtra">
+                <span class="name "><a href="activity/StringExtra-class.html">StringExtra</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TaskDescription">
+                <span class="name "><a href="activity/TaskDescription-class.html">TaskDescription</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UserFeedback">
+                <span class="name "><a href="activity/UserFeedback-class.html">UserFeedback</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UserFeedbackPerformAuralFeedbackParams">
+                <span class="name "><a href="activity/UserFeedbackPerformAuralFeedbackParams-class.html">UserFeedbackPerformAuralFeedbackParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UserFeedbackPerformHapticFeedbackParams">
+                <span class="name "><a href="activity/UserFeedbackPerformHapticFeedbackParams-class.html">UserFeedbackPerformHapticFeedbackParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UserFeedbackProxy">
+                <span class="name "><a href="activity/UserFeedbackProxy-class.html">UserFeedbackProxy</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UserFeedbackProxyImpl">
+                <span class="name "><a href="activity/UserFeedbackProxyImpl-class.html">UserFeedbackProxyImpl</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UserFeedbackStub">
+                <span class="name "><a href="activity/UserFeedbackStub-class.html">UserFeedbackStub</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>activity</h5>
+    <ol>
+      <li class="section-title"><a href="activity/activity-library.html#constants">Constants</a></li>
+      <li><a href="activity/ActivityName.html">ActivityName</a></li>
+      <li><a href="activity/AuralFeedbackType_CLICK.html">AuralFeedbackType_CLICK</a></li>
+      <li><a href="activity/AuralFeedbackType_NAVIGATION_DOWN.html">AuralFeedbackType_NAVIGATION_DOWN</a></li>
+      <li><a href="activity/AuralFeedbackType_NAVIGATION_LEFT.html">AuralFeedbackType_NAVIGATION_LEFT</a></li>
+      <li><a href="activity/AuralFeedbackType_NAVIGATION_RIGHT.html">AuralFeedbackType_NAVIGATION_RIGHT</a></li>
+      <li><a href="activity/AuralFeedbackType_NAVIGATION_UP.html">AuralFeedbackType_NAVIGATION_UP</a></li>
+      <li><a href="activity/HapticFeedbackType_CLOCK_TICK.html">HapticFeedbackType_CLOCK_TICK</a></li>
+      <li><a href="activity/HapticFeedbackType_KEYBOARD_TAP.html">HapticFeedbackType_KEYBOARD_TAP</a></li>
+      <li><a href="activity/HapticFeedbackType_LONG_PRESS.html">HapticFeedbackType_LONG_PRESS</a></li>
+      <li><a href="activity/HapticFeedbackType_VIRTUAL_KEY.html">HapticFeedbackType_VIRTUAL_KEY</a></li>
+      <li><a href="activity/kActivity_finishCurrentActivity_name.html">kActivity_finishCurrentActivity_name</a></li>
+      <li><a href="activity/kActivity_getCacheDir_name.html">kActivity_getCacheDir_name</a></li>
+      <li><a href="activity/kActivity_getFilesDir_name.html">kActivity_getFilesDir_name</a></li>
+      <li><a href="activity/kActivity_getUserFeedback_name.html">kActivity_getUserFeedback_name</a></li>
+      <li><a href="activity/kActivity_setRequestedOrientation_name.html">kActivity_setRequestedOrientation_name</a></li>
+      <li><a href="activity/kActivity_setSystemUiVisibility_name.html">kActivity_setSystemUiVisibility_name</a></li>
+      <li><a href="activity/kActivity_setTaskDescription_name.html">kActivity_setTaskDescription_name</a></li>
+      <li><a href="activity/kActivity_startActivity_name.html">kActivity_startActivity_name</a></li>
+      <li><a href="activity/kUserFeedback_performAuralFeedback_name.html">kUserFeedback_performAuralFeedback_name</a></li>
+      <li><a href="activity/kUserFeedback_performHapticFeedback_name.html">kUserFeedback_performHapticFeedback_name</a></li>
+      <li><a href="activity/MULTIPLE_TASK.html">MULTIPLE_TASK</a></li>
+      <li><a href="activity/NEW_DOCUMENT.html">NEW_DOCUMENT</a></li>
+      <li><a href="activity/NEW_TASK.html">NEW_TASK</a></li>
+      <li><a href="activity/ScreenOrientation_LANDSCAPE.html">ScreenOrientation_LANDSCAPE</a></li>
+      <li><a href="activity/ScreenOrientation_NOSENSOR.html">ScreenOrientation_NOSENSOR</a></li>
+      <li><a href="activity/ScreenOrientation_PORTRAIT.html">ScreenOrientation_PORTRAIT</a></li>
+      <li><a href="activity/ScreenOrientation_UNSPECIFIED.html">ScreenOrientation_UNSPECIFIED</a></li>
+      <li><a href="activity/SystemUIVisibility_FULLSCREEN.html">SystemUIVisibility_FULLSCREEN</a></li>
+      <li><a href="activity/SystemUIVisibility_IMMERSIVE.html">SystemUIVisibility_IMMERSIVE</a></li>
+      <li><a href="activity/SystemUIVisibility_STANDARD.html">SystemUIVisibility_STANDARD</a></li>
+      <li><a href="activity/UserFeedbackName.html">UserFeedbackName</a></li>
+    
+    
+      <li class="section-title"><a href="activity/activity-library.html#properties">Properties</a></li>
+      <li><a href="activity/activity.html">activity</a></li>
+      <li><a href="activity/userFeedback.html">userFeedback</a></li>
+    
+      <li class="section-title"><a href="activity/activity-library.html#functions">Functions</a></li>
+      <li><a href="activity/getCacheDir.html">getCacheDir</a></li>
+      <li><a href="activity/getFilesDir.html">getFilesDir</a></li>
+      <li><a href="activity/updateTaskDescription.html">updateTaskDescription</a></li>
+    
+    
+      <li class="section-title"><a href="activity/activity-library.html#classes">Classes</a></li>
+      <li><a href="activity/Activity-class.html">Activity</a></li>
+      <li><a href="activity/ActivityFinishCurrentActivityParams-class.html">ActivityFinishCurrentActivityParams</a></li>
+      <li><a href="activity/ActivityGetCacheDirParams-class.html">ActivityGetCacheDirParams</a></li>
+      <li><a href="activity/ActivityGetCacheDirResponseParams-class.html">ActivityGetCacheDirResponseParams</a></li>
+      <li><a href="activity/ActivityGetFilesDirParams-class.html">ActivityGetFilesDirParams</a></li>
+      <li><a href="activity/ActivityGetFilesDirResponseParams-class.html">ActivityGetFilesDirResponseParams</a></li>
+      <li><a href="activity/ActivityGetUserFeedbackParams-class.html">ActivityGetUserFeedbackParams</a></li>
+      <li><a href="activity/ActivityProxy-class.html">ActivityProxy</a></li>
+      <li><a href="activity/ActivityProxyImpl-class.html">ActivityProxyImpl</a></li>
+      <li><a href="activity/ActivitySetRequestedOrientationParams-class.html">ActivitySetRequestedOrientationParams</a></li>
+      <li><a href="activity/ActivitySetSystemUiVisibilityParams-class.html">ActivitySetSystemUiVisibilityParams</a></li>
+      <li><a href="activity/ActivitySetTaskDescriptionParams-class.html">ActivitySetTaskDescriptionParams</a></li>
+      <li><a href="activity/ActivityStartActivityParams-class.html">ActivityStartActivityParams</a></li>
+      <li><a href="activity/ActivityStub-class.html">ActivityStub</a></li>
+      <li><a href="activity/ComponentName-class.html">ComponentName</a></li>
+      <li><a href="activity/Intent-class.html">Intent</a></li>
+      <li><a href="activity/StringExtra-class.html">StringExtra</a></li>
+      <li><a href="activity/TaskDescription-class.html">TaskDescription</a></li>
+      <li><a href="activity/UserFeedback-class.html">UserFeedback</a></li>
+      <li><a href="activity/UserFeedbackPerformAuralFeedbackParams-class.html">UserFeedbackPerformAuralFeedbackParams</a></li>
+      <li><a href="activity/UserFeedbackPerformHapticFeedbackParams-class.html">UserFeedbackPerformHapticFeedbackParams</a></li>
+      <li><a href="activity/UserFeedbackProxy-class.html">UserFeedbackProxy</a></li>
+      <li><a href="activity/UserFeedbackProxyImpl-class.html">UserFeedbackProxyImpl</a></li>
+      <li><a href="activity/UserFeedbackStub-class.html">UserFeedbackStub</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

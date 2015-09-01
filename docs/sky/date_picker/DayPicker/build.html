@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>build method - DayPicker class - date_picker library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the build method from the DayPicker class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="date_picker/date_picker-library.html">date_picker</a></li>
+                  <li><a href="date_picker/DayPicker-class.html">DayPicker</a></li>
+                  <li class="self-crumb">build</li>
+              </ol>
+              <div class="self-name">build</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="date_picker/date_picker-library.html">date_picker</a></li>
+              <li><a href="date_picker/DayPicker-class.html">DayPicker</a></li>
+              <li class="self-crumb">build</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> build
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="date_picker/DayPicker/build.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="date_picker/date_picker-library.html">date_picker</a></h5>
+    <h5><a href="date_picker/DayPicker-class.html">DayPicker</a></h5>
+
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="date_picker/DayPicker/currentDate.html">currentDate</a>
+</li>
+      <li><a href="date_picker/DayPicker/displayedMonth.html">displayedMonth</a>
+</li>
+      <li>key
+</li>
+      <li>mounted
+</li>
+      <li><a href="date_picker/DayPicker/onChanged.html">onChanged</a>
+</li>
+      <li>parent
+</li>
+      <li>renderObject
+</li>
+      <li><a href="date_picker/DayPicker/selectedDate.html">selectedDate</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="date_picker/DayPicker/DayPicker.html">DayPicker</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="date_picker/DayPicker/build.html">build</a>
+</li>
+      <li>dependenciesChanged
+</li>
+      <li>detachRenderObject
+</li>
+      <li>didMount
+</li>
+      <li>didUnmount
+</li>
+      <li>findAncestorRenderObjectWrapper
+</li>
+      <li>globalToLocal
+</li>
+      <li>inheritedOfType
+</li>
+      <li>localToGlobal
+</li>
+      <li>remove
+</li>
+      <li>retainStatefulNodeIfPossible
+</li>
+      <li>setParent
+</li>
+      <li>syncChild
+</li>
+      <li>toString
+</li>
+      <li>toStringName
+</li>
+      <li>updateSlot
+</li>
+      <li>walkChildren
+</li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype"><a href="date_picker/Widget-class.html">Widget</a></span>
+            <span class="name ">build</span>(
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">Widget build() {
+  ThemeData theme = Theme.of(this);
+  TextStyle headerStyle = theme.text.caption.copyWith(fontWeight: FontWeight.w700);
+  TextStyle monthStyle = headerStyle.copyWith(fontSize: 14.0, height: 24.0 / 14.0);
+  TextStyle dayStyle = headerStyle.copyWith(fontWeight: FontWeight.w500);
+  DateFormat dateFormat = new DateFormat();
+  DateSymbols symbols = dateFormat.dateSymbols;
+
+  List&lt;Text&gt; headers = [];
+  for (String weekDay in symbols.NARROWWEEKDAYS) {
+    headers.add(new Text(weekDay, style: headerStyle));
+  }
+  List&lt;Widget&gt; rows = [
+    new Text(new DateFormat(&quot;MMMM y&quot;).format(displayedMonth), style: monthStyle),
+    new Flex(
+      headers,
+      justifyContent: FlexJustifyContent.spaceAround
+    )
+  ];
+  int year = displayedMonth.year;
+  int month = displayedMonth.month;
+  // Dart&apos;s Date time constructor is very forgiving and will understand
+  // month 13 as January of the next year. :)
+  int daysInMonth = new DateTime(year, month + 1).difference(new DateTime(year, month)).inDays;
+  int firstDay =  new DateTime(year, month).day;
+  int weeksShown = 6;
+  List&lt;int&gt; days = [
+    DateTime.SUNDAY,
+    DateTime.MONDAY,
+    DateTime.TUESDAY,
+    DateTime.WEDNESDAY,
+    DateTime.THURSDAY,
+    DateTime.FRIDAY,
+    DateTime.SATURDAY
+  ];
+  int daySlots = weeksShown * days.length;
+  List&lt;Widget&gt; labels = [];
+  for (int i = 0; i &lt; daySlots; i++) {
+    // This assumes a start day of SUNDAY, but could be changed.
+    int day = i - firstDay + 1;
+    Widget item;
+    if (day &lt; 1 || day &gt; daysInMonth) {
+      item = new Text(&quot;&quot;);
+    } else {
+      // Put a light circle around the selected day
+      BoxDecoration decoration = null;
+      if (selectedDate.year == year &amp;&amp;
+          selectedDate.month == month &amp;&amp;
+          selectedDate.day == day)
+        decoration = new BoxDecoration(
+          backgroundColor: theme.primarySwatch[100],
+          shape: Shape.circle
+        );
+
+      // Use a different font color for the current day
+      TextStyle itemStyle = dayStyle;
+      if (currentDate.year == year &amp;&amp;
+          currentDate.month == month &amp;&amp;
+          currentDate.day == day)
+        itemStyle = itemStyle.copyWith(color: theme.primaryColor);
+
+      item = new GestureDetector(
+        onTap: () {
+          DateTime result = new DateTime(year, month, day);
+          onChanged(result);
+        },
+        child: new Container(
+          height: 30.0,
+          decoration: decoration,
+          child: new Center(
+            child: new Text(day.toString(), style: itemStyle)
+          )
+        )
+      );
+    }
+    labels.add(new Flexible(child: item));
+  }
+  for (int w = 0; w &lt; weeksShown; w++) {
+    int startIndex = w * days.length;
+    rows.add(new Container(
+      child: new Flex(
+        labels.sublist(startIndex, startIndex + days.length),
+        justifyContent: FlexJustifyContent.spaceAround
+      )
+    ));
+  }
+
+  return new Column(rows);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

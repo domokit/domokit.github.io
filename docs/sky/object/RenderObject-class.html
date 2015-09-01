@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RenderObject class - object library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the RenderObject class from the object library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="object/object-library.html">object</a></li>
+                  <li class="self-crumb">RenderObject</li>
+              </ol>
+              <div class="self-name">RenderObject</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="object/object-library.html">object</a></li>
+              <li class="self-crumb">RenderObject</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> RenderObject
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="object/RenderObject-class.html#static-properties">Static Properties</a></li>
+              <li><a href="object/RenderObject-class.html#static-methods">Static Methods</a></li>
+              <li><a href="object/RenderObject-class.html#instance-properties">Properties</a></li>
+              <li><a href="object/RenderObject-class.html#constructors">Constructors</a></li>
+              <li><a href="object/RenderObject-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="object/object-library.html">object</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="object/object-library.html#typedefs">Typedefs</a></li>
+      <li><a href="object/DimensionCallback.html">DimensionCallback</a></li>
+      <li><a href="object/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a href="object/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+    
+    
+      <li class="section-title"><a href="object/object-library.html#functions">Functions</a></li>
+      <li><a href="object/clamp.html">clamp</a></li>
+    
+      <li class="section-title"><a href="object/object-library.html#enums">Enums</a></li>
+      <li><a href="object/EventDisposition-class.html">EventDisposition</a></li>
+    
+      <li class="section-title"><a href="object/object-library.html#classes">Classes</a></li>
+      <li><a href="object/Color-class.html">Color</a></li>
+      <li><a href="object/Constraints-class.html">Constraints</a></li>
+      <li><a href="object/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a></li>
+      <li><a href="object/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+      <li><a href="object/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="object/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="object/HitTestTarget-class.html">HitTestTarget</a></li>
+      <li><a href="object/Offset-class.html">Offset</a></li>
+      <li><a href="object/Paint-class.html">Paint</a></li>
+      <li><a href="object/PaintingCanvas-class.html">PaintingCanvas</a></li>
+      <li><a href="object/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="object/ParentData-class.html">ParentData</a></li>
+      <li><a href="object/Path-class.html">Path</a></li>
+      <li><a href="object/Point-class.html">Point</a></li>
+      <li><a href="object/Rect-class.html">Rect</a></li>
+      <li><a href="object/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="object/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+      <li><a href="object/Size-class.html">Size</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+
+        <dt>Extends</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+            <li>Object</li>
+            <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
+            <li>RenderObject</li>
+        </ul></dd>
+
+        <dt>Implements</dt>
+            <dd>
+                <ul class="comma-separated clazz-relationships">
+                    <li><a href="hit_test/HitTestTarget-class.html">HitTestTarget</a></li>
+                </ul>
+            </dd>
+
+
+        <dt>Implemented by</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+            <li><a href="rendering/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+            <li><a href="object/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+            <li><a href="rendering/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+            <li><a href="object/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+        </ul></dd>
+        </dl>
+    </section>
+
+
+    <section class="summary" id="static-properties">
+        <h2>Static Properties</h2>
+
+        <dl class="properties">
+            <dt id="debugActiveLayout" class="property">
+                <span class="name"><a href="object/RenderObject/debugActiveLayout.html">debugActiveLayout</a></span>
+                <span class="signature">&#8594; <a href="object/RenderObject-class.html">RenderObject</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugActivePaint" class="property">
+                <span class="name"><a href="object/RenderObject/debugActivePaint.html">debugActivePaint</a></span>
+                <span class="signature">&#8594; <a href="object/RenderObject-class.html">RenderObject</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingLayout" class="property">
+                <span class="name"><a href="object/RenderObject/debugDoingLayout.html">debugDoingLayout</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingPaint" class="property">
+                <span class="name"><a href="object/RenderObject/debugDoingPaint.html">debugDoingPaint</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="static-methods">
+        <h2>Static Methods</h2>
+        <dl class="callables">
+            <dt id="flushLayout" class="callable">
+                <a href="object/RenderObject/flushLayout.html"><span class="name ">flushLayout</span></a><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="flushPaint" class="callable">
+                <a href="object/RenderObject/flushPaint.html"><span class="name ">flushPaint</span></a><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="attached" class="property">
+            <span class="name ">attached</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>Whether this node is in a tree whose root is attached to something.</p>
+            </dd>
+            <dt id="constraints" class="property">
+                <span class="name"><a href="object/RenderObject/constraints.html">constraints</a></span>
+                <span class="signature">&#8594; <a href="object/Constraints-class.html">Constraints</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugCanParentUseSize" class="property">
+                <span class="name"><a href="object/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugCanPerformMutations" class="property">
+                <span class="name"><a href="object/RenderObject/debugCanPerformMutations.html">debugCanPerformMutations</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingThisLayout" class="property">
+                <span class="name"><a href="object/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingThisPaint" class="property">
+                <span class="name"><a href="object/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingThisResize" class="property">
+                <span class="name"><a href="object/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugExceptionContext" class="property">
+                <span class="name"><a href="object/RenderObject/debugExceptionContext.html">debugExceptionContext</a></span>
+                <span class="signature">&#8594; dynamic</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="depth" class="property">
+            <span class="name ">depth</span>    
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>The depth of this node in the tree.</p>
+            </dd>
+            <dt id="hasLayer" class="property">
+                <span class="name"><a href="object/RenderObject/hasLayer.html">hasLayer</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="layer" class="property">
+                <span class="name"><a href="object/RenderObject/layer.html">layer</a></span>
+                <span class="signature">&#8594; <a href="layer/ContainerLayer-class.html">ContainerLayer</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="needsCompositing" class="property">
+                <span class="name"><a href="object/RenderObject/needsCompositing.html">needsCompositing</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="needsLayout" class="property">
+                <span class="name"><a href="object/RenderObject/needsLayout.html">needsLayout</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="needsPaint" class="property">
+                <span class="name"><a href="object/RenderObject/needsPaint.html">needsPaint</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="paintBounds" class="property">
+                <span class="name"><a href="object/RenderObject/paintBounds.html">paintBounds</a></span>
+                <span class="signature">&#8594; <a href="basic/Rect-class.html">Rect</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="parent" class="property">
+            <span class="name ">parent</span>    
+                <span class="signature">&#8594; <a href="node/AbstractNode-class.html">AbstractNode</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>The parent of this node in the tree.</p>
+            </dd>
+            <dt id="parentData" class="property">
+                <span class="name"><a href="object/RenderObject/parentData.html">parentData</a></span>
+                <span class="signature">&#8594; dynamic</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="sizedByParent" class="property">
+                <span class="name"><a href="object/RenderObject/sizedByParent.html">sizedByParent</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="RenderObject" class="callable">
+                <span class="name"><a href="object/RenderObject/RenderObject.html">RenderObject</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="adoptChild" class="callable">
+                  <a href="object/RenderObject/adoptChild.html"><span class="name ">adoptChild</span></a><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Subclasses should call this function when they acquire a new child.</p>
+              </dd>
+              <dt id="applyPaintTransform" class="callable">
+                  <a href="object/RenderObject/applyPaintTransform.html"><span class="name ">applyPaintTransform</span></a><span class="signature">(<wbr><span class="parameter" id="applyPaintTransform-param-transform"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="attach" class="callable">
+                  <span class="name ">attach</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Mark this node as attached.</p>
+              </dd>
+              <dt id="attachChildren" class="callable">
+                  <span class="name ">attachChildren</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function in subclasses with child to call attach() for each
+child. Do not call directly.</p>
+              </dd>
+              <dt id="debugAncestorsAlreadyMarkedNeedsLayout" class="callable">
+                  <a href="object/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html"><span class="name ">debugAncestorsAlreadyMarkedNeedsLayout</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="debugDescribeChildren" class="callable">
+                  <a href="object/RenderObject/debugDescribeChildren.html"><span class="name ">debugDescribeChildren</span></a><span class="signature">(<wbr><span class="parameter" id="debugDescribeChildren-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span></span>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="debugDescribeSettings" class="callable">
+                  <a href="object/RenderObject/debugDescribeSettings.html"><span class="name ">debugDescribeSettings</span></a><span class="signature">(<wbr><span class="parameter" id="debugDescribeSettings-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span></span>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="debugDoesMeetConstraints" class="callable">
+                  <a href="object/RenderObject/debugDoesMeetConstraints.html"><span class="name ">debugDoesMeetConstraints</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="debugPaint" class="callable">
+                  <a href="object/RenderObject/debugPaint.html"><span class="name ">debugPaint</span></a><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="detach" class="callable">
+                  <span class="name ">detach</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Mark this node as detached.</p>
+              </dd>
+              <dt id="detachChildren" class="callable">
+                  <span class="name ">detachChildren</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function in subclasses with child to call detach() for each
+child. Do not call directly.</p>
+              </dd>
+              <dt id="dropChild" class="callable">
+                  <a href="object/RenderObject/dropChild.html"><span class="name ">dropChild</span></a><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Subclasses should call this function when they lose a child.</p>
+              </dd>
+              <dt id="handleEvent" class="callable">
+                  <a href="object/RenderObject/handleEvent.html"><span class="name ">handleEvent</span></a><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="hit_test/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="object/EventDisposition-class.html">EventDisposition</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Override this function to receive events.</p>
+              </dd>
+              <dt id="invokeLayoutCallback" class="callable">
+                  <a href="object/RenderObject/invokeLayoutCallback.html"><span class="name ">invokeLayoutCallback</span></a><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="layout" class="callable">
+                  <a href="object/RenderObject/layout.html"><span class="name ">layout</span></a><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>, {<span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation">bool</span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span>})
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="layoutWithoutResize" class="callable">
+                  <a href="object/RenderObject/layoutWithoutResize.html"><span class="name ">layoutWithoutResize</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="markNeedsCompositingBitsUpdate" class="callable">
+                  <a href="object/RenderObject/markNeedsCompositingBitsUpdate.html"><span class="name ">markNeedsCompositingBitsUpdate</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="markNeedsLayout" class="callable">
+                  <a href="object/RenderObject/markNeedsLayout.html"><span class="name ">markNeedsLayout</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="markNeedsPaint" class="callable">
+                  <a href="object/RenderObject/markNeedsPaint.html"><span class="name ">markNeedsPaint</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="paint" class="callable">
+                  <a href="object/RenderObject/paint.html"><span class="name ">paint</span></a><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="performLayout" class="callable">
+                  <a href="object/RenderObject/performLayout.html"><span class="name ">performLayout</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="performResize" class="callable">
+                  <a href="object/RenderObject/performResize.html"><span class="name ">performResize</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="redepthChild" class="callable">
+                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Call only from overrides of <a href="node/AbstractNode/redepthChildren.html">redepthChildren</a></p>
+              </dd>
+              <dt id="redepthChildren" class="callable">
+                  <span class="name ">redepthChildren</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function in subclasses with child nodes to call
+redepthChild(child) for each child. Do not call directly.</p>
+              </dd>
+              <dt id="rotate" class="callable">
+                  <a href="object/RenderObject/rotate.html"><span class="name ">rotate</span></a><span class="signature">(<wbr>{<span class="parameter" id="rotate-param-oldAngle"><span class="type-annotation">int</span> <span class="parameter-name">oldAngle</span></span>, <span class="parameter" id="rotate-param-newAngle"><span class="type-annotation">int</span> <span class="parameter-name">newAngle</span></span>, <span class="parameter" id="rotate-param-time"><span class="type-annotation">Duration</span> <span class="parameter-name">time</span></span>})
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="scheduleInitialLayout" class="callable">
+                  <a href="object/RenderObject/scheduleInitialLayout.html"><span class="name ">scheduleInitialLayout</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="scheduleInitialPaint" class="callable">
+                  <a href="object/RenderObject/scheduleInitialPaint.html"><span class="name ">scheduleInitialPaint</span></a><span class="signature">(<wbr><span class="parameter" id="scheduleInitialPaint-param-rootLayer"><span class="type-annotation"><a href="layer/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">rootLayer</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="setupParentData" class="callable">
+                  <a href="object/RenderObject/setupParentData.html"><span class="name ">setupParentData</span></a><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <a href="object/RenderObject/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>])
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+              <dt id="toStringName" class="callable">
+                  <a href="object/RenderObject/toStringName.html"><span class="name ">toStringName</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="updateCompositingBits" class="callable">
+                  <a href="object/RenderObject/updateCompositingBits.html"><span class="name ">updateCompositingBits</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="visitChildren" class="callable">
+                  <a href="object/RenderObject/visitChildren.html"><span class="name ">visitChildren</span></a><span class="signature">(<wbr><span class="parameter" id="visitChildren-param-visitor"><span class="type-annotation">void</span> <span class="parameter-name">visitor</span>(<span class="parameter" id="RenderObjectVisitor-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)</span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>RenderObject</h5>
+    <ol>
+    
+      <li class="section-title"><a href="#static-properties">Static properties</a></li>
+      <li><a href="object/RenderObject/debugActiveLayout.html">debugActiveLayout</a></li>
+      <li><a href="object/RenderObject/debugActivePaint.html">debugActivePaint</a></li>
+      <li><a href="object/RenderObject/debugDoingLayout.html">debugDoingLayout</a></li>
+      <li><a href="object/RenderObject/debugDoingPaint.html">debugDoingPaint</a></li>
+    
+      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li><a href="object/RenderObject/flushLayout.html">flushLayout</a></li>
+      <li><a href="object/RenderObject/flushPaint.html">flushPaint</a></li>
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li>attached
+</li>
+      <li><a href="object/RenderObject/constraints.html">constraints</a>
+</li>
+      <li><a href="object/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a>
+</li>
+      <li><a href="object/RenderObject/debugCanPerformMutations.html">debugCanPerformMutations</a>
+</li>
+      <li><a href="object/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a>
+</li>
+      <li><a href="object/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a>
+</li>
+      <li><a href="object/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a>
+</li>
+      <li><a href="object/RenderObject/debugExceptionContext.html">debugExceptionContext</a>
+</li>
+      <li>depth
+</li>
+      <li><a href="object/RenderObject/hasLayer.html">hasLayer</a>
+</li>
+      <li><a href="object/RenderObject/layer.html">layer</a>
+</li>
+      <li><a href="object/RenderObject/needsCompositing.html">needsCompositing</a>
+</li>
+      <li><a href="object/RenderObject/needsLayout.html">needsLayout</a>
+</li>
+      <li><a href="object/RenderObject/needsPaint.html">needsPaint</a>
+</li>
+      <li><a href="object/RenderObject/paintBounds.html">paintBounds</a>
+</li>
+      <li>parent
+</li>
+      <li><a href="object/RenderObject/parentData.html">parentData</a>
+</li>
+      <li><a href="object/RenderObject/sizedByParent.html">sizedByParent</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="object/RenderObject/RenderObject.html">RenderObject</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="object/RenderObject/adoptChild.html">adoptChild</a>
+</li>
+      <li><a href="object/RenderObject/applyPaintTransform.html">applyPaintTransform</a>
+</li>
+      <li>attach
+</li>
+      <li>attachChildren
+</li>
+      <li><a href="object/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a>
+</li>
+      <li><a href="object/RenderObject/debugDescribeChildren.html">debugDescribeChildren</a>
+</li>
+      <li><a href="object/RenderObject/debugDescribeSettings.html">debugDescribeSettings</a>
+</li>
+      <li><a href="object/RenderObject/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a>
+</li>
+      <li><a href="object/RenderObject/debugPaint.html">debugPaint</a>
+</li>
+      <li>detach
+</li>
+      <li>detachChildren
+</li>
+      <li><a href="object/RenderObject/dropChild.html">dropChild</a>
+</li>
+      <li><a href="object/RenderObject/handleEvent.html">handleEvent</a>
+</li>
+      <li><a href="object/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a>
+</li>
+      <li><a href="object/RenderObject/layout.html">layout</a>
+</li>
+      <li><a href="object/RenderObject/layoutWithoutResize.html">layoutWithoutResize</a>
+</li>
+      <li><a href="object/RenderObject/markNeedsCompositingBitsUpdate.html">markNeedsCompositingBitsUpdate</a>
+</li>
+      <li><a href="object/RenderObject/markNeedsLayout.html">markNeedsLayout</a>
+</li>
+      <li><a href="object/RenderObject/markNeedsPaint.html">markNeedsPaint</a>
+</li>
+      <li><a href="object/RenderObject/paint.html">paint</a>
+</li>
+      <li><a href="object/RenderObject/performLayout.html">performLayout</a>
+</li>
+      <li><a href="object/RenderObject/performResize.html">performResize</a>
+</li>
+      <li>redepthChild
+</li>
+      <li>redepthChildren
+</li>
+      <li><a href="object/RenderObject/rotate.html">rotate</a>
+</li>
+      <li><a href="object/RenderObject/scheduleInitialLayout.html">scheduleInitialLayout</a>
+</li>
+      <li><a href="object/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a>
+</li>
+      <li><a href="object/RenderObject/setupParentData.html">setupParentData</a>
+</li>
+      <li><a href="object/RenderObject/toString.html">toString</a>
+</li>
+      <li><a href="object/RenderObject/toStringName.html">toStringName</a>
+</li>
+      <li><a href="object/RenderObject/updateCompositingBits.html">updateCompositingBits</a>
+</li>
+      <li><a href="object/RenderObject/visitChildren.html">visitChildren</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

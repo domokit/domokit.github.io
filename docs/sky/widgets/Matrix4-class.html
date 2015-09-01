@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matrix4 class - widgets library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the Matrix4 class from the widgets library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="widgets/widgets-library.html">widgets</a></li>
+                  <li class="self-crumb">Matrix4</li>
+              </ol>
+              <div class="self-name">Matrix4</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="widgets/widgets-library.html">widgets</a></li>
+              <li class="self-crumb">Matrix4</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> Matrix4
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="widgets/Matrix4-class.html#static-methods">Static Methods</a></li>
+              <li><a href="widgets/Matrix4-class.html#instance-properties">Properties</a></li>
+              <li><a href="widgets/Matrix4-class.html#constructors">Constructors</a></li>
+              <li><a href="widgets/Matrix4-class.html#operators">Operators</a></li>
+              <li><a href="widgets/Matrix4-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="widgets/widgets-library.html">widgets</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
+      <li><a href="widgets/bold.html">bold</a></li>
+      <li><a href="widgets/edges.html">edges</a></li>
+      <li><a href="widgets/lineThrough.html">lineThrough</a></li>
+      <li><a href="widgets/normal.html">normal</a></li>
+      <li><a href="widgets/overline.html">overline</a></li>
+      <li><a href="widgets/underline.html">underline</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#typedefs">Typedefs</a></li>
+      <li><a href="widgets/Builder.html">Builder</a></li>
+      <li><a href="widgets/BuilderFunction.html">BuilderFunction</a></li>
+      <li><a href="widgets/DatePickerModeChanged.html">DatePickerModeChanged</a></li>
+      <li><a href="widgets/DatePickerValueChanged.html">DatePickerValueChanged</a></li>
+      <li><a href="widgets/DialogBuilder.html">DialogBuilder</a></li>
+      <li><a href="widgets/DismissedCallback.html">DismissedCallback</a></li>
+      <li><a href="widgets/DragTargetAccept.html">DragTargetAccept</a></li>
+      <li><a href="widgets/DragTargetBuilder.html">DragTargetBuilder</a></li>
+      <li><a href="widgets/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
+      <li><a href="widgets/DrawerDismissedCallback.html">DrawerDismissedCallback</a></li>
+      <li><a href="widgets/EventListener.html">EventListener</a></li>
+      <li><a href="widgets/FocusChanged.html">FocusChanged</a></li>
+      <li><a href="widgets/GestureEventListener.html">GestureEventListener</a></li>
+      <li><a href="widgets/GlobalKeyRemoveListener.html">GlobalKeyRemoveListener</a></li>
+      <li><a href="widgets/GlobalKeySyncListener.html">GlobalKeySyncListener</a></li>
+      <li><a href="widgets/IndexedBuilder.html">IndexedBuilder</a></li>
+      <li><a href="widgets/ItemBuilder.html">ItemBuilder</a></li>
+      <li><a href="widgets/LayoutChanged.html">LayoutChanged</a></li>
+      <li><a href="widgets/LayoutChangedCallback.html">LayoutChangedCallback</a></li>
+      <li><a href="widgets/ListBuilder.html">ListBuilder</a></li>
+      <li><a href="widgets/MimicReadyCallback.html">MimicReadyCallback</a></li>
+      <li><a href="widgets/OnPressedFunction.html">OnPressedFunction</a></li>
+      <li><a href="widgets/PageChangedCallback.html">PageChangedCallback</a></li>
+      <li><a href="widgets/PointerEventListener.html">PointerEventListener</a></li>
+      <li><a href="widgets/PopupMenuDismissedCallback.html">PopupMenuDismissedCallback</a></li>
+      <li><a href="widgets/RadioValueChanged.html">RadioValueChanged</a></li>
+      <li><a href="widgets/ResizedCallback.html">ResizedCallback</a></li>
+      <li><a href="widgets/RouteBuilder.html">RouteBuilder</a></li>
+      <li><a href="widgets/ScrollListener.html">ScrollListener</a></li>
+      <li><a href="widgets/SelectedIndexChanged.html">SelectedIndexChanged</a></li>
+      <li><a href="widgets/SnackBarDismissedCallback.html">SnackBarDismissedCallback</a></li>
+      <li><a href="widgets/ValueChanged.html">ValueChanged</a></li>
+      <li><a href="widgets/WidgetTreeWalker.html">WidgetTreeWalker</a></li>
+    
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#functions">Functions</a></li>
+      <li><a href="widgets/combineEventDispositions.html">combineEventDispositions</a></li>
+      <li><a href="widgets/debugDumpApp.html">debugDumpApp</a></li>
+      <li><a href="widgets/ensureWidgetIsVisible.html">ensureWidgetIsVisible</a></li>
+      <li><a href="widgets/enterLayoutCallbackBuilder.html">enterLayoutCallbackBuilder</a></li>
+      <li><a href="widgets/exitLayoutCallbackBuilder.html">exitLayoutCallbackBuilder</a></li>
+      <li><a href="widgets/findScrollableAncestor.html">findScrollableAncestor</a></li>
+      <li><a href="widgets/implicitlyAnimate.html">implicitlyAnimate</a></li>
+      <li><a href="widgets/runApp.html">runApp</a></li>
+      <li><a href="widgets/showDialog.html">showDialog</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
+      <li><a href="widgets/AnimationStatus-class.html">AnimationStatus</a></li>
+      <li><a href="widgets/BlockDirection-class.html">BlockDirection</a></li>
+      <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
+      <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
+      <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
+      <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
+      <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
+      <li><a href="widgets/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
+      <li><a href="widgets/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="widgets/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="widgets/IconThemeColor-class.html">IconThemeColor</a></li>
+      <li><a href="widgets/MaterialType-class.html">MaterialType</a></li>
+      <li><a href="widgets/ScaffoldSlots-class.html">ScaffoldSlots</a></li>
+      <li><a href="widgets/ScrollDirection-class.html">ScrollDirection</a></li>
+      <li><a href="widgets/Shape-class.html">Shape</a></li>
+      <li><a href="widgets/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="widgets/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="widgets/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="widgets/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="widgets/ThemeBrightness-class.html">ThemeBrightness</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#classes">Classes</a></li>
+      <li><a href="widgets/AbstractWidgetRoot-class.html">AbstractWidgetRoot</a></li>
+      <li><a href="widgets/Align-class.html">Align</a></li>
+      <li><a href="widgets/Anchor-class.html">Anchor</a></li>
+      <li><a href="widgets/AnimatedBoxConstraintsValue-class.html">AnimatedBoxConstraintsValue</a></li>
+      <li><a href="widgets/AnimatedBoxDecorationValue-class.html">AnimatedBoxDecorationValue</a></li>
+      <li><a href="widgets/AnimatedComponent-class.html">AnimatedComponent</a></li>
+      <li><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></li>
+      <li><a href="widgets/AnimatedEdgeDimsValue-class.html">AnimatedEdgeDimsValue</a></li>
+      <li><a href="widgets/AnimatedMatrix4Value-class.html">AnimatedMatrix4Value</a></li>
+      <li><a href="widgets/AnimationBehavior-class.html">AnimationBehavior</a></li>
+      <li><a href="widgets/App-class.html">App</a></li>
+      <li><a href="widgets/AppContainer-class.html">AppContainer</a></li>
+      <li><a href="widgets/AspectRatio-class.html">AspectRatio</a></li>
+      <li><a href="widgets/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="widgets/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a href="widgets/Baseline-class.html">Baseline</a></li>
+      <li><a href="widgets/Block-class.html">Block</a></li>
+      <li><a href="widgets/BlockBody-class.html">BlockBody</a></li>
+      <li><a href="widgets/Border-class.html">Border</a></li>
+      <li><a href="widgets/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="widgets/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="widgets/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="widgets/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="widgets/BuilderTransition-class.html">BuilderTransition</a></li>
+      <li><a href="widgets/ButtonBase-class.html">ButtonBase</a></li>
+      <li><a href="widgets/Card-class.html">Card</a></li>
+      <li><a href="widgets/Center-class.html">Center</a></li>
+      <li><a href="widgets/Checkbox-class.html">Checkbox</a></li>
+      <li><a href="widgets/CircularProgressIndicator-class.html">CircularProgressIndicator</a></li>
+      <li><a href="widgets/ClipOval-class.html">ClipOval</a></li>
+      <li><a href="widgets/ClipRect-class.html">ClipRect</a></li>
+      <li><a href="widgets/ClipRRect-class.html">ClipRRect</a></li>
+      <li><a href="widgets/Color-class.html">Color</a></li>
+      <li><a href="widgets/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="widgets/ColorTransition-class.html">ColorTransition</a></li>
+      <li><a href="widgets/Column-class.html">Column</a></li>
+      <li><a href="widgets/Component-class.html">Component</a></li>
+      <li><a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a></li>
+      <li><a href="widgets/Container-class.html">Container</a></li>
+      <li><a href="widgets/CustomPaint-class.html">CustomPaint</a></li>
+      <li><a href="widgets/DatePicker-class.html">DatePicker</a></li>
+      <li><a href="widgets/DatePickerHeader-class.html">DatePickerHeader</a></li>
+      <li><a href="widgets/DayPicker-class.html">DayPicker</a></li>
+      <li><a href="widgets/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
+      <li><a href="widgets/Dialog-class.html">Dialog</a></li>
+      <li><a href="widgets/DialogRoute-class.html">DialogRoute</a></li>
+      <li><a href="widgets/DialogTransition-class.html">DialogTransition</a></li>
+      <li><a href="widgets/Dismissable-class.html">Dismissable</a></li>
+      <li><a href="widgets/DragController-class.html">DragController</a></li>
+      <li><a href="widgets/DragTarget-class.html">DragTarget</a></li>
+      <li><a href="widgets/Drawer-class.html">Drawer</a></li>
+      <li><a href="widgets/DrawerDivider-class.html">DrawerDivider</a></li>
+      <li><a href="widgets/DrawerHeader-class.html">DrawerHeader</a></li>
+      <li><a href="widgets/DrawerItem-class.html">DrawerItem</a></li>
+      <li><a href="widgets/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="widgets/FadeTransition-class.html">FadeTransition</a></li>
+      <li><a href="widgets/FlatButton-class.html">FlatButton</a></li>
+      <li><a href="widgets/Flex-class.html">Flex</a></li>
+      <li><a href="widgets/Flexible-class.html">Flexible</a></li>
+      <li><a href="widgets/FloatingActionButton-class.html">FloatingActionButton</a></li>
+      <li><a href="widgets/Focus-class.html">Focus</a></li>
+      <li><a href="widgets/GestureDetector-class.html">GestureDetector</a></li>
+      <li><a href="widgets/GlobalKey-class.html">GlobalKey</a></li>
+      <li><a href="widgets/GlobalKeyWatcher-class.html">GlobalKeyWatcher</a></li>
+      <li><a href="widgets/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
+      <li><a href="widgets/Grid-class.html">Grid</a></li>
+      <li><a href="widgets/HistoryEntry-class.html">HistoryEntry</a></li>
+      <li><a href="widgets/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
+      <li><a href="widgets/Icon-class.html">Icon</a></li>
+      <li><a href="widgets/IconButton-class.html">IconButton</a></li>
+      <li><a href="widgets/IconTheme-class.html">IconTheme</a></li>
+      <li><a href="widgets/IconThemeData-class.html">IconThemeData</a></li>
+      <li><a href="widgets/IgnorePointer-class.html">IgnorePointer</a></li>
+      <li><a href="widgets/Image-class.html">Image</a></li>
+      <li><a href="widgets/ImageListener-class.html">ImageListener</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedConstraintsBehavior-class.html">ImplicitlyAnimatedConstraintsBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedDecorationBehavior-class.html">ImplicitlyAnimatedDecorationBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedFieldBehavior-class.html">ImplicitlyAnimatedFieldBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedHeightBehavior-class.html">ImplicitlyAnimatedHeightBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedMarginBehavior-class.html">ImplicitlyAnimatedMarginBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedPaddingBehavior-class.html">ImplicitlyAnimatedPaddingBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedTransformBehavior-class.html">ImplicitlyAnimatedTransformBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedValue-class.html">ImplicitlyAnimatedValue</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedWidthBehavior-class.html">ImplicitlyAnimatedWidthBehavior</a></li>
+      <li><a href="widgets/Inherited-class.html">Inherited</a></li>
+      <li><a href="widgets/InkSplash-class.html">InkSplash</a></li>
+      <li><a href="widgets/InkWell-class.html">InkWell</a></li>
+      <li><a href="widgets/Key-class.html">Key</a></li>
+      <li><a href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
+      <li><a href="widgets/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></li>
+      <li><a href="widgets/LeafRenderObjectWrapper-class.html">LeafRenderObjectWrapper</a></li>
+      <li><a href="widgets/LinearProgressIndicator-class.html">LinearProgressIndicator</a></li>
+      <li><a href="widgets/Listener-class.html">Listener</a></li>
+      <li><a href="widgets/Material-class.html">Material</a></li>
+      <li><a href="widgets/MaterialButton-class.html">MaterialButton</a></li>
+      <li><a href="widgets/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="widgets/Mimic-class.html">Mimic</a></li>
+      <li><a href="widgets/Mimicable-class.html">Mimicable</a></li>
+      <li><a href="widgets/MimicOverlay-class.html">MimicOverlay</a></li>
+      <li><a href="widgets/MixedViewport-class.html">MixedViewport</a></li>
+      <li><a href="widgets/MixedViewportLayoutState-class.html">MixedViewportLayoutState</a></li>
+      <li><a href="widgets/ModalOverlay-class.html">ModalOverlay</a></li>
+      <li><a href="widgets/MonthPicker-class.html">MonthPicker</a></li>
+      <li><a href="widgets/MultiChildRenderObjectWrapper-class.html">MultiChildRenderObjectWrapper</a></li>
+      <li><a href="widgets/NavigationState-class.html">NavigationState</a></li>
+      <li><a href="widgets/Navigator-class.html">Navigator</a></li>
+      <li><a href="widgets/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="widgets/ObjectKey-class.html">ObjectKey</a></li>
+      <li><a href="widgets/Offset-class.html">Offset</a></li>
+      <li><a href="widgets/OneChildRenderObjectWrapper-class.html">OneChildRenderObjectWrapper</a></li>
+      <li><a href="widgets/Opacity-class.html">Opacity</a></li>
+      <li><a href="widgets/Padding-class.html">Padding</a></li>
+      <li><a href="widgets/PageableList-class.html">PageableList</a></li>
+      <li><a href="widgets/Paint-class.html">Paint</a></li>
+      <li><a href="widgets/Paragraph-class.html">Paragraph</a></li>
+      <li><a href="widgets/ParentDataNode-class.html">ParentDataNode</a></li>
+      <li><a href="widgets/Path-class.html">Path</a></li>
+      <li><a href="widgets/Point-class.html">Point</a></li>
+      <li><a href="widgets/PopupMenu-class.html">PopupMenu</a></li>
+      <li><a href="widgets/PopupMenuItem-class.html">PopupMenuItem</a></li>
+      <li><a href="widgets/Positioned-class.html">Positioned</a></li>
+      <li><a href="widgets/ProgressIndicator-class.html">ProgressIndicator</a></li>
+      <li><a href="widgets/Radio-class.html">Radio</a></li>
+      <li><a href="widgets/RaisedButton-class.html">RaisedButton</a></li>
+      <li><a href="widgets/Rect-class.html">Rect</a></li>
+      <li><a href="widgets/RenderBoxToWidgetAdapter-class.html">RenderBoxToWidgetAdapter</a></li>
+      <li><a href="widgets/RenderInkWell-class.html">RenderInkWell</a></li>
+      <li><a href="widgets/RenderObjectWrapper-class.html">RenderObjectWrapper</a></li>
+      <li><a href="widgets/RenderScaffold-class.html">RenderScaffold</a></li>
+      <li><a href="widgets/RenderTabBar-class.html">RenderTabBar</a></li>
+      <li><a href="widgets/RenderViewWrapper-class.html">RenderViewWrapper</a></li>
+      <li><a href="widgets/Route-class.html">Route</a></li>
+      <li><a href="widgets/RouteBase-class.html">RouteBase</a></li>
+      <li><a href="widgets/RouteState-class.html">RouteState</a></li>
+      <li><a href="widgets/Row-class.html">Row</a></li>
+      <li><a href="widgets/Scaffold-class.html">Scaffold</a></li>
+      <li><a href="widgets/Scrollable-class.html">Scrollable</a></li>
+      <li><a href="widgets/ScrollableList-class.html">ScrollableList</a></li>
+      <li><a href="widgets/ScrollableMixedWidgetList-class.html">ScrollableMixedWidgetList</a></li>
+      <li><a href="widgets/ScrollableViewport-class.html">ScrollableViewport</a></li>
+      <li><a href="widgets/ScrollableWidgetList-class.html">ScrollableWidgetList</a></li>
+      <li><a href="widgets/ShrinkWrapHeight-class.html">ShrinkWrapHeight</a></li>
+      <li><a href="widgets/ShrinkWrapWidth-class.html">ShrinkWrapWidth</a></li>
+      <li><a href="widgets/Size-class.html">Size</a></li>
+      <li><a href="widgets/SizedBox-class.html">SizedBox</a></li>
+      <li><a href="widgets/SizeObserver-class.html">SizeObserver</a></li>
+      <li><a href="widgets/SlideTransition-class.html">SlideTransition</a></li>
+      <li><a href="widgets/SlideUpFadeTransition-class.html">SlideUpFadeTransition</a></li>
+      <li><a href="widgets/SnackBar-class.html">SnackBar</a></li>
+      <li><a href="widgets/SnackBarAction-class.html">SnackBarAction</a></li>
+      <li><a href="widgets/SquashTransition-class.html">SquashTransition</a></li>
+      <li><a href="widgets/Stack-class.html">Stack</a></li>
+      <li><a href="widgets/StatefulComponent-class.html">StatefulComponent</a></li>
+      <li><a href="widgets/StyledText-class.html">StyledText</a></li>
+      <li><a href="widgets/Switch-class.html">Switch</a></li>
+      <li><a href="widgets/Tab-class.html">Tab</a></li>
+      <li><a href="widgets/TabBar-class.html">TabBar</a></li>
+      <li><a href="widgets/TabBarParentData-class.html">TabBarParentData</a></li>
+      <li><a href="widgets/TabBarWrapper-class.html">TabBarWrapper</a></li>
+      <li><a href="widgets/TabLabel-class.html">TabLabel</a></li>
+      <li><a href="widgets/TabNavigator-class.html">TabNavigator</a></li>
+      <li><a href="widgets/TabNavigatorView-class.html">TabNavigatorView</a></li>
+      <li><a href="widgets/TagNode-class.html">TagNode</a></li>
+      <li><a href="widgets/Text-class.html">Text</a></li>
+      <li><a href="widgets/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="widgets/Theme-class.html">Theme</a></li>
+      <li><a href="widgets/ThemeData-class.html">ThemeData</a></li>
+      <li><a href="widgets/Title-class.html">Title</a></li>
+      <li><a href="widgets/ToolBar-class.html">ToolBar</a></li>
+      <li><a href="widgets/Transform-class.html">Transform</a></li>
+      <li><a href="widgets/TransitionBase-class.html">TransitionBase</a></li>
+      <li><a href="widgets/ValueKey-class.html">ValueKey</a></li>
+      <li><a href="widgets/Viewport-class.html">Viewport</a></li>
+      <li><a href="widgets/Widget-class.html">Widget</a></li>
+      <li><a href="widgets/WidgetSkyBinding-class.html">WidgetSkyBinding</a></li>
+      <li><a href="widgets/WidgetToRenderBoxAdapter-class.html">WidgetToRenderBoxAdapter</a></li>
+      <li><a href="widgets/YearPicker-class.html">YearPicker</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>4D Matrix.
+Values are stored in column major order.</p>
+    
+    </section>
+
+
+
+
+    <section class="summary" id="static-methods">
+        <h2>Static Methods</h2>
+        <dl class="callables">
+            <dt id="solve" class="callable">
+                <a href="widgets/Matrix4/solve.html"><span class="name ">solve</span></a><span class="signature">(<wbr><span class="parameter" id="solve-param-A"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">A</span></span>, <span class="parameter" id="solve-param-x"><span class="type-annotation">Vector4</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="solve-param-b"><span class="type-annotation">Vector4</span> <span class="parameter-name">b</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Solve <code>A</code> * <code>x</code> = <code>b</code>.</p>
+            </dd>
+            <dt id="solve2" class="callable">
+                <a href="widgets/Matrix4/solve2.html"><span class="name ">solve2</span></a><span class="signature">(<wbr><span class="parameter" id="solve2-param-A"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">A</span></span>, <span class="parameter" id="solve2-param-x"><span class="type-annotation">Vector2</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="solve2-param-b"><span class="type-annotation">Vector2</span> <span class="parameter-name">b</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Solve <code>A</code> * <code>x</code> = <code>b</code>.</p>
+            </dd>
+            <dt id="solve3" class="callable">
+                <a href="widgets/Matrix4/solve3.html"><span class="name ">solve3</span></a><span class="signature">(<wbr><span class="parameter" id="solve3-param-A"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">A</span></span>, <span class="parameter" id="solve3-param-x"><span class="type-annotation">Vector3</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="solve3-param-b"><span class="type-annotation">Vector3</span> <span class="parameter-name">b</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Solve <code>A</code> * <code>x</code> = <code>b</code>.</p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="dimension" class="property">
+                <span class="name"><a href="widgets/Matrix4/dimension.html">dimension</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>Dimension of the matrix.</p>
+            </dd>
+            <dt id="forward" class="property">
+                <span class="name"><a href="widgets/Matrix4/forward.html">forward</a></span>
+                <span class="signature">&#8594; Vector3</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="right" class="property">
+                <span class="name"><a href="widgets/Matrix4/right.html">right</a></span>
+                <span class="signature">&#8594; Vector3</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="row0" class="property">
+                <span class="name"><a href="widgets/Matrix4/row0.html">row0</a></span>
+                <span class="signature">&#8594; Vector4</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Returns row 0</p>
+            </dd>
+            <dt id="row1" class="property">
+                <span class="name"><a href="widgets/Matrix4/row1.html">row1</a></span>
+                <span class="signature">&#8594; Vector4</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Returns row 1</p>
+            </dd>
+            <dt id="row2" class="property">
+                <span class="name"><a href="widgets/Matrix4/row2.html">row2</a></span>
+                <span class="signature">&#8594; Vector4</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Returns row 2</p>
+            </dd>
+            <dt id="row3" class="property">
+                <span class="name"><a href="widgets/Matrix4/row3.html">row3</a></span>
+                <span class="signature">&#8594; Vector4</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Returns row 3</p>
+            </dd>
+            <dt id="storage" class="property">
+                <span class="name"><a href="widgets/Matrix4/storage.html">storage</a></span>
+                <span class="signature">&#8594; Float32List</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="up" class="property">
+                <span class="name"><a href="widgets/Matrix4/up.html">up</a></span>
+                <span class="signature">&#8594; Vector3</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="Matrix4" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.html">Matrix4</a></span><span class="signature">(<span class="parameter" id="-param-arg0"><span class="type-annotation">double</span> <span class="parameter-name">arg0</span></span>, <span class="parameter" id="-param-arg1"><span class="type-annotation">double</span> <span class="parameter-name">arg1</span></span>, <span class="parameter" id="-param-arg2"><span class="type-annotation">double</span> <span class="parameter-name">arg2</span></span>, <span class="parameter" id="-param-arg3"><span class="type-annotation">double</span> <span class="parameter-name">arg3</span></span>, <span class="parameter" id="-param-arg4"><span class="type-annotation">double</span> <span class="parameter-name">arg4</span></span>, <span class="parameter" id="-param-arg5"><span class="type-annotation">double</span> <span class="parameter-name">arg5</span></span>, <span class="parameter" id="-param-arg6"><span class="type-annotation">double</span> <span class="parameter-name">arg6</span></span>, <span class="parameter" id="-param-arg7"><span class="type-annotation">double</span> <span class="parameter-name">arg7</span></span>, <span class="parameter" id="-param-arg8"><span class="type-annotation">double</span> <span class="parameter-name">arg8</span></span>, <span class="parameter" id="-param-arg9"><span class="type-annotation">double</span> <span class="parameter-name">arg9</span></span>, <span class="parameter" id="-param-arg10"><span class="type-annotation">double</span> <span class="parameter-name">arg10</span></span>, <span class="parameter" id="-param-arg11"><span class="type-annotation">double</span> <span class="parameter-name">arg11</span></span>, <span class="parameter" id="-param-arg12"><span class="type-annotation">double</span> <span class="parameter-name">arg12</span></span>, <span class="parameter" id="-param-arg13"><span class="type-annotation">double</span> <span class="parameter-name">arg13</span></span>, <span class="parameter" id="-param-arg14"><span class="type-annotation">double</span> <span class="parameter-name">arg14</span></span>, <span class="parameter" id="-param-arg15"><span class="type-annotation">double</span> <span class="parameter-name">arg15</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Constructs a new mat4.</p>
+            </dd>
+            <dt id="Matrix4.columns" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.columns.html">Matrix4.columns</a></span><span class="signature">(<span class="parameter" id="columns-param-arg0"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg0</span></span>, <span class="parameter" id="columns-param-arg1"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg1</span></span>, <span class="parameter" id="columns-param-arg2"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg2</span></span>, <span class="parameter" id="columns-param-arg3"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg3</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Constructs a new mat4 from columns.</p>
+            </dd>
+            <dt id="Matrix4.copy" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.copy.html">Matrix4.copy</a></span><span class="signature">(<span class="parameter" id="copy-param-other"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">other</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Copies values from <code>other</code>.</p>
+            </dd>
+            <dt id="Matrix4.diagonal3" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.diagonal3.html">Matrix4.diagonal3</a></span><span class="signature">(<span class="parameter" id="diagonal3-param-scale_"><span class="type-annotation">Vector3</span> <span class="parameter-name">scale_</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Scale matrix.</p>
+            </dd>
+            <dt id="Matrix4.diagonal3Values" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.diagonal3Values.html">Matrix4.diagonal3Values</a></span><span class="signature">(<span class="parameter" id="diagonal3Values-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="diagonal3Values-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>, <span class="parameter" id="diagonal3Values-param-z"><span class="type-annotation">double</span> <span class="parameter-name">z</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Scale matrix.</p>
+            </dd>
+            <dt id="Matrix4.fromBuffer" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.fromBuffer.html">Matrix4.fromBuffer</a></span><span class="signature">(<span class="parameter" id="fromBuffer-param-buffer"><span class="type-annotation">ByteBuffer</span> <span class="parameter-name">buffer</span></span>, <span class="parameter" id="fromBuffer-param-offset"><span class="type-annotation">int</span> <span class="parameter-name">offset</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Constructs Matrix4 with a <a href="rendering/Matrix4/storage.html">storage</a> that views given <code>buffer</code> starting at <code>offset</code>.
+<code>offset</code> has to be multiple of <code>Float32List.BYTES_PER_ELEMENT</code>.</p>
+            </dd>
+            <dt id="Matrix4.fromFloat32List" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.fromFloat32List.html">Matrix4.fromFloat32List</a></span><span class="signature">(<span class="parameter" id="fromFloat32List-param-storage"><span class="type-annotation">Float32List</span> <span class="parameter-name">storage</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Constructs Matrix4 with given Float32List as <a href="rendering/Matrix4/storage.html">storage</a>.</p>
+            </dd>
+            <dt id="Matrix4.identity" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.identity.html">Matrix4.identity</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p>Identity matrix.</p>
+            </dd>
+            <dt id="Matrix4.outer" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.outer.html">Matrix4.outer</a></span><span class="signature">(<span class="parameter" id="outer-param-u"><span class="type-annotation">Vector4</span> <span class="parameter-name">u</span></span>, <span class="parameter" id="outer-param-v"><span class="type-annotation">Vector4</span> <span class="parameter-name">v</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Outer product of <code>u</code> and <code>v</code>.</p>
+            </dd>
+            <dt id="Matrix4.rotationX" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.rotationX.html">Matrix4.rotationX</a></span><span class="signature">(<span class="parameter" id="rotationX-param-radians_"><span class="type-annotation">double</span> <span class="parameter-name">radians_</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Rotation of <code>radians_</code> around X.</p>
+            </dd>
+            <dt id="Matrix4.rotationY" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.rotationY.html">Matrix4.rotationY</a></span><span class="signature">(<span class="parameter" id="rotationY-param-radians_"><span class="type-annotation">double</span> <span class="parameter-name">radians_</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Rotation of <code>radians_</code> around Y.</p>
+            </dd>
+            <dt id="Matrix4.rotationZ" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.rotationZ.html">Matrix4.rotationZ</a></span><span class="signature">(<span class="parameter" id="rotationZ-param-radians_"><span class="type-annotation">double</span> <span class="parameter-name">radians_</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Rotation of <code>radians_</code> around Z.</p>
+            </dd>
+            <dt id="Matrix4.translation" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.translation.html">Matrix4.translation</a></span><span class="signature">(<span class="parameter" id="translation-param-translation"><span class="type-annotation">Vector3</span> <span class="parameter-name">translation</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Translation matrix.</p>
+            </dd>
+            <dt id="Matrix4.translationValues" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.translationValues.html">Matrix4.translationValues</a></span><span class="signature">(<span class="parameter" id="translationValues-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="translationValues-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>, <span class="parameter" id="translationValues-param-z"><span class="type-annotation">double</span> <span class="parameter-name">z</span></span>)</span>
+            </dt>
+            <dd>
+                <p>Translation matrix.</p>
+            </dd>
+            <dt id="Matrix4.zero" class="callable">
+                <span class="name"><a href="widgets/Matrix4/Matrix4.zero.html">Matrix4.zero</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p>Zero matrix.</p>
+            </dd>
+        </dl>
+      </section>
+
+      <section class="summary" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator *" class="callable">
+                  <a href="widgets/Matrix4/operator_multiply.html"><span class="name ">operator *</span></a><span class="signature">(<wbr><span class="parameter" id="*-param-arg"><span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a new vector or matrix by multiplying <code>this</code> with <code>arg</code>.</p>
+              </dd>
+              <dt id="operator +" class="callable">
+                  <a href="widgets/Matrix4/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns new matrix after component wise <code>this</code> + <code>arg</code></p>
+              </dd>
+              <dt id="operator -" class="callable">
+                  <a href="widgets/Matrix4/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns new matrix after component wise <code>this</code> - <code>arg</code></p>
+              </dd>
+              <dt id="operator unary-" class="callable">
+                  <a href="widgets/Matrix4/operator_unary_minus.html"><span class="name ">operator unary-</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns new matrix -this</p>
+              </dd>
+              <dt id="operator []" class="callable">
+                  <a href="widgets/Matrix4/operator_get.html"><span class="name ">operator []</span></a><span class="signature">(<wbr><span class="parameter" id="[]-param-i"><span class="type-annotation">int</span> <span class="parameter-name">i</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="operator []=" class="callable">
+                  <a href="widgets/Matrix4/operator_put.html"><span class="name ">operator []=</span></a><span class="signature">(<wbr><span class="parameter" id="[]=-param-i"><span class="type-annotation">int</span> <span class="parameter-name">i</span></span>, <span class="parameter" id="[]=-param-v"><span class="type-annotation">double</span> <span class="parameter-name">v</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+          </dl>
+      </section>
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="absolute" class="callable">
+                  <a href="widgets/Matrix4/absolute.html"><span class="name ">absolute</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the component wise absolute value of this.</p>
+              </dd>
+              <dt id="absoluteError" class="callable">
+                  <a href="widgets/Matrix4/absoluteError.html"><span class="name ">absoluteError</span></a><span class="signature">(<wbr><span class="parameter" id="absoluteError-param-correct"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">correct</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns absolute error between <code>this</code> and <code>correct</code></p>
+              </dd>
+              <dt id="absoluteRotate" class="callable">
+                  <a href="widgets/Matrix4/absoluteRotate.html"><span class="name ">absoluteRotate</span></a><span class="signature">(<wbr><span class="parameter" id="absoluteRotate-param-arg"><span class="type-annotation">Vector3</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">Vector3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Rotates <code>arg</code> by the absolute rotation of <code>this</code>
+Returns <code>arg</code>.
+Primarily used by AABB transformation code.</p>
+              </dd>
+              <dt id="add" class="callable">
+                  <a href="widgets/Matrix4/add.html"><span class="name ">add</span></a><span class="signature">(<wbr><span class="parameter" id="add-param-o"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">o</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="clone" class="callable">
+                  <a href="widgets/Matrix4/clone.html"><span class="name ">clone</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Clone matrix.</p>
+              </dd>
+              <dt id="copyFromArray" class="callable">
+                  <a href="widgets/Matrix4/copyFromArray.html"><span class="name ">copyFromArray</span></a><span class="signature">(<wbr><span class="parameter" id="copyFromArray-param-array"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">array</span></span>, [<span class="parameter" id="copyFromArray-param-offset"><span class="type-annotation">int</span> <span class="parameter-name">offset</span> = <span class="default-value">0</span></span>])
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Copies elements from <code>array</code> into <code>this</code> starting at <code>offset</code>.</p>
+              </dd>
+              <dt id="copyInto" class="callable">
+                  <a href="widgets/Matrix4/copyInto.html"><span class="name ">copyInto</span></a><span class="signature">(<wbr><span class="parameter" id="copyInto-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Copy into <code>arg</code>.</p>
+              </dd>
+              <dt id="copyIntoArray" class="callable">
+                  <a href="widgets/Matrix4/copyIntoArray.html"><span class="name ">copyIntoArray</span></a><span class="signature">(<wbr><span class="parameter" id="copyIntoArray-param-array"><span class="type-annotation">List&lt;num&gt;</span> <span class="parameter-name">array</span></span>, [<span class="parameter" id="copyIntoArray-param-offset"><span class="type-annotation">int</span> <span class="parameter-name">offset</span> = <span class="default-value">0</span></span>])
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Copies <code>this</code> into <code>array</code> starting at <code>offset</code>.</p>
+              </dd>
+              <dt id="copyInverse" class="callable">
+                  <a href="widgets/Matrix4/copyInverse.html"><span class="name ">copyInverse</span></a><span class="signature">(<wbr><span class="parameter" id="copyInverse-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Set this matrix to be the inverse of <code>arg</code></p>
+              </dd>
+              <dt id="determinant" class="callable">
+                  <a href="widgets/Matrix4/determinant.html"><span class="name ">determinant</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the determinant of this matrix.</p>
+              </dd>
+              <dt id="dotColumn" class="callable">
+                  <a href="widgets/Matrix4/dotColumn.html"><span class="name ">dotColumn</span></a><span class="signature">(<wbr><span class="parameter" id="dotColumn-param-j"><span class="type-annotation">int</span> <span class="parameter-name">j</span></span>, <span class="parameter" id="dotColumn-param-v"><span class="type-annotation">Vector4</span> <span class="parameter-name">v</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the dot product of column <code>j</code> and <code>v</code>.</p>
+              </dd>
+              <dt id="dotRow" class="callable">
+                  <a href="widgets/Matrix4/dotRow.html"><span class="name ">dotRow</span></a><span class="signature">(<wbr><span class="parameter" id="dotRow-param-i"><span class="type-annotation">int</span> <span class="parameter-name">i</span></span>, <span class="parameter" id="dotRow-param-v"><span class="type-annotation">Vector4</span> <span class="parameter-name">v</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the dot product of row <code>i</code> and <code>v</code>.</p>
+              </dd>
+              <dt id="entry" class="callable">
+                  <a href="widgets/Matrix4/entry.html"><span class="name ">entry</span></a><span class="signature">(<wbr><span class="parameter" id="entry-param-row"><span class="type-annotation">int</span> <span class="parameter-name">row</span></span>, <span class="parameter" id="entry-param-col"><span class="type-annotation">int</span> <span class="parameter-name">col</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Value at <code>row</code>, <code>col</code>.</p>
+              </dd>
+              <dt id="getColumn" class="callable">
+                  <a href="widgets/Matrix4/getColumn.html"><span class="name ">getColumn</span></a><span class="signature">(<wbr><span class="parameter" id="getColumn-param-column"><span class="type-annotation">int</span> <span class="parameter-name">column</span></span>)
+                      &#8594;
+                      <span class="returntype">Vector4</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Gets the <code>column</code> of the matrix</p>
+              </dd>
+              <dt id="getRotation" class="callable">
+                  <a href="widgets/Matrix4/getRotation.html"><span class="name ">getRotation</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">Matrix3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the rotation matrix from this homogeneous transformation matrix.</p>
+              </dd>
+              <dt id="getRow" class="callable">
+                  <a href="widgets/Matrix4/getRow.html"><span class="name ">getRow</span></a><span class="signature">(<wbr><span class="parameter" id="getRow-param-row"><span class="type-annotation">int</span> <span class="parameter-name">row</span></span>)
+                      &#8594;
+                      <span class="returntype">Vector4</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Gets the <code>row</code> of the matrix</p>
+              </dd>
+              <dt id="getTranslation" class="callable">
+                  <a href="widgets/Matrix4/getTranslation.html"><span class="name ">getTranslation</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">Vector3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the translation vector from this homogeneous transformation matrix.</p>
+              </dd>
+              <dt id="index" class="callable">
+                  <a href="widgets/Matrix4/index.html"><span class="name ">index</span></a><span class="signature">(<wbr><span class="parameter" id="index-param-row"><span class="type-annotation">int</span> <span class="parameter-name">row</span></span>, <span class="parameter" id="index-param-col"><span class="type-annotation">int</span> <span class="parameter-name">col</span></span>)
+                      &#8594;
+                      <span class="returntype">int</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Return index in storage for <code>row</code>, <code>col</code> value.</p>
+              </dd>
+              <dt id="infinityNorm" class="callable">
+                  <a href="widgets/Matrix4/infinityNorm.html"><span class="name ">infinityNorm</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns infinity norm of the matrix. Used for numerical analysis.</p>
+              </dd>
+              <dt id="invert" class="callable">
+                  <a href="widgets/Matrix4/invert.html"><span class="name ">invert</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="invertRotation" class="callable">
+                  <a href="widgets/Matrix4/invertRotation.html"><span class="name ">invertRotation</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="multiply" class="callable">
+                  <a href="widgets/Matrix4/multiply.html"><span class="name ">multiply</span></a><span class="signature">(<wbr><span class="parameter" id="multiply-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="multiplyTranspose" class="callable">
+                  <a href="widgets/Matrix4/multiplyTranspose.html"><span class="name ">multiplyTranspose</span></a><span class="signature">(<wbr><span class="parameter" id="multiplyTranspose-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="negate" class="callable">
+                  <a href="widgets/Matrix4/negate.html"><span class="name ">negate</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="relativeError" class="callable">
+                  <a href="widgets/Matrix4/relativeError.html"><span class="name ">relativeError</span></a><span class="signature">(<wbr><span class="parameter" id="relativeError-param-correct"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">correct</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns relative error between <code>this</code> and <code>correct</code></p>
+              </dd>
+              <dt id="rotate" class="callable">
+                  <a href="widgets/Matrix4/rotate.html"><span class="name ">rotate</span></a><span class="signature">(<wbr><span class="parameter" id="rotate-param-axis"><span class="type-annotation">Vector3</span> <span class="parameter-name">axis</span></span>, <span class="parameter" id="rotate-param-angle"><span class="type-annotation">double</span> <span class="parameter-name">angle</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Rotate this <code>angle</code> radians around <code>axis</code></p>
+              </dd>
+              <dt id="rotate3" class="callable">
+                  <a href="widgets/Matrix4/rotate3.html"><span class="name ">rotate3</span></a><span class="signature">(<wbr><span class="parameter" id="rotate3-param-arg"><span class="type-annotation">Vector3</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">Vector3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="rotated3" class="callable">
+                  <a href="widgets/Matrix4/rotated3.html"><span class="name ">rotated3</span></a><span class="signature">(<wbr><span class="parameter" id="rotated3-param-arg"><span class="type-annotation">Vector3</span> <span class="parameter-name">arg</span></span>, [<span class="parameter" id="rotated3-param-out"><span class="type-annotation">Vector3</span> <span class="parameter-name">out</span> = <span class="default-value">null</span></span>])
+                      &#8594;
+                      <span class="returntype">Vector3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="rotateX" class="callable">
+                  <a href="widgets/Matrix4/rotateX.html"><span class="name ">rotateX</span></a><span class="signature">(<wbr><span class="parameter" id="rotateX-param-angle"><span class="type-annotation">double</span> <span class="parameter-name">angle</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Rotate this <code>angle</code> radians around X</p>
+              </dd>
+              <dt id="rotateY" class="callable">
+                  <a href="widgets/Matrix4/rotateY.html"><span class="name ">rotateY</span></a><span class="signature">(<wbr><span class="parameter" id="rotateY-param-angle"><span class="type-annotation">double</span> <span class="parameter-name">angle</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Rotate this matrix <code>angle</code> radians around Y</p>
+              </dd>
+              <dt id="rotateZ" class="callable">
+                  <a href="widgets/Matrix4/rotateZ.html"><span class="name ">rotateZ</span></a><span class="signature">(<wbr><span class="parameter" id="rotateZ-param-angle"><span class="type-annotation">double</span> <span class="parameter-name">angle</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Rotate this matrix <code>angle</code> radians around Z</p>
+              </dd>
+              <dt id="scale" class="callable">
+                  <a href="widgets/Matrix4/scale.html"><span class="name ">scale</span></a><span class="signature">(<wbr><span class="parameter" id="scale-param-x"><span class="parameter-name">x</span></span>, [<span class="parameter" id="scale-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span> = <span class="default-value">null</span></span>, <span class="parameter" id="scale-param-z"><span class="type-annotation">double</span> <span class="parameter-name">z</span> = <span class="default-value">null</span></span>])
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Scale this matrix by a <code>Vector3</code>, <code>Vector4</code>, or x,y,z</p>
+              </dd>
+              <dt id="scaleAdjoint" class="callable">
+                  <a href="widgets/Matrix4/scaleAdjoint.html"><span class="name ">scaleAdjoint</span></a><span class="signature">(<wbr><span class="parameter" id="scaleAdjoint-param-scale"><span class="type-annotation">double</span> <span class="parameter-name">scale</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Converts into Adjugate matrix and scales by <code>scale</code></p>
+              </dd>
+              <dt id="setColumn" class="callable">
+                  <a href="widgets/Matrix4/setColumn.html"><span class="name ">setColumn</span></a><span class="signature">(<wbr><span class="parameter" id="setColumn-param-column"><span class="type-annotation">int</span> <span class="parameter-name">column</span></span>, <span class="parameter" id="setColumn-param-arg"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Assigns the <code>column</code> of the matrix <code>arg</code></p>
+              </dd>
+              <dt id="setColumns" class="callable">
+                  <a href="widgets/Matrix4/setColumns.html"><span class="name ">setColumns</span></a><span class="signature">(<wbr><span class="parameter" id="setColumns-param-arg0"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg0</span></span>, <span class="parameter" id="setColumns-param-arg1"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg1</span></span>, <span class="parameter" id="setColumns-param-arg2"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg2</span></span>, <span class="parameter" id="setColumns-param-arg3"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg3</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the entire matrix to the column values.</p>
+              </dd>
+              <dt id="setDiagonal" class="callable">
+                  <a href="widgets/Matrix4/setDiagonal.html"><span class="name ">setDiagonal</span></a><span class="signature">(<wbr><span class="parameter" id="setDiagonal-param-arg"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the diagonal of the matrix to be <code>arg</code>.</p>
+              </dd>
+              <dt id="setEntry" class="callable">
+                  <a href="widgets/Matrix4/setEntry.html"><span class="name ">setEntry</span></a><span class="signature">(<wbr><span class="parameter" id="setEntry-param-row"><span class="type-annotation">int</span> <span class="parameter-name">row</span></span>, <span class="parameter" id="setEntry-param-col"><span class="type-annotation">int</span> <span class="parameter-name">col</span></span>, <span class="parameter" id="setEntry-param-v"><span class="type-annotation">double</span> <span class="parameter-name">v</span></span>)
+                      &#8594;
+                      <span class="returntype">dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Set value at <code>row</code>, <code>col</code> to be <code>v</code>.</p>
+              </dd>
+              <dt id="setFrom" class="callable">
+                  <a href="widgets/Matrix4/setFrom.html"><span class="name ">setFrom</span></a><span class="signature">(<wbr><span class="parameter" id="setFrom-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the entire matrix to the matrix in <code>arg</code>.</p>
+              </dd>
+              <dt id="setFromTranslationRotation" class="callable">
+                  <a href="widgets/Matrix4/setFromTranslationRotation.html"><span class="name ">setFromTranslationRotation</span></a><span class="signature">(<wbr><span class="parameter" id="setFromTranslationRotation-param-arg0"><span class="type-annotation">Vector3</span> <span class="parameter-name">arg0</span></span>, <span class="parameter" id="setFromTranslationRotation-param-arg1"><span class="type-annotation">Quaternion</span> <span class="parameter-name">arg1</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the matrix from translation <code>arg0</code> and rotation <code>arg1</code>.</p>
+              </dd>
+              <dt id="setIdentity" class="callable">
+                  <a href="widgets/Matrix4/setIdentity.html"><span class="name ">setIdentity</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Makes <code>this</code> into the identity matrix.</p>
+              </dd>
+              <dt id="setRotation" class="callable">
+                  <a href="widgets/Matrix4/setRotation.html"><span class="name ">setRotation</span></a><span class="signature">(<wbr><span class="parameter" id="setRotation-param-r"><span class="type-annotation">Matrix3</span> <span class="parameter-name">r</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the rotation matrix in this homogeneous transformation matrix.</p>
+              </dd>
+              <dt id="setRotationX" class="callable">
+                  <a href="widgets/Matrix4/setRotationX.html"><span class="name ">setRotationX</span></a><span class="signature">(<wbr><span class="parameter" id="setRotationX-param-radians"><span class="type-annotation">double</span> <span class="parameter-name">radians</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the upper 3x3 to a rotation of <code>radians</code> around X</p>
+              </dd>
+              <dt id="setRotationY" class="callable">
+                  <a href="widgets/Matrix4/setRotationY.html"><span class="name ">setRotationY</span></a><span class="signature">(<wbr><span class="parameter" id="setRotationY-param-radians"><span class="type-annotation">double</span> <span class="parameter-name">radians</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the upper 3x3 to a rotation of <code>radians</code> around Y</p>
+              </dd>
+              <dt id="setRotationZ" class="callable">
+                  <a href="widgets/Matrix4/setRotationZ.html"><span class="name ">setRotationZ</span></a><span class="signature">(<wbr><span class="parameter" id="setRotationZ-param-radians"><span class="type-annotation">double</span> <span class="parameter-name">radians</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the upper 3x3 to a rotation of <code>radians</code> around Z</p>
+              </dd>
+              <dt id="setRow" class="callable">
+                  <a href="widgets/Matrix4/setRow.html"><span class="name ">setRow</span></a><span class="signature">(<wbr><span class="parameter" id="setRow-param-row"><span class="type-annotation">int</span> <span class="parameter-name">row</span></span>, <span class="parameter" id="setRow-param-arg"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Assigns the <code>row</code> of the matrix <code>arg</code></p>
+              </dd>
+              <dt id="setTranslation" class="callable">
+                  <a href="widgets/Matrix4/setTranslation.html"><span class="name ">setTranslation</span></a><span class="signature">(<wbr><span class="parameter" id="setTranslation-param-T"><span class="type-annotation">Vector3</span> <span class="parameter-name">T</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the translation vector in this homogeneous transformation matrix.</p>
+              </dd>
+              <dt id="setTranslationRaw" class="callable">
+                  <a href="widgets/Matrix4/setTranslationRaw.html"><span class="name ">setTranslationRaw</span></a><span class="signature">(<wbr><span class="parameter" id="setTranslationRaw-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="setTranslationRaw-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>, <span class="parameter" id="setTranslationRaw-param-z"><span class="type-annotation">double</span> <span class="parameter-name">z</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the translation vector in this homogeneous transformation matrix.</p>
+              </dd>
+              <dt id="setUpper2x2" class="callable">
+                  <a href="widgets/Matrix4/setUpper2x2.html"><span class="name ">setUpper2x2</span></a><span class="signature">(<wbr><span class="parameter" id="setUpper2x2-param-arg"><span class="type-annotation">Matrix2</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the upper 2x2 of the matrix to be <code>arg</code>.</p>
+              </dd>
+              <dt id="setValues" class="callable">
+                  <a href="widgets/Matrix4/setValues.html"><span class="name ">setValues</span></a><span class="signature">(<wbr><span class="parameter" id="setValues-param-arg0"><span class="type-annotation">double</span> <span class="parameter-name">arg0</span></span>, <span class="parameter" id="setValues-param-arg1"><span class="type-annotation">double</span> <span class="parameter-name">arg1</span></span>, <span class="parameter" id="setValues-param-arg2"><span class="type-annotation">double</span> <span class="parameter-name">arg2</span></span>, <span class="parameter" id="setValues-param-arg3"><span class="type-annotation">double</span> <span class="parameter-name">arg3</span></span>, <span class="parameter" id="setValues-param-arg4"><span class="type-annotation">double</span> <span class="parameter-name">arg4</span></span>, <span class="parameter" id="setValues-param-arg5"><span class="type-annotation">double</span> <span class="parameter-name">arg5</span></span>, <span class="parameter" id="setValues-param-arg6"><span class="type-annotation">double</span> <span class="parameter-name">arg6</span></span>, <span class="parameter" id="setValues-param-arg7"><span class="type-annotation">double</span> <span class="parameter-name">arg7</span></span>, <span class="parameter" id="setValues-param-arg8"><span class="type-annotation">double</span> <span class="parameter-name">arg8</span></span>, <span class="parameter" id="setValues-param-arg9"><span class="type-annotation">double</span> <span class="parameter-name">arg9</span></span>, <span class="parameter" id="setValues-param-arg10"><span class="type-annotation">double</span> <span class="parameter-name">arg10</span></span>, <span class="parameter" id="setValues-param-arg11"><span class="type-annotation">double</span> <span class="parameter-name">arg11</span></span>, <span class="parameter" id="setValues-param-arg12"><span class="type-annotation">double</span> <span class="parameter-name">arg12</span></span>, <span class="parameter" id="setValues-param-arg13"><span class="type-annotation">double</span> <span class="parameter-name">arg13</span></span>, <span class="parameter" id="setValues-param-arg14"><span class="type-annotation">double</span> <span class="parameter-name">arg14</span></span>, <span class="parameter" id="setValues-param-arg15"><span class="type-annotation">double</span> <span class="parameter-name">arg15</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the matrix with specified values.</p>
+              </dd>
+              <dt id="setZero" class="callable">
+                  <a href="widgets/Matrix4/setZero.html"><span class="name ">setZero</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Zeros <code>this</code>.</p>
+              </dd>
+              <dt id="splatDiagonal" class="callable">
+                  <a href="widgets/Matrix4/splatDiagonal.html"><span class="name ">splatDiagonal</span></a><span class="signature">(<wbr><span class="parameter" id="splatDiagonal-param-arg"><span class="type-annotation">double</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Sets the diagonal to <code>arg</code>.</p>
+              </dd>
+              <dt id="sub" class="callable">
+                  <a href="widgets/Matrix4/sub.html"><span class="name ">sub</span></a><span class="signature">(<wbr><span class="parameter" id="sub-param-o"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">o</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <a href="widgets/Matrix4/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a printable string</p>
+              </dd>
+              <dt id="trace" class="callable">
+                  <a href="widgets/Matrix4/trace.html"><span class="name ">trace</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the trace of the matrix. The trace of a matrix is the sum of the
+diagonal entries.</p>
+              </dd>
+              <dt id="transform" class="callable">
+                  <a href="widgets/Matrix4/transform.html"><span class="name ">transform</span></a><span class="signature">(<wbr><span class="parameter" id="transform-param-arg"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">Vector4</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="transform3" class="callable">
+                  <a href="widgets/Matrix4/transform3.html"><span class="name ">transform3</span></a><span class="signature">(<wbr><span class="parameter" id="transform3-param-arg"><span class="type-annotation">Vector3</span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype">Vector3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="transformed" class="callable">
+                  <a href="widgets/Matrix4/transformed.html"><span class="name ">transformed</span></a><span class="signature">(<wbr><span class="parameter" id="transformed-param-arg"><span class="type-annotation">Vector4</span> <span class="parameter-name">arg</span></span>, [<span class="parameter" id="transformed-param-out"><span class="type-annotation">Vector4</span> <span class="parameter-name">out</span> = <span class="default-value">null</span></span>])
+                      &#8594;
+                      <span class="returntype">Vector4</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="transformed3" class="callable">
+                  <a href="widgets/Matrix4/transformed3.html"><span class="name ">transformed3</span></a><span class="signature">(<wbr><span class="parameter" id="transformed3-param-arg"><span class="type-annotation">Vector3</span> <span class="parameter-name">arg</span></span>, [<span class="parameter" id="transformed3-param-out"><span class="type-annotation">Vector3</span> <span class="parameter-name">out</span> = <span class="default-value">null</span></span>])
+                      &#8594;
+                      <span class="returntype">Vector3</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="translate" class="callable">
+                  <a href="widgets/Matrix4/translate.html"><span class="name ">translate</span></a><span class="signature">(<wbr><span class="parameter" id="translate-param-x"><span class="parameter-name">x</span></span>, [<span class="parameter" id="translate-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span> = <span class="default-value">0.0</span></span>, <span class="parameter" id="translate-param-z"><span class="type-annotation">double</span> <span class="parameter-name">z</span> = <span class="default-value">0.0</span></span>])
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Translate this matrix by a <code>Vector3</code>, <code>Vector4</code>, or x,y,z</p>
+              </dd>
+              <dt id="transpose" class="callable">
+                  <a href="widgets/Matrix4/transpose.html"><span class="name ">transpose</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="transposed" class="callable">
+                  <a href="widgets/Matrix4/transposed.html"><span class="name ">transposed</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns the tranpose of this.</p>
+              </dd>
+              <dt id="transposeMultiply" class="callable">
+                  <a href="widgets/Matrix4/transposeMultiply.html"><span class="name ">transposeMultiply</span></a><span class="signature">(<wbr><span class="parameter" id="transposeMultiply-param-arg"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="transposeRotation" class="callable">
+                  <a href="widgets/Matrix4/transposeRotation.html"><span class="name ">transposeRotation</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Matrix4-class.html">Matrix4</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Transposes just the upper 3x3 rotation matrix.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Matrix4</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li><a href="widgets/Matrix4/solve.html">solve</a></li>
+      <li><a href="widgets/Matrix4/solve2.html">solve2</a></li>
+      <li><a href="widgets/Matrix4/solve3.html">solve3</a></li>
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="widgets/Matrix4/dimension.html">dimension</a>
+</li>
+      <li><a href="widgets/Matrix4/forward.html">forward</a>
+</li>
+      <li><a href="widgets/Matrix4/right.html">right</a>
+</li>
+      <li><a href="widgets/Matrix4/row0.html">row0</a>
+</li>
+      <li><a href="widgets/Matrix4/row1.html">row1</a>
+</li>
+      <li><a href="widgets/Matrix4/row2.html">row2</a>
+</li>
+      <li><a href="widgets/Matrix4/row3.html">row3</a>
+</li>
+      <li><a href="widgets/Matrix4/storage.html">storage</a>
+</li>
+      <li><a href="widgets/Matrix4/up.html">up</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.html">Matrix4</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.columns.html">columns</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.copy.html">copy</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.diagonal3.html">diagonal3</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.diagonal3Values.html">diagonal3Values</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.fromBuffer.html">fromBuffer</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.fromFloat32List.html">fromFloat32List</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.identity.html">identity</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.outer.html">outer</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.rotationX.html">rotationX</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.rotationY.html">rotationY</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.rotationZ.html">rotationZ</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.translation.html">translation</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.translationValues.html">translationValues</a></li>
+      <li><a href="widgets/Matrix4/Matrix4.zero.html">zero</a></li>
+    
+      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li><a href="widgets/Matrix4/operator_multiply.html">operator *</a>
+</li>
+      <li><a href="widgets/Matrix4/operator_plus.html">operator +</a>
+</li>
+      <li><a href="widgets/Matrix4/operator_minus.html">operator -</a>
+</li>
+      <li><a href="widgets/Matrix4/operator_unary_minus.html">operator unary-</a>
+</li>
+      <li><a href="widgets/Matrix4/operator_get.html">operator []</a>
+</li>
+      <li><a href="widgets/Matrix4/operator_put.html">operator []=</a>
+</li>
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="widgets/Matrix4/absolute.html">absolute</a>
+</li>
+      <li><a href="widgets/Matrix4/absoluteError.html">absoluteError</a>
+</li>
+      <li><a href="widgets/Matrix4/absoluteRotate.html">absoluteRotate</a>
+</li>
+      <li><a href="widgets/Matrix4/add.html">add</a>
+</li>
+      <li><a href="widgets/Matrix4/clone.html">clone</a>
+</li>
+      <li><a href="widgets/Matrix4/copyFromArray.html">copyFromArray</a>
+</li>
+      <li><a href="widgets/Matrix4/copyInto.html">copyInto</a>
+</li>
+      <li><a href="widgets/Matrix4/copyIntoArray.html">copyIntoArray</a>
+</li>
+      <li><a href="widgets/Matrix4/copyInverse.html">copyInverse</a>
+</li>
+      <li><a href="widgets/Matrix4/determinant.html">determinant</a>
+</li>
+      <li><a href="widgets/Matrix4/dotColumn.html">dotColumn</a>
+</li>
+      <li><a href="widgets/Matrix4/dotRow.html">dotRow</a>
+</li>
+      <li><a href="widgets/Matrix4/entry.html">entry</a>
+</li>
+      <li><a href="widgets/Matrix4/getColumn.html">getColumn</a>
+</li>
+      <li><a href="widgets/Matrix4/getRotation.html">getRotation</a>
+</li>
+      <li><a href="widgets/Matrix4/getRow.html">getRow</a>
+</li>
+      <li><a href="widgets/Matrix4/getTranslation.html">getTranslation</a>
+</li>
+      <li><a href="widgets/Matrix4/index.html">index</a>
+</li>
+      <li><a href="widgets/Matrix4/infinityNorm.html">infinityNorm</a>
+</li>
+      <li><a href="widgets/Matrix4/invert.html">invert</a>
+</li>
+      <li><a href="widgets/Matrix4/invertRotation.html">invertRotation</a>
+</li>
+      <li><a href="widgets/Matrix4/multiply.html">multiply</a>
+</li>
+      <li><a href="widgets/Matrix4/multiplyTranspose.html">multiplyTranspose</a>
+</li>
+      <li><a href="widgets/Matrix4/negate.html">negate</a>
+</li>
+      <li><a href="widgets/Matrix4/relativeError.html">relativeError</a>
+</li>
+      <li><a href="widgets/Matrix4/rotate.html">rotate</a>
+</li>
+      <li><a href="widgets/Matrix4/rotate3.html">rotate3</a>
+</li>
+      <li><a href="widgets/Matrix4/rotated3.html">rotated3</a>
+</li>
+      <li><a href="widgets/Matrix4/rotateX.html">rotateX</a>
+</li>
+      <li><a href="widgets/Matrix4/rotateY.html">rotateY</a>
+</li>
+      <li><a href="widgets/Matrix4/rotateZ.html">rotateZ</a>
+</li>
+      <li><a href="widgets/Matrix4/scale.html">scale</a>
+</li>
+      <li><a href="widgets/Matrix4/scaleAdjoint.html">scaleAdjoint</a>
+</li>
+      <li><a href="widgets/Matrix4/setColumn.html">setColumn</a>
+</li>
+      <li><a href="widgets/Matrix4/setColumns.html">setColumns</a>
+</li>
+      <li><a href="widgets/Matrix4/setDiagonal.html">setDiagonal</a>
+</li>
+      <li><a href="widgets/Matrix4/setEntry.html">setEntry</a>
+</li>
+      <li><a href="widgets/Matrix4/setFrom.html">setFrom</a>
+</li>
+      <li><a href="widgets/Matrix4/setFromTranslationRotation.html">setFromTranslationRotation</a>
+</li>
+      <li><a href="widgets/Matrix4/setIdentity.html">setIdentity</a>
+</li>
+      <li><a href="widgets/Matrix4/setRotation.html">setRotation</a>
+</li>
+      <li><a href="widgets/Matrix4/setRotationX.html">setRotationX</a>
+</li>
+      <li><a href="widgets/Matrix4/setRotationY.html">setRotationY</a>
+</li>
+      <li><a href="widgets/Matrix4/setRotationZ.html">setRotationZ</a>
+</li>
+      <li><a href="widgets/Matrix4/setRow.html">setRow</a>
+</li>
+      <li><a href="widgets/Matrix4/setTranslation.html">setTranslation</a>
+</li>
+      <li><a href="widgets/Matrix4/setTranslationRaw.html">setTranslationRaw</a>
+</li>
+      <li><a href="widgets/Matrix4/setUpper2x2.html">setUpper2x2</a>
+</li>
+      <li><a href="widgets/Matrix4/setValues.html">setValues</a>
+</li>
+      <li><a href="widgets/Matrix4/setZero.html">setZero</a>
+</li>
+      <li><a href="widgets/Matrix4/splatDiagonal.html">splatDiagonal</a>
+</li>
+      <li><a href="widgets/Matrix4/sub.html">sub</a>
+</li>
+      <li><a href="widgets/Matrix4/toString.html">toString</a>
+</li>
+      <li><a href="widgets/Matrix4/trace.html">trace</a>
+</li>
+      <li><a href="widgets/Matrix4/transform.html">transform</a>
+</li>
+      <li><a href="widgets/Matrix4/transform3.html">transform3</a>
+</li>
+      <li><a href="widgets/Matrix4/transformed.html">transformed</a>
+</li>
+      <li><a href="widgets/Matrix4/transformed3.html">transformed3</a>
+</li>
+      <li><a href="widgets/Matrix4/translate.html">translate</a>
+</li>
+      <li><a href="widgets/Matrix4/transpose.html">transpose</a>
+</li>
+      <li><a href="widgets/Matrix4/transposed.html">transposed</a>
+</li>
+      <li><a href="widgets/Matrix4/transposeMultiply.html">transposeMultiply</a>
+</li>
+      <li><a href="widgets/Matrix4/transposeRotation.html">transposeRotation</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

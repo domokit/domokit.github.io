@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rect class - rendering library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the Rect class from the rendering library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="rendering/rendering-library.html">rendering</a></li>
+                  <li class="self-crumb">Rect</li>
+              </ol>
+              <div class="self-name">Rect</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="rendering/rendering-library.html">rendering</a></li>
+              <li class="self-crumb">Rect</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> Rect
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="rendering/Rect-class.html#instance-properties">Properties</a></li>
+              <li><a href="rendering/Rect-class.html#constructors">Constructors</a></li>
+              <li><a href="rendering/Rect-class.html#operators">Operators</a></li>
+              <li><a href="rendering/Rect-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="rendering/rendering-library.html">rendering</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
+      <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/lineThrough.html">lineThrough</a></li>
+      <li><a href="rendering/normal.html">normal</a></li>
+      <li><a href="rendering/overline.html">overline</a></li>
+      <li><a href="rendering/underline.html">underline</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
+      <li><a href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
+      <li><a href="rendering/DimensionCallback.html">DimensionCallback</a></li>
+      <li><a href="rendering/EventListener.html">EventListener</a></li>
+      <li><a href="rendering/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+      <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
+      <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
+    
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
+      <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/paintImage.html">paintImage</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
+      <li><a href="rendering/BlockDirection-class.html">BlockDirection</a></li>
+      <li><a href="rendering/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
+      <li><a href="rendering/EventDisposition-class.html">EventDisposition</a></li>
+      <li><a href="rendering/FlexAlignItems-class.html">FlexAlignItems</a></li>
+      <li><a href="rendering/FlexDirection-class.html">FlexDirection</a></li>
+      <li><a href="rendering/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
+      <li><a href="rendering/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="rendering/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="rendering/ImageFit-class.html">ImageFit</a></li>
+      <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
+      <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
+      <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
+      <li><a href="rendering/BlockParentData-class.html">BlockParentData</a></li>
+      <li><a href="rendering/Border-class.html">Border</a></li>
+      <li><a href="rendering/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="rendering/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="rendering/BoxHitTestEntry-class.html">BoxHitTestEntry</a></li>
+      <li><a href="rendering/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="rendering/BoxParentData-class.html">BoxParentData</a></li>
+      <li><a href="rendering/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="rendering/ClipPathLayer-class.html">ClipPathLayer</a></li>
+      <li><a href="rendering/ClipRectLayer-class.html">ClipRectLayer</a></li>
+      <li><a href="rendering/ClipRRectLayer-class.html">ClipRRectLayer</a></li>
+      <li><a href="rendering/Color-class.html">Color</a></li>
+      <li><a href="rendering/ColorFilterLayer-class.html">ColorFilterLayer</a></li>
+      <li><a href="rendering/Constraints-class.html">Constraints</a></li>
+      <li><a href="rendering/ContainerLayer-class.html">ContainerLayer</a></li>
+      <li><a href="rendering/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a></li>
+      <li><a href="rendering/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+      <li><a href="rendering/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="rendering/FlexParentData-class.html">FlexParentData</a></li>
+      <li><a href="rendering/Gradient-class.html">Gradient</a></li>
+      <li><a href="rendering/GridMetrics-class.html">GridMetrics</a></li>
+      <li><a href="rendering/GridParentData-class.html">GridParentData</a></li>
+      <li><a href="rendering/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="rendering/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="rendering/HitTestTarget-class.html">HitTestTarget</a></li>
+      <li><a href="rendering/Layer-class.html">Layer</a></li>
+      <li><a href="rendering/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="rendering/Offset-class.html">Offset</a></li>
+      <li><a href="rendering/OpacityLayer-class.html">OpacityLayer</a></li>
+      <li><a href="rendering/Paint-class.html">Paint</a></li>
+      <li><a href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></li>
+      <li><a href="rendering/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="rendering/ParentData-class.html">ParentData</a></li>
+      <li><a href="rendering/Path-class.html">Path</a></li>
+      <li><a href="rendering/PictureLayer-class.html">PictureLayer</a></li>
+      <li><a href="rendering/PlainTextSpan-class.html">PlainTextSpan</a></li>
+      <li><a href="rendering/Point-class.html">Point</a></li>
+      <li><a href="rendering/PointerState-class.html">PointerState</a></li>
+      <li><a href="rendering/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="rendering/Rect-class.html">Rect</a></li>
+      <li><a href="rendering/RenderAspectRatio-class.html">RenderAspectRatio</a></li>
+      <li><a href="rendering/RenderAutoLayout-class.html">RenderAutoLayout</a></li>
+      <li><a href="rendering/RenderBaseline-class.html">RenderBaseline</a></li>
+      <li><a href="rendering/RenderBlock-class.html">RenderBlock</a></li>
+      <li><a href="rendering/RenderBlockBase-class.html">RenderBlockBase</a></li>
+      <li><a href="rendering/RenderBlockViewport-class.html">RenderBlockViewport</a></li>
+      <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+      <li><a href="rendering/RenderBoxContainerDefaultsMixin-class.html">RenderBoxContainerDefaultsMixin</a></li>
+      <li><a href="rendering/RenderClipOval-class.html">RenderClipOval</a></li>
+      <li><a href="rendering/RenderClipRect-class.html">RenderClipRect</a></li>
+      <li><a href="rendering/RenderClipRRect-class.html">RenderClipRRect</a></li>
+      <li><a href="rendering/RenderColorFilter-class.html">RenderColorFilter</a></li>
+      <li><a href="rendering/RenderConstrainedBox-class.html">RenderConstrainedBox</a></li>
+      <li><a href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
+      <li><a href="rendering/RenderDecoratedBox-class.html">RenderDecoratedBox</a></li>
+      <li><a href="rendering/RenderFlex-class.html">RenderFlex</a></li>
+      <li><a href="rendering/RenderGrid-class.html">RenderGrid</a></li>
+      <li><a href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
+      <li><a href="rendering/RenderImage-class.html">RenderImage</a></li>
+      <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="rendering/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+      <li><a href="rendering/RenderOpacity-class.html">RenderOpacity</a></li>
+      <li><a href="rendering/RenderPadding-class.html">RenderPadding</a></li>
+      <li><a href="rendering/RenderParagraph-class.html">RenderParagraph</a></li>
+      <li><a href="rendering/RenderPositionedBox-class.html">RenderPositionedBox</a></li>
+      <li><a href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
+      <li><a href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
+      <li><a href="rendering/RenderShrinkWrapHeight-class.html">RenderShrinkWrapHeight</a></li>
+      <li><a href="rendering/RenderShrinkWrapWidth-class.html">RenderShrinkWrapWidth</a></li>
+      <li><a href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></li>
+      <li><a href="rendering/RenderStack-class.html">RenderStack</a></li>
+      <li><a href="rendering/RenderToggleable-class.html">RenderToggleable</a></li>
+      <li><a href="rendering/RenderTransform-class.html">RenderTransform</a></li>
+      <li><a href="rendering/RenderView-class.html">RenderView</a></li>
+      <li><a href="rendering/RenderViewport-class.html">RenderViewport</a></li>
+      <li><a href="rendering/Size-class.html">Size</a></li>
+      <li><a href="rendering/SkyBinding-class.html">SkyBinding</a></li>
+      <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
+      <li><a href="rendering/StyledTextSpan-class.html">StyledTextSpan</a></li>
+      <li><a href="rendering/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="rendering/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="rendering/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="rendering/TransformLayer-class.html">TransformLayer</a></li>
+      <li><a href="rendering/ViewConstraints-class.html">ViewConstraints</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>Holds 4 floating-point coordinates for a rectangle.</p>
+    
+    </section>
+
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="bottom" class="property">
+                <span class="name"><a href="rendering/Rect/bottom.html">bottom</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="bottomLeft" class="property">
+                <span class="name"><a href="rendering/Rect/bottomLeft.html">bottomLeft</a></span>
+                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="bottomRight" class="property">
+                <span class="name"><a href="rendering/Rect/bottomRight.html">bottomRight</a></span>
+                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="center" class="property">
+                <span class="name"><a href="rendering/Rect/center.html">center</a></span>
+                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="hashCode" class="property">
+                <span class="name"><a href="rendering/Rect/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="height" class="property">
+                <span class="name"><a href="rendering/Rect/height.html">height</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="left" class="property">
+                <span class="name"><a href="rendering/Rect/left.html">left</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="right" class="property">
+                <span class="name"><a href="rendering/Rect/right.html">right</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="shortestSide" class="property">
+                <span class="name"><a href="rendering/Rect/shortestSide.html">shortestSide</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="size" class="property">
+                <span class="name"><a href="rendering/Rect/size.html">size</a></span>
+                <span class="signature">&#8594; <a href="basic/Size-class.html">Size</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="top" class="property">
+                <span class="name"><a href="rendering/Rect/top.html">top</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="topLeft" class="property">
+                <span class="name"><a href="rendering/Rect/topLeft.html">topLeft</a></span>
+                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="topRight" class="property">
+                <span class="name"><a href="rendering/Rect/topRight.html">topRight</a></span>
+                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="width" class="property">
+                <span class="name"><a href="rendering/Rect/width.html">width</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="Rect" class="callable">
+                <span class="name"><a href="rendering/Rect/Rect.html">Rect</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Rect.fromLTRB" class="callable">
+                <span class="name"><a href="rendering/Rect/Rect.fromLTRB.html">Rect.fromLTRB</a></span><span class="signature">(<span class="parameter" id="fromLTRB-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="fromLTRB-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="fromLTRB-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span></span>, <span class="parameter" id="fromLTRB-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Rect.fromLTWH" class="callable">
+                <span class="name"><a href="rendering/Rect/Rect.fromLTWH.html">Rect.fromLTWH</a></span><span class="signature">(<span class="parameter" id="fromLTWH-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="fromLTWH-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="fromLTWH-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="fromLTWH-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+      <section class="summary" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <a href="rendering/Rect/operator_equals.html"><span class="name ">operator ==</span></a><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.</p>
+              </dd>
+          </dl>
+      </section>
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="contains" class="callable">
+                  <a href="rendering/Rect/contains.html"><span class="name ">contains</span></a><span class="signature">(<wbr><span class="parameter" id="contains-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="deflate" class="callable">
+                  <a href="rendering/Rect/deflate.html"><span class="name ">deflate</span></a><span class="signature">(<wbr><span class="parameter" id="deflate-param-delta"><span class="type-annotation">double</span> <span class="parameter-name">delta</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/Rect-class.html">Rect</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="inflate" class="callable">
+                  <a href="rendering/Rect/inflate.html"><span class="name ">inflate</span></a><span class="signature">(<wbr><span class="parameter" id="inflate-param-delta"><span class="type-annotation">double</span> <span class="parameter-name">delta</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/Rect-class.html">Rect</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="intersect" class="callable">
+                  <a href="rendering/Rect/intersect.html"><span class="name ">intersect</span></a><span class="signature">(<wbr><span class="parameter" id="intersect-param-other"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">other</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/Rect-class.html">Rect</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="shift" class="callable">
+                  <a href="rendering/Rect/shift.html"><span class="name ">shift</span></a><span class="signature">(<wbr><span class="parameter" id="shift-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/Rect-class.html">Rect</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <a href="rendering/Rect/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Rect</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="rendering/Rect/bottom.html">bottom</a>
+</li>
+      <li><a href="rendering/Rect/bottomLeft.html">bottomLeft</a>
+</li>
+      <li><a href="rendering/Rect/bottomRight.html">bottomRight</a>
+</li>
+      <li><a href="rendering/Rect/center.html">center</a>
+</li>
+      <li><a href="rendering/Rect/hashCode.html">hashCode</a>
+</li>
+      <li><a href="rendering/Rect/height.html">height</a>
+</li>
+      <li><a href="rendering/Rect/left.html">left</a>
+</li>
+      <li><a href="rendering/Rect/right.html">right</a>
+</li>
+      <li><a href="rendering/Rect/shortestSide.html">shortestSide</a>
+</li>
+      <li><a href="rendering/Rect/size.html">size</a>
+</li>
+      <li><a href="rendering/Rect/top.html">top</a>
+</li>
+      <li><a href="rendering/Rect/topLeft.html">topLeft</a>
+</li>
+      <li><a href="rendering/Rect/topRight.html">topRight</a>
+</li>
+      <li><a href="rendering/Rect/width.html">width</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="rendering/Rect/Rect.html">Rect</a></li>
+      <li><a href="rendering/Rect/Rect.fromLTRB.html">fromLTRB</a></li>
+      <li><a href="rendering/Rect/Rect.fromLTWH.html">fromLTWH</a></li>
+    
+      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li><a href="rendering/Rect/operator_equals.html">operator ==</a>
+</li>
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="rendering/Rect/contains.html">contains</a>
+</li>
+      <li><a href="rendering/Rect/deflate.html">deflate</a>
+</li>
+      <li><a href="rendering/Rect/inflate.html">inflate</a>
+</li>
+      <li><a href="rendering/Rect/intersect.html">intersect</a>
+</li>
+      <li><a href="rendering/Rect/shift.html">shift</a>
+</li>
+      <li><a href="rendering/Rect/toString.html">toString</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

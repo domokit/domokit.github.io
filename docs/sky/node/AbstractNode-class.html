@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AbstractNode class - node library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the AbstractNode class from the node library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="node/node-library.html">node</a></li>
+                  <li class="self-crumb">AbstractNode</li>
+              </ol>
+              <div class="self-name">AbstractNode</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="node/node-library.html">node</a></li>
+              <li class="self-crumb">AbstractNode</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> AbstractNode
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="node/AbstractNode-class.html#instance-properties">Properties</a></li>
+              <li><a href="node/AbstractNode-class.html#constructors">Constructors</a></li>
+              <li><a href="node/AbstractNode-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="node/node-library.html">node</a></h5>
+
+    <ol>
+    
+    
+    
+    
+    
+      <li class="section-title"><a href="node/node-library.html#classes">Classes</a></li>
+      <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>An abstract node in a tree</p>
+<p>AbstractNode has as notion of depth, attachment, and parent, but does not
+have a model for children.</p>
+    
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+
+
+
+
+        <dt>Implemented by</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+            <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+            <li><a href="object/RenderObject-class.html">RenderObject</a></li>
+        </ul></dd>
+        </dl>
+    </section>
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="attached" class="property">
+                <span class="name"><a href="node/AbstractNode/attached.html">attached</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>Whether this node is in a tree whose root is attached to something.</p>
+            </dd>
+            <dt id="depth" class="property">
+                <span class="name"><a href="node/AbstractNode/depth.html">depth</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The depth of this node in the tree.</p>
+            </dd>
+            <dt id="parent" class="property">
+                <span class="name"><a href="node/AbstractNode/parent.html">parent</a></span>
+                <span class="signature">&#8594; <a href="node/AbstractNode-class.html">AbstractNode</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The parent of this node in the tree.</p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="AbstractNode" class="callable">
+                <span class="name"><a href="node/AbstractNode/AbstractNode.html">AbstractNode</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="adoptChild" class="callable">
+                  <a href="node/AbstractNode/adoptChild.html"><span class="name ">adoptChild</span></a><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Subclasses should call this function when they acquire a new child.</p>
+              </dd>
+              <dt id="attach" class="callable">
+                  <a href="node/AbstractNode/attach.html"><span class="name ">attach</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Mark this node as attached.</p>
+              </dd>
+              <dt id="attachChildren" class="callable">
+                  <a href="node/AbstractNode/attachChildren.html"><span class="name ">attachChildren</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Override this function in subclasses with child to call attach() for each
+child. Do not call directly.</p>
+              </dd>
+              <dt id="detach" class="callable">
+                  <a href="node/AbstractNode/detach.html"><span class="name ">detach</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Mark this node as detached.</p>
+              </dd>
+              <dt id="detachChildren" class="callable">
+                  <a href="node/AbstractNode/detachChildren.html"><span class="name ">detachChildren</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Override this function in subclasses with child to call detach() for each
+child. Do not call directly.</p>
+              </dd>
+              <dt id="dropChild" class="callable">
+                  <a href="node/AbstractNode/dropChild.html"><span class="name ">dropChild</span></a><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Subclasses should call this function when they lose a child.</p>
+              </dd>
+              <dt id="redepthChild" class="callable">
+                  <a href="node/AbstractNode/redepthChild.html"><span class="name ">redepthChild</span></a><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Call only from overrides of <a href="node/AbstractNode/redepthChildren.html">redepthChildren</a></p>
+              </dd>
+              <dt id="redepthChildren" class="callable">
+                  <a href="node/AbstractNode/redepthChildren.html"><span class="name ">redepthChildren</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Override this function in subclasses with child nodes to call
+redepthChild(child) for each child. Do not call directly.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>AbstractNode</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="node/AbstractNode/attached.html">attached</a>
+</li>
+      <li><a href="node/AbstractNode/depth.html">depth</a>
+</li>
+      <li><a href="node/AbstractNode/parent.html">parent</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="node/AbstractNode/AbstractNode.html">AbstractNode</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="node/AbstractNode/adoptChild.html">adoptChild</a>
+</li>
+      <li><a href="node/AbstractNode/attach.html">attach</a>
+</li>
+      <li><a href="node/AbstractNode/attachChildren.html">attachChildren</a>
+</li>
+      <li><a href="node/AbstractNode/detach.html">detach</a>
+</li>
+      <li><a href="node/AbstractNode/detachChildren.html">detachChildren</a>
+</li>
+      <li><a href="node/AbstractNode/dropChild.html">dropChild</a>
+</li>
+      <li><a href="node/AbstractNode/redepthChild.html">redepthChild</a>
+</li>
+      <li><a href="node/AbstractNode/redepthChildren.html">redepthChildren</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

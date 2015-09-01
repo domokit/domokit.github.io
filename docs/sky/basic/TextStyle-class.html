@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TextStyle class - basic library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the TextStyle class from the basic library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="basic/basic-library.html">basic</a></li>
+                  <li class="self-crumb">TextStyle</li>
+              </ol>
+              <div class="self-name">TextStyle</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="basic/basic-library.html">basic</a></li>
+              <li class="self-crumb">TextStyle</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> TextStyle
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="basic/TextStyle-class.html#instance-properties">Properties</a></li>
+              <li><a href="basic/TextStyle-class.html#constructors">Constructors</a></li>
+              <li><a href="basic/TextStyle-class.html#operators">Operators</a></li>
+              <li><a href="basic/TextStyle-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="basic/basic-library.html">basic</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="basic/basic-library.html#constants">Constants</a></li>
+      <li><a href="basic/bold.html">bold</a></li>
+      <li><a href="basic/lineThrough.html">lineThrough</a></li>
+      <li><a href="basic/normal.html">normal</a></li>
+      <li><a href="basic/overline.html">overline</a></li>
+      <li><a href="basic/underline.html">underline</a></li>
+    
+      <li class="section-title"><a href="basic/basic-library.html#typedefs">Typedefs</a></li>
+      <li><a href="basic/ValueChanged.html">ValueChanged</a></li>
+    
+    
+      <li class="section-title"><a href="basic/basic-library.html#functions">Functions</a></li>
+      <li><a href="basic/combineEventDispositions.html">combineEventDispositions</a></li>
+    
+      <li class="section-title"><a href="basic/basic-library.html#enums">Enums</a></li>
+      <li><a href="basic/BlockDirection-class.html">BlockDirection</a></li>
+      <li><a href="basic/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
+      <li><a href="basic/EventDisposition-class.html">EventDisposition</a></li>
+      <li><a href="basic/FlexAlignItems-class.html">FlexAlignItems</a></li>
+      <li><a href="basic/FlexDirection-class.html">FlexDirection</a></li>
+      <li><a href="basic/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
+      <li><a href="basic/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="basic/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="basic/ScrollDirection-class.html">ScrollDirection</a></li>
+      <li><a href="basic/Shape-class.html">Shape</a></li>
+      <li><a href="basic/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="basic/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="basic/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="basic/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+    
+      <li class="section-title"><a href="basic/basic-library.html#classes">Classes</a></li>
+      <li><a href="basic/Align-class.html">Align</a></li>
+      <li><a href="basic/AspectRatio-class.html">AspectRatio</a></li>
+      <li><a href="basic/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="basic/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a href="basic/Baseline-class.html">Baseline</a></li>
+      <li><a href="basic/BlockBody-class.html">BlockBody</a></li>
+      <li><a href="basic/Border-class.html">Border</a></li>
+      <li><a href="basic/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="basic/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="basic/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="basic/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="basic/Center-class.html">Center</a></li>
+      <li><a href="basic/ClipOval-class.html">ClipOval</a></li>
+      <li><a href="basic/ClipRect-class.html">ClipRect</a></li>
+      <li><a href="basic/ClipRRect-class.html">ClipRRect</a></li>
+      <li><a href="basic/Color-class.html">Color</a></li>
+      <li><a href="basic/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="basic/Column-class.html">Column</a></li>
+      <li><a href="basic/ConstrainedBox-class.html">ConstrainedBox</a></li>
+      <li><a href="basic/Container-class.html">Container</a></li>
+      <li><a href="basic/CustomPaint-class.html">CustomPaint</a></li>
+      <li><a href="basic/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a href="basic/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="basic/Flex-class.html">Flex</a></li>
+      <li><a href="basic/Flexible-class.html">Flexible</a></li>
+      <li><a href="basic/Grid-class.html">Grid</a></li>
+      <li><a href="basic/IgnorePointer-class.html">IgnorePointer</a></li>
+      <li><a href="basic/Image-class.html">Image</a></li>
+      <li><a href="basic/ImageListener-class.html">ImageListener</a></li>
+      <li><a href="basic/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="basic/Offset-class.html">Offset</a></li>
+      <li><a href="basic/Opacity-class.html">Opacity</a></li>
+      <li><a href="basic/Padding-class.html">Padding</a></li>
+      <li><a href="basic/Paint-class.html">Paint</a></li>
+      <li><a href="basic/Paragraph-class.html">Paragraph</a></li>
+      <li><a href="basic/Path-class.html">Path</a></li>
+      <li><a href="basic/Point-class.html">Point</a></li>
+      <li><a href="basic/Positioned-class.html">Positioned</a></li>
+      <li><a href="basic/Rect-class.html">Rect</a></li>
+      <li><a href="basic/Row-class.html">Row</a></li>
+      <li><a href="basic/ShrinkWrapHeight-class.html">ShrinkWrapHeight</a></li>
+      <li><a href="basic/ShrinkWrapWidth-class.html">ShrinkWrapWidth</a></li>
+      <li><a href="basic/Size-class.html">Size</a></li>
+      <li><a href="basic/SizedBox-class.html">SizedBox</a></li>
+      <li><a href="basic/SizeObserver-class.html">SizeObserver</a></li>
+      <li><a href="basic/Stack-class.html">Stack</a></li>
+      <li><a href="basic/StyledText-class.html">StyledText</a></li>
+      <li><a href="basic/Text-class.html">Text</a></li>
+      <li><a href="basic/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="basic/Transform-class.html">Transform</a></li>
+      <li><a href="basic/Viewport-class.html">Viewport</a></li>
+      <li><a href="basic/WidgetToRenderBoxAdapter-class.html">WidgetToRenderBoxAdapter</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>An immutable style in which paint text</p>
+    
+    </section>
+
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="color" class="property">
+                <span class="name"><a href="basic/TextStyle/color.html">color</a></span>
+                <span class="signature">&#8594; <a href="basic/Color-class.html">Color</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The color to use when painting the text</p>
+            </dd>
+            <dt id="decoration" class="property">
+                <span class="name"><a href="basic/TextStyle/decoration.html">decoration</a></span>
+                <span class="signature">&#8594; List&lt;<a href="text_style/TextDecoration-class.html">TextDecoration</a>&gt;</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>A list of decorations to paint near the text</p>
+            </dd>
+            <dt id="decorationColor" class="property">
+                <span class="name"><a href="basic/TextStyle/decorationColor.html">decorationColor</a></span>
+                <span class="signature">&#8594; <a href="basic/Color-class.html">Color</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The color in which to paint the text decorations</p>
+            </dd>
+            <dt id="decorationStyle" class="property">
+                <span class="name"><a href="basic/TextStyle/decorationStyle.html">decorationStyle</a></span>
+                <span class="signature">&#8594; <a href="basic/TextDecorationStyle-class.html">TextDecorationStyle</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The style in which to paint the text decorations</p>
+            </dd>
+            <dt id="fontFamily" class="property">
+                <span class="name"><a href="basic/TextStyle/fontFamily.html">fontFamily</a></span>
+                <span class="signature">&#8594; String</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The name of the font to use when painting the text</p>
+            </dd>
+            <dt id="fontSize" class="property">
+                <span class="name"><a href="basic/TextStyle/fontSize.html">fontSize</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The size of gyphs (in logical pixels) to use when painting the text</p>
+            </dd>
+            <dt id="fontStyle" class="property">
+                <span class="name"><a href="basic/TextStyle/fontStyle.html">fontStyle</a></span>
+                <span class="signature">&#8594; <a href="basic/FontStyle-class.html">FontStyle</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The font style to use when painting the text</p>
+            </dd>
+            <dt id="fontWeight" class="property">
+                <span class="name"><a href="basic/TextStyle/fontWeight.html">fontWeight</a></span>
+                <span class="signature">&#8594; <a href="basic/FontWeight-class.html">FontWeight</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The font weight to use when painting the text</p>
+            </dd>
+            <dt id="hashCode" class="property">
+                <span class="name"><a href="basic/TextStyle/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="height" class="property">
+                <span class="name"><a href="basic/TextStyle/height.html">height</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The distance between the text baselines, as a multiple of the font size</p>
+            </dd>
+            <dt id="textAlign" class="property">
+                <span class="name"><a href="basic/TextStyle/textAlign.html">textAlign</a></span>
+                <span class="signature">&#8594; <a href="basic/TextAlign-class.html">TextAlign</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>How the text should be aligned (applies only to the outermost
+StyledTextSpan, which establishes the container for the text)</p>
+            </dd>
+            <dt id="textBaseline" class="property">
+                <span class="name"><a href="basic/TextStyle/textBaseline.html">textBaseline</a></span>
+                <span class="signature">&#8594; <a href="basic/TextBaseline-class.html">TextBaseline</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>The baseline to use for aligning the text</p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="TextStyle" class="callable">
+                <span class="name"><a href="basic/TextStyle/TextStyle.html">TextStyle</a></span><span class="signature">({<span class="parameter" id="-param-color"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>, <span class="parameter" id="-param-fontFamily"><span class="type-annotation">String</span> <span class="parameter-name">fontFamily</span></span>, <span class="parameter" id="-param-fontSize"><span class="type-annotation">double</span> <span class="parameter-name">fontSize</span></span>, <span class="parameter" id="-param-fontWeight"><span class="type-annotation"><a href="basic/FontWeight-class.html">FontWeight</a></span> <span class="parameter-name">fontWeight</span></span>, <span class="parameter" id="-param-fontStyle"><span class="type-annotation"><a href="basic/FontStyle-class.html">FontStyle</a></span> <span class="parameter-name">fontStyle</span></span>, <span class="parameter" id="-param-textAlign"><span class="type-annotation"><a href="basic/TextAlign-class.html">TextAlign</a></span> <span class="parameter-name">textAlign</span></span>, <span class="parameter" id="-param-textBaseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">textBaseline</span></span>, <span class="parameter" id="-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>, <span class="parameter" id="-param-decoration"><span class="type-annotation">List&lt;<a href="text_style/TextDecoration-class.html">TextDecoration</a>&gt;</span> <span class="parameter-name">decoration</span></span>, <span class="parameter" id="-param-decorationColor"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">decorationColor</span></span>, <span class="parameter" id="-param-decorationStyle"><span class="type-annotation"><a href="basic/TextDecorationStyle-class.html">TextDecorationStyle</a></span> <span class="parameter-name">decorationStyle</span></span>})</span>
+            </dt>
+            <dd>
+                <div class="constructor-modifier">
+                    const
+                </div>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+      <section class="summary" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <a href="basic/TextStyle/operator_equals.html"><span class="name ">operator ==</span></a><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.</p>
+              </dd>
+          </dl>
+      </section>
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="applyToContainerCSSStyle" class="callable">
+                  <a href="basic/TextStyle/applyToContainerCSSStyle.html"><span class="name ">applyToContainerCSSStyle</span></a><span class="signature">(<wbr><span class="parameter" id="applyToContainerCSSStyle-param-cssStyle"><span class="type-annotation">CSSStyleDeclaration</span> <span class="parameter-name">cssStyle</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Program the container aspects of this text style into the engine</p>
+              </dd>
+              <dt id="applyToCSSStyle" class="callable">
+                  <a href="basic/TextStyle/applyToCSSStyle.html"><span class="name ">applyToCSSStyle</span></a><span class="signature">(<wbr><span class="parameter" id="applyToCSSStyle-param-cssStyle"><span class="type-annotation">CSSStyleDeclaration</span> <span class="parameter-name">cssStyle</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Program this text style into the engine</p>
+              </dd>
+              <dt id="copyWith" class="callable">
+                  <a href="basic/TextStyle/copyWith.html"><span class="name ">copyWith</span></a><span class="signature">(<wbr>{<span class="parameter" id="copyWith-param-color"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>, <span class="parameter" id="copyWith-param-fontFamily"><span class="type-annotation">String</span> <span class="parameter-name">fontFamily</span></span>, <span class="parameter" id="copyWith-param-fontSize"><span class="type-annotation">double</span> <span class="parameter-name">fontSize</span></span>, <span class="parameter" id="copyWith-param-fontWeight"><span class="type-annotation"><a href="basic/FontWeight-class.html">FontWeight</a></span> <span class="parameter-name">fontWeight</span></span>, <span class="parameter" id="copyWith-param-fontStyle"><span class="type-annotation"><a href="basic/FontStyle-class.html">FontStyle</a></span> <span class="parameter-name">fontStyle</span></span>, <span class="parameter" id="copyWith-param-textAlign"><span class="type-annotation"><a href="basic/TextAlign-class.html">TextAlign</a></span> <span class="parameter-name">textAlign</span></span>, <span class="parameter" id="copyWith-param-textBaseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">textBaseline</span></span>, <span class="parameter" id="copyWith-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>, <span class="parameter" id="copyWith-param-decoration"><span class="type-annotation">List&lt;<a href="text_style/TextDecoration-class.html">TextDecoration</a>&gt;</span> <span class="parameter-name">decoration</span></span>, <span class="parameter" id="copyWith-param-decorationColor"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">decorationColor</span></span>, <span class="parameter" id="copyWith-param-decorationStyle"><span class="type-annotation"><a href="basic/TextDecorationStyle-class.html">TextDecorationStyle</a></span> <span class="parameter-name">decorationStyle</span></span>})
+                      &#8594;
+                      <span class="returntype"><a href="basic/TextStyle-class.html">TextStyle</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a new text style that matches this text style but with the given
+values replaced</p>
+              </dd>
+              <dt id="merge" class="callable">
+                  <a href="basic/TextStyle/merge.html"><span class="name ">merge</span></a><span class="signature">(<wbr><span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="basic/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">other</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="basic/TextStyle-class.html">TextStyle</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a new text style that matches this text style but with some values
+replaced by the non-null parameters of the given text style</p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <a href="basic/TextStyle/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>])
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>TextStyle</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="basic/TextStyle/color.html">color</a>
+</li>
+      <li><a href="basic/TextStyle/decoration.html">decoration</a>
+</li>
+      <li><a href="basic/TextStyle/decorationColor.html">decorationColor</a>
+</li>
+      <li><a href="basic/TextStyle/decorationStyle.html">decorationStyle</a>
+</li>
+      <li><a href="basic/TextStyle/fontFamily.html">fontFamily</a>
+</li>
+      <li><a href="basic/TextStyle/fontSize.html">fontSize</a>
+</li>
+      <li><a href="basic/TextStyle/fontStyle.html">fontStyle</a>
+</li>
+      <li><a href="basic/TextStyle/fontWeight.html">fontWeight</a>
+</li>
+      <li><a href="basic/TextStyle/hashCode.html">hashCode</a>
+</li>
+      <li><a href="basic/TextStyle/height.html">height</a>
+</li>
+      <li><a href="basic/TextStyle/textAlign.html">textAlign</a>
+</li>
+      <li><a href="basic/TextStyle/textBaseline.html">textBaseline</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="basic/TextStyle/TextStyle.html">TextStyle</a></li>
+    
+      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li><a href="basic/TextStyle/operator_equals.html">operator ==</a>
+</li>
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="basic/TextStyle/applyToContainerCSSStyle.html">applyToContainerCSSStyle</a>
+</li>
+      <li><a href="basic/TextStyle/applyToCSSStyle.html">applyToCSSStyle</a>
+</li>
+      <li><a href="basic/TextStyle/copyWith.html">copyWith</a>
+</li>
+      <li><a href="basic/TextStyle/merge.html">merge</a>
+</li>
+      <li><a href="basic/TextStyle/toString.html">toString</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

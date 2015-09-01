@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KeyboardClientSetComposingTextParams class - keyboard library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the KeyboardClientSetComposingTextParams class from the keyboard library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
+                  <li class="self-crumb">KeyboardClientSetComposingTextParams</li>
+              </ol>
+              <div class="self-name">KeyboardClientSetComposingTextParams</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
+              <li class="self-crumb">KeyboardClientSetComposingTextParams</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> KeyboardClientSetComposingTextParams
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="keyboard/KeyboardClientSetComposingTextParams-class.html#constants">Constants</a></li>
+              <li><a href="keyboard/KeyboardClientSetComposingTextParams-class.html#static-methods">Static Methods</a></li>
+              <li><a href="keyboard/KeyboardClientSetComposingTextParams-class.html#instance-properties">Properties</a></li>
+              <li><a href="keyboard/KeyboardClientSetComposingTextParams-class.html#constructors">Constructors</a></li>
+              <li><a href="keyboard/KeyboardClientSetComposingTextParams-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="keyboard/keyboard-library.html">keyboard</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="keyboard/keyboard-library.html#constants">Constants</a></li>
+      <li><a href="keyboard/KeyboardClientName.html">KeyboardClientName</a></li>
+      <li><a href="keyboard/KeyboardServiceName.html">KeyboardServiceName</a></li>
+      <li><a href="keyboard/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></li>
+      <li><a href="keyboard/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></li>
+      <li><a href="keyboard/KeyboardType_PHONE.html">KeyboardType_PHONE</a></li>
+      <li><a href="keyboard/KeyboardType_TEXT.html">KeyboardType_TEXT</a></li>
+      <li><a href="keyboard/kKeyboardClient_commitCompletion_name.html">kKeyboardClient_commitCompletion_name</a></li>
+      <li><a href="keyboard/kKeyboardClient_commitCorrection_name.html">kKeyboardClient_commitCorrection_name</a></li>
+      <li><a href="keyboard/kKeyboardClient_commitText_name.html">kKeyboardClient_commitText_name</a></li>
+      <li><a href="keyboard/kKeyboardClient_deleteSurroundingText_name.html">kKeyboardClient_deleteSurroundingText_name</a></li>
+      <li><a href="keyboard/kKeyboardClient_setComposingRegion_name.html">kKeyboardClient_setComposingRegion_name</a></li>
+      <li><a href="keyboard/kKeyboardClient_setComposingText_name.html">kKeyboardClient_setComposingText_name</a></li>
+      <li><a href="keyboard/kKeyboardClient_setSelection_name.html">kKeyboardClient_setSelection_name</a></li>
+      <li><a href="keyboard/kKeyboardService_hide_name.html">kKeyboardService_hide_name</a></li>
+      <li><a href="keyboard/kKeyboardService_showByRequest_name.html">kKeyboardService_showByRequest_name</a></li>
+      <li><a href="keyboard/kKeyboardService_show_name.html">kKeyboardService_show_name</a></li>
+    
+    
+      <li class="section-title"><a href="keyboard/keyboard-library.html#properties">Properties</a></li>
+      <li><a href="keyboard/keyboard.html">keyboard</a></li>
+    
+    
+    
+      <li class="section-title"><a href="keyboard/keyboard-library.html#classes">Classes</a></li>
+      <li><a href="keyboard/CompletionData-class.html">CompletionData</a></li>
+      <li><a href="keyboard/CorrectionData-class.html">CorrectionData</a></li>
+      <li><a href="keyboard/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="keyboard/KeyboardClient-class.html">KeyboardClient</a></li>
+      <li><a href="keyboard/KeyboardClientCommitCompletionParams-class.html">KeyboardClientCommitCompletionParams</a></li>
+      <li><a href="keyboard/KeyboardClientCommitCorrectionParams-class.html">KeyboardClientCommitCorrectionParams</a></li>
+      <li><a href="keyboard/KeyboardClientCommitTextParams-class.html">KeyboardClientCommitTextParams</a></li>
+      <li><a href="keyboard/KeyboardClientDeleteSurroundingTextParams-class.html">KeyboardClientDeleteSurroundingTextParams</a></li>
+      <li><a href="keyboard/KeyboardClientProxy-class.html">KeyboardClientProxy</a></li>
+      <li><a href="keyboard/KeyboardClientProxyImpl-class.html">KeyboardClientProxyImpl</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingRegionParams-class.html">KeyboardClientSetComposingRegionParams</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams-class.html">KeyboardClientSetComposingTextParams</a></li>
+      <li><a href="keyboard/KeyboardClientSetSelectionParams-class.html">KeyboardClientSetSelectionParams</a></li>
+      <li><a href="keyboard/KeyboardClientStub-class.html">KeyboardClientStub</a></li>
+      <li><a href="keyboard/KeyboardHandle-class.html">KeyboardHandle</a></li>
+      <li><a href="keyboard/KeyboardService-class.html">KeyboardService</a></li>
+      <li><a href="keyboard/KeyboardServiceHideParams-class.html">KeyboardServiceHideParams</a></li>
+      <li><a href="keyboard/KeyboardServiceProxy-class.html">KeyboardServiceProxy</a></li>
+      <li><a href="keyboard/KeyboardServiceProxyImpl-class.html">KeyboardServiceProxyImpl</a></li>
+      <li><a href="keyboard/KeyboardServiceShowByRequestParams-class.html">KeyboardServiceShowByRequestParams</a></li>
+      <li><a href="keyboard/KeyboardServiceShowParams-class.html">KeyboardServiceShowParams</a></li>
+      <li><a href="keyboard/KeyboardServiceStub-class.html">KeyboardServiceStub</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+
+        <dt>Extends</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+            <li>Object</li>
+            <li>Struct</li>
+            <li>KeyboardClientSetComposingTextParams</li>
+        </ul></dd>
+
+
+
+        </dl>
+    </section>
+
+    <section class="summary" id="constants">
+        <h2>Constants</h2>
+
+        <dl class="properties">
+            <dt id="kVersions" class="constant">
+                <span class="top-level-variable-type">List&lt;StructDataHeader&gt;</span>
+                <span class="name "><a href="keyboard/KeyboardClientSetComposingTextParams/kVersions.html">kVersions</a></span>
+                <span class="signature">= const [const bindings.StructDataHeader(24, 0)]</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+
+    <section class="summary" id="static-methods">
+        <h2>Static Methods</h2>
+        <dl class="callables">
+            <dt id="decode" class="callable">
+                <a href="keyboard/KeyboardClientSetComposingTextParams/decode.html"><span class="name ">decode</span></a><span class="signature">(<wbr><span class="parameter" id="decode-param-decoder0"><span class="type-annotation">Decoder</span> <span class="parameter-name">decoder0</span></span>)
+                    &#8594;
+                    <span class="returntype"><a href="keyboard/KeyboardClientSetComposingTextParams-class.html">KeyboardClientSetComposingTextParams</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="deserialize" class="callable">
+                <a href="keyboard/KeyboardClientSetComposingTextParams/deserialize.html"><span class="name ">deserialize</span></a><span class="signature">(<wbr><span class="parameter" id="deserialize-param-message"><span class="type-annotation">Message</span> <span class="parameter-name">message</span></span>)
+                    &#8594;
+                    <span class="returntype"><a href="keyboard/KeyboardClientSetComposingTextParams-class.html">KeyboardClientSetComposingTextParams</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="encodedSize" class="property">
+            <span class="name ">encodedSize</span>    
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="newCursorPosition" class="property">
+                <span class="name"><a href="keyboard/KeyboardClientSetComposingTextParams/newCursorPosition.html">newCursorPosition</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="text" class="property">
+                <span class="name"><a href="keyboard/KeyboardClientSetComposingTextParams/text.html">text</a></span>
+                <span class="signature">&#8594; String</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="KeyboardClientSetComposingTextParams" class="callable">
+                <span class="name"><a href="keyboard/KeyboardClientSetComposingTextParams/KeyboardClientSetComposingTextParams.html">KeyboardClientSetComposingTextParams</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="encode" class="callable">
+                  <a href="keyboard/KeyboardClientSetComposingTextParams/encode.html"><span class="name ">encode</span></a><span class="signature">(<wbr><span class="parameter" id="encode-param-encoder"><span class="type-annotation">Encoder</span> <span class="parameter-name">encoder</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="serialize" class="callable">
+                  <span class="name ">serialize</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">Message</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="serializeWithHeader" class="callable">
+                  <span class="name ">serializeWithHeader</span><span class="signature">(<wbr><span class="parameter" id="serializeWithHeader-param-header"><span class="type-annotation">MessageHeader</span> <span class="parameter-name">header</span></span>)
+                      &#8594;
+                      <span class="returntype">ServiceMessage</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <a href="keyboard/KeyboardClientSetComposingTextParams/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>KeyboardClientSetComposingTextParams</h5>
+    <ol>
+      <li class="section-title"><a href="#constants">Constants</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/kVersions.html">kVersions</a></li>
+    
+    
+      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/decode.html">decode</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/deserialize.html">deserialize</a></li>
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li>encodedSize
+</li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/newCursorPosition.html">newCursorPosition</a>
+</li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/text.html">text</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/KeyboardClientSetComposingTextParams.html">KeyboardClientSetComposingTextParams</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/encode.html">encode</a>
+</li>
+      <li>serialize
+</li>
+      <li>serializeWithHeader
+</li>
+      <li><a href="keyboard/KeyboardClientSetComposingTextParams/toString.html">toString</a>
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>syncChildren method - RenderObjectWrapper class - framework library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the syncChildren method from the RenderObjectWrapper class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="framework/framework-library.html">framework</a></li>
+                  <li><a href="framework/RenderObjectWrapper-class.html">RenderObjectWrapper</a></li>
+                  <li class="self-crumb">syncChildren</li>
+              </ol>
+              <div class="self-name">syncChildren</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="framework/framework-library.html">framework</a></li>
+              <li><a href="framework/RenderObjectWrapper-class.html">RenderObjectWrapper</a></li>
+              <li class="self-crumb">syncChildren</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> syncChildren
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="framework/RenderObjectWrapper/syncChildren.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="framework/framework-library.html">framework</a></h5>
+    <h5><a href="framework/RenderObjectWrapper-class.html">RenderObjectWrapper</a></h5>
+
+    <ol>
+    
+    
+      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li><a href="framework/RenderObjectWrapper/getWidgetsForRenderObject.html">getWidgetsForRenderObject</a></li>
+    
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="framework/RenderObjectWrapper/RenderObjectWrapper.html">RenderObjectWrapper</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="framework/RenderObjectWrapper/createNode.html">createNode</a>
+</li>
+      <li><a href="framework/RenderObjectWrapper/dependenciesChanged.html">dependenciesChanged</a>
+</li>
+      <li><a href="framework/RenderObjectWrapper/detachChildRenderObject.html">detachChildRenderObject</a>
+</li>
+      <li><a href="framework/RenderObjectWrapper/detachRenderObject.html">detachRenderObject</a>
+</li>
+      <li>didMount
+</li>
+      <li>didUnmount
+</li>
+      <li>findAncestorRenderObjectWrapper
+</li>
+      <li>globalToLocal
+</li>
+      <li>inheritedOfType
+</li>
+      <li><a href="framework/RenderObjectWrapper/insertChildRenderObject.html">insertChildRenderObject</a>
+</li>
+      <li>localToGlobal
+</li>
+      <li><a href="framework/RenderObjectWrapper/remove.html">remove</a>
+</li>
+      <li>retainStatefulNodeIfPossible
+</li>
+      <li><a href="framework/RenderObjectWrapper/retainStatefulRenderObjectWrapper.html">retainStatefulRenderObjectWrapper</a>
+</li>
+      <li>setParent
+</li>
+      <li>syncChild
+</li>
+      <li><a href="framework/RenderObjectWrapper/syncChildren.html">syncChildren</a>
+</li>
+      <li><a href="framework/RenderObjectWrapper/syncRenderObject.html">syncRenderObject</a>
+</li>
+      <li>toString
+</li>
+      <li>toStringName
+</li>
+      <li><a href="framework/RenderObjectWrapper/updateParentData.html">updateParentData</a>
+</li>
+      <li><a href="framework/RenderObjectWrapper/updateSlot.html">updateSlot</a>
+</li>
+      <li>walkChildren
+</li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype">void</span>
+            <span class="name ">syncChildren</span>(
+            <br>
+            <div class="parameters">
+                <span class="parameter" id="syncChildren-param-newChildren"><span class="type-annotation">List&lt;<a href="framework/Widget-class.html">Widget</a>&gt;</span> <span class="parameter-name">newChildren</span></span>,<br><span class="parameter" id="syncChildren-param-oldChildren"><span class="type-annotation">List&lt;<a href="framework/Widget-class.html">Widget</a>&gt;</span> <span class="parameter-name">oldChildren</span></span>
+            </div>
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">void syncChildren(List&lt;Widget&gt; newChildren, List&lt;Widget&gt; oldChildren) {
+  assert(newChildren != null);
+  assert(oldChildren != null);
+  assert(!identical(newChildren, oldChildren));
+
+  // This attempts to diff the new child list (this.children) with
+  // the old child list (old.children), and update our renderObject
+  // accordingly.
+
+  // The cases it tries to optimise for are:
+  //  - the old list is empty
+  //  - the lists are identical
+  //  - there is an insertion or removal of one or more widgets in
+  //    only one place in the list
+  // If a widget with a key is in both lists, it will be synced.
+  // Widgets without keys might be synced but there is no guarantee.
+
+  // The general approach is to sync the entire new list backwards, as follows:
+  // 1. Walk the lists from the top until you no longer have
+  //    matching nodes. We don&apos;t sync these yet, but we now know to
+  //    skip them below. We do this because at each sync we need to
+  //    pass the pointer to the new next widget as the slot, which
+  //    we can&apos;t do until we&apos;ve synced the next child.
+  // 2. Walk the lists from the bottom, syncing nodes, until you no
+  //    longer have matching nodes.
+  // At this point we narrowed the old and new lists to the point
+  // where the nodes no longer match.
+  // 3. Walk the narrowed part of the old list to get the list of
+  //    keys and sync null with non-keyed items.
+  // 4. Walk the narrowed part of the new list backwards:
+  //     * Sync unkeyed items with null
+  //     * Sync keyed items with the source if it exists, else with null.
+  // 5. Walk the top list again but backwards, syncing the nodes.
+  // 6. Sync null with any items in the list of keys that are still
+  //    mounted.
+
+  final ContainerRenderObjectMixin renderObject = this.renderObject; // TODO(ianh): Remove this once the analyzer is cleverer
+  assert(renderObject is ContainerRenderObjectMixin);
+
+  int childrenTop = 0;
+  int newChildrenBottom = newChildren.length-1;
+  int oldChildrenBottom = oldChildren.length-1;
+
+  // top of the lists
+  while ((childrenTop &lt;= oldChildrenBottom) &amp;&amp; (childrenTop &lt;= newChildrenBottom)) {
+    Widget oldChild = oldChildren[childrenTop];
+    assert(oldChild.mounted);
+    Widget newChild = newChildren[childrenTop];
+    assert(newChild == oldChild || !newChild.mounted);
+    if (!_canSync(oldChild, newChild))
+      break;
+    childrenTop += 1;
+  }
+
+  Widget nextSibling;
+
+  // bottom of the lists
+  while ((childrenTop &lt;= oldChildrenBottom) &amp;&amp; (childrenTop &lt;= newChildrenBottom)) {
+    Widget oldChild = oldChildren[oldChildrenBottom];
+    assert(oldChild.mounted);
+    Widget newChild = newChildren[newChildrenBottom];
+    assert(newChild == oldChild || !newChild.mounted);
+    if (!_canSync(oldChild, newChild))
+      break;
+    newChild = syncChild(newChild, oldChild, nextSibling);
+    assert(newChild.mounted);
+    assert(oldChild == newChild || !oldChild.mounted);
+    newChildren[newChildrenBottom] = newChild;
+    nextSibling = newChild;
+    oldChildrenBottom -= 1;
+    newChildrenBottom -= 1;
+  }
+
+  // middle of the lists - old list
+  bool haveOldNodes = childrenTop &lt;= oldChildrenBottom;
+  Map&lt;Key, Widget&gt; oldKeyedChildren;
+  if (haveOldNodes) {
+    oldKeyedChildren = new Map&lt;Key, Widget&gt;();
+    while (childrenTop &lt;= oldChildrenBottom) {
+      Widget oldChild = oldChildren[oldChildrenBottom];
+      assert(oldChild.mounted);
+      if (oldChild.key != null) {
+        oldKeyedChildren[oldChild.key] = oldChild;
+      } else {
+        syncChild(null, oldChild, null);
+      }
+      oldChildrenBottom -= 1;
+    }
+  }
+
+  // middle of the lists - new list
+  while (childrenTop &lt;= newChildrenBottom) {
+    Widget oldChild;
+    Widget newChild = newChildren[newChildrenBottom];
+    if (haveOldNodes) {
+      Key key = newChild.key;
+      if (key != null) {
+        oldChild = oldKeyedChildren[newChild.key];
+        if (oldChild != null) {
+          if (oldChild.runtimeType != newChild.runtimeType)
+            oldChild = null;
+          oldKeyedChildren.remove(key);
+        }
+      }
+    }
+    assert(newChild == oldChild || !newChild.mounted);
+    newChild = syncChild(newChild, oldChild, nextSibling);
+    assert(newChild.mounted);
+    assert(oldChild == newChild || oldChild == null || !oldChild.mounted);
+    newChildren[newChildrenBottom] = newChild;
+    nextSibling = newChild;
+    newChildrenBottom -= 1;
+  }
+  assert(oldChildrenBottom == newChildrenBottom);
+  assert(childrenTop == newChildrenBottom+1);
+
+  // now sync the top of the list
+  while (childrenTop &gt; 0) {
+    childrenTop -= 1;
+    Widget oldChild = oldChildren[childrenTop];
+    assert(oldChild.mounted);
+    Widget newChild = newChildren[childrenTop];
+    assert(newChild == oldChild || !newChild.mounted);
+    assert(_canSync(oldChild, newChild));
+    newChild = syncChild(newChild, oldChild, nextSibling);
+    assert(newChild.mounted);
+    assert(oldChild == newChild || oldChild == null || !oldChild.mounted);
+    newChildren[childrenTop] = newChild;
+    nextSibling = newChild;
+  }
+
+  if (haveOldNodes &amp;&amp; !oldKeyedChildren.isEmpty) {
+    for (Widget oldChild in oldKeyedChildren.values)
+      syncChild(null, oldChild, null);
+  }
+
+  assert(renderObject == this.renderObject); // TODO(ianh): Remove this once the analyzer is cleverer
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

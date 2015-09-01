@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sky - Dart API docs</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href=".">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="sky API docs, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li class="self-crumb">sky</li>
+              </ol>
+              <div class="self-name">sky</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">package</div> sky
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="index.html#libraries">Libraries</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>sky</h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html#libraries">Libraries</a></li>
+      <li><a href="activity/activity-library.html">activity</a></li>
+      <li><a href="animated_component/animated_component-library.html">animated_component</a></li>
+      <li><a href="animated_container/animated_container-library.html">animated_container</a></li>
+      <li><a href="animated_simulation/animated_simulation-library.html">animated_simulation</a></li>
+      <li><a href="animated_value/animated_value-library.html">animated_value</a></li>
+      <li><a href="animation_performance/animation_performance-library.html">animation_performance</a></li>
+      <li><a href="arena/arena-library.html">arena</a></li>
+      <li><a href="asset_bundle/asset_bundle-library.html">asset_bundle</a></li>
+      <li><a href="auto_layout/auto_layout-library.html">auto_layout</a></li>
+      <li><a href="basic/basic-library.html">basic</a></li>
+      <li><a href="block/block-library.html">block</a></li>
+      <li><a href="box/box-library.html">box</a></li>
+      <li><a href="box_painter/box_painter-library.html">box_painter</a></li>
+      <li><a href="button_base/button_base-library.html">button_base</a></li>
+      <li><a href="card/card-library.html">card</a></li>
+      <li><a href="checkbox/checkbox-library.html">checkbox</a></li>
+      <li><a href="colors/colors-library.html">colors</a></li>
+      <li><a href="constants/constants-library.html">constants</a></li>
+      <li><a href="curves/curves-library.html">curves</a></li>
+      <li><a href="date_picker/date_picker-library.html">date_picker</a></li>
+      <li><a href="debug/debug-library.html">debug</a></li>
+      <li><a href="default_text_style/default_text_style-library.html">default_text_style</a></li>
+      <li><a href="dialog/dialog-library.html">dialog</a></li>
+      <li><a href="direction/direction-library.html">direction</a></li>
+      <li><a href="dismissable/dismissable-library.html">dismissable</a></li>
+      <li><a href="drag_target/drag_target-library.html">drag_target</a></li>
+      <li><a href="drawer/drawer-library.html">drawer</a></li>
+      <li><a href="drawer_divider/drawer_divider-library.html">drawer_divider</a></li>
+      <li><a href="drawer_header/drawer_header-library.html">drawer_header</a></li>
+      <li><a href="drawer_item/drawer_item-library.html">drawer_item</a></li>
+      <li><a href="edges/edges-library.html">edges</a></li>
+      <li><a href="editable_string/editable_string-library.html">editable_string</a></li>
+      <li><a href="editable_text/editable_text-library.html">editable_text</a></li>
+      <li><a href="embedder/embedder-library.html">embedder</a></li>
+      <li><a href="fetch/fetch-library.html">fetch</a></li>
+      <li><a href="flat_button/flat_button-library.html">flat_button</a></li>
+      <li><a href="flex/flex-library.html">flex</a></li>
+      <li><a href="floating_action_button/floating_action_button-library.html">floating_action_button</a></li>
+      <li><a href="focus/focus-library.html">focus</a></li>
+      <li><a href="forces/forces-library.html">forces</a></li>
+      <li><a href="framework/framework-library.html">framework</a></li>
+      <li><a href="gesture_detector/gesture_detector-library.html">gesture_detector</a></li>
+      <li><a href="grid/grid-library.html">grid</a></li>
+      <li><a href="hit_test/hit_test-library.html">hit_test</a></li>
+      <li><a href="homogeneous_viewport/homogeneous_viewport-library.html">homogeneous_viewport</a></li>
+      <li><a href="icon/icon-library.html">icon</a></li>
+      <li><a href="icon_button/icon_button-library.html">icon_button</a></li>
+      <li><a href="image/image-library.html">image</a></li>
+      <li><a href="image_cache/image_cache-library.html">image_cache</a></li>
+      <li><a href="image_resource/image_resource-library.html">image_resource</a></li>
+      <li><a href="ink_well/ink_well-library.html">ink_well</a></li>
+      <li><a href="input/input-library.html">input</a></li>
+      <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
+      <li><a href="layer/layer-library.html">layer</a></li>
+      <li><a href="lerp/lerp-library.html">lerp</a></li>
+      <li><a href="long_press/long_press-library.html">long_press</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="material_button/material_button-library.html">material_button</a></li>
+      <li><a href="mimic/mimic-library.html">mimic</a></li>
+      <li><a href="mimic_overlay/mimic_overlay-library.html">mimic_overlay</a></li>
+      <li><a href="mixed_viewport/mixed_viewport-library.html">mixed_viewport</a></li>
+      <li><a href="modal_overlay/modal_overlay-library.html">modal_overlay</a></li>
+      <li><a href="navigator/navigator-library.html">navigator</a></li>
+      <li><a href="node/node-library.html">node</a></li>
+      <li><a href="object/object-library.html">object</a></li>
+      <li><a href="paragraph/paragraph-library.html">paragraph</a></li>
+      <li><a href="pointer_router/pointer_router-library.html">pointer_router</a></li>
+      <li><a href="popup_menu/popup_menu-library.html">popup_menu</a></li>
+      <li><a href="popup_menu_item/popup_menu_item-library.html">popup_menu_item</a></li>
+      <li><a href="progress_indicator/progress_indicator-library.html">progress_indicator</a></li>
+      <li><a href="proxy_box/proxy_box-library.html">proxy_box</a></li>
+      <li><a href="radial_reaction/radial_reaction-library.html">radial_reaction</a></li>
+      <li><a href="radio/radio-library.html">radio</a></li>
+      <li><a href="raised_button/raised_button-library.html">raised_button</a></li>
+      <li><a href="recognizer/recognizer-library.html">recognizer</a></li>
+      <li><a href="rendering/rendering-library.html">rendering</a></li>
+      <li><a href="scaffold/scaffold-library.html">scaffold</a></li>
+      <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+      <li><a href="scroll/scroll-library.html">scroll</a></li>
+      <li><a href="scroll_behavior/scroll_behavior-library.html">scroll_behavior</a></li>
+      <li><a href="scrollable/scrollable-library.html">scrollable</a></li>
+      <li><a href="shadows/shadows-library.html">shadows</a></li>
+      <li><a href="shadows/shadows-library.html">shadows</a></li>
+      <li><a href="shell/shell-library.html">shell</a></li>
+      <li><a href="shifted_box/shifted_box-library.html">shifted_box</a></li>
+      <li><a href="show_press/show_press-library.html">show_press</a></li>
+      <li><a href="sky_binding/sky_binding-library.html">sky_binding</a></li>
+      <li><a href="snack_bar/snack_bar-library.html">snack_bar</a></li>
+      <li><a href="stack/stack-library.html">stack</a></li>
+      <li><a href="switch/switch-library.html">switch</a></li>
+      <li><a href="tabs/tabs-library.html">tabs</a></li>
+      <li><a href="tap/tap-library.html">tap</a></li>
+      <li><a href="text_painter/text_painter-library.html">text_painter</a></li>
+      <li><a href="text_style/text_style-library.html">text_style</a></li>
+      <li><a href="theme/theme-library.html">theme</a></li>
+      <li><a href="theme_data/theme_data-library.html">theme_data</a></li>
+      <li><a href="timeline/timeline-library.html">timeline</a></li>
+      <li><a href="title/title-library.html">title</a></li>
+      <li><a href="toggleable/toggleable-library.html">toggleable</a></li>
+      <li><a href="tool_bar/tool_bar-library.html">tool_bar</a></li>
+      <li><a href="transitions/transitions-library.html">transitions</a></li>
+      <li><a href="typography/typography-library.html">typography</a></li>
+      <li><a href="view/view-library.html">view</a></li>
+      <li><a href="view_configuration/view_configuration-library.html">view_configuration</a></li>
+      <li><a href="viewport/viewport-library.html">viewport</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+      <section class="desc markdown">
+      
+            <h1>Getting Started with Sky</h1>
+<p>Sky apps are written in Dart. To get started, we need to set up Dart SDK:</p><ul><li>Install the <a href="https://www.dartlang.org/downloads/">Dart SDK</a>:</li><li>Mac: <code>brew tap dart-lang/dart &amp;&amp; brew install dart</code></li><li>Linux: See <a href="https://www.dartlang.org/downloads/linux.html">https://www.dartlang.org/downloads/linux.html</a></li><li>
+<p>Ensure that <code>$DART_SDK</code> is set to the path of your Dart SDK and that the
+   <code>dart</code> and <code>pub</code> executables are on your <code>$PATH</code>.</p></li></ul>
+<p>Once you have installed Dart SDK, create a new directory and add a
+<a href="https://www.dartlang.org/tools/pub/pubspec.html">pubspec.yaml</a>:</p>
+<pre class="yaml"><code>name: your_app_name
+dependencies:
+  sky: any
+  sky_tools: any
+</code></pre>
+<p>Next, create a <code>lib</code> directory (which is where your Dart code will go) and use
+the <code>pub</code> tool to fetch the Sky package and its dependencies:</p><ul><li><code>mkdir lib</code></li><li><code>pub upgrade</code></li></ul>
+<p>Sky assumes the entry point for your application is a <code>main</code> function in
+<code>lib/main.dart</code>:</p>
+<pre class="dart"><code>import 'package:sky/widgets.dart';
+
+class HelloWorldApp extends App {
+  Widget build() {
+    return new Center(child: new Text('Hello, world!'));
+  }
+}
+
+void main() {
+  runApp(new HelloWorldApp());
+}
+</code></pre>
+<p>Execution starts in <code>main</code>, which in this example runs a new instance of the <code>HelloWorldApp</code>.
+The <code>HelloWorldApp</code> builds a <code>Text</code> widget containing the traditional <code>Hello, world!</code>
+string and centers it on the screen using a <code>Center</code> widget. To learn more about
+the widget system, please see the
+<a href="https://github.com/domokit/sky_engine/blob/master/sky/packages/sky/lib/widgets/README.md">widgets tutorial</a>.</p>
+<h2>Setting up your Android device</h2>
+<p>Currently Sky requires an Android device running the Lollipop (or newer) version
+of the Android operating system.</p><ul><li>Install the <code>adb</code> tool from the <a href="https://developer.android.com/sdk/installing/index.html?pkg=tools">Android SDK</a>:</li><li>Mac: <code>brew install android-platform-tools</code></li><li>
+<p>Linux: <code>sudo apt-get install android-tools-adb</code></p></li><li>
+<p>Enable developer mode on your device by visiting <code>Settings &gt; About phone</code>
+   and tapping the <code>Build number</code> field five times.</p></li><li>
+<p>Enable <code>Android debugging</code> in <code>Settings &gt; Developer options</code>.</p></li><li>
+<p>Using a USB cable, plug your phone into your computer. If prompted on your
+   device, authorize your computer to access your device.</p></li></ul>
+<h2>Running a Sky application</h2>
+<p>The <code>sky</code> pub package includes a <code>sky_tool</code> script to assist in running
+Sky applications inside the <code>SkyShell.apk</code> harness.  The <code>sky_tool</code> script
+expects to be run from the root directory of your application's package (i.e.,
+the same directory that contains the <code>pubspec.yaml</code> file).</p>
+<p>To run your app with logging, run this command:
+ - <code>./packages/sky/sky_tool start --checked &amp;&amp; adb logcat -s sky chromium</code></p>
+<p>The <code>sky_tool start</code> command starts the dev server and uploads your app to the device, installing <code>SkyShell.apk</code> if needed.
+The <code>--checked</code> flag triggers checked mode, in which types are checked, asserts are run, and
+various <a href="https://github.com/domokit/sky_engine/blob/master/sky/packages/sky/lib/base/debug.dart">debugging features</a> are enabled.
+The <code>adb logcat</code> command logs errors and Dart <code>print()</code> output from the app. The <code>-s sky chromium</code>
+argument limits the output to just output from Sky Dart code and the Sky Engine C++ code (which
+for historical reasons currently uses the tag <code>chromium</code>.)</p>
+<p>To avoid confusion from old log messages, you may wish to run <code>adb logcat -c</code> before calling
+<code>sky_tool start</code>, to clear the log between runs.</p>
+<h2>Rapid Iteration</h2>
+<p>As an alternative to running <code>./packages/sky/sky_tool start</code> every time you make a change,
+you might prefer to have the SkyShell reload your app automatically for you as you edit.  To
+do this, run the following command:</p><ul><li><code>./packages/sky/sky_tool listen</code></li></ul>
+<p>This is a long-running command -- just press <code>ctrl-c</code> when you want to stop listening for
+changes to the file system and automatically reloading your app.</p>
+<p>Currently <code>sky_tool listen</code> only works for Android, but iOS device and iOS simulator support
+are coming soon.</p>
+<h2>Debugging</h2>
+<p>Sky uses <a href="https://www.dartlang.org/tools/observatory/">Observatory</a> for
+debugging and profiling. While running your Sky app using <code>sky_tool</code>, you can
+access Observatory by navigating your web browser to
+<a href="http://localhost:8181/">http://localhost:8181/</a>.</p>
+<h2>Building a standalone APK</h2>
+<p>Although it is possible to build a standalone APK containing your application,
+doing so right now is difficult. If you're feeling brave, you can see how we
+build the <code>Stocks.apk</code> in
+<a href="https://github.com/domokit/sky_engine/tree/master/examples/stocks">examples/stocks</a>.
+Eventually we plan to make this much easier and support platforms other than
+Android, but that work still in progress.</p>
+      
+      </section>
+
+    <section class="summary" id="libraries">
+      <h2>Libraries</h2>
+      <dl>
+          <dt id="activity">
+            <span class="name "><a href="activity/activity-library.html">activity</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="animated_component">
+            <span class="name "><a href="animated_component/animated_component-library.html">animated_component</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="animated_container">
+            <span class="name "><a href="animated_container/animated_container-library.html">animated_container</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="animated_simulation">
+            <span class="name "><a href="animated_simulation/animated_simulation-library.html">animated_simulation</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="animated_value">
+            <span class="name "><a href="animated_value/animated_value-library.html">animated_value</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="animation_performance">
+            <span class="name "><a href="animation_performance/animation_performance-library.html">animation_performance</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="arena">
+            <span class="name "><a href="arena/arena-library.html">arena</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="asset_bundle">
+            <span class="name "><a href="asset_bundle/asset_bundle-library.html">asset_bundle</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="auto_layout">
+            <span class="name "><a href="auto_layout/auto_layout-library.html">auto_layout</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="basic">
+            <span class="name "><a href="basic/basic-library.html">basic</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="block">
+            <span class="name "><a href="block/block-library.html">block</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="box">
+            <span class="name "><a href="box/box-library.html">box</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="box_painter">
+            <span class="name "><a href="box_painter/box_painter-library.html">box_painter</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="button_base">
+            <span class="name "><a href="button_base/button_base-library.html">button_base</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="card">
+            <span class="name "><a href="card/card-library.html">card</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="checkbox">
+            <span class="name "><a href="checkbox/checkbox-library.html">checkbox</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="colors">
+            <span class="name "><a href="colors/colors-library.html">colors</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="constants">
+            <span class="name "><a href="constants/constants-library.html">constants</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="curves">
+            <span class="name "><a href="curves/curves-library.html">curves</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="date_picker">
+            <span class="name "><a href="date_picker/date_picker-library.html">date_picker</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="debug">
+            <span class="name "><a href="debug/debug-library.html">debug</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="default_text_style">
+            <span class="name "><a href="default_text_style/default_text_style-library.html">default_text_style</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="dialog">
+            <span class="name "><a href="dialog/dialog-library.html">dialog</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="direction">
+            <span class="name "><a href="direction/direction-library.html">direction</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="dismissable">
+            <span class="name "><a href="dismissable/dismissable-library.html">dismissable</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="drag_target">
+            <span class="name "><a href="drag_target/drag_target-library.html">drag_target</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="drawer">
+            <span class="name "><a href="drawer/drawer-library.html">drawer</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="drawer_divider">
+            <span class="name "><a href="drawer_divider/drawer_divider-library.html">drawer_divider</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="drawer_header">
+            <span class="name "><a href="drawer_header/drawer_header-library.html">drawer_header</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="drawer_item">
+            <span class="name "><a href="drawer_item/drawer_item-library.html">drawer_item</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="edges">
+            <span class="name "><a href="edges/edges-library.html">edges</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="editable_string">
+            <span class="name "><a href="editable_string/editable_string-library.html">editable_string</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="editable_text">
+            <span class="name "><a href="editable_text/editable_text-library.html">editable_text</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="embedder">
+            <span class="name "><a href="embedder/embedder-library.html">embedder</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="fetch">
+            <span class="name "><a href="fetch/fetch-library.html">fetch</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="flat_button">
+            <span class="name "><a href="flat_button/flat_button-library.html">flat_button</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="flex">
+            <span class="name "><a href="flex/flex-library.html">flex</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="floating_action_button">
+            <span class="name "><a href="floating_action_button/floating_action_button-library.html">floating_action_button</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="focus">
+            <span class="name "><a href="focus/focus-library.html">focus</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="forces">
+            <span class="name "><a href="forces/forces-library.html">forces</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="framework">
+            <span class="name "><a href="framework/framework-library.html">framework</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="gesture_detector">
+            <span class="name "><a href="gesture_detector/gesture_detector-library.html">gesture_detector</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="grid">
+            <span class="name "><a href="grid/grid-library.html">grid</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="hit_test">
+            <span class="name "><a href="hit_test/hit_test-library.html">hit_test</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="homogeneous_viewport">
+            <span class="name "><a href="homogeneous_viewport/homogeneous_viewport-library.html">homogeneous_viewport</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="icon">
+            <span class="name "><a href="icon/icon-library.html">icon</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="icon_button">
+            <span class="name "><a href="icon_button/icon_button-library.html">icon_button</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="image">
+            <span class="name "><a href="image/image-library.html">image</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="image_cache">
+            <span class="name "><a href="image_cache/image_cache-library.html">image_cache</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="image_resource">
+            <span class="name "><a href="image_resource/image_resource-library.html">image_resource</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="ink_well">
+            <span class="name "><a href="ink_well/ink_well-library.html">ink_well</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="input">
+            <span class="name "><a href="input/input-library.html">input</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="keyboard">
+            <span class="name "><a href="keyboard/keyboard-library.html">keyboard</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="layer">
+            <span class="name "><a href="layer/layer-library.html">layer</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="lerp">
+            <span class="name "><a href="lerp/lerp-library.html">lerp</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="long_press">
+            <span class="name "><a href="long_press/long_press-library.html">long_press</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="material">
+            <span class="name "><a href="material/material-library.html">material</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="material_button">
+            <span class="name "><a href="material_button/material_button-library.html">material_button</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="mimic">
+            <span class="name "><a href="mimic/mimic-library.html">mimic</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="mimic_overlay">
+            <span class="name "><a href="mimic_overlay/mimic_overlay-library.html">mimic_overlay</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="mixed_viewport">
+            <span class="name "><a href="mixed_viewport/mixed_viewport-library.html">mixed_viewport</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="modal_overlay">
+            <span class="name "><a href="modal_overlay/modal_overlay-library.html">modal_overlay</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="navigator">
+            <span class="name "><a href="navigator/navigator-library.html">navigator</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="node">
+            <span class="name "><a href="node/node-library.html">node</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="object">
+            <span class="name "><a href="object/object-library.html">object</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="paragraph">
+            <span class="name "><a href="paragraph/paragraph-library.html">paragraph</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="pointer_router">
+            <span class="name "><a href="pointer_router/pointer_router-library.html">pointer_router</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="popup_menu">
+            <span class="name "><a href="popup_menu/popup_menu-library.html">popup_menu</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="popup_menu_item">
+            <span class="name "><a href="popup_menu_item/popup_menu_item-library.html">popup_menu_item</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="progress_indicator">
+            <span class="name "><a href="progress_indicator/progress_indicator-library.html">progress_indicator</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="proxy_box">
+            <span class="name "><a href="proxy_box/proxy_box-library.html">proxy_box</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="radial_reaction">
+            <span class="name "><a href="radial_reaction/radial_reaction-library.html">radial_reaction</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="radio">
+            <span class="name "><a href="radio/radio-library.html">radio</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="raised_button">
+            <span class="name "><a href="raised_button/raised_button-library.html">raised_button</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="recognizer">
+            <span class="name "><a href="recognizer/recognizer-library.html">recognizer</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="rendering">
+            <span class="name "><a href="rendering/rendering-library.html">rendering</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="scaffold">
+            <span class="name "><a href="scaffold/scaffold-library.html">scaffold</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="scheduler">
+            <span class="name "><a href="scheduler/scheduler-library.html">scheduler</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="scroll">
+            <span class="name "><a href="scroll/scroll-library.html">scroll</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="scroll_behavior">
+            <span class="name "><a href="scroll_behavior/scroll_behavior-library.html">scroll_behavior</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="scrollable">
+            <span class="name "><a href="scrollable/scrollable-library.html">scrollable</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="shadows">
+            <span class="name "><a href="shadows/shadows-library.html">shadows</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="shadows">
+            <span class="name "><a href="shadows/shadows-library.html">shadows</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="shell">
+            <span class="name "><a href="shell/shell-library.html">shell</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="shifted_box">
+            <span class="name "><a href="shifted_box/shifted_box-library.html">shifted_box</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="show_press">
+            <span class="name "><a href="show_press/show_press-library.html">show_press</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="sky_binding">
+            <span class="name "><a href="sky_binding/sky_binding-library.html">sky_binding</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="snack_bar">
+            <span class="name "><a href="snack_bar/snack_bar-library.html">snack_bar</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="stack">
+            <span class="name "><a href="stack/stack-library.html">stack</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="switch">
+            <span class="name "><a href="switch/switch-library.html">switch</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="tabs">
+            <span class="name "><a href="tabs/tabs-library.html">tabs</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="tap">
+            <span class="name "><a href="tap/tap-library.html">tap</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="text_painter">
+            <span class="name "><a href="text_painter/text_painter-library.html">text_painter</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="text_style">
+            <span class="name "><a href="text_style/text_style-library.html">text_style</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="theme">
+            <span class="name "><a href="theme/theme-library.html">theme</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="theme_data">
+            <span class="name "><a href="theme_data/theme_data-library.html">theme_data</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="timeline">
+            <span class="name "><a href="timeline/timeline-library.html">timeline</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="title">
+            <span class="name "><a href="title/title-library.html">title</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="toggleable">
+            <span class="name "><a href="toggleable/toggleable-library.html">toggleable</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="tool_bar">
+            <span class="name "><a href="tool_bar/tool_bar-library.html">tool_bar</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="transitions">
+            <span class="name "><a href="transitions/transitions-library.html">transitions</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="typography">
+            <span class="name "><a href="typography/typography-library.html">typography</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="view">
+            <span class="name "><a href="view/view-library.html">view</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="view_configuration">
+            <span class="name "><a href="view_configuration/view_configuration-library.html">view_configuration</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="viewport">
+            <span class="name "><a href="viewport/viewport-library.html">viewport</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+          <dt id="widgets">
+            <span class="name "><a href="widgets/widgets-library.html">widgets</a></span>
+          </dt>
+          <dd>
+            <span class="undocumented">Library not documented.</span>
+            <p></p>
+          </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+
+  </div><!--/.sidebar-offcanvas-right-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>debugDoesMeetConstraints method - RenderBox class - box library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the debugDoesMeetConstraints method from the RenderBox class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="box/box-library.html">box</a></li>
+                  <li><a href="box/RenderBox-class.html">RenderBox</a></li>
+                  <li class="self-crumb">debugDoesMeetConstraints</li>
+              </ol>
+              <div class="self-name">debugDoesMeetConstraints</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="box/box-library.html">box</a></li>
+              <li><a href="box/RenderBox-class.html">RenderBox</a></li>
+              <li class="self-crumb">debugDoesMeetConstraints</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> debugDoesMeetConstraints
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="box/RenderBox/debugDoesMeetConstraints.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="box/box-library.html">box</a></h5>
+    <h5><a href="box/RenderBox-class.html">RenderBox</a></h5>
+
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li>attached
+</li>
+      <li><a href="box/RenderBox/constraints.html">constraints</a>
+</li>
+      <li>debugCanParentUseSize
+</li>
+      <li>debugCanPerformMutations
+</li>
+      <li>debugDoingThisLayout
+</li>
+      <li>debugDoingThisPaint
+</li>
+      <li>debugDoingThisResize
+</li>
+      <li>debugExceptionContext
+</li>
+      <li>depth
+</li>
+      <li>hasLayer
+</li>
+      <li>layer
+</li>
+      <li>needsCompositing
+</li>
+      <li>needsLayout
+</li>
+      <li>needsPaint
+</li>
+      <li><a href="box/RenderBox/paintBounds.html">paintBounds</a>
+</li>
+      <li>parent
+</li>
+      <li>parentData
+</li>
+      <li><a href="box/RenderBox/size.html">size</a>
+</li>
+      <li>sizedByParent
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="box/RenderBox/RenderBox.html">RenderBox</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li>adoptChild
+</li>
+      <li><a href="box/RenderBox/applyPaintTransform.html">applyPaintTransform</a>
+</li>
+      <li>attach
+</li>
+      <li>attachChildren
+</li>
+      <li><a href="box/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a>
+</li>
+      <li>debugAncestorsAlreadyMarkedNeedsLayout
+</li>
+      <li>debugDescribeChildren
+</li>
+      <li><a href="box/RenderBox/debugDescribeSettings.html">debugDescribeSettings</a>
+</li>
+      <li><a href="box/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a>
+</li>
+      <li><a href="box/RenderBox/debugPaint.html">debugPaint</a>
+</li>
+      <li><a href="box/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a>
+</li>
+      <li><a href="box/RenderBox/debugPaintSize.html">debugPaintSize</a>
+</li>
+      <li>detach
+</li>
+      <li>detachChildren
+</li>
+      <li>dropChild
+</li>
+      <li><a href="box/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a>
+</li>
+      <li><a href="box/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a>
+</li>
+      <li><a href="box/RenderBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a>
+</li>
+      <li><a href="box/RenderBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a>
+</li>
+      <li><a href="box/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a>
+</li>
+      <li><a href="box/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a>
+</li>
+      <li><a href="box/RenderBox/globalToLocal.html">globalToLocal</a>
+</li>
+      <li>handleEvent
+</li>
+      <li><a href="box/RenderBox/hitTest.html">hitTest</a>
+</li>
+      <li><a href="box/RenderBox/hitTestChildren.html">hitTestChildren</a>
+</li>
+      <li>invokeLayoutCallback
+</li>
+      <li>layout
+</li>
+      <li>layoutWithoutResize
+</li>
+      <li><a href="box/RenderBox/localToGlobal.html">localToGlobal</a>
+</li>
+      <li>markNeedsCompositingBitsUpdate
+</li>
+      <li><a href="box/RenderBox/markNeedsLayout.html">markNeedsLayout</a>
+</li>
+      <li>markNeedsPaint
+</li>
+      <li>paint
+</li>
+      <li><a href="box/RenderBox/performLayout.html">performLayout</a>
+</li>
+      <li><a href="box/RenderBox/performResize.html">performResize</a>
+</li>
+      <li>redepthChild
+</li>
+      <li>redepthChildren
+</li>
+      <li>rotate
+</li>
+      <li>scheduleInitialLayout
+</li>
+      <li>scheduleInitialPaint
+</li>
+      <li><a href="box/RenderBox/setupParentData.html">setupParentData</a>
+</li>
+      <li>toString
+</li>
+      <li>toStringName
+</li>
+      <li>updateCompositingBits
+</li>
+      <li>visitChildren
+</li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype">bool</span>
+            <span class="name ">debugDoesMeetConstraints</span>(
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">bool debugDoesMeetConstraints() {
+  assert(constraints != null);
+  assert(_size != null);
+  assert(() {
+    &apos;See https://github.com/domokit/sky_engine/blob/master/sky/packages/sky/lib/widgets/sizing.md#user-content-unbounded-constraints&apos;;
+    return !_size.isInfinite;
+  });
+  bool result = constraints.contains(_size);
+  if (!result)
+    print(&quot;${this.runtimeType} does not meet its constraints. Constraints: $constraints, size: $_size&quot;);
+  return result;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

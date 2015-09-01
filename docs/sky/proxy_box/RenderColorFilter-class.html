@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RenderColorFilter class - proxy_box library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the RenderColorFilter class from the proxy_box library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="proxy_box/proxy_box-library.html">proxy_box</a></li>
+                  <li class="self-crumb">RenderColorFilter</li>
+              </ol>
+              <div class="self-name">RenderColorFilter</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="proxy_box/proxy_box-library.html">proxy_box</a></li>
+              <li class="self-crumb">RenderColorFilter</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> RenderColorFilter
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="proxy_box/RenderColorFilter-class.html#instance-properties">Properties</a></li>
+              <li><a href="proxy_box/RenderColorFilter-class.html#constructors">Constructors</a></li>
+              <li><a href="proxy_box/RenderColorFilter-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="proxy_box/proxy_box-library.html">proxy_box</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="proxy_box/proxy_box-library.html#typedefs">Typedefs</a></li>
+      <li><a href="proxy_box/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a href="proxy_box/CustomPaintCallback.html">CustomPaintCallback</a></li>
+      <li><a href="proxy_box/SizeChangedCallback.html">SizeChangedCallback</a></li>
+    
+    
+      <li class="section-title"><a href="proxy_box/proxy_box-library.html#functions">Functions</a></li>
+      <li><a href="proxy_box/paintImage.html">paintImage</a></li>
+    
+      <li class="section-title"><a href="proxy_box/proxy_box-library.html#enums">Enums</a></li>
+      <li><a href="proxy_box/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
+      <li><a href="proxy_box/ImageFit-class.html">ImageFit</a></li>
+      <li><a href="proxy_box/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="proxy_box/Shape-class.html">Shape</a></li>
+    
+      <li class="section-title"><a href="proxy_box/proxy_box-library.html#classes">Classes</a></li>
+      <li><a href="proxy_box/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a href="proxy_box/Border-class.html">Border</a></li>
+      <li><a href="proxy_box/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="proxy_box/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="proxy_box/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="proxy_box/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="proxy_box/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="proxy_box/Gradient-class.html">Gradient</a></li>
+      <li><a href="proxy_box/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="proxy_box/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="proxy_box/RenderAspectRatio-class.html">RenderAspectRatio</a></li>
+      <li><a href="proxy_box/RenderClipOval-class.html">RenderClipOval</a></li>
+      <li><a href="proxy_box/RenderClipRect-class.html">RenderClipRect</a></li>
+      <li><a href="proxy_box/RenderClipRRect-class.html">RenderClipRRect</a></li>
+      <li><a href="proxy_box/RenderColorFilter-class.html">RenderColorFilter</a></li>
+      <li><a href="proxy_box/RenderConstrainedBox-class.html">RenderConstrainedBox</a></li>
+      <li><a href="proxy_box/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
+      <li><a href="proxy_box/RenderDecoratedBox-class.html">RenderDecoratedBox</a></li>
+      <li><a href="proxy_box/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
+      <li><a href="proxy_box/RenderOpacity-class.html">RenderOpacity</a></li>
+      <li><a href="proxy_box/RenderProxyBox-class.html">RenderProxyBox</a></li>
+      <li><a href="proxy_box/RenderShrinkWrapHeight-class.html">RenderShrinkWrapHeight</a></li>
+      <li><a href="proxy_box/RenderShrinkWrapWidth-class.html">RenderShrinkWrapWidth</a></li>
+      <li><a href="proxy_box/RenderSizeObserver-class.html">RenderSizeObserver</a></li>
+      <li><a href="proxy_box/RenderTransform-class.html">RenderTransform</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+
+        <dt>Extends</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+            <li>Object</li>
+            <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
+            <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+            <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+            <li><a href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
+            <li>RenderColorFilter</li>
+        </ul></dd>
+
+
+
+        </dl>
+    </section>
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="attached" class="property">
+            <span class="name ">attached</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>Whether this node is in a tree whose root is attached to something.</p>
+            </dd>
+            <dt id="child" class="property">
+            <span class="name ">child</span>    
+                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="child" class="property">
+            <span class="name ">child</span>    
+                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="color" class="property">
+                <span class="name"><a href="proxy_box/RenderColorFilter/color.html">color</a></span>
+                <span class="signature">&#8594; <a href="basic/Color-class.html">Color</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="constraints" class="property">
+            <span class="name ">constraints</span>    
+                <span class="signature">&#8594; <a href="basic/BoxConstraints-class.html">BoxConstraints</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugCanParentUseSize" class="property">
+            <span class="name ">debugCanParentUseSize</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugCanPerformMutations" class="property">
+            <span class="name ">debugCanPerformMutations</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingThisLayout" class="property">
+            <span class="name ">debugDoingThisLayout</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingThisPaint" class="property">
+            <span class="name ">debugDoingThisPaint</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugDoingThisResize" class="property">
+            <span class="name ">debugDoingThisResize</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="debugExceptionContext" class="property">
+            <span class="name ">debugExceptionContext</span>    
+                <span class="signature">&#8594; dynamic</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="depth" class="property">
+            <span class="name ">depth</span>    
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>The depth of this node in the tree.</p>
+            </dd>
+            <dt id="hasLayer" class="property">
+            <span class="name ">hasLayer</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="layer" class="property">
+            <span class="name ">layer</span>    
+                <span class="signature">&#8594; <a href="layer/ContainerLayer-class.html">ContainerLayer</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="needsCompositing" class="property">
+            <span class="name ">needsCompositing</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="needsLayout" class="property">
+            <span class="name ">needsLayout</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="needsPaint" class="property">
+            <span class="name ">needsPaint</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="paintBounds" class="property">
+            <span class="name ">paintBounds</span>    
+                <span class="signature">&#8594; <a href="basic/Rect-class.html">Rect</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="parent" class="property">
+            <span class="name ">parent</span>    
+                <span class="signature">&#8594; <a href="node/AbstractNode-class.html">AbstractNode</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>The parent of this node in the tree.</p>
+            </dd>
+            <dt id="parentData" class="property">
+            <span class="name ">parentData</span>    
+                <span class="signature">&#8594; dynamic</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="size" class="property">
+            <span class="name ">size</span>    
+                <span class="signature">&#8594; <a href="basic/Size-class.html">Size</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="sizedByParent" class="property">
+            <span class="name ">sizedByParent</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="transferMode" class="property">
+                <span class="name"><a href="proxy_box/RenderColorFilter/transferMode.html">transferMode</a></span>
+                <span class="signature">&#8594; TransferMode</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="RenderColorFilter" class="callable">
+                <span class="name"><a href="proxy_box/RenderColorFilter/RenderColorFilter.html">RenderColorFilter</a></span><span class="signature">({<span class="parameter" id="-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="-param-color"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>, <span class="parameter" id="-param-transferMode"><span class="type-annotation">TransferMode</span> <span class="parameter-name">transferMode</span></span>})</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="adoptChild" class="callable">
+                  <span class="name ">adoptChild</span><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Subclasses should call this function when they acquire a new child.</p>
+              </dd>
+              <dt id="applyPaintTransform" class="callable">
+                  <span class="name ">applyPaintTransform</span><span class="signature">(<wbr><span class="parameter" id="applyPaintTransform-param-transform"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="attach" class="callable">
+                  <span class="name ">attach</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Mark this node as attached.</p>
+              </dd>
+              <dt id="attachChildren" class="callable">
+                  <span class="name ">attachChildren</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function in subclasses with child to call attach() for each
+child. Do not call directly.</p>
+              </dd>
+              <dt id="computeDistanceToActualBaseline" class="callable">
+                  <span class="name ">computeDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugAncestorsAlreadyMarkedNeedsLayout" class="callable">
+                  <span class="name ">debugAncestorsAlreadyMarkedNeedsLayout</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugDescribeChildren" class="callable">
+                  <span class="name ">debugDescribeChildren</span><span class="signature">(<wbr><span class="parameter" id="debugDescribeChildren-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span></span>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugDescribeSettings" class="callable">
+                  <span class="name ">debugDescribeSettings</span><span class="signature">(<wbr><span class="parameter" id="debugDescribeSettings-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span></span>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugDoesMeetConstraints" class="callable">
+                  <span class="name ">debugDoesMeetConstraints</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugPaint" class="callable">
+                  <span class="name ">debugPaint</span><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugPaintBaselines" class="callable">
+                  <span class="name ">debugPaintBaselines</span><span class="signature">(<wbr><span class="parameter" id="debugPaintBaselines-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaintBaselines-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="debugPaintSize" class="callable">
+                  <span class="name ">debugPaintSize</span><span class="signature">(<wbr><span class="parameter" id="debugPaintSize-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaintSize-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="detach" class="callable">
+                  <span class="name ">detach</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Mark this node as detached.</p>
+              </dd>
+              <dt id="detachChildren" class="callable">
+                  <span class="name ">detachChildren</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function in subclasses with child to call detach() for each
+child. Do not call directly.</p>
+              </dd>
+              <dt id="dropChild" class="callable">
+                  <span class="name ">dropChild</span><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Subclasses should call this function when they lose a child.</p>
+              </dd>
+              <dt id="getDistanceToActualBaseline" class="callable">
+                  <span class="name ">getDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="getDistanceToBaseline" class="callable">
+                  <span class="name ">getDistanceToBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>, {<span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span>})
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="getMaxIntrinsicHeight" class="callable">
+                  <span class="name ">getMaxIntrinsicHeight</span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="getMaxIntrinsicWidth" class="callable">
+                  <span class="name ">getMaxIntrinsicWidth</span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="getMinIntrinsicHeight" class="callable">
+                  <span class="name ">getMinIntrinsicHeight</span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="getMinIntrinsicWidth" class="callable">
+                  <span class="name ">getMinIntrinsicWidth</span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                      &#8594;
+                      <span class="returntype">double</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="globalToLocal" class="callable">
+                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="box/Point-class.html">Point</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="handleEvent" class="callable">
+                  <span class="name ">handleEvent</span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="hit_test/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="object/EventDisposition-class.html">EventDisposition</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function to receive events.</p>
+              </dd>
+              <dt id="hitTest" class="callable">
+                  <span class="name ">hitTest</span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="hitTestChildren" class="callable">
+                  <span class="name ">hitTestChildren</span><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="invokeLayoutCallback" class="callable">
+                  <span class="name ">invokeLayoutCallback</span><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="layout" class="callable">
+                  <span class="name ">layout</span><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>, {<span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation">bool</span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span>})
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="layoutWithoutResize" class="callable">
+                  <span class="name ">layoutWithoutResize</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="localToGlobal" class="callable">
+                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="box/Point-class.html">Point</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="markNeedsCompositingBitsUpdate" class="callable">
+                  <span class="name ">markNeedsCompositingBitsUpdate</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="markNeedsLayout" class="callable">
+                  <span class="name ">markNeedsLayout</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="markNeedsPaint" class="callable">
+                  <span class="name ">markNeedsPaint</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="paint" class="callable">
+                  <a href="proxy_box/RenderColorFilter/paint.html"><span class="name ">paint</span></a><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="performLayout" class="callable">
+                  <span class="name ">performLayout</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="performResize" class="callable">
+                  <span class="name ">performResize</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="redepthChild" class="callable">
+                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Call only from overrides of <a href="node/AbstractNode/redepthChildren.html">redepthChildren</a></p>
+              </dd>
+              <dt id="redepthChildren" class="callable">
+                  <span class="name ">redepthChildren</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function in subclasses with child nodes to call
+redepthChild(child) for each child. Do not call directly.</p>
+              </dd>
+              <dt id="rotate" class="callable">
+                  <span class="name ">rotate</span><span class="signature">(<wbr>{<span class="parameter" id="rotate-param-oldAngle"><span class="type-annotation">int</span> <span class="parameter-name">oldAngle</span></span>, <span class="parameter" id="rotate-param-newAngle"><span class="type-annotation">int</span> <span class="parameter-name">newAngle</span></span>, <span class="parameter" id="rotate-param-time"><span class="type-annotation">Duration</span> <span class="parameter-name">time</span></span>})
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="scheduleInitialLayout" class="callable">
+                  <span class="name ">scheduleInitialLayout</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="scheduleInitialPaint" class="callable">
+                  <span class="name ">scheduleInitialPaint</span><span class="signature">(<wbr><span class="parameter" id="scheduleInitialPaint-param-rootLayer"><span class="type-annotation"><a href="layer/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">rootLayer</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="setupParentData" class="callable">
+                  <span class="name ">setupParentData</span><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <span class="name ">toString</span><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>])
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+              <dt id="toStringName" class="callable">
+                  <span class="name ">toStringName</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="updateCompositingBits" class="callable">
+                  <span class="name ">updateCompositingBits</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="visitChildren" class="callable">
+                  <span class="name ">visitChildren</span><span class="signature">(<wbr><span class="parameter" id="visitChildren-param-visitor"><span class="type-annotation">void</span> <span class="parameter-name">visitor</span>(<span class="parameter" id="RenderObjectVisitor-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)</span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>RenderColorFilter</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li>attached
+</li>
+      <li>child
+</li>
+      <li>child
+</li>
+      <li><a href="proxy_box/RenderColorFilter/color.html">color</a>
+</li>
+      <li>constraints
+</li>
+      <li>debugCanParentUseSize
+</li>
+      <li>debugCanPerformMutations
+</li>
+      <li>debugDoingThisLayout
+</li>
+      <li>debugDoingThisPaint
+</li>
+      <li>debugDoingThisResize
+</li>
+      <li>debugExceptionContext
+</li>
+      <li>depth
+</li>
+      <li>hasLayer
+</li>
+      <li>layer
+</li>
+      <li>needsCompositing
+</li>
+      <li>needsLayout
+</li>
+      <li>needsPaint
+</li>
+      <li>paintBounds
+</li>
+      <li>parent
+</li>
+      <li>parentData
+</li>
+      <li>size
+</li>
+      <li>sizedByParent
+</li>
+      <li><a href="proxy_box/RenderColorFilter/transferMode.html">transferMode</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="proxy_box/RenderColorFilter/RenderColorFilter.html">RenderColorFilter</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li>adoptChild
+</li>
+      <li>applyPaintTransform
+</li>
+      <li>attach
+</li>
+      <li>attachChildren
+</li>
+      <li>computeDistanceToActualBaseline
+</li>
+      <li>debugAncestorsAlreadyMarkedNeedsLayout
+</li>
+      <li>debugDescribeChildren
+</li>
+      <li>debugDescribeSettings
+</li>
+      <li>debugDoesMeetConstraints
+</li>
+      <li>debugPaint
+</li>
+      <li>debugPaintBaselines
+</li>
+      <li>debugPaintSize
+</li>
+      <li>detach
+</li>
+      <li>detachChildren
+</li>
+      <li>dropChild
+</li>
+      <li>getDistanceToActualBaseline
+</li>
+      <li>getDistanceToBaseline
+</li>
+      <li>getMaxIntrinsicHeight
+</li>
+      <li>getMaxIntrinsicWidth
+</li>
+      <li>getMinIntrinsicHeight
+</li>
+      <li>getMinIntrinsicWidth
+</li>
+      <li>globalToLocal
+</li>
+      <li>handleEvent
+</li>
+      <li>hitTest
+</li>
+      <li>hitTestChildren
+</li>
+      <li>invokeLayoutCallback
+</li>
+      <li>layout
+</li>
+      <li>layoutWithoutResize
+</li>
+      <li>localToGlobal
+</li>
+      <li>markNeedsCompositingBitsUpdate
+</li>
+      <li>markNeedsLayout
+</li>
+      <li>markNeedsPaint
+</li>
+      <li><a href="proxy_box/RenderColorFilter/paint.html">paint</a>
+</li>
+      <li>performLayout
+</li>
+      <li>performResize
+</li>
+      <li>redepthChild
+</li>
+      <li>redepthChildren
+</li>
+      <li>rotate
+</li>
+      <li>scheduleInitialLayout
+</li>
+      <li>scheduleInitialPaint
+</li>
+      <li>setupParentData
+</li>
+      <li>toString
+</li>
+      <li>toStringName
+</li>
+      <li>updateCompositingBits
+</li>
+      <li>visitChildren
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

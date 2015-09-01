@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>operator * method - Matrix4 class - rendering library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the operator * method from the Matrix4 class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="rendering/rendering-library.html">rendering</a></li>
+                  <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
+                  <li class="self-crumb">operator *</li>
+              </ol>
+              <div class="self-name">operator *</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="rendering/rendering-library.html">rendering</a></li>
+              <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
+              <li class="self-crumb">operator *</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> operator *
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="rendering/Matrix4/operator_multiply.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="rendering/rendering-library.html">rendering</a></h5>
+    <h5><a href="rendering/Matrix4-class.html">Matrix4</a></h5>
+
+    <ol>
+    
+    
+      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li><a href="rendering/Matrix4/solve.html">solve</a></li>
+      <li><a href="rendering/Matrix4/solve2.html">solve2</a></li>
+      <li><a href="rendering/Matrix4/solve3.html">solve3</a></li>
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="rendering/Matrix4/dimension.html">dimension</a>
+</li>
+      <li><a href="rendering/Matrix4/forward.html">forward</a>
+</li>
+      <li><a href="rendering/Matrix4/right.html">right</a>
+</li>
+      <li><a href="rendering/Matrix4/row0.html">row0</a>
+</li>
+      <li><a href="rendering/Matrix4/row1.html">row1</a>
+</li>
+      <li><a href="rendering/Matrix4/row2.html">row2</a>
+</li>
+      <li><a href="rendering/Matrix4/row3.html">row3</a>
+</li>
+      <li><a href="rendering/Matrix4/storage.html">storage</a>
+</li>
+      <li><a href="rendering/Matrix4/up.html">up</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.html">Matrix4</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.columns.html">columns</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.copy.html">copy</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.diagonal3.html">diagonal3</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.diagonal3Values.html">diagonal3Values</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.fromBuffer.html">fromBuffer</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.fromFloat32List.html">fromFloat32List</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.identity.html">identity</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.outer.html">outer</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.rotationX.html">rotationX</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.rotationY.html">rotationY</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.rotationZ.html">rotationZ</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.translation.html">translation</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.translationValues.html">translationValues</a></li>
+      <li><a href="rendering/Matrix4/Matrix4.zero.html">zero</a></li>
+    
+      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li><a href="rendering/Matrix4/operator_multiply.html">operator *</a>
+</li>
+      <li><a href="rendering/Matrix4/operator_plus.html">operator +</a>
+</li>
+      <li><a href="rendering/Matrix4/operator_minus.html">operator -</a>
+</li>
+      <li><a href="rendering/Matrix4/operator_unary_minus.html">operator unary-</a>
+</li>
+      <li><a href="rendering/Matrix4/operator_get.html">operator []</a>
+</li>
+      <li><a href="rendering/Matrix4/operator_put.html">operator []=</a>
+</li>
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li><a href="rendering/Matrix4/absolute.html">absolute</a>
+</li>
+      <li><a href="rendering/Matrix4/absoluteError.html">absoluteError</a>
+</li>
+      <li><a href="rendering/Matrix4/absoluteRotate.html">absoluteRotate</a>
+</li>
+      <li><a href="rendering/Matrix4/add.html">add</a>
+</li>
+      <li><a href="rendering/Matrix4/clone.html">clone</a>
+</li>
+      <li><a href="rendering/Matrix4/copyFromArray.html">copyFromArray</a>
+</li>
+      <li><a href="rendering/Matrix4/copyInto.html">copyInto</a>
+</li>
+      <li><a href="rendering/Matrix4/copyIntoArray.html">copyIntoArray</a>
+</li>
+      <li><a href="rendering/Matrix4/copyInverse.html">copyInverse</a>
+</li>
+      <li><a href="rendering/Matrix4/determinant.html">determinant</a>
+</li>
+      <li><a href="rendering/Matrix4/dotColumn.html">dotColumn</a>
+</li>
+      <li><a href="rendering/Matrix4/dotRow.html">dotRow</a>
+</li>
+      <li><a href="rendering/Matrix4/entry.html">entry</a>
+</li>
+      <li><a href="rendering/Matrix4/getColumn.html">getColumn</a>
+</li>
+      <li><a href="rendering/Matrix4/getRotation.html">getRotation</a>
+</li>
+      <li><a href="rendering/Matrix4/getRow.html">getRow</a>
+</li>
+      <li><a href="rendering/Matrix4/getTranslation.html">getTranslation</a>
+</li>
+      <li><a href="rendering/Matrix4/index.html">index</a>
+</li>
+      <li><a href="rendering/Matrix4/infinityNorm.html">infinityNorm</a>
+</li>
+      <li><a href="rendering/Matrix4/invert.html">invert</a>
+</li>
+      <li><a href="rendering/Matrix4/invertRotation.html">invertRotation</a>
+</li>
+      <li><a href="rendering/Matrix4/multiply.html">multiply</a>
+</li>
+      <li><a href="rendering/Matrix4/multiplyTranspose.html">multiplyTranspose</a>
+</li>
+      <li><a href="rendering/Matrix4/negate.html">negate</a>
+</li>
+      <li><a href="rendering/Matrix4/relativeError.html">relativeError</a>
+</li>
+      <li><a href="rendering/Matrix4/rotate.html">rotate</a>
+</li>
+      <li><a href="rendering/Matrix4/rotate3.html">rotate3</a>
+</li>
+      <li><a href="rendering/Matrix4/rotated3.html">rotated3</a>
+</li>
+      <li><a href="rendering/Matrix4/rotateX.html">rotateX</a>
+</li>
+      <li><a href="rendering/Matrix4/rotateY.html">rotateY</a>
+</li>
+      <li><a href="rendering/Matrix4/rotateZ.html">rotateZ</a>
+</li>
+      <li><a href="rendering/Matrix4/scale.html">scale</a>
+</li>
+      <li><a href="rendering/Matrix4/scaleAdjoint.html">scaleAdjoint</a>
+</li>
+      <li><a href="rendering/Matrix4/setColumn.html">setColumn</a>
+</li>
+      <li><a href="rendering/Matrix4/setColumns.html">setColumns</a>
+</li>
+      <li><a href="rendering/Matrix4/setDiagonal.html">setDiagonal</a>
+</li>
+      <li><a href="rendering/Matrix4/setEntry.html">setEntry</a>
+</li>
+      <li><a href="rendering/Matrix4/setFrom.html">setFrom</a>
+</li>
+      <li><a href="rendering/Matrix4/setFromTranslationRotation.html">setFromTranslationRotation</a>
+</li>
+      <li><a href="rendering/Matrix4/setIdentity.html">setIdentity</a>
+</li>
+      <li><a href="rendering/Matrix4/setRotation.html">setRotation</a>
+</li>
+      <li><a href="rendering/Matrix4/setRotationX.html">setRotationX</a>
+</li>
+      <li><a href="rendering/Matrix4/setRotationY.html">setRotationY</a>
+</li>
+      <li><a href="rendering/Matrix4/setRotationZ.html">setRotationZ</a>
+</li>
+      <li><a href="rendering/Matrix4/setRow.html">setRow</a>
+</li>
+      <li><a href="rendering/Matrix4/setTranslation.html">setTranslation</a>
+</li>
+      <li><a href="rendering/Matrix4/setTranslationRaw.html">setTranslationRaw</a>
+</li>
+      <li><a href="rendering/Matrix4/setUpper2x2.html">setUpper2x2</a>
+</li>
+      <li><a href="rendering/Matrix4/setValues.html">setValues</a>
+</li>
+      <li><a href="rendering/Matrix4/setZero.html">setZero</a>
+</li>
+      <li><a href="rendering/Matrix4/splatDiagonal.html">splatDiagonal</a>
+</li>
+      <li><a href="rendering/Matrix4/sub.html">sub</a>
+</li>
+      <li><a href="rendering/Matrix4/toString.html">toString</a>
+</li>
+      <li><a href="rendering/Matrix4/trace.html">trace</a>
+</li>
+      <li><a href="rendering/Matrix4/transform.html">transform</a>
+</li>
+      <li><a href="rendering/Matrix4/transform3.html">transform3</a>
+</li>
+      <li><a href="rendering/Matrix4/transformed.html">transformed</a>
+</li>
+      <li><a href="rendering/Matrix4/transformed3.html">transformed3</a>
+</li>
+      <li><a href="rendering/Matrix4/translate.html">translate</a>
+</li>
+      <li><a href="rendering/Matrix4/transpose.html">transpose</a>
+</li>
+      <li><a href="rendering/Matrix4/transposed.html">transposed</a>
+</li>
+      <li><a href="rendering/Matrix4/transposeMultiply.html">transposeMultiply</a>
+</li>
+      <li><a href="rendering/Matrix4/transposeRotation.html">transposeRotation</a>
+</li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype">dynamic</span>
+            <span class="name ">operator *</span>(
+            <br>
+            <div class="parameters">
+                <span class="parameter" id="*-param-arg"><span class="parameter-name">arg</span></span>
+            </div>
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p>Returns a new vector or matrix by multiplying <code>this</code> with <code>arg</code>.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">/// Returns a new vector or matrix by multiplying [this] with [arg].
+dynamic operator *(dynamic arg) {
+  if (arg is double) {
+    return _mul_scale(arg);
+  }
+  if (arg is Vector4) {
+    return _mul_vector(arg);
+  }
+  if (arg is Vector3) {
+    return _mul_vector3(arg);
+  }
+  if (4 == arg.dimension) {
+    return _mul_matrix(arg);
+  }
+  throw new ArgumentError(arg);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

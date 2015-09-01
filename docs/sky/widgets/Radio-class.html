@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Radio class - widgets library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the Radio class from the widgets library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="widgets/widgets-library.html">widgets</a></li>
+                  <li class="self-crumb">Radio</li>
+              </ol>
+              <div class="self-name">Radio</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="widgets/widgets-library.html">widgets</a></li>
+              <li class="self-crumb">Radio</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> Radio
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="widgets/Radio-class.html#instance-properties">Properties</a></li>
+              <li><a href="widgets/Radio-class.html#constructors">Constructors</a></li>
+              <li><a href="widgets/Radio-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="widgets/widgets-library.html">widgets</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
+      <li><a href="widgets/bold.html">bold</a></li>
+      <li><a href="widgets/edges.html">edges</a></li>
+      <li><a href="widgets/lineThrough.html">lineThrough</a></li>
+      <li><a href="widgets/normal.html">normal</a></li>
+      <li><a href="widgets/overline.html">overline</a></li>
+      <li><a href="widgets/underline.html">underline</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#typedefs">Typedefs</a></li>
+      <li><a href="widgets/Builder.html">Builder</a></li>
+      <li><a href="widgets/BuilderFunction.html">BuilderFunction</a></li>
+      <li><a href="widgets/DatePickerModeChanged.html">DatePickerModeChanged</a></li>
+      <li><a href="widgets/DatePickerValueChanged.html">DatePickerValueChanged</a></li>
+      <li><a href="widgets/DialogBuilder.html">DialogBuilder</a></li>
+      <li><a href="widgets/DismissedCallback.html">DismissedCallback</a></li>
+      <li><a href="widgets/DragTargetAccept.html">DragTargetAccept</a></li>
+      <li><a href="widgets/DragTargetBuilder.html">DragTargetBuilder</a></li>
+      <li><a href="widgets/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
+      <li><a href="widgets/DrawerDismissedCallback.html">DrawerDismissedCallback</a></li>
+      <li><a href="widgets/EventListener.html">EventListener</a></li>
+      <li><a href="widgets/FocusChanged.html">FocusChanged</a></li>
+      <li><a href="widgets/GestureEventListener.html">GestureEventListener</a></li>
+      <li><a href="widgets/GlobalKeyRemoveListener.html">GlobalKeyRemoveListener</a></li>
+      <li><a href="widgets/GlobalKeySyncListener.html">GlobalKeySyncListener</a></li>
+      <li><a href="widgets/IndexedBuilder.html">IndexedBuilder</a></li>
+      <li><a href="widgets/ItemBuilder.html">ItemBuilder</a></li>
+      <li><a href="widgets/LayoutChanged.html">LayoutChanged</a></li>
+      <li><a href="widgets/LayoutChangedCallback.html">LayoutChangedCallback</a></li>
+      <li><a href="widgets/ListBuilder.html">ListBuilder</a></li>
+      <li><a href="widgets/MimicReadyCallback.html">MimicReadyCallback</a></li>
+      <li><a href="widgets/OnPressedFunction.html">OnPressedFunction</a></li>
+      <li><a href="widgets/PageChangedCallback.html">PageChangedCallback</a></li>
+      <li><a href="widgets/PointerEventListener.html">PointerEventListener</a></li>
+      <li><a href="widgets/PopupMenuDismissedCallback.html">PopupMenuDismissedCallback</a></li>
+      <li><a href="widgets/RadioValueChanged.html">RadioValueChanged</a></li>
+      <li><a href="widgets/ResizedCallback.html">ResizedCallback</a></li>
+      <li><a href="widgets/RouteBuilder.html">RouteBuilder</a></li>
+      <li><a href="widgets/ScrollListener.html">ScrollListener</a></li>
+      <li><a href="widgets/SelectedIndexChanged.html">SelectedIndexChanged</a></li>
+      <li><a href="widgets/SnackBarDismissedCallback.html">SnackBarDismissedCallback</a></li>
+      <li><a href="widgets/ValueChanged.html">ValueChanged</a></li>
+      <li><a href="widgets/WidgetTreeWalker.html">WidgetTreeWalker</a></li>
+    
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#functions">Functions</a></li>
+      <li><a href="widgets/combineEventDispositions.html">combineEventDispositions</a></li>
+      <li><a href="widgets/debugDumpApp.html">debugDumpApp</a></li>
+      <li><a href="widgets/ensureWidgetIsVisible.html">ensureWidgetIsVisible</a></li>
+      <li><a href="widgets/enterLayoutCallbackBuilder.html">enterLayoutCallbackBuilder</a></li>
+      <li><a href="widgets/exitLayoutCallbackBuilder.html">exitLayoutCallbackBuilder</a></li>
+      <li><a href="widgets/findScrollableAncestor.html">findScrollableAncestor</a></li>
+      <li><a href="widgets/implicitlyAnimate.html">implicitlyAnimate</a></li>
+      <li><a href="widgets/runApp.html">runApp</a></li>
+      <li><a href="widgets/showDialog.html">showDialog</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
+      <li><a href="widgets/AnimationStatus-class.html">AnimationStatus</a></li>
+      <li><a href="widgets/BlockDirection-class.html">BlockDirection</a></li>
+      <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
+      <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
+      <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
+      <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
+      <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
+      <li><a href="widgets/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
+      <li><a href="widgets/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="widgets/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="widgets/IconThemeColor-class.html">IconThemeColor</a></li>
+      <li><a href="widgets/MaterialType-class.html">MaterialType</a></li>
+      <li><a href="widgets/ScaffoldSlots-class.html">ScaffoldSlots</a></li>
+      <li><a href="widgets/ScrollDirection-class.html">ScrollDirection</a></li>
+      <li><a href="widgets/Shape-class.html">Shape</a></li>
+      <li><a href="widgets/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="widgets/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="widgets/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="widgets/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="widgets/ThemeBrightness-class.html">ThemeBrightness</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#classes">Classes</a></li>
+      <li><a href="widgets/AbstractWidgetRoot-class.html">AbstractWidgetRoot</a></li>
+      <li><a href="widgets/Align-class.html">Align</a></li>
+      <li><a href="widgets/Anchor-class.html">Anchor</a></li>
+      <li><a href="widgets/AnimatedBoxConstraintsValue-class.html">AnimatedBoxConstraintsValue</a></li>
+      <li><a href="widgets/AnimatedBoxDecorationValue-class.html">AnimatedBoxDecorationValue</a></li>
+      <li><a href="widgets/AnimatedComponent-class.html">AnimatedComponent</a></li>
+      <li><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></li>
+      <li><a href="widgets/AnimatedEdgeDimsValue-class.html">AnimatedEdgeDimsValue</a></li>
+      <li><a href="widgets/AnimatedMatrix4Value-class.html">AnimatedMatrix4Value</a></li>
+      <li><a href="widgets/AnimationBehavior-class.html">AnimationBehavior</a></li>
+      <li><a href="widgets/App-class.html">App</a></li>
+      <li><a href="widgets/AppContainer-class.html">AppContainer</a></li>
+      <li><a href="widgets/AspectRatio-class.html">AspectRatio</a></li>
+      <li><a href="widgets/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="widgets/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a href="widgets/Baseline-class.html">Baseline</a></li>
+      <li><a href="widgets/Block-class.html">Block</a></li>
+      <li><a href="widgets/BlockBody-class.html">BlockBody</a></li>
+      <li><a href="widgets/Border-class.html">Border</a></li>
+      <li><a href="widgets/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="widgets/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="widgets/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="widgets/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="widgets/BuilderTransition-class.html">BuilderTransition</a></li>
+      <li><a href="widgets/ButtonBase-class.html">ButtonBase</a></li>
+      <li><a href="widgets/Card-class.html">Card</a></li>
+      <li><a href="widgets/Center-class.html">Center</a></li>
+      <li><a href="widgets/Checkbox-class.html">Checkbox</a></li>
+      <li><a href="widgets/CircularProgressIndicator-class.html">CircularProgressIndicator</a></li>
+      <li><a href="widgets/ClipOval-class.html">ClipOval</a></li>
+      <li><a href="widgets/ClipRect-class.html">ClipRect</a></li>
+      <li><a href="widgets/ClipRRect-class.html">ClipRRect</a></li>
+      <li><a href="widgets/Color-class.html">Color</a></li>
+      <li><a href="widgets/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="widgets/ColorTransition-class.html">ColorTransition</a></li>
+      <li><a href="widgets/Column-class.html">Column</a></li>
+      <li><a href="widgets/Component-class.html">Component</a></li>
+      <li><a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a></li>
+      <li><a href="widgets/Container-class.html">Container</a></li>
+      <li><a href="widgets/CustomPaint-class.html">CustomPaint</a></li>
+      <li><a href="widgets/DatePicker-class.html">DatePicker</a></li>
+      <li><a href="widgets/DatePickerHeader-class.html">DatePickerHeader</a></li>
+      <li><a href="widgets/DayPicker-class.html">DayPicker</a></li>
+      <li><a href="widgets/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
+      <li><a href="widgets/Dialog-class.html">Dialog</a></li>
+      <li><a href="widgets/DialogRoute-class.html">DialogRoute</a></li>
+      <li><a href="widgets/DialogTransition-class.html">DialogTransition</a></li>
+      <li><a href="widgets/Dismissable-class.html">Dismissable</a></li>
+      <li><a href="widgets/DragController-class.html">DragController</a></li>
+      <li><a href="widgets/DragTarget-class.html">DragTarget</a></li>
+      <li><a href="widgets/Drawer-class.html">Drawer</a></li>
+      <li><a href="widgets/DrawerDivider-class.html">DrawerDivider</a></li>
+      <li><a href="widgets/DrawerHeader-class.html">DrawerHeader</a></li>
+      <li><a href="widgets/DrawerItem-class.html">DrawerItem</a></li>
+      <li><a href="widgets/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="widgets/FadeTransition-class.html">FadeTransition</a></li>
+      <li><a href="widgets/FlatButton-class.html">FlatButton</a></li>
+      <li><a href="widgets/Flex-class.html">Flex</a></li>
+      <li><a href="widgets/Flexible-class.html">Flexible</a></li>
+      <li><a href="widgets/FloatingActionButton-class.html">FloatingActionButton</a></li>
+      <li><a href="widgets/Focus-class.html">Focus</a></li>
+      <li><a href="widgets/GestureDetector-class.html">GestureDetector</a></li>
+      <li><a href="widgets/GlobalKey-class.html">GlobalKey</a></li>
+      <li><a href="widgets/GlobalKeyWatcher-class.html">GlobalKeyWatcher</a></li>
+      <li><a href="widgets/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
+      <li><a href="widgets/Grid-class.html">Grid</a></li>
+      <li><a href="widgets/HistoryEntry-class.html">HistoryEntry</a></li>
+      <li><a href="widgets/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
+      <li><a href="widgets/Icon-class.html">Icon</a></li>
+      <li><a href="widgets/IconButton-class.html">IconButton</a></li>
+      <li><a href="widgets/IconTheme-class.html">IconTheme</a></li>
+      <li><a href="widgets/IconThemeData-class.html">IconThemeData</a></li>
+      <li><a href="widgets/IgnorePointer-class.html">IgnorePointer</a></li>
+      <li><a href="widgets/Image-class.html">Image</a></li>
+      <li><a href="widgets/ImageListener-class.html">ImageListener</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedConstraintsBehavior-class.html">ImplicitlyAnimatedConstraintsBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedDecorationBehavior-class.html">ImplicitlyAnimatedDecorationBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedFieldBehavior-class.html">ImplicitlyAnimatedFieldBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedHeightBehavior-class.html">ImplicitlyAnimatedHeightBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedMarginBehavior-class.html">ImplicitlyAnimatedMarginBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedPaddingBehavior-class.html">ImplicitlyAnimatedPaddingBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedTransformBehavior-class.html">ImplicitlyAnimatedTransformBehavior</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedValue-class.html">ImplicitlyAnimatedValue</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedWidthBehavior-class.html">ImplicitlyAnimatedWidthBehavior</a></li>
+      <li><a href="widgets/Inherited-class.html">Inherited</a></li>
+      <li><a href="widgets/InkSplash-class.html">InkSplash</a></li>
+      <li><a href="widgets/InkWell-class.html">InkWell</a></li>
+      <li><a href="widgets/Key-class.html">Key</a></li>
+      <li><a href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
+      <li><a href="widgets/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></li>
+      <li><a href="widgets/LeafRenderObjectWrapper-class.html">LeafRenderObjectWrapper</a></li>
+      <li><a href="widgets/LinearProgressIndicator-class.html">LinearProgressIndicator</a></li>
+      <li><a href="widgets/Listener-class.html">Listener</a></li>
+      <li><a href="widgets/Material-class.html">Material</a></li>
+      <li><a href="widgets/MaterialButton-class.html">MaterialButton</a></li>
+      <li><a href="widgets/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="widgets/Mimic-class.html">Mimic</a></li>
+      <li><a href="widgets/Mimicable-class.html">Mimicable</a></li>
+      <li><a href="widgets/MimicOverlay-class.html">MimicOverlay</a></li>
+      <li><a href="widgets/MixedViewport-class.html">MixedViewport</a></li>
+      <li><a href="widgets/MixedViewportLayoutState-class.html">MixedViewportLayoutState</a></li>
+      <li><a href="widgets/ModalOverlay-class.html">ModalOverlay</a></li>
+      <li><a href="widgets/MonthPicker-class.html">MonthPicker</a></li>
+      <li><a href="widgets/MultiChildRenderObjectWrapper-class.html">MultiChildRenderObjectWrapper</a></li>
+      <li><a href="widgets/NavigationState-class.html">NavigationState</a></li>
+      <li><a href="widgets/Navigator-class.html">Navigator</a></li>
+      <li><a href="widgets/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="widgets/ObjectKey-class.html">ObjectKey</a></li>
+      <li><a href="widgets/Offset-class.html">Offset</a></li>
+      <li><a href="widgets/OneChildRenderObjectWrapper-class.html">OneChildRenderObjectWrapper</a></li>
+      <li><a href="widgets/Opacity-class.html">Opacity</a></li>
+      <li><a href="widgets/Padding-class.html">Padding</a></li>
+      <li><a href="widgets/PageableList-class.html">PageableList</a></li>
+      <li><a href="widgets/Paint-class.html">Paint</a></li>
+      <li><a href="widgets/Paragraph-class.html">Paragraph</a></li>
+      <li><a href="widgets/ParentDataNode-class.html">ParentDataNode</a></li>
+      <li><a href="widgets/Path-class.html">Path</a></li>
+      <li><a href="widgets/Point-class.html">Point</a></li>
+      <li><a href="widgets/PopupMenu-class.html">PopupMenu</a></li>
+      <li><a href="widgets/PopupMenuItem-class.html">PopupMenuItem</a></li>
+      <li><a href="widgets/Positioned-class.html">Positioned</a></li>
+      <li><a href="widgets/ProgressIndicator-class.html">ProgressIndicator</a></li>
+      <li><a href="widgets/Radio-class.html">Radio</a></li>
+      <li><a href="widgets/RaisedButton-class.html">RaisedButton</a></li>
+      <li><a href="widgets/Rect-class.html">Rect</a></li>
+      <li><a href="widgets/RenderBoxToWidgetAdapter-class.html">RenderBoxToWidgetAdapter</a></li>
+      <li><a href="widgets/RenderInkWell-class.html">RenderInkWell</a></li>
+      <li><a href="widgets/RenderObjectWrapper-class.html">RenderObjectWrapper</a></li>
+      <li><a href="widgets/RenderScaffold-class.html">RenderScaffold</a></li>
+      <li><a href="widgets/RenderTabBar-class.html">RenderTabBar</a></li>
+      <li><a href="widgets/RenderViewWrapper-class.html">RenderViewWrapper</a></li>
+      <li><a href="widgets/Route-class.html">Route</a></li>
+      <li><a href="widgets/RouteBase-class.html">RouteBase</a></li>
+      <li><a href="widgets/RouteState-class.html">RouteState</a></li>
+      <li><a href="widgets/Row-class.html">Row</a></li>
+      <li><a href="widgets/Scaffold-class.html">Scaffold</a></li>
+      <li><a href="widgets/Scrollable-class.html">Scrollable</a></li>
+      <li><a href="widgets/ScrollableList-class.html">ScrollableList</a></li>
+      <li><a href="widgets/ScrollableMixedWidgetList-class.html">ScrollableMixedWidgetList</a></li>
+      <li><a href="widgets/ScrollableViewport-class.html">ScrollableViewport</a></li>
+      <li><a href="widgets/ScrollableWidgetList-class.html">ScrollableWidgetList</a></li>
+      <li><a href="widgets/ShrinkWrapHeight-class.html">ShrinkWrapHeight</a></li>
+      <li><a href="widgets/ShrinkWrapWidth-class.html">ShrinkWrapWidth</a></li>
+      <li><a href="widgets/Size-class.html">Size</a></li>
+      <li><a href="widgets/SizedBox-class.html">SizedBox</a></li>
+      <li><a href="widgets/SizeObserver-class.html">SizeObserver</a></li>
+      <li><a href="widgets/SlideTransition-class.html">SlideTransition</a></li>
+      <li><a href="widgets/SlideUpFadeTransition-class.html">SlideUpFadeTransition</a></li>
+      <li><a href="widgets/SnackBar-class.html">SnackBar</a></li>
+      <li><a href="widgets/SnackBarAction-class.html">SnackBarAction</a></li>
+      <li><a href="widgets/SquashTransition-class.html">SquashTransition</a></li>
+      <li><a href="widgets/Stack-class.html">Stack</a></li>
+      <li><a href="widgets/StatefulComponent-class.html">StatefulComponent</a></li>
+      <li><a href="widgets/StyledText-class.html">StyledText</a></li>
+      <li><a href="widgets/Switch-class.html">Switch</a></li>
+      <li><a href="widgets/Tab-class.html">Tab</a></li>
+      <li><a href="widgets/TabBar-class.html">TabBar</a></li>
+      <li><a href="widgets/TabBarParentData-class.html">TabBarParentData</a></li>
+      <li><a href="widgets/TabBarWrapper-class.html">TabBarWrapper</a></li>
+      <li><a href="widgets/TabLabel-class.html">TabLabel</a></li>
+      <li><a href="widgets/TabNavigator-class.html">TabNavigator</a></li>
+      <li><a href="widgets/TabNavigatorView-class.html">TabNavigatorView</a></li>
+      <li><a href="widgets/TagNode-class.html">TagNode</a></li>
+      <li><a href="widgets/Text-class.html">Text</a></li>
+      <li><a href="widgets/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="widgets/Theme-class.html">Theme</a></li>
+      <li><a href="widgets/ThemeData-class.html">ThemeData</a></li>
+      <li><a href="widgets/Title-class.html">Title</a></li>
+      <li><a href="widgets/ToolBar-class.html">ToolBar</a></li>
+      <li><a href="widgets/Transform-class.html">Transform</a></li>
+      <li><a href="widgets/TransitionBase-class.html">TransitionBase</a></li>
+      <li><a href="widgets/ValueKey-class.html">ValueKey</a></li>
+      <li><a href="widgets/Viewport-class.html">Viewport</a></li>
+      <li><a href="widgets/Widget-class.html">Widget</a></li>
+      <li><a href="widgets/WidgetSkyBinding-class.html">WidgetSkyBinding</a></li>
+      <li><a href="widgets/WidgetToRenderBoxAdapter-class.html">WidgetToRenderBoxAdapter</a></li>
+      <li><a href="widgets/YearPicker-class.html">YearPicker</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+
+        <dt>Extends</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+            <li>Object</li>
+            <li><a href="widgets/Widget-class.html">Widget</a></li>
+            <li><a href="widgets/Component-class.html">Component</a></li>
+            <li><a href="widgets/StatefulComponent-class.html">StatefulComponent</a></li>
+            <li><a href="widgets/ButtonBase-class.html">ButtonBase</a></li>
+            <li>Radio</li>
+        </ul></dd>
+
+
+
+        </dl>
+    </section>
+
+
+
+
+    <section class="summary" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="color" class="property">
+                <span class="name"><a href="widgets/Radio/color.html">color</a></span>
+                <span class="signature">&#8594; <a href="basic/Color-class.html">Color</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="groupValue" class="property">
+                <span class="name"><a href="widgets/Radio/groupValue.html">groupValue</a></span>
+                <span class="signature">&#8594; Object</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="highlight" class="property">
+            <span class="name ">highlight</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="key" class="property">
+            <span class="name ">key</span>    
+                <span class="signature">&#8594; <a href="framework/Key-class.html">Key</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>A semantic identifer for this widget</p>
+            </dd>
+            <dt id="mounted" class="property">
+            <span class="name ">mounted</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="onChanged" class="property">
+                <span class="name"><a href="widgets/Radio/onChanged.html">onChanged</a></span>
+                <span class="signature">&#8594; <a href="radio/RadioValueChanged.html">RadioValueChanged</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="parent" class="property">
+            <span class="name ">parent</span>    
+                <span class="signature">&#8594; <a href="framework/Widget-class.html">Widget</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>The parent of this widget in the widget tree.</p>
+            </dd>
+            <dt id="renderObject" class="property">
+            <span class="name ">renderObject</span>    
+                <span class="signature">&#8594; <a href="object/RenderObject-class.html">RenderObject</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>The underlying <code>RenderObject</code> associated with this <code>Widget</code>.</p>
+            </dd>
+            <dt id="value" class="property">
+                <span class="name"><a href="widgets/Radio/value.html">value</a></span>
+                <span class="signature">&#8594; Object</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="Radio" class="callable">
+                <span class="name"><a href="widgets/Radio/Radio.html">Radio</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-value"><span class="type-annotation">Object</span> <span class="parameter-name">value</span></span>, <span class="parameter" id="-param-groupValue"><span class="type-annotation">Object</span> <span class="parameter-name">groupValue</span></span>, <span class="parameter" id="-param-onChanged"><span class="type-annotation">dynamic</span> <span class="parameter-name">onChanged</span>(<span class="parameter" id="RadioValueChanged-param-value"><span class="type-annotation">Object</span> <span class="parameter-name">value</span></span>)</span>})</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="build" class="callable">
+                  <span class="name ">build</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="button_base/Widget-class.html">Widget</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="buildContent" class="callable">
+                  <a href="widgets/Radio/buildContent.html"><span class="name ">buildContent</span></a><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="widgets/Widget-class.html">Widget</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="dependenciesChanged" class="callable">
+                  <span class="name ">dependenciesChanged</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="detachRenderObject" class="callable">
+                  <span class="name ">detachRenderObject</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="didMount" class="callable">
+                  <span class="name ">didMount</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function to learn when this <code>Widget</code> enters the widget tree.</p>
+              </dd>
+              <dt id="didUnmount" class="callable">
+                  <span class="name ">didUnmount</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Override this function to learn when this <a href="framework/Widget-class.html">Widget</a> leaves the widget tree.</p>
+              </dd>
+              <dt id="findAncestorRenderObjectWrapper" class="callable">
+                  <span class="name ">findAncestorRenderObjectWrapper</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype"><a href="framework/Widget-class.html">Widget</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="globalToLocal" class="callable">
+                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="framework/Point-class.html">Point</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="inheritedOfType" class="callable">
+                  <span class="name ">inheritedOfType</span><span class="signature">(<wbr><span class="parameter" id="inheritedOfType-param-targetType"><span class="type-annotation">Type</span> <span class="parameter-name">targetType</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="framework/Inherited-class.html">Inherited</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="initState" class="callable">
+                  <span class="name ">initState</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="localToGlobal" class="callable">
+                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="framework/Point-class.html">Point</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="remove" class="callable">
+                  <span class="name ">remove</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="retainStatefulNodeIfPossible" class="callable">
+                  <span class="name ">retainStatefulNodeIfPossible</span><span class="signature">(<wbr><span class="parameter" id="retainStatefulNodeIfPossible-param-newNode"><span class="type-annotation"><a href="framework/StatefulComponent-class.html">StatefulComponent</a></span> <span class="parameter-name">newNode</span></span>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="setParent" class="callable">
+                  <span class="name ">setParent</span><span class="signature">(<wbr><span class="parameter" id="setParent-param-newParent"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">newParent</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Called during the synchronizing process to update the widget's parent.</p>
+              </dd>
+              <dt id="setState" class="callable">
+                  <span class="name ">setState</span><span class="signature">(<wbr><span class="parameter" id="setState-param-fn"><span class="type-annotation">void</span> <span class="parameter-name">fn</span>()</span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="syncChild" class="callable">
+                  <span class="name ">syncChild</span><span class="signature">(<wbr><span class="parameter" id="syncChild-param-node"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">node</span></span>, <span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>, <span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="framework/Widget-class.html">Widget</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="syncConstructorArguments" class="callable">
+                  <a href="widgets/Radio/syncConstructorArguments.html"><span class="name ">syncConstructorArguments</span></a><span class="signature">(<wbr><span class="parameter" id="syncConstructorArguments-param-source"><span class="type-annotation"><a href="radio/Radio-class.html">Radio</a></span> <span class="parameter-name">source</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <span class="name ">toString</span><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>, <span class="parameter" id="toString-param-startPrefix"><span class="type-annotation">String</span> <span class="parameter-name">startPrefix</span> = <span class="default-value">''</span></span>])
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+              <dt id="toStringName" class="callable">
+                  <span class="name ">toStringName</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="updateSlot" class="callable">
+                  <span class="name ">updateSlot</span><span class="signature">(<wbr><span class="parameter" id="updateSlot-param-newSlot"><span class="parameter-name">newSlot</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="walkChildren" class="callable">
+                  <span class="name ">walkChildren</span><span class="signature">(<wbr><span class="parameter" id="walkChildren-param-walker"><span class="type-annotation">void</span> <span class="parameter-name">walker</span>(<span class="parameter" id="WidgetTreeWalker-param-Widget"><span class="parameter-name">Widget</span></span>)</span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Walks the immediate children of this widget</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Radio</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li><a href="widgets/Radio/color.html">color</a>
+</li>
+      <li><a href="widgets/Radio/groupValue.html">groupValue</a>
+</li>
+      <li>highlight
+</li>
+      <li>key
+</li>
+      <li>mounted
+</li>
+      <li><a href="widgets/Radio/onChanged.html">onChanged</a>
+</li>
+      <li>parent
+</li>
+      <li>renderObject
+</li>
+      <li><a href="widgets/Radio/value.html">value</a>
+</li>
+    
+      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li><a href="widgets/Radio/Radio.html">Radio</a></li>
+    
+    
+      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li>build
+</li>
+      <li><a href="widgets/Radio/buildContent.html">buildContent</a>
+</li>
+      <li>dependenciesChanged
+</li>
+      <li>detachRenderObject
+</li>
+      <li>didMount
+</li>
+      <li>didUnmount
+</li>
+      <li>findAncestorRenderObjectWrapper
+</li>
+      <li>globalToLocal
+</li>
+      <li>inheritedOfType
+</li>
+      <li>initState
+</li>
+      <li>localToGlobal
+</li>
+      <li>remove
+</li>
+      <li>retainStatefulNodeIfPossible
+</li>
+      <li>setParent
+</li>
+      <li>setState
+</li>
+      <li>syncChild
+</li>
+      <li><a href="widgets/Radio/syncConstructorArguments.html">syncConstructorArguments</a>
+</li>
+      <li>toString
+</li>
+      <li>toStringName
+</li>
+      <li>updateSlot
+</li>
+      <li>walkChildren
+</li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.39 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+</body>
+
+</html>

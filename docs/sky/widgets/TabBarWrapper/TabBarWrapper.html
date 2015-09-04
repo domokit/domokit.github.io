@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">TabBarWrapper</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,7 +80,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/TabBarWrapper-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/TabBarWrapper/backgroundColor.html">backgroundColor</a>
 </li>
       <li>children
@@ -88,6 +88,8 @@
       <li><a href="widgets/TabBarWrapper/indicatorColor.html">indicatorColor</a>
 </li>
       <li><a href="widgets/TabBarWrapper/indicatorRect.html">indicatorRect</a>
+</li>
+      <li>isFromOldGeneration
 </li>
       <li><a href="widgets/TabBarWrapper/isScrollable.html">isScrollable</a>
 </li>
@@ -103,14 +105,16 @@
 </li>
       <li><a href="widgets/TabBarWrapper/selectedIndex.html">selectedIndex</a>
 </li>
+      <li>singleChild
+</li>
       <li><a href="widgets/TabBarWrapper/textAndIcons.html">textAndIcons</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/TabBarWrapper-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/TabBarWrapper/TabBarWrapper.html">TabBarWrapper</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/TabBarWrapper-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/TabBarWrapper/createNode.html">createNode</a>
 </li>
       <li>dependenciesChanged
@@ -147,6 +151,8 @@
 </li>
       <li><a href="widgets/TabBarWrapper/syncRenderObject.html">syncRenderObject</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -168,7 +174,7 @@
                 <span class="name ">TabBarWrapper</span>(
         <br>
         <div class="parameters">
-            {<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="framework/Widget-class.html">Widget</a>&gt;</span> <span class="parameter-name">children</span></span>,<br><span class="parameter" id="-param-selectedIndex"><span class="type-annotation">int</span> <span class="parameter-name">selectedIndex</span></span>,<br><span class="parameter" id="-param-backgroundColor"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">backgroundColor</span></span>,<br><span class="parameter" id="-param-indicatorColor"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">indicatorColor</span></span>,<br><span class="parameter" id="-param-indicatorRect"><span class="type-annotation"><a href="basic/Rect-class.html">Rect</a></span> <span class="parameter-name">indicatorRect</span></span>,<br><span class="parameter" id="-param-textAndIcons"><span class="type-annotation">bool</span> <span class="parameter-name">textAndIcons</span></span>,<br><span class="parameter" id="-param-isScrollable"><span class="type-annotation">bool</span> <span class="parameter-name">isScrollable</span>: <span class="default-value">false</span></span>,<br><span class="parameter" id="-param-onLayoutChanged"><span class="type-annotation">void</span> <span class="parameter-name">onLayoutChanged</span>(<span class="parameter" id="LayoutChanged-param-size"><span class="type-annotation"><a href="basic/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>, <span class="parameter" id="LayoutChanged-param-widths"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">widths</span></span>)</span>}
+            {<span class="parameter" id="-param-key"><span class="type-annotation"><a href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="framework/Widget-class.html">Widget</a>&gt;</span> <span class="parameter-name">children</span></span>,<br><span class="parameter" id="-param-selectedIndex"><span class="type-annotation">int</span> <span class="parameter-name">selectedIndex</span></span>,<br><span class="parameter" id="-param-backgroundColor"><span class="type-annotation"><a href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">backgroundColor</span></span>,<br><span class="parameter" id="-param-indicatorColor"><span class="type-annotation"><a href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">indicatorColor</span></span>,<br><span class="parameter" id="-param-indicatorRect"><span class="type-annotation"><a href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">indicatorRect</span></span>,<br><span class="parameter" id="-param-textAndIcons"><span class="type-annotation">bool</span> <span class="parameter-name">textAndIcons</span></span>,<br><span class="parameter" id="-param-isScrollable"><span class="type-annotation">bool</span> <span class="parameter-name">isScrollable</span>: <span class="default-value">false</span></span>,<br><span class="parameter" id="-param-onLayoutChanged"><span class="type-annotation">void</span> <span class="parameter-name">onLayoutChanged</span>(<span class="parameter" id="LayoutChanged-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>, <span class="parameter" id="LayoutChanged-param-widths"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">widths</span></span>)</span>}
         </div>
         )
     </section>
@@ -190,7 +196,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -214,7 +220,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

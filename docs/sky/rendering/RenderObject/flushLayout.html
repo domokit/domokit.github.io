@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">flushLayout</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -78,17 +78,17 @@
 
     <ol>
     
-      <li class="section-title"><a href="#static-properties">Static properties</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#static-properties">Static properties</a></li>
       <li><a href="rendering/RenderObject/debugActiveLayout.html">debugActiveLayout</a></li>
       <li><a href="rendering/RenderObject/debugActivePaint.html">debugActivePaint</a></li>
       <li><a href="rendering/RenderObject/debugDoingLayout.html">debugDoingLayout</a></li>
       <li><a href="rendering/RenderObject/debugDoingPaint.html">debugDoingPaint</a></li>
     
-      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#static-methods">Static methods</a></li>
       <li><a href="rendering/RenderObject/flushLayout.html">flushLayout</a></li>
       <li><a href="rendering/RenderObject/flushPaint.html">flushPaint</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#instance-properties">Properties</a></li>
       <li>attached
 </li>
       <li><a href="rendering/RenderObject/constraints.html">constraints</a>
@@ -126,11 +126,11 @@
       <li><a href="rendering/RenderObject/sizedByParent.html">sizedByParent</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderObject/RenderObject.html">RenderObject</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/RenderObject/adoptChild.html">adoptChild</a>
 </li>
       <li><a href="rendering/RenderObject/applyPaintTransform.html">applyPaintTransform</a>
@@ -160,10 +160,6 @@
       <li><a href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a>
 </li>
       <li><a href="rendering/RenderObject/layout.html">layout</a>
-</li>
-      <li><a href="rendering/RenderObject/layoutWithoutResize.html">layoutWithoutResize</a>
-</li>
-      <li><a href="rendering/RenderObject/markNeedsCompositingBitsUpdate.html">markNeedsCompositingBitsUpdate</a>
 </li>
       <li><a href="rendering/RenderObject/markNeedsLayout.html">markNeedsLayout</a>
 </li>
@@ -208,13 +204,24 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Update the layout information for all dirty render objects</p>
+<p>This function is one of the core stages of the rendering pipeline. Layout
+information is cleaned prior to painting so that render objects will
+appear on screen in their up-to-date locations.</p>
+<p>See <code>SkyBinding</code> for an example of how this function is used.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">static void flushLayout() {
+      <pre><code class="prettyprint lang-dart">/// Update the layout information for all dirty render objects
+///
+/// This function is one of the core stages of the rendering pipeline. Layout
+/// information is cleaned prior to painting so that render objects will
+/// appear on screen in their up-to-date locations.
+///
+/// See [SkyBinding] for an example of how this function is used.
+static void flushLayout() {
   sky.tracing.begin(&apos;RenderObject.flushLayout&apos;);
   _debugDoingLayout = true;
   try {
@@ -224,7 +231,7 @@
       _nodesNeedingLayout = new List&lt;RenderObject&gt;();
       dirtyNodes..sort((a, b) =&gt; a.depth - b.depth)..forEach((node) {
         if (node._needsLayout &amp;&amp; node.attached)
-          node.layoutWithoutResize();
+          node._layoutWithoutResize();
       });
     }
   } finally {
@@ -244,7 +251,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -268,7 +275,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

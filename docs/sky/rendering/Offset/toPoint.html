@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">toPoint</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -77,13 +77,15 @@
     <h5><a href="rendering/Offset-class.html">Offset</a></h5>
 
     <ol>
-      <li class="section-title"><a href="#constants">Constants</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#constants">Constants</a></li>
       <li><a href="rendering/Offset/infinite.html">infinite</a></li>
       <li><a href="rendering/Offset/zero.html">zero</a></li>
     
     
+      <li class="section-title"><a href="rendering/Offset-class.html#static-methods">Static methods</a></li>
+      <li><a href="rendering/Offset/lerp.html">lerp</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/Offset/distance.html">distance</a>
 </li>
       <li><a href="rendering/Offset/dx.html">dx</a>
@@ -95,11 +97,10 @@
       <li>isInfinite
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/Offset/Offset.html">Offset</a></li>
-      <li><a href="rendering/Offset/Offset.copy.html">copy</a></li>
     
-      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#operators">Operators</a></li>
       <li><a href="rendering/Offset/operator_modulo.html">operator %</a>
 </li>
       <li><a href="rendering/Offset/operator_bitwise_and.html">operator &</a>
@@ -127,7 +128,7 @@
       <li><a href="rendering/Offset/operator_truncate_divide.html">operator ~/</a>
 </li>
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/Offset/scale.html">scale</a>
 </li>
       <li><a href="rendering/Offset/toPoint.html">toPoint</a>
@@ -149,13 +150,14 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the point at (0, 0) plus this offset.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">Point toPoint() =&gt; new Point(this.dx, this.dy);</code></pre>
+      <pre><code class="prettyprint lang-dart">/// Returns the point at (0, 0) plus this offset.
+Point toPoint() =&gt; new Point(this.dx, this.dy);</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -168,7 +170,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -192,7 +194,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

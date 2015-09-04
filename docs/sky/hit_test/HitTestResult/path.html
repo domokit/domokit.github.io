@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">path</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -79,15 +79,15 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="hit_test/HitTestResult-class.html#instance-properties">Properties</a></li>
       <li><a href="hit_test/HitTestResult/path.html">path</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="hit_test/HitTestResult-class.html#constructors">Constructors</a></li>
       <li><a href="hit_test/HitTestResult/HitTestResult.html">HitTestResult</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="hit_test/HitTestResult-class.html#instance-methods">Methods</a></li>
       <li><a href="hit_test/HitTestResult/add.html">add</a>
 </li>
     </ol>
@@ -96,23 +96,22 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
+      <section id="getter">
+      
+      <section class="multi-line-signature">
         <span class="returntype">List&lt;<a href="hit_test/HitTestEntry-class.html">HitTestEntry</a>&gt;</span>
-        <span class="name ">path</span>
-        <div class="features">
-            read-only
-        </div>
-    </section>
-
+        <span class="name ">path</span></section>
+      
       <section class="desc markdown">
-      
-            <p>The list of <a href="hit_test/HitTestEntry-class.html">HitTestEntry</a> objects recorded during the hit test.</p>
-<p>The first entry in the path is the least specific, typically the one at
-the root of tree being hit tested. Event propagation starts with the most
-specific (i.e., last) entry and proceeds in reverse order through the
-path.</p>
-      
-      </section>
+
+      <p>The list of <code>HitTestEntry</code> objects recorded during the hit test.</p>
+<p>The first entry in the path is the most specific, typically the one at
+the leaf of tree being hit tested. Event propagation starts with the most
+specific (i.e., first) entry and proceeds in order through the path.</p>
+
+</section>
+</section>
+
 
   </div> <!-- /.main-content -->
 
@@ -124,7 +123,7 @@ path.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -148,7 +147,7 @@ path.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

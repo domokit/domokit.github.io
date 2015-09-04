@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">callback</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -79,7 +79,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/RenderCustomPaint-class.html#instance-properties">Properties</a></li>
       <li>attached
 </li>
       <li><a href="rendering/RenderCustomPaint/callback.html">callback</a>
@@ -125,11 +125,11 @@
       <li>sizedByParent
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/RenderCustomPaint-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderCustomPaint/RenderCustomPaint.html">RenderCustomPaint</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/RenderCustomPaint-class.html#instance-methods">Methods</a></li>
       <li>adoptChild
 </li>
       <li>applyPaintTransform
@@ -184,11 +184,7 @@
 </li>
       <li>layout
 </li>
-      <li>layoutWithoutResize
-</li>
       <li>localToGlobal
-</li>
-      <li>markNeedsCompositingBitsUpdate
 </li>
       <li>markNeedsLayout
 </li>
@@ -226,19 +222,20 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-        <span class="returntype"><a href="proxy_box/CustomPaintCallback.html">CustomPaintCallback</a></span>
-        <span class="name ">callback</span>
-        <div class="features">
-            write-only
-        </div>
-    </section>
 
-      <section class="desc markdown">
+      <section id="setter">
       
-            <p class="no-docs">Not documented.</p>
-      
+      <section class="multi-line-signature">
+        <span class="returntype">void</span>
+          <span class="name ">callback=</span><span class="signature">(<wbr><span class="parameter" id="callback=-param-newCallback"><span class="type-annotation">void</span> <span class="parameter-name">newCallback</span>(<span class="parameter" id="CustomPaintCallback-param-canvas"><span class="type-annotation"><a href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="CustomPaintCallback-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>)
       </section>
+      
+      <section class="desc markdown">
+
+      <p class="no-docs">Not documented.</p>
+
+</section>
+</section>
 
   </div> <!-- /.main-content -->
 
@@ -250,7 +247,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -274,7 +271,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

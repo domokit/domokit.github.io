@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">GlobalKeyWatcher</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -137,6 +137,7 @@
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
       <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
       <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
       <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
@@ -347,36 +348,45 @@
 
     <section>
         <dl class="dl-horizontal">
-
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="widgets/Widget-class.html">Widget</a></li>
-            <li><a href="widgets/Component-class.html">Component</a></li>
-            <li><a href="widgets/StatefulComponent-class.html">StatefulComponent</a></li>
-            <li>GlobalKeyWatcher</li>
-        </ul></dd>
-
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="widgets/Widget-class.html">Widget</a></li>
+              <li><a href="widgets/Component-class.html">Component</a></li>
+              <li><a href="widgets/StatefulComponent-class.html">StatefulComponent</a></li>
+              <li>GlobalKeyWatcher</li>
+          </ul></dd>
 
 
-        <dt>Implemented by</dt>
-        <dd><ul class="comma-separated clazz-relationships">
-            <li><a href="widgets/Mimic-class.html">Mimic</a></li>
-            <li><a href="mimic/Mimic-class.html">Mimic</a></li>
-        </ul></dd>
+
+          <dt>Implemented by</dt>
+          <dd><ul class="comma-separated clazz-relationships">
+              <li><a href="widgets/Mimic-class.html">Mimic</a></li>
+          </ul></dd>
+
         </dl>
     </section>
 
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
+            <dt id="isFromOldGeneration" class="property">
+            <span class="name ">isFromOldGeneration</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
             <dt id="key" class="property">
             <span class="name ">key</span>    
-                <span class="signature">&#8594; <a href="framework/Key-class.html">Key</a></span>
+                <span class="signature">&#8594; <a href="widgets/Key-class.html">Key</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -396,7 +406,7 @@
             </dd>
             <dt id="parent" class="property">
             <span class="name ">parent</span>    
-                <span class="signature">&#8594; <a href="framework/Widget-class.html">Widget</a></span>
+                <span class="signature">&#8594; <a href="widgets/Widget-class.html">Widget</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -406,7 +416,7 @@
             </dd>
             <dt id="renderObject" class="property">
             <span class="name ">renderObject</span>    
-                <span class="signature">&#8594; <a href="object/RenderObject-class.html">RenderObject</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderObject-class.html">RenderObject</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -414,9 +424,19 @@
     </div>
     <p>The underlying <code>RenderObject</code> associated with this <code>Widget</code>.</p>
             </dd>
+            <dt id="singleChild" class="property">
+            <span class="name ">singleChild</span>    
+                <span class="signature">&#8594; <a href="widgets/Widget-class.html">Widget</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
             <dt id="watchedKey" class="property">
                 <span class="name"><a href="widgets/GlobalKeyWatcher/watchedKey.html">watchedKey</a></span>
-                <span class="signature">&#8594; <a href="framework/GlobalKey-class.html">GlobalKey</a></span>
+                <span class="signature">&#8594; <a href="widgets/GlobalKey-class.html">GlobalKey</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -427,12 +447,12 @@
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
             <dt id="GlobalKeyWatcher" class="callable">
-                <span class="name"><a href="widgets/GlobalKeyWatcher/GlobalKeyWatcher.html">GlobalKeyWatcher</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-watchedKey"><span class="type-annotation"><a href="framework/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">watchedKey</span></span>})</span>
+                <span class="name"><a href="widgets/GlobalKeyWatcher/GlobalKeyWatcher.html">GlobalKeyWatcher</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-watchedKey"><span class="type-annotation"><a href="widgets/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">watchedKey</span></span>})</span>
             </dt>
             <dd>
                 <p></p>
@@ -441,7 +461,7 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="build" class="callable">
@@ -484,7 +504,7 @@
                   <p>Override this function to learn when this <code>Widget</code> enters the widget tree.</p>
               </dd>
               <dt id="didRemoveWatchedKey" class="callable">
-                  <a href="widgets/GlobalKeyWatcher/didRemoveWatchedKey.html"><span class="name ">didRemoveWatchedKey</span></a><span class="signature">(<wbr><span class="parameter" id="didRemoveWatchedKey-param-key"><span class="type-annotation"><a href="framework/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">key</span></span>)
+                  <a href="widgets/GlobalKeyWatcher/didRemoveWatchedKey.html"><span class="name ">didRemoveWatchedKey</span></a><span class="signature">(<wbr><span class="parameter" id="didRemoveWatchedKey-param-key"><span class="type-annotation"><a href="widgets/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">key</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -493,7 +513,7 @@
                   <p></p>
               </dd>
               <dt id="didSyncWatchedKey" class="callable">
-                  <a href="widgets/GlobalKeyWatcher/didSyncWatchedKey.html"><span class="name ">didSyncWatchedKey</span></a><span class="signature">(<wbr><span class="parameter" id="didSyncWatchedKey-param-key"><span class="type-annotation"><a href="framework/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="didSyncWatchedKey-param-widget"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">widget</span></span>)
+                  <a href="widgets/GlobalKeyWatcher/didSyncWatchedKey.html"><span class="name ">didSyncWatchedKey</span></a><span class="signature">(<wbr><span class="parameter" id="didSyncWatchedKey-param-key"><span class="type-annotation"><a href="widgets/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="didSyncWatchedKey-param-widget"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">widget</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -521,7 +541,7 @@
                   <p></p>
               </dd>
               <dt id="globalToLocal" class="callable">
-                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
                       &#8594;
                       <span class="returntype"><a href="framework/Point-class.html">Point</a></span>
                   </span>
@@ -551,7 +571,7 @@
                   <p></p>
               </dd>
               <dt id="localToGlobal" class="callable">
-                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
                       &#8594;
                       <span class="returntype"><a href="framework/Point-class.html">Point</a></span>
                   </span>
@@ -571,7 +591,7 @@
                   <p></p>
               </dd>
               <dt id="retainStatefulNodeIfPossible" class="callable">
-                  <span class="name ">retainStatefulNodeIfPossible</span><span class="signature">(<wbr><span class="parameter" id="retainStatefulNodeIfPossible-param-newNode"><span class="type-annotation"><a href="framework/StatefulComponent-class.html">StatefulComponent</a></span> <span class="parameter-name">newNode</span></span>)
+                  <span class="name ">retainStatefulNodeIfPossible</span><span class="signature">(<wbr><span class="parameter" id="retainStatefulNodeIfPossible-param-newNode"><span class="type-annotation"><a href="widgets/StatefulComponent-class.html">StatefulComponent</a></span> <span class="parameter-name">newNode</span></span>)
                       &#8594;
                       <span class="returntype">bool</span>
                   </span>
@@ -581,7 +601,7 @@
                   <p></p>
               </dd>
               <dt id="setParent" class="callable">
-                  <span class="name ">setParent</span><span class="signature">(<wbr><span class="parameter" id="setParent-param-newParent"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">newParent</span></span>)
+                  <span class="name ">setParent</span><span class="signature">(<wbr><span class="parameter" id="setParent-param-newParent"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">newParent</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -601,7 +621,7 @@
                   <p></p>
               </dd>
               <dt id="syncChild" class="callable">
-                  <span class="name ">syncChild</span><span class="signature">(<wbr><span class="parameter" id="syncChild-param-node"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">node</span></span>, <span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>, <span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>)
+                  <span class="name ">syncChild</span><span class="signature">(<wbr><span class="parameter" id="syncChild-param-node"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">node</span></span>, <span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>, <span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>)
                       &#8594;
                       <span class="returntype"><a href="framework/Widget-class.html">Widget</a></span>
                   </span>
@@ -611,13 +631,26 @@
                   <p></p>
               </dd>
               <dt id="syncConstructorArguments" class="callable">
-                  <a href="widgets/GlobalKeyWatcher/syncConstructorArguments.html"><span class="name ">syncConstructorArguments</span></a><span class="signature">(<wbr><span class="parameter" id="syncConstructorArguments-param-source"><span class="type-annotation"><a href="mimic/GlobalKeyWatcher-class.html">GlobalKeyWatcher</a></span> <span class="parameter-name">source</span></span>)
+                  <a href="widgets/GlobalKeyWatcher/syncConstructorArguments.html"><span class="name ">syncConstructorArguments</span></a><span class="signature">(<wbr><span class="parameter" id="syncConstructorArguments-param-source"><span class="type-annotation"><a href="widgets/GlobalKeyWatcher-class.html">GlobalKeyWatcher</a></span> <span class="parameter-name">source</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <p></p>
+              </dd>
+              <dt id="takeChild" class="callable">
+                  <span class="name ">takeChild</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Detaches the single child of this object from this object,
+without calling remove() on that child.
+Only called when singleChild returns a non-null node.
+Override this if you override singleChild to return non-null.</p>
               </dd>
               <dt id="toString" class="callable">
                   <span class="name ">toString</span><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>, <span class="parameter" id="toString-param-startPrefix"><span class="type-annotation">String</span> <span class="parameter-name">startPrefix</span> = <span class="default-value">''</span></span>])
@@ -670,7 +703,9 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/GlobalKeyWatcher-class.html#instance-properties">Properties</a></li>
+      <li>isFromOldGeneration
+</li>
       <li>key
 </li>
       <li>mounted
@@ -679,14 +714,16 @@
 </li>
       <li>renderObject
 </li>
+      <li>singleChild
+</li>
       <li><a href="widgets/GlobalKeyWatcher/watchedKey.html">watchedKey</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/GlobalKeyWatcher-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/GlobalKeyWatcher/GlobalKeyWatcher.html">GlobalKeyWatcher</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/GlobalKeyWatcher-class.html#instance-methods">Methods</a></li>
       <li>build
 </li>
       <li>dependenciesChanged
@@ -723,6 +760,8 @@
 </li>
       <li><a href="widgets/GlobalKeyWatcher/syncConstructorArguments.html">syncConstructorArguments</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -742,7 +781,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -766,7 +805,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

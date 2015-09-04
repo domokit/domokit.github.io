@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">onChanged</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -79,12 +79,14 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/Radio-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/Radio/color.html">color</a>
 </li>
       <li><a href="widgets/Radio/groupValue.html">groupValue</a>
 </li>
       <li>highlight
+</li>
+      <li>isFromOldGeneration
 </li>
       <li>key
 </li>
@@ -96,14 +98,16 @@
 </li>
       <li>renderObject
 </li>
+      <li>singleChild
+</li>
       <li><a href="widgets/Radio/value.html">value</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/Radio-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Radio/Radio.html">Radio</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/Radio-class.html#instance-methods">Methods</a></li>
       <li>build
 </li>
       <li><a href="widgets/Radio/buildContent.html">buildContent</a>
@@ -138,6 +142,8 @@
 </li>
       <li><a href="widgets/Radio/syncConstructorArguments.html">syncConstructorArguments</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -152,19 +158,32 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-        <span class="returntype"><a href="radio/RadioValueChanged.html">RadioValueChanged</a></span>
-        <span class="name ">onChanged</span>
-        <div class="features">
-            read / write
-        </div>
-    </section>
-
+      <section id="getter">
+      
+      <section class="multi-line-signature">
+        <span class="returntype"><a href="widgets/RadioValueChanged.html">RadioValueChanged</a></span>
+        <span class="name ">onChanged</span></section>
+      
       <section class="desc markdown">
+
+      <p class="no-docs">Not documented.</p>
+
+</section>
+</section>
+
+      <section id="setter">
       
-            <p class="no-docs">Not documented.</p>
-      
+      <section class="multi-line-signature">
+        <span class="returntype">void</span>
+          <span class="name ">onChanged=</span><span class="signature">(<wbr><span class="parameter" id="onChanged=-param-_onChanged"><span class="type-annotation">dynamic</span> <span class="parameter-name">_onChanged</span>(<span class="parameter" id="RadioValueChanged-param-value"><span class="type-annotation">Object</span> <span class="parameter-name">value</span></span>)</span>)
       </section>
+      
+      <section class="desc markdown">
+
+      <p class="no-docs">Not documented.</p>
+
+</section>
+</section>
 
   </div> <!-- /.main-content -->
 
@@ -176,7 +195,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -200,7 +219,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

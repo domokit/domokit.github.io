@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">insertChild</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,19 +80,19 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/PaintingContext-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/PaintingContext/canvas.html">canvas</a>
 </li>
       <li><a href="rendering/PaintingContext/containerLayer.html">containerLayer</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/PaintingContext-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.forTesting.html">forTesting</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.withLayer.html">withLayer</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.withOffset.html">withOffset</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/PaintingContext-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/PaintingContext/compositeChild.html">compositeChild</a>
 </li>
       <li><a href="rendering/PaintingContext/debugCanPaintChild.html">debugCanPaintChild</a>
@@ -126,19 +126,25 @@
             <span class="name ">insertChild</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="insertChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="insertChild-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>
+                <span class="parameter" id="insertChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="insertChild-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Instructs the child to draw itself onto this context at the given offset</p>
+<p>Do not call directly. This function is visible so that it can be
+overridden in tests.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void insertChild(RenderObject child, Offset offset) {
+      <pre><code class="prettyprint lang-dart">/// Instructs the child to draw itself onto this context at the given offset
+///
+/// Do not call directly. This function is visible so that it can be
+/// overridden in tests.
+void insertChild(RenderObject child, Offset offset) {
   child._paintWithContext(this, offset);
 }</code></pre>
     </section>
@@ -153,7 +159,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -177,7 +183,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">syncChild</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,7 +80,9 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/Widget-class.html#instance-properties">Properties</a></li>
+      <li><a href="widgets/Widget/isFromOldGeneration.html">isFromOldGeneration</a>
+</li>
       <li><a href="widgets/Widget/key.html">key</a>
 </li>
       <li><a href="widgets/Widget/mounted.html">mounted</a>
@@ -89,12 +91,14 @@
 </li>
       <li><a href="widgets/Widget/renderObject.html">renderObject</a>
 </li>
+      <li><a href="widgets/Widget/singleChild.html">singleChild</a>
+</li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/Widget-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Widget/Widget.html">Widget</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/Widget-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/Widget/dependenciesChanged.html">dependenciesChanged</a>
 </li>
       <li><a href="widgets/Widget/detachRenderObject.html">detachRenderObject</a>
@@ -119,6 +123,8 @@
 </li>
       <li><a href="widgets/Widget/syncChild.html">syncChild</a>
 </li>
+      <li><a href="widgets/Widget/takeChild.html">takeChild</a>
+</li>
       <li><a href="widgets/Widget/toString.html">toString</a>
 </li>
       <li><a href="widgets/Widget/toStringName.html">toStringName</a>
@@ -138,7 +144,7 @@
             <span class="name ">syncChild</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="syncChild-param-newNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">newNode</span></span>,<br><span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>,<br><span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>
+                <span class="parameter" id="syncChild-param-newNode"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">newNode</span></span>,<br><span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>,<br><span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>
             </div>
             )    </section>
 
@@ -152,26 +158,68 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">Widget syncChild(Widget newNode, Widget oldNode, dynamic slot) {
 
+  assert(() {
+    &apos;You have probably used a single instance of a Widget in two different places in the widget tree. Widgets can only be used in one place at a time.&apos;;
+    return newNode == null || newNode.isFromOldGeneration;
+  });
+
+  if (oldNode != null &amp;&amp; !oldNode.isFromOldGeneration)
+    oldNode = null;
+
   if (newNode == oldNode) {
-    assert(newNode == null || newNode.mounted);
+    assert(newNode == null || newNode.isFromOldGeneration);
     assert(newNode is! RenderObjectWrapper ||
            (newNode is RenderObjectWrapper &amp;&amp; newNode._ancestor != null)); // TODO(ianh): Simplify this once the analyzer is cleverer
-    if (newNode != null)
+    if (newNode != null) {
       newNode.setParent(this);
+      newNode._markAsFromCurrentGeneration();
+    }
     return newNode; // Nothing to do. Subtrees must be identical.
   }
 
   if (newNode == null) {
-    // the child in this slot has gone away
+    // the child in this slot has gone away (we know oldNode != null)
+    assert(oldNode != null);
+    assert(oldNode.isFromOldGeneration);
     assert(oldNode.mounted);
     oldNode.detachRenderObject();
     oldNode.remove();
     assert(!oldNode.mounted);
+    // we don&apos;t update the generation of oldNode, because there&apos;s
+    // still a chance it could be reused as-is later in the tree.
     return null;
   }
 
   if (oldNode != null) {
-    if (_canSync(newNode, oldNode)) {
+    assert(newNode != null);
+    assert(newNode.isFromOldGeneration);
+    assert(oldNode.isFromOldGeneration);
+    if (!_canSync(newNode, oldNode)) {
+      assert(oldNode.mounted);
+      // We want to handle the case where there is a removal of zero
+      // or more widgets. In this case, we should be able to sync
+      // ourselves with a Widget that is a descendant of the
+      // oldNode, skipping the nodes in between. Let&apos;s try that.
+      Widget deadNode = oldNode;
+      Widget candidate = _getCandidateSingleChildFrom(oldNode);
+      oldNode = null;
+      while (candidate != null &amp;&amp; _shouldReparentDuringSync) {
+        if (_canSync(newNode, candidate)) {
+          assert(candidate.parent != null);
+          assert(candidate.parent.singleChild == candidate);
+          candidate.parent.takeChild();
+          oldNode = candidate;
+          break;
+        }
+        candidate = _getCandidateSingleChildFrom(candidate);
+      }
+      deadNode.detachRenderObject();
+      deadNode.remove();
+    }
+    if (oldNode != null) {
+      assert(newNode.isFromOldGeneration);
+      assert(oldNode.isFromOldGeneration);
+      assert(_canSync(newNode, oldNode));
       if (oldNode.retainStatefulNodeIfPossible(newNode)) {
         assert(oldNode.mounted);
         assert(!newNode.mounted);
@@ -182,16 +230,10 @@
       } else {
         oldNode.setParent(null);
       }
-    } else {
-      assert(oldNode.mounted);
-      oldNode.detachRenderObject();
-      oldNode.remove();
-      oldNode = null;
     }
   }
 
   assert(oldNode == null || (oldNode.mounted == false &amp;&amp; oldNode.parent == null));
-  assert(!newNode.mounted);
   newNode.setParent(this);
   newNode._sync(oldNode, slot);
   assert(newNode.renderObject is RenderObject);
@@ -209,7 +251,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -233,7 +275,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

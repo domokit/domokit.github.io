@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">Offset</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -59,6 +59,7 @@
           </div>
           <ul class="subnav">
               <li><a href="rendering/Offset-class.html#constants">Constants</a></li>
+              <li><a href="rendering/Offset-class.html#static-methods">Static Methods</a></li>
               <li><a href="rendering/Offset-class.html#instance-properties">Properties</a></li>
               <li><a href="rendering/Offset-class.html#constructors">Constructors</a></li>
               <li><a href="rendering/Offset-class.html#operators">Operators</a></li>
@@ -216,54 +217,69 @@
 
     <section class="desc markdown">
     
-          <p>Holds a 2D floating-point offset.
-Think of this as a vector from an unspecified point</p>
+          <p>An immutable 2D floating-point offset</p>
+<p>An Offset represents a vector from an unspecified point</p>
     
     </section>
 
     <section>
         <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li>OffsetBase</li>
+              <li>Offset</li>
+          </ul></dd>
 
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li>OffsetBase</li>
-            <li>Offset</li>
-        </ul></dd>
 
 
 
         </dl>
     </section>
 
-    <section class="summary" id="constants">
+    <section class="summary offset-anchor" id="constants">
         <h2>Constants</h2>
 
         <dl class="properties">
             <dt id="infinite" class="constant">
-                <span class="top-level-variable-type"><a href="basic/Offset-class.html">Offset</a></span>
+                <span class="top-level-variable-type"><a href="rendering/Offset-class.html">Offset</a></span>
                 <span class="name "><a href="rendering/Offset/infinite.html">infinite</a></span>
-                <span class="signature">= const <a href="basic/Offset-class.html">Offset</a>(double.INFINITY, double.INFINITY)</span>
+                <span class="signature">= const <a href="rendering/Offset-class.html">Offset</a>(double.INFINITY, double.INFINITY)</span>
             </dt>
             <dd>
                 <div class="features">const</div>
-                <p></p>
+                <p>An offset with infinite x and y components</p>
             </dd>
             <dt id="zero" class="constant">
-                <span class="top-level-variable-type"><a href="basic/Offset-class.html">Offset</a></span>
+                <span class="top-level-variable-type"><a href="rendering/Offset-class.html">Offset</a></span>
                 <span class="name "><a href="rendering/Offset/zero.html">zero</a></span>
-                <span class="signature">= const <a href="basic/Offset-class.html">Offset</a>(0.0, 0.0)</span>
+                <span class="signature">= const <a href="rendering/Offset-class.html">Offset</a>(0.0, 0.0)</span>
             </dt>
             <dd>
                 <div class="features">const</div>
-                <p></p>
+                <p>An offset with zero magnitude</p>
             </dd>
         </dl>
     </section>
 
 
+    <section class="summary offset-anchor" id="static-methods">
+        <h2>Static Methods</h2>
+        <dl class="callables">
+            <dt id="lerp" class="callable">
+                <a href="rendering/Offset/lerp.html"><span class="name ">lerp</span></a><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
+                    &#8594;
+                    <span class="returntype"><a href="rendering/Offset-class.html">Offset</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p>Linearly interpolate between two offsets<a href="rendering/Offset/lerp.html">&hellip;</a>
+</p>
+            </dd>
+        </dl>
+    </section>
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -275,7 +291,7 @@ Think of this as a vector from an unspecified point</p>
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The magnitude of the offset</p>
             </dd>
             <dt id="dx" class="property">
                 <span class="name"><a href="rendering/Offset/dx.html">dx</a></span>
@@ -285,7 +301,7 @@ Think of this as a vector from an unspecified point</p>
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The x component of the offset</p>
             </dd>
             <dt id="dy" class="property">
                 <span class="name"><a href="rendering/Offset/dy.html">dy</a></span>
@@ -295,7 +311,7 @@ Think of this as a vector from an unspecified point</p>
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The y component of the offset</p>
             </dd>
             <dt id="hashCode" class="property">
             <span class="name ">hashCode</span>    
@@ -320,7 +336,7 @@ Think of this as a vector from an unspecified point</p>
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -333,16 +349,10 @@ Think of this as a vector from an unspecified point</p>
                 </div>
                 <p></p>
             </dd>
-            <dt id="Offset.copy" class="callable">
-                <span class="name"><a href="rendering/Offset/Offset.copy.html">Offset.copy</a></span><span class="signature">(<span class="parameter" id="copy-param-source"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">source</span></span>)</span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
         </dl>
       </section>
 
-      <section class="summary" id="operators">
+      <section class="summary offset-anchor" id="operators">
           <h2>Operators</h2>
           <dl class="callables">
               <dt id="operator %" class="callable">
@@ -355,13 +365,13 @@ Think of this as a vector from an unspecified point</p>
                   <p></p>
               </dd>
               <dt id="operator &amp;" class="callable">
-                  <a href="rendering/Offset/operator_bitwise_and.html"><span class="name ">operator &amp;</span></a><span class="signature">(<wbr><span class="parameter" id="&-param-other"><span class="type-annotation"><a href="basic/Size-class.html">Size</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="rendering/Offset/operator_bitwise_and.html"><span class="name ">operator &amp;</span></a><span class="signature">(<wbr><span class="parameter" id="&-param-other"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/Rect-class.html">Rect</a></span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a rect of the given size that starts at (0, 0) plus this offset</p>
               </dd>
               <dt id="operator *" class="callable">
                   <a href="rendering/Offset/operator_multiply.html"><span class="name ">operator *</span></a><span class="signature">(<wbr><span class="parameter" id="*-param-operand"><span class="type-annotation">double</span> <span class="parameter-name">operand</span></span>)
@@ -373,7 +383,7 @@ Think of this as a vector from an unspecified point</p>
                   <p></p>
               </dd>
               <dt id="operator +" class="callable">
-                  <a href="rendering/Offset/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="rendering/Offset/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/Offset-class.html">Offset</a></span>
                   </span>
@@ -382,7 +392,7 @@ Think of this as a vector from an unspecified point</p>
                   <p></p>
               </dd>
               <dt id="operator -" class="callable">
-                  <a href="rendering/Offset/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="rendering/Offset/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/Offset-class.html">Offset</a></span>
                   </span>
@@ -470,7 +480,7 @@ Think of this as a vector from an unspecified point</p>
           </dl>
       </section>
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="scale" class="callable">
@@ -480,7 +490,7 @@ Think of this as a vector from an unspecified point</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a new offset with the x component scaled by scaleX and the y component scaled by scaleY</p>
               </dd>
               <dt id="toPoint" class="callable">
                   <a href="rendering/Offset/toPoint.html"><span class="name ">toPoint</span></a><span class="signature">(<wbr>)
@@ -489,7 +499,7 @@ Think of this as a vector from an unspecified point</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the point at (0, 0) plus this offset.</p>
               </dd>
               <dt id="toString" class="callable">
                   <a href="rendering/Offset/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
@@ -507,7 +517,7 @@ Think of this as a vector from an unspecified point</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a new offset with translateX added to the x component and translateY added to the y component</p>
               </dd>
           </dl>
       </section>
@@ -517,13 +527,15 @@ Think of this as a vector from an unspecified point</p>
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>Offset</h5>
     <ol>
-      <li class="section-title"><a href="#constants">Constants</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#constants">Constants</a></li>
       <li><a href="rendering/Offset/infinite.html">infinite</a></li>
       <li><a href="rendering/Offset/zero.html">zero</a></li>
     
     
+      <li class="section-title"><a href="rendering/Offset-class.html#static-methods">Static methods</a></li>
+      <li><a href="rendering/Offset/lerp.html">lerp</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/Offset/distance.html">distance</a>
 </li>
       <li><a href="rendering/Offset/dx.html">dx</a>
@@ -535,11 +547,10 @@ Think of this as a vector from an unspecified point</p>
       <li>isInfinite
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/Offset/Offset.html">Offset</a></li>
-      <li><a href="rendering/Offset/Offset.copy.html">copy</a></li>
     
-      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#operators">Operators</a></li>
       <li><a href="rendering/Offset/operator_modulo.html">operator %</a>
 </li>
       <li><a href="rendering/Offset/operator_bitwise_and.html">operator &</a>
@@ -567,7 +578,7 @@ Think of this as a vector from an unspecified point</p>
       <li><a href="rendering/Offset/operator_truncate_divide.html">operator ~/</a>
 </li>
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/Offset-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/Offset/scale.html">scale</a>
 </li>
       <li><a href="rendering/Offset/toPoint.html">toPoint</a>
@@ -587,7 +598,7 @@ Think of this as a vector from an unspecified point</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -611,7 +622,7 @@ Think of this as a vector from an unspecified point</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

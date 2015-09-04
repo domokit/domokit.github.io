@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">ImplicitlyAnimatedFieldBehavior</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -137,6 +137,7 @@
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
       <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
       <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
       <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
@@ -347,40 +348,33 @@
 
     <section>
         <dl class="dl-horizontal">
-
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="widgets/AnimationBehavior-class.html">AnimationBehavior</a></li>
-            <li>ImplicitlyAnimatedFieldBehavior</li>
-        </ul></dd>
-
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="widgets/AnimationBehavior-class.html">AnimationBehavior</a></li>
+              <li>ImplicitlyAnimatedFieldBehavior</li>
+          </ul></dd>
 
 
-        <dt>Implemented by</dt>
-        <dd><ul class="comma-separated clazz-relationships">
-            <li><a href="widgets/ImplicitlyAnimatedConstraintsBehavior-class.html">ImplicitlyAnimatedConstraintsBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedConstraintsBehavior-class.html">ImplicitlyAnimatedConstraintsBehavior</a></li>
-            <li><a href="widgets/ImplicitlyAnimatedDecorationBehavior-class.html">ImplicitlyAnimatedDecorationBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedDecorationBehavior-class.html">ImplicitlyAnimatedDecorationBehavior</a></li>
-            <li><a href="widgets/ImplicitlyAnimatedHeightBehavior-class.html">ImplicitlyAnimatedHeightBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedHeightBehavior-class.html">ImplicitlyAnimatedHeightBehavior</a></li>
-            <li><a href="widgets/ImplicitlyAnimatedMarginBehavior-class.html">ImplicitlyAnimatedMarginBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedMarginBehavior-class.html">ImplicitlyAnimatedMarginBehavior</a></li>
-            <li><a href="widgets/ImplicitlyAnimatedPaddingBehavior-class.html">ImplicitlyAnimatedPaddingBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedPaddingBehavior-class.html">ImplicitlyAnimatedPaddingBehavior</a></li>
-            <li><a href="widgets/ImplicitlyAnimatedTransformBehavior-class.html">ImplicitlyAnimatedTransformBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedTransformBehavior-class.html">ImplicitlyAnimatedTransformBehavior</a></li>
-            <li><a href="widgets/ImplicitlyAnimatedWidthBehavior-class.html">ImplicitlyAnimatedWidthBehavior</a></li>
-            <li><a href="animated_container/ImplicitlyAnimatedWidthBehavior-class.html">ImplicitlyAnimatedWidthBehavior</a></li>
-        </ul></dd>
+
+          <dt>Implemented by</dt>
+          <dd><ul class="comma-separated clazz-relationships">
+              <li><a href="widgets/ImplicitlyAnimatedConstraintsBehavior-class.html">ImplicitlyAnimatedConstraintsBehavior</a></li>
+              <li><a href="widgets/ImplicitlyAnimatedDecorationBehavior-class.html">ImplicitlyAnimatedDecorationBehavior</a></li>
+              <li><a href="widgets/ImplicitlyAnimatedHeightBehavior-class.html">ImplicitlyAnimatedHeightBehavior</a></li>
+              <li><a href="widgets/ImplicitlyAnimatedMarginBehavior-class.html">ImplicitlyAnimatedMarginBehavior</a></li>
+              <li><a href="widgets/ImplicitlyAnimatedPaddingBehavior-class.html">ImplicitlyAnimatedPaddingBehavior</a></li>
+              <li><a href="widgets/ImplicitlyAnimatedTransformBehavior-class.html">ImplicitlyAnimatedTransformBehavior</a></li>
+              <li><a href="widgets/ImplicitlyAnimatedWidthBehavior-class.html">ImplicitlyAnimatedWidthBehavior</a></li>
+          </ul></dd>
+
         </dl>
     </section>
 
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -396,7 +390,7 @@
             </dd>
             <dt id="field" class="property">
                 <span class="name"><a href="widgets/ImplicitlyAnimatedFieldBehavior/field.html">field</a></span>
-                <span class="signature">&#8594; <a href="animated_container/ImplicitlyAnimatedValue-class.html">ImplicitlyAnimatedValue</a>&lt;T&gt;</span>
+                <span class="signature">&#8594; <a href="widgets/ImplicitlyAnimatedValue-class.html">ImplicitlyAnimatedValue</a>&lt;T&gt;</span>
             </dt>
             <dd>
                 <div class="features">
@@ -407,7 +401,7 @@
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -421,11 +415,11 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="getter" class="callable">
-                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/getter.html"><span class="name ">getter</span></a><span class="signature">(<wbr><span class="parameter" id="getter-param-container"><span class="type-annotation"><a href="animated_container/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">container</span></span>)
+                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/getter.html"><span class="name ">getter</span></a><span class="signature">(<wbr><span class="parameter" id="getter-param-container"><span class="type-annotation"><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">container</span></span>)
                       &#8594;
                       <span class="returntype">T</span>
                   </span>
@@ -443,7 +437,7 @@
                   <p></p>
               </dd>
               <dt id="initFields" class="callable">
-                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/initFields.html"><span class="name ">initFields</span></a><span class="signature">(<wbr><span class="parameter" id="initFields-param-original"><span class="type-annotation"><a href="animated_container/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">original</span></span>)
+                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/initFields.html"><span class="name ">initFields</span></a><span class="signature">(<wbr><span class="parameter" id="initFields-param-original"><span class="type-annotation"><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">original</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -452,7 +446,7 @@
                   <p></p>
               </dd>
               <dt id="setter" class="callable">
-                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/setter.html"><span class="name ">setter</span></a><span class="signature">(<wbr><span class="parameter" id="setter-param-container"><span class="type-annotation"><a href="animated_container/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">container</span></span>, <span class="parameter" id="setter-param-value"><span class="type-annotation">T</span> <span class="parameter-name">value</span></span>)
+                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/setter.html"><span class="name ">setter</span></a><span class="signature">(<wbr><span class="parameter" id="setter-param-container"><span class="type-annotation"><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">container</span></span>, <span class="parameter" id="setter-param-value"><span class="type-annotation">T</span> <span class="parameter-name">value</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -461,7 +455,7 @@
                   <p></p>
               </dd>
               <dt id="syncConstructorArguments" class="callable">
-                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/syncConstructorArguments.html"><span class="name ">syncConstructorArguments</span></a><span class="signature">(<wbr><span class="parameter" id="syncConstructorArguments-param-original"><span class="type-annotation"><a href="animated_container/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">original</span></span>, <span class="parameter" id="syncConstructorArguments-param-updated"><span class="type-annotation"><a href="animated_container/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">updated</span></span>)
+                  <a href="widgets/ImplicitlyAnimatedFieldBehavior/syncConstructorArguments.html"><span class="name ">syncConstructorArguments</span></a><span class="signature">(<wbr><span class="parameter" id="syncConstructorArguments-param-original"><span class="type-annotation"><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">original</span></span>, <span class="parameter" id="syncConstructorArguments-param-updated"><span class="type-annotation"><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></span> <span class="parameter-name">updated</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -480,17 +474,17 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/ImplicitlyAnimatedFieldBehavior-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/ImplicitlyAnimatedFieldBehavior/duration.html">duration</a>
 </li>
       <li><a href="widgets/ImplicitlyAnimatedFieldBehavior/field.html">field</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/ImplicitlyAnimatedFieldBehavior-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/ImplicitlyAnimatedFieldBehavior/ImplicitlyAnimatedFieldBehavior.html">ImplicitlyAnimatedFieldBehavior</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/ImplicitlyAnimatedFieldBehavior-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/ImplicitlyAnimatedFieldBehavior/getter.html">getter</a>
 </li>
       <li><a href="widgets/ImplicitlyAnimatedFieldBehavior/initField.html">initField</a>
@@ -512,7 +506,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -536,7 +530,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

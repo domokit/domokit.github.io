@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">build</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,8 +80,12 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/Dismissable-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/Dismissable/child.html">child</a>
+</li>
+      <li><a href="widgets/Dismissable/direction.html">direction</a>
+</li>
+      <li>isFromOldGeneration
 </li>
       <li>key
 </li>
@@ -95,12 +99,14 @@
 </li>
       <li>renderObject
 </li>
+      <li>singleChild
+</li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/Dismissable-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Dismissable/Dismissable.html">Dismissable</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/Dismissable-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/Dismissable/build.html">build</a>
 </li>
       <li>dependenciesChanged
@@ -133,6 +139,8 @@
 </li>
       <li><a href="widgets/Dismissable/syncConstructorArguments.html">syncConstructorArguments</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -162,8 +170,8 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">Widget build() {
   if (_resizePerformance != null) {
-    AnimatedValue&lt;double&gt; dismissHeight = new AnimatedValue&lt;double&gt;(
-      _size.height,
+    AnimatedValue&lt;double&gt; squashAxisExtent = new AnimatedValue&lt;double&gt;(
+      _directionIsYAxis ? _size.width : _size.height,
       end: 0.0,
       curve: ease,
       interval: _kCardDismissResizeInterval
@@ -172,13 +180,18 @@
     return new SquashTransition(
       performance: _resizePerformance,
       direction: Direction.forward,
-      height: dismissHeight);
+      width: _directionIsYAxis ? squashAxisExtent : null,
+      height: !_directionIsYAxis ? squashAxisExtent : null
+    );
   }
 
   return new GestureDetector(
-    onHorizontalScrollStart: _handleScrollStart,
-    onHorizontalScrollUpdate: _handleScrollUpdate,
-    onHorizontalScrollEnd: _handleScrollEnd,
+    onHorizontalScrollStart: _directionIsYAxis ? null : _handleScrollStart,
+    onHorizontalScrollUpdate: _directionIsYAxis ? null : _handleScrollUpdate,
+    onHorizontalScrollEnd: _directionIsYAxis ? null : _handleScrollEnd,
+    onVerticalScrollStart: _directionIsYAxis ? _handleScrollStart : null,
+    onVerticalScrollUpdate: _directionIsYAxis ? _handleScrollUpdate : null,
+    onVerticalScrollEnd: _directionIsYAxis ? _handleScrollEnd : null,
     child: new Listener(
       onGestureFlingStart: _handleFlingStart,
       child: new SizeObserver(
@@ -209,7 +222,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -233,7 +246,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

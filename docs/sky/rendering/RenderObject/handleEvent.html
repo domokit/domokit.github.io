@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">handleEvent</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -78,17 +78,17 @@
 
     <ol>
     
-      <li class="section-title"><a href="#static-properties">Static properties</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#static-properties">Static properties</a></li>
       <li><a href="rendering/RenderObject/debugActiveLayout.html">debugActiveLayout</a></li>
       <li><a href="rendering/RenderObject/debugActivePaint.html">debugActivePaint</a></li>
       <li><a href="rendering/RenderObject/debugDoingLayout.html">debugDoingLayout</a></li>
       <li><a href="rendering/RenderObject/debugDoingPaint.html">debugDoingPaint</a></li>
     
-      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#static-methods">Static methods</a></li>
       <li><a href="rendering/RenderObject/flushLayout.html">flushLayout</a></li>
       <li><a href="rendering/RenderObject/flushPaint.html">flushPaint</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#instance-properties">Properties</a></li>
       <li>attached
 </li>
       <li><a href="rendering/RenderObject/constraints.html">constraints</a>
@@ -126,11 +126,11 @@
       <li><a href="rendering/RenderObject/sizedByParent.html">sizedByParent</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderObject/RenderObject.html">RenderObject</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/RenderObject-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/RenderObject/adoptChild.html">adoptChild</a>
 </li>
       <li><a href="rendering/RenderObject/applyPaintTransform.html">applyPaintTransform</a>
@@ -160,10 +160,6 @@
       <li><a href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a>
 </li>
       <li><a href="rendering/RenderObject/layout.html">layout</a>
-</li>
-      <li><a href="rendering/RenderObject/layoutWithoutResize.html">layoutWithoutResize</a>
-</li>
-      <li><a href="rendering/RenderObject/markNeedsCompositingBitsUpdate.html">markNeedsCompositingBitsUpdate</a>
 </li>
       <li><a href="rendering/RenderObject/markNeedsLayout.html">markNeedsLayout</a>
 </li>
@@ -212,15 +208,14 @@
 
     <section class="desc markdown">
     
-          <p>Override this function to receive events.</p>
+          <p>Override this function to handle events that hit this render object</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">EventDisposition handleEvent(sky.Event event, HitTestEntry entry) {
-  // override this if you have a client, to hand it to the client
-  // override this if you want to do anything with the event
+      <pre><code class="prettyprint lang-dart">/// Override this function to handle events that hit this render object
+EventDisposition handleEvent(sky.Event event, HitTestEntry entry) {
   return EventDisposition.ignored;
 }</code></pre>
     </section>
@@ -235,7 +230,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -259,7 +254,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

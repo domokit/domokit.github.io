@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">shift</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -78,9 +78,13 @@
 
     <ol>
     
+      <li class="section-title"><a href="rendering/Rect-class.html#static-properties">Static properties</a></li>
+      <li><a href="rendering/Rect/zero.html">zero</a></li>
     
+      <li class="section-title"><a href="rendering/Rect-class.html#static-methods">Static methods</a></li>
+      <li><a href="rendering/Rect/lerp.html">lerp</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/Rect-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/Rect/bottom.html">bottom</a>
 </li>
       <li><a href="rendering/Rect/bottomLeft.html">bottomLeft</a>
@@ -110,16 +114,16 @@
       <li><a href="rendering/Rect/width.html">width</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/Rect-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/Rect/Rect.html">Rect</a></li>
       <li><a href="rendering/Rect/Rect.fromLTRB.html">fromLTRB</a></li>
       <li><a href="rendering/Rect/Rect.fromLTWH.html">fromLTWH</a></li>
     
-      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li class="section-title"><a href="rendering/Rect-class.html#operators">Operators</a></li>
       <li><a href="rendering/Rect/operator_equals.html">operator ==</a>
 </li>
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/Rect-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/Rect/contains.html">contains</a>
 </li>
       <li><a href="rendering/Rect/deflate.html">deflate</a>
@@ -143,19 +147,20 @@
             <span class="name ">shift</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="shift-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>
+                <span class="parameter" id="shift-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns a new rectangle translated by the given offset</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">Rect shift(Offset offset) {
+      <pre><code class="prettyprint lang-dart">/// Returns a new rectangle translated by the given offset
+Rect shift(Offset offset) {
   return new Rect.fromLTRB(left + offset.dx, top + offset.dy, right + offset.dx, bottom + offset.dy);
 }</code></pre>
     </section>
@@ -170,7 +175,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -194,7 +199,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

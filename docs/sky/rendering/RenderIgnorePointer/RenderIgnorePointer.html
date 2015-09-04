@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">RenderIgnorePointer</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,12 +80,57 @@
     
     
     
+      <li class="section-title"><a href="rendering/RenderIgnorePointer-class.html#instance-properties">Properties</a></li>
+      <li>attached
+</li>
+      <li>child
+</li>
+      <li>child
+</li>
+      <li>constraints
+</li>
+      <li>debugCanParentUseSize
+</li>
+      <li>debugCanPerformMutations
+</li>
+      <li>debugDoingThisLayout
+</li>
+      <li>debugDoingThisPaint
+</li>
+      <li>debugDoingThisResize
+</li>
+      <li>debugExceptionContext
+</li>
+      <li>depth
+</li>
+      <li>hasLayer
+</li>
+      <li><a href="rendering/RenderIgnorePointer/ignoring.html">ignoring</a>
+</li>
+      <li>layer
+</li>
+      <li>needsCompositing
+</li>
+      <li>needsLayout
+</li>
+      <li>needsPaint
+</li>
+      <li>paintBounds
+</li>
+      <li>parent
+</li>
+      <li>parentData
+</li>
+      <li>size
+</li>
+      <li>sizedByParent
+</li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/RenderIgnorePointer-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderIgnorePointer/RenderIgnorePointer.html">RenderIgnorePointer</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/RenderIgnorePointer-class.html#instance-methods">Methods</a></li>
       <li>adoptChild
 </li>
       <li>applyPaintTransform
@@ -140,11 +185,7 @@
 </li>
       <li>layout
 </li>
-      <li>layoutWithoutResize
-</li>
       <li>localToGlobal
-</li>
-      <li>markNeedsCompositingBitsUpdate
 </li>
       <li>markNeedsLayout
 </li>
@@ -187,7 +228,7 @@
                 <span class="name ">RenderIgnorePointer</span>(
         <br>
         <div class="parameters">
-            {<span class="parameter" id="-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>}
+            {<span class="parameter" id="-param-child"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="-param-ignoring"><span class="type-annotation">bool</span> <span class="parameter-name">ignoring</span>: <span class="default-value">true</span></span>}
         </div>
         )
     </section>
@@ -209,7 +250,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -233,7 +274,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

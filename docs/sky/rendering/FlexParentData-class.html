@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">FlexParentData</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -220,20 +220,20 @@
 
     <section>
         <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="rendering/ParentData-class.html">ParentData</a></li>
+              <li><a href="rendering/BoxParentData-class.html">BoxParentData</a></li>
+              <li>FlexParentData</li>
+          </ul></dd>
 
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="rendering/ParentData-class.html">ParentData</a></li>
-            <li><a href="rendering/BoxParentData-class.html">BoxParentData</a></li>
-            <li>FlexParentData</li>
-        </ul></dd>
 
+          <dt>Mixes-in</dt>
+          <dd><ul class="comma-separated clazz-relationships">
+              <li><a href="object/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a>&lt;<a href="box/RenderBox-class.html">RenderBox</a>&gt;</li>
+          </ul></dd>
 
-        <dt>Mixes-in</dt>
-        <dd><ul class="comma-separated clazz-relationships">
-            <li><a href="object/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a>&lt;<a href="box/RenderBox-class.html">RenderBox</a>&gt;</li>
-        </ul></dd>
 
         </dl>
     </section>
@@ -241,7 +241,7 @@
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -257,27 +257,27 @@
             </dd>
             <dt id="nextSibling" class="property">
             <span class="name ">nextSibling</span>    
-                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
                 <div class="features">
         read / write, inherited
     </div>
-    <p></p>
+    <p>The next sibling in the parent's child list</p>
             </dd>
             <dt id="nextSibling" class="property">
             <span class="name ">nextSibling</span>    
-                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
                 <div class="features">
         read / write, inherited
     </div>
-    <p></p>
+    <p>The next sibling in the parent's child list</p>
             </dd>
             <dt id="position" class="property">
             <span class="name ">position</span>    
-                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+                <span class="signature">&#8594; <a href="rendering/Point-class.html">Point</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -287,28 +287,28 @@
             </dd>
             <dt id="previousSibling" class="property">
             <span class="name ">previousSibling</span>    
-                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
                 <div class="features">
         read / write, inherited
     </div>
-    <p></p>
+    <p>The previous sibling in the parent's child list</p>
             </dd>
             <dt id="previousSibling" class="property">
             <span class="name ">previousSibling</span>    
-                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
                 <div class="features">
         read / write, inherited
     </div>
-    <p></p>
+    <p>The previous sibling in the parent's child list</p>
             </dd>
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -322,7 +322,7 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="detach" class="callable">
@@ -343,16 +343,16 @@
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Clear the sibling pointers.</p>
               </dd>
               <dt id="merge" class="callable">
-                  <a href="rendering/FlexParentData/merge.html"><span class="name ">merge</span></a><span class="signature">(<wbr><span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="flex/FlexParentData-class.html">FlexParentData</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="rendering/FlexParentData/merge.html"><span class="name ">merge</span></a><span class="signature">(<wbr><span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="rendering/FlexParentData-class.html">FlexParentData</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Override this function in subclasses to merge in data from other instance into this instance</p>
               </dd>
               <dt id="toString" class="callable">
                   <a href="rendering/FlexParentData/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
@@ -374,7 +374,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/FlexParentData-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/FlexParentData/flex.html">flex</a>
 </li>
       <li>nextSibling
@@ -388,11 +388,11 @@
       <li>previousSibling
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/FlexParentData-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/FlexParentData/FlexParentData.html">FlexParentData</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/FlexParentData-class.html#instance-methods">Methods</a></li>
       <li>detach
 </li>
       <li>detachSiblings
@@ -412,7 +412,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -436,7 +436,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

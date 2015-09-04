@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">updateTaskDescription</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -153,7 +153,7 @@
             <span class="name ">updateTaskDescription</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="updateTaskDescription-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span></span>,<br><span class="parameter" id="updateTaskDescription-param-color"><span class="type-annotation"><a href="basic/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>
+                <span class="parameter" id="updateTaskDescription-param-label"><span class="type-annotation">String</span> <span class="parameter-name">label</span></span>,<br><span class="parameter" id="updateTaskDescription-param-color"><span class="type-annotation"><a href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>
             </div>
             )    </section>
 
@@ -175,7 +175,7 @@ void updateTaskDescription(String label, Color color) {
 
   TaskDescription description = new TaskDescription()
     ..label = label
-    ..primaryColor = (color != null ? color.value : null);
+    ..primaryColor = color?.value;
 
   _activityProxy.ptr.setTaskDescription(description);
 }</code></pre>
@@ -191,7 +191,7 @@ void updateTaskDescription(String label, Color color) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -215,7 +215,7 @@ void updateTaskDescription(String label, Color color) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

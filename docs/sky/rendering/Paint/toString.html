@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">toString</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,19 +80,33 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/Paint-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/Paint/color.html">color</a>
+</li>
+      <li><a href="rendering/Paint/colorFilter.html">colorFilter</a>
+</li>
+      <li><a href="rendering/Paint/drawLooper.html">drawLooper</a>
+</li>
+      <li><a href="rendering/Paint/filterQuality.html">filterQuality</a>
 </li>
       <li><a href="rendering/Paint/isAntiAlias.html">isAntiAlias</a>
 </li>
+      <li><a href="rendering/Paint/maskFilter.html">maskFilter</a>
+</li>
+      <li><a href="rendering/Paint/shader.html">shader</a>
+</li>
       <li><a href="rendering/Paint/strokeWidth.html">strokeWidth</a>
 </li>
+      <li><a href="rendering/Paint/style.html">style</a>
+</li>
+      <li><a href="rendering/Paint/transferMode.html">transferMode</a>
+</li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/Paint-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/Paint/Paint.html">Paint</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/Paint-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/Paint/setColorFilter.html">setColorFilter</a>
 </li>
       <li><a href="rendering/Paint/setDrawLooper.html">setDrawLooper</a>
@@ -130,14 +144,14 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">String toString() {
   String result = &apos;Paint(color:$color&apos;;
-  if (_shader != null)
-    result += &apos;, shader: $_shader&apos;;
-  if (_colorFilter != null)
-    result += &apos;, colorFilter: $_colorFilter&apos;;
-  if (_maskFilter != null)
-    result += &apos;, maskFilter: $_maskFilter&apos;;
+  if (shader != null)
+    result += &apos;, shader: $shader&apos;;
+  if (colorFilter != null)
+    result += &apos;, colorFilter: $colorFilter&apos;;
+  if (maskFilter != null)
+    result += &apos;, maskFilter: $maskFilter&apos;;
   // TODO(mpcomplete): Figure out how to show a drawLooper.
-  if (_drawLooper != null)
+  if (drawLooper != null)
     result += &apos;, drawLooper:true&apos;;
   result += &apos;)&apos;;
   return result;
@@ -154,7 +168,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -178,7 +192,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

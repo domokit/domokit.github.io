@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">scale</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -79,10 +79,10 @@
     <ol>
     
     
-      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li class="section-title"><a href="rendering/BoxDecoration-class.html#static-methods">Static methods</a></li>
       <li><a href="rendering/BoxDecoration/lerp.html">lerp</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/BoxDecoration-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/BoxDecoration/backgroundColor.html">backgroundColor</a>
 </li>
       <li><a href="rendering/BoxDecoration/backgroundImage.html">backgroundImage</a>
@@ -98,11 +98,11 @@
       <li><a href="rendering/BoxDecoration/shape.html">shape</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/BoxDecoration-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/BoxDecoration/BoxDecoration.html">BoxDecoration</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/BoxDecoration-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/BoxDecoration/scale.html">scale</a>
 </li>
       <li><a href="rendering/BoxDecoration/toString.html">toString</a>
@@ -134,10 +134,10 @@
 BoxDecoration scale(double factor) {
   // TODO(abarth): Scale ALL the things.
   return new BoxDecoration(
-    backgroundColor: lerpColor(null, backgroundColor, factor),
+    backgroundColor: Color.lerp(null, backgroundColor, factor),
     backgroundImage: backgroundImage,
     border: border,
-    borderRadius: lerpNum(null, borderRadius, factor),
+    borderRadius: sky.lerpDouble(null, borderRadius, factor),
     boxShadow: BoxShadow.lerpList(null, boxShadow, factor),
     gradient: gradient,
     shape: shape
@@ -155,7 +155,7 @@ BoxDecoration scale(double factor) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -179,7 +179,7 @@ BoxDecoration scale(double factor) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

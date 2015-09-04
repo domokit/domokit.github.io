@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">add</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,15 +80,15 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="hit_test/HitTestResult-class.html#instance-properties">Properties</a></li>
       <li><a href="hit_test/HitTestResult/path.html">path</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="hit_test/HitTestResult-class.html#constructors">Constructors</a></li>
       <li><a href="hit_test/HitTestResult/HitTestResult.html">HitTestResult</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="hit_test/HitTestResult-class.html#instance-methods">Methods</a></li>
       <li><a href="hit_test/HitTestResult/add.html">add</a>
 </li>
     </ol>
@@ -110,8 +110,8 @@
     
           <p>Add a <a href="hit_test/HitTestEntry-class.html">HitTestEntry</a> to the path.</p>
 <p>The new entry is added at the end of the path, which means entries should
-be added in order from last specific to most specific, typically during a
-downward walk in the tree being hit tested.</p>
+be added in order from most specific to least specific, typically during a
+upward walk in the tree being hit tested.</p>
     
     </section>
 
@@ -120,8 +120,8 @@ downward walk in the tree being hit tested.</p>
       <pre><code class="prettyprint lang-dart">/// Add a [HitTestEntry] to the path.
 ///
 /// The new entry is added at the end of the path, which means entries should
-/// be added in order from last specific to most specific, typically during a
-/// downward walk in the tree being hit tested.
+/// be added in order from most specific to least specific, typically during a
+/// upward walk in the tree being hit tested.
 void add(HitTestEntry entry) {
   path.add(entry);
 }</code></pre>
@@ -137,7 +137,7 @@ void add(HitTestEntry entry) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -161,7 +161,7 @@ void add(HitTestEntry entry) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

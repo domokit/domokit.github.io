@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">ScrollableMixedWidgetList</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,10 +80,12 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/ScrollableMixedWidgetList-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/ScrollableMixedWidgetList/builder.html">builder</a>
 </li>
       <li>initialScrollOffset
+</li>
+      <li>isFromOldGeneration
 </li>
       <li>key
 </li>
@@ -103,14 +105,16 @@
 </li>
       <li>scrollOffsetVector
 </li>
+      <li>singleChild
+</li>
       <li><a href="widgets/ScrollableMixedWidgetList/token.html">token</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/ScrollableMixedWidgetList-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/ScrollableMixedWidgetList/ScrollableMixedWidgetList.html">ScrollableMixedWidgetList</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/ScrollableMixedWidgetList-class.html#instance-methods">Methods</a></li>
       <li>addListener
 </li>
       <li>build
@@ -157,6 +161,8 @@
 </li>
       <li><a href="widgets/ScrollableMixedWidgetList/syncConstructorArguments.html">syncConstructorArguments</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -176,7 +182,7 @@
                 <span class="name ">ScrollableMixedWidgetList</span>(
         <br>
         <div class="parameters">
-            {<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-initialScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">initialScrollOffset</span></span>,<br><span class="parameter" id="-param-builder"><span class="type-annotation"><a href="mixed_viewport/Widget-class.html">Widget</a></span> <span class="parameter-name">builder</span>(<span class="parameter" id="IndexedBuilder-param-index"><span class="type-annotation">int</span> <span class="parameter-name">index</span></span>)</span>,<br><span class="parameter" id="-param-token"><span class="type-annotation">Object</span> <span class="parameter-name">token</span></span>,<br><span class="parameter" id="-param-layoutState"><span class="type-annotation"><a href="mixed_viewport/MixedViewportLayoutState-class.html">MixedViewportLayoutState</a></span> <span class="parameter-name">layoutState</span></span>}
+            {<span class="parameter" id="-param-key"><span class="type-annotation"><a href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-initialScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">initialScrollOffset</span></span>,<br><span class="parameter" id="-param-builder"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">builder</span>(<span class="parameter" id="IndexedBuilder-param-index"><span class="type-annotation">int</span> <span class="parameter-name">index</span></span>)</span>,<br><span class="parameter" id="-param-token"><span class="type-annotation">Object</span> <span class="parameter-name">token</span></span>,<br><span class="parameter" id="-param-layoutState"><span class="type-annotation"><a href="widgets/MixedViewportLayoutState-class.html">MixedViewportLayoutState</a></span> <span class="parameter-name">layoutState</span></span>}
         </div>
         )
     </section>
@@ -198,7 +204,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -222,7 +228,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

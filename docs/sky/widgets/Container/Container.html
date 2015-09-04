@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">Container</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,7 +80,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/Container-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/Container/child.html">child</a>
 </li>
       <li><a href="widgets/Container/constraints.html">constraints</a>
@@ -90,6 +90,8 @@
       <li><a href="widgets/Container/foregroundDecoration.html">foregroundDecoration</a>
 </li>
       <li><a href="widgets/Container/height.html">height</a>
+</li>
+      <li>isFromOldGeneration
 </li>
       <li>key
 </li>
@@ -103,16 +105,18 @@
 </li>
       <li>renderObject
 </li>
+      <li>singleChild
+</li>
       <li><a href="widgets/Container/transform.html">transform</a>
 </li>
       <li><a href="widgets/Container/width.html">width</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/Container-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Container/Container.html">Container</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/Container-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/Container/build.html">build</a>
 </li>
       <li>dependenciesChanged
@@ -139,6 +143,8 @@
 </li>
       <li>syncChild
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -158,7 +164,7 @@
                 <span class="name ">Container</span>(
         <br>
         <div class="parameters">
-            {<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-child"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>,<br><span class="parameter" id="-param-decoration"><span class="type-annotation"><a href="basic/BoxDecoration-class.html">BoxDecoration</a></span> <span class="parameter-name">decoration</span></span>,<br><span class="parameter" id="-param-foregroundDecoration"><span class="type-annotation"><a href="basic/BoxDecoration-class.html">BoxDecoration</a></span> <span class="parameter-name">foregroundDecoration</span></span>,<br><span class="parameter" id="-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>,<br><span class="parameter" id="-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>,<br><span class="parameter" id="-param-margin"><span class="type-annotation"><a href="basic/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">margin</span></span>,<br><span class="parameter" id="-param-padding"><span class="type-annotation"><a href="basic/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">padding</span></span>,<br><span class="parameter" id="-param-transform"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>}
+            {<span class="parameter" id="-param-key"><span class="type-annotation"><a href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-child"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>,<br><span class="parameter" id="-param-decoration"><span class="type-annotation"><a href="box_painter/BoxDecoration-class.html">BoxDecoration</a></span> <span class="parameter-name">decoration</span></span>,<br><span class="parameter" id="-param-foregroundDecoration"><span class="type-annotation"><a href="box_painter/BoxDecoration-class.html">BoxDecoration</a></span> <span class="parameter-name">foregroundDecoration</span></span>,<br><span class="parameter" id="-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>,<br><span class="parameter" id="-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>,<br><span class="parameter" id="-param-margin"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">margin</span></span>,<br><span class="parameter" id="-param-padding"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">padding</span></span>,<br><span class="parameter" id="-param-transform"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>}
         </div>
         )
     </section>
@@ -180,7 +186,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -204,7 +210,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

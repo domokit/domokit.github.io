@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">syncChildren</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -79,15 +79,15 @@
     <ol>
     
     
-      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li class="section-title"><a href="widgets/RenderObjectWrapper-class.html#static-methods">Static methods</a></li>
       <li><a href="widgets/RenderObjectWrapper/getWidgetsForRenderObject.html">getWidgetsForRenderObject</a></li>
     
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/RenderObjectWrapper-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/RenderObjectWrapper/RenderObjectWrapper.html">RenderObjectWrapper</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/RenderObjectWrapper-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/RenderObjectWrapper/createNode.html">createNode</a>
 </li>
       <li><a href="widgets/RenderObjectWrapper/dependenciesChanged.html">dependenciesChanged</a>
@@ -123,6 +123,8 @@
       <li><a href="widgets/RenderObjectWrapper/syncChildren.html">syncChildren</a>
 </li>
       <li><a href="widgets/RenderObjectWrapper/syncRenderObject.html">syncRenderObject</a>
+</li>
+      <li>takeChild
 </li>
       <li>toString
 </li>
@@ -203,9 +205,10 @@
   // top of the lists
   while ((childrenTop &lt;= oldChildrenBottom) &amp;&amp; (childrenTop &lt;= newChildrenBottom)) {
     Widget oldChild = oldChildren[childrenTop];
+    if (!oldChild.isFromOldGeneration)
+      break;
     assert(oldChild.mounted);
     Widget newChild = newChildren[childrenTop];
-    assert(newChild == oldChild || !newChild.mounted);
     if (!_canSync(oldChild, newChild))
       break;
     childrenTop += 1;
@@ -216,9 +219,10 @@
   // bottom of the lists
   while ((childrenTop &lt;= oldChildrenBottom) &amp;&amp; (childrenTop &lt;= newChildrenBottom)) {
     Widget oldChild = oldChildren[oldChildrenBottom];
+    if (!oldChild.isFromOldGeneration)
+      break;
     assert(oldChild.mounted);
     Widget newChild = newChildren[newChildrenBottom];
-    assert(newChild == oldChild || !newChild.mounted);
     if (!_canSync(oldChild, newChild))
       break;
     newChild = syncChild(newChild, oldChild, nextSibling);
@@ -237,13 +241,15 @@
     oldKeyedChildren = new Map&lt;Key, Widget&gt;();
     while (childrenTop &lt;= oldChildrenBottom) {
       Widget oldChild = oldChildren[oldChildrenBottom];
-      assert(oldChild.mounted);
-      if (oldChild.key != null) {
-        oldKeyedChildren[oldChild.key] = oldChild;
-      } else {
-        syncChild(null, oldChild, null);
+      if (oldChild.isFromOldGeneration) {
+        assert(oldChild.mounted);
+        if (oldChild.key != null) {
+          oldKeyedChildren[oldChild.key] = oldChild;
+        } else {
+          syncChild(null, oldChild, null);
+        }
+        oldChildrenBottom -= 1;
       }
-      oldChildrenBottom -= 1;
     }
   }
 
@@ -255,7 +261,7 @@
       Key key = newChild.key;
       if (key != null) {
         oldChild = oldKeyedChildren[newChild.key];
-        if (oldChild != null) {
+        if (oldChild != null &amp;&amp; oldChild.isFromOldGeneration) {
           if (oldChild.runtimeType != newChild.runtimeType)
             oldChild = null;
           oldKeyedChildren.remove(key);
@@ -278,8 +284,9 @@
     childrenTop -= 1;
     Widget oldChild = oldChildren[childrenTop];
     assert(oldChild.mounted);
+    assert(oldChild.isFromOldGeneration);
     Widget newChild = newChildren[childrenTop];
-    assert(newChild == oldChild || !newChild.mounted);
+    assert(newChild.isFromOldGeneration);
     assert(_canSync(oldChild, newChild));
     newChild = syncChild(newChild, oldChild, nextSibling);
     assert(newChild.mounted);
@@ -290,7 +297,8 @@
 
   if (haveOldNodes &amp;&amp; !oldKeyedChildren.isEmpty) {
     for (Widget oldChild in oldKeyedChildren.values)
-      syncChild(null, oldChild, null);
+      if (oldChild.isFromOldGeneration)
+        syncChild(null, oldChild, null);
   }
 
   assert(renderObject == this.renderObject); // TODO(ianh): Remove this once the analyzer is cleverer
@@ -307,7 +315,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -331,7 +339,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

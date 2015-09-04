@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">performResize</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,7 +80,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/RenderView-class.html#instance-properties">Properties</a></li>
       <li>attached
 </li>
       <li>child
@@ -130,11 +130,11 @@
       <li><a href="rendering/RenderView/timeForRotation.html">timeForRotation</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/RenderView-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderView/RenderView.html">RenderView</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/RenderView-class.html#instance-methods">Methods</a></li>
       <li>adoptChild
 </li>
       <li>applyPaintTransform
@@ -168,10 +168,6 @@
       <li>invokeLayoutCallback
 </li>
       <li>layout
-</li>
-      <li>layoutWithoutResize
-</li>
-      <li>markNeedsCompositingBitsUpdate
 </li>
       <li>markNeedsLayout
 </li>
@@ -218,7 +214,14 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Updates the render objects size using only the constraints</p>
+<p>Do not call this function directly: call <code>layout</code> instead. This function
+is called by <code>layout</code> when there is actually work to be done by this
+render object during layout. The layout constraints provided by your
+parent are available via the <code>constraints</code> getter.</p>
+<p>Subclasses that set <code>sizedByParent</code> to true should override this function
+to compute their size.</p>
+<p>Note: This function is called only if <code>sizedByParent</code> is true.</p>
     
     </section>
 
@@ -239,7 +242,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -263,7 +266,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

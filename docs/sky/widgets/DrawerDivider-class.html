@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">DrawerDivider</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -136,6 +136,7 @@
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
       <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
       <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
       <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
@@ -346,14 +347,14 @@
 
     <section>
         <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="widgets/Widget-class.html">Widget</a></li>
+              <li><a href="widgets/Component-class.html">Component</a></li>
+              <li>DrawerDivider</li>
+          </ul></dd>
 
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="widgets/Widget-class.html">Widget</a></li>
-            <li><a href="widgets/Component-class.html">Component</a></li>
-            <li>DrawerDivider</li>
-        </ul></dd>
 
 
 
@@ -363,13 +364,23 @@
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
+            <dt id="isFromOldGeneration" class="property">
+            <span class="name ">isFromOldGeneration</span>    
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
             <dt id="key" class="property">
             <span class="name ">key</span>    
-                <span class="signature">&#8594; <a href="framework/Key-class.html">Key</a></span>
+                <span class="signature">&#8594; <a href="widgets/Key-class.html">Key</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -389,7 +400,7 @@
             </dd>
             <dt id="parent" class="property">
             <span class="name ">parent</span>    
-                <span class="signature">&#8594; <a href="framework/Widget-class.html">Widget</a></span>
+                <span class="signature">&#8594; <a href="widgets/Widget-class.html">Widget</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -399,7 +410,7 @@
             </dd>
             <dt id="renderObject" class="property">
             <span class="name ">renderObject</span>    
-                <span class="signature">&#8594; <a href="object/RenderObject-class.html">RenderObject</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderObject-class.html">RenderObject</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -407,15 +418,25 @@
     </div>
     <p>The underlying <code>RenderObject</code> associated with this <code>Widget</code>.</p>
             </dd>
+            <dt id="singleChild" class="property">
+            <span class="name ">singleChild</span>    
+                <span class="signature">&#8594; <a href="widgets/Widget-class.html">Widget</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
             <dt id="DrawerDivider" class="callable">
-                <span class="name"><a href="widgets/DrawerDivider/DrawerDivider.html">DrawerDivider</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>})</span>
+                <span class="name"><a href="widgets/DrawerDivider/DrawerDivider.html">DrawerDivider</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>})</span>
             </dt>
             <dd>
                 <p></p>
@@ -424,7 +445,7 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="build" class="callable">
@@ -464,7 +485,7 @@
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Override this function to learn when this <a href="framework/Widget-class.html">Widget</a> enters the widget tree.</p>
+                  <p>Override this function to learn when this <a href="widgets/Widget-class.html">Widget</a> enters the widget tree.</p>
               </dd>
               <dt id="didUnmount" class="callable">
                   <span class="name ">didUnmount</span><span class="signature">(<wbr>)
@@ -474,7 +495,7 @@
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Override this function to learn when this <a href="framework/Widget-class.html">Widget</a> leaves the widget tree.</p>
+                  <p>Override this function to learn when this <a href="widgets/Widget-class.html">Widget</a> leaves the widget tree.</p>
               </dd>
               <dt id="findAncestorRenderObjectWrapper" class="callable">
                   <span class="name ">findAncestorRenderObjectWrapper</span><span class="signature">(<wbr>)
@@ -487,7 +508,7 @@
                   <p></p>
               </dd>
               <dt id="globalToLocal" class="callable">
-                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
                       &#8594;
                       <span class="returntype"><a href="framework/Point-class.html">Point</a></span>
                   </span>
@@ -507,7 +528,7 @@
                   <p></p>
               </dd>
               <dt id="localToGlobal" class="callable">
-                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
                       &#8594;
                       <span class="returntype"><a href="framework/Point-class.html">Point</a></span>
                   </span>
@@ -527,7 +548,7 @@
                   <p></p>
               </dd>
               <dt id="retainStatefulNodeIfPossible" class="callable">
-                  <span class="name ">retainStatefulNodeIfPossible</span><span class="signature">(<wbr><span class="parameter" id="retainStatefulNodeIfPossible-param-newNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">newNode</span></span>)
+                  <span class="name ">retainStatefulNodeIfPossible</span><span class="signature">(<wbr><span class="parameter" id="retainStatefulNodeIfPossible-param-newNode"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">newNode</span></span>)
                       &#8594;
                       <span class="returntype">bool</span>
                   </span>
@@ -537,7 +558,7 @@
                   <p></p>
               </dd>
               <dt id="setParent" class="callable">
-                  <span class="name ">setParent</span><span class="signature">(<wbr><span class="parameter" id="setParent-param-newParent"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">newParent</span></span>)
+                  <span class="name ">setParent</span><span class="signature">(<wbr><span class="parameter" id="setParent-param-newParent"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">newParent</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -547,7 +568,7 @@
                   <p>Called during the synchronizing process to update the widget's parent.</p>
               </dd>
               <dt id="syncChild" class="callable">
-                  <span class="name ">syncChild</span><span class="signature">(<wbr><span class="parameter" id="syncChild-param-newNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">newNode</span></span>, <span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="framework/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>, <span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>)
+                  <span class="name ">syncChild</span><span class="signature">(<wbr><span class="parameter" id="syncChild-param-newNode"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">newNode</span></span>, <span class="parameter" id="syncChild-param-oldNode"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">oldNode</span></span>, <span class="parameter" id="syncChild-param-slot"><span class="parameter-name">slot</span></span>)
                       &#8594;
                       <span class="returntype"><a href="framework/Widget-class.html">Widget</a></span>
                   </span>
@@ -555,6 +576,19 @@
               <dd>
                   <div class="features">inherited</div>
                   <p></p>
+              </dd>
+              <dt id="takeChild" class="callable">
+                  <span class="name ">takeChild</span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Detaches the single child of this object from this object,
+without calling remove() on that child.
+Only called when singleChild returns a non-null node.
+Override this if you override singleChild to return non-null.</p>
               </dd>
               <dt id="toString" class="callable">
                   <span class="name ">toString</span><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>, <span class="parameter" id="toString-param-startPrefix"><span class="type-annotation">String</span> <span class="parameter-name">startPrefix</span> = <span class="default-value">''</span></span>])
@@ -608,11 +642,11 @@
     
     
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/DrawerDivider-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/DrawerDivider/DrawerDivider.html">DrawerDivider</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/DrawerDivider-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/DrawerDivider/build.html">build</a>
 </li>
       <li>dependenciesChanged
@@ -639,6 +673,8 @@
 </li>
       <li>syncChild
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -658,7 +694,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -682,7 +718,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">StyledTextSpan</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -221,13 +221,13 @@
 
     <section>
         <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="rendering/TextSpan-class.html">TextSpan</a></li>
+              <li>StyledTextSpan</li>
+          </ul></dd>
 
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="rendering/TextSpan-class.html">TextSpan</a></li>
-            <li>StyledTextSpan</li>
-        </ul></dd>
 
 
 
@@ -237,7 +237,7 @@
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -263,7 +263,7 @@
             </dd>
             <dt id="style" class="property">
                 <span class="name"><a href="rendering/StyledTextSpan/style.html">style</a></span>
-                <span class="signature">&#8594; <a href="basic/TextStyle-class.html">TextStyle</a></span>
+                <span class="signature">&#8594; <a href="rendering/TextStyle-class.html">TextStyle</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -274,12 +274,12 @@
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
             <dt id="StyledTextSpan" class="callable">
-                <span class="name"><a href="rendering/StyledTextSpan/StyledTextSpan.html">StyledTextSpan</a></span><span class="signature">(<span class="parameter" id="-param-style"><span class="type-annotation"><a href="basic/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">style</span></span>, <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="text_painter/TextSpan-class.html">TextSpan</a>&gt;</span> <span class="parameter-name">children</span></span>)</span>
+                <span class="name"><a href="rendering/StyledTextSpan/StyledTextSpan.html">StyledTextSpan</a></span><span class="signature">(<span class="parameter" id="-param-style"><span class="type-annotation"><a href="rendering/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">style</span></span>, <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="text_painter/TextSpan-class.html">TextSpan</a>&gt;</span> <span class="parameter-name">children</span></span>)</span>
             </dt>
             <dd>
                 <p></p>
@@ -287,7 +287,7 @@
         </dl>
       </section>
 
-      <section class="summary" id="operators">
+      <section class="summary offset-anchor" id="operators">
           <h2>Operators</h2>
           <dl class="callables">
               <dt id="operator ==" class="callable">
@@ -297,12 +297,13 @@
                   </span>
               </dt>
               <dd>
-                  <p>The equality operator.</p>
+                  <p>The equality operator.<a href="rendering/StyledTextSpan/operator_equals.html">&hellip;</a>
+</p>
               </dd>
           </dl>
       </section>
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="toString" class="callable">
@@ -325,7 +326,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/StyledTextSpan-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/StyledTextSpan/children.html">children</a>
 </li>
       <li><a href="rendering/StyledTextSpan/hashCode.html">hashCode</a>
@@ -333,14 +334,14 @@
       <li><a href="rendering/StyledTextSpan/style.html">style</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/StyledTextSpan-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/StyledTextSpan/StyledTextSpan.html">StyledTextSpan</a></li>
     
-      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li class="section-title"><a href="rendering/StyledTextSpan-class.html#operators">Operators</a></li>
       <li><a href="rendering/StyledTextSpan/operator_equals.html">operator ==</a>
 </li>
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/StyledTextSpan-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/StyledTextSpan/toString.html">toString</a>
 </li>
     </ol>
@@ -354,7 +355,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -378,7 +379,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

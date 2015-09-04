@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">Flex</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,12 +80,14 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/Flex-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/Flex/alignItems.html">alignItems</a>
 </li>
       <li>children
 </li>
       <li><a href="widgets/Flex/direction.html">direction</a>
+</li>
+      <li>isFromOldGeneration
 </li>
       <li><a href="widgets/Flex/justifyContent.html">justifyContent</a>
 </li>
@@ -97,14 +99,16 @@
 </li>
       <li><a href="widgets/Flex/renderObject.html">renderObject</a>
 </li>
+      <li>singleChild
+</li>
       <li><a href="widgets/Flex/textBaseline.html">textBaseline</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/Flex-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Flex/Flex.html">Flex</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/Flex-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/Flex/createNode.html">createNode</a>
 </li>
       <li>dependenciesChanged
@@ -141,6 +145,8 @@
 </li>
       <li><a href="widgets/Flex/syncRenderObject.html">syncRenderObject</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -162,7 +168,7 @@
                 <span class="name ">Flex</span>(
         <br>
         <div class="parameters">
-            <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="framework/Widget-class.html">Widget</a>&gt;</span> <span class="parameter-name">children</span></span>,<br>{<span class="parameter" id="-param-key"><span class="type-annotation"><a href="framework/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-direction"><span class="type-annotation"><a href="basic/FlexDirection-class.html">FlexDirection</a></span> <span class="parameter-name">direction</span>: <span class="default-value">FlexDirection.horizontal</span></span>,<br><span class="parameter" id="-param-justifyContent"><span class="type-annotation"><a href="basic/FlexJustifyContent-class.html">FlexJustifyContent</a></span> <span class="parameter-name">justifyContent</span>: <span class="default-value">FlexJustifyContent.start</span></span>,<br><span class="parameter" id="-param-alignItems"><span class="type-annotation"><a href="basic/FlexAlignItems-class.html">FlexAlignItems</a></span> <span class="parameter-name">alignItems</span>: <span class="default-value">FlexAlignItems.center</span></span>,<br><span class="parameter" id="-param-textBaseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">textBaseline</span></span>}
+            <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="framework/Widget-class.html">Widget</a>&gt;</span> <span class="parameter-name">children</span></span>,<br>{<span class="parameter" id="-param-key"><span class="type-annotation"><a href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-direction"><span class="type-annotation"><a href="rendering/FlexDirection-class.html">FlexDirection</a></span> <span class="parameter-name">direction</span>: <span class="default-value">FlexDirection.horizontal</span></span>,<br><span class="parameter" id="-param-justifyContent"><span class="type-annotation"><a href="rendering/FlexJustifyContent-class.html">FlexJustifyContent</a></span> <span class="parameter-name">justifyContent</span>: <span class="default-value">FlexJustifyContent.start</span></span>,<br><span class="parameter" id="-param-alignItems"><span class="type-annotation"><a href="rendering/FlexAlignItems-class.html">FlexAlignItems</a></span> <span class="parameter-name">alignItems</span>: <span class="default-value">FlexAlignItems.center</span></span>,<br><span class="parameter" id="-param-textBaseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">textBaseline</span></span>}
         </div>
         )
     </section>
@@ -184,7 +190,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -208,7 +214,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

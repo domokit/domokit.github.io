@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">BoxParentData</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -220,44 +220,38 @@
 
     <section>
         <dl class="dl-horizontal">
-
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="rendering/ParentData-class.html">ParentData</a></li>
-            <li>BoxParentData</li>
-        </ul></dd>
-
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="rendering/ParentData-class.html">ParentData</a></li>
+              <li>BoxParentData</li>
+          </ul></dd>
 
 
-        <dt>Implemented by</dt>
-        <dd><ul class="comma-separated clazz-relationships">
-            <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
-            <li><a href="auto_layout/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
-            <li><a href="rendering/BlockParentData-class.html">BlockParentData</a></li>
-            <li><a href="block/BlockParentData-class.html">BlockParentData</a></li>
-            <li><a href="rendering/FlexParentData-class.html">FlexParentData</a></li>
-            <li><a href="flex/FlexParentData-class.html">FlexParentData</a></li>
-            <li><a href="rendering/GridParentData-class.html">GridParentData</a></li>
-            <li><a href="grid/GridParentData-class.html">GridParentData</a></li>
-            <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
-            <li><a href="stack/StackParentData-class.html">StackParentData</a></li>
-            <li><a href="widgets/TabBarParentData-class.html">TabBarParentData</a></li>
-            <li><a href="tabs/TabBarParentData-class.html">TabBarParentData</a></li>
-        </ul></dd>
+
+          <dt>Implemented by</dt>
+          <dd><ul class="comma-separated clazz-relationships">
+              <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
+              <li><a href="rendering/BlockParentData-class.html">BlockParentData</a></li>
+              <li><a href="rendering/FlexParentData-class.html">FlexParentData</a></li>
+              <li><a href="rendering/GridParentData-class.html">GridParentData</a></li>
+              <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
+              <li><a href="widgets/TabBarParentData-class.html">TabBarParentData</a></li>
+          </ul></dd>
+
         </dl>
     </section>
 
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
             <dt id="position" class="property">
                 <span class="name"><a href="rendering/BoxParentData/position.html">position</a></span>
-                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+                <span class="signature">&#8594; <a href="rendering/Point-class.html">Point</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -268,7 +262,7 @@
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -282,7 +276,7 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="detach" class="callable">
@@ -306,14 +300,14 @@
                   <p></p>
               </dd>
               <dt id="merge" class="callable">
-                  <span class="name ">merge</span><span class="signature">(<wbr><span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="object/ParentData-class.html">ParentData</a></span> <span class="parameter-name">other</span></span>)
+                  <span class="name ">merge</span><span class="signature">(<wbr><span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="rendering/ParentData-class.html">ParentData</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Override this function in subclasses to merge in data from other instance into this instance</p>
               </dd>
               <dt id="toString" class="callable">
                   <a href="rendering/BoxParentData/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
@@ -335,15 +329,15 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/BoxParentData-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/BoxParentData/position.html">position</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/BoxParentData-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/BoxParentData/BoxParentData.html">BoxParentData</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/BoxParentData-class.html#instance-methods">Methods</a></li>
       <li>detach
 </li>
       <li>detachSiblings
@@ -363,7 +357,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -387,7 +381,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

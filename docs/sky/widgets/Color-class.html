@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">Color</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -58,6 +58,7 @@
               </h1>
           </div>
           <ul class="subnav">
+              <li><a href="widgets/Color-class.html#static-methods">Static Methods</a></li>
               <li><a href="widgets/Color-class.html#instance-properties">Properties</a></li>
               <li><a href="widgets/Color-class.html#constructors">Constructors</a></li>
               <li><a href="widgets/Color-class.html#operators">Operators</a></li>
@@ -138,6 +139,7 @@
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
       <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
       <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
       <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
@@ -342,15 +344,30 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>An immutable 32 bit color value in ARGB</p>
     
     </section>
 
 
 
 
+    <section class="summary offset-anchor" id="static-methods">
+        <h2>Static Methods</h2>
+        <dl class="callables">
+            <dt id="lerp" class="callable">
+                <a href="widgets/Color/lerp.html"><span class="name ">lerp</span></a><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
+                    &#8594;
+                    <span class="returntype"><a href="widgets/Color-class.html">Color</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p>Linearly interpolate between two colors<a href="widgets/Color/lerp.html">&hellip;</a>
+</p>
+            </dd>
+        </dl>
+    </section>
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -362,7 +379,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The alpha channel of this color in an 8 bit value</p>
             </dd>
             <dt id="blue" class="property">
                 <span class="name"><a href="widgets/Color/blue.html">blue</a></span>
@@ -372,7 +389,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The blue channel of this color in an 8 bit value</p>
             </dd>
             <dt id="green" class="property">
                 <span class="name"><a href="widgets/Color/green.html">green</a></span>
@@ -382,7 +399,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The green channel of this color in an 8 bit value</p>
             </dd>
             <dt id="hashCode" class="property">
                 <span class="name"><a href="widgets/Color/hashCode.html">hashCode</a></span>
@@ -402,7 +419,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The red channel of this color in an 8 bit value</p>
             </dd>
             <dt id="value" class="property">
                 <span class="name"><a href="widgets/Color/value.html">value</a></span>
@@ -412,12 +429,13 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>A 32 bit value representing this color<a href="widgets/Color/value.html">&hellip;</a>
+</p>
             </dd>
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -428,7 +446,8 @@
                 <div class="constructor-modifier">
                     const
                 </div>
-                <p></p>
+                <p>Construct a color from the lower 32 bits of an int<a href="widgets/Color/Color.html">&hellip;</a>
+</p>
             </dd>
             <dt id="Color.fromARGB" class="callable">
                 <span class="name"><a href="widgets/Color/Color.fromARGB.html">Color.fromARGB</a></span><span class="signature">(<span class="parameter" id="fromARGB-param-a"><span class="type-annotation">int</span> <span class="parameter-name">a</span></span>, <span class="parameter" id="fromARGB-param-r"><span class="type-annotation">int</span> <span class="parameter-name">r</span></span>, <span class="parameter" id="fromARGB-param-g"><span class="type-annotation">int</span> <span class="parameter-name">g</span></span>, <span class="parameter" id="fromARGB-param-b"><span class="type-annotation">int</span> <span class="parameter-name">b</span></span>)</span>
@@ -437,12 +456,12 @@
                 <div class="constructor-modifier">
                     const
                 </div>
-                <p></p>
+                <p>Construct a color from the lower 8 bits of four integers.</p>
             </dd>
         </dl>
       </section>
 
-      <section class="summary" id="operators">
+      <section class="summary offset-anchor" id="operators">
           <h2>Operators</h2>
           <dl class="callables">
               <dt id="operator ==" class="callable">
@@ -452,12 +471,13 @@
                   </span>
               </dt>
               <dd>
-                  <p>The equality operator.</p>
+                  <p>The equality operator.<a href="widgets/Color/operator_equals.html">&hellip;</a>
+</p>
               </dd>
           </dl>
       </section>
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="toString" class="callable">
@@ -476,7 +496,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a new color that matches this color with the alpha channel replaced with a.</p>
               </dd>
               <dt id="withBlue" class="callable">
                   <a href="widgets/Color/withBlue.html"><span class="name ">withBlue</span></a><span class="signature">(<wbr><span class="parameter" id="withBlue-param-b"><span class="type-annotation">int</span> <span class="parameter-name">b</span></span>)
@@ -485,7 +505,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a new color that matches this color with the blue channel replaced with b.</p>
               </dd>
               <dt id="withGreen" class="callable">
                   <a href="widgets/Color/withGreen.html"><span class="name ">withGreen</span></a><span class="signature">(<wbr><span class="parameter" id="withGreen-param-g"><span class="type-annotation">int</span> <span class="parameter-name">g</span></span>)
@@ -494,7 +514,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a new color that matches this color with the green channel replaced with g.</p>
               </dd>
               <dt id="withRed" class="callable">
                   <a href="widgets/Color/withRed.html"><span class="name ">withRed</span></a><span class="signature">(<wbr><span class="parameter" id="withRed-param-r"><span class="type-annotation">int</span> <span class="parameter-name">r</span></span>)
@@ -503,7 +523,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a new color that matches this color with the red channel replaced with r.</p>
               </dd>
           </dl>
       </section>
@@ -515,8 +535,10 @@
     <ol>
     
     
+      <li class="section-title"><a href="widgets/Color-class.html#static-methods">Static methods</a></li>
+      <li><a href="widgets/Color/lerp.html">lerp</a></li>
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="widgets/Color-class.html#instance-properties">Properties</a></li>
       <li><a href="widgets/Color/alpha.html">alpha</a>
 </li>
       <li><a href="widgets/Color/blue.html">blue</a>
@@ -530,15 +552,15 @@
       <li><a href="widgets/Color/value.html">value</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/Color-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Color/Color.html">Color</a></li>
       <li><a href="widgets/Color/Color.fromARGB.html">fromARGB</a></li>
     
-      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li class="section-title"><a href="widgets/Color-class.html#operators">Operators</a></li>
       <li><a href="widgets/Color/operator_equals.html">operator ==</a>
 </li>
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/Color-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/Color/toString.html">toString</a>
 </li>
       <li><a href="widgets/Color/withAlpha.html">withAlpha</a>
@@ -560,7 +582,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -584,7 +606,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

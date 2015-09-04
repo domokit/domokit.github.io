@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">merge</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -81,11 +81,11 @@
     
     
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/ParentData-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/ParentData/ParentData.html">ParentData</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/ParentData-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/ParentData/detach.html">detach</a>
 </li>
       <li><a href="rendering/ParentData/detachSiblings.html">detachSiblings</a>
@@ -105,20 +105,20 @@
             <span class="name ">merge</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="object/ParentData-class.html">ParentData</a></span> <span class="parameter-name">other</span></span>
+                <span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="rendering/ParentData-class.html">ParentData</a></span> <span class="parameter-name">other</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Override this function in subclasses to merge in data from other instance into this instance</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void merge(ParentData other) {
-  // override this in subclasses to merge in data from other into this
+      <pre><code class="prettyprint lang-dart">/// Override this function in subclasses to merge in data from other instance into this instance
+void merge(ParentData other) {
   assert(other.runtimeType == this.runtimeType);
 }</code></pre>
     </section>
@@ -133,7 +133,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -157,7 +157,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

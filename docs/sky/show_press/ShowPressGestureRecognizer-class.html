@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">ShowPressGestureRecognizer</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -99,15 +99,15 @@
 
     <section>
         <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="arena/GestureArenaMember-class.html">GestureArenaMember</a></li>
+              <li><a href="recognizer/GestureRecognizer-class.html">GestureRecognizer</a></li>
+              <li><a href="recognizer/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
+              <li>ShowPressGestureRecognizer</li>
+          </ul></dd>
 
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="arena/GestureArenaMember-class.html">GestureArenaMember</a></li>
-            <li><a href="recognizer/GestureRecognizer-class.html">GestureRecognizer</a></li>
-            <li><a href="recognizer/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
-            <li>ShowPressGestureRecognizer</li>
-        </ul></dd>
 
 
 
@@ -117,7 +117,7 @@
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -133,7 +133,7 @@
             </dd>
             <dt id="initialPosition" class="property">
             <span class="name ">initialPosition</span>    
-                <span class="signature">&#8594; <a href="basic/Point-class.html">Point</a></span>
+                <span class="signature">&#8594; <a href="rendering/Point-class.html">Point</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -174,7 +174,7 @@
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -188,7 +188,7 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="acceptGesture" class="callable">
@@ -218,7 +218,8 @@
                   </span>
               </dt>
               <dd>
-                  <p>Override to be notified with <code>deadline</code> is exceeded.</p>
+                  <p>Override to be notified with <code>deadline</code> is exceeded.<a href="show_press/ShowPressGestureRecognizer/didExceedDeadline.html">&hellip;</a>
+</p>
               </dd>
               <dt id="didStopTrackingLastPointer" class="callable">
                   <span class="name ">didStopTrackingLastPointer</span><span class="signature">(<wbr>)
@@ -320,7 +321,7 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="show_press/ShowPressGestureRecognizer-class.html#instance-properties">Properties</a></li>
       <li>deadline
 </li>
       <li>initialPosition
@@ -332,11 +333,11 @@
       <li>state
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="show_press/ShowPressGestureRecognizer-class.html#constructors">Constructors</a></li>
       <li><a href="show_press/ShowPressGestureRecognizer/ShowPressGestureRecognizer.html">ShowPressGestureRecognizer</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="show_press/ShowPressGestureRecognizer-class.html#instance-methods">Methods</a></li>
       <li>acceptGesture
 </li>
       <li>addPointer
@@ -372,7 +373,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -396,7 +397,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">EdgeDims</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -117,14 +117,14 @@ example, the padding inside a box can be represented using this class.</p>
     </section>
 
 
-    <section class="summary" id="constants">
+    <section class="summary offset-anchor" id="constants">
         <h2>Constants</h2>
 
         <dl class="properties">
             <dt id="zero" class="constant">
-                <span class="top-level-variable-type"><a href="basic/EdgeDims-class.html">EdgeDims</a></span>
+                <span class="top-level-variable-type"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span>
                 <span class="name "><a href="box_painter/EdgeDims/zero.html">zero</a></span>
-                <span class="signature">= const <a href="basic/EdgeDims-class.html">EdgeDims</a>(0.0, 0.0, 0.0, 0.0)</span>
+                <span class="signature">= const <a href="box_painter/EdgeDims-class.html">EdgeDims</a>(0.0, 0.0, 0.0, 0.0)</span>
             </dt>
             <dd>
                 <div class="features">const</div>
@@ -135,7 +135,7 @@ example, the padding inside a box can be represented using this class.</p>
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -152,6 +152,16 @@ example, the padding inside a box can be represented using this class.</p>
             <dt id="hashCode" class="property">
                 <span class="name"><a href="box_painter/EdgeDims/hashCode.html">hashCode</a></span>
                 <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="isNonNegative" class="property">
+                <span class="name"><a href="box_painter/EdgeDims/isNonNegative.html">isNonNegative</a></span>
+                <span class="signature">&#8594; bool</span>
             </dt>
             <dd>
                 <div class="features">
@@ -192,7 +202,7 @@ example, the padding inside a box can be represented using this class.</p>
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
@@ -235,11 +245,11 @@ example, the padding inside a box can be represented using this class.</p>
         </dl>
       </section>
 
-      <section class="summary" id="operators">
+      <section class="summary offset-anchor" id="operators">
           <h2>Operators</h2>
           <dl class="callables">
               <dt id="operator +" class="callable">
-                  <a href="box_painter/EdgeDims/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="basic/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="box_painter/EdgeDims/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span>
                   </span>
@@ -248,7 +258,7 @@ example, the padding inside a box can be represented using this class.</p>
                   <p></p>
               </dd>
               <dt id="operator -" class="callable">
-                  <a href="box_painter/EdgeDims/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="basic/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="box_painter/EdgeDims/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span>
                   </span>
@@ -263,12 +273,13 @@ example, the padding inside a box can be represented using this class.</p>
                   </span>
               </dt>
               <dd>
-                  <p>The equality operator.</p>
+                  <p>The equality operator.<a href="box_painter/EdgeDims/operator_equals.html">&hellip;</a>
+</p>
               </dd>
           </dl>
       </section>
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="toString" class="callable">
@@ -288,15 +299,17 @@ example, the padding inside a box can be represented using this class.</p>
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>EdgeDims</h5>
     <ol>
-      <li class="section-title"><a href="#constants">Constants</a></li>
+      <li class="section-title"><a href="box_painter/EdgeDims-class.html#constants">Constants</a></li>
       <li><a href="box_painter/EdgeDims/zero.html">zero</a></li>
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="box_painter/EdgeDims-class.html#instance-properties">Properties</a></li>
       <li><a href="box_painter/EdgeDims/bottom.html">bottom</a>
 </li>
       <li><a href="box_painter/EdgeDims/hashCode.html">hashCode</a>
+</li>
+      <li><a href="box_painter/EdgeDims/isNonNegative.html">isNonNegative</a>
 </li>
       <li><a href="box_painter/EdgeDims/left.html">left</a>
 </li>
@@ -305,13 +318,13 @@ example, the padding inside a box can be represented using this class.</p>
       <li><a href="box_painter/EdgeDims/top.html">top</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="box_painter/EdgeDims-class.html#constructors">Constructors</a></li>
       <li><a href="box_painter/EdgeDims/EdgeDims.html">EdgeDims</a></li>
       <li><a href="box_painter/EdgeDims/EdgeDims.all.html">all</a></li>
       <li><a href="box_painter/EdgeDims/EdgeDims.only.html">only</a></li>
       <li><a href="box_painter/EdgeDims/EdgeDims.symmetric.html">symmetric</a></li>
     
-      <li class="section-title"><a href="#operators">Operators</a></li>
+      <li class="section-title"><a href="box_painter/EdgeDims-class.html#operators">Operators</a></li>
       <li><a href="box_painter/EdgeDims/operator_plus.html">operator +</a>
 </li>
       <li><a href="box_painter/EdgeDims/operator_minus.html">operator -</a>
@@ -319,7 +332,7 @@ example, the padding inside a box can be represented using this class.</p>
       <li><a href="box_painter/EdgeDims/operator_equals.html">operator ==</a>
 </li>
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="box_painter/EdgeDims-class.html#instance-methods">Methods</a></li>
       <li><a href="box_painter/EdgeDims/toString.html">toString</a>
 </li>
     </ol>
@@ -333,7 +346,7 @@ example, the padding inside a box can be represented using this class.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -357,7 +370,7 @@ example, the padding inside a box can be represented using this class.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

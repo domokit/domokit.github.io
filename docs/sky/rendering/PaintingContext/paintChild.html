@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">paintChild</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -80,19 +80,19 @@
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/PaintingContext-class.html#instance-properties">Properties</a></li>
       <li><a href="rendering/PaintingContext/canvas.html">canvas</a>
 </li>
       <li><a href="rendering/PaintingContext/containerLayer.html">containerLayer</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/PaintingContext-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.forTesting.html">forTesting</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.withLayer.html">withLayer</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.withOffset.html">withOffset</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/PaintingContext-class.html#instance-methods">Methods</a></li>
       <li><a href="rendering/PaintingContext/compositeChild.html">compositeChild</a>
 </li>
       <li><a href="rendering/PaintingContext/debugCanPaintChild.html">debugCanPaintChild</a>
@@ -126,19 +126,30 @@
             <span class="name ">paintChild</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="paintChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="paintChild-param-childPosition"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>
+                <span class="parameter" id="paintChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="paintChild-param-childPosition"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Paint a child render object at the given position</p>
+<p>If the child needs compositing, a new composited layer will be created
+and inserted into the containerLayer. If the child does not require
+compositing, the child will be painted into the current canvas.</p>
+<p>Note: After calling this function, the current canvas might change.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void paintChild(RenderObject child, Point childPosition) {
+      <pre><code class="prettyprint lang-dart">/// Paint a child render object at the given position
+///
+/// If the child needs compositing, a new composited layer will be created
+/// and inserted into the containerLayer. If the child does not require
+/// compositing, the child will be painted into the current canvas.
+///
+/// Note: After calling this function, the current canvas might change.
+void paintChild(RenderObject child, Point childPosition) {
   assert(debugCanPaintChild(child));
   final Offset childOffset = childPosition.toOffset();
   if (!child.hasLayer) {
@@ -159,7 +170,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -183,7 +194,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">exitLayoutCallbackBuilder</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -134,6 +134,7 @@
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
       <li><a href="widgets/Direction-class.html">Direction</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
       <li><a href="widgets/EventDisposition-class.html">EventDisposition</a></li>
       <li><a href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a href="widgets/FlexDirection-class.html">FlexDirection</a></li>
@@ -341,7 +342,7 @@
             <span class="name ">exitLayoutCallbackBuilder</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="exitLayoutCallbackBuilder-param-handle"><span class="type-annotation"><a href="framework/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></span> <span class="parameter-name">handle</span></span>
+                <span class="parameter" id="exitLayoutCallbackBuilder-param-handle"><span class="type-annotation"><a href="widgets/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></span> <span class="parameter-name">handle</span></span>
             </div>
             )    </section>
 
@@ -360,7 +361,7 @@
     _inLayoutCallbackBuilder -= 1;
     return true;
   });
-  Widget._notifyMountStatusChanged();
+  _endSyncPhase();
 }</code></pre>
     </section>
 
@@ -374,7 +375,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -398,7 +399,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

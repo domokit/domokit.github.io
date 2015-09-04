@@ -37,7 +37,7 @@
               </ol>
               <div class="self-name">RenderBlockViewport</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -220,16 +220,16 @@
 
     <section>
         <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
+              <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+              <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+              <li><a href="rendering/RenderBlockBase-class.html">RenderBlockBase</a></li>
+              <li>RenderBlockViewport</li>
+          </ul></dd>
 
-        <dt>Extends</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-            <li>Object</li>
-            <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
-            <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
-            <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
-            <li><a href="rendering/RenderBlockBase-class.html">RenderBlockBase</a></li>
-            <li>RenderBlockViewport</li>
-        </ul></dd>
 
 
 
@@ -239,7 +239,7 @@
 
 
 
-    <section class="summary" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
         <h2>Properties</h2>
 
         <dl class="properties">
@@ -255,7 +255,7 @@
             </dd>
             <dt id="callback" class="property">
                 <span class="name"><a href="rendering/RenderBlockViewport/callback.html">callback</a></span>
-                <span class="signature">&#8594; <a href="object/LayoutCallback.html">LayoutCallback</a></span>
+                <span class="signature">&#8594; <a href="rendering/LayoutCallback.html">LayoutCallback</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -271,11 +271,11 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>The number of children</p>
             </dd>
             <dt id="constraints" class="property">
             <span class="name ">constraints</span>    
-                <span class="signature">&#8594; <a href="basic/BoxConstraints-class.html">BoxConstraints</a></span>
+                <span class="signature">&#8594; <a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -365,7 +365,7 @@
             </dd>
             <dt id="direction" class="property">
             <span class="name ">direction</span>    
-                <span class="signature">&#8594; <a href="basic/BlockDirection-class.html">BlockDirection</a></span>
+                <span class="signature">&#8594; <a href="rendering/BlockDirection-class.html">BlockDirection</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -375,13 +375,13 @@
             </dd>
             <dt id="firstChild" class="property">
             <span class="name ">firstChild</span>    
-                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>The first child in the child list</p>
             </dd>
             <dt id="hasLayer" class="property">
             <span class="name ">hasLayer</span>    
@@ -391,7 +391,7 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>Whether this render object paints using a composited layer</p>
             </dd>
             <dt id="isVertical" class="property">
             <span class="name ">isVertical</span>    
@@ -415,27 +415,27 @@
             </dd>
             <dt id="lastChild" class="property">
             <span class="name ">lastChild</span>    
-                <span class="signature">&#8594; <a href="box/RenderBox-class.html">RenderBox</a></span>
+                <span class="signature">&#8594; <a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>The last child in the child list</p>
             </dd>
             <dt id="layer" class="property">
             <span class="name ">layer</span>    
-                <span class="signature">&#8594; <a href="layer/ContainerLayer-class.html">ContainerLayer</a></span>
+                <span class="signature">&#8594; <a href="rendering/ContainerLayer-class.html">ContainerLayer</a></span>
             </dt>
             <dd>
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>The compositing layer that this render object uses to paint</p>
             </dd>
             <dt id="maxCrossAxisDimensionCallback" class="property">
                 <span class="name"><a href="rendering/RenderBlockViewport/maxCrossAxisDimensionCallback.html">maxCrossAxisDimensionCallback</a></span>
-                <span class="signature">&#8594; <a href="object/DimensionCallback.html">DimensionCallback</a></span>
+                <span class="signature">&#8594; <a href="rendering/DimensionCallback.html">DimensionCallback</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -445,7 +445,7 @@
             </dd>
             <dt id="minCrossAxisDimensionCallback" class="property">
                 <span class="name"><a href="rendering/RenderBlockViewport/minCrossAxisDimensionCallback.html">minCrossAxisDimensionCallback</a></span>
-                <span class="signature">&#8594; <a href="object/DimensionCallback.html">DimensionCallback</a></span>
+                <span class="signature">&#8594; <a href="rendering/DimensionCallback.html">DimensionCallback</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -471,7 +471,7 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>Whether we or one of our descendants has a compositing layer</p>
             </dd>
             <dt id="needsLayout" class="property">
             <span class="name ">needsLayout</span>    
@@ -481,7 +481,7 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>Whether this render object's layout information is dirty</p>
             </dd>
             <dt id="needsPaint" class="property">
             <span class="name ">needsPaint</span>    
@@ -491,11 +491,11 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>The visual appearance of this render object has changed since it last painted</p>
             </dd>
             <dt id="paintBounds" class="property">
             <span class="name ">paintBounds</span>    
-                <span class="signature">&#8594; <a href="basic/Rect-class.html">Rect</a></span>
+                <span class="signature">&#8594; <a href="rendering/Rect-class.html">Rect</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -521,11 +521,11 @@
                 <div class="features">
         read / write, inherited
     </div>
-    <p></p>
+    <p>Data for use by the parent render object</p>
             </dd>
             <dt id="size" class="property">
             <span class="name ">size</span>    
-                <span class="signature">&#8594; <a href="basic/Size-class.html">Size</a></span>
+                <span class="signature">&#8594; <a href="rendering/Size-class.html">Size</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -541,7 +541,8 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>Whether the constraints are the only input to the sizing algorithm (in
+particular, child nodes have no impact)</p>
             </dd>
             <dt id="startOffset" class="property">
                 <span class="name"><a href="rendering/RenderBlockViewport/startOffset.html">startOffset</a></span>
@@ -555,7 +556,7 @@
             </dd>
             <dt id="totalExtentCallback" class="property">
                 <span class="name"><a href="rendering/RenderBlockViewport/totalExtentCallback.html">totalExtentCallback</a></span>
-                <span class="signature">&#8594; <a href="object/DimensionCallback.html">DimensionCallback</a></span>
+                <span class="signature">&#8594; <a href="rendering/DimensionCallback.html">DimensionCallback</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -566,12 +567,12 @@
         </dl>
     </section>
 
-    <section class="summary" id="constructors">
+    <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
 
         <dl class="constructor-summary-list">
             <dt id="RenderBlockViewport" class="callable">
-                <span class="name"><a href="rendering/RenderBlockViewport/RenderBlockViewport.html">RenderBlockViewport</a></span><span class="signature">({<span class="parameter" id="-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-totalExtentCallback"><span class="type-annotation">double</span> <span class="parameter-name">totalExtentCallback</span>(<span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-maxCrossAxisDimensionCallback"><span class="type-annotation">double</span> <span class="parameter-name">maxCrossAxisDimensionCallback</span>(<span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-minCrossAxisDimensionCallback"><span class="type-annotation">double</span> <span class="parameter-name">minCrossAxisDimensionCallback</span>(<span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-direction"><span class="type-annotation"><a href="basic/BlockDirection-class.html">BlockDirection</a></span> <span class="parameter-name">direction</span>: <span class="default-value">BlockDirection.vertical</span></span>, <span class="parameter" id="-param-itemExtent"><span class="type-annotation">double</span> <span class="parameter-name">itemExtent</span></span>, <span class="parameter" id="-param-minExtent"><span class="type-annotation">double</span> <span class="parameter-name">minExtent</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="-param-startOffset"><span class="type-annotation">double</span> <span class="parameter-name">startOffset</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="box/RenderBox-class.html">RenderBox</a>&gt;</span> <span class="parameter-name">children</span></span>})</span>
+                <span class="name"><a href="rendering/RenderBlockViewport/RenderBlockViewport.html">RenderBlockViewport</a></span><span class="signature">({<span class="parameter" id="-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-totalExtentCallback"><span class="type-annotation">double</span> <span class="parameter-name">totalExtentCallback</span>(<span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-maxCrossAxisDimensionCallback"><span class="type-annotation">double</span> <span class="parameter-name">maxCrossAxisDimensionCallback</span>(<span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-minCrossAxisDimensionCallback"><span class="type-annotation">double</span> <span class="parameter-name">minCrossAxisDimensionCallback</span>(<span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>, <span class="parameter" id="-param-direction"><span class="type-annotation"><a href="rendering/BlockDirection-class.html">BlockDirection</a></span> <span class="parameter-name">direction</span>: <span class="default-value">BlockDirection.vertical</span></span>, <span class="parameter" id="-param-itemExtent"><span class="type-annotation">double</span> <span class="parameter-name">itemExtent</span></span>, <span class="parameter" id="-param-minExtent"><span class="type-annotation">double</span> <span class="parameter-name">minExtent</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="-param-startOffset"><span class="type-annotation">double</span> <span class="parameter-name">startOffset</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;<a href="box/RenderBox-class.html">RenderBox</a>&gt;</span> <span class="parameter-name">children</span></span>})</span>
             </dt>
             <dd>
                 <p></p>
@@ -580,18 +581,18 @@
       </section>
 
 
-      <section class="summary" id="instance-methods">
+      <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="add" class="callable">
-                  <span class="name ">add</span><span class="signature">(<wbr><span class="parameter" id="add-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>, {<span class="parameter" id="add-param-before"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">before</span></span>})
+                  <span class="name ">add</span><span class="signature">(<wbr><span class="parameter" id="add-param-child"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>, {<span class="parameter" id="add-param-before"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">before</span></span>})
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Insert child into this render object's child list before the given child</p>
               </dd>
               <dt id="addAll" class="callable">
                   <span class="name ">addAll</span><span class="signature">(<wbr><span class="parameter" id="addAll-param-children"><span class="type-annotation">List&lt;<a href="box/RenderBox-class.html">RenderBox</a>&gt;</span> <span class="parameter-name">children</span></span>)
@@ -601,17 +602,17 @@
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Add all the children to the end of this render object's child list</p>
               </dd>
               <dt id="adoptChild" class="callable">
-                  <span class="name ">adoptChild</span><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">adoptChild</span><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Subclasses should call this function when they acquire a new child.</p>
+                  <p>Called by subclases when they decide a render object is a child</p>
               </dd>
               <dt id="applyPaintTransform" class="callable">
                   <a href="rendering/RenderBlockViewport/applyPaintTransform.html"><span class="name ">applyPaintTransform</span></a><span class="signature">(<wbr><span class="parameter" id="applyPaintTransform-param-transform"><span class="type-annotation"><a href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>)
@@ -620,7 +621,9 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>If this render object applies a transform before painting, apply that
+transform to the given matrix<a href="rendering/RenderBlockViewport/applyPaintTransform.html">&hellip;</a>
+</p>
               </dd>
               <dt id="attach" class="callable">
                   <span class="name ">attach</span><span class="signature">(<wbr>)
@@ -644,17 +647,17 @@
 child. Do not call directly.</p>
               </dd>
               <dt id="childAfter" class="callable">
-                  <span class="name ">childAfter</span><span class="signature">(<wbr><span class="parameter" id="childAfter-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">childAfter</span><span class="signature">(<wbr><span class="parameter" id="childAfter-param-child"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype"><a href="object/RenderBox-class.html">RenderBox</a></span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>The next child after the given child in the child list</p>
               </dd>
               <dt id="computeDistanceToActualBaseline" class="callable">
-                  <span class="name ">computeDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <span class="name ">computeDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -700,20 +703,20 @@ child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Override this function in a subclass to verify that your state matches the constraints object</p>
               </dd>
               <dt id="debugPaint" class="callable">
-                  <span class="name ">debugPaint</span><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                  <span class="name ">debugPaint</span><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Override this function to paint debugging information</p>
               </dd>
               <dt id="debugPaintBaselines" class="callable">
-                  <span class="name ">debugPaintBaselines</span><span class="signature">(<wbr><span class="parameter" id="debugPaintBaselines-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaintBaselines-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                  <span class="name ">debugPaintBaselines</span><span class="signature">(<wbr><span class="parameter" id="debugPaintBaselines-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaintBaselines-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -723,7 +726,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="debugPaintSize" class="callable">
-                  <span class="name ">debugPaintSize</span><span class="signature">(<wbr><span class="parameter" id="debugPaintSize-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaintSize-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                  <span class="name ">debugPaintSize</span><span class="signature">(<wbr><span class="parameter" id="debugPaintSize-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="debugPaintSize-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -733,7 +736,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="defaultComputeDistanceToFirstActualBaseline" class="callable">
-                  <span class="name ">defaultComputeDistanceToFirstActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToFirstActualBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <span class="name ">defaultComputeDistanceToFirstActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToFirstActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -743,7 +746,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="defaultComputeDistanceToHighestActualBaseline" class="callable">
-                  <span class="name ">defaultComputeDistanceToHighestActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToHighestActualBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <span class="name ">defaultComputeDistanceToHighestActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToHighestActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -753,9 +756,9 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="defaultHitTestChildren" class="callable">
-                  <span class="name ">defaultHitTestChildren</span><span class="signature">(<wbr><span class="parameter" id="defaultHitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="defaultHitTestChildren-param-position"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                  <span class="name ">defaultHitTestChildren</span><span class="signature">(<wbr><span class="parameter" id="defaultHitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="defaultHitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
                       &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype">bool</span>
                   </span>
               </dt>
               <dd>
@@ -763,7 +766,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="defaultPaint" class="callable">
-                  <span class="name ">defaultPaint</span><span class="signature">(<wbr><span class="parameter" id="defaultPaint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="defaultPaint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                  <span class="name ">defaultPaint</span><span class="signature">(<wbr><span class="parameter" id="defaultPaint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="defaultPaint-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -794,17 +797,17 @@ child. Do not call directly.</p>
 child. Do not call directly.</p>
               </dd>
               <dt id="dropChild" class="callable">
-                  <span class="name ">dropChild</span><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">dropChild</span><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Subclasses should call this function when they lose a child.</p>
+                  <p>Called by subclases when they decide a render object is no longer a child</p>
               </dd>
               <dt id="getDistanceToActualBaseline" class="callable">
-                  <span class="name ">getDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <span class="name ">getDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -814,7 +817,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="getDistanceToBaseline" class="callable">
-                  <span class="name ">getDistanceToBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="basic/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>, {<span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span>})
+                  <span class="name ">getDistanceToBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>, {<span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span>})
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -824,7 +827,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="getMaxIntrinsicHeight" class="callable">
-                  <a href="rendering/RenderBlockViewport/getMaxIntrinsicHeight.html"><span class="name ">getMaxIntrinsicHeight</span></a><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                  <a href="rendering/RenderBlockViewport/getMaxIntrinsicHeight.html"><span class="name ">getMaxIntrinsicHeight</span></a><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -833,7 +836,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="getMaxIntrinsicWidth" class="callable">
-                  <a href="rendering/RenderBlockViewport/getMaxIntrinsicWidth.html"><span class="name ">getMaxIntrinsicWidth</span></a><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                  <a href="rendering/RenderBlockViewport/getMaxIntrinsicWidth.html"><span class="name ">getMaxIntrinsicWidth</span></a><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -842,7 +845,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="getMinIntrinsicHeight" class="callable">
-                  <a href="rendering/RenderBlockViewport/getMinIntrinsicHeight.html"><span class="name ">getMinIntrinsicHeight</span></a><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                  <a href="rendering/RenderBlockViewport/getMinIntrinsicHeight.html"><span class="name ">getMinIntrinsicHeight</span></a><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -851,7 +854,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="getMinIntrinsicWidth" class="callable">
-                  <a href="rendering/RenderBlockViewport/getMinIntrinsicWidth.html"><span class="name ">getMinIntrinsicWidth</span></a><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="basic/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                  <a href="rendering/RenderBlockViewport/getMinIntrinsicWidth.html"><span class="name ">getMinIntrinsicWidth</span></a><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
@@ -860,7 +863,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="globalToLocal" class="callable">
-                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                  <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
                       &#8594;
                       <span class="returntype"><a href="box/Point-class.html">Point</a></span>
                   </span>
@@ -877,10 +880,10 @@ child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Override this function to receive events.</p>
+                  <p>Override this function to handle events that hit this render object</p>
               </dd>
               <dt id="hitTest" class="callable">
-                  <span class="name ">hitTest</span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                  <span class="name ">hitTest</span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
                       &#8594;
                       <span class="returntype">bool</span>
                   </span>
@@ -890,7 +893,7 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="hitTestChildren" class="callable">
-                  <a href="rendering/RenderBlockViewport/hitTestChildren.html"><span class="name ">hitTestChildren</span></a><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                  <a href="rendering/RenderBlockViewport/hitTestChildren.html"><span class="name ">hitTestChildren</span></a><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -899,49 +902,30 @@ child. Do not call directly.</p>
                   <p></p>
               </dd>
               <dt id="invokeLayoutCallback" class="callable">
-                  <span class="name ">invokeLayoutCallback</span><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>)
+                  <span class="name ">invokeLayoutCallback</span><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Allows this render object to mutation its child list during layout and
+invokes callback</p>
               </dd>
               <dt id="layout" class="callable">
-                  <span class="name ">layout</span><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation"><a href="object/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>, {<span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation">bool</span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span>})
+                  <span class="name ">layout</span><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>, {<span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation">bool</span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span>})
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
-              </dd>
-              <dt id="layoutWithoutResize" class="callable">
-                  <span class="name ">layoutWithoutResize</span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype">void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <div class="features">inherited</div>
-                  <p></p>
+                  <p>Compute the layout for this render object</p>
               </dd>
               <dt id="localToGlobal" class="callable">
-                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="basic/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
+                  <span class="name ">localToGlobal</span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
                       &#8594;
                       <span class="returntype"><a href="box/Point-class.html">Point</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <div class="features">inherited</div>
-                  <p></p>
-              </dd>
-              <dt id="markNeedsCompositingBitsUpdate" class="callable">
-                  <span class="name ">markNeedsCompositingBitsUpdate</span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
@@ -956,7 +940,7 @@ child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Mark this render object's layout information as dirty</p>
               </dd>
               <dt id="markNeedsPaint" class="callable">
                   <span class="name ">markNeedsPaint</span><span class="signature">(<wbr>)
@@ -966,26 +950,27 @@ child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Mark this render object as having changed its visual appearance</p>
               </dd>
               <dt id="move" class="callable">
-                  <span class="name ">move</span><span class="signature">(<wbr><span class="parameter" id="move-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>, {<span class="parameter" id="move-param-before"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">before</span></span>})
+                  <span class="name ">move</span><span class="signature">(<wbr><span class="parameter" id="move-param-child"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>, {<span class="parameter" id="move-param-before"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">before</span></span>})
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Move this child in the child list to be before the given child</p>
               </dd>
               <dt id="paint" class="callable">
-                  <a href="rendering/RenderBlockViewport/paint.html"><span class="name ">paint</span></a><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a href="object/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="basic/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                  <a href="rendering/RenderBlockViewport/paint.html"><span class="name ">paint</span></a><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Paint this render object into the given context at the given offset<a href="rendering/RenderBlockViewport/paint.html">&hellip;</a>
+</p>
               </dd>
               <dt id="performLayout" class="callable">
                   <a href="rendering/RenderBlockViewport/performLayout.html"><span class="name ">performLayout</span></a><span class="signature">(<wbr>)
@@ -994,7 +979,8 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Do the work of computing the layout for this render object<a href="rendering/RenderBlockViewport/performLayout.html">&hellip;</a>
+</p>
               </dd>
               <dt id="performResize" class="callable">
                   <span class="name ">performResize</span><span class="signature">(<wbr>)
@@ -1004,7 +990,7 @@ child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Updates the render objects size using only the constraints</p>
               </dd>
               <dt id="redepthChild" class="callable">
                   <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
@@ -1028,14 +1014,14 @@ child. Do not call directly.</p>
 redepthChild(child) for each child. Do not call directly.</p>
               </dd>
               <dt id="remove" class="callable">
-                  <span class="name ">remove</span><span class="signature">(<wbr><span class="parameter" id="remove-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">remove</span><span class="signature">(<wbr><span class="parameter" id="remove-param-child"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Remove this child from the child list</p>
               </dd>
               <dt id="removeAll" class="callable">
                   <span class="name ">removeAll</span><span class="signature">(<wbr>)
@@ -1045,7 +1031,7 @@ redepthChild(child) for each child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Remove all their children from this render object's child list</p>
               </dd>
               <dt id="rotate" class="callable">
                   <span class="name ">rotate</span><span class="signature">(<wbr>{<span class="parameter" id="rotate-param-oldAngle"><span class="type-annotation">int</span> <span class="parameter-name">oldAngle</span></span>, <span class="parameter" id="rotate-param-newAngle"><span class="type-annotation">int</span> <span class="parameter-name">newAngle</span></span>, <span class="parameter" id="rotate-param-time"><span class="type-annotation">Duration</span> <span class="parameter-name">time</span></span>})
@@ -1055,7 +1041,7 @@ redepthChild(child) for each child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Rotate this render object (not yet implemented)</p>
               </dd>
               <dt id="scheduleInitialLayout" class="callable">
                   <span class="name ">scheduleInitialLayout</span><span class="signature">(<wbr>)
@@ -1065,27 +1051,27 @@ redepthChild(child) for each child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Bootstrap the rendering pipeline by scheduling the very first layout</p>
               </dd>
               <dt id="scheduleInitialPaint" class="callable">
-                  <span class="name ">scheduleInitialPaint</span><span class="signature">(<wbr><span class="parameter" id="scheduleInitialPaint-param-rootLayer"><span class="type-annotation"><a href="layer/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">rootLayer</span></span>)
+                  <span class="name ">scheduleInitialPaint</span><span class="signature">(<wbr><span class="parameter" id="scheduleInitialPaint-param-rootLayer"><span class="type-annotation"><a href="rendering/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">rootLayer</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Bootstrap the rendering pipeline by scheduling the very first paint</p>
               </dd>
               <dt id="setupParentData" class="callable">
-                  <span class="name ">setupParentData</span><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span class="type-annotation"><a href="box/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">setupParentData</span><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span class="type-annotation"><a href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Override to setup parent data correctly for your children</p>
               </dd>
               <dt id="toString" class="callable">
                   <span class="name ">toString</span><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>])
@@ -1105,7 +1091,7 @@ redepthChild(child) for each child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Returns a human understandable name</p>
               </dd>
               <dt id="updateCompositingBits" class="callable">
                   <span class="name ">updateCompositingBits</span><span class="signature">(<wbr>)
@@ -1115,17 +1101,17 @@ redepthChild(child) for each child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Updates the <a href="rendering/RenderObject/needsCompositing.html">needsCompositing</a> bits</p>
               </dd>
               <dt id="visitChildren" class="callable">
-                  <span class="name ">visitChildren</span><span class="signature">(<wbr><span class="parameter" id="visitChildren-param-visitor"><span class="type-annotation">void</span> <span class="parameter-name">visitor</span>(<span class="parameter" id="RenderObjectVisitor-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)</span>)
+                  <span class="name ">visitChildren</span><span class="signature">(<wbr><span class="parameter" id="visitChildren-param-visitor"><span class="type-annotation">void</span> <span class="parameter-name">visitor</span>(<span class="parameter" id="RenderObjectVisitor-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Calls visitor for each immediate child of this render object</p>
               </dd>
           </dl>
       </section>
@@ -1138,7 +1124,7 @@ redepthChild(child) for each child. Do not call directly.</p>
     
     
     
-      <li class="section-title"><a href="#instance-properties">Properties</a></li>
+      <li class="section-title"><a href="rendering/RenderBlockViewport-class.html#instance-properties">Properties</a></li>
       <li>attached
 </li>
       <li><a href="rendering/RenderBlockViewport/callback.html">callback</a>
@@ -1204,11 +1190,11 @@ redepthChild(child) for each child. Do not call directly.</p>
       <li><a href="rendering/RenderBlockViewport/totalExtentCallback.html">totalExtentCallback</a>
 </li>
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="rendering/RenderBlockViewport-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderBlockViewport/RenderBlockViewport.html">RenderBlockViewport</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="rendering/RenderBlockViewport-class.html#instance-methods">Methods</a></li>
       <li>add
 </li>
       <li>addAll
@@ -1277,11 +1263,7 @@ redepthChild(child) for each child. Do not call directly.</p>
 </li>
       <li>layout
 </li>
-      <li>layoutWithoutResize
-</li>
       <li>localToGlobal
-</li>
-      <li>markNeedsCompositingBitsUpdate
 </li>
       <li>markNeedsLayout
 </li>
@@ -1330,7 +1312,7 @@ redepthChild(child) for each child. Do not call directly.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -1354,7 +1336,7 @@ redepthChild(child) for each child. Do not call directly.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

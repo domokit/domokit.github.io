@@ -38,7 +38,7 @@
               </ol>
               <div class="self-name">updateParentData</div>
               <form class="search navbar-right" role="search">
-                <input type="text" id="search-box" disabled class="form-control typeahead" placeholder="Search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
             </div> <!-- /col -->
           </div> <!-- /row -->
@@ -79,15 +79,15 @@
     <ol>
     
     
-      <li class="section-title"><a href="#static-methods">Static methods</a></li>
+      <li class="section-title"><a href="widgets/RenderObjectWrapper-class.html#static-methods">Static methods</a></li>
       <li><a href="widgets/RenderObjectWrapper/getWidgetsForRenderObject.html">getWidgetsForRenderObject</a></li>
     
     
-      <li class="section-title"><a href="#constructors">Constructors</a></li>
+      <li class="section-title"><a href="widgets/RenderObjectWrapper-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/RenderObjectWrapper/RenderObjectWrapper.html">RenderObjectWrapper</a></li>
     
     
-      <li class="section-title"><a href="#methods">Methods</a></li>
+      <li class="section-title"><a href="widgets/RenderObjectWrapper-class.html#instance-methods">Methods</a></li>
       <li><a href="widgets/RenderObjectWrapper/createNode.html">createNode</a>
 </li>
       <li><a href="widgets/RenderObjectWrapper/dependenciesChanged.html">dependenciesChanged</a>
@@ -124,6 +124,8 @@
 </li>
       <li><a href="widgets/RenderObjectWrapper/syncRenderObject.html">syncRenderObject</a>
 </li>
+      <li>takeChild
+</li>
       <li>toString
 </li>
       <li>toStringName
@@ -145,13 +147,13 @@
             <span class="name ">updateParentData</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="updateParentData-param-child"><span class="type-annotation"><a href="object/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="updateParentData-param-node"><span class="type-annotation"><a href="framework/ParentDataNode-class.html">ParentDataNode</a></span> <span class="parameter-name">node</span></span>
+                <span class="parameter" id="updateParentData-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br><span class="parameter" id="updateParentData-param-node"><span class="type-annotation"><a href="widgets/ParentDataNode-class.html">ParentDataNode</a></span> <span class="parameter-name">node</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p>Override this function if your RenderObjectWrapper uses a <a href="framework/ParentDataNode-class.html">ParentDataNode</a>
+          <p>Override this function if your RenderObjectWrapper uses a <a href="widgets/ParentDataNode-class.html">ParentDataNode</a>
 to program parent data into children.</p>
     
     </section>
@@ -173,7 +175,7 @@ void updateParentData(RenderObject child, ParentDataNode node) { }</code></pre>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.39 api docs
+                  sky 0.0.41 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -197,7 +199,7 @@ void updateParentData(RenderObject child, ParentDataNode node) { }</code></pre>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.5.0+3 -->
+<!-- Made with <3 by dartdoc version 0.6.1 -->
 </body>
 
 </html>

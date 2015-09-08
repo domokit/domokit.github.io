@@ -228,13 +228,19 @@
             <span class="name ">hitTest</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
+                <span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Determines the set of render objects located at the given position</p>
+<p>Returns true if the given point is contained in this render object or one
+of its descendants. Adds any render objects that contain the point to the
+given hit test result.</p>
+<p>The caller is responsible for transforming <code>position</code> into the local
+coordinate space of the callee.  The callee is responsible for checking
+whether the given position is within its bounds.</p>
     
     </section>
 

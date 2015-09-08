@@ -222,19 +222,29 @@
             <span class="name ">hitTestChildren</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
+                <span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Override this function to check whether any children are located at the
+given position</p>
+<p>Typically children should be hit tested in reverse paint order so that
+hit tests at locations where children overlap hit the child that is
+visually "on top" (i.e., paints later).</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void hitTestChildren(HitTestResult result, { Point position }) { }</code></pre>
+      <pre><code class="prettyprint lang-dart">/// Override this function to check whether any children are located at the
+/// given position
+///
+/// Typically children should be hit tested in reverse paint order so that
+/// hit tests at locations where children overlap hit the child that is
+/// visually &quot;on top&quot; (i.e., paints later).
+void hitTestChildren(HitTestResult result, { Point position }) { }</code></pre>
     </section>
 
   </div> <!-- /.main-content -->

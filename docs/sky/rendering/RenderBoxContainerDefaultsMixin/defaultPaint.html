@@ -181,13 +181,14 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Paints each child by walking the child list forwards</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void defaultPaint(PaintingContext context, Offset offset) {
+      <pre><code class="prettyprint lang-dart">/// Paints each child by walking the child list forwards
+void defaultPaint(PaintingContext context, Offset offset) {
   RenderBox child = firstChild;
   while (child != null) {
     assert(child.parentData is ParentDataType);

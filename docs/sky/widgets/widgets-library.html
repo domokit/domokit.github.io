@@ -77,46 +77,28 @@
     <ol>
       <li class="section-title"><a href="index.html">Libraries</a></li>
       <li><a href="activity/activity-library.html">activity</a></li>
-      <li><a href="animated_simulation/animated_simulation-library.html">animated_simulation</a></li>
-      <li><a href="animated_value/animated_value-library.html">animated_value</a></li>
-      <li><a href="animation_performance/animation_performance-library.html">animation_performance</a></li>
+      <li><a href="animation/animation-library.html">animation</a></li>
       <li><a href="arena/arena-library.html">arena</a></li>
       <li><a href="asset_bundle/asset_bundle-library.html">asset_bundle</a></li>
-      <li><a href="box_painter/box_painter-library.html">box_painter</a></li>
       <li><a href="colors/colors-library.html">colors</a></li>
       <li><a href="constants/constants-library.html">constants</a></li>
-      <li><a href="curves/curves-library.html">curves</a></li>
-      <li><a href="debug/debug-library.html">debug</a></li>
-      <li><a href="direction/direction-library.html">direction</a></li>
       <li><a href="edges/edges-library.html">edges</a></li>
-      <li><a href="editable_string/editable_string-library.html">editable_string</a></li>
-      <li><a href="editable_text/editable_text-library.html">editable_text</a></li>
       <li><a href="embedder/embedder-library.html">embedder</a></li>
       <li><a href="fetch/fetch-library.html">fetch</a></li>
-      <li><a href="forces/forces-library.html">forces</a></li>
-      <li><a href="hit_test/hit_test-library.html">hit_test</a></li>
       <li><a href="image_cache/image_cache-library.html">image_cache</a></li>
       <li><a href="image_resource/image_resource-library.html">image_resource</a></li>
-      <li><a href="input/input-library.html">input</a></li>
       <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
       <li><a href="long_press/long_press-library.html">long_press</a></li>
-      <li><a href="node/node-library.html">node</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
       <li><a href="pointer_router/pointer_router-library.html">pointer_router</a></li>
-      <li><a href="radial_reaction/radial_reaction-library.html">radial_reaction</a></li>
       <li><a href="recognizer/recognizer-library.html">recognizer</a></li>
       <li><a href="rendering/rendering-library.html">rendering</a></li>
-      <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
       <li><a href="scroll/scroll-library.html">scroll</a></li>
-      <li><a href="scroll_behavior/scroll_behavior-library.html">scroll_behavior</a></li>
-      <li><a href="shadows/shadows-library.html">shadows</a></li>
       <li><a href="shadows/shadows-library.html">shadows</a></li>
       <li><a href="shell/shell-library.html">shell</a></li>
       <li><a href="show_press/show_press-library.html">show_press</a></li>
       <li><a href="tap/tap-library.html">tap</a></li>
-      <li><a href="text_painter/text_painter-library.html">text_painter</a></li>
-      <li><a href="text_style/text_style-library.html">text_style</a></li>
       <li><a href="theme_data/theme_data-library.html">theme_data</a></li>
-      <li><a href="timeline/timeline-library.html">timeline</a></li>
       <li><a href="typography/typography-library.html">typography</a></li>
       <li><a href="view_configuration/view_configuration-library.html">view_configuration</a></li>
       <li><a href="widgets/widgets-library.html">widgets</a></li>
@@ -127,7 +109,8 @@
 
     <section class="desc markdown">
     
-          <p>The Sky widget framework</p>
+          <p>The Sky widget framework.</p>
+<p>This library includes and re-exports all Sky widgets classes.</p>
     
     </section>
 
@@ -148,6 +131,42 @@
                 <span class="top-level-variable-type">Map&lt;<a href="material/MaterialType-class.html">MaterialType</a>,double&gt;</span>
                 <span class="name "><a href="widgets/edges.html">edges</a></span>
                 <span class="signature">= const {MaterialType.canvas : null, MaterialType.card : 2.0, MaterialType.circle : null, MaterialType.button : 2.0}</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="KeyboardType_DATETIME" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="widgets/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></span>
+                <span class="signature">= 3</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="KeyboardType_NUMBER" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="widgets/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="KeyboardType_PHONE" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="widgets/KeyboardType_PHONE.html">KeyboardType_PHONE</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="KeyboardType_TEXT" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a href="widgets/KeyboardType_TEXT.html">KeyboardType_TEXT</a></span>
+                <span class="signature">= 0</span>
             </dt>
             <dd>
                 <div class="features">const</div>
@@ -475,6 +494,24 @@
             <dd>
                 <p></p>
             </dd>
+            <dt id="StringUpdated" class="callable">
+                <a href="widgets/StringUpdated.html"><span class="name ">StringUpdated</span></a><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="StringValueChanged" class="callable">
+                <a href="widgets/StringValueChanged.html"><span class="name ">StringValueChanged</span></a><span class="signature">(<wbr><span class="parameter" id="StringValueChanged-param-value"><span class="type-annotation">String</span> <span class="parameter-name">value</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="ValueChanged" class="callable">
                 <a href="widgets/ValueChanged.html"><span class="name ">ValueChanged</span></a><span class="signature">(<wbr><span class="parameter" id="ValueChanged-param-value"><span class="type-annotation">bool</span> <span class="parameter-name">value</span></span>)
                     &#8594;
@@ -502,13 +539,13 @@
 
         <dl class="callables">
             <dt id="combineEventDispositions" class="callable">
-                <a href="widgets/combineEventDispositions.html"><span class="name ">combineEventDispositions</span></a><span class="signature">(<wbr><span class="parameter" id="combineEventDispositions-param-left"><span class="type-annotation"><a href="hit_test/EventDisposition-class.html">EventDisposition</a></span> <span class="parameter-name">left</span></span>, <span class="parameter" id="combineEventDispositions-param-right"><span class="type-annotation"><a href="hit_test/EventDisposition-class.html">EventDisposition</a></span> <span class="parameter-name">right</span></span>)
+                <a href="widgets/combineEventDispositions.html"><span class="name ">combineEventDispositions</span></a><span class="signature">(<wbr><span class="parameter" id="combineEventDispositions-param-left"><span class="type-annotation"><a href="rendering/EventDisposition-class.html">EventDisposition</a></span> <span class="parameter-name">left</span></span>, <span class="parameter" id="combineEventDispositions-param-right"><span class="type-annotation"><a href="rendering/EventDisposition-class.html">EventDisposition</a></span> <span class="parameter-name">right</span></span>)
                     &#8594;
                     <span class="returntype"><a href="widgets/EventDisposition-class.html">EventDisposition</a></span>
                 </span>
             </dt>
             <dd>
-                <p>Merges two <a href="hit_test/EventDisposition-class.html">EventDisposition</a> values such that the result indicates the
+                <p>Merges two <a href="rendering/EventDisposition-class.html">EventDisposition</a> values such that the result indicates the
 maximum amount of processing indicated by the two inputs.</p>
             </dd>
             <dt id="debugDumpApp" class="callable">
@@ -521,7 +558,7 @@ maximum amount of processing indicated by the two inputs.</p>
                 <p></p>
             </dd>
             <dt id="ensureWidgetIsVisible" class="callable">
-                <a href="widgets/ensureWidgetIsVisible.html"><span class="name ">ensureWidgetIsVisible</span></a><span class="signature">(<wbr><span class="parameter" id="ensureWidgetIsVisible-param-target"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">target</span></span>, {<span class="parameter" id="ensureWidgetIsVisible-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="ensureWidgetIsVisible-param-curve"><span class="type-annotation"><a href="curves/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span></span>})
+                <a href="widgets/ensureWidgetIsVisible.html"><span class="name ">ensureWidgetIsVisible</span></a><span class="signature">(<wbr><span class="parameter" id="ensureWidgetIsVisible-param-target"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">target</span></span>, {<span class="parameter" id="ensureWidgetIsVisible-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="ensureWidgetIsVisible-param-curve"><span class="type-annotation"><a href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span></span>})
                     &#8594;
                     <span class="returntype">Future</span>
                 </span>
@@ -590,12 +627,6 @@ maximum amount of processing indicated by the two inputs.</p>
         <h2>Enums</h2>
 
         <dl>
-            <dt id="AnimationStatus">
-                <a href="widgets/AnimationStatus-class.html">AnimationStatus</a>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
             <dt id="BlockDirection">
                 <a href="widgets/BlockDirection-class.html">BlockDirection</a>
             </dt>
@@ -618,7 +649,7 @@ maximum amount of processing indicated by the two inputs.</p>
                 <a href="widgets/Direction-class.html">Direction</a>
             </dt>
             <dd>
-                <p></p>
+                <p>The direction in which an animation is running</p>
             </dd>
             <dt id="DismissDirection">
                 <a href="widgets/DismissDirection-class.html">DismissDirection</a>
@@ -691,6 +722,12 @@ maximum amount of processing indicated by the two inputs.</p>
             </dt>
             <dd>
                 <p>A 2D geometrical shape</p>
+            </dd>
+            <dt id="ShrinkWrap">
+                <a href="widgets/ShrinkWrap-class.html">ShrinkWrap</a>
+            </dt>
+            <dd>
+                <p></p>
             </dd>
             <dt id="TextAlign">
                 <a href="widgets/TextAlign-class.html">TextAlign</a>
@@ -855,7 +892,8 @@ might exceed the height of its container (and therefore need to scroll).</p>
                 <span class="name "><a href="widgets/BoxConstraints-class.html">BoxConstraints</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Immutable layout constraints for box layout<a href="widgets/BoxConstraints-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="BoxDecoration">
                 <span class="name "><a href="widgets/BoxDecoration-class.html">BoxDecoration</a></span>
@@ -1072,6 +1110,18 @@ might exceed the height of its container (and therefore need to scroll).</p>
                 <p>An immutable set of offsets in each of the four cardinal directions<a href="widgets/EdgeDims-class.html">&hellip;</a>
 </p>
             </dd>
+            <dt id="EditableString">
+                <span class="name "><a href="widgets/EditableString-class.html">EditableString</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="EditableText">
+                <span class="name "><a href="widgets/EditableText-class.html">EditableText</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="FadeTransition">
                 <span class="name "><a href="widgets/FadeTransition-class.html">FadeTransition</a></span>
             </dt>
@@ -1260,6 +1310,12 @@ might exceed the height of its container (and therefore need to scroll).</p>
             </dd>
             <dt id="InkWell">
                 <span class="name "><a href="widgets/InkWell-class.html">InkWell</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Input">
+                <span class="name "><a href="widgets/Input-class.html">Input</a></span>
             </dt>
             <dd>
                 <p></p>
@@ -1739,6 +1795,12 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
             <dd>
                 <p></p>
             </dd>
+            <dt id="TextRange">
+                <span class="name "><a href="widgets/TextRange-class.html">TextRange</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="TextStyle">
                 <span class="name "><a href="widgets/TextStyle-class.html">TextStyle</a></span>
             </dt>
@@ -1829,6 +1891,10 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
       <li><a href="widgets/bold.html">bold</a></li>
       <li><a href="widgets/edges.html">edges</a></li>
+      <li><a href="widgets/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></li>
+      <li><a href="widgets/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></li>
+      <li><a href="widgets/KeyboardType_PHONE.html">KeyboardType_PHONE</a></li>
+      <li><a href="widgets/KeyboardType_TEXT.html">KeyboardType_TEXT</a></li>
       <li><a href="widgets/lineThrough.html">lineThrough</a></li>
       <li><a href="widgets/normal.html">normal</a></li>
       <li><a href="widgets/overline.html">overline</a></li>
@@ -1866,6 +1932,8 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="widgets/ScrollListener.html">ScrollListener</a></li>
       <li><a href="widgets/SelectedIndexChanged.html">SelectedIndexChanged</a></li>
       <li><a href="widgets/SnackBarDismissedCallback.html">SnackBarDismissedCallback</a></li>
+      <li><a href="widgets/StringUpdated.html">StringUpdated</a></li>
+      <li><a href="widgets/StringValueChanged.html">StringValueChanged</a></li>
       <li><a href="widgets/ValueChanged.html">ValueChanged</a></li>
       <li><a href="widgets/WidgetTreeWalker.html">WidgetTreeWalker</a></li>
     
@@ -1882,7 +1950,6 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="widgets/showDialog.html">showDialog</a></li>
     
       <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
-      <li><a href="widgets/AnimationStatus-class.html">AnimationStatus</a></li>
       <li><a href="widgets/BlockDirection-class.html">BlockDirection</a></li>
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
@@ -1899,6 +1966,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="widgets/ScaffoldSlots-class.html">ScaffoldSlots</a></li>
       <li><a href="widgets/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="widgets/Shape-class.html">Shape</a></li>
+      <li><a href="widgets/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="widgets/TextAlign-class.html">TextAlign</a></li>
       <li><a href="widgets/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="widgets/TextDecoration-class.html">TextDecoration</a></li>
@@ -1962,6 +2030,8 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="widgets/DrawerHeader-class.html">DrawerHeader</a></li>
       <li><a href="widgets/DrawerItem-class.html">DrawerItem</a></li>
       <li><a href="widgets/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="widgets/EditableString-class.html">EditableString</a></li>
+      <li><a href="widgets/EditableText-class.html">EditableText</a></li>
       <li><a href="widgets/FadeTransition-class.html">FadeTransition</a></li>
       <li><a href="widgets/FlatButton-class.html">FlatButton</a></li>
       <li><a href="widgets/Flex-class.html">Flex</a></li>
@@ -1994,6 +2064,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="widgets/Inherited-class.html">Inherited</a></li>
       <li><a href="widgets/InkSplash-class.html">InkSplash</a></li>
       <li><a href="widgets/InkWell-class.html">InkWell</a></li>
+      <li><a href="widgets/Input-class.html">Input</a></li>
       <li><a href="widgets/Key-class.html">Key</a></li>
       <li><a href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
       <li><a href="widgets/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></li>
@@ -2071,6 +2142,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="widgets/TabNavigatorView-class.html">TabNavigatorView</a></li>
       <li><a href="widgets/TagNode-class.html">TagNode</a></li>
       <li><a href="widgets/Text-class.html">Text</a></li>
+      <li><a href="widgets/TextRange-class.html">TextRange</a></li>
       <li><a href="widgets/TextStyle-class.html">TextStyle</a></li>
       <li><a href="widgets/Theme-class.html">Theme</a></li>
       <li><a href="widgets/ThemeData-class.html">ThemeData</a></li>

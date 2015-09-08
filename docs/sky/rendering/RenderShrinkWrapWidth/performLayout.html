@@ -259,7 +259,7 @@ information without informing this render object.</p>
   if (child != null) {
     BoxConstraints childConstraints = _getInnerConstraints(constraints);
     if (_stepHeight != null)
-      childConstraints.applyHeight(getMaxIntrinsicHeight(childConstraints));
+      childConstraints.tightenHeight(getMaxIntrinsicHeight(childConstraints));
     child.layout(childConstraints, parentUsesSize: true);
     size = child.size;
   } else {

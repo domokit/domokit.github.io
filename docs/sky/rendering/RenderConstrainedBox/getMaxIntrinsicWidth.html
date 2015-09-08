@@ -234,7 +234,9 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the smallest width beyond which increasing the width never
+decreases the height</p>
+<p>Override in subclasses that implement <code>performLayout</code>.</p>
     
     </section>
 
@@ -242,8 +244,8 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">double getMaxIntrinsicWidth(BoxConstraints constraints) {
   if (child != null)
-    return child.getMaxIntrinsicWidth(_additionalConstraints.apply(constraints));
-  return _additionalConstraints.apply(constraints).constrainWidth(0.0);
+    return child.getMaxIntrinsicWidth(_additionalConstraints.enforce(constraints));
+  return _additionalConstraints.enforce(constraints).constrainWidth(0.0);
 }</code></pre>
     </section>
 

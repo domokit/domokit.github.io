@@ -222,19 +222,40 @@
             <span class="name ">computeDistanceToActualBaseline</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
+                <span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the distance from the y-coordinate of the position of the box to
+the y-coordinate of the first given baseline in the box's contents, if
+any, or null otherwise.</p>
+<p>Do not call this function directly. Instead, call <a href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a>
+if you need to know the baseline of a child from an invocation of
+<a href="rendering/RenderBox/performLayout.html">performLayout</a> or <a href="rendering/RenderObject/paint.html">paint</a> and call <a href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a> if you
+are implementing <a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a> and need to defer to a
+child.</p>
+<p>Subclasses should override this function to supply the distances to their
+baselines.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double computeDistanceToActualBaseline(TextBaseline baseline) {
+      <pre><code class="prettyprint lang-dart">/// Returns the distance from the y-coordinate of the position of the box to
+/// the y-coordinate of the first given baseline in the box&apos;s contents, if
+/// any, or null otherwise.
+///
+/// Do not call this function directly. Instead, call [getDistanceToBaseline]
+/// if you need to know the baseline of a child from an invocation of
+/// [performLayout] or [paint] and call [getDistanceToActualBaseline] if you
+/// are implementing [computeDistanceToActualBaseline] and need to defer to a
+/// child.
+///
+/// Subclasses should override this function to supply the distances to their
+/// baselines.
+double computeDistanceToActualBaseline(TextBaseline baseline) {
   assert(_debugDoingBaseline);
   return null;
 }</code></pre>

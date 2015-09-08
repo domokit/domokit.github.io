@@ -78,6 +78,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -93,9 +97,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -111,12 +122,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -234,7 +247,7 @@
                 <div class="features">
         read-only
     </div>
-    <p>The list of <a href="hit_test/HitTestEntry-class.html">HitTestEntry</a> objects recorded during the hit test.<a href="rendering/HitTestResult/path.html">&hellip;</a>
+    <p>The list of <a href="rendering/HitTestEntry-class.html">HitTestEntry</a> objects recorded during the hit test.<a href="rendering/HitTestResult/path.html">&hellip;</a>
 </p>
             </dd>
         </dl>
@@ -258,13 +271,13 @@
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="add" class="callable">
-                  <a href="rendering/HitTestResult/add.html"><span class="name ">add</span></a><span class="signature">(<wbr><span class="parameter" id="add-param-entry"><span class="type-annotation"><a href="hit_test/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+                  <a href="rendering/HitTestResult/add.html"><span class="name ">add</span></a><span class="signature">(<wbr><span class="parameter" id="add-param-entry"><span class="type-annotation"><a href="rendering/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <p>Add a <a href="hit_test/HitTestEntry-class.html">HitTestEntry</a> to the path.<a href="rendering/HitTestResult/add.html">&hellip;</a>
+                  <p>Add a <a href="rendering/HitTestEntry-class.html">HitTestEntry</a> to the path.<a href="rendering/HitTestResult/add.html">&hellip;</a>
 </p>
               </dd>
           </dl>

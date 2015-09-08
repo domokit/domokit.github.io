@@ -77,8 +77,6 @@
     <h5><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></h5>
 
     <ol>
-      <li class="section-title"><a href="rendering/BoxConstraints-class.html#constants">Constants</a></li>
-      <li><a href="rendering/BoxConstraints/expand.html">expand</a></li>
     
     
     
@@ -90,8 +88,6 @@
       <li><a href="rendering/BoxConstraints/hasTightHeight.html">hasTightHeight</a>
 </li>
       <li><a href="rendering/BoxConstraints/hasTightWidth.html">hasTightWidth</a>
-</li>
-      <li><a href="rendering/BoxConstraints/isInfinite.html">isInfinite</a>
 </li>
       <li><a href="rendering/BoxConstraints/isTight.html">isTight</a>
 </li>
@@ -108,8 +104,7 @@
     
       <li class="section-title"><a href="rendering/BoxConstraints-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.html">BoxConstraints</a></li>
-      <li><a href="rendering/BoxConstraints/BoxConstraints.expandHeight.html">expandHeight</a></li>
-      <li><a href="rendering/BoxConstraints/BoxConstraints.expandWidth.html">expandWidth</a></li>
+      <li><a href="rendering/BoxConstraints/BoxConstraints.expand.html">expand</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.loose.html">loose</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.tight.html">tight</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.tightFor.html">tightFor</a></li>
@@ -119,33 +114,25 @@
 </li>
     
       <li class="section-title"><a href="rendering/BoxConstraints-class.html#instance-methods">Methods</a></li>
-      <li><a href="rendering/BoxConstraints/apply.html">apply</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyHeight.html">applyHeight</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMaxHeight.html">applyMaxHeight</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMaxWidth.html">applyMaxWidth</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMinHeight.html">applyMinHeight</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMinWidth.html">applyMinWidth</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyWidth.html">applyWidth</a>
-</li>
       <li><a href="rendering/BoxConstraints/constrain.html">constrain</a>
 </li>
       <li><a href="rendering/BoxConstraints/constrainHeight.html">constrainHeight</a>
 </li>
       <li><a href="rendering/BoxConstraints/constrainWidth.html">constrainWidth</a>
 </li>
-      <li><a href="rendering/BoxConstraints/contains.html">contains</a>
-</li>
       <li><a href="rendering/BoxConstraints/deflate.html">deflate</a>
+</li>
+      <li><a href="rendering/BoxConstraints/enforce.html">enforce</a>
 </li>
       <li><a href="rendering/BoxConstraints/heightConstraints.html">heightConstraints</a>
 </li>
+      <li><a href="rendering/BoxConstraints/isSatisfiedBy.html">isSatisfiedBy</a>
+</li>
       <li><a href="rendering/BoxConstraints/loosen.html">loosen</a>
+</li>
+      <li><a href="rendering/BoxConstraints/tightenHeight.html">tightenHeight</a>
+</li>
+      <li><a href="rendering/BoxConstraints/tightenWidth.html">tightenWidth</a>
 </li>
       <li><a href="rendering/BoxConstraints/toString.html">toString</a>
 </li>
@@ -168,13 +155,14 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the width that both satisfies the constraints and is as close as possible to the given width</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double constrainWidth([double width = double.INFINITY]) {
+      <pre><code class="prettyprint lang-dart">/// Returns the width that both satisfies the constraints and is as close as possible to the given width
+double constrainWidth([double width = double.INFINITY]) {
   return clamp(min: minWidth, max: maxWidth, value: width);
 }</code></pre>
     </section>

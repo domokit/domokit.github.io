@@ -224,7 +224,14 @@
       
       <section class="desc markdown">
 
-      <p class="no-docs">Not documented.</p>
+      <p>The size of this render box computed during layout</p>
+<p>This value is stale whenever this object is marked as needing layout.
+During <a href="rendering/RenderBox/performLayout.html">performLayout</a>, do not read the size of a child unless you pass
+true for parentUsesSize when calling the child's <a href="rendering/RenderObject/layout.html">layout</a> function.</p>
+<p>The size of a box should be set only during the box's <a href="rendering/RenderBox/performLayout.html">performLayout</a> or
+<a href="rendering/RenderBox/performResize.html">performResize</a> functions. If you wish to change the size of a box outside
+of those functins, call <a href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a> instead to schedule a layout of
+the box.</p>
 
 </section>
 </section>

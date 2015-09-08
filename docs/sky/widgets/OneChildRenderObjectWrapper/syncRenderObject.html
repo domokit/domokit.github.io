@@ -173,6 +173,7 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void syncRenderObject(RenderObjectWrapper old) {
+  assert(!_debugChildTaken);
   super.syncRenderObject(old);
   Widget oldChild = (old as OneChildRenderObjectWrapper)?.child;
   Widget newChild = child;

@@ -228,13 +228,19 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Return the minimum height that this box could be without failing to render
+its contents within itself.</p>
+<p>Override in subclasses that implement <a href="rendering/RenderBox/performLayout.html">performLayout</a>.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double getMinIntrinsicHeight(BoxConstraints constraints) {
+      <pre><code class="prettyprint lang-dart">/// Return the minimum height that this box could be without failing to render
+/// its contents within itself.
+///
+/// Override in subclasses that implement [performLayout].
+double getMinIntrinsicHeight(BoxConstraints constraints) {
   return constraints.constrainHeight(0.0);
 }</code></pre>
     </section>

@@ -203,17 +203,26 @@
       Widget deadNode = oldNode;
       Widget candidate = _getCandidateSingleChildFrom(oldNode);
       oldNode = null;
-      while (candidate != null &amp;&amp; _shouldReparentDuringSync) {
+
+      while (candidate != null) {
         if (_canSync(newNode, candidate)) {
           assert(candidate.parent != null);
           assert(candidate.parent.singleChild == candidate);
-          candidate.parent.takeChild();
-          oldNode = candidate;
+          if (candidate.renderObject != deadNode.renderObject) {
+            // TODO(ianh): Handle removal across RenderNode boundaries
+          } else {
+            candidate.parent.takeChild();
+            oldNode = candidate;
+          }
           break;
         }
         candidate = _getCandidateSingleChildFrom(candidate);
       }
-      deadNode.detachRenderObject();
+
+      // TODO(ianh): Handle insertion, too...
+
+      if (oldNode == null)
+        deadNode.detachRenderObject();
       deadNode.remove();
     }
     if (oldNode != null) {

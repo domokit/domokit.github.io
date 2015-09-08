@@ -176,7 +176,7 @@
   Widget current = child;
 
   if (child == null &amp;&amp; (width == null || height == null))
-    current = new ConstrainedBox(constraints: BoxConstraints.expand);
+    current = new ConstrainedBox(constraints: const BoxConstraints.expand());
 
   EdgeDims effectivePadding = _paddingIncludingBorder;
   if (effectivePadding != null)

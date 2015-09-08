@@ -224,7 +224,16 @@
       
       <section class="desc markdown">
 
-      <p class="no-docs">Not documented.</p>
+      <p>Returns a rectangle that contains all the pixels painted by this box</p>
+<p>The paint bounds can be larger or smaller than <a href="rendering/RenderBox/size.html">size</a>, which is the amount
+of space this box takes up during layout. For example, if this box casts a
+shadow, that shadow might extend beyond the space allocated to this box
+during layout.</p>
+<p>The paint bounds are used to size the buffers into which this box paints.
+If the box attempts to paints outside its paint bounds, there might not be
+enough memory allocated to represent the box's visual appearance, which
+can lead to undefined behavior.</p>
+<p>The returned paint bounds are in the local coordinate system of this box.</p>
 
 </section>
 </section>

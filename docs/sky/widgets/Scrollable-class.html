@@ -79,6 +79,10 @@
       <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
       <li><a href="widgets/bold.html">bold</a></li>
       <li><a href="widgets/edges.html">edges</a></li>
+      <li><a href="widgets/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></li>
+      <li><a href="widgets/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></li>
+      <li><a href="widgets/KeyboardType_PHONE.html">KeyboardType_PHONE</a></li>
+      <li><a href="widgets/KeyboardType_TEXT.html">KeyboardType_TEXT</a></li>
       <li><a href="widgets/lineThrough.html">lineThrough</a></li>
       <li><a href="widgets/normal.html">normal</a></li>
       <li><a href="widgets/overline.html">overline</a></li>
@@ -116,6 +120,8 @@
       <li><a href="widgets/ScrollListener.html">ScrollListener</a></li>
       <li><a href="widgets/SelectedIndexChanged.html">SelectedIndexChanged</a></li>
       <li><a href="widgets/SnackBarDismissedCallback.html">SnackBarDismissedCallback</a></li>
+      <li><a href="widgets/StringUpdated.html">StringUpdated</a></li>
+      <li><a href="widgets/StringValueChanged.html">StringValueChanged</a></li>
       <li><a href="widgets/ValueChanged.html">ValueChanged</a></li>
       <li><a href="widgets/WidgetTreeWalker.html">WidgetTreeWalker</a></li>
     
@@ -132,7 +138,6 @@
       <li><a href="widgets/showDialog.html">showDialog</a></li>
     
       <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
-      <li><a href="widgets/AnimationStatus-class.html">AnimationStatus</a></li>
       <li><a href="widgets/BlockDirection-class.html">BlockDirection</a></li>
       <li><a href="widgets/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
       <li><a href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
@@ -149,6 +154,7 @@
       <li><a href="widgets/ScaffoldSlots-class.html">ScaffoldSlots</a></li>
       <li><a href="widgets/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="widgets/Shape-class.html">Shape</a></li>
+      <li><a href="widgets/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="widgets/TextAlign-class.html">TextAlign</a></li>
       <li><a href="widgets/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="widgets/TextDecoration-class.html">TextDecoration</a></li>
@@ -212,6 +218,8 @@
       <li><a href="widgets/DrawerHeader-class.html">DrawerHeader</a></li>
       <li><a href="widgets/DrawerItem-class.html">DrawerItem</a></li>
       <li><a href="widgets/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a href="widgets/EditableString-class.html">EditableString</a></li>
+      <li><a href="widgets/EditableText-class.html">EditableText</a></li>
       <li><a href="widgets/FadeTransition-class.html">FadeTransition</a></li>
       <li><a href="widgets/FlatButton-class.html">FlatButton</a></li>
       <li><a href="widgets/Flex-class.html">Flex</a></li>
@@ -244,6 +252,7 @@
       <li><a href="widgets/Inherited-class.html">Inherited</a></li>
       <li><a href="widgets/InkSplash-class.html">InkSplash</a></li>
       <li><a href="widgets/InkWell-class.html">InkWell</a></li>
+      <li><a href="widgets/Input-class.html">Input</a></li>
       <li><a href="widgets/Key-class.html">Key</a></li>
       <li><a href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
       <li><a href="widgets/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></li>
@@ -321,6 +330,7 @@
       <li><a href="widgets/TabNavigatorView-class.html">TabNavigatorView</a></li>
       <li><a href="widgets/TagNode-class.html">TagNode</a></li>
       <li><a href="widgets/Text-class.html">Text</a></li>
+      <li><a href="widgets/TextRange-class.html">TextRange</a></li>
       <li><a href="widgets/TextStyle-class.html">TextStyle</a></li>
       <li><a href="widgets/Theme-class.html">Theme</a></li>
       <li><a href="widgets/ThemeData-class.html">ThemeData</a></li>
@@ -440,7 +450,7 @@ a scrollOffset.</p>
             </dd>
             <dt id="scrollBehavior" class="property">
                 <span class="name"><a href="widgets/Scrollable/scrollBehavior.html">scrollBehavior</a></span>
-                <span class="signature">&#8594; <a href="scroll_behavior/ScrollBehavior-class.html">ScrollBehavior</a></span>
+                <span class="signature">&#8594; <a href="animation/ScrollBehavior-class.html">ScrollBehavior</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -662,7 +672,7 @@ a scrollOffset.</p>
                   <p></p>
               </dd>
               <dt id="scrollBy" class="callable">
-                  <a href="widgets/Scrollable/scrollBy.html"><span class="name ">scrollBy</span></a><span class="signature">(<wbr><span class="parameter" id="scrollBy-param-scrollDelta"><span class="type-annotation">double</span> <span class="parameter-name">scrollDelta</span></span>, {<span class="parameter" id="scrollBy-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="scrollBy-param-curve"><span class="type-annotation"><a href="curves/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span></span>})
+                  <a href="widgets/Scrollable/scrollBy.html"><span class="name ">scrollBy</span></a><span class="signature">(<wbr><span class="parameter" id="scrollBy-param-scrollDelta"><span class="type-annotation">double</span> <span class="parameter-name">scrollDelta</span></span>, {<span class="parameter" id="scrollBy-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="scrollBy-param-curve"><span class="type-annotation"><a href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span></span>})
                       &#8594;
                       <span class="returntype">Future</span>
                   </span>
@@ -671,7 +681,7 @@ a scrollOffset.</p>
                   <p></p>
               </dd>
               <dt id="scrollTo" class="callable">
-                  <a href="widgets/Scrollable/scrollTo.html"><span class="name ">scrollTo</span></a><span class="signature">(<wbr><span class="parameter" id="scrollTo-param-newScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">newScrollOffset</span></span>, {<span class="parameter" id="scrollTo-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="scrollTo-param-curve"><span class="type-annotation"><a href="curves/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span>: <span class="default-value">ease</span></span>})
+                  <a href="widgets/Scrollable/scrollTo.html"><span class="name ">scrollTo</span></a><span class="signature">(<wbr><span class="parameter" id="scrollTo-param-newScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">newScrollOffset</span></span>, {<span class="parameter" id="scrollTo-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="scrollTo-param-curve"><span class="type-annotation"><a href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span>: <span class="default-value">ease</span></span>})
                       &#8594;
                       <span class="returntype">Future</span>
                   </span>
@@ -751,7 +761,7 @@ Override this if you override singleChild to return non-null.</p>
                   <p>Returns a string representation of this object.</p>
               </dd>
               <dt id="toStringName" class="callable">
-                  <span class="name ">toStringName</span><span class="signature">(<wbr>)
+                  <span class="name ">toStringName</span><span class="signature">(<wbr>[<span class="parameter" id="toStringName-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>, <span class="parameter" id="toStringName-param-startPrefix"><span class="type-annotation">String</span> <span class="parameter-name">startPrefix</span> = <span class="default-value">''</span></span>])
                       &#8594;
                       <span class="returntype">String</span>
                   </span>
@@ -778,7 +788,7 @@ Override this if you override singleChild to return non-null.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Walks the immediate children of this widget</p>
+                  <p>Walks the immediate children of this widget.</p>
               </dd>
           </dl>
       </section>

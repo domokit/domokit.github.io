@@ -77,6 +77,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -92,9 +96,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -110,12 +121,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -213,7 +226,10 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>A mixin that provides useful default behaviors for boxes with children managed by the <a href="rendering/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a> mixin</p>
+<p>By convention, this class doesn't override any members of the superclass.
+Instead, it provides helpful functions that subclasses can call as
+appropriate.</p>
     
     </section>
 
@@ -421,7 +437,7 @@
             </dd>
             <dt id="parent" class="property">
             <span class="name ">parent</span>    
-                <span class="signature">&#8594; <a href="node/AbstractNode-class.html">AbstractNode</a></span>
+                <span class="signature">&#8594; <a href="rendering/AbstractNode-class.html">AbstractNode</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -593,31 +609,34 @@ child. Do not call directly.</p>
                   <p>Override this function to paint debugging information</p>
               </dd>
               <dt id="defaultComputeDistanceToFirstActualBaseline" class="callable">
-                  <a href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToFirstActualBaseline.html"><span class="name ">defaultComputeDistanceToFirstActualBaseline</span></a><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToFirstActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <a href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToFirstActualBaseline.html"><span class="name ">defaultComputeDistanceToFirstActualBaseline</span></a><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToFirstActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the baseline of the first child with a baseline<a href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToFirstActualBaseline.html">&hellip;</a>
+</p>
               </dd>
               <dt id="defaultComputeDistanceToHighestActualBaseline" class="callable">
-                  <a href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToHighestActualBaseline.html"><span class="name ">defaultComputeDistanceToHighestActualBaseline</span></a><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToHighestActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <a href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToHighestActualBaseline.html"><span class="name ">defaultComputeDistanceToHighestActualBaseline</span></a><span class="signature">(<wbr><span class="parameter" id="defaultComputeDistanceToHighestActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the minimum baseline value among every child<a href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToHighestActualBaseline.html">&hellip;</a>
+</p>
               </dd>
               <dt id="defaultHitTestChildren" class="callable">
-                  <a href="rendering/RenderBoxContainerDefaultsMixin/defaultHitTestChildren.html"><span class="name ">defaultHitTestChildren</span></a><span class="signature">(<wbr><span class="parameter" id="defaultHitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="defaultHitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                  <a href="rendering/RenderBoxContainerDefaultsMixin/defaultHitTestChildren.html"><span class="name ">defaultHitTestChildren</span></a><span class="signature">(<wbr><span class="parameter" id="defaultHitTestChildren-param-result"><span class="type-annotation"><a href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="defaultHitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
                       &#8594;
                       <span class="returntype">bool</span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Performs a hit test on each child by walking the child list backwards<a href="rendering/RenderBoxContainerDefaultsMixin/defaultHitTestChildren.html">&hellip;</a>
+</p>
               </dd>
               <dt id="defaultPaint" class="callable">
                   <a href="rendering/RenderBoxContainerDefaultsMixin/defaultPaint.html"><span class="name ">defaultPaint</span></a><span class="signature">(<wbr><span class="parameter" id="defaultPaint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="defaultPaint-param-offset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
@@ -626,7 +645,7 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Paints each child by walking the child list forwards</p>
               </dd>
               <dt id="detach" class="callable">
                   <span class="name ">detach</span><span class="signature">(<wbr>)
@@ -660,7 +679,7 @@ child. Do not call directly.</p>
                   <p>Called by subclases when they decide a render object is no longer a child</p>
               </dd>
               <dt id="handleEvent" class="callable">
-                  <span class="name ">handleEvent</span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="hit_test/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+                  <span class="name ">handleEvent</span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="rendering/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
                       &#8594;
                       <span class="returntype"><a href="object/EventDisposition-class.html">EventDisposition</a></span>
                   </span>
@@ -751,14 +770,14 @@ invokes callback</p>
                   <p>Updates the render objects size using only the constraints</p>
               </dd>
               <dt id="redepthChild" class="callable">
-                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="rendering/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Call only from overrides of <a href="node/AbstractNode/redepthChildren.html">redepthChildren</a></p>
+                  <p>Call only from overrides of <a href="rendering/AbstractNode/redepthChildren.html">redepthChildren</a></p>
               </dd>
               <dt id="redepthChildren" class="callable">
                   <span class="name ">redepthChildren</span><span class="signature">(<wbr>)

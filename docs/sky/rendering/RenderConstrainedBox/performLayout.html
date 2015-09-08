@@ -253,10 +253,10 @@ information without informing this render object.</p>
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void performLayout() {
   if (child != null) {
-    child.layout(_additionalConstraints.apply(constraints), parentUsesSize: true);
+    child.layout(_additionalConstraints.enforce(constraints), parentUsesSize: true);
     size = child.size;
   } else {
-    size = _additionalConstraints.apply(constraints).constrain(Size.zero);
+    size = _additionalConstraints.enforce(constraints).constrain(Size.zero);
   }
 }</code></pre>
     </section>

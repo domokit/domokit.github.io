@@ -58,6 +58,7 @@
           <ul class="subnav">
               <li><a href="rendering/rendering-library.html#constants">Constants</a></li>
               <li><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
+              <li><a href="rendering/rendering-library.html#properties">Properties</a></li>
               <li><a href="rendering/rendering-library.html#functions">Functions</a></li>
               <li><a href="rendering/rendering-library.html#enums">Enums</a></li>
               <li><a href="rendering/rendering-library.html#classes">Classes</a></li>
@@ -77,46 +78,28 @@
     <ol>
       <li class="section-title"><a href="index.html">Libraries</a></li>
       <li><a href="activity/activity-library.html">activity</a></li>
-      <li><a href="animated_simulation/animated_simulation-library.html">animated_simulation</a></li>
-      <li><a href="animated_value/animated_value-library.html">animated_value</a></li>
-      <li><a href="animation_performance/animation_performance-library.html">animation_performance</a></li>
+      <li><a href="animation/animation-library.html">animation</a></li>
       <li><a href="arena/arena-library.html">arena</a></li>
       <li><a href="asset_bundle/asset_bundle-library.html">asset_bundle</a></li>
-      <li><a href="box_painter/box_painter-library.html">box_painter</a></li>
       <li><a href="colors/colors-library.html">colors</a></li>
       <li><a href="constants/constants-library.html">constants</a></li>
-      <li><a href="curves/curves-library.html">curves</a></li>
-      <li><a href="debug/debug-library.html">debug</a></li>
-      <li><a href="direction/direction-library.html">direction</a></li>
       <li><a href="edges/edges-library.html">edges</a></li>
-      <li><a href="editable_string/editable_string-library.html">editable_string</a></li>
-      <li><a href="editable_text/editable_text-library.html">editable_text</a></li>
       <li><a href="embedder/embedder-library.html">embedder</a></li>
       <li><a href="fetch/fetch-library.html">fetch</a></li>
-      <li><a href="forces/forces-library.html">forces</a></li>
-      <li><a href="hit_test/hit_test-library.html">hit_test</a></li>
       <li><a href="image_cache/image_cache-library.html">image_cache</a></li>
       <li><a href="image_resource/image_resource-library.html">image_resource</a></li>
-      <li><a href="input/input-library.html">input</a></li>
       <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
       <li><a href="long_press/long_press-library.html">long_press</a></li>
-      <li><a href="node/node-library.html">node</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
       <li><a href="pointer_router/pointer_router-library.html">pointer_router</a></li>
-      <li><a href="radial_reaction/radial_reaction-library.html">radial_reaction</a></li>
       <li><a href="recognizer/recognizer-library.html">recognizer</a></li>
       <li><a href="rendering/rendering-library.html">rendering</a></li>
-      <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
       <li><a href="scroll/scroll-library.html">scroll</a></li>
-      <li><a href="scroll_behavior/scroll_behavior-library.html">scroll_behavior</a></li>
-      <li><a href="shadows/shadows-library.html">shadows</a></li>
       <li><a href="shadows/shadows-library.html">shadows</a></li>
       <li><a href="shell/shell-library.html">shell</a></li>
       <li><a href="show_press/show_press-library.html">show_press</a></li>
       <li><a href="tap/tap-library.html">tap</a></li>
-      <li><a href="text_painter/text_painter-library.html">text_painter</a></li>
-      <li><a href="text_style/text_style-library.html">text_style</a></li>
       <li><a href="theme_data/theme_data-library.html">theme_data</a></li>
-      <li><a href="timeline/timeline-library.html">timeline</a></li>
       <li><a href="typography/typography-library.html">typography</a></li>
       <li><a href="view_configuration/view_configuration-library.html">view_configuration</a></li>
       <li><a href="widgets/widgets-library.html">widgets</a></li>
@@ -127,7 +110,8 @@
 
     <section class="desc markdown">
     
-          <p>The Sky render tree</p>
+          <p>The Sky render tree.</p>
+<p>This library includes and re-exports all Sky rendering classes.</p>
     
     </section>
 
@@ -143,6 +127,42 @@
             <dd>
                 <div class="features">const</div>
                 <p>A bold font weight</p>
+            </dd>
+            <dt id="debugPaintAlphabeticBaselineColor" class="constant">
+                <span class="top-level-variable-type"><a href="rendering/Color-class.html">Color</a></span>
+                <span class="name "><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></span>
+                <span class="signature">= const sky.<a href="rendering/Color-class.html">Color</a>(0xFF00FF00)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p>The color to use when painting alphabetic baselines.</p>
+            </dd>
+            <dt id="debugPaintIdeographicBaselineColor" class="constant">
+                <span class="top-level-variable-type"><a href="rendering/Color-class.html">Color</a></span>
+                <span class="name "><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></span>
+                <span class="signature">= const sky.<a href="rendering/Color-class.html">Color</a>(0xFFFFD000)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p>The color ot use when painting ideographic baselines.</p>
+            </dd>
+            <dt id="debugPaintLayerBordersColor" class="constant">
+                <span class="top-level-variable-type"><a href="rendering/Color-class.html">Color</a></span>
+                <span class="name "><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></span>
+                <span class="signature">= const sky.<a href="rendering/Color-class.html">Color</a>(0xFFFF9800)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p>The color to use when painting Layer borders.</p>
+            </dd>
+            <dt id="debugPaintSizeColor" class="constant">
+                <span class="top-level-variable-type"><a href="rendering/Color-class.html">Color</a></span>
+                <span class="name "><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></span>
+                <span class="signature">= const sky.<a href="rendering/Color-class.html">Color</a>(0xFF00FFFF)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p>The color to use when painting RenderObject bounds.</p>
             </dd>
             <dt id="lineThrough" class="constant">
                 <span class="top-level-variable-type">dynamic</span>
@@ -262,6 +282,62 @@
         </dl>
     </section>
 
+    <section class="summary offset-anchor" id="properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="debugPaintBaselinesEnabled" class="property">
+                <span class="name"><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Causes each RenderBox to paint a line at each of its baselines.</p>
+            </dd>
+            <dt id="debugPaintBoundsEnabled" class="property">
+                <span class="name"><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Causes RenderObjects to paint warnings when painting outside their bounds.</p>
+            </dd>
+            <dt id="debugPaintLayerBordersEnabled" class="property">
+                <span class="name"><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Causes each Layer to paint a box around its bounds.</p>
+            </dd>
+            <dt id="debugPaintSizeEnabled" class="property">
+                <span class="name"><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>Causes each RenderBox to paint a box around its bounds.</p>
+            </dd>
+            <dt id="inDebugBuild" class="property">
+                <span class="name"><a href="rendering/inDebugBuild.html">inDebugBuild</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>Indicates whether we're running with asserts enabled.</p>
+            </dd>
+        </dl>
+    </section>
 
     <section class="summary offset-anchor" id="functions">
         <h2>Functions</h2>
@@ -275,6 +351,16 @@
             </dt>
             <dd>
                 <p>Obsolete function that will be removed eventually</p>
+            </dd>
+            <dt id="combineEventDispositions" class="callable">
+                <a href="rendering/combineEventDispositions.html"><span class="name ">combineEventDispositions</span></a><span class="signature">(<wbr><span class="parameter" id="combineEventDispositions-param-left"><span class="type-annotation"><a href="rendering/EventDisposition-class.html">EventDisposition</a></span> <span class="parameter-name">left</span></span>, <span class="parameter" id="combineEventDispositions-param-right"><span class="type-annotation"><a href="rendering/EventDisposition-class.html">EventDisposition</a></span> <span class="parameter-name">right</span></span>)
+                    &#8594;
+                    <span class="returntype"><a href="rendering/EventDisposition-class.html">EventDisposition</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p>Merges two <a href="rendering/EventDisposition-class.html">EventDisposition</a> values such that the result indicates the
+maximum amount of processing indicated by the two inputs.</p>
             </dd>
             <dt id="paintImage" class="callable">
                 <a href="rendering/paintImage.html"><span class="name ">paintImage</span></a><span class="signature">(<wbr>{<span class="parameter" id="paintImage-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paintImage-param-rect"><span class="type-annotation"><a href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="paintImage-param-image"><span class="type-annotation">Image</span> <span class="parameter-name">image</span></span>, <span class="parameter" id="paintImage-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>, <span class="parameter" id="paintImage-param-fit"><span class="parameter-name">fit</span>: <span class="default-value">ImageFit.scaleDown</span></span>, <span class="parameter" id="paintImage-param-repeat"><span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="paintImage-param-positionX"><span class="type-annotation">double</span> <span class="parameter-name">positionX</span>: <span class="default-value">0.5</span></span>, <span class="parameter" id="paintImage-param-positionY"><span class="type-annotation">double</span> <span class="parameter-name">positionY</span>: <span class="default-value">0.5</span></span>})
@@ -364,6 +450,12 @@
             <dd>
                 <p>A 2D geometrical shape</p>
             </dd>
+            <dt id="ShrinkWrap">
+                <a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="TextAlign">
                 <a href="rendering/TextAlign-class.html">TextAlign</a>
             </dt>
@@ -395,6 +487,13 @@
         <h2>Classes</h2>
 
         <dl>
+            <dt id="AbstractNode">
+                <span class="name "><a href="rendering/AbstractNode-class.html">AbstractNode</a></span>
+            </dt>
+            <dd>
+                <p>An abstract node in a tree<a href="rendering/AbstractNode-class.html">&hellip;</a>
+</p>
+            </dd>
             <dt id="AutoLayoutParentData">
                 <span class="name "><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></span>
             </dt>
@@ -435,7 +534,8 @@
                 <span class="name "><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Immutable layout constraints for box layout<a href="rendering/BoxConstraints-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="BoxDecoration">
                 <span class="name "><a href="rendering/BoxDecoration-class.html">BoxDecoration</a></span>
@@ -447,19 +547,19 @@
                 <span class="name "><a href="rendering/BoxHitTestEntry-class.html">BoxHitTestEntry</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>A hit test entry used by <a href="rendering/RenderBox-class.html">RenderBox</a></p>
             </dd>
             <dt id="BoxPainter">
                 <span class="name "><a href="rendering/BoxPainter-class.html">BoxPainter</a></span>
             </dt>
             <dd>
-                <p>An object that paints a <a href="box_painter/BoxDecoration-class.html">BoxDecoration</a> into a canvas</p>
+                <p>An object that paints a <a href="painting/BoxDecoration-class.html">BoxDecoration</a> into a canvas</p>
             </dd>
             <dt id="BoxParentData">
                 <span class="name "><a href="rendering/BoxParentData-class.html">BoxParentData</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Parent data used by <a href="rendering/RenderBox-class.html">RenderBox</a> and its subclasses</p>
             </dd>
             <dt id="BoxShadow">
                 <span class="name "><a href="rendering/BoxShadow-class.html">BoxShadow</a></span>
@@ -559,7 +659,7 @@
                 <span class="name "><a href="rendering/HitTestEntry-class.html">HitTestEntry</a></span>
             </dt>
             <dd>
-                <p>Data collected during a hit test about a specific <a href="hit_test/HitTestTarget-class.html">HitTestTarget</a>.<a href="rendering/HitTestEntry-class.html">&hellip;</a>
+                <p>Data collected during a hit test about a specific <a href="rendering/HitTestTarget-class.html">HitTestTarget</a>.<a href="rendering/HitTestEntry-class.html">&hellip;</a>
 </p>
             </dd>
             <dt id="HitTestResult">
@@ -714,13 +814,15 @@ Values are stored in column major order.</p>
                 <span class="name "><a href="rendering/RenderBox-class.html">RenderBox</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>A render object in a 2D cartesian coordinate system<a href="rendering/RenderBox-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="RenderBoxContainerDefaultsMixin">
                 <span class="name "><a href="rendering/RenderBoxContainerDefaultsMixin-class.html">RenderBoxContainerDefaultsMixin</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>A mixin that provides useful default behaviors for boxes with children managed by the <a href="rendering/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a> mixin<a href="rendering/RenderBoxContainerDefaultsMixin-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="RenderClipOval">
                 <span class="name "><a href="rendering/RenderClipOval-class.html">RenderClipOval</a></span>
@@ -915,7 +1017,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
                 <span class="name "><a href="rendering/TextPainter-class.html">TextPainter</a></span>
             </dt>
             <dd>
-                <p>An object that paints a <a href="rendering/TextSpan-class.html">TextSpan</a> into a canvas</p>
+                <p>An object that paints a <a href="painting/TextSpan-class.html">TextSpan</a> into a canvas</p>
             </dd>
             <dt id="TextSpan">
                 <span class="name "><a href="rendering/TextSpan-class.html">TextSpan</a></span>
@@ -952,6 +1054,10 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -967,9 +1073,16 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -985,12 +1098,14 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>

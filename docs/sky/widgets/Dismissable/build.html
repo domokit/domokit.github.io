@@ -186,12 +186,12 @@
   }
 
   return new GestureDetector(
-    onHorizontalScrollStart: _directionIsYAxis ? null : _handleScrollStart,
-    onHorizontalScrollUpdate: _directionIsYAxis ? null : _handleScrollUpdate,
-    onHorizontalScrollEnd: _directionIsYAxis ? null : _handleScrollEnd,
-    onVerticalScrollStart: _directionIsYAxis ? _handleScrollStart : null,
-    onVerticalScrollUpdate: _directionIsYAxis ? _handleScrollUpdate : null,
-    onVerticalScrollEnd: _directionIsYAxis ? _handleScrollEnd : null,
+    onHorizontalDragStart: _directionIsYAxis ? null : _handleDragStart,
+    onHorizontalDragUpdate: _directionIsYAxis ? null : _handleDragUpdate,
+    onHorizontalDragEnd: _directionIsYAxis ? null : _handleDragEnd,
+    onVerticalDragStart: _directionIsYAxis ? _handleDragStart : null,
+    onVerticalDragUpdate: _directionIsYAxis ? _handleDragUpdate : null,
+    onVerticalDragEnd: _directionIsYAxis ? _handleDragEnd : null,
     child: new Listener(
       onGestureFlingStart: _handleFlingStart,
       child: new SizeObserver(

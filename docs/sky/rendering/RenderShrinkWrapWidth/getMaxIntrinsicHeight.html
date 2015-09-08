@@ -238,7 +238,12 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the smallest height beyond which increasing the height never
+decreases the width.</p>
+<p>If the layout algorithm used is width-in-height-out, i.e. the height
+depends on the width and not vice versa, then this will return the same
+as getMinIntrinsicHeight().</p>
+<p>Override in subclasses that implement <code>performLayout</code>.</p>
     
     </section>
 

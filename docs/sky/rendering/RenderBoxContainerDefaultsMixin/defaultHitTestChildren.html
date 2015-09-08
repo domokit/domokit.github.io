@@ -175,19 +175,25 @@
             <span class="name ">defaultHitTestChildren</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="defaultHitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="defaultHitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
+                <span class="parameter" id="defaultHitTestChildren-param-result"><span class="type-annotation"><a href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="defaultHitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Performs a hit test on each child by walking the child list backwards</p>
+<p>Stops walking once after the first child reports that it contains the
+given point. Returns whether any children contain the given point.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">bool defaultHitTestChildren(HitTestResult result, { Point position }) {
+      <pre><code class="prettyprint lang-dart">/// Performs a hit test on each child by walking the child list backwards
+///
+/// Stops walking once after the first child reports that it contains the
+/// given point. Returns whether any children contain the given point.
+bool defaultHitTestChildren(HitTestResult result, { Point position }) {
   // the x, y parameters have the top left of the node&apos;s box as the origin
   ChildType child = lastChild;
   while (child != null) {

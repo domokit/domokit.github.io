@@ -228,13 +228,19 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the minimum width that this box could be without failing to paint
+its contents within itself</p>
+<p>Override in subclasses that implement <a href="rendering/RenderBox/performLayout.html">performLayout</a>.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double getMinIntrinsicWidth(BoxConstraints constraints) {
+      <pre><code class="prettyprint lang-dart">/// Returns the minimum width that this box could be without failing to paint
+/// its contents within itself
+///
+/// Override in subclasses that implement [performLayout].
+double getMinIntrinsicWidth(BoxConstraints constraints) {
   return constraints.constrainWidth(0.0);
 }</code></pre>
     </section>

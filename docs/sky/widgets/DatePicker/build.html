@@ -194,7 +194,13 @@
       );
       break;
   }
-  return new BlockBody([header, new Container(height: _calendarHeight, child: picker)]);
+  return new Column([
+    header,
+    new Container(
+      height: _calendarHeight,
+      child: picker
+    )
+  ], alignItems: FlexAlignItems.stretch);
 }</code></pre>
     </section>
 

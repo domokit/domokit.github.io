@@ -77,6 +77,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -92,9 +96,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -110,12 +121,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -232,7 +245,7 @@
                 <p>A constant List of the values in this enum, in order of their declaration.</p>
             </dd>
             <dt id="w100" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w100</span>
                 <span class="signature">= const FontWeight(1)</span>
             </dt>
@@ -241,7 +254,7 @@
                 <p>Thin, the least thick</p>
             </dd>
             <dt id="w200" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w200</span>
                 <span class="signature">= const FontWeight(2)</span>
             </dt>
@@ -250,7 +263,7 @@
                 <p>Extra-light</p>
             </dd>
             <dt id="w300" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w300</span>
                 <span class="signature">= const FontWeight(3)</span>
             </dt>
@@ -259,7 +272,7 @@
                 <p>Light</p>
             </dd>
             <dt id="w400" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w400</span>
                 <span class="signature">= const FontWeight(4)</span>
             </dt>
@@ -268,7 +281,7 @@
                 <p>Normal / regular / plain</p>
             </dd>
             <dt id="w500" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w500</span>
                 <span class="signature">= const FontWeight(5)</span>
             </dt>
@@ -277,7 +290,7 @@
                 <p>Medium</p>
             </dd>
             <dt id="w600" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w600</span>
                 <span class="signature">= const FontWeight(6)</span>
             </dt>
@@ -286,7 +299,7 @@
                 <p>Semi-bold</p>
             </dd>
             <dt id="w700" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w700</span>
                 <span class="signature">= const FontWeight(7)</span>
             </dt>
@@ -295,7 +308,7 @@
                 <p>Bold</p>
             </dd>
             <dt id="w800" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w800</span>
                 <span class="signature">= const FontWeight(8)</span>
             </dt>
@@ -304,7 +317,7 @@
                 <p>Extra-bold</p>
             </dd>
             <dt id="w900" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/FontWeight-class.html">FontWeight</a></span>
+                <span class="top-level-variable-type"><a href="painting/FontWeight-class.html">FontWeight</a></span>
                 <span class="name ">w900</span>
                 <span class="signature">= const FontWeight(9)</span>
             </dt>

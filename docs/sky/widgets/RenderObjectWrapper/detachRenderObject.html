@@ -156,8 +156,9 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void detachRenderObject() {
-  assert(_ancestor != null);
   assert(renderObject != null);
+  assert(_ancestor != null);
+  assert(_ancestor.renderObject != null);
   _ancestor.detachChildRenderObject(this);
 }</code></pre>
     </section>

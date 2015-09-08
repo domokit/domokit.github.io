@@ -248,8 +248,8 @@
         } else {
           syncChild(null, oldChild, null);
         }
-        oldChildrenBottom -= 1;
-      }
+      } // else the node was probably moved elsewhere, ignore it
+      oldChildrenBottom -= 1;
     }
   }
 

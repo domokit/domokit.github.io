@@ -241,11 +241,8 @@
   }
   for (int w = 0; w &lt; weeksShown; w++) {
     int startIndex = w * days.length;
-    rows.add(new Container(
-      child: new Flex(
-        labels.sublist(startIndex, startIndex + days.length),
-        justifyContent: FlexJustifyContent.spaceAround
-      )
+    rows.add(new Row(
+      labels.sublist(startIndex, startIndex + days.length)
     ));
   }
 

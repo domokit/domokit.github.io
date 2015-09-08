@@ -58,7 +58,6 @@
               </h1>
           </div>
           <ul class="subnav">
-              <li><a href="rendering/BoxConstraints-class.html#constants">Constants</a></li>
               <li><a href="rendering/BoxConstraints-class.html#instance-properties">Properties</a></li>
               <li><a href="rendering/BoxConstraints-class.html#constructors">Constructors</a></li>
               <li><a href="rendering/BoxConstraints-class.html#operators">Operators</a></li>
@@ -80,6 +79,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -95,9 +98,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -113,12 +123,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -216,7 +228,11 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Immutable layout constraints for box layout</p>
+<p>A size respects a BoxConstraints if, and only if, all of the following
+relations hold:</p><ul><li><code>minWidth &lt;= size.width &lt;= constraints.maxWidth</code></li><li><code>minHeight &lt;= size.height &lt;= maxHeight</code></li></ul>
+<p>The constraints themselves must satisfy these relations:</p><ul><li><code>0.0 &lt;= minWidth &lt;= maxWidth &lt;= double.INFINITY</code></li><li><code>0.0 &lt;= minHeight &lt;= maxHeight &lt;= double.INFINITY</code></li></ul>
+<p>Note: <code>double.INFINITY</code> is a legal value for each constraint.</p>
     
     </section>
 
@@ -235,21 +251,6 @@
         </dl>
     </section>
 
-    <section class="summary offset-anchor" id="constants">
-        <h2>Constants</h2>
-
-        <dl class="properties">
-            <dt id="expand" class="constant">
-                <span class="top-level-variable-type"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                <span class="name "><a href="rendering/BoxConstraints/expand.html">expand</a></span>
-                <span class="signature">= const <a href="rendering/BoxConstraints-class.html">BoxConstraints</a>(minWidth: double.INFINITY, maxWidth: double.INFINITY, minHeight: double.INFINITY, maxHeight: double.INFINITY)</span>
-            </dt>
-            <dd>
-                <div class="features">const</div>
-                <p></p>
-            </dd>
-        </dl>
-    </section>
 
 
 
@@ -265,7 +266,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The biggest size that satisifes the constraints</p>
             </dd>
             <dt id="hashCode" class="property">
                 <span class="name"><a href="rendering/BoxConstraints/hashCode.html">hashCode</a></span>
@@ -285,7 +286,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>Whether there is exactly one height value that satisfies the constraints</p>
             </dd>
             <dt id="hasTightWidth" class="property">
                 <span class="name"><a href="rendering/BoxConstraints/hasTightWidth.html">hasTightWidth</a></span>
@@ -295,17 +296,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
-            </dd>
-            <dt id="isInfinite" class="property">
-                <span class="name"><a href="rendering/BoxConstraints/isInfinite.html">isInfinite</a></span>
-                <span class="signature">&#8594; bool</span>
-            </dt>
-            <dd>
-                <div class="features">
-        read-only
-    </div>
-    <p></p>
+    <p>Whether there is exactly one width value that satisfies the constraints</p>
             </dd>
             <dt id="isTight" class="property">
                 <span class="name"><a href="rendering/BoxConstraints/isTight.html">isTight</a></span>
@@ -315,7 +306,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>Whether there is exactly one size that satifies the constraints</p>
             </dd>
             <dt id="maxHeight" class="property">
                 <span class="name"><a href="rendering/BoxConstraints/maxHeight.html">maxHeight</a></span>
@@ -365,7 +356,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>The smallest size that satisfies the constraints</p>
             </dd>
         </dl>
     </section>
@@ -381,37 +372,29 @@
                 <div class="constructor-modifier">
                     const
                 </div>
-                <p></p>
+                <p>Constructs box constraints with the given constraints</p>
             </dd>
-            <dt id="BoxConstraints.expandHeight" class="callable">
-                <span class="name"><a href="rendering/BoxConstraints/BoxConstraints.expandHeight.html">BoxConstraints.expandHeight</a></span><span class="signature">({<span class="parameter" id="expandHeight-param-maxWidth"><span class="type-annotation">double</span> <span class="parameter-name">maxWidth</span>: <span class="default-value">double.INFINITY</span></span>})</span>
+            <dt id="BoxConstraints.expand" class="callable">
+                <span class="name"><a href="rendering/BoxConstraints/BoxConstraints.expand.html">BoxConstraints.expand</a></span><span class="signature">({<span class="parameter" id="expand-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="expand-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>})</span>
             </dt>
             <dd>
                 <div class="constructor-modifier">
                     const
                 </div>
-                <p></p>
-            </dd>
-            <dt id="BoxConstraints.expandWidth" class="callable">
-                <span class="name"><a href="rendering/BoxConstraints/BoxConstraints.expandWidth.html">BoxConstraints.expandWidth</a></span><span class="signature">({<span class="parameter" id="expandWidth-param-maxHeight"><span class="type-annotation">double</span> <span class="parameter-name">maxHeight</span>: <span class="default-value">double.INFINITY</span></span>})</span>
-            </dt>
-            <dd>
-                <div class="constructor-modifier">
-                    const
-                </div>
-                <p></p>
+                <p>Constructs box constraints that expand to fill another box contraints<a href="rendering/BoxConstraints/BoxConstraints.expand.html">&hellip;</a>
+</p>
             </dd>
             <dt id="BoxConstraints.loose" class="callable">
                 <span class="name"><a href="rendering/BoxConstraints/BoxConstraints.loose.html">BoxConstraints.loose</a></span><span class="signature">(<span class="parameter" id="loose-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Constructs box constraints that forbid sizes larger than the given size</p>
             </dd>
             <dt id="BoxConstraints.tight" class="callable">
                 <span class="name"><a href="rendering/BoxConstraints/BoxConstraints.tight.html">BoxConstraints.tight</a></span><span class="signature">(<span class="parameter" id="tight-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Constructs box constraints that is respected only by the given size</p>
             </dd>
             <dt id="BoxConstraints.tightFor" class="callable">
                 <span class="name"><a href="rendering/BoxConstraints/BoxConstraints.tightFor.html">BoxConstraints.tightFor</a></span><span class="signature">({<span class="parameter" id="tightFor-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="tightFor-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>})</span>
@@ -420,7 +403,7 @@
                 <div class="constructor-modifier">
                     const
                 </div>
-                <p></p>
+                <p>Constructs box constraints that require the given width or height</p>
             </dd>
         </dl>
       </section>
@@ -444,69 +427,6 @@
       <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
-              <dt id="apply" class="callable">
-                  <a href="rendering/BoxConstraints/apply.html"><span class="name ">apply</span></a><span class="signature">(<wbr><span class="parameter" id="apply-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="applyHeight" class="callable">
-                  <a href="rendering/BoxConstraints/applyHeight.html"><span class="name ">applyHeight</span></a><span class="signature">(<wbr><span class="parameter" id="applyHeight-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="applyMaxHeight" class="callable">
-                  <a href="rendering/BoxConstraints/applyMaxHeight.html"><span class="name ">applyMaxHeight</span></a><span class="signature">(<wbr><span class="parameter" id="applyMaxHeight-param-newMaxHeight"><span class="type-annotation">double</span> <span class="parameter-name">newMaxHeight</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="applyMaxWidth" class="callable">
-                  <a href="rendering/BoxConstraints/applyMaxWidth.html"><span class="name ">applyMaxWidth</span></a><span class="signature">(<wbr><span class="parameter" id="applyMaxWidth-param-newMaxWidth"><span class="type-annotation">double</span> <span class="parameter-name">newMaxWidth</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="applyMinHeight" class="callable">
-                  <a href="rendering/BoxConstraints/applyMinHeight.html"><span class="name ">applyMinHeight</span></a><span class="signature">(<wbr><span class="parameter" id="applyMinHeight-param-newMinHeight"><span class="type-annotation">double</span> <span class="parameter-name">newMinHeight</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="applyMinWidth" class="callable">
-                  <a href="rendering/BoxConstraints/applyMinWidth.html"><span class="name ">applyMinWidth</span></a><span class="signature">(<wbr><span class="parameter" id="applyMinWidth-param-newMinWidth"><span class="type-annotation">double</span> <span class="parameter-name">newMinWidth</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="applyWidth" class="callable">
-                  <a href="rendering/BoxConstraints/applyWidth.html"><span class="name ">applyWidth</span></a><span class="signature">(<wbr><span class="parameter" id="applyWidth-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>)
-                      &#8594;
-                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
               <dt id="constrain" class="callable">
                   <a href="rendering/BoxConstraints/constrain.html"><span class="name ">constrain</span></a><span class="signature">(<wbr><span class="parameter" id="constrain-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
                       &#8594;
@@ -514,7 +434,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the size that both satisfies the constraints and is as close as possible to the given size</p>
               </dd>
               <dt id="constrainHeight" class="callable">
                   <a href="rendering/BoxConstraints/constrainHeight.html"><span class="name ">constrainHeight</span></a><span class="signature">(<wbr>[<span class="parameter" id="constrainHeight-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span> = <span class="default-value">double.INFINITY</span></span>])
@@ -523,7 +443,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the height that both satisfies the constraints and is as close as possible to the given height</p>
               </dd>
               <dt id="constrainWidth" class="callable">
                   <a href="rendering/BoxConstraints/constrainWidth.html"><span class="name ">constrainWidth</span></a><span class="signature">(<wbr>[<span class="parameter" id="constrainWidth-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span> = <span class="default-value">double.INFINITY</span></span>])
@@ -532,25 +452,25 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
-              </dd>
-              <dt id="contains" class="callable">
-                  <a href="rendering/BoxConstraints/contains.html"><span class="name ">contains</span></a><span class="signature">(<wbr><span class="parameter" id="contains-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
-                      &#8594;
-                      <span class="returntype">bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
+                  <p>Returns the width that both satisfies the constraints and is as close as possible to the given width</p>
               </dd>
               <dt id="deflate" class="callable">
-                  <a href="rendering/BoxConstraints/deflate.html"><span class="name ">deflate</span></a><span class="signature">(<wbr><span class="parameter" id="deflate-param-edges"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">edges</span></span>)
+                  <a href="rendering/BoxConstraints/deflate.html"><span class="name ">deflate</span></a><span class="signature">(<wbr><span class="parameter" id="deflate-param-edges"><span class="type-annotation"><a href="painting/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">edges</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns new box constraints that are smaller by the given edge dimensions</p>
+              </dd>
+              <dt id="enforce" class="callable">
+                  <a href="rendering/BoxConstraints/enforce.html"><span class="name ">enforce</span></a><span class="signature">(<wbr><span class="parameter" id="enforce-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns new box constraints that respect the given constraints while being as close as possible to the original constraints</p>
               </dd>
               <dt id="heightConstraints" class="callable">
                   <a href="rendering/BoxConstraints/heightConstraints.html"><span class="name ">heightConstraints</span></a><span class="signature">(<wbr>)
@@ -559,7 +479,16 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns box constraints with the same height constraints but with unconstrainted width</p>
+              </dd>
+              <dt id="isSatisfiedBy" class="callable">
+                  <a href="rendering/BoxConstraints/isSatisfiedBy.html"><span class="name ">isSatisfiedBy</span></a><span class="signature">(<wbr><span class="parameter" id="isSatisfiedBy-param-size"><span class="type-annotation"><a href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
+                      &#8594;
+                      <span class="returntype">bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Whether the given size satisfies the constraints</p>
               </dd>
               <dt id="loosen" class="callable">
                   <a href="rendering/BoxConstraints/loosen.html"><span class="name ">loosen</span></a><span class="signature">(<wbr>)
@@ -568,7 +497,25 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns new box constraints that remove the minimum width and height requirements</p>
+              </dd>
+              <dt id="tightenHeight" class="callable">
+                  <a href="rendering/BoxConstraints/tightenHeight.html"><span class="name ">tightenHeight</span></a><span class="signature">(<wbr><span class="parameter" id="tightenHeight-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns new box constraints with a tight height as close to the given height as possible while still respecting the original box constraints</p>
+              </dd>
+              <dt id="tightenWidth" class="callable">
+                  <a href="rendering/BoxConstraints/tightenWidth.html"><span class="name ">tightenWidth</span></a><span class="signature">(<wbr><span class="parameter" id="tightenWidth-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>)
+                      &#8594;
+                      <span class="returntype"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns new box constraints with a tight width as close to the given width as possible while still respecting the original box constraints</p>
               </dd>
               <dt id="toString" class="callable">
                   <a href="rendering/BoxConstraints/toString.html"><span class="name ">toString</span></a><span class="signature">(<wbr>)
@@ -586,7 +533,7 @@
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns box constraints with the same width constraints but with unconstrainted height</p>
               </dd>
           </dl>
       </section>
@@ -596,8 +543,6 @@
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>BoxConstraints</h5>
     <ol>
-      <li class="section-title"><a href="rendering/BoxConstraints-class.html#constants">Constants</a></li>
-      <li><a href="rendering/BoxConstraints/expand.html">expand</a></li>
     
     
     
@@ -609,8 +554,6 @@
       <li><a href="rendering/BoxConstraints/hasTightHeight.html">hasTightHeight</a>
 </li>
       <li><a href="rendering/BoxConstraints/hasTightWidth.html">hasTightWidth</a>
-</li>
-      <li><a href="rendering/BoxConstraints/isInfinite.html">isInfinite</a>
 </li>
       <li><a href="rendering/BoxConstraints/isTight.html">isTight</a>
 </li>
@@ -627,8 +570,7 @@
     
       <li class="section-title"><a href="rendering/BoxConstraints-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.html">BoxConstraints</a></li>
-      <li><a href="rendering/BoxConstraints/BoxConstraints.expandHeight.html">expandHeight</a></li>
-      <li><a href="rendering/BoxConstraints/BoxConstraints.expandWidth.html">expandWidth</a></li>
+      <li><a href="rendering/BoxConstraints/BoxConstraints.expand.html">expand</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.loose.html">loose</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.tight.html">tight</a></li>
       <li><a href="rendering/BoxConstraints/BoxConstraints.tightFor.html">tightFor</a></li>
@@ -638,33 +580,25 @@
 </li>
     
       <li class="section-title"><a href="rendering/BoxConstraints-class.html#instance-methods">Methods</a></li>
-      <li><a href="rendering/BoxConstraints/apply.html">apply</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyHeight.html">applyHeight</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMaxHeight.html">applyMaxHeight</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMaxWidth.html">applyMaxWidth</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMinHeight.html">applyMinHeight</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyMinWidth.html">applyMinWidth</a>
-</li>
-      <li><a href="rendering/BoxConstraints/applyWidth.html">applyWidth</a>
-</li>
       <li><a href="rendering/BoxConstraints/constrain.html">constrain</a>
 </li>
       <li><a href="rendering/BoxConstraints/constrainHeight.html">constrainHeight</a>
 </li>
       <li><a href="rendering/BoxConstraints/constrainWidth.html">constrainWidth</a>
 </li>
-      <li><a href="rendering/BoxConstraints/contains.html">contains</a>
-</li>
       <li><a href="rendering/BoxConstraints/deflate.html">deflate</a>
+</li>
+      <li><a href="rendering/BoxConstraints/enforce.html">enforce</a>
 </li>
       <li><a href="rendering/BoxConstraints/heightConstraints.html">heightConstraints</a>
 </li>
+      <li><a href="rendering/BoxConstraints/isSatisfiedBy.html">isSatisfiedBy</a>
+</li>
       <li><a href="rendering/BoxConstraints/loosen.html">loosen</a>
+</li>
+      <li><a href="rendering/BoxConstraints/tightenHeight.html">tightenHeight</a>
+</li>
+      <li><a href="rendering/BoxConstraints/tightenWidth.html">tightenWidth</a>
 </li>
       <li><a href="rendering/BoxConstraints/toString.html">toString</a>
 </li>

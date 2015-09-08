@@ -80,6 +80,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -95,9 +99,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -113,12 +124,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -227,7 +240,7 @@ for their children.</p>
           <dt>Inheritance</dt>
           <dd><ul class="gt-separated dark clazz-relationships">
               <li>Object</li>
-              <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
+              <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
               <li>RenderObject</li>
           </ul></dd>
 
@@ -482,7 +495,7 @@ for their children.</p>
             </dd>
             <dt id="parent" class="property">
             <span class="name ">parent</span>    
-                <span class="signature">&#8594; <a href="node/AbstractNode-class.html">AbstractNode</a></span>
+                <span class="signature">&#8594; <a href="rendering/AbstractNode-class.html">AbstractNode</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -652,7 +665,7 @@ child. Do not call directly.</p>
 </p>
               </dd>
               <dt id="handleEvent" class="callable">
-                  <a href="rendering/RenderObject/handleEvent.html"><span class="name ">handleEvent</span></a><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="hit_test/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+                  <a href="rendering/RenderObject/handleEvent.html"><span class="name ">handleEvent</span></a><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="rendering/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/EventDisposition-class.html">EventDisposition</a></span>
                   </span>
@@ -731,14 +744,14 @@ invokes callback</p>
 </p>
               </dd>
               <dt id="redepthChild" class="callable">
-                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="rendering/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Call only from overrides of <a href="node/AbstractNode/redepthChildren.html">redepthChildren</a></p>
+                  <p>Call only from overrides of <a href="rendering/AbstractNode/redepthChildren.html">redepthChildren</a></p>
               </dd>
               <dt id="redepthChildren" class="callable">
                   <span class="name ">redepthChildren</span><span class="signature">(<wbr>)

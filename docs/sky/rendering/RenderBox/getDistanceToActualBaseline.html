@@ -222,19 +222,27 @@
             <span class="name ">getDistanceToActualBaseline</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
+                <span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Calls <a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a> and caches the result.</p>
+<p>This function must only be called from <a href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a> and
+<a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a>. Do not call this function directly from
+outside those two methods.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double getDistanceToActualBaseline(TextBaseline baseline) {
+      <pre><code class="prettyprint lang-dart">/// Calls [computeDistanceToActualBaseline] and caches the result.
+///
+/// This function must only be called from [getDistanceToBaseline] and
+/// [computeDistanceToActualBaseline]. Do not call this function directly from
+/// outside those two methods.
+double getDistanceToActualBaseline(TextBaseline baseline) {
   assert(_debugDoingBaseline);
   _ancestorUsesBaseline = true;
   if (_cachedBaselines == null)

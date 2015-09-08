@@ -175,19 +175,25 @@
             <span class="name ">defaultComputeDistanceToFirstActualBaseline</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="defaultComputeDistanceToFirstActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
+                <span class="parameter" id="defaultComputeDistanceToFirstActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the baseline of the first child with a baseline</p>
+<p>Useful when the children are displayed vertically in the same order they
+appear in the child list.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double defaultComputeDistanceToFirstActualBaseline(TextBaseline baseline) {
+      <pre><code class="prettyprint lang-dart">/// Returns the baseline of the first child with a baseline
+///
+/// Useful when the children are displayed vertically in the same order they
+/// appear in the child list.
+double defaultComputeDistanceToFirstActualBaseline(TextBaseline baseline) {
   assert(!needsLayout);
   RenderBox child = firstChild;
   while (child != null) {

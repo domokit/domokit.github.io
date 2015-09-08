@@ -274,10 +274,11 @@
 
     <section class="desc markdown">
     
-          <p>If this render object applies a transform before painting, apply that
-transform to the given matrix</p>
-<p>Used by coordinate conversion functions to translate coordiantes local to
-one render object into coordinates local to another render object.</p>
+          <p>Multiply the transform from the parent's coordinate system to this box's
+coordinate system into the given transform</p>
+<p>This function is used to convert coordinate systems between boxes.
+Subclasses that apply transforms during painting should override this
+function to factor those transforms into the calculation.</p>
     
     </section>
 

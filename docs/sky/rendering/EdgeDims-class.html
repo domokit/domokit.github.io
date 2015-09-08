@@ -80,6 +80,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -95,9 +99,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -113,12 +124,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -228,9 +241,9 @@ example, the padding inside a box can be represented using this class.</p>
 
         <dl class="properties">
             <dt id="zero" class="constant">
-                <span class="top-level-variable-type"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span>
+                <span class="top-level-variable-type"><a href="painting/EdgeDims-class.html">EdgeDims</a></span>
                 <span class="name "><a href="rendering/EdgeDims/zero.html">zero</a></span>
-                <span class="signature">= const <a href="box_painter/EdgeDims-class.html">EdgeDims</a>(0.0, 0.0, 0.0, 0.0)</span>
+                <span class="signature">= const <a href="painting/EdgeDims-class.html">EdgeDims</a>(0.0, 0.0, 0.0, 0.0)</span>
             </dt>
             <dd>
                 <div class="features">const</div>
@@ -355,7 +368,7 @@ example, the padding inside a box can be represented using this class.</p>
           <h2>Operators</h2>
           <dl class="callables">
               <dt id="operator +" class="callable">
-                  <a href="rendering/EdgeDims/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="rendering/EdgeDims/operator_plus.html"><span class="name ">operator +</span></a><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="painting/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/EdgeDims-class.html">EdgeDims</a></span>
                   </span>
@@ -364,7 +377,7 @@ example, the padding inside a box can be represented using this class.</p>
                   <p></p>
               </dd>
               <dt id="operator -" class="callable">
-                  <a href="rendering/EdgeDims/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="box_painter/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
+                  <a href="rendering/EdgeDims/operator_minus.html"><span class="name ">operator -</span></a><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="painting/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
                       &#8594;
                       <span class="returntype"><a href="rendering/EdgeDims-class.html">EdgeDims</a></span>
                   </span>

@@ -256,13 +256,22 @@
             <span class="name ">computeDistanceToActualBaseline</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
+                <span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the distance from the y-coordinate of the position of the box to
+the y-coordinate of the first given baseline in the box's contents, if
+any, or null otherwise.</p>
+<p>Do not call this function directly. Instead, call <code>getDistanceToBaseline</code>
+if you need to know the baseline of a child from an invocation of
+<code>performLayout</code> or <code>paint</code> and call <code>getDistanceToActualBaseline</code> if you
+are implementing <code>computeDistanceToActualBaseline</code> and need to defer to a
+child.</p>
+<p>Subclasses should override this function to supply the distances to their
+baselines.</p>
     
     </section>
 

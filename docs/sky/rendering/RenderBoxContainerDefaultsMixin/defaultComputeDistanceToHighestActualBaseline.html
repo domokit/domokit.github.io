@@ -175,19 +175,25 @@
             <span class="name ">defaultComputeDistanceToHighestActualBaseline</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="defaultComputeDistanceToHighestActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
+                <span class="parameter" id="defaultComputeDistanceToHighestActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>
             </div>
             )    </section>
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns the minimum baseline value among every child</p>
+<p>Useful when the vertical position of the children isn't determined by the
+order in the child list.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double defaultComputeDistanceToHighestActualBaseline(TextBaseline baseline) {
+      <pre><code class="prettyprint lang-dart">/// Returns the minimum baseline value among every child
+///
+/// Useful when the vertical position of the children isn&apos;t determined by the
+/// order in the child list.
+double defaultComputeDistanceToHighestActualBaseline(TextBaseline baseline) {
   assert(!needsLayout);
   double result;
   RenderBox child = firstChild;

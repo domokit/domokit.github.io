@@ -234,7 +234,9 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Return the minimum height that this box could be without failing to render
+its contents within itself.</p>
+<p>Override in subclasses that implement <code>performLayout</code>.</p>
     
     </section>
 
@@ -242,8 +244,8 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">double getMinIntrinsicHeight(BoxConstraints constraints) {
   if (child != null)
-    return child.getMinIntrinsicHeight(_additionalConstraints.apply(constraints));
-  return _additionalConstraints.apply(constraints).constrainHeight(0.0);
+    return child.getMinIntrinsicHeight(_additionalConstraints.enforce(constraints));
+  return _additionalConstraints.enforce(constraints).constrainHeight(0.0);
 }</code></pre>
     </section>
 

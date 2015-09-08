@@ -121,6 +121,8 @@
 </li>
       <li>parentData
 </li>
+      <li><a href="rendering/RenderPositionedBox/shrinkWrap.html">shrinkWrap</a>
+</li>
       <li>size
 </li>
       <li>sizedByParent
@@ -256,12 +258,14 @@ information without informing this render object.</p>
       <pre><code class="prettyprint lang-dart">void performLayout() {
   if (child != null) {
     child.layout(constraints.loosen(), parentUsesSize: true);
-    size = constraints.constrain(child.size);
+    size = constraints.constrain(new Size(_shinkWrapWidth ? child.size.width : double.INFINITY,
+                                          _shinkWrapHeight ? child.size.height : double.INFINITY));
     assert(child.parentData is BoxParentData);
     Offset delta = size - child.size;
     child.parentData.position = (delta.scale(horizontal, vertical)).toPoint();
   } else {
-    performResize();
+    size = constraints.constrain(new Size(_shinkWrapWidth ? 0.0 : double.INFINITY,
+                                          _shinkWrapHeight ? 0.0 : double.INFINITY));
   }
 }</code></pre>
     </section>

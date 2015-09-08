@@ -78,6 +78,10 @@
     <ol>
       <li class="section-title"><a href="rendering/rendering-library.html#constants">Constants</a></li>
       <li><a href="rendering/bold.html">bold</a></li>
+      <li><a href="rendering/debugPaintAlphabeticBaselineColor.html">debugPaintAlphabeticBaselineColor</a></li>
+      <li><a href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
+      <li><a href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
+      <li><a href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a href="rendering/lineThrough.html">lineThrough</a></li>
       <li><a href="rendering/normal.html">normal</a></li>
       <li><a href="rendering/overline.html">overline</a></li>
@@ -93,9 +97,16 @@
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a href="rendering/ValueChanged.html">ValueChanged</a></li>
     
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintBoundsEnabled.html">debugPaintBoundsEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="rendering/inDebugBuild.html">inDebugBuild</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a href="rendering/clamp.html">clamp</a></li>
+      <li><a href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -111,12 +122,14 @@
       <li><a href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a href="rendering/Shape-class.html">Shape</a></li>
+      <li><a href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a href="rendering/TextDecoration-class.html">TextDecoration</a></li>
       <li><a href="rendering/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
       <li><a href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
       <li><a href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
@@ -223,7 +236,7 @@
           <dt>Inheritance</dt>
           <dd><ul class="gt-separated dark clazz-relationships">
               <li>Object</li>
-              <li><a href="node/AbstractNode-class.html">AbstractNode</a></li>
+              <li><a href="rendering/AbstractNode-class.html">AbstractNode</a></li>
               <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
               <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
               <li><a href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
@@ -295,7 +308,7 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>The box constraints most recently received from the parent</p>
             </dd>
             <dt id="debugCanParentUseSize" class="property">
             <span class="name ">debugCanParentUseSize</span>    
@@ -425,11 +438,11 @@
                 <div class="features">
         read-only, inherited
     </div>
-    <p></p>
+    <p>Returns a rectangle that contains all the pixels painted by this box</p>
             </dd>
             <dt id="parent" class="property">
             <span class="name ">parent</span>    
-                <span class="signature">&#8594; <a href="node/AbstractNode-class.html">AbstractNode</a></span>
+                <span class="signature">&#8594; <a href="rendering/AbstractNode-class.html">AbstractNode</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -455,7 +468,7 @@
                 <div class="features">
         read / write, inherited
     </div>
-    <p></p>
+    <p>The size of this render box computed during layout</p>
             </dd>
             <dt id="sizedByParent" class="property">
             <span class="name ">sizedByParent</span>    
@@ -506,8 +519,8 @@ particular, child nodes have no impact)</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>If this render object applies a transform before painting, apply that
-transform to the given matrix</p>
+                  <p>Multiply the transform from the parent's coordinate system to this box's
+coordinate system into the given transform</p>
               </dd>
               <dt id="attach" class="callable">
                   <span class="name ">attach</span><span class="signature">(<wbr>)
@@ -531,14 +544,16 @@ transform to the given matrix</p>
 child. Do not call directly.</p>
               </dd>
               <dt id="computeDistanceToActualBaseline" class="callable">
-                  <span class="name ">computeDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <span class="name ">computeDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Returns the distance from the y-coordinate of the position of the box to
+the y-coordinate of the first given baseline in the box's contents, if
+any, or null otherwise.</p>
               </dd>
               <dt id="debugAncestorsAlreadyMarkedNeedsLayout" class="callable">
                   <span class="name ">debugAncestorsAlreadyMarkedNeedsLayout</span><span class="signature">(<wbr>)
@@ -641,24 +656,25 @@ child. Do not call directly.</p>
                   <p>Called by subclases when they decide a render object is no longer a child</p>
               </dd>
               <dt id="getDistanceToActualBaseline" class="callable">
-                  <span class="name ">getDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                  <span class="name ">getDistanceToActualBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Calls <a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a> and caches the result.</p>
               </dd>
               <dt id="getDistanceToBaseline" class="callable">
-                  <span class="name ">getDistanceToBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="rendering/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>, {<span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span>})
+                  <span class="name ">getDistanceToBaseline</span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>, {<span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span>})
                       &#8594;
                       <span class="returntype">double</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Returns the distance from the y-coordinate of the position of the box to
+the y-coordinate of the first given baseline in the box's contents.</p>
               </dd>
               <dt id="getMaxIntrinsicHeight" class="callable">
                   <a href="rendering/RenderConstrainedBox/getMaxIntrinsicHeight.html"><span class="name ">getMaxIntrinsicHeight</span></a><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
@@ -667,7 +683,9 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the smallest height beyond which increasing the height never
+decreases the width.<a href="rendering/RenderConstrainedBox/getMaxIntrinsicHeight.html">&hellip;</a>
+</p>
               </dd>
               <dt id="getMaxIntrinsicWidth" class="callable">
                   <a href="rendering/RenderConstrainedBox/getMaxIntrinsicWidth.html"><span class="name ">getMaxIntrinsicWidth</span></a><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
@@ -676,7 +694,9 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the smallest width beyond which increasing the width never
+decreases the height<a href="rendering/RenderConstrainedBox/getMaxIntrinsicWidth.html">&hellip;</a>
+</p>
               </dd>
               <dt id="getMinIntrinsicHeight" class="callable">
                   <a href="rendering/RenderConstrainedBox/getMinIntrinsicHeight.html"><span class="name ">getMinIntrinsicHeight</span></a><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
@@ -685,7 +705,9 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Return the minimum height that this box could be without failing to render
+its contents within itself.<a href="rendering/RenderConstrainedBox/getMinIntrinsicHeight.html">&hellip;</a>
+</p>
               </dd>
               <dt id="getMinIntrinsicWidth" class="callable">
                   <a href="rendering/RenderConstrainedBox/getMinIntrinsicWidth.html"><span class="name ">getMinIntrinsicWidth</span></a><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
@@ -694,7 +716,9 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns the minimum width that this box could be without failing to paint
+its contents within itself<a href="rendering/RenderConstrainedBox/getMinIntrinsicWidth.html">&hellip;</a>
+</p>
               </dd>
               <dt id="globalToLocal" class="callable">
                   <span class="name ">globalToLocal</span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
@@ -704,10 +728,11 @@ child. Do not call directly.</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Convert the given point from the global coodinate system to the local
+coordinate system for this box</p>
               </dd>
               <dt id="handleEvent" class="callable">
-                  <span class="name ">handleEvent</span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="hit_test/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+                  <span class="name ">handleEvent</span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="rendering/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
                       &#8594;
                       <span class="returntype"><a href="object/EventDisposition-class.html">EventDisposition</a></span>
                   </span>
@@ -717,24 +742,25 @@ child. Do not call directly.</p>
                   <p>Override this function to handle events that hit this render object</p>
               </dd>
               <dt id="hitTest" class="callable">
-                  <span class="name ">hitTest</span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                  <span class="name ">hitTest</span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
                       &#8594;
                       <span class="returntype">bool</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Determines the set of render objects located at the given position</p>
               </dd>
               <dt id="hitTestChildren" class="callable">
-                  <span class="name ">hitTestChildren</span><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="hit_test/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+                  <span class="name ">hitTestChildren</span><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Override this function to check whether any children are located at the
+given position</p>
               </dd>
               <dt id="invokeLayoutCallback" class="callable">
                   <span class="name ">invokeLayoutCallback</span><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)</span>)
@@ -765,7 +791,8 @@ invokes callback</p>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p></p>
+                  <p>Convert the given point from the local coordiante system for this box to
+the global coordinate sytem</p>
               </dd>
               <dt id="markNeedsLayout" class="callable">
                   <span class="name ">markNeedsLayout</span><span class="signature">(<wbr>)
@@ -818,14 +845,14 @@ invokes callback</p>
                   <p>Updates the render objects size using only the constraints</p>
               </dd>
               <dt id="redepthChild" class="callable">
-                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="node/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+                  <span class="name ">redepthChild</span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="rendering/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
                   <div class="features">inherited</div>
-                  <p>Call only from overrides of <a href="node/AbstractNode/redepthChildren.html">redepthChildren</a></p>
+                  <p>Call only from overrides of <a href="rendering/AbstractNode/redepthChildren.html">redepthChildren</a></p>
               </dd>
               <dt id="redepthChildren" class="callable">
                   <span class="name ">redepthChildren</span><span class="signature">(<wbr>)

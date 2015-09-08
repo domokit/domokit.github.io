@@ -182,28 +182,22 @@
   TextStyle yearStyle = headerTheme.headline.copyWith(color: yearColor, height: 1.0);
 
   return new Container(
-    child: new BlockBody([
-      new Center(
-        child: new GestureDetector(
-          child: new Text(new DateFormat(&quot;MMM&quot;).format(selectedDate).toUpperCase(), style: monthStyle),
-          onTap: () =&gt; _handleChangeMode(DatePickerMode.day)
-        )
-      ),
-      new Center(
-        child: new GestureDetector(
-          child: new Text(new DateFormat(&quot;d&quot;).format(selectedDate), style: dayStyle),
-          onTap: () =&gt; _handleChangeMode(DatePickerMode.day)
-        )
-      ),
-      new Center(
-        child: new GestureDetector(
-          child: new Text(new DateFormat(&quot;yyyy&quot;).format(selectedDate), style: yearStyle),
-          onTap: () =&gt; _handleChangeMode(DatePickerMode.year)
-        )
-      )
-    ]),
     padding: new EdgeDims.all(10.0),
-    decoration: new BoxDecoration(backgroundColor: theme.primaryColor)
+    decoration: new BoxDecoration(backgroundColor: theme.primaryColor),
+    child: new Column([
+      new GestureDetector(
+        onTap: () =&gt; _handleChangeMode(DatePickerMode.day),
+        child: new Text(new DateFormat(&quot;MMM&quot;).format(selectedDate).toUpperCase(), style: monthStyle)
+      ),
+      new GestureDetector(
+        onTap: () =&gt; _handleChangeMode(DatePickerMode.day),
+        child: new Text(new DateFormat(&quot;d&quot;).format(selectedDate), style: dayStyle)
+      ),
+      new GestureDetector(
+        onTap: () =&gt; _handleChangeMode(DatePickerMode.year),
+        child: new Text(new DateFormat(&quot;yyyy&quot;).format(selectedDate), style: yearStyle)
+      )
+    ])
   );
 }</code></pre>
     </section>

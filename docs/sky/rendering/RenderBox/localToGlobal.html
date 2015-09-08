@@ -228,13 +228,16 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Convert the given point from the local coordiante system for this box to
+the global coordinate sytem</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">Point localToGlobal(Point point) {
+      <pre><code class="prettyprint lang-dart">/// Convert the given point from the local coordiante system for this box to
+/// the global coordinate sytem
+Point localToGlobal(Point point) {
   List &lt;RenderObject&gt; renderers = &lt;RenderObject&gt;[];
   for (RenderObject renderer = this; renderer != null; renderer = renderer.parent)
     renderers.add(renderer);

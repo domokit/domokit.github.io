@@ -137,10 +137,6 @@
     <section class="multi-line-signature">
             <span class="returntype">String</span>
             <span class="name ">toStringName</span>(
-            <br>
-            <div class="parameters">
-                [<span class="parameter" id="toStringName-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>,<br><span class="parameter" id="toStringName-param-startPrefix"><span class="type-annotation">String</span> <span class="parameter-name">startPrefix</span> = <span class="default-value">''</span></span>]
-            </div>
             )    </section>
 
     <section class="desc markdown">
@@ -151,7 +147,7 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">String toStringName([String prefix = &apos;&apos;, String startPrefix = &apos;&apos;]) {
+      <pre><code class="prettyprint lang-dart">String toStringName() {
   if (_disqualifiedFromEverAppearingAgain)
     return &apos;[[DISQUALIFIED]] ${super.toStringName()}&apos;;
   return super.toStringName();
@@ -168,7 +164,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

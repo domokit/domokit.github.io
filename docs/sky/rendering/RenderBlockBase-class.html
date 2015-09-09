@@ -90,8 +90,8 @@
       <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
       <li><a href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
       <li><a href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
-      <li><a href="rendering/DimensionCallback.html">DimensionCallback</a></li>
       <li><a href="rendering/EventListener.html">EventListener</a></li>
+      <li><a href="rendering/ExtentCallback.html">ExtentCallback</a></li>
       <li><a href="rendering/LayoutCallback.html">LayoutCallback</a></li>
       <li><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
@@ -227,7 +227,14 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Implements the block layout algorithm</p>
+<p>In block layout, children are arranged linearly along the main axis (either
+horizontally or vertically). In the cross axis, children are stretched to
+match the block's cross-axis extent. In the main axis, children are given
+unlimited space and the block expands its main axis to contain all its
+children. Because blocks expand in the main axis, blocks must be given
+unlimited space in the main axis, typically by being contained in a
+viewport with a scrolling direction that matches the block's main axis.</p>
     
     </section>
 
@@ -373,7 +380,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>The direction to use as the main axis</p>
             </dd>
             <dt id="firstChild" class="property">
             <span class="name ">firstChild</span>    
@@ -403,7 +410,7 @@
                 <div class="features">
         read-only
     </div>
-    <p></p>
+    <p>Whether the main axis is vertical</p>
             </dd>
             <dt id="itemExtent" class="property">
                 <span class="name"><a href="rendering/RenderBlockBase/itemExtent.html">itemExtent</a></span>
@@ -413,7 +420,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>If non-null, forces children to be exactly this large in the main axis</p>
             </dd>
             <dt id="lastChild" class="property">
             <span class="name ">lastChild</span>    
@@ -443,7 +450,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>Forces the block to be at least this large in the main-axis</p>
             </dd>
             <dt id="needsCompositing" class="property">
             <span class="name ">needsCompositing</span>    
@@ -1277,7 +1284,7 @@ redepthChild(child) for each child. Do not call directly.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

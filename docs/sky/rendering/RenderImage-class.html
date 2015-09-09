@@ -90,8 +90,8 @@
       <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
       <li><a href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
       <li><a href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
-      <li><a href="rendering/DimensionCallback.html">DimensionCallback</a></li>
       <li><a href="rendering/EventListener.html">EventListener</a></li>
+      <li><a href="rendering/ExtentCallback.html">ExtentCallback</a></li>
       <li><a href="rendering/LayoutCallback.html">LayoutCallback</a></li>
       <li><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
@@ -227,7 +227,9 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>An image in the render tree</p>
+<p>The render image attempts to find a size for itself that fits in the given
+constraints and preserves the image's intrinisc aspect ratio.</p>
     
     </section>
 
@@ -273,7 +275,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>If non-null, apply this color filter to the image before painint.</p>
             </dd>
             <dt id="constraints" class="property">
             <span class="name ">constraints</span>    
@@ -363,7 +365,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>How to inscribe the image into the place allocated during layout</p>
             </dd>
             <dt id="hasLayer" class="property">
             <span class="name ">hasLayer</span>    
@@ -383,7 +385,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>If non-null, requires the image to have this height</p>
             </dd>
             <dt id="image" class="property">
                 <span class="name"><a href="rendering/RenderImage/image.html">image</a></span>
@@ -393,7 +395,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>The image to display</p>
             </dd>
             <dt id="layer" class="property">
             <span class="name ">layer</span>    
@@ -473,7 +475,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>Not yet implemented</p>
             </dd>
             <dt id="size" class="property">
             <span class="name ">size</span>    
@@ -504,7 +506,7 @@ particular, child nodes have no impact)</p>
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>If non-null, requires the image to have this width</p>
             </dd>
         </dl>
     </section>
@@ -1135,7 +1137,7 @@ redepthChild(child) for each child. Do not call directly.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

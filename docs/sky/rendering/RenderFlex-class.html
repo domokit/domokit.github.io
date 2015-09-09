@@ -90,8 +90,8 @@
       <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
       <li><a href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
       <li><a href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
-      <li><a href="rendering/DimensionCallback.html">DimensionCallback</a></li>
       <li><a href="rendering/EventListener.html">EventListener</a></li>
+      <li><a href="rendering/ExtentCallback.html">ExtentCallback</a></li>
       <li><a href="rendering/LayoutCallback.html">LayoutCallback</a></li>
       <li><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
@@ -227,7 +227,19 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Implements the flex layout algorithm</p>
+<p>In flex layout, children are arranged linearly along the main axis (either
+horizontally or vertically). First, inflexible children (those with a null
+flex factor) are allocated space along the main axis. If the flex is given
+unlimited space in the main axis, the flex sizes its main axis to the total
+size of the inflexible children along the main axis and forbids flexible
+children. Otherwise, the flex expands to the maximum max-axis size and the
+remaining space along is divided among the flexible children according to
+their flex factors. Any remaining free space (i.e., if there aren't any
+flexible children) is allocated according to the <a href="rendering/RenderFlex/justifyContent.html">justifyContent</a> property.</p>
+<p>In the cross axis, children determine their own size. The flex then sizes
+its cross axis to fix the largest of its children. The children are then
+positioned along the cross axis according to the <a href="rendering/RenderFlex/alignItems.html">alignItems</a> property.</p>
     
     </section>
 
@@ -268,7 +280,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>How the children should be placed along the cross axis</p>
             </dd>
             <dt id="attached" class="property">
             <span class="name ">attached</span>    
@@ -378,7 +390,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>The direction to use as the main axis</p>
             </dd>
             <dt id="firstChild" class="property">
             <span class="name ">firstChild</span>    
@@ -408,7 +420,7 @@
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>How the children should be placed along the main axis</p>
             </dd>
             <dt id="lastChild" class="property">
             <span class="name ">lastChild</span>    
@@ -519,7 +531,7 @@ particular, child nodes have no impact)</p>
                 <div class="features">
         read / write
     </div>
-    <p></p>
+    <p>If using aligning items according to their baseline, which baseline to use</p>
             </dd>
         </dl>
     </section>
@@ -1271,7 +1283,7 @@ redepthChild(child) for each child. Do not call directly.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

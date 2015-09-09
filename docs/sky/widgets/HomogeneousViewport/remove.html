@@ -125,9 +125,9 @@
 </li>
       <li>findAncestorRenderObjectWrapper
 </li>
-      <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisDimension.html">getMaxCrossAxisDimension</a>
+      <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisExtent.html">getMaxCrossAxisExtent</a>
 </li>
-      <li><a href="widgets/HomogeneousViewport/getMinCrossAxisDimension.html">getMinCrossAxisDimension</a>
+      <li><a href="widgets/HomogeneousViewport/getMinCrossAxisExtent.html">getMinCrossAxisExtent</a>
 </li>
       <li><a href="widgets/HomogeneousViewport/getTotalExtent.html">getTotalExtent</a>
 </li>
@@ -189,8 +189,8 @@
       <pre><code class="prettyprint lang-dart">void remove() {
   renderObject.callback = null;
   renderObject.totalExtentCallback = null;
-  renderObject.minCrossAxisDimensionCallback = null;
-  renderObject.maxCrossAxisDimensionCallback = null;
+  renderObject.minCrossAxisExtentCallback = null;
+  renderObject.maxCrossAxisExtentCallback = null;
   super.remove();
   _children.clear();
   _layoutDirty = true;
@@ -207,7 +207,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

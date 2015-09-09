@@ -125,9 +125,9 @@
 </li>
       <li>findAncestorRenderObjectWrapper
 </li>
-      <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisDimension.html">getMaxCrossAxisDimension</a>
+      <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisExtent.html">getMaxCrossAxisExtent</a>
 </li>
-      <li><a href="widgets/HomogeneousViewport/getMinCrossAxisDimension.html">getMinCrossAxisDimension</a>
+      <li><a href="widgets/HomogeneousViewport/getMinCrossAxisExtent.html">getMinCrossAxisExtent</a>
 </li>
       <li><a href="widgets/HomogeneousViewport/getTotalExtent.html">getTotalExtent</a>
 </li>
@@ -192,8 +192,8 @@
   RenderBlockViewport result = new RenderBlockViewport();
   result.callback = layout;
   result.totalExtentCallback = getTotalExtent;
-  result.minCrossAxisDimensionCallback = getMinCrossAxisDimension;
-  result.maxCrossAxisDimensionCallback = getMaxCrossAxisDimension;
+  result.minCrossAxisExtentCallback = getMinCrossAxisExtent;
+  result.maxCrossAxisExtentCallback = getMaxCrossAxisExtent;
   return result;
 }</code></pre>
     </section>
@@ -208,7 +208,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

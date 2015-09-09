@@ -225,19 +225,19 @@
             <dd>
                 <p></p>
             </dd>
-            <dt id="DimensionCallback" class="callable">
-                <a href="rendering/DimensionCallback.html"><span class="name ">DimensionCallback</span></a><span class="signature">(<wbr><span class="parameter" id="DimensionCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)
+            <dt id="EventListener" class="callable">
+                <a href="rendering/EventListener.html"><span class="name ">EventListener</span></a><span class="signature">(<wbr><span class="parameter" id="EventListener-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>)
                     &#8594;
-                    <span class="returntype">double</span>
+                    <span class="returntype">void</span>
                 </span>
             </dt>
             <dd>
                 <p></p>
             </dd>
-            <dt id="EventListener" class="callable">
-                <a href="rendering/EventListener.html"><span class="name ">EventListener</span></a><span class="signature">(<wbr><span class="parameter" id="EventListener-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>)
+            <dt id="ExtentCallback" class="callable">
+                <a href="rendering/ExtentCallback.html"><span class="name ">ExtentCallback</span></a><span class="signature">(<wbr><span class="parameter" id="ExtentCallback-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)
                     &#8594;
-                    <span class="returntype">void</span>
+                    <span class="returntype">double</span>
                 </span>
             </dt>
             <dd>
@@ -382,7 +382,7 @@ maximum amount of processing indicated by the two inputs.</p>
                 <a href="rendering/BlockDirection-class.html">BlockDirection</a>
             </dt>
             <dd>
-                <p></p>
+                <p>The direction in which the block should lay out</p>
             </dd>
             <dt id="BoxDecorationPosition">
                 <a href="rendering/BoxDecorationPosition-class.html">BoxDecorationPosition</a>
@@ -400,19 +400,19 @@ maximum amount of processing indicated by the two inputs.</p>
                 <a href="rendering/FlexAlignItems-class.html">FlexAlignItems</a>
             </dt>
             <dd>
-                <p></p>
+                <p>How the children should be placed along the cross axis in a flex layout</p>
             </dd>
             <dt id="FlexDirection">
                 <a href="rendering/FlexDirection-class.html">FlexDirection</a>
             </dt>
             <dd>
-                <p></p>
+                <p>The direction in which the box should flex</p>
             </dd>
             <dt id="FlexJustifyContent">
                 <a href="rendering/FlexJustifyContent-class.html">FlexJustifyContent</a>
             </dt>
             <dd>
-                <p></p>
+                <p>How the children should be placed along the main axis in a flex layout</p>
             </dd>
             <dt id="FontStyle">
                 <a href="rendering/FontStyle-class.html">FontStyle</a>
@@ -516,7 +516,7 @@ maximum amount of processing indicated by the two inputs.</p>
                 <span class="name "><a href="rendering/BlockParentData-class.html">BlockParentData</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Parent data for use with <a href="rendering/RenderBlockBase-class.html">RenderBlockBase</a></p>
             </dd>
             <dt id="Border">
                 <span class="name "><a href="rendering/Border-class.html">Border</a></span>
@@ -635,7 +635,7 @@ maximum amount of processing indicated by the two inputs.</p>
                 <span class="name "><a href="rendering/FlexParentData-class.html">FlexParentData</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Parent data for use with <a href="rendering/RenderFlex-class.html">RenderFlex</a></p>
             </dd>
             <dt id="Gradient">
                 <span class="name "><a href="rendering/Gradient-class.html">Gradient</a></span>
@@ -796,19 +796,21 @@ Values are stored in column major order.</p>
                 <span class="name "><a href="rendering/RenderBlock-class.html">RenderBlock</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>A block layout with a concrete set of children</p>
             </dd>
             <dt id="RenderBlockBase">
                 <span class="name "><a href="rendering/RenderBlockBase-class.html">RenderBlockBase</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Implements the block layout algorithm<a href="rendering/RenderBlockBase-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="RenderBlockViewport">
                 <span class="name "><a href="rendering/RenderBlockViewport-class.html">RenderBlockViewport</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>A block layout whose children depend on its layout<a href="rendering/RenderBlockViewport-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="RenderBox">
                 <span class="name "><a href="rendering/RenderBox-class.html">RenderBox</a></span>
@@ -870,7 +872,8 @@ Values are stored in column major order.</p>
                 <span class="name "><a href="rendering/RenderFlex-class.html">RenderFlex</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>Implements the flex layout algorithm<a href="rendering/RenderFlex-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="RenderGrid">
                 <span class="name "><a href="rendering/RenderGrid-class.html">RenderGrid</a></span>
@@ -888,7 +891,8 @@ Values are stored in column major order.</p>
                 <span class="name "><a href="rendering/RenderImage-class.html">RenderImage</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>An image in the render tree<a href="rendering/RenderImage-class.html">&hellip;</a>
+</p>
             </dd>
             <dt id="RenderObject">
                 <span class="name "><a href="rendering/RenderObject-class.html">RenderObject</a></span>
@@ -1066,8 +1070,8 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
       <li><a href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
       <li><a href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
-      <li><a href="rendering/DimensionCallback.html">DimensionCallback</a></li>
       <li><a href="rendering/EventListener.html">EventListener</a></li>
+      <li><a href="rendering/ExtentCallback.html">ExtentCallback</a></li>
       <li><a href="rendering/LayoutCallback.html">LayoutCallback</a></li>
       <li><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
       <li><a href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
@@ -1208,7 +1212,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

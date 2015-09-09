@@ -181,8 +181,8 @@
       <pre><code class="prettyprint lang-dart">void remove() {
   renderObject.callback = null;
   renderObject.totalExtentCallback = null;
-  renderObject.maxCrossAxisDimensionCallback = null;
-  renderObject.minCrossAxisDimensionCallback = null;
+  renderObject.maxCrossAxisExtentCallback = null;
+  renderObject.minCrossAxisExtentCallback = null;
   super.remove();
   _childrenByKey.clear();
   layoutState._dirty = true;
@@ -199,7 +199,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

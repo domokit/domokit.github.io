@@ -101,83 +101,12 @@
 
       <section class="desc markdown">
       
-            <h1>Getting Started with Sky</h1>
-<p>Sky apps are written in Dart. To get started, we need to set up Dart SDK:</p><ul><li>Install the <a href="https://www.dartlang.org/downloads/">Dart SDK</a>:</li><li>Mac: <code>brew tap dart-lang/dart &amp;&amp; brew install dart --devel</code></li><li>Linux: See <a href="https://www.dartlang.org/downloads/linux.html">https://www.dartlang.org/downloads/linux.html</a></li><li>
-<p>Ensure that <code>$DART_SDK</code> is set to the path of your Dart SDK and that the
-   <code>dart</code> and <code>pub</code> executables are on your <code>$PATH</code>.</p></li></ul>
-<p>Once you have installed Dart SDK, create a new directory and add a
-<a href="https://www.dartlang.org/tools/pub/pubspec.html">pubspec.yaml</a>:</p>
-<pre class="yaml"><code>name: your_app_name
-dependencies:
-  sky: any
-  sky_tools: any
-</code></pre>
-<p>Next, create a <code>lib</code> directory (which is where your Dart code will go) and use
-the <code>pub</code> tool to fetch the Sky package and its dependencies:</p><ul><li><code>mkdir lib</code></li><li><code>pub upgrade</code></li></ul>
-<p>Sky assumes the entry point for your application is a <code>main</code> function in
-<code>lib/main.dart</code>:</p>
-<pre class="dart"><code>import 'package:sky/widgets.dart';
-
-class HelloWorldApp extends App {
-  Widget build() {
-    return new Center(child: new Text('Hello, world!'));
-  }
-}
-
-void main() {
-  runApp(new HelloWorldApp());
-}
-</code></pre>
-<p>Execution starts in <code>main</code>, which in this example runs a new instance of the <code>HelloWorldApp</code>.
-The <code>HelloWorldApp</code> builds a <code>Text</code> widget containing the traditional <code>Hello, world!</code>
-string and centers it on the screen using a <code>Center</code> widget. To learn more about
-the widget system, please see the
-<a href="https://github.com/domokit/sky_engine/blob/master/sky/packages/sky/lib/src/widgets/README.md">widgets tutorial</a>.</p>
-<h2>Setting up your Android device</h2>
-<p>Currently Sky requires an Android device running the Lollipop (or newer) version
-of the Android operating system.</p><ul><li>Install the <code>adb</code> tool from the <a href="https://developer.android.com/sdk/installing/index.html?pkg=tools">Android SDK</a>:</li><li>Mac: <code>brew install android-platform-tools</code></li><li>
-<p>Linux: <code>sudo apt-get install android-tools-adb</code>
-- If the version of <code>adb</code> provided by your Linux distribution is too old,
-  you might need to <a href="https://developer.android.com/sdk/installing/index.html?pkg=tools]">install the Android SDK manually</a>.</p></li><li>
-<p>Enable developer mode on your device by visiting <code>Settings &gt; About phone</code>
-   and tapping the <code>Build number</code> field five times.</p></li><li>
-<p>Enable <code>Android debugging</code> in <code>Settings &gt; Developer options</code>.</p></li><li>
-<p>Using a USB cable, plug your phone into your computer. If prompted on your
-   device, authorize your computer to access your device.</p></li></ul>
-<h2>Running a Sky application</h2>
-<p>The <code>sky</code> pub package includes a <code>sky_tool</code> script to assist in running
-Sky applications inside the <code>SkyShell.apk</code> harness.  The <code>sky_tool</code> script
-expects to be run from the root directory of your application's package (i.e.,
-the same directory that contains the <code>pubspec.yaml</code> file).</p>
-<p>To run your app with logging, run this command:
- - <code>./packages/sky/sky_tool start --checked &amp;&amp; ./packages/sky/sky_tool logs</code></p>
-<p>The <code>sky_tool start</code> command starts the dev server and uploads your app to the device, installing <code>SkyShell.apk</code> if needed.
-The <code>--checked</code> flag triggers checked mode, in which types are checked, asserts are run, and
-various <a href="https://github.com/domokit/sky_engine/blob/master/sky/packages/sky/lib/base/debug.dart">debugging features</a> are enabled.
-The <code>sky_tool logs</code> command logs errors and Dart <code>print()</code> output from the app, automatically limiting the output to just output from Sky Dart code and the Sky Engine C++ code (which
-for historical reasons currently uses the tag <code>chromium</code>.)</p>
-<p>To avoid confusion from old log messages, you may wish to call <code>sky_tool logs --clear</code> before calling
-<code>sky_tool start</code>, to clear the log between runs.</p>
-<h2>Rapid Iteration</h2>
-<p>As an alternative to running <code>./packages/sky/sky_tool start</code> every time you make a change,
-you might prefer to have the SkyShell reload your app automatically for you as you edit.  To
-do this, run the following command:</p><ul><li><code>./packages/sky/sky_tool listen</code></li></ul>
-<p>This is a long-running command -- just press <code>ctrl-c</code> when you want to stop listening for
-changes to the file system and automatically reloading your app.</p>
-<p>Currently <code>sky_tool listen</code> only works for Android, but iOS device and iOS simulator support
-are coming soon.</p>
-<h2>Debugging</h2>
-<p>Sky uses <a href="https://www.dartlang.org/tools/observatory/">Observatory</a> for
-debugging and profiling. While running your Sky app using <code>sky_tool</code>, you can
-access Observatory by navigating your web browser to
-<a href="http://localhost:8181/">http://localhost:8181/</a>.</p>
-<h2>Building a standalone APK</h2>
-<p>Although it is possible to build a standalone APK containing your application,
-doing so right now is difficult. If you're feeling brave, you can see how we
-build the <code>Stocks.apk</code> in
-<a href="https://github.com/domokit/sky_engine/tree/master/examples/stocks">examples/stocks</a>.
-Eventually we plan to make this much easier and support platforms other than
-Android, but that work still in progress.</p>
+            <h1>Sky</h1>
+<p>Sky is a new way to build high-performance, cross-platform mobile apps.
+Sky is optimized for today's, and tomorrow's, mobile devices. We are
+focused on low-latency input and high frame rates on Android and iOS.</p>
+<p>See the <a href="https://flutter.github.io/getting-started/">getting started guide</a> for
+information about using Sky.</p>
       
       </section>
 
@@ -439,7 +368,7 @@ Android, but that work still in progress.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

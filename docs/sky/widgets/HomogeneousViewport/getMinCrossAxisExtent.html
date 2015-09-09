@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>getMaxCrossAxisDimension method - HomogeneousViewport class - widgets library - Dart API</title>
+    <title>getMinCrossAxisExtent method - HomogeneousViewport class - widgets library - Dart API</title>
     <!-- required because all the links are pseudo-absolute -->
     <base href="../..">
 
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="static-assets/styles.css">
 
-    <meta name="description" content="API docs for the getMaxCrossAxisDimension method from the HomogeneousViewport class, for the Dart programming language.">
+    <meta name="description" content="API docs for the getMinCrossAxisExtent method from the HomogeneousViewport class, for the Dart programming language.">
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
@@ -34,9 +34,9 @@
                   <li><a href="index.html">sky</a></li>
                   <li><a href="widgets/widgets-library.html">widgets</a></li>
                   <li><a href="widgets/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
-                  <li class="self-crumb">getMaxCrossAxisDimension</li>
+                  <li class="self-crumb">getMinCrossAxisExtent</li>
               </ol>
-              <div class="self-name">getMaxCrossAxisDimension</div>
+              <div class="self-name">getMinCrossAxisExtent</div>
               <form class="search navbar-right" role="search">
                 <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
               </form>
@@ -52,15 +52,15 @@
               <li><a href="index.html">sky</a></li>
               <li><a href="widgets/widgets-library.html">widgets</a></li>
               <li><a href="widgets/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
-              <li class="self-crumb">getMaxCrossAxisDimension</li>
+              <li class="self-crumb">getMinCrossAxisExtent</li>
           </ol>
           <div class="title-description">
               <h1 class="title">
-                  <div class="kind">method</div> getMaxCrossAxisDimension
+                  <div class="kind">method</div> getMinCrossAxisExtent
               </h1>
           </div>
           <ul class="subnav">
-              <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisDimension.html#source">Source</a></li>
+              <li><a href="widgets/HomogeneousViewport/getMinCrossAxisExtent.html#source">Source</a></li>
           </ul>
         </div> <!-- /col -->
       </div> <!-- /row -->
@@ -125,9 +125,9 @@
 </li>
       <li>findAncestorRenderObjectWrapper
 </li>
-      <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisDimension.html">getMaxCrossAxisDimension</a>
+      <li><a href="widgets/HomogeneousViewport/getMaxCrossAxisExtent.html">getMaxCrossAxisExtent</a>
 </li>
-      <li><a href="widgets/HomogeneousViewport/getMinCrossAxisDimension.html">getMinCrossAxisDimension</a>
+      <li><a href="widgets/HomogeneousViewport/getMinCrossAxisExtent.html">getMinCrossAxisExtent</a>
 </li>
       <li><a href="widgets/HomogeneousViewport/getTotalExtent.html">getTotalExtent</a>
 </li>
@@ -175,10 +175,10 @@
 
     <section class="multi-line-signature">
             <span class="returntype">double</span>
-            <span class="name ">getMaxCrossAxisDimension</span>(
+            <span class="name ">getMinCrossAxisExtent</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="getMaxCrossAxisDimension-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>
+                <span class="parameter" id="getMinCrossAxisExtent-param-constraints"><span class="type-annotation"><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>
             </div>
             )    </section>
 
@@ -190,10 +190,8 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">double getMaxCrossAxisDimension(BoxConstraints constraints) {
-  if (direction == ScrollDirection.vertical)
-    return constraints.maxWidth;
-  return constraints.maxHeight;
+      <pre><code class="prettyprint lang-dart">double getMinCrossAxisExtent(BoxConstraints constraints) {
+  return 0.0;
 }</code></pre>
     </section>
 
@@ -207,7 +205,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

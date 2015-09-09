@@ -183,9 +183,9 @@
   // create it, because the render object is empty so it will not matter
   RenderBlockViewport result = new RenderBlockViewport();
   result.callback = layout;
-  result.totalExtentCallback = _noIntrinsicDimensions;
-  result.maxCrossAxisDimensionCallback = _noIntrinsicDimensions;
-  result.minCrossAxisDimensionCallback = _noIntrinsicDimensions;
+  result.totalExtentCallback = _noIntrinsicExtent;
+  result.maxCrossAxisExtentCallback = _noIntrinsicExtent;
+  result.minCrossAxisExtentCallback = _noIntrinsicExtent;
   return result;
 }</code></pre>
     </section>
@@ -200,7 +200,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.41 api docs
+                  sky 0.0.42 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

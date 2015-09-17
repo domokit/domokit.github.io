@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>serializeWithHeader method - ActivitySetRequestedOrientationParams class - services library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the serializeWithHeader method from the ActivitySetRequestedOrientationParams class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="services/services-library.html">services</a></li>
+                  <li><a href="services/ActivitySetRequestedOrientationParams-class.html">ActivitySetRequestedOrientationParams</a></li>
+                  <li class="self-crumb">serializeWithHeader</li>
+              </ol>
+              <div class="self-name">serializeWithHeader</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="services/services-library.html">services</a></li>
+              <li><a href="services/ActivitySetRequestedOrientationParams-class.html">ActivitySetRequestedOrientationParams</a></li>
+              <li class="self-crumb">serializeWithHeader</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> serializeWithHeader
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="services/ActivitySetRequestedOrientationParams/serializeWithHeader.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="services/services-library.html">services</a></h5>
+    <h5><a href="services/ActivitySetRequestedOrientationParams-class.html">ActivitySetRequestedOrientationParams</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="services/ActivitySetRequestedOrientationParams-class.html#constants">Constants</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/kVersions.html">kVersions</a></li>
+    
+    
+      <li class="section-title"><a href="services/ActivitySetRequestedOrientationParams-class.html#static-methods">Static methods</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/decode.html">decode</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/deserialize.html">deserialize</a></li>
+    
+      <li class="section-title"><a href="services/ActivitySetRequestedOrientationParams-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/encodedSize.html">encodedSize</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/orientation.html">orientation</a></li>
+    
+      <li class="section-title"><a href="services/ActivitySetRequestedOrientationParams-class.html#constructors">Constructors</a></li>
+      <li><a href="services/ActivitySetRequestedOrientationParams/ActivitySetRequestedOrientationParams.html">ActivitySetRequestedOrientationParams</a></li>
+    
+    
+      <li class="section-title"><a href="services/ActivitySetRequestedOrientationParams-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/encode.html">encode</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/serialize.html">serialize</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/serializeWithHeader.html">serializeWithHeader</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams/toString.html">toString</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype">ServiceMessage</span>
+            <span class="name ">serializeWithHeader</span>(
+            <br>
+            <div class="parameters">
+                <span class="parameter" id="serializeWithHeader-param-header"><span class="type-annotation">MessageHeader</span> <span class="parameter-name">header</span></span>
+            </div>
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">ServiceMessage serializeWithHeader(MessageHeader header) {
+  var encoder = new Encoder(encodedSize + header.size);
+  header.encode(encoder);
+  encode(encoder);
+  return new ServiceMessage(encoder.message, header);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.45 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.6.3 -->
+</body>
+
+</html>

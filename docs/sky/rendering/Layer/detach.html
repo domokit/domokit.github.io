@@ -81,26 +81,19 @@
     
     
       <li class="section-title"><a href="rendering/Layer-class.html#instance-properties">Properties</a></li>
-      <li><a href="rendering/Layer/nextSibling.html">nextSibling</a>
-</li>
-      <li><a href="rendering/Layer/offset.html">offset</a>
-</li>
-      <li><a href="rendering/Layer/parent.html">parent</a>
-</li>
-      <li><a href="rendering/Layer/previousSibling.html">previousSibling</a>
-</li>
+      <li><a class="" href="rendering/Layer/nextSibling.html">nextSibling</a></li>
+      <li><a class="" href="rendering/Layer/offset.html">offset</a></li>
+      <li><a class="" href="rendering/Layer/parent.html">parent</a></li>
+      <li><a class="" href="rendering/Layer/previousSibling.html">previousSibling</a></li>
     
       <li class="section-title"><a href="rendering/Layer-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/Layer/Layer.html">Layer</a></li>
     
     
       <li class="section-title"><a href="rendering/Layer-class.html#instance-methods">Methods</a></li>
-      <li><a href="rendering/Layer/addToScene.html">addToScene</a>
-</li>
-      <li><a href="rendering/Layer/detach.html">detach</a>
-</li>
-      <li><a href="rendering/Layer/replaceWith.html">replaceWith</a>
-</li>
+      <li><a class="" href="rendering/Layer/addToScene.html">addToScene</a></li>
+      <li><a class="" href="rendering/Layer/detach.html">detach</a></li>
+      <li><a class="" href="rendering/Layer/replaceWith.html">replaceWith</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -114,15 +107,16 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Removes this layer from its parent layer's child list</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void detach() {
+      <pre><code class="prettyprint lang-dart">/// Removes this layer from its parent layer&apos;s child list
+void detach() {
   if (_parent != null)
-    _parent.remove(this);
+    _parent._remove(this);
 }</code></pre>
     </section>
 
@@ -136,7 +130,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.42 api docs
+                  sky 0.0.45 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -160,7 +154,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.1 -->
+<!-- Made with <3 by dartdoc version 0.6.3 -->
 </body>
 
 </html>

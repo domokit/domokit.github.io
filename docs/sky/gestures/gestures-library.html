@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gestures library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="gestures library API docs, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li class="self-crumb">gestures</li>
+              </ol>
+              <div class="self-name">gestures</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li class="self-crumb">gestures</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">library</div> gestures
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="gestures/gestures-library.html#constants">Constants</a></li>
+              <li><a href="gestures/gestures-library.html#typedefs">Typedefs</a></li>
+              <li><a href="gestures/gestures-library.html#enums">Enums</a></li>
+              <li><a href="gestures/gestures-library.html#classes">Classes</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="animation/animation-library.html">animation</a></li>
+      <li><a href="colors/colors-library.html">colors</a></li>
+      <li><a href="edges/edges-library.html">edges</a></li>
+      <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
+      <li><a href="rendering/rendering-library.html">rendering</a></li>
+      <li><a href="services/services-library.html">services</a></li>
+      <li><a href="shadows/shadows-library.html">shadows</a></li>
+      <li><a href="theme_data/theme_data-library.html">theme_data</a></li>
+      <li><a href="typography/typography-library.html">typography</a></li>
+      <li><a href="view_configuration/view_configuration-library.html">view_configuration</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>The Sky gesture recognizers</p>
+    
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+        <h2>Constants</h2>
+
+        <dl class="properties">
+            <dt id="kDoubleTapMinTime" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kDoubleTapMinTime.html">kDoubleTapMinTime</a></span>
+                <span class="signature">= const Duration(milliseconds: 40)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kDoubleTapSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kDoubleTapSlop.html">kDoubleTapSlop</a></span>
+                <span class="signature">= 100.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kDoubleTapTimeout" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kDoubleTapTimeout.html">kDoubleTapTimeout</a></span>
+                <span class="signature">= const Duration(milliseconds: 300)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kDoubleTapTouchSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kDoubleTapTouchSlop.html">kDoubleTapTouchSlop</a></span>
+                <span class="signature">= kTouchSlop</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kEdgeSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kEdgeSlop.html">kEdgeSlop</a></span>
+                <span class="signature">= 12.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kHoverTapSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kHoverTapSlop.html">kHoverTapSlop</a></span>
+                <span class="signature">= 20.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kHoverTapTimeout" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kHoverTapTimeout.html">kHoverTapTimeout</a></span>
+                <span class="signature">= const Duration(milliseconds: 150)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kJumpTapTimeout" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kJumpTapTimeout.html">kJumpTapTimeout</a></span>
+                <span class="signature">= const Duration(milliseconds: 500)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kLongPressTimeout" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kLongPressTimeout.html">kLongPressTimeout</a></span>
+                <span class="signature">= const Duration(milliseconds: 500)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kMaxFlingVelocity" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kMaxFlingVelocity.html">kMaxFlingVelocity</a></span>
+                <span class="signature">= 8000.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kMinFlingVelocity" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kMinFlingVelocity.html">kMinFlingVelocity</a></span>
+                <span class="signature">= 50.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kPagingTouchSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kPagingTouchSlop.html">kPagingTouchSlop</a></span>
+                <span class="signature">= kTouchSlop * 2.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kPanSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kPanSlop.html">kPanSlop</a></span>
+                <span class="signature">= kTouchSlop * 2.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kScaleSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kScaleSlop.html">kScaleSlop</a></span>
+                <span class="signature">= kTouchSlop</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kTapTimeout" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kTapTimeout.html">kTapTimeout</a></span>
+                <span class="signature">= const Duration(milliseconds: 100)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kTouchSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kTouchSlop.html">kTouchSlop</a></span>
+                <span class="signature">= 8.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kWindowTouchSlop" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="gestures/kWindowTouchSlop.html">kWindowTouchSlop</a></span>
+                <span class="signature">= 16.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kZoomControlsTimeout" class="constant">
+                <span class="top-level-variable-type">Duration</span>
+                <span class="name "><a class="" href="gestures/kZoomControlsTimeout.html">kZoomControlsTimeout</a></span>
+                <span class="signature">= const Duration(milliseconds: 3000)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="typedefs">
+        <h2>Typedefs</h2>
+
+        <dl class="callables">
+            <dt id="GestureDragEndCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragEndCallback-param-velocity"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">velocity</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureDragStartCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureDragUpdateCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragUpdateCallback-param-delta"><span class="type-annotation">double</span> <span class="parameter-name">delta</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureLongPressListener" class="callable">
+                <span class="name "><a class="" href="gestures/GestureLongPressListener.html">GestureLongPressListener</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GesturePanEndCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GesturePanEndCallback.html">GesturePanEndCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GesturePanEndCallback-param-velocity"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">velocity</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GesturePanStartCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GesturePanStartCallback.html">GesturePanStartCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GesturePanUpdateCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GesturePanUpdateCallback.html">GesturePanUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GesturePanUpdateCallback-param-delta"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">delta</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureScaleEndCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureScaleStartCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureScaleStartCallback-param-focalPoint"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">focalPoint</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureScaleUpdateCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureScaleUpdateCallback-param-scale"><span class="type-annotation">double</span> <span class="parameter-name">scale</span></span>, <span class="parameter" id="GestureScaleUpdateCallback-param-focalPoint"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">focalPoint</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureShowPressListener" class="callable">
+                <span class="name "><a class="" href="gestures/GestureShowPressListener.html">GestureShowPressListener</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureTapListener" class="callable">
+                <span class="name "><a class="" href="gestures/GestureTapListener.html">GestureTapListener</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PointerRoute" class="callable">
+                <span class="name "><a class="" href="gestures/PointerRoute.html">PointerRoute</a></span><span class="signature">(<wbr><span class="parameter" id="PointerRoute-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p>A callback that receives a <code>sky.PointerEvent</code></p>
+            </dd>
+        </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="enums">
+        <h2>Enums</h2>
+
+        <dl>
+            <dt id="DragState">
+                <a class="" href="gestures/DragState-class.html">DragState</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureDisposition">
+                <a class="" href="gestures/GestureDisposition-class.html">GestureDisposition</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureRecognizerState">
+                <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScaleState">
+                <a class="" href="gestures/ScaleState-class.html">ScaleState</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="classes">
+        <h2>Classes</h2>
+
+        <dl>
+            <dt id="GestureArena">
+                <span class="name "><a class="" href="gestures/GestureArena-class.html">GestureArena</a></span>
+            </dt>
+            <dd>
+                <p>The first member to accept or the last member to not to reject wins.</p>
+            </dd>
+            <dt id="GestureArenaEntry">
+                <span class="name "><a class="" href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></span>
+            </dt>
+            <dd>
+                <p>An interface to information to an arena<a href="gestures/GestureArenaEntry-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="GestureArenaMember">
+                <span class="name "><a class="" href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></span>
+            </dt>
+            <dd>
+                <p>Represents an object participating in an arena.<a href="gestures/GestureArenaMember-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="GestureRecognizer">
+                <span class="name "><a class="" href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="HorizontalDragGestureRecognizer">
+                <span class="name "><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="LongPressGestureRecognizer">
+                <span class="name "><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PanGestureRecognizer">
+                <span class="name "><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PointerRouter">
+                <span class="name "><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></span>
+            </dt>
+            <dd>
+                <p>A routing table for <code>sky.PointerEvent</code> events.</p>
+            </dd>
+            <dt id="PrimaryPointerGestureRecognizer">
+                <span class="name "><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScaleGestureRecognizer">
+                <span class="name "><a class="" href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ShowPressGestureRecognizer">
+                <span class="name "><a class="" href="gestures/ShowPressGestureRecognizer-class.html">ShowPressGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TapGestureRecognizer">
+                <span class="name "><a class="" href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="VerticalDragGestureRecognizer">
+                <span class="name "><a class="" href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>gestures</h5>
+    <ol>
+      <li class="section-title"><a href="gestures/gestures-library.html#constants">Constants</a></li>
+      <li><a class="" href="gestures/kDoubleTapMinTime.html">kDoubleTapMinTime</a></li>
+      <li><a class="" href="gestures/kDoubleTapSlop.html">kDoubleTapSlop</a></li>
+      <li><a class="" href="gestures/kDoubleTapTimeout.html">kDoubleTapTimeout</a></li>
+      <li><a class="" href="gestures/kDoubleTapTouchSlop.html">kDoubleTapTouchSlop</a></li>
+      <li><a class="" href="gestures/kEdgeSlop.html">kEdgeSlop</a></li>
+      <li><a class="" href="gestures/kHoverTapSlop.html">kHoverTapSlop</a></li>
+      <li><a class="" href="gestures/kHoverTapTimeout.html">kHoverTapTimeout</a></li>
+      <li><a class="" href="gestures/kJumpTapTimeout.html">kJumpTapTimeout</a></li>
+      <li><a class="" href="gestures/kLongPressTimeout.html">kLongPressTimeout</a></li>
+      <li><a class="" href="gestures/kMaxFlingVelocity.html">kMaxFlingVelocity</a></li>
+      <li><a class="" href="gestures/kMinFlingVelocity.html">kMinFlingVelocity</a></li>
+      <li><a class="" href="gestures/kPagingTouchSlop.html">kPagingTouchSlop</a></li>
+      <li><a class="" href="gestures/kPanSlop.html">kPanSlop</a></li>
+      <li><a class="" href="gestures/kScaleSlop.html">kScaleSlop</a></li>
+      <li><a class="" href="gestures/kTapTimeout.html">kTapTimeout</a></li>
+      <li><a class="" href="gestures/kTouchSlop.html">kTouchSlop</a></li>
+      <li><a class="" href="gestures/kWindowTouchSlop.html">kWindowTouchSlop</a></li>
+      <li><a class="" href="gestures/kZoomControlsTimeout.html">kZoomControlsTimeout</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
+      <li><a class="" href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
+      <li><a class="" href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
+      <li><a class="" href="gestures/GestureLongPressListener.html">GestureLongPressListener</a></li>
+      <li><a class="" href="gestures/GesturePanEndCallback.html">GesturePanEndCallback</a></li>
+      <li><a class="" href="gestures/GesturePanStartCallback.html">GesturePanStartCallback</a></li>
+      <li><a class="" href="gestures/GesturePanUpdateCallback.html">GesturePanUpdateCallback</a></li>
+      <li><a class="" href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
+      <li><a class="" href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
+      <li><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
+      <li><a class="" href="gestures/GestureShowPressListener.html">GestureShowPressListener</a></li>
+      <li><a class="" href="gestures/GestureTapListener.html">GestureTapListener</a></li>
+      <li><a class="" href="gestures/PointerRoute.html">PointerRoute</a></li>
+    
+    
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#enums">Enums</a></li>
+      <li><a class="" href="gestures/DragState-class.html">DragState</a></li>
+      <li><a class="" href="gestures/GestureDisposition-class.html">GestureDisposition</a></li>
+      <li><a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></li>
+      <li><a class="" href="gestures/ScaleState-class.html">ScaleState</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#classes">Classes</a></li>
+      <li><a class="" href="gestures/GestureArena-class.html">GestureArena</a></li>
+      <li><a class="" href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></li>
+      <li><a class="" href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
+      <li><a class="" href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></li>
+      <li><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
+      <li><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
+      <li><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
+      <li><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></li>
+      <li><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
+      <li><a class="" href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></li>
+      <li><a class="" href="gestures/ShowPressGestureRecognizer-class.html">ShowPressGestureRecognizer</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></li>
+      <li><a class="" href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.45 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.6.3 -->
+</body>
+
+</html>

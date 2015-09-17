@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KeyboardClientProxyImpl class - services library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the KeyboardClientProxyImpl class from the services library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="services/services-library.html">services</a></li>
+                  <li class="self-crumb">KeyboardClientProxyImpl</li>
+              </ol>
+              <div class="self-name">KeyboardClientProxyImpl</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="services/services-library.html">services</a></li>
+              <li class="self-crumb">KeyboardClientProxyImpl</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> KeyboardClientProxyImpl
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="services/KeyboardClientProxyImpl-class.html#static-methods">Static Methods</a></li>
+              <li><a href="services/KeyboardClientProxyImpl-class.html#instance-properties">Properties</a></li>
+              <li><a href="services/KeyboardClientProxyImpl-class.html#constructors">Constructors</a></li>
+              <li><a href="services/KeyboardClientProxyImpl-class.html#instance-methods">Methods</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="services/services-library.html">services</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="services/services-library.html#constants">Constants</a></li>
+      <li><a class="" href="services/ActivityName.html">ActivityName</a></li>
+      <li><a class="" href="services/AuralFeedbackType_CLICK.html">AuralFeedbackType_CLICK</a></li>
+      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_DOWN.html">AuralFeedbackType_NAVIGATION_DOWN</a></li>
+      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_LEFT.html">AuralFeedbackType_NAVIGATION_LEFT</a></li>
+      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_RIGHT.html">AuralFeedbackType_NAVIGATION_RIGHT</a></li>
+      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_UP.html">AuralFeedbackType_NAVIGATION_UP</a></li>
+      <li><a class="" href="services/HapticFeedbackType_CLOCK_TICK.html">HapticFeedbackType_CLOCK_TICK</a></li>
+      <li><a class="" href="services/HapticFeedbackType_KEYBOARD_TAP.html">HapticFeedbackType_KEYBOARD_TAP</a></li>
+      <li><a class="" href="services/HapticFeedbackType_LONG_PRESS.html">HapticFeedbackType_LONG_PRESS</a></li>
+      <li><a class="" href="services/HapticFeedbackType_VIRTUAL_KEY.html">HapticFeedbackType_VIRTUAL_KEY</a></li>
+      <li><a class="" href="services/kActivity_finishCurrentActivity_name.html">kActivity_finishCurrentActivity_name</a></li>
+      <li><a class="" href="services/kActivity_getCacheDir_name.html">kActivity_getCacheDir_name</a></li>
+      <li><a class="" href="services/kActivity_getFilesDir_name.html">kActivity_getFilesDir_name</a></li>
+      <li><a class="" href="services/kActivity_getUserFeedback_name.html">kActivity_getUserFeedback_name</a></li>
+      <li><a class="" href="services/kActivity_setRequestedOrientation_name.html">kActivity_setRequestedOrientation_name</a></li>
+      <li><a class="" href="services/kActivity_setSystemUiVisibility_name.html">kActivity_setSystemUiVisibility_name</a></li>
+      <li><a class="" href="services/kActivity_setTaskDescription_name.html">kActivity_setTaskDescription_name</a></li>
+      <li><a class="" href="services/kActivity_startActivity_name.html">kActivity_startActivity_name</a></li>
+      <li><a class="" href="services/KeyboardClientName.html">KeyboardClientName</a></li>
+      <li><a class="" href="services/KeyboardServiceName.html">KeyboardServiceName</a></li>
+      <li><a class="" href="services/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></li>
+      <li><a class="" href="services/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></li>
+      <li><a class="" href="services/KeyboardType_PHONE.html">KeyboardType_PHONE</a></li>
+      <li><a class="" href="services/KeyboardType_TEXT.html">KeyboardType_TEXT</a></li>
+      <li><a class="" href="services/kKeyboardClient_commitCompletion_name.html">kKeyboardClient_commitCompletion_name</a></li>
+      <li><a class="" href="services/kKeyboardClient_commitCorrection_name.html">kKeyboardClient_commitCorrection_name</a></li>
+      <li><a class="" href="services/kKeyboardClient_commitText_name.html">kKeyboardClient_commitText_name</a></li>
+      <li><a class="" href="services/kKeyboardClient_deleteSurroundingText_name.html">kKeyboardClient_deleteSurroundingText_name</a></li>
+      <li><a class="" href="services/kKeyboardClient_setComposingRegion_name.html">kKeyboardClient_setComposingRegion_name</a></li>
+      <li><a class="" href="services/kKeyboardClient_setComposingText_name.html">kKeyboardClient_setComposingText_name</a></li>
+      <li><a class="" href="services/kKeyboardClient_setSelection_name.html">kKeyboardClient_setSelection_name</a></li>
+      <li><a class="" href="services/kKeyboardService_hide_name.html">kKeyboardService_hide_name</a></li>
+      <li><a class="" href="services/kKeyboardService_showByRequest_name.html">kKeyboardService_showByRequest_name</a></li>
+      <li><a class="" href="services/kKeyboardService_show_name.html">kKeyboardService_show_name</a></li>
+      <li><a class="" href="services/kUserFeedback_performAuralFeedback_name.html">kUserFeedback_performAuralFeedback_name</a></li>
+      <li><a class="" href="services/kUserFeedback_performHapticFeedback_name.html">kUserFeedback_performHapticFeedback_name</a></li>
+      <li><a class="" href="services/MULTIPLE_TASK.html">MULTIPLE_TASK</a></li>
+      <li><a class="" href="services/NEW_DOCUMENT.html">NEW_DOCUMENT</a></li>
+      <li><a class="" href="services/NEW_TASK.html">NEW_TASK</a></li>
+      <li><a class="" href="services/ScreenOrientation_LANDSCAPE.html">ScreenOrientation_LANDSCAPE</a></li>
+      <li><a class="" href="services/ScreenOrientation_NOSENSOR.html">ScreenOrientation_NOSENSOR</a></li>
+      <li><a class="" href="services/ScreenOrientation_PORTRAIT.html">ScreenOrientation_PORTRAIT</a></li>
+      <li><a class="" href="services/ScreenOrientation_UNSPECIFIED.html">ScreenOrientation_UNSPECIFIED</a></li>
+      <li><a class="" href="services/SystemUIVisibility_FULLSCREEN.html">SystemUIVisibility_FULLSCREEN</a></li>
+      <li><a class="" href="services/SystemUIVisibility_IMMERSIVE.html">SystemUIVisibility_IMMERSIVE</a></li>
+      <li><a class="" href="services/SystemUIVisibility_STANDARD.html">SystemUIVisibility_STANDARD</a></li>
+      <li><a class="" href="services/UserFeedbackName.html">UserFeedbackName</a></li>
+    
+      <li class="section-title"><a href="services/services-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="services/ImageListener.html">ImageListener</a></li>
+    
+      <li class="section-title"><a href="services/services-library.html#properties">Properties</a></li>
+      <li><a class="" href="services/activity.html">activity</a></li>
+      <li><a class="" href="services/embedder.html">embedder</a></li>
+      <li><a class="" href="services/imageCache.html">imageCache</a></li>
+      <li><a class="" href="services/keyboard.html">keyboard</a></li>
+      <li><a class="" href="services/rootBundle.html">rootBundle</a></li>
+      <li><a class="" href="services/shell.html">shell</a></li>
+      <li><a class="" href="services/userFeedback.html">userFeedback</a></li>
+    
+      <li class="section-title"><a href="services/services-library.html#functions">Functions</a></li>
+      <li><a class="" href="services/fetch.html">fetch</a></li>
+      <li><a class="" href="services/fetchBody.html">fetchBody</a></li>
+      <li><a class="" href="services/fetchString.html">fetchString</a></li>
+      <li><a class="" href="services/fetchUrl.html">fetchUrl</a></li>
+      <li><a class="" href="services/getCacheDir.html">getCacheDir</a></li>
+      <li><a class="" href="services/getFilesDir.html">getFilesDir</a></li>
+      <li><a class="" href="services/updateTaskDescription.html">updateTaskDescription</a></li>
+    
+    
+      <li class="section-title"><a href="services/services-library.html#classes">Classes</a></li>
+      <li><a class="" href="services/Activity-class.html">Activity</a></li>
+      <li><a class="" href="services/ActivityFinishCurrentActivityParams-class.html">ActivityFinishCurrentActivityParams</a></li>
+      <li><a class="" href="services/ActivityGetCacheDirParams-class.html">ActivityGetCacheDirParams</a></li>
+      <li><a class="" href="services/ActivityGetCacheDirResponseParams-class.html">ActivityGetCacheDirResponseParams</a></li>
+      <li><a class="" href="services/ActivityGetFilesDirParams-class.html">ActivityGetFilesDirParams</a></li>
+      <li><a class="" href="services/ActivityGetFilesDirResponseParams-class.html">ActivityGetFilesDirResponseParams</a></li>
+      <li><a class="" href="services/ActivityGetUserFeedbackParams-class.html">ActivityGetUserFeedbackParams</a></li>
+      <li><a class="" href="services/ActivityProxy-class.html">ActivityProxy</a></li>
+      <li><a class="" href="services/ActivityProxyImpl-class.html">ActivityProxyImpl</a></li>
+      <li><a class="" href="services/ActivitySetRequestedOrientationParams-class.html">ActivitySetRequestedOrientationParams</a></li>
+      <li><a class="" href="services/ActivitySetSystemUiVisibilityParams-class.html">ActivitySetSystemUiVisibilityParams</a></li>
+      <li><a class="" href="services/ActivitySetTaskDescriptionParams-class.html">ActivitySetTaskDescriptionParams</a></li>
+      <li><a class="" href="services/ActivityStartActivityParams-class.html">ActivityStartActivityParams</a></li>
+      <li><a class="" href="services/ActivityStub-class.html">ActivityStub</a></li>
+      <li><a class="" href="services/AssetBundle-class.html">AssetBundle</a></li>
+      <li><a class="" href="services/CompletionData-class.html">CompletionData</a></li>
+      <li><a class="" href="services/ComponentName-class.html">ComponentName</a></li>
+      <li><a class="" href="services/CorrectionData-class.html">CorrectionData</a></li>
+      <li><a class="" href="services/ImageResource-class.html">ImageResource</a></li>
+      <li><a class="" href="services/Intent-class.html">Intent</a></li>
+      <li><a class="" href="services/Keyboard-class.html">Keyboard</a></li>
+      <li><a class="" href="services/KeyboardClient-class.html">KeyboardClient</a></li>
+      <li><a class="" href="services/KeyboardClientCommitCompletionParams-class.html">KeyboardClientCommitCompletionParams</a></li>
+      <li><a class="" href="services/KeyboardClientCommitCorrectionParams-class.html">KeyboardClientCommitCorrectionParams</a></li>
+      <li><a class="" href="services/KeyboardClientCommitTextParams-class.html">KeyboardClientCommitTextParams</a></li>
+      <li><a class="" href="services/KeyboardClientDeleteSurroundingTextParams-class.html">KeyboardClientDeleteSurroundingTextParams</a></li>
+      <li><a class="" href="services/KeyboardClientProxy-class.html">KeyboardClientProxy</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl-class.html">KeyboardClientProxyImpl</a></li>
+      <li><a class="" href="services/KeyboardClientSetComposingRegionParams-class.html">KeyboardClientSetComposingRegionParams</a></li>
+      <li><a class="" href="services/KeyboardClientSetComposingTextParams-class.html">KeyboardClientSetComposingTextParams</a></li>
+      <li><a class="" href="services/KeyboardClientSetSelectionParams-class.html">KeyboardClientSetSelectionParams</a></li>
+      <li><a class="" href="services/KeyboardClientStub-class.html">KeyboardClientStub</a></li>
+      <li><a class="" href="services/KeyboardHandle-class.html">KeyboardHandle</a></li>
+      <li><a class="" href="services/KeyboardService-class.html">KeyboardService</a></li>
+      <li><a class="" href="services/KeyboardServiceHideParams-class.html">KeyboardServiceHideParams</a></li>
+      <li><a class="" href="services/KeyboardServiceProxy-class.html">KeyboardServiceProxy</a></li>
+      <li><a class="" href="services/KeyboardServiceProxyImpl-class.html">KeyboardServiceProxyImpl</a></li>
+      <li><a class="" href="services/KeyboardServiceShowByRequestParams-class.html">KeyboardServiceShowByRequestParams</a></li>
+      <li><a class="" href="services/KeyboardServiceShowParams-class.html">KeyboardServiceShowParams</a></li>
+      <li><a class="" href="services/KeyboardServiceStub-class.html">KeyboardServiceStub</a></li>
+      <li><a class="" href="services/MojoAssetBundle-class.html">MojoAssetBundle</a></li>
+      <li><a class="" href="services/NetworkAssetBundle-class.html">NetworkAssetBundle</a></li>
+      <li><a class="" href="services/Response-class.html">Response</a></li>
+      <li><a class="" href="services/StringExtra-class.html">StringExtra</a></li>
+      <li><a class="" href="services/TaskDescription-class.html">TaskDescription</a></li>
+      <li><a class="" href="services/UrlResponse-class.html">UrlResponse</a></li>
+      <li><a class="" href="services/UserFeedback-class.html">UserFeedback</a></li>
+      <li><a class="" href="services/UserFeedbackPerformAuralFeedbackParams-class.html">UserFeedbackPerformAuralFeedbackParams</a></li>
+      <li><a class="" href="services/UserFeedbackPerformHapticFeedbackParams-class.html">UserFeedbackPerformHapticFeedbackParams</a></li>
+      <li><a class="" href="services/UserFeedbackProxy-class.html">UserFeedbackProxy</a></li>
+      <li><a class="" href="services/UserFeedbackProxyImpl-class.html">UserFeedbackProxyImpl</a></li>
+      <li><a class="" href="services/UserFeedbackStub-class.html">UserFeedbackStub</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+          <dt>Inheritance</dt>
+          <dd><ul class="gt-separated dark clazz-relationships">
+              <li>Object</li>
+              <li>MojoEventStreamListener</li>
+              <li>Proxy</li>
+              <li>KeyboardClientProxyImpl</li>
+          </ul></dd>
+
+
+
+
+        </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="static-methods">
+        <h2>Static Methods</h2>
+        <dl class="callables">
+            <dt id="newFromEndpoint" class="callable">
+                <span class="name "><a class="" href="services/KeyboardClientProxyImpl/newFromEndpoint.html">newFromEndpoint</a></span><span class="signature">(<wbr><span class="parameter" id="newFromEndpoint-param-endpoint"><span class="type-annotation">MojoMessagePipeEndpoint</span> <span class="parameter-name">endpoint</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="services/KeyboardClientProxyImpl-class.html">KeyboardClientProxyImpl</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="completerMap" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/completerMap.html">completerMap</a></span>
+                <span class="signature">&#8594; Map&lt;int,Completer&gt;</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="endpoint" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/endpoint.html">endpoint</a></span>
+                <span class="signature">&#8594; MojoMessagePipeEndpoint</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="isBound" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/isBound.html">isBound</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="isInHandler" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/isInHandler.html">isInHandler</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="isOpen" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/isOpen.html">isOpen</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="name" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/name.html">name</a></span>
+                <span class="signature">&#8594; String</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
+            <dt id="onError" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/onError.html">onError</a></span>
+                <span class="signature">&#8594; ErrorHandler</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="subscription" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/subscription.html">subscription</a></span>
+                <span class="signature">&#8594; StreamSubscription</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write, inherited
+    </div>
+    <p></p>
+            </dd>
+            <dt id="version" class="property">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/version.html">version</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p>Version of this interface that the remote side supports. Updated when a
+call to <code>queryVersion</code> or <code>requireVersion</code> is made.</p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+        <h2>Constructors</h2>
+
+        <dl class="constructor-summary-list">
+            <dt id="KeyboardClientProxyImpl.fromEndpoint" class="callable">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/KeyboardClientProxyImpl.fromEndpoint.html">KeyboardClientProxyImpl.fromEndpoint</a></span><span class="signature">(<span class="parameter" id="fromEndpoint-param-endpoint"><span class="type-annotation">MojoMessagePipeEndpoint</span> <span class="parameter-name">endpoint</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="KeyboardClientProxyImpl.fromHandle" class="callable">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/KeyboardClientProxyImpl.fromHandle.html">KeyboardClientProxyImpl.fromHandle</a></span><span class="signature">(<span class="parameter" id="fromHandle-param-handle"><span class="type-annotation">MojoHandle</span> <span class="parameter-name">handle</span></span>)</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="KeyboardClientProxyImpl.unbound" class="callable">
+                <span class="name"><a class="" href="services/KeyboardClientProxyImpl/KeyboardClientProxyImpl.unbound.html">KeyboardClientProxyImpl.unbound</a></span><span class="signature">()</span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+      </section>
+
+
+      <section class="summary offset-anchor" id="instance-methods">
+          <h2>Methods</h2>
+          <dl class="callables">
+              <dt id="bind" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/bind.html">bind</a></span><span class="signature">(<wbr><span class="parameter" id="bind-param-endpoint"><span class="type-annotation">MojoMessagePipeEndpoint</span> <span class="parameter-name">endpoint</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="bindFromHandle" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/bindFromHandle.html">bindFromHandle</a></span><span class="signature">(<wbr><span class="parameter" id="bindFromHandle-param-handle"><span class="type-annotation">MojoHandle</span> <span class="parameter-name">handle</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="close" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/close.html">close</a></span><span class="signature">(<wbr>{<span class="parameter" id="close-param-immediate"><span class="type-annotation">bool</span> <span class="parameter-name">immediate</span>: <span class="default-value">false</span></span>})
+                      &#8594;
+                      <span class="returntype">Future</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="handleRead" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/handleRead.html">handleRead</a></span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="handleResponse" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/handleResponse.html">handleResponse</a></span><span class="signature">(<wbr><span class="parameter" id="handleResponse-param-message"><span class="type-annotation">ServiceMessage</span> <span class="parameter-name">message</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="handleWrite" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/handleWrite.html">handleWrite</a></span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="listen" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/listen.html">listen</a></span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">StreamSubscription&lt;List&lt;int&gt;&gt;</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="queryVersion" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/queryVersion.html">queryVersion</a></span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">Future&lt;int&gt;</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>Queries the max version that the remote side supports.
+Updates <code>version</code>.</p>
+              </dd>
+              <dt id="requireVersion" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/requireVersion.html">requireVersion</a></span><span class="signature">(<wbr><span class="parameter" id="requireVersion-param-requiredVersion"><span class="type-annotation">int</span> <span class="parameter-name">requiredVersion</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p>If the remote side doesn't support the <code>requiredVersion</code>, it will close
+its end of the message pipe asynchronously. This does nothing if it's
+already known that the remote side supports <code>requiredVersion</code>.
+Updates <code>version</code>.</p>
+              </dd>
+              <dt id="sendMessage" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/sendMessage.html">sendMessage</a></span><span class="signature">(<wbr><span class="parameter" id="sendMessage-param-message"><span class="type-annotation">Struct</span> <span class="parameter-name">message</span></span>, <span class="parameter" id="sendMessage-param-name"><span class="type-annotation">int</span> <span class="parameter-name">name</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="sendMessageWithRequestId" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/sendMessageWithRequestId.html">sendMessageWithRequestId</a></span><span class="signature">(<wbr><span class="parameter" id="sendMessageWithRequestId-param-message"><span class="type-annotation">Struct</span> <span class="parameter-name">message</span></span>, <span class="parameter" id="sendMessageWithRequestId-param-name"><span class="type-annotation">int</span> <span class="parameter-name">name</span></span>, <span class="parameter" id="sendMessageWithRequestId-param-id"><span class="type-annotation">int</span> <span class="parameter-name">id</span></span>, <span class="parameter" id="sendMessageWithRequestId-param-flags"><span class="type-annotation">int</span> <span class="parameter-name">flags</span></span>)
+                      &#8594;
+                      <span class="returntype">Future</span>
+                  </span>
+              </dt>
+              <dd>
+                  <div class="features">inherited</div>
+                  <p></p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <span class="name "><a class="" href="services/KeyboardClientProxyImpl/toString.html">toString</a></span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+              </dd>
+          </dl>
+      </section>
+
+    </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>KeyboardClientProxyImpl</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="services/KeyboardClientProxyImpl-class.html#static-methods">Static methods</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/newFromEndpoint.html">newFromEndpoint</a></li>
+    
+      <li class="section-title"><a href="services/KeyboardClientProxyImpl-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/completerMap.html">completerMap</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/endpoint.html">endpoint</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/isBound.html">isBound</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/isInHandler.html">isInHandler</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/isOpen.html">isOpen</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/name.html">name</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/onError.html">onError</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/subscription.html">subscription</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/version.html">version</a></li>
+    
+      <li class="section-title"><a href="services/KeyboardClientProxyImpl-class.html#constructors">Constructors</a></li>
+      <li><a href="services/KeyboardClientProxyImpl/KeyboardClientProxyImpl.fromEndpoint.html">fromEndpoint</a></li>
+      <li><a href="services/KeyboardClientProxyImpl/KeyboardClientProxyImpl.fromHandle.html">fromHandle</a></li>
+      <li><a href="services/KeyboardClientProxyImpl/KeyboardClientProxyImpl.unbound.html">unbound</a></li>
+    
+    
+      <li class="section-title"><a href="services/KeyboardClientProxyImpl-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/bind.html">bind</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/bindFromHandle.html">bindFromHandle</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/close.html">close</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/handleRead.html">handleRead</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/handleResponse.html">handleResponse</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/handleWrite.html">handleWrite</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/listen.html">listen</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/queryVersion.html">queryVersion</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/requireVersion.html">requireVersion</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/sendMessage.html">sendMessage</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/sendMessageWithRequestId.html">sendMessageWithRequestId</a></li>
+      <li><a class="" href="services/KeyboardClientProxyImpl/toString.html">toString</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.45 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.6.3 -->
+</body>
+
+</html>

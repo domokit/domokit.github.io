@@ -81,10 +81,8 @@
     
     
       <li class="section-title"><a href="rendering/PaintingContext-class.html#instance-properties">Properties</a></li>
-      <li><a href="rendering/PaintingContext/canvas.html">canvas</a>
-</li>
-      <li><a href="rendering/PaintingContext/containerLayer.html">containerLayer</a>
-</li>
+      <li><a class="" href="rendering/PaintingContext/canvas.html">canvas</a></li>
+      <li><a class="" href="rendering/PaintingContext/containerLayer.html">containerLayer</a></li>
     
       <li class="section-title"><a href="rendering/PaintingContext-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/PaintingContext/PaintingContext.forTesting.html">forTesting</a></li>
@@ -93,28 +91,17 @@
     
     
       <li class="section-title"><a href="rendering/PaintingContext-class.html#instance-methods">Methods</a></li>
-      <li><a href="rendering/PaintingContext/compositeChild.html">compositeChild</a>
-</li>
-      <li><a href="rendering/PaintingContext/debugCanPaintChild.html">debugCanPaintChild</a>
-</li>
-      <li><a href="rendering/PaintingContext/endRecording.html">endRecording</a>
-</li>
-      <li><a href="rendering/PaintingContext/insertChild.html">insertChild</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChild.html">paintChild</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChildWithClipPath.html">paintChildWithClipPath</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChildWithClipRect.html">paintChildWithClipRect</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChildWithClipRRect.html">paintChildWithClipRRect</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChildWithColorFilter.html">paintChildWithColorFilter</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChildWithOpacity.html">paintChildWithOpacity</a>
-</li>
-      <li><a href="rendering/PaintingContext/paintChildWithTransform.html">paintChildWithTransform</a>
-</li>
+      <li><a class="" href="rendering/PaintingContext/compositeChild.html">compositeChild</a></li>
+      <li><a class="" href="rendering/PaintingContext/debugCanPaintChild.html">debugCanPaintChild</a></li>
+      <li><a class="" href="rendering/PaintingContext/endRecording.html">endRecording</a></li>
+      <li><a class="" href="rendering/PaintingContext/insertChild.html">insertChild</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChild.html">paintChild</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithClipPath.html">paintChildWithClipPath</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithClipRect.html">paintChildWithClipRect</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithClipRRect.html">paintChildWithClipRRect</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithColorFilter.html">paintChildWithColorFilter</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithOpacity.html">paintChildWithOpacity</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithTransform.html">paintChildWithTransform</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -126,7 +113,7 @@
             <span class="name ">compositeChild</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="compositeChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br>{<span class="parameter" id="compositeChild-param-childOffset"><span class="type-annotation"><a href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">childOffset</span>: <span class="default-value">Offset.zero</span></span>,<br><span class="parameter" id="compositeChild-param-parentLayer"><span class="type-annotation"><a href="rendering/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">parentLayer</span></span>}
+                <span class="parameter" id="compositeChild-param-child"><span class="type-annotation"><a class="" href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>,<br>{<span class="parameter" id="compositeChild-param-childOffset"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">childOffset</span>: <span class="default-value">Offset.zero</span></span>,<br><span class="parameter" id="compositeChild-param-parentLayer"><span class="type-annotation"><a class="" href="rendering/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">parentLayer</span></span>}
             </div>
             )    </section>
 
@@ -177,7 +164,7 @@ void compositeChild(RenderObject child, { Offset childOffset: Offset.zero, Conta
     child._layer.detach();
     child._layer.offset = childOffset;
   }
-  parentLayer.add(child._layer);
+  parentLayer.append(child._layer);
 
   // Start a new layer for anything that remains of our own paint.
   _startRecording(originalLayer.paintBounds);
@@ -194,7 +181,7 @@ void compositeChild(RenderObject child, { Offset childOffset: Offset.zero, Conta
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.42 api docs
+                  sky 0.0.45 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -218,7 +205,7 @@ void compositeChild(RenderObject child, { Offset childOffset: Offset.zero, Conta
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.1 -->
+<!-- Made with <3 by dartdoc version 0.6.3 -->
 </body>
 
 </html>

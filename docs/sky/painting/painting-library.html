@@ -76,28 +76,14 @@
 
     <ol>
       <li class="section-title"><a href="index.html">Libraries</a></li>
-      <li><a href="activity/activity-library.html">activity</a></li>
       <li><a href="animation/animation-library.html">animation</a></li>
-      <li><a href="arena/arena-library.html">arena</a></li>
-      <li><a href="asset_bundle/asset_bundle-library.html">asset_bundle</a></li>
       <li><a href="colors/colors-library.html">colors</a></li>
-      <li><a href="constants/constants-library.html">constants</a></li>
       <li><a href="edges/edges-library.html">edges</a></li>
-      <li><a href="embedder/embedder-library.html">embedder</a></li>
-      <li><a href="fetch/fetch-library.html">fetch</a></li>
-      <li><a href="image_cache/image_cache-library.html">image_cache</a></li>
-      <li><a href="image_resource/image_resource-library.html">image_resource</a></li>
-      <li><a href="keyboard/keyboard-library.html">keyboard</a></li>
-      <li><a href="long_press/long_press-library.html">long_press</a></li>
+      <li><a href="gestures/gestures-library.html">gestures</a></li>
       <li><a href="painting/painting-library.html">painting</a></li>
-      <li><a href="pointer_router/pointer_router-library.html">pointer_router</a></li>
-      <li><a href="recognizer/recognizer-library.html">recognizer</a></li>
       <li><a href="rendering/rendering-library.html">rendering</a></li>
-      <li><a href="scroll/scroll-library.html">scroll</a></li>
+      <li><a href="services/services-library.html">services</a></li>
       <li><a href="shadows/shadows-library.html">shadows</a></li>
-      <li><a href="shell/shell-library.html">shell</a></li>
-      <li><a href="show_press/show_press-library.html">show_press</a></li>
-      <li><a href="tap/tap-library.html">tap</a></li>
       <li><a href="theme_data/theme_data-library.html">theme_data</a></li>
       <li><a href="typography/typography-library.html">typography</a></li>
       <li><a href="view_configuration/view_configuration-library.html">view_configuration</a></li>
@@ -109,8 +95,10 @@
 
     <section class="desc markdown">
     
-          <p>The Sky render tree.</p>
-<p>This library includes and re-exports all Sky rendering classes.</p>
+          <p>Utilities for painting.</p>
+<p>This library includes and re-exports a variety of classes that wrap the Sky
+engine's painting API for more specialised purposes, such as painting scaled
+images, interpolating between shadows, painting borders around boxes, etc.</p>
     
     </section>
 
@@ -120,7 +108,7 @@
         <dl class="properties">
             <dt id="bold" class="constant">
                 <span class="top-level-variable-type">dynamic</span>
-                <span class="name "><a href="painting/bold.html">bold</a></span>
+                <span class="name "><a class="" href="painting/bold.html">bold</a></span>
                 <span class="signature">= FontWeight.w700</span>
             </dt>
             <dd>
@@ -129,7 +117,7 @@
             </dd>
             <dt id="lineThrough" class="constant">
                 <span class="top-level-variable-type">dynamic</span>
-                <span class="name "><a href="painting/lineThrough.html">lineThrough</a></span>
+                <span class="name "><a class="" href="painting/lineThrough.html">lineThrough</a></span>
                 <span class="signature">= const <TextDecoration> [TextDecoration.lineThrough]</span>
             </dt>
             <dd>
@@ -138,7 +126,7 @@
             </dd>
             <dt id="normal" class="constant">
                 <span class="top-level-variable-type">dynamic</span>
-                <span class="name "><a href="painting/normal.html">normal</a></span>
+                <span class="name "><a class="" href="painting/normal.html">normal</a></span>
                 <span class="signature">= FontWeight.w400</span>
             </dt>
             <dd>
@@ -147,7 +135,7 @@
             </dd>
             <dt id="overline" class="constant">
                 <span class="top-level-variable-type">dynamic</span>
-                <span class="name "><a href="painting/overline.html">overline</a></span>
+                <span class="name "><a class="" href="painting/overline.html">overline</a></span>
                 <span class="signature">= const <TextDecoration> [TextDecoration.overline]</span>
             </dt>
             <dd>
@@ -156,7 +144,7 @@
             </dd>
             <dt id="underline" class="constant">
                 <span class="top-level-variable-type">dynamic</span>
-                <span class="name "><a href="painting/underline.html">underline</a></span>
+                <span class="name "><a class="" href="painting/underline.html">underline</a></span>
                 <span class="signature">= const <TextDecoration> [TextDecoration.underline]</span>
             </dt>
             <dd>
@@ -171,7 +159,7 @@
 
         <dl class="callables">
             <dt id="BackgroundImageChangeListener" class="callable">
-                <a href="painting/BackgroundImageChangeListener.html"><span class="name ">BackgroundImageChangeListener</span></a><span class="signature">(<wbr>)
+                <span class="name "><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></span><span class="signature">(<wbr>)
                     &#8594;
                     <span class="returntype">void</span>
                 </span>
@@ -188,7 +176,7 @@
 
         <dl class="callables">
             <dt id="paintImage" class="callable">
-                <a href="painting/paintImage.html"><span class="name ">paintImage</span></a><span class="signature">(<wbr>{<span class="parameter" id="paintImage-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paintImage-param-rect"><span class="type-annotation"><a href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="paintImage-param-image"><span class="type-annotation">Image</span> <span class="parameter-name">image</span></span>, <span class="parameter" id="paintImage-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>, <span class="parameter" id="paintImage-param-fit"><span class="parameter-name">fit</span>: <span class="default-value">ImageFit.scaleDown</span></span>, <span class="parameter" id="paintImage-param-repeat"><span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="paintImage-param-positionX"><span class="type-annotation">double</span> <span class="parameter-name">positionX</span>: <span class="default-value">0.5</span></span>, <span class="parameter" id="paintImage-param-positionY"><span class="type-annotation">double</span> <span class="parameter-name">positionY</span>: <span class="default-value">0.5</span></span>})
+                <span class="name "><a class="" href="painting/paintImage.html">paintImage</a></span><span class="signature">(<wbr>{<span class="parameter" id="paintImage-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paintImage-param-rect"><span class="type-annotation"><a class="" href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="paintImage-param-image"><span class="type-annotation">Image</span> <span class="parameter-name">image</span></span>, <span class="parameter" id="paintImage-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>, <span class="parameter" id="paintImage-param-fit"><span class="parameter-name">fit</span>: <span class="default-value">ImageFit.scaleDown</span></span>, <span class="parameter" id="paintImage-param-repeat"><span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="paintImage-param-positionX"><span class="type-annotation">double</span> <span class="parameter-name">positionX</span>: <span class="default-value">0.5</span></span>, <span class="parameter" id="paintImage-param-positionY"><span class="type-annotation">double</span> <span class="parameter-name">positionY</span>: <span class="default-value">0.5</span></span>})
                     &#8594;
                     <span class="returntype">void</span>
                 </span>
@@ -204,55 +192,55 @@
 
         <dl>
             <dt id="FontStyle">
-                <a href="painting/FontStyle-class.html">FontStyle</a>
+                <a class="" href="painting/FontStyle-class.html">FontStyle</a>
             </dt>
             <dd>
                 <p>Whether to slant the glyphs in the font</p>
             </dd>
             <dt id="FontWeight">
-                <a href="painting/FontWeight-class.html">FontWeight</a>
+                <a class="" href="painting/FontWeight-class.html">FontWeight</a>
             </dt>
             <dd>
                 <p>The thickness of the glyphs used to draw the text</p>
             </dd>
             <dt id="ImageFit">
-                <a href="painting/ImageFit-class.html">ImageFit</a>
+                <a class="" href="painting/ImageFit-class.html">ImageFit</a>
             </dt>
             <dd>
                 <p>How an image should be inscribed into a box</p>
             </dd>
             <dt id="ImageRepeat">
-                <a href="painting/ImageRepeat-class.html">ImageRepeat</a>
+                <a class="" href="painting/ImageRepeat-class.html">ImageRepeat</a>
             </dt>
             <dd>
                 <p>How to paint any portions of a box not covered by an image</p>
             </dd>
             <dt id="Shape">
-                <a href="painting/Shape-class.html">Shape</a>
+                <a class="" href="painting/Shape-class.html">Shape</a>
             </dt>
             <dd>
                 <p>A 2D geometrical shape</p>
             </dd>
             <dt id="TextAlign">
-                <a href="painting/TextAlign-class.html">TextAlign</a>
+                <a class="" href="painting/TextAlign-class.html">TextAlign</a>
             </dt>
             <dd>
                 <p>Whether to align text horizontally</p>
             </dd>
             <dt id="TextBaseline">
-                <a href="painting/TextBaseline-class.html">TextBaseline</a>
+                <a class="" href="painting/TextBaseline-class.html">TextBaseline</a>
             </dt>
             <dd>
                 <p>A horizontal line used for aligning text</p>
             </dd>
             <dt id="TextDecoration">
-                <a href="painting/TextDecoration-class.html">TextDecoration</a>
+                <a class="" href="painting/TextDecoration-class.html">TextDecoration</a>
             </dt>
             <dd>
                 <p>A linear decoration to draw near the text</p>
             </dd>
             <dt id="TextDecorationStyle">
-                <a href="painting/TextDecorationStyle-class.html">TextDecorationStyle</a>
+                <a class="" href="painting/TextDecorationStyle-class.html">TextDecorationStyle</a>
             </dt>
             <dd>
                 <p>The style in which to draw a text decoration</p>
@@ -265,106 +253,106 @@
 
         <dl>
             <dt id="BackgroundImage">
-                <span class="name "><a href="painting/BackgroundImage-class.html">BackgroundImage</a></span>
+                <span class="name "><a class="" href="painting/BackgroundImage-class.html">BackgroundImage</a></span>
             </dt>
             <dd>
                 <p>A background image for a box</p>
             </dd>
             <dt id="Border">
-                <span class="name "><a href="painting/Border-class.html">Border</a></span>
+                <span class="name "><a class="" href="painting/Border-class.html">Border</a></span>
             </dt>
             <dd>
                 <p>A border of a box, comprised of four sides</p>
             </dd>
             <dt id="BorderSide">
-                <span class="name "><a href="painting/BorderSide-class.html">BorderSide</a></span>
+                <span class="name "><a class="" href="painting/BorderSide-class.html">BorderSide</a></span>
             </dt>
             <dd>
                 <p>A side of a border of a box</p>
             </dd>
             <dt id="BoxDecoration">
-                <span class="name "><a href="painting/BoxDecoration-class.html">BoxDecoration</a></span>
+                <span class="name "><a class="" href="painting/BoxDecoration-class.html">BoxDecoration</a></span>
             </dt>
             <dd>
                 <p>An immutable description of how to paint a box</p>
             </dd>
             <dt id="BoxPainter">
-                <span class="name "><a href="painting/BoxPainter-class.html">BoxPainter</a></span>
+                <span class="name "><a class="" href="painting/BoxPainter-class.html">BoxPainter</a></span>
             </dt>
             <dd>
-                <p>An object that paints a <a href="painting/BoxDecoration-class.html">BoxDecoration</a> into a canvas</p>
+                <p>An object that paints a <a class="" href="painting/BoxDecoration-class.html">BoxDecoration</a> into a canvas</p>
             </dd>
             <dt id="BoxShadow">
-                <span class="name "><a href="painting/BoxShadow-class.html">BoxShadow</a></span>
+                <span class="name "><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></span>
             </dt>
             <dd>
                 <p>A shadow cast by a box<a href="painting/BoxShadow-class.html">&hellip;</a>
 </p>
             </dd>
             <dt id="EdgeDims">
-                <span class="name "><a href="painting/EdgeDims-class.html">EdgeDims</a></span>
+                <span class="name "><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></span>
             </dt>
             <dd>
                 <p>An immutable set of offsets in each of the four cardinal directions<a href="painting/EdgeDims-class.html">&hellip;</a>
 </p>
             </dd>
             <dt id="Gradient">
-                <span class="name "><a href="painting/Gradient-class.html">Gradient</a></span>
+                <span class="name "><a class="" href="painting/Gradient-class.html">Gradient</a></span>
             </dt>
             <dd>
                 <p>A 2D gradient</p>
             </dd>
             <dt id="LinearGradient">
-                <span class="name "><a href="painting/LinearGradient-class.html">LinearGradient</a></span>
+                <span class="name "><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></span>
             </dt>
             <dd>
                 <p>A 2D linear gradient</p>
             </dd>
             <dt id="PlainTextSpan">
-                <span class="name "><a href="painting/PlainTextSpan-class.html">PlainTextSpan</a></span>
+                <span class="name "><a class="" href="painting/PlainTextSpan-class.html">PlainTextSpan</a></span>
             </dt>
             <dd>
                 <p>An immutable span of unstyled text</p>
             </dd>
             <dt id="RadialGradient">
-                <span class="name "><a href="painting/RadialGradient-class.html">RadialGradient</a></span>
+                <span class="name "><a class="" href="painting/RadialGradient-class.html">RadialGradient</a></span>
             </dt>
             <dd>
                 <p>A 2D radial gradient</p>
             </dd>
             <dt id="RadialReaction">
-                <span class="name "><a href="painting/RadialReaction-class.html">RadialReaction</a></span>
+                <span class="name "><a class="" href="painting/RadialReaction-class.html">RadialReaction</a></span>
             </dt>
             <dd>
                 <p>A material design radial ink reaction<a href="painting/RadialReaction-class.html">&hellip;</a>
 </p>
             </dd>
             <dt id="ShadowDrawLooperBuilder">
-                <span class="name "><a href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></span>
+                <span class="name "><a class="" href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></span>
             </dt>
             <dd>
                 <p>A helper class to build a <code>sky.DrawLooper</code> for drawing shadows</p>
             </dd>
             <dt id="StyledTextSpan">
-                <span class="name "><a href="painting/StyledTextSpan-class.html">StyledTextSpan</a></span>
+                <span class="name "><a class="" href="painting/StyledTextSpan-class.html">StyledTextSpan</a></span>
             </dt>
             <dd>
                 <p>An immutable text span that applies a style to a list of children</p>
             </dd>
             <dt id="TextPainter">
-                <span class="name "><a href="painting/TextPainter-class.html">TextPainter</a></span>
+                <span class="name "><a class="" href="painting/TextPainter-class.html">TextPainter</a></span>
             </dt>
             <dd>
-                <p>An object that paints a <a href="painting/TextSpan-class.html">TextSpan</a> into a canvas</p>
+                <p>An object that paints a <a class="" href="painting/TextSpan-class.html">TextSpan</a> into a canvas</p>
             </dd>
             <dt id="TextSpan">
-                <span class="name "><a href="painting/TextSpan-class.html">TextSpan</a></span>
+                <span class="name "><a class="" href="painting/TextSpan-class.html">TextSpan</a></span>
             </dt>
             <dd>
                 <p>An immutable span of text</p>
             </dd>
             <dt id="TextStyle">
-                <span class="name "><a href="painting/TextStyle-class.html">TextStyle</a></span>
+                <span class="name "><a class="" href="painting/TextStyle-class.html">TextStyle</a></span>
             </dt>
             <dd>
                 <p>An immutable style in which paint text</p>
@@ -379,48 +367,48 @@
     <h5>painting</h5>
     <ol>
       <li class="section-title"><a href="painting/painting-library.html#constants">Constants</a></li>
-      <li><a href="painting/bold.html">bold</a></li>
-      <li><a href="painting/lineThrough.html">lineThrough</a></li>
-      <li><a href="painting/normal.html">normal</a></li>
-      <li><a href="painting/overline.html">overline</a></li>
-      <li><a href="painting/underline.html">underline</a></li>
+      <li><a class="" href="painting/bold.html">bold</a></li>
+      <li><a class="" href="painting/lineThrough.html">lineThrough</a></li>
+      <li><a class="" href="painting/normal.html">normal</a></li>
+      <li><a class="" href="painting/overline.html">overline</a></li>
+      <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
-      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a class="" href="painting/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#enums">Enums</a></li>
-      <li><a href="painting/FontStyle-class.html">FontStyle</a></li>
-      <li><a href="painting/FontWeight-class.html">FontWeight</a></li>
-      <li><a href="painting/ImageFit-class.html">ImageFit</a></li>
-      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
-      <li><a href="painting/Shape-class.html">Shape</a></li>
-      <li><a href="painting/TextAlign-class.html">TextAlign</a></li>
-      <li><a href="painting/TextBaseline-class.html">TextBaseline</a></li>
-      <li><a href="painting/TextDecoration-class.html">TextDecoration</a></li>
-      <li><a href="painting/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a class="" href="painting/FontStyle-class.html">FontStyle</a></li>
+      <li><a class="" href="painting/FontWeight-class.html">FontWeight</a></li>
+      <li><a class="" href="painting/ImageFit-class.html">ImageFit</a></li>
+      <li><a class="" href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a class="" href="painting/Shape-class.html">Shape</a></li>
+      <li><a class="" href="painting/TextAlign-class.html">TextAlign</a></li>
+      <li><a class="" href="painting/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a class="" href="painting/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a class="" href="painting/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#classes">Classes</a></li>
-      <li><a href="painting/BackgroundImage-class.html">BackgroundImage</a></li>
-      <li><a href="painting/Border-class.html">Border</a></li>
-      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
-      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
-      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
-      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
-      <li><a href="painting/EdgeDims-class.html">EdgeDims</a></li>
-      <li><a href="painting/Gradient-class.html">Gradient</a></li>
-      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
-      <li><a href="painting/PlainTextSpan-class.html">PlainTextSpan</a></li>
-      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
-      <li><a href="painting/RadialReaction-class.html">RadialReaction</a></li>
-      <li><a href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></li>
-      <li><a href="painting/StyledTextSpan-class.html">StyledTextSpan</a></li>
-      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
-      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
-      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a class="" href="painting/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a class="" href="painting/Border-class.html">Border</a></li>
+      <li><a class="" href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a class="" href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a class="" href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a class="" href="painting/PlainTextSpan-class.html">PlainTextSpan</a></li>
+      <li><a class="" href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a class="" href="painting/RadialReaction-class.html">RadialReaction</a></li>
+      <li><a class="" href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></li>
+      <li><a class="" href="painting/StyledTextSpan-class.html">StyledTextSpan</a></li>
+      <li><a class="" href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a class="" href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a class="" href="painting/TextStyle-class.html">TextStyle</a></li>
     
     </ol>
   </div><!--/sidebar-offcanvas-right-->
@@ -434,7 +422,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.42 api docs
+                  sky 0.0.45 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -458,7 +446,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.1 -->
+<!-- Made with <3 by dartdoc version 0.6.3 -->
 </body>
 
 </html>

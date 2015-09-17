@@ -81,54 +81,33 @@
     
     
       <li class="section-title"><a href="animation/AnimationPerformance-class.html#instance-properties">Properties</a></li>
-      <li><a href="animation/AnimationPerformance/attachedForce.html">attachedForce</a>
-</li>
-      <li><a href="animation/AnimationPerformance/duration.html">duration</a>
-</li>
-      <li><a href="animation/AnimationPerformance/isAnimating.html">isAnimating</a>
-</li>
-      <li><a href="animation/AnimationPerformance/isCompleted.html">isCompleted</a>
-</li>
-      <li><a href="animation/AnimationPerformance/isDismissed.html">isDismissed</a>
-</li>
-      <li><a href="animation/AnimationPerformance/progress.html">progress</a>
-</li>
-      <li><a href="animation/AnimationPerformance/status.html">status</a>
-</li>
-      <li><a href="animation/AnimationPerformance/timing.html">timing</a>
-</li>
-      <li><a href="animation/AnimationPerformance/variable.html">variable</a>
-</li>
+      <li><a class="" href="animation/AnimationPerformance/attachedForce.html">attachedForce</a></li>
+      <li><a class="" href="animation/AnimationPerformance/duration.html">duration</a></li>
+      <li><a class="" href="animation/AnimationPerformance/isAnimating.html">isAnimating</a></li>
+      <li><a class="" href="animation/AnimationPerformance/isCompleted.html">isCompleted</a></li>
+      <li><a class="" href="animation/AnimationPerformance/isDismissed.html">isDismissed</a></li>
+      <li><a class="" href="animation/AnimationPerformance/progress.html">progress</a></li>
+      <li><a class="" href="animation/AnimationPerformance/status.html">status</a></li>
+      <li><a class="" href="animation/AnimationPerformance/timing.html">timing</a></li>
+      <li><a class="" href="animation/AnimationPerformance/variable.html">variable</a></li>
     
       <li class="section-title"><a href="animation/AnimationPerformance-class.html#constructors">Constructors</a></li>
       <li><a href="animation/AnimationPerformance/AnimationPerformance.html">AnimationPerformance</a></li>
     
     
       <li class="section-title"><a href="animation/AnimationPerformance-class.html#instance-methods">Methods</a></li>
-      <li><a href="animation/AnimationPerformance/addListener.html">addListener</a>
-</li>
-      <li><a href="animation/AnimationPerformance/addStatusListener.html">addStatusListener</a>
-</li>
-      <li><a href="animation/AnimationPerformance/addVariable.html">addVariable</a>
-</li>
-      <li><a href="animation/AnimationPerformance/fling.html">fling</a>
-</li>
-      <li><a href="animation/AnimationPerformance/forward.html">forward</a>
-</li>
-      <li><a href="animation/AnimationPerformance/play.html">play</a>
-</li>
-      <li><a href="animation/AnimationPerformance/removeListener.html">removeListener</a>
-</li>
-      <li><a href="animation/AnimationPerformance/removeStatusListener.html">removeStatusListener</a>
-</li>
-      <li><a href="animation/AnimationPerformance/resume.html">resume</a>
-</li>
-      <li><a href="animation/AnimationPerformance/reverse.html">reverse</a>
-</li>
-      <li><a href="animation/AnimationPerformance/stop.html">stop</a>
-</li>
-      <li><a href="animation/AnimationPerformance/updateVariable.html">updateVariable</a>
-</li>
+      <li><a class="" href="animation/AnimationPerformance/addListener.html">addListener</a></li>
+      <li><a class="" href="animation/AnimationPerformance/addStatusListener.html">addStatusListener</a></li>
+      <li><a class="" href="animation/AnimationPerformance/addVariable.html">addVariable</a></li>
+      <li><a class="" href="animation/AnimationPerformance/fling.html">fling</a></li>
+      <li><a class="" href="animation/AnimationPerformance/forward.html">forward</a></li>
+      <li><a class="" href="animation/AnimationPerformance/play.html">play</a></li>
+      <li><a class="" href="animation/AnimationPerformance/removeListener.html">removeListener</a></li>
+      <li><a class="" href="animation/AnimationPerformance/removeStatusListener.html">removeStatusListener</a></li>
+      <li><a class="" href="animation/AnimationPerformance/resume.html">resume</a></li>
+      <li><a class="" href="animation/AnimationPerformance/reverse.html">reverse</a></li>
+      <li><a class="" href="animation/AnimationPerformance/stop.html">stop</a></li>
+      <li><a class="" href="animation/AnimationPerformance/updateVariable.html">updateVariable</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -140,7 +119,7 @@
             <span class="name ">addVariable</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="addVariable-param-newVariable"><span class="type-annotation"><a href="animation/AnimatedVariable-class.html">AnimatedVariable</a></span> <span class="parameter-name">newVariable</span></span>
+                <span class="parameter" id="addVariable-param-newVariable"><span class="type-annotation"><a class="" href="animation/AnimatedVariable-class.html">AnimatedVariable</a></span> <span class="parameter-name">newVariable</span></span>
             </div>
             )    </section>
 
@@ -148,7 +127,7 @@
     
           <p>Add a variable to this animation</p>
 <p>If there are no attached variables, this variable becomes the value of
-<a href="animation/AnimationPerformance/variable.html">variable</a>. Otherwise, all the variables are stored in an <a href="animation/AnimatedList-class.html">AnimatedList</a>.</p>
+<a class="" href="animation/AnimationPerformance/variable.html">variable</a>. Otherwise, all the variables are stored in an <a class="" href="animation/AnimatedList-class.html">AnimatedList</a>.</p>
     
     </section>
 
@@ -162,7 +141,8 @@ void addVariable(AnimatedVariable newVariable) {
   if (variable == null) {
     variable = newVariable;
   } else if (variable is AnimatedList) {
-    (variable as AnimatedList).variables.add(newVariable);
+    final AnimatedList variable = this.variable; // TODO(ianh): Remove this line when the analyzer is cleverer
+    variable.variables.add(newVariable);
   } else {
     variable = new AnimatedList([variable, newVariable]);
   }
@@ -179,7 +159,7 @@ void addVariable(AnimatedVariable newVariable) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.42 api docs
+                  sky 0.0.45 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">
@@ -203,7 +183,7 @@ void addVariable(AnimatedVariable newVariable) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.1 -->
+<!-- Made with <3 by dartdoc version 0.6.3 -->
 </body>
 
 </html>

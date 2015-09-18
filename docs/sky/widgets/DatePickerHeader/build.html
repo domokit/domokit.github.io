@@ -112,7 +112,7 @@
       <li><a class="" href="widgets/Widget/syncChild.html">syncChild</a></li>
       <li><a class="" href="widgets/Component/takeChild.html">takeChild</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/Widget/toStringName.html">toStringName</a></li>
+      <li><a class="" href="widgets/Widget/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="widgets/Component/updateSlot.html">updateSlot</a></li>
       <li><a class="" href="widgets/Component/walkChildren.html">walkChildren</a></li>
     </ol>
@@ -136,19 +136,19 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">Widget build() {
   ThemeData theme = Theme.of(this);
-  typography.TextTheme headerTheme;
+  TextTheme headerTheme;
   Color dayColor;
   Color yearColor;
   switch(theme.primaryColorBrightness) {
     case ThemeBrightness.light:
-      headerTheme = typography.black;
-      dayColor = mode == DatePickerMode.day ? colors.black87 : colors.black54;
-      yearColor = mode == DatePickerMode.year ? colors.black87 : colors.black54;
+      headerTheme = Typography.black;
+      dayColor = mode == DatePickerMode.day ? Colors.black87 : Colors.black54;
+      yearColor = mode == DatePickerMode.year ? Colors.black87 : Colors.black54;
       break;
     case ThemeBrightness.dark:
-      headerTheme = typography.white;
-      dayColor = mode == DatePickerMode.day ? colors.white87 : colors.white54;
-      yearColor = mode == DatePickerMode.year ? colors.white87 : colors.white54;
+      headerTheme = Typography.white;
+      dayColor = mode == DatePickerMode.day ? Colors.white87 : Colors.white54;
+      yearColor = mode == DatePickerMode.year ? Colors.white87 : Colors.white54;
       break;
   }
   TextStyle dayStyle = headerTheme.display3.copyWith(color: dayColor, height: 1.0, fontSize: 100.0);

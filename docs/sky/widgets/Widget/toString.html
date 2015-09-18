@@ -108,7 +108,7 @@
       <li><a class="" href="widgets/Widget/syncChild.html">syncChild</a></li>
       <li><a class="" href="widgets/Widget/takeChild.html">takeChild</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/Widget/toStringName.html">toStringName</a></li>
+      <li><a class="" href="widgets/Widget/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="widgets/Widget/updateSlot.html">updateSlot</a></li>
       <li><a class="" href="widgets/Widget/walkChildren.html">walkChildren</a></li>
     </ol>
@@ -120,10 +120,6 @@
     <section class="multi-line-signature">
             <span class="returntype">String</span>
             <span class="name ">toString</span>(
-            <br>
-            <div class="parameters">
-                [<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>,<br><span class="parameter" id="toString-param-startPrefix"><span class="type-annotation">String</span> <span class="parameter-name">startPrefix</span> = <span class="default-value">''</span></span>]
-            </div>
             )    </section>
 
     <section class="desc markdown">
@@ -134,21 +130,11 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">String toString([String prefix = &apos;&apos;, String startPrefix = &apos;&apos;]) {
-  String childrenString = &apos;&apos;;
-  List&lt;Widget&gt; children = new List&lt;Widget&gt;();
-  walkChildren(children.add);
-  if (children.length &gt; 0) {
-    Widget lastChild = children.removeLast();
-    String nextStartPrefix = prefix + &apos; +-&apos;;
-    String nextPrefix = prefix + &apos; | &apos;;
-    for (Widget child in children)
-      childrenString += child.toString(nextPrefix, _adjustPrefixWithParentCheck(child, nextStartPrefix));
-    nextStartPrefix = prefix + &apos; \&apos;-&apos;;
-    nextPrefix = prefix + &apos;   &apos;;
-    childrenString += lastChild.toString(nextPrefix, _adjustPrefixWithParentCheck(lastChild, nextStartPrefix));
-  }
-  return &apos;$startPrefix${toStringName()}\n$childrenString&apos;;
+      <pre><code class="prettyprint lang-dart">String toString() {
+  List&lt;String&gt; details = &lt;String&gt;[];
+  debugAddDetails(details);
+  String detailString = details.join(&apos;; &apos;);
+  return &apos;$runtimeType($detailString})&apos;;
 }</code></pre>
     </section>
 

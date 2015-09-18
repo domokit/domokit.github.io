@@ -153,7 +153,7 @@
       <li><a class="" href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
       <li><a class="" href="rendering/RenderBox/setupParentData.html">setupParentData</a></li>
       <li><a class="" href="rendering/RenderObject/toString.html">toString</a></li>
-      <li><a class="" href="rendering/RenderObject/toStringName.html">toStringName</a></li>
+      <li><a class="" href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="rendering/RenderObject/updateCompositingBits.html">updateCompositingBits</a></li>
       <li><a class="" href="widgets/RenderScaffold/visitChildren.html">visitChildren</a></li>
     </ol>
@@ -173,14 +173,15 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns a string describing the current node's descendants. Each line of
+the subtree in the output should be indented by the prefix argument.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">String debugDescribeChildren(String prefix) {
-  return _slots.keys.map((slot) =&gt; &apos;${prefix}${slot}: ${_slots[slot].toString(prefix)}&apos;).join();
+  return _slots.keys.map((slot) =&gt; &apos;${prefix}${slot}: ${_slots[slot].toStringDeep(prefix)}&apos;).join();
 }</code></pre>
     </section>
 

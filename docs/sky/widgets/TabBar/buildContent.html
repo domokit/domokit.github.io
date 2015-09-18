@@ -128,7 +128,7 @@
       <li><a class="" href="widgets/TabBar/syncConstructorArguments.html">syncConstructorArguments</a></li>
       <li><a class="" href="widgets/Component/takeChild.html">takeChild</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/Widget/toStringName.html">toStringName</a></li>
+      <li><a class="" href="widgets/Widget/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="widgets/Component/updateSlot.html">updateSlot</a></li>
       <li><a class="" href="widgets/Component/walkChildren.html">walkChildren</a></li>
     </ol>
@@ -157,18 +157,18 @@
   Color backgroundColor = themeData.primaryColor;
   Color indicatorColor = themeData.accentColor;
   if (indicatorColor == backgroundColor) {
-    indicatorColor = colors.white;
+    indicatorColor = Colors.white;
   }
 
   TextStyle textStyle;
   IconThemeColor iconThemeColor;
   switch (themeData.primaryColorBrightness) {
     case ThemeBrightness.light:
-      textStyle = typography.black.body1;
+      textStyle = Typography.black.body1;
       iconThemeColor = IconThemeColor.black;
       break;
     case ThemeBrightness.dark:
-      textStyle = typography.white.body1;
+      textStyle = Typography.white.body1;
       iconThemeColor = IconThemeColor.white;
       break;
   }

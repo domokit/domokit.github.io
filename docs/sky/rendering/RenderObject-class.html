@@ -111,6 +111,7 @@
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a class="" href="rendering/clamp.html">clamp</a></li>
       <li><a class="" href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
+      <li><a class="" href="rendering/debugDumpRenderTree.html">debugDumpRenderTree</a></li>
       <li><a class="" href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
@@ -607,7 +608,8 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a string describing the current node's descendants. Each line of
+the subtree in the output should be indented by the prefix argument.</p>
               </dd>
               <dt id="debugDescribeSettings" class="callable">
                   <span class="name "><a class="" href="rendering/RenderObject/debugDescribeSettings.html">debugDescribeSettings</a></span><span class="signature">(<wbr><span class="parameter" id="debugDescribeSettings-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span></span>)
@@ -616,7 +618,9 @@ child. Do not call directly.</p>
                   </span>
               </dt>
               <dd>
-                  <p></p>
+                  <p>Returns a string describing the current node's fields, one field per line,
+with each line prefixed by the prefix argument. Subclasses should override
+this to have their information included in toStringDeep().</p>
               </dd>
               <dt id="debugDoesMeetConstraints" class="callable">
                   <span class="name "><a class="" href="rendering/RenderObject/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></span><span class="signature">(<wbr>)
@@ -808,22 +812,24 @@ redepthChild(child) for each child. Do not call directly.</p>
 </p>
               </dd>
               <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="rendering/RenderObject/toString.html">toString</a></span><span class="signature">(<wbr>[<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>])
-                      &#8594;
-                      <span class="returntype">String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-              </dd>
-              <dt id="toStringName" class="callable">
-                  <span class="name "><a class="" href="rendering/RenderObject/toStringName.html">toStringName</a></span><span class="signature">(<wbr>)
+                  <span class="name "><a class="" href="rendering/RenderObject/toString.html">toString</a></span><span class="signature">(<wbr>)
                       &#8594;
                       <span class="returntype">String</span>
                   </span>
               </dt>
               <dd>
                   <p>Returns a human understandable name</p>
+              </dd>
+              <dt id="toStringDeep" class="callable">
+                  <span class="name "><a class="" href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>[<span class="parameter" id="toStringDeep-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>])
+                      &#8594;
+                      <span class="returntype">String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a description of the tree rooted at this node.
+If the prefix argument is provided, then every line in the output
+will be prefixed by that string.</p>
               </dd>
               <dt id="updateCompositingBits" class="callable">
                   <span class="name "><a class="" href="rendering/RenderObject/updateCompositingBits.html">updateCompositingBits</a></span><span class="signature">(<wbr>)
@@ -916,7 +922,7 @@ redepthChild(child) for each child. Do not call directly.</p>
       <li><a class="" href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
       <li><a class="" href="rendering/RenderObject/setupParentData.html">setupParentData</a></li>
       <li><a class="" href="rendering/RenderObject/toString.html">toString</a></li>
-      <li><a class="" href="rendering/RenderObject/toStringName.html">toStringName</a></li>
+      <li><a class="" href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="rendering/RenderObject/updateCompositingBits.html">updateCompositingBits</a></li>
       <li><a class="" href="rendering/RenderObject/visitChildren.html">visitChildren</a></li>
     </ol>

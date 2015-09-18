@@ -117,7 +117,7 @@
       <li><a class="" href="widgets/Drawer/syncConstructorArguments.html">syncConstructorArguments</a></li>
       <li><a class="" href="widgets/Component/takeChild.html">takeChild</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/Widget/toStringName.html">toStringName</a></li>
+      <li><a class="" href="widgets/Widget/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="widgets/Component/updateSlot.html">updateSlot</a></li>
       <li><a class="" href="widgets/Component/walkChildren.html">walkChildren</a></li>
     </ol>
@@ -144,7 +144,7 @@
     child: new ColorTransition(
       performance: _performance,
       direction: showing ? Direction.forward : Direction.reverse,
-      color: new AnimatedColorValue(colors.transparent, end: const Color(0x7F000000)),
+      color: new AnimatedColorValue(Colors.transparent, end: const Color(0x7F000000)),
       child: new Container()
     ),
     onTap: () {

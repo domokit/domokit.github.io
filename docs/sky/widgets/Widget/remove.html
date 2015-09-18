@@ -108,7 +108,7 @@
       <li><a class="" href="widgets/Widget/syncChild.html">syncChild</a></li>
       <li><a class="" href="widgets/Widget/takeChild.html">takeChild</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/Widget/toStringName.html">toStringName</a></li>
+      <li><a class="" href="widgets/Widget/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="widgets/Widget/updateSlot.html">updateSlot</a></li>
       <li><a class="" href="widgets/Widget/walkChildren.html">walkChildren</a></li>
     </ol>
@@ -132,8 +132,13 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void remove() {
   walkChildren((Widget child) {
-    if (child._generation &lt;= _generation)
+    if (child.isFromOldGeneration || !isFromOldGeneration) {
+      assert(child.parent == this);
       child.remove();
+    } else {
+      // if it&apos;s from the current generation and we&apos;re not, it means it&apos;s been moved somewhere else in the tree already and isn&apos;t really our child anymore
+      assert(child.parent != this);
+    }
   });
   _renderObject = null;
   setParent(null);

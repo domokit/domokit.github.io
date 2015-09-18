@@ -147,7 +147,7 @@
       <li><a class="" href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
       <li><a class="" href="rendering/RenderBox/setupParentData.html">setupParentData</a></li>
       <li><a class="" href="rendering/RenderObject/toString.html">toString</a></li>
-      <li><a class="" href="rendering/RenderObject/toStringName.html">toStringName</a></li>
+      <li><a class="" href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></li>
       <li><a class="" href="rendering/RenderObject/updateCompositingBits.html">updateCompositingBits</a></li>
       <li><a class="" href="rendering/RenderObject/visitChildren.html">visitChildren</a></li>
     </ol>
@@ -167,7 +167,9 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Returns a string describing the current node's fields, one field per line,
+with each line prefixed by the prefix argument. Subclasses should override
+this to have their information included in toStringDeep().</p>
     
     </section>
 

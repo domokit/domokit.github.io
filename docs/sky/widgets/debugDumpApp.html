@@ -354,17 +354,18 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Prints a textual representation of the entire widget tree</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void debugDumpApp() {
+      <pre><code class="prettyprint lang-dart">/// Prints a textual representation of the entire widget tree
+void debugDumpApp() {
   if (_container != null)
-    _container.toString().split(&apos;\n&apos;).forEach(print);
+    _container.toStringDeep().split(&apos;\n&apos;).forEach(print);
   else
-    print(&quot;runApp() not yet called&quot;);
+    print(&apos;runApp() not yet called&apos;);
 }</code></pre>
     </section>
 

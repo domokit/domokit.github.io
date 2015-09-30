@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -103,7 +134,7 @@
       <section id="getter">
       
       <section class="multi-line-signature">
-        <span class="returntype">List&lt;HistoryEntry&gt;</span>
+        <span class="returntype">List&lt;RouteBase&gt;</span>
         <span class="name ">history</span></section>
       
       <section class="desc markdown">
@@ -117,7 +148,7 @@
       
       <section class="multi-line-signature">
         <span class="returntype">void</span>
-          <span class="name ">history=</span><span class="signature">(<wbr><span class="parameter" id="history=-param-_history"><span class="type-annotation">List&lt;HistoryEntry&gt;</span> <span class="parameter-name">_history</span></span>)
+          <span class="name ">history=</span><span class="signature">(<wbr><span class="parameter" id="history=-param-_history"><span class="type-annotation">List&lt;RouteBase&gt;</span> <span class="parameter-name">_history</span></span>)
       </section>
       
       <section class="desc markdown">
@@ -137,7 +168,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

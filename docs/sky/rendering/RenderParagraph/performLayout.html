@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -81,6 +112,7 @@
     
     
       <li class="section-title"><a href="rendering/RenderParagraph-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="rendering/RenderParagraph/allowLineWrap.html">allowLineWrap</a></li>
       <li><a class="" href="rendering/AbstractNode/attached.html">attached</a></li>
       <li><a class="" href="rendering/RenderBox/constraints.html">constraints</a></li>
       <li><a class="" href="rendering/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a></li>
@@ -101,6 +133,7 @@
       <li><a class="" href="rendering/RenderBox/size.html">size</a></li>
       <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
       <li><a class="" href="rendering/RenderParagraph/text.html">text</a></li>
+      <li><a class="" href="rendering/RenderParagraph/textPainter.html">textPainter</a></li>
     
       <li class="section-title"><a href="rendering/RenderParagraph-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderParagraph/RenderParagraph.html">RenderParagraph</a></li>
@@ -134,6 +167,7 @@
       <li><a class="" href="rendering/RenderBox/hitTestChildren.html">hitTestChildren</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
       <li><a class="" href="rendering/RenderObject/layout.html">layout</a></li>
+      <li><a class="" href="rendering/RenderParagraph/layoutText.html">layoutText</a></li>
       <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
       <li><a class="" href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
@@ -185,10 +219,13 @@ information without informing this render object.</p>
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void performLayout() {
-  _layout(constraints);
-  // _paragraphPainter.width always expands to fill, use maxContentWidth instead.
-  size = constraints.constrain(new Size(_applyFloatingPointHack(_textPainter.maxContentWidth),
-                                        _applyFloatingPointHack(_textPainter.height)));
+  layoutText(constraints);
+
+  // We use textPainter.maxContentWidth here, rather that textPainter.width,
+  // because the latter is the width that it used to wrap the text, whereas
+  // the former is the actual width of the text.
+  size = constraints.constrain(new Size(textPainter.maxContentWidth,
+                                        textPainter.height));
 }</code></pre>
     </section>
 
@@ -202,7 +239,7 @@ information without informing this render object.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

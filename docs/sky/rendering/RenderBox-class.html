@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -89,6 +120,8 @@
       <li><a class="" href="rendering/EventListener.html">EventListener</a></li>
       <li><a class="" href="rendering/ExtentCallback.html">ExtentCallback</a></li>
       <li><a class="" href="rendering/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a class="" href="rendering/PointerEventListener.html">PointerEventListener</a></li>
+      <li><a class="" href="rendering/RenderingExceptionHandler.html">RenderingExceptionHandler</a></li>
       <li><a class="" href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
       <li><a class="" href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a class="" href="rendering/ValueChanged.html">ValueChanged</a></li>
@@ -103,19 +136,16 @@
       <li><a class="" href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
       <li><a class="" href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a class="" href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
-      <li><a class="" href="rendering/debugRenderObjectDumpMaxLength.html">debugRenderObjectDumpMaxLength</a></li>
-      <li><a class="" href="rendering/inDebugBuild.html">inDebugBuild</a></li>
+      <li><a class="" href="rendering/debugRenderingExceptionHandler.html">debugRenderingExceptionHandler</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
       <li><a class="" href="rendering/clamp.html">clamp</a></li>
-      <li><a class="" href="rendering/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a class="" href="rendering/debugDumpRenderTree.html">debugDumpRenderTree</a></li>
       <li><a class="" href="rendering/paintImage.html">paintImage</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
       <li><a class="" href="rendering/BlockDirection-class.html">BlockDirection</a></li>
       <li><a class="" href="rendering/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
-      <li><a class="" href="rendering/EventDisposition-class.html">EventDisposition</a></li>
       <li><a class="" href="rendering/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a class="" href="rendering/FlexDirection-class.html">FlexDirection</a></li>
       <li><a class="" href="rendering/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
@@ -156,6 +186,7 @@
       <li><a class="" href="rendering/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
       <li><a class="" href="rendering/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="rendering/FlexParentData-class.html">FlexParentData</a></li>
+      <li><a class="" href="rendering/FlutterBinding-class.html">FlutterBinding</a></li>
       <li><a class="" href="rendering/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="rendering/GridParentData-class.html">GridParentData</a></li>
       <li><a class="" href="rendering/HitTestEntry-class.html">HitTestEntry</a></li>
@@ -191,6 +222,7 @@
       <li><a class="" href="rendering/RenderConstrainedBox-class.html">RenderConstrainedBox</a></li>
       <li><a class="" href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
       <li><a class="" href="rendering/RenderDecoratedBox-class.html">RenderDecoratedBox</a></li>
+      <li><a class="" href="rendering/RenderEditableParagraph-class.html">RenderEditableParagraph</a></li>
       <li><a class="" href="rendering/RenderErrorBox-class.html">RenderErrorBox</a></li>
       <li><a class="" href="rendering/RenderFlex-class.html">RenderFlex</a></li>
       <li><a class="" href="rendering/RenderGrid-class.html">RenderGrid</a></li>
@@ -198,11 +230,14 @@
       <li><a class="" href="rendering/RenderImage-class.html">RenderImage</a></li>
       <li><a class="" href="rendering/RenderIntrinsicHeight-class.html">RenderIntrinsicHeight</a></li>
       <li><a class="" href="rendering/RenderIntrinsicWidth-class.html">RenderIntrinsicWidth</a></li>
+      <li><a class="" href="rendering/RenderMetaData-class.html">RenderMetaData</a></li>
       <li><a class="" href="rendering/RenderObject-class.html">RenderObject</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
       <li><a class="" href="rendering/RenderOpacity-class.html">RenderOpacity</a></li>
+      <li><a class="" href="rendering/RenderOverflowBox-class.html">RenderOverflowBox</a></li>
       <li><a class="" href="rendering/RenderPadding-class.html">RenderPadding</a></li>
       <li><a class="" href="rendering/RenderParagraph-class.html">RenderParagraph</a></li>
+      <li><a class="" href="rendering/RenderPointerListener-class.html">RenderPointerListener</a></li>
       <li><a class="" href="rendering/RenderPositionedBox-class.html">RenderPositionedBox</a></li>
       <li><a class="" href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
       <li><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
@@ -213,7 +248,6 @@
       <li><a class="" href="rendering/RenderView-class.html">RenderView</a></li>
       <li><a class="" href="rendering/RenderViewport-class.html">RenderViewport</a></li>
       <li><a class="" href="rendering/Size-class.html">Size</a></li>
-      <li><a class="" href="rendering/SkyBinding-class.html">SkyBinding</a></li>
       <li><a class="" href="rendering/StackParentData-class.html">StackParentData</a></li>
       <li><a class="" href="rendering/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="rendering/TextPainter-class.html">TextPainter</a></li>
@@ -270,9 +304,11 @@ its height, use the child's height to determine your size.</p>
               <li><a class="" href="rendering/RenderParagraph-class.html">RenderParagraph</a></li>
               <li><a class="" href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
               <li><a class="" href="widgets/RenderScaffold-class.html">RenderScaffold</a></li>
+              <li><a class="" href="widgets_next/RenderScaffold-class.html">RenderScaffold</a></li>
               <li><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
               <li><a class="" href="rendering/RenderStack-class.html">RenderStack</a></li>
               <li><a class="" href="widgets/RenderTabBar-class.html">RenderTabBar</a></li>
+              <li><a class="" href="widgets_next/RenderTabBar-class.html">RenderTabBar</a></li>
               <li><a class="" href="rendering/RenderViewport-class.html">RenderViewport</a></li>
           </ul></dd>
 
@@ -740,7 +776,7 @@ coordinate system for this box</p>
               <dt id="handleEvent" class="callable">
                   <span class="name "><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">Event</span> <span class="parameter-name">event</span></span>, <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a class="" href="rendering/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
                       &#8594;
-                      <span class="returntype"><a class="" href="rendering/EventDisposition-class.html">EventDisposition</a></span>
+                      <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
@@ -1050,7 +1086,7 @@ will be prefixed by that string.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

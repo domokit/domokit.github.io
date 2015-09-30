@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -90,6 +121,8 @@
       <li><a class="" href="animation/linear.html">linear</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="animation/AnimationPerformanceListener.html">AnimationPerformanceListener</a></li>
+      <li><a class="" href="animation/AnimationPerformanceStatusListener.html">AnimationPerformanceStatusListener</a></li>
       <li><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#properties">Properties</a></li>
@@ -134,6 +167,7 @@
       <li><a class="" href="animation/TweenSimulation-class.html">TweenSimulation</a></li>
       <li><a class="" href="animation/UnboundedBehavior-class.html">UnboundedBehavior</a></li>
       <li><a class="" href="animation/ValueAnimation-class.html">ValueAnimation</a></li>
+      <li><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></li>
     
     </ol>
   </div>
@@ -142,7 +176,7 @@
 
     <section class="desc markdown">
     
-          <p>A curve that is initially 0.0, then linear, then 1.0</p>
+          <p>A curve that is 0.0 until start, then linear from 0.0 to 1.0 at end, then 1.0</p>
     
     </section>
 
@@ -199,6 +233,9 @@
                 <span class="name"><a class="" href="animation/Interval/Interval.html">Interval</a></span><span class="signature">(<span class="parameter" id="-param-start"><span class="type-annotation">double</span> <span class="parameter-name">start</span></span>, <span class="parameter" id="-param-end"><span class="type-annotation">double</span> <span class="parameter-name">end</span></span>)</span>
             </dt>
             <dd>
+                <div class="constructor-modifier">
+                    const
+                </div>
                 <p></p>
             </dd>
         </dl>
@@ -250,7 +287,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

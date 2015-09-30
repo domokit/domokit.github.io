@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -79,10 +110,6 @@
       <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
       <li><a class="" href="widgets/bold.html">bold</a></li>
       <li><a class="" href="widgets/edges.html">edges</a></li>
-      <li><a class="" href="widgets/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></li>
-      <li><a class="" href="widgets/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></li>
-      <li><a class="" href="widgets/KeyboardType_PHONE.html">KeyboardType_PHONE</a></li>
-      <li><a class="" href="widgets/KeyboardType_TEXT.html">KeyboardType_TEXT</a></li>
       <li><a class="" href="widgets/lineThrough.html">lineThrough</a></li>
       <li><a class="" href="widgets/normal.html">normal</a></li>
       <li><a class="" href="widgets/overline.html">overline</a></li>
@@ -99,9 +126,7 @@
       <li><a class="" href="widgets/DragTargetBuilder.html">DragTargetBuilder</a></li>
       <li><a class="" href="widgets/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
       <li><a class="" href="widgets/DrawerDismissedCallback.html">DrawerDismissedCallback</a></li>
-      <li><a class="" href="widgets/EventListener.html">EventListener</a></li>
       <li><a class="" href="widgets/FocusChanged.html">FocusChanged</a></li>
-      <li><a class="" href="widgets/GestureEventListener.html">GestureEventListener</a></li>
       <li><a class="" href="widgets/GlobalKeyRemoveListener.html">GlobalKeyRemoveListener</a></li>
       <li><a class="" href="widgets/GlobalKeySyncListener.html">GlobalKeySyncListener</a></li>
       <li><a class="" href="widgets/IndexedBuilder.html">IndexedBuilder</a></li>
@@ -110,10 +135,10 @@
       <li><a class="" href="widgets/LayoutChangedCallback.html">LayoutChangedCallback</a></li>
       <li><a class="" href="widgets/ListBuilder.html">ListBuilder</a></li>
       <li><a class="" href="widgets/MimicReadyCallback.html">MimicReadyCallback</a></li>
+      <li><a class="" href="widgets/NotificationCallback.html">NotificationCallback</a></li>
       <li><a class="" href="widgets/OnPressedFunction.html">OnPressedFunction</a></li>
       <li><a class="" href="widgets/PageChangedCallback.html">PageChangedCallback</a></li>
-      <li><a class="" href="widgets/PointerEventListener.html">PointerEventListener</a></li>
-      <li><a class="" href="widgets/PopupMenuDismissedCallback.html">PopupMenuDismissedCallback</a></li>
+      <li><a class="" href="widgets/PopupMenuItemsBuilder.html">PopupMenuItemsBuilder</a></li>
       <li><a class="" href="widgets/RadioValueChanged.html">RadioValueChanged</a></li>
       <li><a class="" href="widgets/ResizedCallback.html">ResizedCallback</a></li>
       <li><a class="" href="widgets/RouteBuilder.html">RouteBuilder</a></li>
@@ -123,11 +148,13 @@
       <li><a class="" href="widgets/StringUpdated.html">StringUpdated</a></li>
       <li><a class="" href="widgets/StringValueChanged.html">StringValueChanged</a></li>
       <li><a class="" href="widgets/ValueChanged.html">ValueChanged</a></li>
+      <li><a class="" href="widgets/WidgetsExceptionHandler.html">WidgetsExceptionHandler</a></li>
       <li><a class="" href="widgets/WidgetTreeWalker.html">WidgetTreeWalker</a></li>
     
+      <li class="section-title"><a href="widgets/widgets-library.html#properties">Properties</a></li>
+      <li><a class="" href="widgets/debugWidgetsExceptionHandler.html">debugWidgetsExceptionHandler</a></li>
     
       <li class="section-title"><a href="widgets/widgets-library.html#functions">Functions</a></li>
-      <li><a class="" href="widgets/combineEventDispositions.html">combineEventDispositions</a></li>
       <li><a class="" href="widgets/debugDumpApp.html">debugDumpApp</a></li>
       <li><a class="" href="widgets/ensureWidgetIsVisible.html">ensureWidgetIsVisible</a></li>
       <li><a class="" href="widgets/enterLayoutCallbackBuilder.html">enterLayoutCallbackBuilder</a></li>
@@ -136,6 +163,7 @@
       <li><a class="" href="widgets/implicitlyAnimate.html">implicitlyAnimate</a></li>
       <li><a class="" href="widgets/runApp.html">runApp</a></li>
       <li><a class="" href="widgets/showDialog.html">showDialog</a></li>
+      <li><a class="" href="widgets/showMenu.html">showMenu</a></li>
     
       <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
       <li><a class="" href="widgets/BlockDirection-class.html">BlockDirection</a></li>
@@ -143,7 +171,6 @@
       <li><a class="" href="widgets/DatePickerMode-class.html">DatePickerMode</a></li>
       <li><a class="" href="widgets/Direction-class.html">Direction</a></li>
       <li><a class="" href="widgets/DismissDirection-class.html">DismissDirection</a></li>
-      <li><a class="" href="widgets/EventDisposition-class.html">EventDisposition</a></li>
       <li><a class="" href="widgets/FlexAlignItems-class.html">FlexAlignItems</a></li>
       <li><a class="" href="widgets/FlexDirection-class.html">FlexDirection</a></li>
       <li><a class="" href="widgets/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
@@ -164,7 +191,6 @@
       <li class="section-title"><a href="widgets/widgets-library.html#classes">Classes</a></li>
       <li><a class="" href="widgets/AbstractWidgetRoot-class.html">AbstractWidgetRoot</a></li>
       <li><a class="" href="widgets/Align-class.html">Align</a></li>
-      <li><a class="" href="widgets/Anchor-class.html">Anchor</a></li>
       <li><a class="" href="widgets/AnimatedBoxConstraintsValue-class.html">AnimatedBoxConstraintsValue</a></li>
       <li><a class="" href="widgets/AnimatedBoxDecorationValue-class.html">AnimatedBoxDecorationValue</a></li>
       <li><a class="" href="widgets/AnimatedComponent-class.html">AnimatedComponent</a></li>
@@ -209,7 +235,6 @@
       <li><a class="" href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
       <li><a class="" href="widgets/Dialog-class.html">Dialog</a></li>
       <li><a class="" href="widgets/DialogRoute-class.html">DialogRoute</a></li>
-      <li><a class="" href="widgets/DialogTransition-class.html">DialogTransition</a></li>
       <li><a class="" href="widgets/Dismissable-class.html">Dismissable</a></li>
       <li><a class="" href="widgets/DragController-class.html">DragController</a></li>
       <li><a class="" href="widgets/DragTarget-class.html">DragTarget</a></li>
@@ -232,7 +257,6 @@
       <li><a class="" href="widgets/GlobalKeyWatcher-class.html">GlobalKeyWatcher</a></li>
       <li><a class="" href="widgets/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
       <li><a class="" href="widgets/Grid-class.html">Grid</a></li>
-      <li><a class="" href="widgets/HistoryEntry-class.html">HistoryEntry</a></li>
       <li><a class="" href="widgets/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
       <li><a class="" href="widgets/Icon-class.html">Icon</a></li>
       <li><a class="" href="widgets/IconButton-class.html">IconButton</a></li>
@@ -257,6 +281,7 @@
       <li><a class="" href="widgets/IntrinsicHeight-class.html">IntrinsicHeight</a></li>
       <li><a class="" href="widgets/IntrinsicWidth-class.html">IntrinsicWidth</a></li>
       <li><a class="" href="widgets/Key-class.html">Key</a></li>
+      <li><a class="" href="widgets/KeyboardType-class.html">KeyboardType</a></li>
       <li><a class="" href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
       <li><a class="" href="widgets/LayoutCallbackBuilderHandle-class.html">LayoutCallbackBuilderHandle</a></li>
       <li><a class="" href="widgets/LeafRenderObjectWrapper-class.html">LeafRenderObjectWrapper</a></li>
@@ -265,11 +290,12 @@
       <li><a class="" href="widgets/Material-class.html">Material</a></li>
       <li><a class="" href="widgets/MaterialButton-class.html">MaterialButton</a></li>
       <li><a class="" href="widgets/Matrix4-class.html">Matrix4</a></li>
+      <li><a class="" href="widgets/MenuPosition-class.html">MenuPosition</a></li>
+      <li><a class="" href="widgets/MenuRoute-class.html">MenuRoute</a></li>
       <li><a class="" href="widgets/Mimic-class.html">Mimic</a></li>
       <li><a class="" href="widgets/Mimicable-class.html">Mimicable</a></li>
       <li><a class="" href="widgets/MixedViewport-class.html">MixedViewport</a></li>
       <li><a class="" href="widgets/MixedViewportLayoutState-class.html">MixedViewportLayoutState</a></li>
-      <li><a class="" href="widgets/ModalOverlay-class.html">ModalOverlay</a></li>
       <li><a class="" href="widgets/MonthPicker-class.html">MonthPicker</a></li>
       <li><a class="" href="widgets/MultiChildRenderObjectWrapper-class.html">MultiChildRenderObjectWrapper</a></li>
       <li><a class="" href="widgets/NavigationState-class.html">NavigationState</a></li>
@@ -313,7 +339,6 @@
       <li><a class="" href="widgets/SizedBox-class.html">SizedBox</a></li>
       <li><a class="" href="widgets/SizeObserver-class.html">SizeObserver</a></li>
       <li><a class="" href="widgets/SlideTransition-class.html">SlideTransition</a></li>
-      <li><a class="" href="widgets/SlideUpFadeTransition-class.html">SlideUpFadeTransition</a></li>
       <li><a class="" href="widgets/SnackBar-class.html">SnackBar</a></li>
       <li><a class="" href="widgets/SnackBarAction-class.html">SnackBarAction</a></li>
       <li><a class="" href="widgets/SquashTransition-class.html">SquashTransition</a></li>
@@ -338,10 +363,12 @@
       <li><a class="" href="widgets/ToolBar-class.html">ToolBar</a></li>
       <li><a class="" href="widgets/Transform-class.html">Transform</a></li>
       <li><a class="" href="widgets/TransitionBase-class.html">TransitionBase</a></li>
+      <li><a class="" href="widgets/TransitionBaseWithChild-class.html">TransitionBaseWithChild</a></li>
+      <li><a class="" href="widgets/TransitionProxy-class.html">TransitionProxy</a></li>
       <li><a class="" href="widgets/ValueKey-class.html">ValueKey</a></li>
       <li><a class="" href="widgets/Viewport-class.html">Viewport</a></li>
       <li><a class="" href="widgets/Widget-class.html">Widget</a></li>
-      <li><a class="" href="widgets/WidgetSkyBinding-class.html">WidgetSkyBinding</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding-class.html">WidgetFlutterBinding</a></li>
       <li><a class="" href="widgets/WidgetToRenderBoxAdapter-class.html">WidgetToRenderBoxAdapter</a></li>
       <li><a class="" href="widgets/YearPicker-class.html">YearPicker</a></li>
     
@@ -441,16 +468,6 @@
     </div>
     <p></p>
             </dd>
-            <dt id="onDismissed" class="property">
-                <span class="name"><a class="" href="widgets/PopupMenu/onDismissed.html">onDismissed</a></span>
-                <span class="signature">&#8594; <a class="" href="widgets/PopupMenuDismissedCallback.html">PopupMenuDismissedCallback</a></span>
-            </dt>
-            <dd>
-                <div class="features">
-        read / write
-    </div>
-    <p></p>
-            </dd>
             <dt id="parent" class="property">
                 <span class="name"><a class="" href="widgets/Widget/parent.html">parent</a></span>
                 <span class="signature">&#8594; <a class="" href="widgets/Widget-class.html">Widget</a></span>
@@ -461,6 +478,16 @@
     </div>
     <p>The parent of this widget in the widget tree.</p>
             </dd>
+            <dt id="performance" class="property">
+                <span class="name"><a class="" href="widgets/PopupMenu/performance.html">performance</a></span>
+                <span class="signature">&#8594; <a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
             <dt id="renderObject" class="property">
                 <span class="name"><a class="" href="widgets/Widget/renderObject.html">renderObject</a></span>
                 <span class="signature">&#8594; <a class="" href="rendering/RenderObject-class.html">RenderObject</a></span>
@@ -470,16 +497,6 @@
         read-only, inherited
     </div>
     <p>The underlying <code>RenderObject</code> associated with this <code>Widget</code>.</p>
-            </dd>
-            <dt id="showing" class="property">
-                <span class="name"><a class="" href="widgets/PopupMenu/showing.html">showing</a></span>
-                <span class="signature">&#8594; bool</span>
-            </dt>
-            <dd>
-                <div class="features">
-        read / write
-    </div>
-    <p></p>
             </dd>
             <dt id="singleChild" class="property">
                 <span class="name"><a class="" href="widgets/Component/singleChild.html">singleChild</a></span>
@@ -499,7 +516,7 @@
 
         <dl class="constructor-summary-list">
             <dt id="PopupMenu" class="callable">
-                <span class="name"><a class="" href="widgets/PopupMenu/PopupMenu.html">PopupMenu</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-showing"><span class="type-annotation">bool</span> <span class="parameter-name">showing</span></span>, <span class="parameter" id="-param-onDismissed"><span class="type-annotation">void</span> <span class="parameter-name">onDismissed</span>()</span>, <span class="parameter" id="-param-items"><span class="type-annotation">List&lt;PopupMenuItem&gt;</span> <span class="parameter-name">items</span></span>, <span class="parameter" id="-param-level"><span class="type-annotation">int</span> <span class="parameter-name">level</span></span>, <span class="parameter" id="-param-navigator"><span class="type-annotation"><a class="" href="widgets/Navigator-class.html">Navigator</a></span> <span class="parameter-name">navigator</span></span>})</span>
+                <span class="name"><a class="" href="widgets/PopupMenu/PopupMenu.html">PopupMenu</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-items"><span class="type-annotation">List&lt;PopupMenuItem&gt;</span> <span class="parameter-name">items</span></span>, <span class="parameter" id="-param-level"><span class="type-annotation">int</span> <span class="parameter-name">level</span>: <span class="default-value">4</span></span>, <span class="parameter" id="-param-navigator"><span class="type-annotation"><a class="" href="widgets/Navigator-class.html">Navigator</a></span> <span class="parameter-name">navigator</span></span>, <span class="parameter" id="-param-performance"><span class="type-annotation"><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></span> <span class="parameter-name">performance</span></span>})</span>
             </dt>
             <dd>
                 <p></p>
@@ -551,34 +568,22 @@
                   <p></p>
               </dd>
               <dt id="didMount" class="callable">
-                  <span class="name "><a class="" href="widgets/Widget/didMount.html">didMount</a></span><span class="signature">(<wbr>)
+                  <span class="name "><a class="" href="widgets/PopupMenu/didMount.html">didMount</a></span><span class="signature">(<wbr>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <div class="features">inherited</div>
-                  <p>Override this function to learn when this <a class="" href="widgets/Widget-class.html">Widget</a> enters the widget tree.</p>
+                  <p>Override this function to learn when this <code>Widget</code> enters the widget tree.</p>
               </dd>
               <dt id="didUnmount" class="callable">
-                  <span class="name "><a class="" href="widgets/Widget/didUnmount.html">didUnmount</a></span><span class="signature">(<wbr>)
+                  <span class="name "><a class="" href="widgets/PopupMenu/didUnmount.html">didUnmount</a></span><span class="signature">(<wbr>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <div class="features">inherited</div>
-                  <p>Override this function to learn when this <a class="" href="widgets/Widget-class.html">Widget</a> leaves the widget tree.</p>
-              </dd>
-              <dt id="findAncestorRenderObjectWrapper" class="callable">
-                  <span class="name "><a class="" href="widgets/Widget/findAncestorRenderObjectWrapper.html">findAncestorRenderObjectWrapper</a></span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype"><a class="" href="widgets/Widget-class.html">Widget</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <div class="features">inherited</div>
-                  <p></p>
+                  <p>Override this function to learn when this <code>Widget</code> leaves the widget tree.</p>
               </dd>
               <dt id="globalToLocal" class="callable">
                   <span class="name "><a class="" href="widgets/Widget/globalToLocal.html">globalToLocal</a></span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">point</span></span>)
@@ -602,6 +607,15 @@
               </dd>
               <dt id="initState" class="callable">
                   <span class="name "><a class="" href="widgets/PopupMenu/initState.html">initState</a></span><span class="signature">(<wbr>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
+              <dt id="itemPressed" class="callable">
+                  <span class="name "><a class="" href="widgets/PopupMenu/itemPressed.html">itemPressed</a></span><span class="signature">(<wbr><span class="parameter" id="itemPressed-param-item"><span class="type-annotation"><a class="" href="widgets/PopupMenuItem-class.html">PopupMenuItem</a></span> <span class="parameter-name">item</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -722,7 +736,7 @@ Override this if you override singleChild to return non-null.</p>
                   <p></p>
               </dd>
               <dt id="walkChildren" class="callable">
-                  <span class="name "><a class="" href="widgets/Component/walkChildren.html">walkChildren</a></span><span class="signature">(<wbr><span class="parameter" id="walkChildren-param-walker"><span class="type-annotation">void</span> <span class="parameter-name">walker</span>(<span class="parameter" id="WidgetTreeWalker-param-Widget"><span class="parameter-name">Widget</span></span>)</span>)
+                  <span class="name "><a class="" href="widgets/Component/walkChildren.html">walkChildren</a></span><span class="signature">(<wbr><span class="parameter" id="walkChildren-param-walker"><span class="type-annotation">void</span> <span class="parameter-name">walker</span>(<span class="parameter" id="WidgetTreeWalker-param-widget"><span class="type-annotation"><a class="" href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">widget</span></span>)</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -750,10 +764,9 @@ Override this if you override singleChild to return non-null.</p>
       <li><a class="" href="widgets/PopupMenu/level.html">level</a></li>
       <li><a class="" href="widgets/Widget/mounted.html">mounted</a></li>
       <li><a class="" href="widgets/PopupMenu/navigator.html">navigator</a></li>
-      <li><a class="" href="widgets/PopupMenu/onDismissed.html">onDismissed</a></li>
       <li><a class="" href="widgets/Widget/parent.html">parent</a></li>
+      <li><a class="" href="widgets/PopupMenu/performance.html">performance</a></li>
       <li><a class="" href="widgets/Widget/renderObject.html">renderObject</a></li>
-      <li><a class="" href="widgets/PopupMenu/showing.html">showing</a></li>
       <li><a class="" href="widgets/Component/singleChild.html">singleChild</a></li>
     
       <li class="section-title"><a href="widgets/PopupMenu-class.html#constructors">Constructors</a></li>
@@ -765,12 +778,12 @@ Override this if you override singleChild to return non-null.</p>
       <li><a class="" href="widgets/StatefulComponent/debugAddDetails.html">debugAddDetails</a></li>
       <li><a class="" href="widgets/Component/dependenciesChanged.html">dependenciesChanged</a></li>
       <li><a class="" href="widgets/Component/detachRenderObject.html">detachRenderObject</a></li>
-      <li><a class="" href="widgets/Widget/didMount.html">didMount</a></li>
-      <li><a class="" href="widgets/Widget/didUnmount.html">didUnmount</a></li>
-      <li><a class="" href="widgets/Widget/findAncestorRenderObjectWrapper.html">findAncestorRenderObjectWrapper</a></li>
+      <li><a class="" href="widgets/PopupMenu/didMount.html">didMount</a></li>
+      <li><a class="" href="widgets/PopupMenu/didUnmount.html">didUnmount</a></li>
       <li><a class="" href="widgets/Widget/globalToLocal.html">globalToLocal</a></li>
       <li><a class="" href="widgets/Widget/inheritedOfType.html">inheritedOfType</a></li>
       <li><a class="" href="widgets/PopupMenu/initState.html">initState</a></li>
+      <li><a class="" href="widgets/PopupMenu/itemPressed.html">itemPressed</a></li>
       <li><a class="" href="widgets/Widget/localToGlobal.html">localToGlobal</a></li>
       <li><a class="" href="widgets/Component/remove.html">remove</a></li>
       <li><a class="" href="widgets/StatefulComponent/retainStatefulNodeIfPossible.html">retainStatefulNodeIfPossible</a></li>
@@ -794,7 +807,7 @@ Override this if you override singleChild to return non-null.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

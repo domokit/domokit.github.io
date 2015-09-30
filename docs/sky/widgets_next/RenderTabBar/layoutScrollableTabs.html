@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layoutScrollableTabs method - RenderTabBar class - widgets_next library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the layoutScrollableTabs method from the RenderTabBar class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="widgets_next/widgets_next-library.html">widgets_next</a></li>
+                  <li><a href="widgets_next/RenderTabBar-class.html">RenderTabBar</a></li>
+                  <li class="self-crumb">layoutScrollableTabs</li>
+              </ol>
+              <div class="self-name">layoutScrollableTabs</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="widgets_next/widgets_next-library.html">widgets_next</a></li>
+              <li><a href="widgets_next/RenderTabBar-class.html">RenderTabBar</a></li>
+              <li class="self-crumb">layoutScrollableTabs</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> layoutScrollableTabs
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="widgets_next/RenderTabBar/layoutScrollableTabs.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="widgets_next/widgets_next-library.html">widgets_next</a></h5>
+    <h5><a href="widgets_next/RenderTabBar-class.html">RenderTabBar</a></h5>
+
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="widgets_next/RenderTabBar-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="rendering/AbstractNode/attached.html">attached</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/backgroundColor.html">backgroundColor</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/childCount.html">childCount</a></li>
+      <li><a class="" href="rendering/RenderBox/constraints.html">constraints</a></li>
+      <li><a class="" href="rendering/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a></li>
+      <li><a class="" href="rendering/RenderObject/debugCanPerformMutations.html">debugCanPerformMutations</a></li>
+      <li><a class="" href="rendering/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></li>
+      <li><a class="" href="rendering/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></li>
+      <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
+      <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
+      <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/firstChild.html">firstChild</a></li>
+      <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/indicatorColor.html">indicatorColor</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/indicatorRect.html">indicatorRect</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/isScrollable.html">isScrollable</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/lastChild.html">lastChild</a></li>
+      <li><a class="" href="rendering/RenderObject/layer.html">layer</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/layoutSize.html">layoutSize</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/layoutWidths.html">layoutWidths</a></li>
+      <li><a class="" href="rendering/RenderObject/needsCompositing.html">needsCompositing</a></li>
+      <li><a class="" href="rendering/RenderObject/needsLayout.html">needsLayout</a></li>
+      <li><a class="" href="rendering/RenderObject/needsPaint.html">needsPaint</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/onLayoutChanged.html">onLayoutChanged</a></li>
+      <li><a class="" href="rendering/RenderBox/paintBounds.html">paintBounds</a></li>
+      <li><a class="" href="rendering/AbstractNode/parent.html">parent</a></li>
+      <li><a class="" href="rendering/RenderObject/parentData.html">parentData</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/selectedIndex.html">selectedIndex</a></li>
+      <li><a class="" href="rendering/RenderBox/size.html">size</a></li>
+      <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/textAndIcons.html">textAndIcons</a></li>
+    
+      <li class="section-title"><a href="widgets_next/RenderTabBar-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets_next/RenderTabBar/RenderTabBar.html">RenderTabBar</a></li>
+    
+    
+      <li class="section-title"><a href="widgets_next/RenderTabBar-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/add.html">add</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/addAll.html">addAll</a></li>
+      <li><a class="" href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
+      <li><a class="" href="rendering/RenderBox/applyPaintTransform.html">applyPaintTransform</a></li>
+      <li><a class="" href="rendering/AbstractNode/attach.html">attach</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/attachChildren.html">attachChildren</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/childAfter.html">childAfter</a></li>
+      <li><a class="" href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
+      <li><a class="" href="rendering/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li><a class="" href="rendering/RenderBox/debugDescribeSettings.html">debugDescribeSettings</a></li>
+      <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
+      <li><a class="" href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToFirstActualBaseline.html">defaultComputeDistanceToFirstActualBaseline</a></li>
+      <li><a class="" href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToHighestActualBaseline.html">defaultComputeDistanceToHighestActualBaseline</a></li>
+      <li><a class="" href="rendering/RenderBoxContainerDefaultsMixin/defaultHitTestChildren.html">defaultHitTestChildren</a></li>
+      <li><a class="" href="rendering/RenderBoxContainerDefaultsMixin/defaultPaint.html">defaultPaint</a></li>
+      <li><a class="" href="rendering/AbstractNode/detach.html">detach</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/detachChildren.html">detachChildren</a></li>
+      <li><a class="" href="rendering/RenderObject/dropChild.html">dropChild</a></li>
+      <li><a class="" href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
+      <li><a class="" href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
+      <li><a class="" href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
+      <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/hitTestChildren.html">hitTestChildren</a></li>
+      <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
+      <li><a class="" href="rendering/RenderObject/layout.html">layout</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/layoutFixedWidthTabs.html">layoutFixedWidthTabs</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/layoutScrollableTabs.html">layoutScrollableTabs</a></li>
+      <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
+      <li><a class="" href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a></li>
+      <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/move.html">move</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/paint.html">paint</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/performLayout.html">performLayout</a></li>
+      <li><a class="" href="rendering/RenderBox/performResize.html">performResize</a></li>
+      <li><a class="" href="rendering/AbstractNode/redepthChild.html">redepthChild</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/redepthChildren.html">redepthChildren</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/remove.html">remove</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/removeAll.html">removeAll</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/reportLayoutChangedIfNeeded.html">reportLayoutChangedIfNeeded</a></li>
+      <li><a class="" href="rendering/RenderObject/rotate.html">rotate</a></li>
+      <li><a class="" href="rendering/RenderObject/scheduleInitialLayout.html">scheduleInitialLayout</a></li>
+      <li><a class="" href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar/setupParentData.html">setupParentData</a></li>
+      <li><a class="" href="rendering/RenderObject/toString.html">toString</a></li>
+      <li><a class="" href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></li>
+      <li><a class="" href="rendering/RenderObject/updateCompositingBits.html">updateCompositingBits</a></li>
+      <li><a class="" href="rendering/ContainerRenderObjectMixin/visitChildren.html">visitChildren</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype">double</span>
+            <span class="name ">layoutScrollableTabs</span>(
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">double layoutScrollableTabs() {
+  BoxConstraints tabConstraints = new BoxConstraints(
+    minWidth: _kMinTabWidth,
+    maxWidth: _kMaxTabWidth,
+    minHeight: _tabHeight,
+    maxHeight: _tabHeight
+  );
+  double x = 0.0;
+  RenderBox child = firstChild;
+  while (child != null) {
+    child.layout(tabConstraints, parentUsesSize: true);
+    assert(child.parentData is TabBarParentData);
+    child.parentData.position = new Point(x, 0.0);
+    x += child.size.width;
+    child = child.parentData.nextSibling;
+  }
+  return x;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.51 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.6.3 -->
+</body>
+
+</html>

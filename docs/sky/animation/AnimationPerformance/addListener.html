@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -90,6 +121,7 @@
       <li><a class="" href="animation/AnimationPerformance/status.html">status</a></li>
       <li><a class="" href="animation/AnimationPerformance/timing.html">timing</a></li>
       <li><a class="" href="animation/AnimationPerformance/variable.html">variable</a></li>
+      <li><a class="" href="animation/AnimationPerformance/view.html">view</a></li>
     
       <li class="section-title"><a href="animation/AnimationPerformance-class.html#constructors">Constructors</a></li>
       <li><a href="animation/AnimationPerformance/AnimationPerformance.html">AnimationPerformance</a></li>
@@ -119,7 +151,7 @@
             <span class="name ">addListener</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="addListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>
+                <span class="parameter" id="addListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>
             </div>
             )    </section>
 
@@ -132,7 +164,7 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">/// Calls the listener every time the progress of this performance changes
-void addListener(Function listener) {
+void addListener(AnimationPerformanceListener listener) {
   _listeners.add(listener);
 }</code></pre>
     </section>
@@ -147,7 +179,7 @@ void addListener(Function listener) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

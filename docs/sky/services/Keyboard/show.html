@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -100,7 +131,7 @@
             <span class="name ">show</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="show-param-stub"><span class="type-annotation"><a class="" href="services/KeyboardClientStub-class.html">KeyboardClientStub</a></span> <span class="parameter-name">stub</span></span>,<br><span class="parameter" id="show-param-keyboardType"><span class="type-annotation">int</span> <span class="parameter-name">keyboardType</span></span>
+                <span class="parameter" id="show-param-stub"><span class="type-annotation"><a class="" href="services/KeyboardClientStub-class.html">KeyboardClientStub</a></span> <span class="parameter-name">stub</span></span>,<br><span class="parameter" id="show-param-keyboardType"><span class="type-annotation"><a class="" href="services/KeyboardType-class.html">KeyboardType</a></span> <span class="parameter-name">keyboardType</span></span>
             </div>
             )    </section>
 
@@ -112,7 +143,7 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">KeyboardHandle show(KeyboardClientStub stub, int keyboardType) {
+      <pre><code class="prettyprint lang-dart">KeyboardHandle show(KeyboardClientStub stub, KeyboardType keyboardType) {
   assert(stub != null);
   if (_currentHandle != null) {
     if (_currentHandle.stub == stub)
@@ -134,7 +165,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

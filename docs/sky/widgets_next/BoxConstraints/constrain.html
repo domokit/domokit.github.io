@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>constrain method - BoxConstraints class - widgets_next library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the constrain method from the BoxConstraints class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li><a href="widgets_next/widgets_next-library.html">widgets_next</a></li>
+                  <li><a href="widgets_next/BoxConstraints-class.html">BoxConstraints</a></li>
+                  <li class="self-crumb">constrain</li>
+              </ol>
+              <div class="self-name">constrain</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li><a href="widgets_next/widgets_next-library.html">widgets_next</a></li>
+              <li><a href="widgets_next/BoxConstraints-class.html">BoxConstraints</a></li>
+              <li class="self-crumb">constrain</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> constrain
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="widgets_next/BoxConstraints/constrain.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="widgets_next/widgets_next-library.html">widgets_next</a></h5>
+    <h5><a href="widgets_next/BoxConstraints-class.html">BoxConstraints</a></h5>
+
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="widgets_next/BoxConstraints-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/biggest.html">biggest</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/hashCode.html">hashCode</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/hasTightHeight.html">hasTightHeight</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/hasTightWidth.html">hasTightWidth</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/isTight.html">isTight</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/maxHeight.html">maxHeight</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/maxWidth.html">maxWidth</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/minHeight.html">minHeight</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/minWidth.html">minWidth</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/smallest.html">smallest</a></li>
+    
+      <li class="section-title"><a href="widgets_next/BoxConstraints-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets_next/BoxConstraints/BoxConstraints.html">BoxConstraints</a></li>
+      <li><a href="widgets_next/BoxConstraints/BoxConstraints.expand.html">expand</a></li>
+      <li><a href="widgets_next/BoxConstraints/BoxConstraints.loose.html">loose</a></li>
+      <li><a href="widgets_next/BoxConstraints/BoxConstraints.tight.html">tight</a></li>
+      <li><a href="widgets_next/BoxConstraints/BoxConstraints.tightFor.html">tightFor</a></li>
+    
+      <li class="section-title"><a href="widgets_next/BoxConstraints-class.html#operators">Operators</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="widgets_next/BoxConstraints-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/constrain.html">constrain</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/constrainHeight.html">constrainHeight</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/constrainWidth.html">constrainWidth</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/deflate.html">deflate</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/enforce.html">enforce</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/heightConstraints.html">heightConstraints</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/isSatisfiedBy.html">isSatisfiedBy</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/loosen.html">loosen</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/tightenHeight.html">tightenHeight</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/tightenWidth.html">tightenWidth</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/toString.html">toString</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints/widthConstraints.html">widthConstraints</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+            <span class="returntype"><a class="" href="widgets_next/Size-class.html">Size</a></span>
+            <span class="name ">constrain</span>(
+            <br>
+            <div class="parameters">
+                <span class="parameter" id="constrain-param-size"><span class="type-annotation"><a class="" href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>
+            </div>
+            )    </section>
+
+    <section class="desc markdown">
+    
+          <p>Returns the size that both satisfies the constraints and is as close as possible to the given size</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2>Source</h2>
+      <pre><code class="prettyprint lang-dart">/// Returns the size that both satisfies the constraints and is as close as possible to the given size
+Size constrain(Size size) {
+  Size result = new Size(constrainWidth(size.width), constrainHeight(size.height));
+  if (size is _DebugSize)
+    result = new _DebugSize(result, size._owner, size._canBeUsedByParent);
+  return result;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.51 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.6.3 -->
+</body>
+
+</html>

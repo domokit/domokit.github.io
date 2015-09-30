@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -90,6 +121,8 @@
       <li><a class="" href="animation/linear.html">linear</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="animation/AnimationPerformanceListener.html">AnimationPerformanceListener</a></li>
+      <li><a class="" href="animation/AnimationPerformanceStatusListener.html">AnimationPerformanceStatusListener</a></li>
       <li><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#properties">Properties</a></li>
@@ -134,6 +167,7 @@
       <li><a class="" href="animation/TweenSimulation-class.html">TweenSimulation</a></li>
       <li><a class="" href="animation/UnboundedBehavior-class.html">UnboundedBehavior</a></li>
       <li><a class="" href="animation/ValueAnimation-class.html">ValueAnimation</a></li>
+      <li><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></li>
     
     </ol>
   </div>
@@ -155,6 +189,12 @@ progression.</p>
     <section>
         <dl class="dl-horizontal">
 
+          <dt>Implements</dt>
+              <dd>
+                  <ul class="comma-separated clazz-relationships">
+                      <li>WatchableAnimationPerformance</li>
+                  </ul>
+              </dd>
 
 
           <dt>Implemented by</dt>
@@ -263,6 +303,18 @@ progression.</p>
     </div>
     <p>The variable being updated by this performance</p>
             </dd>
+            <dt id="view" class="property">
+                <span class="name"><a class="" href="animation/AnimationPerformance/view.html">view</a></span>
+                <span class="signature">&#8594; <a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p>Returns a <code>WatchableAnimationPerformance</code> for this performance,
+so that a pointer to this object can be passed around without
+allowing users of that pointer to mutate the AnimationPerformance state.</p>
+            </dd>
         </dl>
     </section>
 
@@ -284,7 +336,7 @@ progression.</p>
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="addListener" class="callable">
-                  <span class="name "><a class="" href="animation/AnimationPerformance/addListener.html">addListener</a></span><span class="signature">(<wbr><span class="parameter" id="addListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+                  <span class="name "><a class="" href="animation/AnimationPerformance/addListener.html">addListener</a></span><span class="signature">(<wbr><span class="parameter" id="addListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -293,7 +345,7 @@ progression.</p>
                   <p>Calls the listener every time the progress of this performance changes</p>
               </dd>
               <dt id="addStatusListener" class="callable">
-                  <span class="name "><a class="" href="animation/AnimationPerformance/addStatusListener.html">addStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="addStatusListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+                  <span class="name "><a class="" href="animation/AnimationPerformance/addStatusListener.html">addStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="addStatusListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>(<span class="parameter" id="AnimationPerformanceStatusListener-param-status"><span class="type-annotation"><a class="" href="animation/AnimationStatus-class.html">AnimationStatus</a></span> <span class="parameter-name">status</span></span>)</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -340,7 +392,7 @@ progression.</p>
                   <p>Start running this animation in the given direction</p>
               </dd>
               <dt id="removeListener" class="callable">
-                  <span class="name "><a class="" href="animation/AnimationPerformance/removeListener.html">removeListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+                  <span class="name "><a class="" href="animation/AnimationPerformance/removeListener.html">removeListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -349,7 +401,7 @@ progression.</p>
                   <p>Stop calling the listener every time the progress of this performance changes</p>
               </dd>
               <dt id="removeStatusListener" class="callable">
-                  <span class="name "><a class="" href="animation/AnimationPerformance/removeStatusListener.html">removeStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeStatusListener-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+                  <span class="name "><a class="" href="animation/AnimationPerformance/removeStatusListener.html">removeStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeStatusListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>(<span class="parameter" id="AnimationPerformanceStatusListener-param-status"><span class="type-annotation"><a class="" href="animation/AnimationStatus-class.html">AnimationStatus</a></span> <span class="parameter-name">status</span></span>)</span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
@@ -414,6 +466,7 @@ progression.</p>
       <li><a class="" href="animation/AnimationPerformance/status.html">status</a></li>
       <li><a class="" href="animation/AnimationPerformance/timing.html">timing</a></li>
       <li><a class="" href="animation/AnimationPerformance/variable.html">variable</a></li>
+      <li><a class="" href="animation/AnimationPerformance/view.html">view</a></li>
     
       <li class="section-title"><a href="animation/AnimationPerformance-class.html#constructors">Constructors</a></li>
       <li><a href="animation/AnimationPerformance/AnimationPerformance.html">AnimationPerformance</a></li>
@@ -443,7 +496,7 @@ progression.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

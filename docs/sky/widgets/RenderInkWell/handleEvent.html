@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -158,7 +189,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-            <span class="returntype"><a class="" href="widgets/EventDisposition-class.html">EventDisposition</a></span>
+            <span class="returntype">void</span>
             <span class="name ">handleEvent</span>(
             <br>
             <div class="parameters">
@@ -174,18 +205,19 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">EventDisposition handleEvent(sky.Event event, BoxHitTestEntry entry) {
-  if (event is sky.GestureEvent) {
+      <pre><code class="prettyprint lang-dart">void handleEvent(sky.Event event, BoxHitTestEntry entry) {
+  // TODO(abarth): We should trigger these effects based on gestures.
+  // https://github.com/flutter/engine/issues/1271
+  if (event is sky.PointerEvent) {
     switch (event.type) {
-      case &apos;gesturetapdown&apos;:
-        _startSplash(event.primaryPointer, entry.localPosition);
-        return EventDisposition.processed;
-      case &apos;gesturetap&apos;:
-        _confirmSplash(event.primaryPointer);
-        return EventDisposition.processed;
+      case &apos;pointerdown&apos;:
+        _startSplash(event.pointer, entry.localPosition);
+        break;
+      case &apos;pointerup&apos;:
+        _confirmSplash(event.pointer);
+        break;
     }
   }
-  return EventDisposition.ignored;
 }</code></pre>
     </section>
 
@@ -199,7 +231,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

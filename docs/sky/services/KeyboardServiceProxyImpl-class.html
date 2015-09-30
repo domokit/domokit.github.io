@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -79,15 +110,6 @@
     <ol>
       <li class="section-title"><a href="services/services-library.html#constants">Constants</a></li>
       <li><a class="" href="services/ActivityName.html">ActivityName</a></li>
-      <li><a class="" href="services/AuralFeedbackType_CLICK.html">AuralFeedbackType_CLICK</a></li>
-      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_DOWN.html">AuralFeedbackType_NAVIGATION_DOWN</a></li>
-      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_LEFT.html">AuralFeedbackType_NAVIGATION_LEFT</a></li>
-      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_RIGHT.html">AuralFeedbackType_NAVIGATION_RIGHT</a></li>
-      <li><a class="" href="services/AuralFeedbackType_NAVIGATION_UP.html">AuralFeedbackType_NAVIGATION_UP</a></li>
-      <li><a class="" href="services/HapticFeedbackType_CLOCK_TICK.html">HapticFeedbackType_CLOCK_TICK</a></li>
-      <li><a class="" href="services/HapticFeedbackType_KEYBOARD_TAP.html">HapticFeedbackType_KEYBOARD_TAP</a></li>
-      <li><a class="" href="services/HapticFeedbackType_LONG_PRESS.html">HapticFeedbackType_LONG_PRESS</a></li>
-      <li><a class="" href="services/HapticFeedbackType_VIRTUAL_KEY.html">HapticFeedbackType_VIRTUAL_KEY</a></li>
       <li><a class="" href="services/kActivity_finishCurrentActivity_name.html">kActivity_finishCurrentActivity_name</a></li>
       <li><a class="" href="services/kActivity_getCacheDir_name.html">kActivity_getCacheDir_name</a></li>
       <li><a class="" href="services/kActivity_getFilesDir_name.html">kActivity_getFilesDir_name</a></li>
@@ -98,10 +120,6 @@
       <li><a class="" href="services/kActivity_startActivity_name.html">kActivity_startActivity_name</a></li>
       <li><a class="" href="services/KeyboardClientName.html">KeyboardClientName</a></li>
       <li><a class="" href="services/KeyboardServiceName.html">KeyboardServiceName</a></li>
-      <li><a class="" href="services/KeyboardType_DATETIME.html">KeyboardType_DATETIME</a></li>
-      <li><a class="" href="services/KeyboardType_NUMBER.html">KeyboardType_NUMBER</a></li>
-      <li><a class="" href="services/KeyboardType_PHONE.html">KeyboardType_PHONE</a></li>
-      <li><a class="" href="services/KeyboardType_TEXT.html">KeyboardType_TEXT</a></li>
       <li><a class="" href="services/kKeyboardClient_commitCompletion_name.html">kKeyboardClient_commitCompletion_name</a></li>
       <li><a class="" href="services/kKeyboardClient_commitCorrection_name.html">kKeyboardClient_commitCorrection_name</a></li>
       <li><a class="" href="services/kKeyboardClient_commitText_name.html">kKeyboardClient_commitText_name</a></li>
@@ -117,23 +135,18 @@
       <li><a class="" href="services/MULTIPLE_TASK.html">MULTIPLE_TASK</a></li>
       <li><a class="" href="services/NEW_DOCUMENT.html">NEW_DOCUMENT</a></li>
       <li><a class="" href="services/NEW_TASK.html">NEW_TASK</a></li>
-      <li><a class="" href="services/ScreenOrientation_LANDSCAPE.html">ScreenOrientation_LANDSCAPE</a></li>
-      <li><a class="" href="services/ScreenOrientation_NOSENSOR.html">ScreenOrientation_NOSENSOR</a></li>
-      <li><a class="" href="services/ScreenOrientation_PORTRAIT.html">ScreenOrientation_PORTRAIT</a></li>
-      <li><a class="" href="services/ScreenOrientation_UNSPECIFIED.html">ScreenOrientation_UNSPECIFIED</a></li>
-      <li><a class="" href="services/SystemUIVisibility_FULLSCREEN.html">SystemUIVisibility_FULLSCREEN</a></li>
-      <li><a class="" href="services/SystemUIVisibility_IMMERSIVE.html">SystemUIVisibility_IMMERSIVE</a></li>
-      <li><a class="" href="services/SystemUIVisibility_STANDARD.html">SystemUIVisibility_STANDARD</a></li>
       <li><a class="" href="services/UserFeedbackName.html">UserFeedbackName</a></li>
     
       <li class="section-title"><a href="services/services-library.html#typedefs">Typedefs</a></li>
       <li><a class="" href="services/ImageListener.html">ImageListener</a></li>
+      <li><a class="" href="services/OverrideRequestService.html">OverrideRequestService</a></li>
     
       <li class="section-title"><a href="services/services-library.html#properties">Properties</a></li>
       <li><a class="" href="services/activity.html">activity</a></li>
       <li><a class="" href="services/embedder.html">embedder</a></li>
       <li><a class="" href="services/imageCache.html">imageCache</a></li>
       <li><a class="" href="services/keyboard.html">keyboard</a></li>
+      <li><a class="" href="services/overrideRequestService.html">overrideRequestService</a></li>
       <li><a class="" href="services/rootBundle.html">rootBundle</a></li>
       <li><a class="" href="services/shell.html">shell</a></li>
       <li><a class="" href="services/userFeedback.html">userFeedback</a></li>
@@ -164,9 +177,11 @@
       <li><a class="" href="services/ActivityStartActivityParams-class.html">ActivityStartActivityParams</a></li>
       <li><a class="" href="services/ActivityStub-class.html">ActivityStub</a></li>
       <li><a class="" href="services/AssetBundle-class.html">AssetBundle</a></li>
+      <li><a class="" href="services/AuralFeedbackType-class.html">AuralFeedbackType</a></li>
       <li><a class="" href="services/CompletionData-class.html">CompletionData</a></li>
       <li><a class="" href="services/ComponentName-class.html">ComponentName</a></li>
       <li><a class="" href="services/CorrectionData-class.html">CorrectionData</a></li>
+      <li><a class="" href="services/HapticFeedbackType-class.html">HapticFeedbackType</a></li>
       <li><a class="" href="services/ImageResource-class.html">ImageResource</a></li>
       <li><a class="" href="services/Intent-class.html">Intent</a></li>
       <li><a class="" href="services/Keyboard-class.html">Keyboard</a></li>
@@ -189,10 +204,13 @@
       <li><a class="" href="services/KeyboardServiceShowByRequestParams-class.html">KeyboardServiceShowByRequestParams</a></li>
       <li><a class="" href="services/KeyboardServiceShowParams-class.html">KeyboardServiceShowParams</a></li>
       <li><a class="" href="services/KeyboardServiceStub-class.html">KeyboardServiceStub</a></li>
+      <li><a class="" href="services/KeyboardType-class.html">KeyboardType</a></li>
       <li><a class="" href="services/MojoAssetBundle-class.html">MojoAssetBundle</a></li>
       <li><a class="" href="services/NetworkAssetBundle-class.html">NetworkAssetBundle</a></li>
       <li><a class="" href="services/Response-class.html">Response</a></li>
+      <li><a class="" href="services/ScreenOrientation-class.html">ScreenOrientation</a></li>
       <li><a class="" href="services/StringExtra-class.html">StringExtra</a></li>
+      <li><a class="" href="services/SystemUiVisibility-class.html">SystemUiVisibility</a></li>
       <li><a class="" href="services/TaskDescription-class.html">TaskDescription</a></li>
       <li><a class="" href="services/UrlResponse-class.html">UrlResponse</a></li>
       <li><a class="" href="services/UserFeedback-class.html">UserFeedback</a></li>
@@ -549,7 +567,7 @@ Updates <code>version</code>.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

@@ -17,7 +17,38 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- Header Placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -94,7 +125,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-            <span class="returntype"><a class="" href="rendering/EventDisposition-class.html">EventDisposition</a></span>
+            <span class="returntype">void</span>
             <span class="name ">handleEvent</span>(
             <br>
             <div class="parameters">
@@ -111,7 +142,7 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">/// Override this function to receive events.
-EventDisposition handleEvent(sky.Event event, HitTestEntry entry);</code></pre>
+void handleEvent(sky.Event event, HitTestEntry entry);</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -124,7 +155,7 @@ EventDisposition handleEvent(sky.Event event, HitTestEntry entry);</code></pre>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.45 api docs
+                  sky 0.0.51 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>widgets_next library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="widgets_next library API docs, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">sky</a></li>
+                  <li class="self-crumb">widgets_next</li>
+              </ol>
+              <div class="self-name">widgets_next</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">sky</a></li>
+              <li class="self-crumb">widgets_next</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">library</div> widgets_next
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="widgets_next/widgets_next-library.html#constants">Constants</a></li>
+              <li><a href="widgets_next/widgets_next-library.html#typedefs">Typedefs</a></li>
+              <li><a href="widgets_next/widgets_next-library.html#properties">Properties</a></li>
+              <li><a href="widgets_next/widgets_next-library.html#functions">Functions</a></li>
+              <li><a href="widgets_next/widgets_next-library.html#enums">Enums</a></li>
+              <li><a href="widgets_next/widgets_next-library.html#classes">Classes</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">sky</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="animation/animation-library.html">animation</a></li>
+      <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
+      <li><a href="rendering/rendering-library.html">rendering</a></li>
+      <li><a href="services/services-library.html">services</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+      <li><a href="widgets_next/widgets_next-library.html">widgets_next</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>The Flutter widget framework.</p>
+    
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+        <h2>Constants</h2>
+
+        <dl class="properties">
+            <dt id="edges" class="constant">
+                <span class="top-level-variable-type">Map&lt;<a class="" href="material/MaterialType-class.html">MaterialType</a>,double&gt;</span>
+                <span class="name "><a class="" href="widgets_next/edges.html">edges</a></span>
+                <span class="signature">= const {MaterialType.canvas : null, MaterialType.card : 2.0, MaterialType.circle : null, MaterialType.button : 2.0}</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kSideMargins" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="widgets_next/kSideMargins.html">kSideMargins</a></span>
+                <span class="signature">= 24.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kSnackBackground" class="constant">
+                <span class="top-level-variable-type"><a class="" href="rendering/Color-class.html">Color</a></span>
+                <span class="name "><a class="" href="widgets_next/kSnackBackground.html">kSnackBackground</a></span>
+                <span class="signature">= const <a class="" href="rendering/Color-class.html">Color</a>(0xFF323232)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kSnackHeight" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="widgets_next/kSnackHeight.html">kSnackHeight</a></span>
+                <span class="signature">= 52.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kVerticalPadding" class="constant">
+                <span class="top-level-variable-type">double</span>
+                <span class="name "><a class="" href="widgets_next/kVerticalPadding.html">kVerticalPadding</a></span>
+                <span class="signature">= 14.0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="typedefs">
+        <h2>Typedefs</h2>
+
+        <dl class="callables">
+            <dt id="BuilderFunction" class="callable">
+                <span class="name "><a class="" href="widgets_next/BuilderFunction.html">BuilderFunction</a></span><span class="signature">(<wbr><span class="parameter" id="BuilderFunction-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="BuildScheduler" class="callable">
+                <span class="name "><a class="" href="widgets_next/BuildScheduler.html">BuildScheduler</a></span><span class="signature">(<wbr><span class="parameter" id="BuildScheduler-param-element"><span class="type-annotation"><a class="" href="widgets_next/BuildableElement-class.html">BuildableElement</a></span> <span class="parameter-name">element</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DatePickerModeChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/DatePickerModeChanged.html">DatePickerModeChanged</a></span><span class="signature">(<wbr><span class="parameter" id="DatePickerModeChanged-param-value"><span class="type-annotation"><a class="" href="widgets/DatePickerMode-class.html">DatePickerMode</a></span> <span class="parameter-name">value</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DatePickerValueChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/DatePickerValueChanged.html">DatePickerValueChanged</a></span><span class="signature">(<wbr><span class="parameter" id="DatePickerValueChanged-param-dateTime"><span class="type-annotation">DateTime</span> <span class="parameter-name">dateTime</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DialogBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/DialogBuilder.html">DialogBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="DialogBuilder-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Dialog-class.html">Dialog</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DismissedCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/DismissedCallback.html">DismissedCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragFinishedNotification" class="callable">
+                <span class="name "><a class="" href="widgets_next/DragFinishedNotification.html">DragFinishedNotification</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragTargetAccept" class="callable">
+                <span class="name "><a class="" href="widgets_next/DragTargetAccept.html">DragTargetAccept</a></span><span class="signature">(<wbr><span class="parameter" id="DragTargetAccept-param-data"><span class="type-annotation">T</span> <span class="parameter-name">data</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragTargetBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/DragTargetBuilder.html">DragTargetBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="DragTargetBuilder-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="DragTargetBuilder-param-candidateData"><span class="type-annotation">List&lt;T&gt;</span> <span class="parameter-name">candidateData</span></span>, <span class="parameter" id="DragTargetBuilder-param-rejectedData"><span class="type-annotation">List</span> <span class="parameter-name">rejectedData</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragTargetWillAccept" class="callable">
+                <span class="name "><a class="" href="widgets_next/DragTargetWillAccept.html">DragTargetWillAccept</a></span><span class="signature">(<wbr><span class="parameter" id="DragTargetWillAccept-param-data"><span class="type-annotation">T</span> <span class="parameter-name">data</span></span>)
+                    &#8594;
+                    <span class="returntype">bool</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DrawerDismissedCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/DrawerDismissedCallback.html">DrawerDismissedCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ElementVisitor" class="callable">
+                <span class="name "><a class="" href="widgets_next/ElementVisitor.html">ElementVisitor</a></span><span class="signature">(<wbr><span class="parameter" id="ElementVisitor-param-element"><span class="type-annotation"><a class="" href="widgets_next/Element-class.html">Element</a></span> <span class="parameter-name">element</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ExtentsUpdateCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/ExtentsUpdateCallback.html">ExtentsUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="ExtentsUpdateCallback-param-newExtents"><span class="type-annotation">double</span> <span class="parameter-name">newExtents</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FocusChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/FocusChanged.html">FocusChanged</a></span><span class="signature">(<wbr><span class="parameter" id="FocusChanged-param-key"><span class="type-annotation"><a class="" href="widgets/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">key</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GlobalKeyRemoveListener" class="callable">
+                <span class="name "><a class="" href="widgets_next/GlobalKeyRemoveListener.html">GlobalKeyRemoveListener</a></span><span class="signature">(<wbr><span class="parameter" id="GlobalKeyRemoveListener-param-key"><span class="type-annotation"><a class="" href="widgets/GlobalKey-class.html">GlobalKey</a></span> <span class="parameter-name">key</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IndexedBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/IndexedBuilder.html">IndexedBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="IndexedBuilder-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="IndexedBuilder-param-index"><span class="type-annotation">int</span> <span class="parameter-name">index</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InvalidatorAvailableCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/InvalidatorAvailableCallback.html">InvalidatorAvailableCallback</a></span><span class="signature">(<wbr><span class="parameter" id="InvalidatorAvailableCallback-param-invalidator"><span class="type-annotation">void</span> <span class="parameter-name">invalidator</span>(<span class="parameter" id="InvalidatorCallback-param-indices"><span class="type-annotation">Iterable&lt;int&gt;</span> <span class="parameter-name">indices</span></span>)</span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InvalidatorCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/InvalidatorCallback.html">InvalidatorCallback</a></span><span class="signature">(<wbr><span class="parameter" id="InvalidatorCallback-param-indices"><span class="type-annotation">Iterable&lt;int&gt;</span> <span class="parameter-name">indices</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ItemBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/ItemBuilder.html">ItemBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="ItemBuilder-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="ItemBuilder-param-item"><span class="type-annotation">T</span> <span class="parameter-name">item</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="LayoutChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/LayoutChanged.html">LayoutChanged</a></span><span class="signature">(<wbr><span class="parameter" id="LayoutChanged-param-size"><span class="type-annotation"><a class="" href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>, <span class="parameter" id="LayoutChanged-param-widths"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">widths</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ListBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/ListBuilder.html">ListBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="ListBuilder-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="ListBuilder-param-startIndex"><span class="type-annotation">int</span> <span class="parameter-name">startIndex</span></span>, <span class="parameter" id="ListBuilder-param-count"><span class="type-annotation">int</span> <span class="parameter-name">count</span></span>)
+                    &#8594;
+                    <span class="returntype">List&lt;Widget&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="NotificationCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/NotificationCallback.html">NotificationCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PageChangedCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/PageChangedCallback.html">PageChangedCallback</a></span><span class="signature">(<wbr><span class="parameter" id="PageChangedCallback-param-newPage"><span class="type-annotation">int</span> <span class="parameter-name">newPage</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PopupMenuItemsBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/PopupMenuItemsBuilder.html">PopupMenuItemsBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="PopupMenuItemsBuilder-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>)
+                    &#8594;
+                    <span class="returntype">List&lt;PopupMenuItem&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RadioValueChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/RadioValueChanged.html">RadioValueChanged</a></span><span class="signature">(<wbr><span class="parameter" id="RadioValueChanged-param-value"><span class="type-annotation">Object</span> <span class="parameter-name">value</span></span>)
+                    &#8594;
+                    <span class="returntype">dynamic</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ResizedCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/ResizedCallback.html">ResizedCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RouteBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/RouteBuilder.html">RouteBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="RouteBuilder-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>, <span class="parameter" id="RouteBuilder-param-route"><span class="type-annotation"><a class="" href="widgets_next/Route-class.html">Route</a></span> <span class="parameter-name">route</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RouteGenerator" class="callable">
+                <span class="name "><a class="" href="widgets_next/RouteGenerator.html">RouteGenerator</a></span><span class="signature">(<wbr><span class="parameter" id="RouteGenerator-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/RouteBuilder.html">RouteBuilder</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RouteStateCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/RouteStateCallback.html">RouteStateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="RouteStateCallback-param-route"><span class="type-annotation"><a class="" href="widgets_next/RouteState-class.html">RouteState</a></span> <span class="parameter-name">route</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScrollListener" class="callable">
+                <span class="name "><a class="" href="widgets_next/ScrollListener.html">ScrollListener</a></span><span class="signature">(<wbr><span class="parameter" id="ScrollListener-param-scrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">scrollOffset</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SelectedIndexChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/SelectedIndexChanged.html">SelectedIndexChanged</a></span><span class="signature">(<wbr><span class="parameter" id="SelectedIndexChanged-param-selectedIndex"><span class="type-annotation">int</span> <span class="parameter-name">selectedIndex</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SnackBarDismissedCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/SnackBarDismissedCallback.html">SnackBarDismissedCallback</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SnapOffsetCallback" class="callable">
+                <span class="name "><a class="" href="widgets_next/SnapOffsetCallback.html">SnapOffsetCallback</a></span><span class="signature">(<wbr><span class="parameter" id="SnapOffsetCallback-param-scrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">scrollOffset</span></span>)
+                    &#8594;
+                    <span class="returntype">double</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="StringUpdated" class="callable">
+                <span class="name "><a class="" href="widgets_next/StringUpdated.html">StringUpdated</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="StringValueChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/StringValueChanged.html">StringValueChanged</a></span><span class="signature">(<wbr><span class="parameter" id="StringValueChanged-param-value"><span class="type-annotation">String</span> <span class="parameter-name">value</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ValueChanged" class="callable">
+                <span class="name "><a class="" href="widgets_next/ValueChanged.html">ValueChanged</a></span><span class="signature">(<wbr><span class="parameter" id="ValueChanged-param-value"><span class="type-annotation">bool</span> <span class="parameter-name">value</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="WidgetBuilder" class="callable">
+                <span class="name "><a class="" href="widgets_next/WidgetBuilder.html">WidgetBuilder</a></span><span class="signature">(<wbr><span class="parameter" id="WidgetBuilder-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="WidgetsExceptionHandler" class="callable">
+                <span class="name "><a class="" href="widgets_next/WidgetsExceptionHandler.html">WidgetsExceptionHandler</a></span><span class="signature">(<wbr><span class="parameter" id="WidgetsExceptionHandler-param-context"><span class="type-annotation">String</span> <span class="parameter-name">context</span></span>, <span class="parameter" id="WidgetsExceptionHandler-param-exception"><span class="parameter-name">exception</span></span>, <span class="parameter" id="WidgetsExceptionHandler-param-stack"><span class="type-annotation">StackTrace</span> <span class="parameter-name">stack</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="debugWidgetsExceptionHandler" class="property">
+                <span class="name"><a class="" href="widgets_next/debugWidgetsExceptionHandler.html">debugWidgetsExceptionHandler</a></span>
+                <span class="signature">&#8594; <a class="" href="widgets/WidgetsExceptionHandler.html">WidgetsExceptionHandler</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p>This callback is invoked whenever an exception is caught by the widget
+system. The 'context' argument is a description of what was happening when
+the exception occurred, and may include additional details such as
+descriptions of the objects involved. The 'exception' argument contains the
+object that was thrown, and the 'stack' argument contains the stack trace.
+If no callback is set, then a default behaviour consisting of dumping the
+context, exception, and stack trace to the console is used instead.</p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="functions">
+        <h2>Functions</h2>
+
+        <dl class="callables">
+            <dt id="debugDumpApp" class="callable">
+                <span class="name "><a class="" href="widgets_next/debugDumpApp.html">debugDumpApp</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ensureWidgetIsVisible" class="callable">
+                <span class="name "><a class="" href="widgets_next/ensureWidgetIsVisible.html">ensureWidgetIsVisible</a></span><span class="signature">(<wbr><span class="parameter" id="ensureWidgetIsVisible-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>, {<span class="parameter" id="ensureWidgetIsVisible-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="ensureWidgetIsVisible-param-curve"><span class="type-annotation"><a class="" href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span></span>})
+                    &#8594;
+                    <span class="returntype">Future</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="findScrollableAncestor" class="callable">
+                <span class="name "><a class="" href="widgets_next/findScrollableAncestor.html">findScrollableAncestor</a></span><span class="signature">(<wbr><span class="parameter" id="findScrollableAncestor-param-context"><span class="type-annotation"><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+                    &#8594;
+                    <span class="returntype"><a class="" href="widgets_next/ScrollableState-class.html">ScrollableState</a></span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="runApp" class="callable">
+                <span class="name "><a class="" href="widgets_next/runApp.html">runApp</a></span><span class="signature">(<wbr><span class="parameter" id="runApp-param-app"><span class="type-annotation"><a class="" href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">app</span></span>)
+                    &#8594;
+                    <span class="returntype">void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="showDialog" class="callable">
+                <span class="name "><a class="" href="widgets_next/showDialog.html">showDialog</a></span><span class="signature">(<wbr><span class="parameter" id="showDialog-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>, <span class="parameter" id="showDialog-param-builder"><span class="type-annotation"><a class="" href="widgets/Dialog-class.html">Dialog</a></span> <span class="parameter-name">builder</span>(<span class="parameter" id="DialogBuilder-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>)</span>)
+                    &#8594;
+                    <span class="returntype">Future</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="showMenu" class="callable">
+                <span class="name "><a class="" href="widgets_next/showMenu.html">showMenu</a></span><span class="signature">(<wbr>{<span class="parameter" id="showMenu-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>, <span class="parameter" id="showMenu-param-position"><span class="type-annotation"><a class="" href="widgets/MenuPosition-class.html">MenuPosition</a></span> <span class="parameter-name">position</span></span>, <span class="parameter" id="showMenu-param-builder"><span class="type-annotation">List&lt;PopupMenuItem&gt;</span> <span class="parameter-name">builder</span>(<span class="parameter" id="PopupMenuItemsBuilder-param-navigator"><span class="type-annotation"><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>)</span>, <span class="parameter" id="showMenu-param-level"><span class="type-annotation">int</span> <span class="parameter-name">level</span>: <span class="default-value">4</span></span>})
+                    &#8594;
+                    <span class="returntype">Future</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="enums">
+        <h2>Enums</h2>
+
+        <dl>
+            <dt id="BlockDirection">
+                <a class="" href="widgets_next/BlockDirection-class.html">BlockDirection</a>
+            </dt>
+            <dd>
+                <p>The direction in which the block should lay out</p>
+            </dd>
+            <dt id="BoxDecorationPosition">
+                <a class="" href="widgets_next/BoxDecorationPosition-class.html">BoxDecorationPosition</a>
+            </dt>
+            <dd>
+                <p>Where to paint a box decoration</p>
+            </dd>
+            <dt id="DatePickerMode">
+                <a class="" href="widgets_next/DatePickerMode-class.html">DatePickerMode</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Direction">
+                <a class="" href="widgets_next/Direction-class.html">Direction</a>
+            </dt>
+            <dd>
+                <p>The direction in which an animation is running</p>
+            </dd>
+            <dt id="DismissDirection">
+                <a class="" href="widgets_next/DismissDirection-class.html">DismissDirection</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragEndKind">
+                <a class="" href="widgets_next/DragEndKind-class.html">DragEndKind</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FlexAlignItems">
+                <a class="" href="widgets_next/FlexAlignItems-class.html">FlexAlignItems</a>
+            </dt>
+            <dd>
+                <p>How the children should be placed along the cross axis in a flex layout</p>
+            </dd>
+            <dt id="FlexDirection">
+                <a class="" href="widgets_next/FlexDirection-class.html">FlexDirection</a>
+            </dt>
+            <dd>
+                <p>The direction in which the box should flex</p>
+            </dd>
+            <dt id="FlexJustifyContent">
+                <a class="" href="widgets_next/FlexJustifyContent-class.html">FlexJustifyContent</a>
+            </dt>
+            <dd>
+                <p>How the children should be placed along the main axis in a flex layout</p>
+            </dd>
+            <dt id="IconThemeColor">
+                <a class="" href="widgets_next/IconThemeColor-class.html">IconThemeColor</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MaterialType">
+                <a class="" href="widgets_next/MaterialType-class.html">MaterialType</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScaffoldSlots">
+                <a class="" href="widgets_next/ScaffoldSlots-class.html">ScaffoldSlots</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScrollDirection">
+                <a class="" href="widgets_next/ScrollDirection-class.html">ScrollDirection</a>
+            </dt>
+            <dd>
+                <p>The direction in which to scroll</p>
+            </dd>
+            <dt id="Shape">
+                <a class="" href="widgets_next/Shape-class.html">Shape</a>
+            </dt>
+            <dd>
+                <p>A 2D geometrical shape</p>
+            </dd>
+            <dt id="ShrinkWrap">
+                <a class="" href="widgets_next/ShrinkWrap-class.html">ShrinkWrap</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ThemeBrightness">
+                <a class="" href="widgets_next/ThemeBrightness-class.html">ThemeBrightness</a>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="classes">
+        <h2>Classes</h2>
+
+        <dl>
+            <dt id="Align">
+                <span class="name "><a class="" href="widgets_next/Align-class.html">Align</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="AnimatedComponent">
+                <span class="name "><a class="" href="widgets_next/AnimatedComponent-class.html">AnimatedComponent</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="AnimatedState">
+                <span class="name "><a class="" href="widgets_next/AnimatedState-class.html">AnimatedState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="App">
+                <span class="name "><a class="" href="widgets_next/App-class.html">App</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="AppState">
+                <span class="name "><a class="" href="widgets_next/AppState-class.html">AppState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="AspectRatio">
+                <span class="name "><a class="" href="widgets_next/AspectRatio-class.html">AspectRatio</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="AssetImage">
+                <span class="name "><a class="" href="widgets_next/AssetImage-class.html">AssetImage</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="BackgroundImage">
+                <span class="name "><a class="" href="widgets_next/BackgroundImage-class.html">BackgroundImage</a></span>
+            </dt>
+            <dd>
+                <p>A background image for a box</p>
+            </dd>
+            <dt id="Baseline">
+                <span class="name "><a class="" href="widgets_next/Baseline-class.html">Baseline</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Block">
+                <span class="name "><a class="" href="widgets_next/Block-class.html">Block</a></span>
+            </dt>
+            <dd>
+                <p>A mashup of <a class="" href="widgets_next/ScrollableViewport-class.html">ScrollableViewport</a> and <a class="" href="widgets_next/BlockBody-class.html">BlockBody</a>. Useful when you have a small,
+fixed number of children that you wish to arrange in a block layout and that
+might exceed the height of its container (and therefore need to scroll).</p>
+            </dd>
+            <dt id="BlockBody">
+                <span class="name "><a class="" href="widgets_next/BlockBody-class.html">BlockBody</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Border">
+                <span class="name "><a class="" href="widgets_next/Border-class.html">Border</a></span>
+            </dt>
+            <dd>
+                <p>A border of a box, comprised of four sides</p>
+            </dd>
+            <dt id="BorderSide">
+                <span class="name "><a class="" href="widgets_next/BorderSide-class.html">BorderSide</a></span>
+            </dt>
+            <dd>
+                <p>A side of a border of a box</p>
+            </dd>
+            <dt id="BoxConstraints">
+                <span class="name "><a class="" href="widgets_next/BoxConstraints-class.html">BoxConstraints</a></span>
+            </dt>
+            <dd>
+                <p>Immutable layout constraints for box layout<a href="widgets_next/BoxConstraints-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="BoxDecoration">
+                <span class="name "><a class="" href="widgets_next/BoxDecoration-class.html">BoxDecoration</a></span>
+            </dt>
+            <dd>
+                <p>An immutable description of how to paint a box</p>
+            </dd>
+            <dt id="BoxShadow">
+                <span class="name "><a class="" href="widgets_next/BoxShadow-class.html">BoxShadow</a></span>
+            </dt>
+            <dd>
+                <p>A shadow cast by a box<a href="widgets_next/BoxShadow-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="BuildableElement">
+                <span class="name "><a class="" href="widgets_next/BuildableElement-class.html">BuildableElement</a></span>
+            </dt>
+            <dd>
+                <p>Base class for the instantiation of StatelessComponent and StatefulComponent
+widgets.</p>
+            </dd>
+            <dt id="BuildContext">
+                <span class="name "><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="BuilderTransition">
+                <span class="name "><a class="" href="widgets_next/BuilderTransition-class.html">BuilderTransition</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ButtonState">
+                <span class="name "><a class="" href="widgets_next/ButtonState-class.html">ButtonState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Card">
+                <span class="name "><a class="" href="widgets_next/Card-class.html">Card</a></span>
+            </dt>
+            <dd>
+                <p>A material design card<a href="widgets_next/Card-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="Center">
+                <span class="name "><a class="" href="widgets_next/Center-class.html">Center</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Checkbox">
+                <span class="name "><a class="" href="widgets_next/Checkbox-class.html">Checkbox</a></span>
+            </dt>
+            <dd>
+                <p>A material design checkbox<a href="widgets_next/Checkbox-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="CircularProgressIndicator">
+                <span class="name "><a class="" href="widgets_next/CircularProgressIndicator-class.html">CircularProgressIndicator</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ClipOval">
+                <span class="name "><a class="" href="widgets_next/ClipOval-class.html">ClipOval</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ClipRect">
+                <span class="name "><a class="" href="widgets_next/ClipRect-class.html">ClipRect</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ClipRRect">
+                <span class="name "><a class="" href="widgets_next/ClipRRect-class.html">ClipRRect</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Color">
+                <span class="name "><a class="" href="widgets_next/Color-class.html">Color</a></span>
+            </dt>
+            <dd>
+                <p>An immutable 32 bit color value in ARGB</p>
+            </dd>
+            <dt id="ColorFilter">
+                <span class="name "><a class="" href="widgets_next/ColorFilter-class.html">ColorFilter</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ColorTransition">
+                <span class="name "><a class="" href="widgets_next/ColorTransition-class.html">ColorTransition</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Column">
+                <span class="name "><a class="" href="widgets_next/Column-class.html">Column</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ConstrainedBox">
+                <span class="name "><a class="" href="widgets_next/ConstrainedBox-class.html">ConstrainedBox</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Container">
+                <span class="name "><a class="" href="widgets_next/Container-class.html">Container</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="CustomPaint">
+                <span class="name "><a class="" href="widgets_next/CustomPaint-class.html">CustomPaint</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DatePicker">
+                <span class="name "><a class="" href="widgets_next/DatePicker-class.html">DatePicker</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DatePickerHeader">
+                <span class="name "><a class="" href="widgets_next/DatePickerHeader-class.html">DatePickerHeader</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DatePickerState">
+                <span class="name "><a class="" href="widgets_next/DatePickerState-class.html">DatePickerState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DayPicker">
+                <span class="name "><a class="" href="widgets_next/DayPicker-class.html">DayPicker</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DecoratedBox">
+                <span class="name "><a class="" href="widgets_next/DecoratedBox-class.html">DecoratedBox</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DefaultTextStyle">
+                <span class="name "><a class="" href="widgets_next/DefaultTextStyle-class.html">DefaultTextStyle</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Dialog">
+                <span class="name "><a class="" href="widgets_next/Dialog-class.html">Dialog</a></span>
+            </dt>
+            <dd>
+                <p>A material design dialog<a href="widgets_next/Dialog-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="DialogRoute">
+                <span class="name "><a class="" href="widgets_next/DialogRoute-class.html">DialogRoute</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Dismissable">
+                <span class="name "><a class="" href="widgets_next/Dismissable-class.html">Dismissable</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DismissableState">
+                <span class="name "><a class="" href="widgets_next/DismissableState-class.html">DismissableState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Draggable">
+                <span class="name "><a class="" href="widgets_next/Draggable-class.html">Draggable</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DraggableState">
+                <span class="name "><a class="" href="widgets_next/DraggableState-class.html">DraggableState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragRoute">
+                <span class="name "><a class="" href="widgets_next/DragRoute-class.html">DragRoute</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragTarget">
+                <span class="name "><a class="" href="widgets_next/DragTarget-class.html">DragTarget</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DragTargetState">
+                <span class="name "><a class="" href="widgets_next/DragTargetState-class.html">DragTargetState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Drawer">
+                <span class="name "><a class="" href="widgets_next/Drawer-class.html">Drawer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DrawerDivider">
+                <span class="name "><a class="" href="widgets_next/DrawerDivider-class.html">DrawerDivider</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DrawerHeader">
+                <span class="name "><a class="" href="widgets_next/DrawerHeader-class.html">DrawerHeader</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DrawerItem">
+                <span class="name "><a class="" href="widgets_next/DrawerItem-class.html">DrawerItem</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DrawerItemState">
+                <span class="name "><a class="" href="widgets_next/DrawerItemState-class.html">DrawerItemState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="DrawerState">
+                <span class="name "><a class="" href="widgets_next/DrawerState-class.html">DrawerState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="EdgeDims">
+                <span class="name "><a class="" href="widgets_next/EdgeDims-class.html">EdgeDims</a></span>
+            </dt>
+            <dd>
+                <p>An immutable set of offsets in each of the four cardinal directions<a href="widgets_next/EdgeDims-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="EditableString">
+                <span class="name "><a class="" href="widgets_next/EditableString-class.html">EditableString</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="EditableText">
+                <span class="name "><a class="" href="widgets_next/EditableText-class.html">EditableText</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="EditableTextState">
+                <span class="name "><a class="" href="widgets_next/EditableTextState-class.html">EditableTextState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Element">
+                <span class="name "><a class="" href="widgets_next/Element-class.html">Element</a></span>
+            </dt>
+            <dd>
+                <p>Elements are the instantiations of Widget configurations.<a href="widgets_next/Element-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="ErrorWidget">
+                <span class="name "><a class="" href="widgets_next/ErrorWidget-class.html">ErrorWidget</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FadeTransition">
+                <span class="name "><a class="" href="widgets_next/FadeTransition-class.html">FadeTransition</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FlatButton">
+                <span class="name "><a class="" href="widgets_next/FlatButton-class.html">FlatButton</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FlatButtonState">
+                <span class="name "><a class="" href="widgets_next/FlatButtonState-class.html">FlatButtonState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Flex">
+                <span class="name "><a class="" href="widgets_next/Flex-class.html">Flex</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Flexible">
+                <span class="name "><a class="" href="widgets_next/Flexible-class.html">Flexible</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FloatingActionButton">
+                <span class="name "><a class="" href="widgets_next/FloatingActionButton-class.html">FloatingActionButton</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FloatingActionButtonState">
+                <span class="name "><a class="" href="widgets_next/FloatingActionButtonState-class.html">FloatingActionButtonState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Focus">
+                <span class="name "><a class="" href="widgets_next/Focus-class.html">Focus</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="FocusState">
+                <span class="name "><a class="" href="widgets_next/FocusState-class.html">FocusState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureDetector">
+                <span class="name "><a class="" href="widgets_next/GestureDetector-class.html">GestureDetector</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureDetectorState">
+                <span class="name "><a class="" href="widgets_next/GestureDetectorState-class.html">GestureDetectorState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GlobalKey">
+                <span class="name "><a class="" href="widgets_next/GlobalKey-class.html">GlobalKey</a></span>
+            </dt>
+            <dd>
+                <p>A GlobalKey is one that must be unique across the entire application. It is
+used by components that need to communicate with other components across the
+application's element tree.</p>
+            </dd>
+            <dt id="GlobalObjectKey">
+                <span class="name "><a class="" href="widgets_next/GlobalObjectKey-class.html">GlobalObjectKey</a></span>
+            </dt>
+            <dd>
+                <p>A kind of <a class="" href="widgets_next/GlobalKey-class.html">GlobalKey</a> that takes its identity from the object used as its value.<a href="widgets_next/GlobalObjectKey-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="Grid">
+                <span class="name "><a class="" href="widgets_next/Grid-class.html">Grid</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="HomogeneousViewport">
+                <span class="name "><a class="" href="widgets_next/HomogeneousViewport-class.html">HomogeneousViewport</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="HomogeneousViewportElement">
+                <span class="name "><a class="" href="widgets_next/HomogeneousViewportElement-class.html">HomogeneousViewportElement</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Icon">
+                <span class="name "><a class="" href="widgets_next/Icon-class.html">Icon</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IconButton">
+                <span class="name "><a class="" href="widgets_next/IconButton-class.html">IconButton</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IconTheme">
+                <span class="name "><a class="" href="widgets_next/IconTheme-class.html">IconTheme</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IconThemeData">
+                <span class="name "><a class="" href="widgets_next/IconThemeData-class.html">IconThemeData</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IgnorePointer">
+                <span class="name "><a class="" href="widgets_next/IgnorePointer-class.html">IgnorePointer</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Image">
+                <span class="name "><a class="" href="widgets_next/Image-class.html">Image</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ImageListener">
+                <span class="name "><a class="" href="widgets_next/ImageListener-class.html">ImageListener</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ImageListenerState">
+                <span class="name "><a class="" href="widgets_next/ImageListenerState-class.html">ImageListenerState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InheritedElement">
+                <span class="name "><a class="" href="widgets_next/InheritedElement-class.html">InheritedElement</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InheritedWidget">
+                <span class="name "><a class="" href="widgets_next/InheritedWidget-class.html">InheritedWidget</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InkSplash">
+                <span class="name "><a class="" href="widgets_next/InkSplash-class.html">InkSplash</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InkWell">
+                <span class="name "><a class="" href="widgets_next/InkWell-class.html">InkWell</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Input">
+                <span class="name "><a class="" href="widgets_next/Input-class.html">Input</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="InputState">
+                <span class="name "><a class="" href="widgets_next/InputState-class.html">InputState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IntrinsicHeight">
+                <span class="name "><a class="" href="widgets_next/IntrinsicHeight-class.html">IntrinsicHeight</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="IntrinsicWidth">
+                <span class="name "><a class="" href="widgets_next/IntrinsicWidth-class.html">IntrinsicWidth</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Key">
+                <span class="name "><a class="" href="widgets_next/Key-class.html">Key</a></span>
+            </dt>
+            <dd>
+                <p>A Key is an identifier for <a class="" href="widgets_next/Widget-class.html">Widget</a>s and <a class="" href="widgets_next/Element-class.html">Element</a>s. A new Widget will only
+be used to reconfigure an existing Element if its Key is the same as its
+original Widget's Key.<a href="widgets_next/Key-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="KeyboardType">
+                <span class="name "><a class="" href="widgets_next/KeyboardType-class.html">KeyboardType</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="LabeledGlobalKey">
+                <span class="name "><a class="" href="widgets_next/LabeledGlobalKey-class.html">LabeledGlobalKey</a></span>
+            </dt>
+            <dd>
+                <p>Each LabeledGlobalKey instance is a unique key.
+The optional label can be used for documentary purposes. It does not affect
+the key's identity.</p>
+            </dd>
+            <dt id="LeafRenderObjectElement">
+                <span class="name "><a class="" href="widgets_next/LeafRenderObjectElement-class.html">LeafRenderObjectElement</a></span>
+            </dt>
+            <dd>
+                <p>Instantiation of RenderObjectWidgets that have no children</p>
+            </dd>
+            <dt id="LeafRenderObjectWidget">
+                <span class="name "><a class="" href="widgets_next/LeafRenderObjectWidget-class.html">LeafRenderObjectWidget</a></span>
+            </dt>
+            <dd>
+                <p>A superclass for RenderObjectWidgets that configure RenderObject subclasses
+that have no children.</p>
+            </dd>
+            <dt id="LinearProgressIndicator">
+                <span class="name "><a class="" href="widgets_next/LinearProgressIndicator-class.html">LinearProgressIndicator</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Listener">
+                <span class="name "><a class="" href="widgets_next/Listener-class.html">Listener</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Material">
+                <span class="name "><a class="" href="widgets_next/Material-class.html">Material</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MaterialButton">
+                <span class="name "><a class="" href="widgets_next/MaterialButton-class.html">MaterialButton</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MaterialButtonState">
+                <span class="name "><a class="" href="widgets_next/MaterialButtonState-class.html">MaterialButtonState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Matrix4">
+                <span class="name "><a class="" href="widgets_next/Matrix4-class.html">Matrix4</a></span>
+            </dt>
+            <dd>
+                <p>4D Matrix.
+Values are stored in column major order.</p>
+            </dd>
+            <dt id="MenuPosition">
+                <span class="name "><a class="" href="widgets_next/MenuPosition-class.html">MenuPosition</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MenuRoute">
+                <span class="name "><a class="" href="widgets_next/MenuRoute-class.html">MenuRoute</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MetaData">
+                <span class="name "><a class="" href="widgets_next/MetaData-class.html">MetaData</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Mimic">
+                <span class="name "><a class="" href="widgets_next/Mimic-class.html">Mimic</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Mimicable">
+                <span class="name "><a class="" href="widgets_next/Mimicable-class.html">Mimicable</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MimicableKey">
+                <span class="name "><a class="" href="widgets_next/MimicableKey-class.html">MimicableKey</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MimicableState">
+                <span class="name "><a class="" href="widgets_next/MimicableState-class.html">MimicableState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MixedViewport">
+                <span class="name "><a class="" href="widgets_next/MixedViewport-class.html">MixedViewport</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MixedViewportElement">
+                <span class="name "><a class="" href="widgets_next/MixedViewportElement-class.html">MixedViewportElement</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MonthPicker">
+                <span class="name "><a class="" href="widgets_next/MonthPicker-class.html">MonthPicker</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MonthPickerState">
+                <span class="name "><a class="" href="widgets_next/MonthPickerState-class.html">MonthPickerState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MultiChildRenderObjectElement">
+                <span class="name "><a class="" href="widgets_next/MultiChildRenderObjectElement-class.html">MultiChildRenderObjectElement</a></span>
+            </dt>
+            <dd>
+                <p>Instantiation of RenderObjectWidgets that can have a list of children</p>
+            </dd>
+            <dt id="MultiChildRenderObjectWidget">
+                <span class="name "><a class="" href="widgets_next/MultiChildRenderObjectWidget-class.html">MultiChildRenderObjectWidget</a></span>
+            </dt>
+            <dd>
+                <p>A superclass for RenderObjectWidgets that configure RenderObject subclasses
+that have a single list of children. (This superclass only provides the
+storage for that child list, it doesn't actually provide the updating
+logic.)</p>
+            </dd>
+            <dt id="Navigator">
+                <span class="name "><a class="" href="widgets_next/Navigator-class.html">Navigator</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="NavigatorState">
+                <span class="name "><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="NetworkImage">
+                <span class="name "><a class="" href="widgets_next/NetworkImage-class.html">NetworkImage</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ObjectKey">
+                <span class="name "><a class="" href="widgets_next/ObjectKey-class.html">ObjectKey</a></span>
+            </dt>
+            <dd>
+                <p>A kind of <a class="" href="widgets_next/Key-class.html">Key</a> that takes its identity from the object used as its value.<a href="widgets_next/ObjectKey-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="Offset">
+                <span class="name "><a class="" href="widgets_next/Offset-class.html">Offset</a></span>
+            </dt>
+            <dd>
+                <p>An immutable 2D floating-point offset<a href="widgets_next/Offset-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="OneChildRenderObjectElement">
+                <span class="name "><a class="" href="widgets_next/OneChildRenderObjectElement-class.html">OneChildRenderObjectElement</a></span>
+            </dt>
+            <dd>
+                <p>Instantiation of RenderObjectWidgets that have up to one child</p>
+            </dd>
+            <dt id="OneChildRenderObjectWidget">
+                <span class="name "><a class="" href="widgets_next/OneChildRenderObjectWidget-class.html">OneChildRenderObjectWidget</a></span>
+            </dt>
+            <dd>
+                <p>A superclass for RenderObjectWidgets that configure RenderObject subclasses
+that have a single child slot. (This superclass only provides the storage
+for that child, it doesn't actually provide the updating logic.)</p>
+            </dd>
+            <dt id="Opacity">
+                <span class="name "><a class="" href="widgets_next/Opacity-class.html">Opacity</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="OverflowBox">
+                <span class="name "><a class="" href="widgets_next/OverflowBox-class.html">OverflowBox</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Padding">
+                <span class="name "><a class="" href="widgets_next/Padding-class.html">Padding</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PageableList">
+                <span class="name "><a class="" href="widgets_next/PageableList-class.html">PageableList</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PageableListState">
+                <span class="name "><a class="" href="widgets_next/PageableListState-class.html">PageableListState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PageRoute">
+                <span class="name "><a class="" href="widgets_next/PageRoute-class.html">PageRoute</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Paint">
+                <span class="name "><a class="" href="widgets_next/Paint-class.html">Paint</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Paragraph">
+                <span class="name "><a class="" href="widgets_next/Paragraph-class.html">Paragraph</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ParentDataElement">
+                <span class="name "><a class="" href="widgets_next/ParentDataElement-class.html">ParentDataElement</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ParentDataWidget">
+                <span class="name "><a class="" href="widgets_next/ParentDataWidget-class.html">ParentDataWidget</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Path">
+                <span class="name "><a class="" href="widgets_next/Path-class.html">Path</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Point">
+                <span class="name "><a class="" href="widgets_next/Point-class.html">Point</a></span>
+            </dt>
+            <dd>
+                <p>Holds 2 floating-point coordinates.</p>
+            </dd>
+            <dt id="PopupMenu">
+                <span class="name "><a class="" href="widgets_next/PopupMenu-class.html">PopupMenu</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PopupMenuItem">
+                <span class="name "><a class="" href="widgets_next/PopupMenuItem-class.html">PopupMenuItem</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PopupMenuState">
+                <span class="name "><a class="" href="widgets_next/PopupMenuState-class.html">PopupMenuState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Positioned">
+                <span class="name "><a class="" href="widgets_next/Positioned-class.html">Positioned</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ProgressIndicator">
+                <span class="name "><a class="" href="widgets_next/ProgressIndicator-class.html">ProgressIndicator</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ProgressIndicatorState">
+                <span class="name "><a class="" href="widgets_next/ProgressIndicatorState-class.html">ProgressIndicatorState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ProxyWidget">
+                <span class="name "><a class="" href="widgets_next/ProxyWidget-class.html">ProxyWidget</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Radio">
+                <span class="name "><a class="" href="widgets_next/Radio-class.html">Radio</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RadioState">
+                <span class="name "><a class="" href="widgets_next/RadioState-class.html">RadioState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RaisedButton">
+                <span class="name "><a class="" href="widgets_next/RaisedButton-class.html">RaisedButton</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RaisedButtonState">
+                <span class="name "><a class="" href="widgets_next/RaisedButtonState-class.html">RaisedButtonState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Rect">
+                <span class="name "><a class="" href="widgets_next/Rect-class.html">Rect</a></span>
+            </dt>
+            <dd>
+                <p>An immutable 2D, axis-aligned, floating-point rectangle</p>
+            </dd>
+            <dt id="RenderInkWell">
+                <span class="name "><a class="" href="widgets_next/RenderInkWell-class.html">RenderInkWell</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RenderObjectElement">
+                <span class="name "><a class="" href="widgets_next/RenderObjectElement-class.html">RenderObjectElement</a></span>
+            </dt>
+            <dd>
+                <p>Base class for instantiations of RenderObjectWidget subclasses</p>
+            </dd>
+            <dt id="RenderObjectToWidgetAdapter">
+                <span class="name "><a class="" href="widgets_next/RenderObjectToWidgetAdapter-class.html">RenderObjectToWidgetAdapter</a></span>
+            </dt>
+            <dd>
+                <p>This class provides a bridge from a RenderObject to an Element tree. The
+given container is the RenderObject that the Element tree should be inserted
+into. It must be a RenderObject that implements the
+RenderObjectWithChildMixin protocol. The type argument T is the kind of
+RenderObject that the container expects as its child.</p>
+            </dd>
+            <dt id="RenderObjectToWidgetElement">
+                <span class="name "><a class="" href="widgets_next/RenderObjectToWidgetElement-class.html">RenderObjectToWidgetElement</a></span>
+            </dt>
+            <dd>
+                <p>This element class is the instantiation of a <a class="" href="widgets_next/RenderObjectToWidgetAdapter-class.html">RenderObjectToWidgetAdapter</a>.
+It can only be used as the root of an Element tree (it cannot be mounted
+into another Element, it's parent must be null).<a href="widgets_next/RenderObjectToWidgetElement-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="RenderObjectWidget">
+                <span class="name "><a class="" href="widgets_next/RenderObjectWidget-class.html">RenderObjectWidget</a></span>
+            </dt>
+            <dd>
+                <p>RenderObjectWidgets provide the configuration for <a class="" href="widgets_next/RenderObjectElement-class.html">RenderObjectElement</a>s,
+which wrap <a class="" href="rendering/RenderObject-class.html">RenderObject</a>s, which provide the actual rendering of the
+application.</p>
+            </dd>
+            <dt id="RenderScaffold">
+                <span class="name "><a class="" href="widgets_next/RenderScaffold-class.html">RenderScaffold</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RenderTabBar">
+                <span class="name "><a class="" href="widgets_next/RenderTabBar-class.html">RenderTabBar</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Route">
+                <span class="name "><a class="" href="widgets_next/Route-class.html">Route</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="RouteState">
+                <span class="name "><a class="" href="widgets_next/RouteState-class.html">RouteState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Row">
+                <span class="name "><a class="" href="widgets_next/Row-class.html">Row</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Scaffold">
+                <span class="name "><a class="" href="widgets_next/Scaffold-class.html">Scaffold</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScaffoldElement">
+                <span class="name "><a class="" href="widgets_next/ScaffoldElement-class.html">ScaffoldElement</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Scrollable">
+                <span class="name "><a class="" href="widgets_next/Scrollable-class.html">Scrollable</a></span>
+            </dt>
+            <dd>
+                <p>A base class for scrollable widgets that reacts to user input and generates
+a scrollOffset.</p>
+            </dd>
+            <dt id="ScrollableList">
+                <span class="name "><a class="" href="widgets_next/ScrollableList-class.html">ScrollableList</a></span>
+            </dt>
+            <dd>
+                <p>A wrapper around <a class="" href="widgets_next/ScrollableWidgetList-class.html">ScrollableWidgetList</a> that helps you translate a list of
+model objects into a scrollable list of widgets. Assumes all the widgets
+have the same height.</p>
+            </dd>
+            <dt id="ScrollableListState">
+                <span class="name "><a class="" href="widgets_next/ScrollableListState-class.html">ScrollableListState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScrollableMixedWidgetList">
+                <span class="name "><a class="" href="widgets_next/ScrollableMixedWidgetList-class.html">ScrollableMixedWidgetList</a></span>
+            </dt>
+            <dd>
+                <p>A general scrollable list for a large number of children that might not all
+have the same height. Prefer <a class="" href="widgets_next/ScrollableWidgetList-class.html">ScrollableWidgetList</a> when all the children
+have the same height because it can use that property to be more efficient.
+Prefer <a class="" href="widgets_next/ScrollableViewport-class.html">ScrollableViewport</a> with a single child.</p>
+            </dd>
+            <dt id="ScrollableMixedWidgetListState">
+                <span class="name "><a class="" href="widgets_next/ScrollableMixedWidgetListState-class.html">ScrollableMixedWidgetListState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScrollableState">
+                <span class="name "><a class="" href="widgets_next/ScrollableState-class.html">ScrollableState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScrollableViewport">
+                <span class="name "><a class="" href="widgets_next/ScrollableViewport-class.html">ScrollableViewport</a></span>
+            </dt>
+            <dd>
+                <p>A simple scrollable widget that has a single child. Use this component if
+you are not worried about offscreen widgets consuming resources.</p>
+            </dd>
+            <dt id="ScrollableViewportState">
+                <span class="name "><a class="" href="widgets_next/ScrollableViewportState-class.html">ScrollableViewportState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ScrollableWidgetList">
+                <span class="name "><a class="" href="widgets_next/ScrollableWidgetList-class.html">ScrollableWidgetList</a></span>
+            </dt>
+            <dd>
+                <p>An optimized scrollable widget for a large number of children that are all
+the same size (extent) in the scrollDirection. For example for
+ScrollDirection.vertical itemExtent is the height of each item. Use this
+widget when you have a large number of children or when you are concerned</p>
+            </dd>
+            <dt id="ScrollableWidgetListState">
+                <span class="name "><a class="" href="widgets_next/ScrollableWidgetListState-class.html">ScrollableWidgetListState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Size">
+                <span class="name "><a class="" href="widgets_next/Size-class.html">Size</a></span>
+            </dt>
+            <dd>
+                <p>Holds a 2D floating-point size.
+Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
+            </dd>
+            <dt id="SizedBox">
+                <span class="name "><a class="" href="widgets_next/SizedBox-class.html">SizedBox</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SizeObserver">
+                <span class="name "><a class="" href="widgets_next/SizeObserver-class.html">SizeObserver</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SlideTransition">
+                <span class="name "><a class="" href="widgets_next/SlideTransition-class.html">SlideTransition</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SnackBar">
+                <span class="name "><a class="" href="widgets_next/SnackBar-class.html">SnackBar</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SnackBarAction">
+                <span class="name "><a class="" href="widgets_next/SnackBarAction-class.html">SnackBarAction</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SnackBarState">
+                <span class="name "><a class="" href="widgets_next/SnackBarState-class.html">SnackBarState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="SquashTransition">
+                <span class="name "><a class="" href="widgets_next/SquashTransition-class.html">SquashTransition</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Stack">
+                <span class="name "><a class="" href="widgets_next/Stack-class.html">Stack</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="State">
+                <span class="name "><a class="" href="widgets_next/State-class.html">State</a></span>
+            </dt>
+            <dd>
+                <p>The logic and internal state for a StatefulComponent.</p>
+            </dd>
+            <dt id="StatefulComponent">
+                <span class="name "><a class="" href="widgets_next/StatefulComponent-class.html">StatefulComponent</a></span>
+            </dt>
+            <dd>
+                <p>StatefulComponents provide the configuration for
+<a class="" href="widgets_next/StatefulComponentElement-class.html">StatefulComponentElement</a>s, which wrap <a class="" href="widgets_next/State-class.html">State</a>s, which hold mutable state
+and can dynamically and spontaneously ask to be rebuilt.</p>
+            </dd>
+            <dt id="StatefulComponentElement">
+                <span class="name "><a class="" href="widgets_next/StatefulComponentElement-class.html">StatefulComponentElement</a></span>
+            </dt>
+            <dd>
+                <p>Instantiation of StatefulComponent widgets.</p>
+            </dd>
+            <dt id="StatelessComponent">
+                <span class="name "><a class="" href="widgets_next/StatelessComponent-class.html">StatelessComponent</a></span>
+            </dt>
+            <dd>
+                <p>StatelessComponents describe a way to compose other Widgets to form reusable
+parts, which doesn't depend on anything other than the configuration
+information in the object itself. (For compositions that can change
+dynamically, e.g. due to having an internal clock-driven state, or depending
+on some system state, use <a class="" href="widgets_next/StatefulComponent-class.html">StatefulComponent</a>.)</p>
+            </dd>
+            <dt id="StatelessComponentElement">
+                <span class="name "><a class="" href="widgets_next/StatelessComponentElement-class.html">StatelessComponentElement</a></span>
+            </dt>
+            <dd>
+                <p>Instantiation of StatelessComponent widgets.</p>
+            </dd>
+            <dt id="StyledText">
+                <span class="name "><a class="" href="widgets_next/StyledText-class.html">StyledText</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Switch">
+                <span class="name "><a class="" href="widgets_next/Switch-class.html">Switch</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Tab">
+                <span class="name "><a class="" href="widgets_next/Tab-class.html">Tab</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TabBar">
+                <span class="name "><a class="" href="widgets_next/TabBar-class.html">TabBar</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TabBarParentData">
+                <span class="name "><a class="" href="widgets_next/TabBarParentData-class.html">TabBarParentData</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TabBarState">
+                <span class="name "><a class="" href="widgets_next/TabBarState-class.html">TabBarState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TabLabel">
+                <span class="name "><a class="" href="widgets_next/TabLabel-class.html">TabLabel</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TabNavigator">
+                <span class="name "><a class="" href="widgets_next/TabNavigator-class.html">TabNavigator</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TabNavigatorView">
+                <span class="name "><a class="" href="widgets_next/TabNavigatorView-class.html">TabNavigatorView</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Text">
+                <span class="name "><a class="" href="widgets_next/Text-class.html">Text</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TextRange">
+                <span class="name "><a class="" href="widgets_next/TextRange-class.html">TextRange</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Theme">
+                <span class="name "><a class="" href="widgets_next/Theme-class.html">Theme</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ThemeData">
+                <span class="name "><a class="" href="widgets_next/ThemeData-class.html">ThemeData</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Title">
+                <span class="name "><a class="" href="widgets_next/Title-class.html">Title</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ToolBar">
+                <span class="name "><a class="" href="widgets_next/ToolBar-class.html">ToolBar</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Transform">
+                <span class="name "><a class="" href="widgets_next/Transform-class.html">Transform</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TransitionComponent">
+                <span class="name "><a class="" href="widgets_next/TransitionComponent-class.html">TransitionComponent</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TransitionState">
+                <span class="name "><a class="" href="widgets_next/TransitionState-class.html">TransitionState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TransitionWithChild">
+                <span class="name "><a class="" href="widgets_next/TransitionWithChild-class.html">TransitionWithChild</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="UniqueComponent">
+                <span class="name "><a class="" href="widgets_next/UniqueComponent-class.html">UniqueComponent</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="ValueKey">
+                <span class="name "><a class="" href="widgets_next/ValueKey-class.html">ValueKey</a></span>
+            </dt>
+            <dd>
+                <p>A kind of <a class="" href="widgets_next/Key-class.html">Key</a> that uses a value of a particular type to identify itself.<a href="widgets_next/ValueKey-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="Viewport">
+                <span class="name "><a class="" href="widgets_next/Viewport-class.html">Viewport</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="Widget">
+                <span class="name "><a class="" href="widgets_next/Widget-class.html">Widget</a></span>
+            </dt>
+            <dd>
+                <p>A Widget object describes the configuration for an <a class="" href="widgets_next/Element-class.html">Element</a>.
+Widget subclasses should be immutable with const constructors.
+Widgets form a tree that is then inflated into an Element tree.</p>
+            </dd>
+            <dt id="WidgetFlutterBinding">
+                <span class="name "><a class="" href="widgets_next/WidgetFlutterBinding-class.html">WidgetFlutterBinding</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="YearPicker">
+                <span class="name "><a class="" href="widgets_next/YearPicker-class.html">YearPicker</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="YearPickerState">
+                <span class="name "><a class="" href="widgets_next/YearPickerState-class.html">YearPickerState</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+        </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>widgets_next</h5>
+    <ol>
+      <li class="section-title"><a href="widgets_next/widgets_next-library.html#constants">Constants</a></li>
+      <li><a class="" href="widgets_next/edges.html">edges</a></li>
+      <li><a class="" href="widgets_next/kSideMargins.html">kSideMargins</a></li>
+      <li><a class="" href="widgets_next/kSnackBackground.html">kSnackBackground</a></li>
+      <li><a class="" href="widgets_next/kSnackHeight.html">kSnackHeight</a></li>
+      <li><a class="" href="widgets_next/kVerticalPadding.html">kVerticalPadding</a></li>
+    
+      <li class="section-title"><a href="widgets_next/widgets_next-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="widgets_next/BuilderFunction.html">BuilderFunction</a></li>
+      <li><a class="" href="widgets_next/BuildScheduler.html">BuildScheduler</a></li>
+      <li><a class="" href="widgets_next/DatePickerModeChanged.html">DatePickerModeChanged</a></li>
+      <li><a class="" href="widgets_next/DatePickerValueChanged.html">DatePickerValueChanged</a></li>
+      <li><a class="" href="widgets_next/DialogBuilder.html">DialogBuilder</a></li>
+      <li><a class="" href="widgets_next/DismissedCallback.html">DismissedCallback</a></li>
+      <li><a class="" href="widgets_next/DragFinishedNotification.html">DragFinishedNotification</a></li>
+      <li><a class="" href="widgets_next/DragTargetAccept.html">DragTargetAccept</a></li>
+      <li><a class="" href="widgets_next/DragTargetBuilder.html">DragTargetBuilder</a></li>
+      <li><a class="" href="widgets_next/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
+      <li><a class="" href="widgets_next/DrawerDismissedCallback.html">DrawerDismissedCallback</a></li>
+      <li><a class="" href="widgets_next/ElementVisitor.html">ElementVisitor</a></li>
+      <li><a class="" href="widgets_next/ExtentsUpdateCallback.html">ExtentsUpdateCallback</a></li>
+      <li><a class="" href="widgets_next/FocusChanged.html">FocusChanged</a></li>
+      <li><a class="" href="widgets_next/GlobalKeyRemoveListener.html">GlobalKeyRemoveListener</a></li>
+      <li><a class="" href="widgets_next/IndexedBuilder.html">IndexedBuilder</a></li>
+      <li><a class="" href="widgets_next/InvalidatorAvailableCallback.html">InvalidatorAvailableCallback</a></li>
+      <li><a class="" href="widgets_next/InvalidatorCallback.html">InvalidatorCallback</a></li>
+      <li><a class="" href="widgets_next/ItemBuilder.html">ItemBuilder</a></li>
+      <li><a class="" href="widgets_next/LayoutChanged.html">LayoutChanged</a></li>
+      <li><a class="" href="widgets_next/ListBuilder.html">ListBuilder</a></li>
+      <li><a class="" href="widgets_next/NotificationCallback.html">NotificationCallback</a></li>
+      <li><a class="" href="widgets_next/PageChangedCallback.html">PageChangedCallback</a></li>
+      <li><a class="" href="widgets_next/PopupMenuItemsBuilder.html">PopupMenuItemsBuilder</a></li>
+      <li><a class="" href="widgets_next/RadioValueChanged.html">RadioValueChanged</a></li>
+      <li><a class="" href="widgets_next/ResizedCallback.html">ResizedCallback</a></li>
+      <li><a class="" href="widgets_next/RouteBuilder.html">RouteBuilder</a></li>
+      <li><a class="" href="widgets_next/RouteGenerator.html">RouteGenerator</a></li>
+      <li><a class="" href="widgets_next/RouteStateCallback.html">RouteStateCallback</a></li>
+      <li><a class="" href="widgets_next/ScrollListener.html">ScrollListener</a></li>
+      <li><a class="" href="widgets_next/SelectedIndexChanged.html">SelectedIndexChanged</a></li>
+      <li><a class="" href="widgets_next/SnackBarDismissedCallback.html">SnackBarDismissedCallback</a></li>
+      <li><a class="" href="widgets_next/SnapOffsetCallback.html">SnapOffsetCallback</a></li>
+      <li><a class="" href="widgets_next/StringUpdated.html">StringUpdated</a></li>
+      <li><a class="" href="widgets_next/StringValueChanged.html">StringValueChanged</a></li>
+      <li><a class="" href="widgets_next/ValueChanged.html">ValueChanged</a></li>
+      <li><a class="" href="widgets_next/WidgetBuilder.html">WidgetBuilder</a></li>
+      <li><a class="" href="widgets_next/WidgetsExceptionHandler.html">WidgetsExceptionHandler</a></li>
+    
+      <li class="section-title"><a href="widgets_next/widgets_next-library.html#properties">Properties</a></li>
+      <li><a class="" href="widgets_next/debugWidgetsExceptionHandler.html">debugWidgetsExceptionHandler</a></li>
+    
+      <li class="section-title"><a href="widgets_next/widgets_next-library.html#functions">Functions</a></li>
+      <li><a class="" href="widgets_next/debugDumpApp.html">debugDumpApp</a></li>
+      <li><a class="" href="widgets_next/ensureWidgetIsVisible.html">ensureWidgetIsVisible</a></li>
+      <li><a class="" href="widgets_next/findScrollableAncestor.html">findScrollableAncestor</a></li>
+      <li><a class="" href="widgets_next/runApp.html">runApp</a></li>
+      <li><a class="" href="widgets_next/showDialog.html">showDialog</a></li>
+      <li><a class="" href="widgets_next/showMenu.html">showMenu</a></li>
+    
+      <li class="section-title"><a href="widgets_next/widgets_next-library.html#enums">Enums</a></li>
+      <li><a class="" href="widgets_next/BlockDirection-class.html">BlockDirection</a></li>
+      <li><a class="" href="widgets_next/BoxDecorationPosition-class.html">BoxDecorationPosition</a></li>
+      <li><a class="" href="widgets_next/DatePickerMode-class.html">DatePickerMode</a></li>
+      <li><a class="" href="widgets_next/Direction-class.html">Direction</a></li>
+      <li><a class="" href="widgets_next/DismissDirection-class.html">DismissDirection</a></li>
+      <li><a class="" href="widgets_next/DragEndKind-class.html">DragEndKind</a></li>
+      <li><a class="" href="widgets_next/FlexAlignItems-class.html">FlexAlignItems</a></li>
+      <li><a class="" href="widgets_next/FlexDirection-class.html">FlexDirection</a></li>
+      <li><a class="" href="widgets_next/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
+      <li><a class="" href="widgets_next/IconThemeColor-class.html">IconThemeColor</a></li>
+      <li><a class="" href="widgets_next/MaterialType-class.html">MaterialType</a></li>
+      <li><a class="" href="widgets_next/ScaffoldSlots-class.html">ScaffoldSlots</a></li>
+      <li><a class="" href="widgets_next/ScrollDirection-class.html">ScrollDirection</a></li>
+      <li><a class="" href="widgets_next/Shape-class.html">Shape</a></li>
+      <li><a class="" href="widgets_next/ShrinkWrap-class.html">ShrinkWrap</a></li>
+      <li><a class="" href="widgets_next/ThemeBrightness-class.html">ThemeBrightness</a></li>
+    
+      <li class="section-title"><a href="widgets_next/widgets_next-library.html#classes">Classes</a></li>
+      <li><a class="" href="widgets_next/Align-class.html">Align</a></li>
+      <li><a class="" href="widgets_next/AnimatedComponent-class.html">AnimatedComponent</a></li>
+      <li><a class="" href="widgets_next/AnimatedState-class.html">AnimatedState</a></li>
+      <li><a class="" href="widgets_next/App-class.html">App</a></li>
+      <li><a class="" href="widgets_next/AppState-class.html">AppState</a></li>
+      <li><a class="" href="widgets_next/AspectRatio-class.html">AspectRatio</a></li>
+      <li><a class="" href="widgets_next/AssetImage-class.html">AssetImage</a></li>
+      <li><a class="" href="widgets_next/BackgroundImage-class.html">BackgroundImage</a></li>
+      <li><a class="" href="widgets_next/Baseline-class.html">Baseline</a></li>
+      <li><a class="" href="widgets_next/Block-class.html">Block</a></li>
+      <li><a class="" href="widgets_next/BlockBody-class.html">BlockBody</a></li>
+      <li><a class="" href="widgets_next/Border-class.html">Border</a></li>
+      <li><a class="" href="widgets_next/BorderSide-class.html">BorderSide</a></li>
+      <li><a class="" href="widgets_next/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a class="" href="widgets_next/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a class="" href="widgets_next/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a class="" href="widgets_next/BuildableElement-class.html">BuildableElement</a></li>
+      <li><a class="" href="widgets_next/BuildContext-class.html">BuildContext</a></li>
+      <li><a class="" href="widgets_next/BuilderTransition-class.html">BuilderTransition</a></li>
+      <li><a class="" href="widgets_next/ButtonState-class.html">ButtonState</a></li>
+      <li><a class="" href="widgets_next/Card-class.html">Card</a></li>
+      <li><a class="" href="widgets_next/Center-class.html">Center</a></li>
+      <li><a class="" href="widgets_next/Checkbox-class.html">Checkbox</a></li>
+      <li><a class="" href="widgets_next/CircularProgressIndicator-class.html">CircularProgressIndicator</a></li>
+      <li><a class="" href="widgets_next/ClipOval-class.html">ClipOval</a></li>
+      <li><a class="" href="widgets_next/ClipRect-class.html">ClipRect</a></li>
+      <li><a class="" href="widgets_next/ClipRRect-class.html">ClipRRect</a></li>
+      <li><a class="" href="widgets_next/Color-class.html">Color</a></li>
+      <li><a class="" href="widgets_next/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a class="" href="widgets_next/ColorTransition-class.html">ColorTransition</a></li>
+      <li><a class="" href="widgets_next/Column-class.html">Column</a></li>
+      <li><a class="" href="widgets_next/ConstrainedBox-class.html">ConstrainedBox</a></li>
+      <li><a class="" href="widgets_next/Container-class.html">Container</a></li>
+      <li><a class="" href="widgets_next/CustomPaint-class.html">CustomPaint</a></li>
+      <li><a class="" href="widgets_next/DatePicker-class.html">DatePicker</a></li>
+      <li><a class="" href="widgets_next/DatePickerHeader-class.html">DatePickerHeader</a></li>
+      <li><a class="" href="widgets_next/DatePickerState-class.html">DatePickerState</a></li>
+      <li><a class="" href="widgets_next/DayPicker-class.html">DayPicker</a></li>
+      <li><a class="" href="widgets_next/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a class="" href="widgets_next/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
+      <li><a class="" href="widgets_next/Dialog-class.html">Dialog</a></li>
+      <li><a class="" href="widgets_next/DialogRoute-class.html">DialogRoute</a></li>
+      <li><a class="" href="widgets_next/Dismissable-class.html">Dismissable</a></li>
+      <li><a class="" href="widgets_next/DismissableState-class.html">DismissableState</a></li>
+      <li><a class="" href="widgets_next/Draggable-class.html">Draggable</a></li>
+      <li><a class="" href="widgets_next/DraggableState-class.html">DraggableState</a></li>
+      <li><a class="" href="widgets_next/DragRoute-class.html">DragRoute</a></li>
+      <li><a class="" href="widgets_next/DragTarget-class.html">DragTarget</a></li>
+      <li><a class="" href="widgets_next/DragTargetState-class.html">DragTargetState</a></li>
+      <li><a class="" href="widgets_next/Drawer-class.html">Drawer</a></li>
+      <li><a class="" href="widgets_next/DrawerDivider-class.html">DrawerDivider</a></li>
+      <li><a class="" href="widgets_next/DrawerHeader-class.html">DrawerHeader</a></li>
+      <li><a class="" href="widgets_next/DrawerItem-class.html">DrawerItem</a></li>
+      <li><a class="" href="widgets_next/DrawerItemState-class.html">DrawerItemState</a></li>
+      <li><a class="" href="widgets_next/DrawerState-class.html">DrawerState</a></li>
+      <li><a class="" href="widgets_next/EdgeDims-class.html">EdgeDims</a></li>
+      <li><a class="" href="widgets_next/EditableString-class.html">EditableString</a></li>
+      <li><a class="" href="widgets_next/EditableText-class.html">EditableText</a></li>
+      <li><a class="" href="widgets_next/EditableTextState-class.html">EditableTextState</a></li>
+      <li><a class="" href="widgets_next/Element-class.html">Element</a></li>
+      <li><a class="" href="widgets_next/ErrorWidget-class.html">ErrorWidget</a></li>
+      <li><a class="" href="widgets_next/FadeTransition-class.html">FadeTransition</a></li>
+      <li><a class="" href="widgets_next/FlatButton-class.html">FlatButton</a></li>
+      <li><a class="" href="widgets_next/FlatButtonState-class.html">FlatButtonState</a></li>
+      <li><a class="" href="widgets_next/Flex-class.html">Flex</a></li>
+      <li><a class="" href="widgets_next/Flexible-class.html">Flexible</a></li>
+      <li><a class="" href="widgets_next/FloatingActionButton-class.html">FloatingActionButton</a></li>
+      <li><a class="" href="widgets_next/FloatingActionButtonState-class.html">FloatingActionButtonState</a></li>
+      <li><a class="" href="widgets_next/Focus-class.html">Focus</a></li>
+      <li><a class="" href="widgets_next/FocusState-class.html">FocusState</a></li>
+      <li><a class="" href="widgets_next/GestureDetector-class.html">GestureDetector</a></li>
+      <li><a class="" href="widgets_next/GestureDetectorState-class.html">GestureDetectorState</a></li>
+      <li><a class="" href="widgets_next/GlobalKey-class.html">GlobalKey</a></li>
+      <li><a class="" href="widgets_next/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
+      <li><a class="" href="widgets_next/Grid-class.html">Grid</a></li>
+      <li><a class="" href="widgets_next/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
+      <li><a class="" href="widgets_next/HomogeneousViewportElement-class.html">HomogeneousViewportElement</a></li>
+      <li><a class="" href="widgets_next/Icon-class.html">Icon</a></li>
+      <li><a class="" href="widgets_next/IconButton-class.html">IconButton</a></li>
+      <li><a class="" href="widgets_next/IconTheme-class.html">IconTheme</a></li>
+      <li><a class="" href="widgets_next/IconThemeData-class.html">IconThemeData</a></li>
+      <li><a class="" href="widgets_next/IgnorePointer-class.html">IgnorePointer</a></li>
+      <li><a class="" href="widgets_next/Image-class.html">Image</a></li>
+      <li><a class="" href="widgets_next/ImageListener-class.html">ImageListener</a></li>
+      <li><a class="" href="widgets_next/ImageListenerState-class.html">ImageListenerState</a></li>
+      <li><a class="" href="widgets_next/InheritedElement-class.html">InheritedElement</a></li>
+      <li><a class="" href="widgets_next/InheritedWidget-class.html">InheritedWidget</a></li>
+      <li><a class="" href="widgets_next/InkSplash-class.html">InkSplash</a></li>
+      <li><a class="" href="widgets_next/InkWell-class.html">InkWell</a></li>
+      <li><a class="" href="widgets_next/Input-class.html">Input</a></li>
+      <li><a class="" href="widgets_next/InputState-class.html">InputState</a></li>
+      <li><a class="" href="widgets_next/IntrinsicHeight-class.html">IntrinsicHeight</a></li>
+      <li><a class="" href="widgets_next/IntrinsicWidth-class.html">IntrinsicWidth</a></li>
+      <li><a class="" href="widgets_next/Key-class.html">Key</a></li>
+      <li><a class="" href="widgets_next/KeyboardType-class.html">KeyboardType</a></li>
+      <li><a class="" href="widgets_next/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
+      <li><a class="" href="widgets_next/LeafRenderObjectElement-class.html">LeafRenderObjectElement</a></li>
+      <li><a class="" href="widgets_next/LeafRenderObjectWidget-class.html">LeafRenderObjectWidget</a></li>
+      <li><a class="" href="widgets_next/LinearProgressIndicator-class.html">LinearProgressIndicator</a></li>
+      <li><a class="" href="widgets_next/Listener-class.html">Listener</a></li>
+      <li><a class="" href="widgets_next/Material-class.html">Material</a></li>
+      <li><a class="" href="widgets_next/MaterialButton-class.html">MaterialButton</a></li>
+      <li><a class="" href="widgets_next/MaterialButtonState-class.html">MaterialButtonState</a></li>
+      <li><a class="" href="widgets_next/Matrix4-class.html">Matrix4</a></li>
+      <li><a class="" href="widgets_next/MenuPosition-class.html">MenuPosition</a></li>
+      <li><a class="" href="widgets_next/MenuRoute-class.html">MenuRoute</a></li>
+      <li><a class="" href="widgets_next/MetaData-class.html">MetaData</a></li>
+      <li><a class="" href="widgets_next/Mimic-class.html">Mimic</a></li>
+      <li><a class="" href="widgets_next/Mimicable-class.html">Mimicable</a></li>
+      <li><a class="" href="widgets_next/MimicableKey-class.html">MimicableKey</a></li>
+      <li><a class="" href="widgets_next/MimicableState-class.html">MimicableState</a></li>
+      <li><a class="" href="widgets_next/MixedViewport-class.html">MixedViewport</a></li>
+      <li><a class="" href="widgets_next/MixedViewportElement-class.html">MixedViewportElement</a></li>
+      <li><a class="" href="widgets_next/MonthPicker-class.html">MonthPicker</a></li>
+      <li><a class="" href="widgets_next/MonthPickerState-class.html">MonthPickerState</a></li>
+      <li><a class="" href="widgets_next/MultiChildRenderObjectElement-class.html">MultiChildRenderObjectElement</a></li>
+      <li><a class="" href="widgets_next/MultiChildRenderObjectWidget-class.html">MultiChildRenderObjectWidget</a></li>
+      <li><a class="" href="widgets_next/Navigator-class.html">Navigator</a></li>
+      <li><a class="" href="widgets_next/NavigatorState-class.html">NavigatorState</a></li>
+      <li><a class="" href="widgets_next/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a class="" href="widgets_next/ObjectKey-class.html">ObjectKey</a></li>
+      <li><a class="" href="widgets_next/Offset-class.html">Offset</a></li>
+      <li><a class="" href="widgets_next/OneChildRenderObjectElement-class.html">OneChildRenderObjectElement</a></li>
+      <li><a class="" href="widgets_next/OneChildRenderObjectWidget-class.html">OneChildRenderObjectWidget</a></li>
+      <li><a class="" href="widgets_next/Opacity-class.html">Opacity</a></li>
+      <li><a class="" href="widgets_next/OverflowBox-class.html">OverflowBox</a></li>
+      <li><a class="" href="widgets_next/Padding-class.html">Padding</a></li>
+      <li><a class="" href="widgets_next/PageableList-class.html">PageableList</a></li>
+      <li><a class="" href="widgets_next/PageableListState-class.html">PageableListState</a></li>
+      <li><a class="" href="widgets_next/PageRoute-class.html">PageRoute</a></li>
+      <li><a class="" href="widgets_next/Paint-class.html">Paint</a></li>
+      <li><a class="" href="widgets_next/Paragraph-class.html">Paragraph</a></li>
+      <li><a class="" href="widgets_next/ParentDataElement-class.html">ParentDataElement</a></li>
+      <li><a class="" href="widgets_next/ParentDataWidget-class.html">ParentDataWidget</a></li>
+      <li><a class="" href="widgets_next/Path-class.html">Path</a></li>
+      <li><a class="" href="widgets_next/Point-class.html">Point</a></li>
+      <li><a class="" href="widgets_next/PopupMenu-class.html">PopupMenu</a></li>
+      <li><a class="" href="widgets_next/PopupMenuItem-class.html">PopupMenuItem</a></li>
+      <li><a class="" href="widgets_next/PopupMenuState-class.html">PopupMenuState</a></li>
+      <li><a class="" href="widgets_next/Positioned-class.html">Positioned</a></li>
+      <li><a class="" href="widgets_next/ProgressIndicator-class.html">ProgressIndicator</a></li>
+      <li><a class="" href="widgets_next/ProgressIndicatorState-class.html">ProgressIndicatorState</a></li>
+      <li><a class="" href="widgets_next/ProxyWidget-class.html">ProxyWidget</a></li>
+      <li><a class="" href="widgets_next/Radio-class.html">Radio</a></li>
+      <li><a class="" href="widgets_next/RadioState-class.html">RadioState</a></li>
+      <li><a class="" href="widgets_next/RaisedButton-class.html">RaisedButton</a></li>
+      <li><a class="" href="widgets_next/RaisedButtonState-class.html">RaisedButtonState</a></li>
+      <li><a class="" href="widgets_next/Rect-class.html">Rect</a></li>
+      <li><a class="" href="widgets_next/RenderInkWell-class.html">RenderInkWell</a></li>
+      <li><a class="" href="widgets_next/RenderObjectElement-class.html">RenderObjectElement</a></li>
+      <li><a class="" href="widgets_next/RenderObjectToWidgetAdapter-class.html">RenderObjectToWidgetAdapter</a></li>
+      <li><a class="" href="widgets_next/RenderObjectToWidgetElement-class.html">RenderObjectToWidgetElement</a></li>
+      <li><a class="" href="widgets_next/RenderObjectWidget-class.html">RenderObjectWidget</a></li>
+      <li><a class="" href="widgets_next/RenderScaffold-class.html">RenderScaffold</a></li>
+      <li><a class="" href="widgets_next/RenderTabBar-class.html">RenderTabBar</a></li>
+      <li><a class="" href="widgets_next/Route-class.html">Route</a></li>
+      <li><a class="" href="widgets_next/RouteState-class.html">RouteState</a></li>
+      <li><a class="" href="widgets_next/Row-class.html">Row</a></li>
+      <li><a class="" href="widgets_next/Scaffold-class.html">Scaffold</a></li>
+      <li><a class="" href="widgets_next/ScaffoldElement-class.html">ScaffoldElement</a></li>
+      <li><a class="" href="widgets_next/Scrollable-class.html">Scrollable</a></li>
+      <li><a class="" href="widgets_next/ScrollableList-class.html">ScrollableList</a></li>
+      <li><a class="" href="widgets_next/ScrollableListState-class.html">ScrollableListState</a></li>
+      <li><a class="" href="widgets_next/ScrollableMixedWidgetList-class.html">ScrollableMixedWidgetList</a></li>
+      <li><a class="" href="widgets_next/ScrollableMixedWidgetListState-class.html">ScrollableMixedWidgetListState</a></li>
+      <li><a class="" href="widgets_next/ScrollableState-class.html">ScrollableState</a></li>
+      <li><a class="" href="widgets_next/ScrollableViewport-class.html">ScrollableViewport</a></li>
+      <li><a class="" href="widgets_next/ScrollableViewportState-class.html">ScrollableViewportState</a></li>
+      <li><a class="" href="widgets_next/ScrollableWidgetList-class.html">ScrollableWidgetList</a></li>
+      <li><a class="" href="widgets_next/ScrollableWidgetListState-class.html">ScrollableWidgetListState</a></li>
+      <li><a class="" href="widgets_next/Size-class.html">Size</a></li>
+      <li><a class="" href="widgets_next/SizedBox-class.html">SizedBox</a></li>
+      <li><a class="" href="widgets_next/SizeObserver-class.html">SizeObserver</a></li>
+      <li><a class="" href="widgets_next/SlideTransition-class.html">SlideTransition</a></li>
+      <li><a class="" href="widgets_next/SnackBar-class.html">SnackBar</a></li>
+      <li><a class="" href="widgets_next/SnackBarAction-class.html">SnackBarAction</a></li>
+      <li><a class="" href="widgets_next/SnackBarState-class.html">SnackBarState</a></li>
+      <li><a class="" href="widgets_next/SquashTransition-class.html">SquashTransition</a></li>
+      <li><a class="" href="widgets_next/Stack-class.html">Stack</a></li>
+      <li><a class="" href="widgets_next/State-class.html">State</a></li>
+      <li><a class="" href="widgets_next/StatefulComponent-class.html">StatefulComponent</a></li>
+      <li><a class="" href="widgets_next/StatefulComponentElement-class.html">StatefulComponentElement</a></li>
+      <li><a class="" href="widgets_next/StatelessComponent-class.html">StatelessComponent</a></li>
+      <li><a class="" href="widgets_next/StatelessComponentElement-class.html">StatelessComponentElement</a></li>
+      <li><a class="" href="widgets_next/StyledText-class.html">StyledText</a></li>
+      <li><a class="" href="widgets_next/Switch-class.html">Switch</a></li>
+      <li><a class="" href="widgets_next/Tab-class.html">Tab</a></li>
+      <li><a class="" href="widgets_next/TabBar-class.html">TabBar</a></li>
+      <li><a class="" href="widgets_next/TabBarParentData-class.html">TabBarParentData</a></li>
+      <li><a class="" href="widgets_next/TabBarState-class.html">TabBarState</a></li>
+      <li><a class="" href="widgets_next/TabLabel-class.html">TabLabel</a></li>
+      <li><a class="" href="widgets_next/TabNavigator-class.html">TabNavigator</a></li>
+      <li><a class="" href="widgets_next/TabNavigatorView-class.html">TabNavigatorView</a></li>
+      <li><a class="" href="widgets_next/Text-class.html">Text</a></li>
+      <li><a class="" href="widgets_next/TextRange-class.html">TextRange</a></li>
+      <li><a class="" href="widgets_next/Theme-class.html">Theme</a></li>
+      <li><a class="" href="widgets_next/ThemeData-class.html">ThemeData</a></li>
+      <li><a class="" href="widgets_next/Title-class.html">Title</a></li>
+      <li><a class="" href="widgets_next/ToolBar-class.html">ToolBar</a></li>
+      <li><a class="" href="widgets_next/Transform-class.html">Transform</a></li>
+      <li><a class="" href="widgets_next/TransitionComponent-class.html">TransitionComponent</a></li>
+      <li><a class="" href="widgets_next/TransitionState-class.html">TransitionState</a></li>
+      <li><a class="" href="widgets_next/TransitionWithChild-class.html">TransitionWithChild</a></li>
+      <li><a class="" href="widgets_next/UniqueComponent-class.html">UniqueComponent</a></li>
+      <li><a class="" href="widgets_next/ValueKey-class.html">ValueKey</a></li>
+      <li><a class="" href="widgets_next/Viewport-class.html">Viewport</a></li>
+      <li><a class="" href="widgets_next/Widget-class.html">Widget</a></li>
+      <li><a class="" href="widgets_next/WidgetFlutterBinding-class.html">WidgetFlutterBinding</a></li>
+      <li><a class="" href="widgets_next/YearPicker-class.html">YearPicker</a></li>
+      <li><a class="" href="widgets_next/YearPickerState-class.html">YearPickerState</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  sky 0.0.51 api docs
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.6.3 -->
+</body>
+
+</html>

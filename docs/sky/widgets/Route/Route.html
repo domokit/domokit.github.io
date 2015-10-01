@@ -112,13 +112,12 @@
     
     
       <li class="section-title"><a href="widgets/Route-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="widgets/Route/builder.html">builder</a></li>
-      <li><a class="" href="widgets/RouteBase/hasContent.html">hasContent</a></li>
-      <li><a class="" href="widgets/RouteBase/isActuallyOpaque.html">isActuallyOpaque</a></li>
-      <li><a class="" href="widgets/Route/isOpaque.html">isOpaque</a></li>
-      <li><a class="" href="widgets/Route/name.html">name</a></li>
-      <li><a class="" href="widgets/RouteBase/onCompleted.html">onCompleted</a></li>
-      <li><a class="" href="widgets/RouteBase/onDismissed.html">onDismissed</a></li>
+      <li><a class="" href="widgets/Route/ephemeral.html">ephemeral</a></li>
+      <li><a class="" href="widgets/Route/hasContent.html">hasContent</a></li>
+      <li><a class="" href="widgets/Route/isActuallyOpaque.html">isActuallyOpaque</a></li>
+      <li><a class="" href="widgets/Route/modal.html">modal</a></li>
+      <li><a class="" href="widgets/Route/opaque.html">opaque</a></li>
+      <li><a class="" href="widgets/Route/performance.html">performance</a></li>
       <li><a class="" href="widgets/Route/transitionDuration.html">transitionDuration</a></li>
     
       <li class="section-title"><a href="widgets/Route-class.html#constructors">Constructors</a></li>
@@ -127,9 +126,9 @@
     
       <li class="section-title"><a href="widgets/Route-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/Route/build.html">build</a></li>
-      <li><a class="" href="widgets/RouteBase/createPerformance.html">createPerformance</a></li>
-      <li><a class="" href="widgets/RouteBase/ensurePerformance.html">ensurePerformance</a></li>
-      <li><a class="" href="widgets/RouteBase/popState.html">popState</a></li>
+      <li><a class="" href="widgets/Route/createPerformance.html">createPerformance</a></li>
+      <li><a class="" href="widgets/Route/didPop.html">didPop</a></li>
+      <li><a class="" href="widgets/Route/ensurePerformance.html">ensurePerformance</a></li>
       <li><a class="" href="widgets/Route/toString.html">toString</a></li>
     </ol>
 
@@ -139,12 +138,7 @@
 
     <section class="multi-line-signature">
         
-                <span class="name ">Route</span>(
-        <br>
-        <div class="parameters">
-            {<span class="parameter" id="-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>,<br><span class="parameter" id="-param-builder"><span class="type-annotation"><a class="" href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">builder</span>(<span class="parameter" id="RouteBuilder-param-navigator"><span class="type-annotation"><a class="" href="widgets/Navigator-class.html">Navigator</a></span> <span class="parameter-name">navigator</span></span>, <span class="parameter" id="RouteBuilder-param-route"><span class="type-annotation"><a class="" href="widgets/RouteBase-class.html">RouteBase</a></span> <span class="parameter-name">route</span></span>)</span>}
-        </div>
-        )
+                <span class="name ">Route</span>()
     </section>
 
     <section class="desc markdown">
@@ -164,7 +158,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.51 api docs
+                  sky 0.0.52 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

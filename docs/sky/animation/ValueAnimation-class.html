@@ -91,6 +91,7 @@
           <ul class="subnav">
               <li><a href="animation/ValueAnimation-class.html#instance-properties">Properties</a></li>
               <li><a href="animation/ValueAnimation-class.html#constructors">Constructors</a></li>
+              <li><a href="animation/ValueAnimation-class.html#instance-methods">Methods</a></li>
           </ul>
         </div> <!-- /col -->
       </div> <!-- /row -->
@@ -147,6 +148,7 @@
       <li><a class="" href="animation/BounceInOutCurve-class.html">BounceInOutCurve</a></li>
       <li><a class="" href="animation/BounceOutCurve-class.html">BounceOutCurve</a></li>
       <li><a class="" href="animation/BoundedBehavior-class.html">BoundedBehavior</a></li>
+      <li><a class="" href="animation/ClampedSimulation-class.html">ClampedSimulation</a></li>
       <li><a class="" href="animation/Cubic-class.html">Cubic</a></li>
       <li><a class="" href="animation/Curve-class.html">Curve</a></li>
       <li><a class="" href="animation/ElasticInCurve-class.html">ElasticInCurve</a></li>
@@ -322,7 +324,7 @@ allowing users of that pointer to mutate the AnimationPerformance state.</p>
 
         <dl class="constructor-summary-list">
             <dt id="ValueAnimation" class="callable">
-                <span class="name"><a class="" href="animation/ValueAnimation/ValueAnimation.html">ValueAnimation</a></span><span class="signature">({<span class="parameter" id="-param-variable"><span class="type-annotation"><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a>&lt;T&gt;</span> <span class="parameter-name">variable</span></span>, <span class="parameter" id="-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>})</span>
+                <span class="name"><a class="" href="animation/ValueAnimation/ValueAnimation.html">ValueAnimation</a></span><span class="signature">({<span class="parameter" id="-param-variable"><span class="type-annotation"><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a>&lt;T&gt;</span> <span class="parameter-name">variable</span></span>, <span class="parameter" id="-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="-param-progress"><span class="type-annotation">double</span> <span class="parameter-name">progress</span></span>})</span>
             </dt>
             <dd>
                 <p></p>
@@ -354,16 +356,14 @@ allowing users of that pointer to mutate the AnimationPerformance state.</p>
                   <div class="features">inherited</div>
                   <p>Calls listener every time the status of this performance changes</p>
               </dd>
-              <dt id="addVariable" class="callable">
-                  <span class="name "><a class="" href="animation/AnimationPerformance/addVariable.html">addVariable</a></span><span class="signature">(<wbr><span class="parameter" id="addVariable-param-newVariable"><span class="type-annotation"><a class="" href="animation/AnimatedVariable-class.html">AnimatedVariable</a></span> <span class="parameter-name">newVariable</span></span>)
+              <dt id="didTick" class="callable">
+                  <span class="name "><a class="" href="animation/ValueAnimation/didTick.html">didTick</a></span><span class="signature">(<wbr><span class="parameter" id="didTick-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <div class="features">inherited</div>
-                  <p>Add a variable to this animation<a href="animation/AnimationPerformance/addVariable.html">&hellip;</a>
-</p>
+                  <p></p>
               </dd>
               <dt id="fling" class="callable">
                   <span class="name "><a class="" href="animation/AnimationPerformance/fling.html">fling</a></span><span class="signature">(<wbr>{<span class="parameter" id="fling-param-velocity"><span class="type-annotation">double</span> <span class="parameter-name">velocity</span>: <span class="default-value">1.0</span></span>, <span class="parameter" id="fling-param-force"><span class="type-annotation"><a class="" href="animation/Force-class.html">Force</a></span> <span class="parameter-name">force</span></span>})
@@ -487,7 +487,7 @@ allowing users of that pointer to mutate the AnimationPerformance state.</p>
       <li class="section-title"><a href="animation/ValueAnimation-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="animation/AnimationPerformance/addListener.html">addListener</a></li>
       <li><a class="" href="animation/AnimationPerformance/addStatusListener.html">addStatusListener</a></li>
-      <li><a class="" href="animation/AnimationPerformance/addVariable.html">addVariable</a></li>
+      <li><a class="" href="animation/ValueAnimation/didTick.html">didTick</a></li>
       <li><a class="" href="animation/AnimationPerformance/fling.html">fling</a></li>
       <li><a class="" href="animation/AnimationPerformance/forward.html">forward</a></li>
       <li><a class="" href="animation/AnimationPerformance/play.html">play</a></li>
@@ -508,7 +508,7 @@ allowing users of that pointer to mutate the AnimationPerformance state.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.51 api docs
+                  sky 0.0.52 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

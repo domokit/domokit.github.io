@@ -114,7 +114,6 @@
       <li><a href="rendering/rendering-library.html">rendering</a></li>
       <li><a href="services/services-library.html">services</a></li>
       <li><a href="widgets/widgets-library.html">widgets</a></li>
-      <li><a href="widgets_next/widgets_next-library.html">widgets_next</a></li>
     </ol>
   </div>
 
@@ -323,6 +322,33 @@ network.</p>
                 <div class="features">const</div>
                 <p></p>
             </dd>
+            <dt id="kPathService_getAppDataDir_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a class="" href="services/kPathService_getAppDataDir_name.html">kPathService_getAppDataDir_name</a></span>
+                <span class="signature">= 0</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kPathService_getCacheDir_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a class="" href="services/kPathService_getCacheDir_name.html">kPathService_getCacheDir_name</a></span>
+                <span class="signature">= 2</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="kPathService_getFilesDir_name" class="constant">
+                <span class="top-level-variable-type">int</span>
+                <span class="name "><a class="" href="services/kPathService_getFilesDir_name.html">kPathService_getFilesDir_name</a></span>
+                <span class="signature">= 1</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
             <dt id="kUserFeedback_performAuralFeedback_name" class="constant">
                 <span class="top-level-variable-type">int</span>
                 <span class="name "><a class="" href="services/kUserFeedback_performAuralFeedback_name.html">kUserFeedback_performAuralFeedback_name</a></span>
@@ -364,6 +390,15 @@ network.</p>
                 <span class="top-level-variable-type">int</span>
                 <span class="name "><a class="" href="services/NEW_TASK.html">NEW_TASK</a></span>
                 <span class="signature">= 0x10000000</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p></p>
+            </dd>
+            <dt id="PathServiceName" class="constant">
+                <span class="top-level-variable-type">String</span>
+                <span class="name "><a class="" href="services/PathServiceName.html">PathServiceName</a></span>
+                <span class="signature">= 'activity::PathService'</span>
             </dt>
             <dd>
                 <div class="features">const</div>
@@ -460,6 +495,16 @@ network.</p>
     </div>
     <p></p>
             </dd>
+            <dt id="pathService" class="property">
+                <span class="name"><a class="" href="services/pathService.html">pathService</a></span>
+                <span class="signature">&#8594; <a class="" href="services/PathService-class.html">PathService</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only
+    </div>
+    <p></p>
+            </dd>
             <dt id="rootBundle" class="property">
                 <span class="name"><a class="" href="services/rootBundle.html">rootBundle</a></span>
                 <span class="signature">&#8594; <a class="" href="services/AssetBundle-class.html">AssetBundle</a></span>
@@ -528,6 +573,15 @@ network.</p>
                 <span class="name "><a class="" href="services/fetchUrl.html">fetchUrl</a></span><span class="signature">(<wbr><span class="parameter" id="fetchUrl-param-relativeUrl"><span class="type-annotation">String</span> <span class="parameter-name">relativeUrl</span></span>)
                     &#8594;
                     <span class="returntype">Future&lt;UrlResponse&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="getAppDataDir" class="callable">
+                <span class="name "><a class="" href="services/getAppDataDir.html">getAppDataDir</a></span><span class="signature">(<wbr>)
+                    &#8594;
+                    <span class="returntype">Future&lt;String&gt;</span>
                 </span>
             </dt>
             <dd>
@@ -839,6 +893,66 @@ network.</p>
             <dd>
                 <p></p>
             </dd>
+            <dt id="PathService">
+                <span class="name "><a class="" href="services/PathService-class.html">PathService</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceGetAppDataDirParams">
+                <span class="name "><a class="" href="services/PathServiceGetAppDataDirParams-class.html">PathServiceGetAppDataDirParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceGetAppDataDirResponseParams">
+                <span class="name "><a class="" href="services/PathServiceGetAppDataDirResponseParams-class.html">PathServiceGetAppDataDirResponseParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceGetCacheDirParams">
+                <span class="name "><a class="" href="services/PathServiceGetCacheDirParams-class.html">PathServiceGetCacheDirParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceGetCacheDirResponseParams">
+                <span class="name "><a class="" href="services/PathServiceGetCacheDirResponseParams-class.html">PathServiceGetCacheDirResponseParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceGetFilesDirParams">
+                <span class="name "><a class="" href="services/PathServiceGetFilesDirParams-class.html">PathServiceGetFilesDirParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceGetFilesDirResponseParams">
+                <span class="name "><a class="" href="services/PathServiceGetFilesDirResponseParams-class.html">PathServiceGetFilesDirResponseParams</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceProxy">
+                <span class="name "><a class="" href="services/PathServiceProxy-class.html">PathServiceProxy</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceProxyImpl">
+                <span class="name "><a class="" href="services/PathServiceProxyImpl-class.html">PathServiceProxyImpl</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="PathServiceStub">
+                <span class="name "><a class="" href="services/PathServiceStub-class.html">PathServiceStub</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="Response">
                 <span class="name "><a class="" href="services/Response-class.html">Response</a></span>
             </dt>
@@ -942,11 +1056,15 @@ network.</p>
       <li><a class="" href="services/kKeyboardService_hide_name.html">kKeyboardService_hide_name</a></li>
       <li><a class="" href="services/kKeyboardService_showByRequest_name.html">kKeyboardService_showByRequest_name</a></li>
       <li><a class="" href="services/kKeyboardService_show_name.html">kKeyboardService_show_name</a></li>
+      <li><a class="" href="services/kPathService_getAppDataDir_name.html">kPathService_getAppDataDir_name</a></li>
+      <li><a class="" href="services/kPathService_getCacheDir_name.html">kPathService_getCacheDir_name</a></li>
+      <li><a class="" href="services/kPathService_getFilesDir_name.html">kPathService_getFilesDir_name</a></li>
       <li><a class="" href="services/kUserFeedback_performAuralFeedback_name.html">kUserFeedback_performAuralFeedback_name</a></li>
       <li><a class="" href="services/kUserFeedback_performHapticFeedback_name.html">kUserFeedback_performHapticFeedback_name</a></li>
       <li><a class="" href="services/MULTIPLE_TASK.html">MULTIPLE_TASK</a></li>
       <li><a class="" href="services/NEW_DOCUMENT.html">NEW_DOCUMENT</a></li>
       <li><a class="" href="services/NEW_TASK.html">NEW_TASK</a></li>
+      <li><a class="" href="services/PathServiceName.html">PathServiceName</a></li>
       <li><a class="" href="services/UserFeedbackName.html">UserFeedbackName</a></li>
     
       <li class="section-title"><a href="services/services-library.html#typedefs">Typedefs</a></li>
@@ -959,6 +1077,7 @@ network.</p>
       <li><a class="" href="services/imageCache.html">imageCache</a></li>
       <li><a class="" href="services/keyboard.html">keyboard</a></li>
       <li><a class="" href="services/overrideRequestService.html">overrideRequestService</a></li>
+      <li><a class="" href="services/pathService.html">pathService</a></li>
       <li><a class="" href="services/rootBundle.html">rootBundle</a></li>
       <li><a class="" href="services/shell.html">shell</a></li>
       <li><a class="" href="services/userFeedback.html">userFeedback</a></li>
@@ -968,6 +1087,7 @@ network.</p>
       <li><a class="" href="services/fetchBody.html">fetchBody</a></li>
       <li><a class="" href="services/fetchString.html">fetchString</a></li>
       <li><a class="" href="services/fetchUrl.html">fetchUrl</a></li>
+      <li><a class="" href="services/getAppDataDir.html">getAppDataDir</a></li>
       <li><a class="" href="services/getCacheDir.html">getCacheDir</a></li>
       <li><a class="" href="services/getFilesDir.html">getFilesDir</a></li>
       <li><a class="" href="services/updateTaskDescription.html">updateTaskDescription</a></li>
@@ -1019,6 +1139,16 @@ network.</p>
       <li><a class="" href="services/KeyboardType-class.html">KeyboardType</a></li>
       <li><a class="" href="services/MojoAssetBundle-class.html">MojoAssetBundle</a></li>
       <li><a class="" href="services/NetworkAssetBundle-class.html">NetworkAssetBundle</a></li>
+      <li><a class="" href="services/PathService-class.html">PathService</a></li>
+      <li><a class="" href="services/PathServiceGetAppDataDirParams-class.html">PathServiceGetAppDataDirParams</a></li>
+      <li><a class="" href="services/PathServiceGetAppDataDirResponseParams-class.html">PathServiceGetAppDataDirResponseParams</a></li>
+      <li><a class="" href="services/PathServiceGetCacheDirParams-class.html">PathServiceGetCacheDirParams</a></li>
+      <li><a class="" href="services/PathServiceGetCacheDirResponseParams-class.html">PathServiceGetCacheDirResponseParams</a></li>
+      <li><a class="" href="services/PathServiceGetFilesDirParams-class.html">PathServiceGetFilesDirParams</a></li>
+      <li><a class="" href="services/PathServiceGetFilesDirResponseParams-class.html">PathServiceGetFilesDirResponseParams</a></li>
+      <li><a class="" href="services/PathServiceProxy-class.html">PathServiceProxy</a></li>
+      <li><a class="" href="services/PathServiceProxyImpl-class.html">PathServiceProxyImpl</a></li>
+      <li><a class="" href="services/PathServiceStub-class.html">PathServiceStub</a></li>
       <li><a class="" href="services/Response-class.html">Response</a></li>
       <li><a class="" href="services/ScreenOrientation-class.html">ScreenOrientation</a></li>
       <li><a class="" href="services/StringExtra-class.html">StringExtra</a></li>
@@ -1044,7 +1174,7 @@ network.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.51 api docs
+                  sky 0.0.52 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

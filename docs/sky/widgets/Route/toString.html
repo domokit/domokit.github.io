@@ -112,13 +112,12 @@
     
     
       <li class="section-title"><a href="widgets/Route-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="widgets/Route/builder.html">builder</a></li>
-      <li><a class="" href="widgets/RouteBase/hasContent.html">hasContent</a></li>
-      <li><a class="" href="widgets/RouteBase/isActuallyOpaque.html">isActuallyOpaque</a></li>
-      <li><a class="" href="widgets/Route/isOpaque.html">isOpaque</a></li>
-      <li><a class="" href="widgets/Route/name.html">name</a></li>
-      <li><a class="" href="widgets/RouteBase/onCompleted.html">onCompleted</a></li>
-      <li><a class="" href="widgets/RouteBase/onDismissed.html">onDismissed</a></li>
+      <li><a class="" href="widgets/Route/ephemeral.html">ephemeral</a></li>
+      <li><a class="" href="widgets/Route/hasContent.html">hasContent</a></li>
+      <li><a class="" href="widgets/Route/isActuallyOpaque.html">isActuallyOpaque</a></li>
+      <li><a class="" href="widgets/Route/modal.html">modal</a></li>
+      <li><a class="" href="widgets/Route/opaque.html">opaque</a></li>
+      <li><a class="" href="widgets/Route/performance.html">performance</a></li>
       <li><a class="" href="widgets/Route/transitionDuration.html">transitionDuration</a></li>
     
       <li class="section-title"><a href="widgets/Route-class.html#constructors">Constructors</a></li>
@@ -127,9 +126,9 @@
     
       <li class="section-title"><a href="widgets/Route-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/Route/build.html">build</a></li>
-      <li><a class="" href="widgets/RouteBase/createPerformance.html">createPerformance</a></li>
-      <li><a class="" href="widgets/RouteBase/ensurePerformance.html">ensurePerformance</a></li>
-      <li><a class="" href="widgets/RouteBase/popState.html">popState</a></li>
+      <li><a class="" href="widgets/Route/createPerformance.html">createPerformance</a></li>
+      <li><a class="" href="widgets/Route/didPop.html">didPop</a></li>
+      <li><a class="" href="widgets/Route/ensurePerformance.html">ensurePerformance</a></li>
       <li><a class="" href="widgets/Route/toString.html">toString</a></li>
     </ol>
 
@@ -150,7 +149,7 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">String toString() =&gt; &apos;$runtimeType(name=&quot;$name&quot;)&apos;;</code></pre>
+      <pre><code class="prettyprint lang-dart">String toString() =&gt; &apos;$runtimeType()&apos;;</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -163,7 +162,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.51 api docs
+                  sky 0.0.52 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

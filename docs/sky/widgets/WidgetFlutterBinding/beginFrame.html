@@ -109,13 +109,16 @@
 
     <ol>
     
+      <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#static-properties">Static properties</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/instance.html">instance</a></li>
     
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#static-methods">Static methods</a></li>
-      <li><a class="" href="widgets/WidgetFlutterBinding/initWidgetFlutterBinding.html">initWidgetFlutterBinding</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/ensureInitialized.html">ensureInitialized</a></li>
     
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="rendering/FlutterBinding/pointerRouter.html">pointerRouter</a></li>
       <li><a class="" href="rendering/FlutterBinding/renderView.html">renderView</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/renderViewElement.html">renderViewElement</a></li>
     
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/WidgetFlutterBinding/WidgetFlutterBinding.html">WidgetFlutterBinding</a></li>
@@ -124,10 +127,13 @@
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/FlutterBinding/addEventListener.html">addEventListener</a></li>
       <li><a class="" href="widgets/WidgetFlutterBinding/beginFrame.html">beginFrame</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/buildDirtyElements.html">buildDirtyElements</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/describeApp.html">describeApp</a></li>
       <li><a class="" href="rendering/FlutterBinding/dispatchEvent.html">dispatchEvent</a></li>
-      <li><a class="" href="widgets/WidgetFlutterBinding/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/FlutterBinding/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/FlutterBinding/hitTest.html">hitTest</a></li>
       <li><a class="" href="rendering/FlutterBinding/removeEventListener.html">removeEventListener</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/scheduleBuildFor.html">scheduleBuildFor</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -152,8 +158,9 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void beginFrame(double timeStamp) {
-  Component.flushBuild();
+  buildDirtyElements();
   super.beginFrame(timeStamp);
+  Element.finalizeTree();
 }</code></pre>
     </section>
 
@@ -167,7 +174,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.51 api docs
+                  sky 0.0.52 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

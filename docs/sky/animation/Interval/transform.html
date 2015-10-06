@@ -112,6 +112,7 @@
     
     
       <li class="section-title"><a href="animation/Interval-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/Interval/curve.html">curve</a></li>
       <li><a class="" href="animation/Interval/end.html">end</a></li>
       <li><a class="" href="animation/Interval/start.html">start</a></li>
     
@@ -150,7 +151,10 @@
   assert(start &lt;= 1.0);
   assert(end &gt;= 0.0);
   assert(end &lt;= 1.0);
-  return ((t - start) / (end - start)).clamp(0.0, 1.0);
+  t = ((t - start) / (end - start)).clamp(0.0, 1.0);
+  if (t == 0.0 || t == 1.0)
+    return t;
+  return curve.transform(t);
 }</code></pre>
     </section>
 
@@ -164,7 +168,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

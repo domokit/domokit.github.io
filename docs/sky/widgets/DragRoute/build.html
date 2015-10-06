@@ -116,6 +116,7 @@
       <li><a class="" href="widgets/DragRoute/dragStartPoint.html">dragStartPoint</a></li>
       <li><a class="" href="widgets/DragRoute/ephemeral.html">ephemeral</a></li>
       <li><a class="" href="widgets/DragRoute/feedback.html">feedback</a></li>
+      <li><a class="" href="widgets/DragRoute/feedbackOffset.html">feedbackOffset</a></li>
       <li><a class="" href="widgets/Route/hasContent.html">hasContent</a></li>
       <li><a class="" href="widgets/Route/isActuallyOpaque.html">isActuallyOpaque</a></li>
       <li><a class="" href="widgets/DragRoute/modal.html">modal</a></li>
@@ -132,7 +133,7 @@
       <li><a class="" href="widgets/DragRoute/build.html">build</a></li>
       <li><a class="" href="widgets/Route/createPerformance.html">createPerformance</a></li>
       <li><a class="" href="widgets/DragRoute/didPop.html">didPop</a></li>
-      <li><a class="" href="widgets/Route/ensurePerformance.html">ensurePerformance</a></li>
+      <li><a class="" href="widgets/Route/didPush.html">didPush</a></li>
       <li><a class="" href="widgets/Route/toString.html">toString</a></li>
       <li><a class="" href="widgets/DragRoute/update.html">update</a></li>
     </ol>
@@ -146,7 +147,7 @@
             <span class="name ">build</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="build-param-navigator"><span class="type-annotation"><a class="" href="widgets/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>,<br><span class="parameter" id="build-param-nextRoutePerformance"><span class="type-annotation"><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></span> <span class="parameter-name">nextRoutePerformance</span></span>
+                <span class="parameter" id="build-param-navigator"><span class="type-annotation"><a class="" href="widgets/NavigatorState-class.html">NavigatorState</a></span> <span class="parameter-name">navigator</span></span>,<br><span class="parameter" id="build-param-nextRoutePerformance"><span class="type-annotation"><a class="" href="animation/PerformanceView-class.html">PerformanceView</a></span> <span class="parameter-name">nextRoutePerformance</span></span>
             </div>
             )    </section>
 
@@ -158,15 +159,12 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">Widget build(NavigatorState navigator, WatchableAnimationPerformance nextRoutePerformance) {
+      <pre><code class="prettyprint lang-dart">Widget build(NavigatorState navigator, PerformanceView nextRoutePerformance) {
   return new Positioned(
     left: _lastOffset.dx,
     top: _lastOffset.dy,
     child: new IgnorePointer(
-      child: new Opacity(
-        opacity: 0.5,
-        child: feedback
-      )
+      child: feedback
     )
   );
 }</code></pre>
@@ -182,7 +180,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

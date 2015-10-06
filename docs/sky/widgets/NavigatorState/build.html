@@ -166,22 +166,13 @@ provides the set of inherited widgets for this location in the tree.</p>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
   List&lt;Widget&gt; visibleRoutes = new List&lt;Widget&gt;();
   bool alreadyInsertModalBarrier = false;
-  WatchableAnimationPerformance nextPerformance;
+  PerformanceView nextPerformance;
   for (int i = _history.length-1; i &gt;= 0; i -= 1) {
     Route route = _history[i];
     if (!route.hasContent) {
       assert(!route.modal);
       continue;
     }
-    route.ensurePerformance(
-      direction: (i &lt;= _currentPosition) ? Direction.forward : Direction.reverse
-    );
-    route._onDismissed = () {
-      setState(() {
-        assert(_history.contains(route));
-        _history.remove(route);
-      });
-    };
     visibleRoutes.add(
       new KeyedSubtree(
         key: new ObjectKey(route),
@@ -214,7 +205,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

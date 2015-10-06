@@ -164,12 +164,7 @@ super.initState().</p>
   super.initState();
   if (config.initialScrollOffset is double)
     _scrollOffset = config.initialScrollOffset;
-  _toEndAnimation = new AnimatedSimulation(_setScrollOffset);
-  _toOffsetAnimation = new ValueAnimation&lt;double&gt;()
-    ..addListener(() {
-      AnimatedValue&lt;double&gt; offset = _toOffsetAnimation.variable;
-      _setScrollOffset(offset.value);
-    });
+  _animation = new SimulationStepper(_setScrollOffset);
 }</code></pre>
     </section>
 
@@ -183,7 +178,7 @@ super.initState().</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

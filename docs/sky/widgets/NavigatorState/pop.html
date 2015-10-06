@@ -160,10 +160,6 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void pop([dynamic result]) {
   setState(() {
-    while (currentRoute.ephemeral) {
-      currentRoute.didPop(null);
-      _currentPosition -= 1;
-    }
     assert(_currentPosition &gt; 0);
     currentRoute.didPop(result);
     _currentPosition -= 1;
@@ -181,7 +177,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

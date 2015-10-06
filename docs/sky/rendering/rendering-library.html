@@ -254,6 +254,15 @@
             <dd>
                 <p></p>
             </dd>
+            <dt id="ShaderCallback" class="callable">
+                <span class="name "><a class="" href="rendering/ShaderCallback.html">ShaderCallback</a></span><span class="signature">(<wbr><span class="parameter" id="ShaderCallback-param-bounds"><span class="type-annotation"><a class="" href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>)
+                    &#8594;
+                    <span class="returntype">Shader</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="SizeChangedCallback" class="callable">
                 <span class="name "><a class="" href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></span><span class="signature">(<wbr><span class="parameter" id="SizeChangedCallback-param-newSize"><span class="type-annotation"><a class="" href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">newSize</span></span>)
                     &#8594;
@@ -934,6 +943,17 @@ scrolling.</p>
                 <p>Implements the flex layout algorithm<a href="rendering/RenderFlex-class.html">&hellip;</a>
 </p>
             </dd>
+            <dt id="RenderFractionallySizedBox">
+                <span class="name "><a class="" href="rendering/RenderFractionallySizedBox-class.html">RenderFractionallySizedBox</a></span>
+            </dt>
+            <dd>
+                <p>A render object that, for both width and height, imposes a tight constraint
+on its child that is a multiple (typically less than 1.0) of the maximum
+constraint it received from its parent on that axis. If the factor for a
+given axis is null, then the constraints from the parent are just passed
+through instead.<a href="rendering/RenderFractionallySizedBox-class.html">&hellip;</a>
+</p>
+            </dd>
             <dt id="RenderGrid">
                 <span class="name "><a class="" href="rendering/RenderGrid-class.html">RenderGrid</a></span>
             </dt>
@@ -1035,6 +1055,12 @@ from its parent, possibly allowing the child to overflow the parent.<a href="ren
                 <p>A base class for render objects that resemble their children<a href="rendering/RenderProxyBox-class.html">&hellip;</a>
 </p>
             </dd>
+            <dt id="RenderShaderMask">
+                <span class="name "><a class="" href="rendering/RenderShaderMask-class.html">RenderShaderMask</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="RenderShiftedBox">
                 <span class="name "><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></span>
             </dt>
@@ -1093,6 +1119,13 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
             </dt>
             <dd>
                 <p>Parent data for use with <a class="" href="rendering/RenderStack-class.html">RenderStack</a></p>
+            </dd>
+            <dt id="StatisticsLayer">
+                <span class="name "><a class="" href="rendering/StatisticsLayer-class.html">StatisticsLayer</a></span>
+            </dt>
+            <dd>
+                <p>A layer that indicates to the compositor that it should display
+certain statistics within it</p>
             </dd>
             <dt id="StyledTextSpan">
                 <span class="name "><a class="" href="rendering/StyledTextSpan-class.html">StyledTextSpan</a></span>
@@ -1155,6 +1188,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a class="" href="rendering/PointerEventListener.html">PointerEventListener</a></li>
       <li><a class="" href="rendering/RenderingExceptionHandler.html">RenderingExceptionHandler</a></li>
       <li><a class="" href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+      <li><a class="" href="rendering/ShaderCallback.html">ShaderCallback</a></li>
       <li><a class="" href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a class="" href="rendering/ValueChanged.html">ValueChanged</a></li>
     
@@ -1257,6 +1291,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a class="" href="rendering/RenderEditableParagraph-class.html">RenderEditableParagraph</a></li>
       <li><a class="" href="rendering/RenderErrorBox-class.html">RenderErrorBox</a></li>
       <li><a class="" href="rendering/RenderFlex-class.html">RenderFlex</a></li>
+      <li><a class="" href="rendering/RenderFractionallySizedBox-class.html">RenderFractionallySizedBox</a></li>
       <li><a class="" href="rendering/RenderGrid-class.html">RenderGrid</a></li>
       <li><a class="" href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
       <li><a class="" href="rendering/RenderImage-class.html">RenderImage</a></li>
@@ -1272,6 +1307,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a class="" href="rendering/RenderPointerListener-class.html">RenderPointerListener</a></li>
       <li><a class="" href="rendering/RenderPositionedBox-class.html">RenderPositionedBox</a></li>
       <li><a class="" href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
+      <li><a class="" href="rendering/RenderShaderMask-class.html">RenderShaderMask</a></li>
       <li><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
       <li><a class="" href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></li>
       <li><a class="" href="rendering/RenderStack-class.html">RenderStack</a></li>
@@ -1281,6 +1317,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
       <li><a class="" href="rendering/RenderViewport-class.html">RenderViewport</a></li>
       <li><a class="" href="rendering/Size-class.html">Size</a></li>
       <li><a class="" href="rendering/StackParentData-class.html">StackParentData</a></li>
+      <li><a class="" href="rendering/StatisticsLayer-class.html">StatisticsLayer</a></li>
       <li><a class="" href="rendering/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="rendering/TextPainter-class.html">TextPainter</a></li>
       <li><a class="" href="rendering/TextSpan-class.html">TextSpan</a></li>
@@ -1300,7 +1337,7 @@ Think of this as a vector from Point(0,0) to Point(size.width, size.height)</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

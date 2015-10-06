@@ -116,6 +116,7 @@
       <li><a class="" href="widgets/ToolBar/center.html">center</a></li>
       <li><a class="" href="widgets/Widget/key.html">key</a></li>
       <li><a class="" href="widgets/ToolBar/left.html">left</a></li>
+      <li><a class="" href="widgets/ToolBar/level.html">level</a></li>
       <li><a class="" href="widgets/ToolBar/right.html">right</a></li>
     
       <li class="section-title"><a href="widgets/ToolBar-class.html#constructors">Constructors</a></li>
@@ -125,6 +126,7 @@
       <li class="section-title"><a href="widgets/ToolBar-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/ToolBar/build.html">build</a></li>
       <li><a class="" href="widgets/StatelessComponent/createElement.html">createElement</a></li>
+      <li><a class="" href="widgets/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
     </ol>
 
@@ -155,13 +157,13 @@ provides the set of inherited widgets for this location in the tree.</p>
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
-  Color toolbarColor = backgroundColor;
+  Color color = backgroundColor;
   IconThemeData iconThemeData;
   TextStyle centerStyle = Typography.white.title;
   TextStyle sideStyle = Typography.white.body1;
-  if (toolbarColor == null) {
+  if (color == null) {
     ThemeData themeData = Theme.of(context);
-    toolbarColor = themeData.primaryColor;
+    color = themeData.primaryColor;
     if (themeData.primaryColorBrightness == ThemeBrightness.light) {
       centerStyle = Typography.black.title;
       sideStyle = Typography.black.body2;
@@ -173,11 +175,9 @@ provides the set of inherited widgets for this location in the tree.</p>
 
   List&lt;Widget&gt; children = new List&lt;Widget&gt;();
 
-  // left children
   if (left != null)
     children.add(left);
 
-  // center children (left-aligned, but takes all remaining space)
   children.add(
     new Flexible(
       child: new Padding(
@@ -187,11 +187,16 @@ provides the set of inherited widgets for this location in the tree.</p>
     )
   );
 
-  // right children
   if (right != null)
     children.addAll(right);
 
-  Widget content = new Container(
+  Widget content = new AnimatedContainer(
+    duration: kThemeChangeDuration,
+    padding: new EdgeDims.symmetric(horizontal: 8.0),
+    decoration: new BoxDecoration(
+      backgroundColor: color,
+      boxShadow: level == 0 ? null : shadows[2]
+    ),
     child: new DefaultTextStyle(
       style: sideStyle,
       child: new Column([
@@ -202,11 +207,6 @@ provides the set of inherited widgets for this location in the tree.</p>
         ],
         justifyContent: FlexJustifyContent.end
       )
-    ),
-    padding: new EdgeDims.symmetric(horizontal: 8.0),
-    decoration: new BoxDecoration(
-      backgroundColor: toolbarColor,
-      boxShadow: shadows[2]
     )
   );
 
@@ -226,7 +226,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

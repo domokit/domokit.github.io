@@ -148,12 +148,14 @@ void stop() {
   if (!isTicking)
     return;
 
+  _startTime = null;
+
   if (_animationId != null) {
     scheduler.cancelAnimationFrame(_animationId);
     _animationId = null;
   }
 
-  // We take the _completer into a local variable so that !isTicking
+  // We take the _completer into a local variable so that isTicking is false
   // when we actually complete the future (isTicking uses _completer
   // to determine its state).
   Completer localCompleter = _completer;
@@ -173,7 +175,7 @@ void stop() {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

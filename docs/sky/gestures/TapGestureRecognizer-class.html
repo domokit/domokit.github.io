@@ -131,15 +131,15 @@
       <li><a class="" href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
       <li><a class="" href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
       <li><a class="" href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
-      <li><a class="" href="gestures/GestureLongPressListener.html">GestureLongPressListener</a></li>
+      <li><a class="" href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></li>
       <li><a class="" href="gestures/GesturePanEndCallback.html">GesturePanEndCallback</a></li>
       <li><a class="" href="gestures/GesturePanStartCallback.html">GesturePanStartCallback</a></li>
       <li><a class="" href="gestures/GesturePanUpdateCallback.html">GesturePanUpdateCallback</a></li>
       <li><a class="" href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
       <li><a class="" href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
       <li><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
-      <li><a class="" href="gestures/GestureShowPressListener.html">GestureShowPressListener</a></li>
-      <li><a class="" href="gestures/GestureTapListener.html">GestureTapListener</a></li>
+      <li><a class="" href="gestures/GestureShowPressCallback.html">GestureShowPressCallback</a></li>
+      <li><a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
       <li><a class="" href="gestures/PointerRoute.html">PointerRoute</a></li>
     
     
@@ -222,7 +222,27 @@
             </dd>
             <dt id="onTap" class="property">
                 <span class="name"><a class="" href="gestures/TapGestureRecognizer/onTap.html">onTap</a></span>
-                <span class="signature">&#8594; <a class="" href="gestures/GestureTapListener.html">GestureTapListener</a></span>
+                <span class="signature">&#8594; <a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="onTapCancel" class="property">
+                <span class="name"><a class="" href="gestures/TapGestureRecognizer/onTapCancel.html">onTapCancel</a></span>
+                <span class="signature">&#8594; <a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></span>
+            </dt>
+            <dd>
+                <div class="features">
+        read / write
+    </div>
+    <p></p>
+            </dd>
+            <dt id="onTapDown" class="property">
+                <span class="name"><a class="" href="gestures/TapGestureRecognizer/onTapDown.html">onTapDown</a></span>
+                <span class="signature">&#8594; <a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></span>
             </dt>
             <dd>
                 <div class="features">
@@ -341,13 +361,12 @@
                   <p>Override to provide behavior for the primary pointer when the gesture is still possible.</p>
               </dd>
               <dt id="rejectGesture" class="callable">
-                  <span class="name "><a class="" href="gestures/PrimaryPointerGestureRecognizer/rejectGesture.html">rejectGesture</a></span><span class="signature">(<wbr><span class="parameter" id="rejectGesture-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>)
+                  <span class="name "><a class="" href="gestures/TapGestureRecognizer/rejectGesture.html">rejectGesture</a></span><span class="signature">(<wbr><span class="parameter" id="rejectGesture-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>)
                       &#8594;
                       <span class="returntype">void</span>
                   </span>
               </dt>
               <dd>
-                  <div class="features">inherited</div>
                   <p>Called when this member loses the arena for the given key.</p>
               </dd>
               <dt id="resolve" class="callable">
@@ -405,6 +424,8 @@
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/deadline.html">deadline</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/initialPosition.html">initialPosition</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/onTap.html">onTap</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/onTapCancel.html">onTapCancel</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/onTapDown.html">onTapDown</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/primaryPointer.html">primaryPointer</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/state.html">state</a></li>
     
@@ -420,7 +441,7 @@
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/dispose.html">dispose</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/handlePrimaryPointer.html">handlePrimaryPointer</a></li>
-      <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/rejectGesture.html">rejectGesture</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/rejectGesture.html">rejectGesture</a></li>
       <li><a class="" href="gestures/GestureRecognizer/resolve.html">resolve</a></li>
       <li><a class="" href="gestures/GestureRecognizer/startTrackingPointer.html">startTrackingPointer</a></li>
       <li><a class="" href="gestures/GestureRecognizer/stopTrackingIfPointerNoLongerDown.html">stopTrackingIfPointerNoLongerDown</a></li>
@@ -436,7 +457,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

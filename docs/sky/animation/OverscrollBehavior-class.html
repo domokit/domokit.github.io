@@ -117,12 +117,15 @@
       <li><a class="" href="animation/elasticIn.html">elasticIn</a></li>
       <li><a class="" href="animation/elasticInOut.html">elasticInOut</a></li>
       <li><a class="" href="animation/elasticOut.html">elasticOut</a></li>
+      <li><a class="" href="animation/fastOutSlowIn.html">fastOutSlowIn</a></li>
       <li><a class="" href="animation/linear.html">linear</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="animation/AnimationPerformanceListener.html">AnimationPerformanceListener</a></li>
-      <li><a class="" href="animation/AnimationPerformanceStatusListener.html">AnimationPerformanceStatusListener</a></li>
+      <li><a class="" href="animation/PerformanceListener.html">PerformanceListener</a></li>
+      <li><a class="" href="animation/PerformanceStatusListener.html">PerformanceStatusListener</a></li>
       <li><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></li>
+      <li><a class="" href="animation/TickerCallback.html">TickerCallback</a></li>
+      <li><a class="" href="animation/TimelineCallback.html">TimelineCallback</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#properties">Properties</a></li>
       <li><a class="" href="animation/kDefaultSpringForce.html">kDefaultSpringForce</a></li>
@@ -131,17 +134,14 @@
     
     
       <li class="section-title"><a href="animation/animation-library.html#enums">Enums</a></li>
-      <li><a class="" href="animation/AnimationStatus-class.html">AnimationStatus</a></li>
-      <li><a class="" href="animation/Direction-class.html">Direction</a></li>
+      <li><a class="" href="animation/AnimationDirection-class.html">AnimationDirection</a></li>
+      <li><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#classes">Classes</a></li>
+      <li><a class="" href="animation/Animatable-class.html">Animatable</a></li>
       <li><a class="" href="animation/AnimatedColorValue-class.html">AnimatedColorValue</a></li>
-      <li><a class="" href="animation/AnimatedList-class.html">AnimatedList</a></li>
-      <li><a class="" href="animation/AnimatedRect-class.html">AnimatedRect</a></li>
-      <li><a class="" href="animation/AnimatedSimulation-class.html">AnimatedSimulation</a></li>
+      <li><a class="" href="animation/AnimatedRectValue-class.html">AnimatedRectValue</a></li>
       <li><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a></li>
-      <li><a class="" href="animation/AnimatedVariable-class.html">AnimatedVariable</a></li>
-      <li><a class="" href="animation/AnimationPerformance-class.html">AnimationPerformance</a></li>
       <li><a class="" href="animation/AnimationTiming-class.html">AnimationTiming</a></li>
       <li><a class="" href="animation/BounceInCurve-class.html">BounceInCurve</a></li>
       <li><a class="" href="animation/BounceInOutCurve-class.html">BounceInOutCurve</a></li>
@@ -159,15 +159,15 @@
       <li><a class="" href="animation/Linear-class.html">Linear</a></li>
       <li><a class="" href="animation/OverscrollBehavior-class.html">OverscrollBehavior</a></li>
       <li><a class="" href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></li>
+      <li><a class="" href="animation/Performance-class.html">Performance</a></li>
+      <li><a class="" href="animation/PerformanceView-class.html">PerformanceView</a></li>
       <li><a class="" href="animation/Scheduler-class.html">Scheduler</a></li>
       <li><a class="" href="animation/ScrollBehavior-class.html">ScrollBehavior</a></li>
+      <li><a class="" href="animation/SimulationStepper-class.html">SimulationStepper</a></li>
       <li><a class="" href="animation/SpringForce-class.html">SpringForce</a></li>
       <li><a class="" href="animation/Ticker-class.html">Ticker</a></li>
-      <li><a class="" href="animation/Timeline-class.html">Timeline</a></li>
-      <li><a class="" href="animation/TweenSimulation-class.html">TweenSimulation</a></li>
       <li><a class="" href="animation/UnboundedBehavior-class.html">UnboundedBehavior</a></li>
-      <li><a class="" href="animation/ValueAnimation-class.html">ValueAnimation</a></li>
-      <li><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></li>
+      <li><a class="" href="animation/ValuePerformance-class.html">ValuePerformance</a></li>
     
     </ol>
   </div>
@@ -357,7 +357,7 @@ Returns an animation that ends at the snap offset.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

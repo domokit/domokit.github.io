@@ -123,7 +123,7 @@
       <li class="section-title"><a href="widgets/DrawerState-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/DrawerState/build.html">build</a></li>
       <li><a class="" href="widgets/State/debugFillDescription.html">debugFillDescription</a></li>
-      <li><a class="" href="widgets/DrawerState/didUpdateConfig.html">didUpdateConfig</a></li>
+      <li><a class="" href="widgets/State/didUpdateConfig.html">didUpdateConfig</a></li>
       <li><a class="" href="widgets/State/dispose.html">dispose</a></li>
       <li><a class="" href="widgets/DrawerState/initState.html">initState</a></li>
       <li><a class="" href="widgets/State/setState.html">setState</a></li>
@@ -153,23 +153,12 @@ super.initState().</p>
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void initState() {
   super.initState();
-  _performance = new AnimationPerformance(duration: _kBaseSettleDuration);
-  _performance.addStatusListener((AnimationStatus status) {
-    if (status == AnimationStatus.dismissed)
-      _handleDismissed();
-  });
-  // Use a spring force for animating the drawer. We can&apos;t use curves for
-  // this because we need a linear curve in order to track the user&apos;s finger
-  // while dragging.
-  _performance.attachedForce = kDefaultSpringForce;
-  if (config.navigator != null) {
-    // TODO(ianh): This is crazy. We should convert drawer to use a pattern like openDialog().
-    // https://github.com/domokit/sky_engine/pull/1186
-    scheduleMicrotask(() {
-      config.navigator.pushState(this, (_) =&gt; _performance.reverse());
+  _performance = new Performance(duration: _kBaseSettleDuration)
+    ..addStatusListener((PerformanceStatus status) {
+      if (status == PerformanceStatus.dismissed)
+        config.navigator.pop();
     });
-  }
-  _performance.play(_direction);
+  _open();
 }</code></pre>
     </section>
 
@@ -183,7 +172,7 @@ super.initState().</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

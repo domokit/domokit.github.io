@@ -163,7 +163,7 @@
       <pre><code class="prettyprint lang-dart">Future fling(Offset velocity) {
   if (velocity != Offset.zero)
     return _startToEndAnimation(velocity: _scrollVelocity(velocity));
-  if (!_toEndAnimation.isAnimating &amp;&amp; (_toOffsetAnimation == null || !_toOffsetAnimation.isAnimating))
+  if (!_animation.isAnimating)
     return settleScrollOffset();
   return new Future.value();
 }</code></pre>
@@ -179,7 +179,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

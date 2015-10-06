@@ -123,6 +123,7 @@
       <li><a class="" href="rendering/PointerEventListener.html">PointerEventListener</a></li>
       <li><a class="" href="rendering/RenderingExceptionHandler.html">RenderingExceptionHandler</a></li>
       <li><a class="" href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+      <li><a class="" href="rendering/ShaderCallback.html">ShaderCallback</a></li>
       <li><a class="" href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a class="" href="rendering/ValueChanged.html">ValueChanged</a></li>
     
@@ -225,6 +226,7 @@
       <li><a class="" href="rendering/RenderEditableParagraph-class.html">RenderEditableParagraph</a></li>
       <li><a class="" href="rendering/RenderErrorBox-class.html">RenderErrorBox</a></li>
       <li><a class="" href="rendering/RenderFlex-class.html">RenderFlex</a></li>
+      <li><a class="" href="rendering/RenderFractionallySizedBox-class.html">RenderFractionallySizedBox</a></li>
       <li><a class="" href="rendering/RenderGrid-class.html">RenderGrid</a></li>
       <li><a class="" href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
       <li><a class="" href="rendering/RenderImage-class.html">RenderImage</a></li>
@@ -240,6 +242,7 @@
       <li><a class="" href="rendering/RenderPointerListener-class.html">RenderPointerListener</a></li>
       <li><a class="" href="rendering/RenderPositionedBox-class.html">RenderPositionedBox</a></li>
       <li><a class="" href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
+      <li><a class="" href="rendering/RenderShaderMask-class.html">RenderShaderMask</a></li>
       <li><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
       <li><a class="" href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></li>
       <li><a class="" href="rendering/RenderStack-class.html">RenderStack</a></li>
@@ -249,6 +252,7 @@
       <li><a class="" href="rendering/RenderViewport-class.html">RenderViewport</a></li>
       <li><a class="" href="rendering/Size-class.html">Size</a></li>
       <li><a class="" href="rendering/StackParentData-class.html">StackParentData</a></li>
+      <li><a class="" href="rendering/StatisticsLayer-class.html">StatisticsLayer</a></li>
       <li><a class="" href="rendering/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="rendering/TextPainter-class.html">TextPainter</a></li>
       <li><a class="" href="rendering/TextSpan-class.html">TextSpan</a></li>
@@ -435,6 +439,15 @@ child render objects.</p>
                   <p>Paint a child with an opacity<a href="rendering/PaintingContext/paintChildWithOpacity.html">&hellip;</a>
 </p>
               </dd>
+              <dt id="paintChildWithShaderMask" class="callable">
+                  <span class="name "><a class="" href="rendering/PaintingContext/paintChildWithShaderMask.html">paintChildWithShaderMask</a></span><span class="signature">(<wbr><span class="parameter" id="paintChildWithShaderMask-param-child"><span class="type-annotation"><a class="" href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithShaderMask-param-childPosition"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithShaderMask-param-bounds"><span class="type-annotation"><a class="" href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>, <span class="parameter" id="paintChildWithShaderMask-param-shaderCallback"><span class="type-annotation">Shader</span> <span class="parameter-name">shaderCallback</span>(<span class="parameter" id="ShaderCallback-param-bounds"><span class="type-annotation"><a class="" href="rendering/Rect-class.html">Rect</a></span> <span class="parameter-name">bounds</span></span>)</span>, <span class="parameter" id="paintChildWithShaderMask-param-transferMode"><span class="type-annotation">TransferMode</span> <span class="parameter-name">transferMode</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
+              </dd>
               <dt id="paintChildWithTransform" class="callable">
                   <span class="name "><a class="" href="rendering/PaintingContext/paintChildWithTransform.html">paintChildWithTransform</a></span><span class="signature">(<wbr><span class="parameter" id="paintChildWithTransform-param-child"><span class="type-annotation"><a class="" href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="paintChildWithTransform-param-childPosition"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">childPosition</span></span>, <span class="parameter" id="paintChildWithTransform-param-transform"><span class="type-annotation"><a class="" href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>)
                       &#8594;
@@ -444,6 +457,15 @@ child render objects.</p>
               <dd>
                   <p>Paint a child with a transform<a href="rendering/PaintingContext/paintChildWithTransform.html">&hellip;</a>
 </p>
+              </dd>
+              <dt id="paintStatistics" class="callable">
+                  <span class="name "><a class="" href="rendering/PaintingContext/paintStatistics.html">paintStatistics</a></span><span class="signature">(<wbr><span class="parameter" id="paintStatistics-param-optionsMask"><span class="type-annotation">int</span> <span class="parameter-name">optionsMask</span></span>, <span class="parameter" id="paintStatistics-param-offset"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="paintStatistics-param-size"><span class="type-annotation"><a class="" href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
+                      &#8594;
+                      <span class="returntype">void</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p></p>
               </dd>
           </dl>
       </section>
@@ -477,7 +499,9 @@ child render objects.</p>
       <li><a class="" href="rendering/PaintingContext/paintChildWithClipRRect.html">paintChildWithClipRRect</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithColorFilter.html">paintChildWithColorFilter</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithOpacity.html">paintChildWithOpacity</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintChildWithShaderMask.html">paintChildWithShaderMask</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithTransform.html">paintChildWithTransform</a></li>
+      <li><a class="" href="rendering/PaintingContext/paintStatistics.html">paintStatistics</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
 
@@ -489,7 +513,7 @@ child render objects.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

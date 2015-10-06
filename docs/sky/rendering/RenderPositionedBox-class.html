@@ -123,6 +123,7 @@
       <li><a class="" href="rendering/PointerEventListener.html">PointerEventListener</a></li>
       <li><a class="" href="rendering/RenderingExceptionHandler.html">RenderingExceptionHandler</a></li>
       <li><a class="" href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+      <li><a class="" href="rendering/ShaderCallback.html">ShaderCallback</a></li>
       <li><a class="" href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a class="" href="rendering/ValueChanged.html">ValueChanged</a></li>
     
@@ -225,6 +226,7 @@
       <li><a class="" href="rendering/RenderEditableParagraph-class.html">RenderEditableParagraph</a></li>
       <li><a class="" href="rendering/RenderErrorBox-class.html">RenderErrorBox</a></li>
       <li><a class="" href="rendering/RenderFlex-class.html">RenderFlex</a></li>
+      <li><a class="" href="rendering/RenderFractionallySizedBox-class.html">RenderFractionallySizedBox</a></li>
       <li><a class="" href="rendering/RenderGrid-class.html">RenderGrid</a></li>
       <li><a class="" href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
       <li><a class="" href="rendering/RenderImage-class.html">RenderImage</a></li>
@@ -240,6 +242,7 @@
       <li><a class="" href="rendering/RenderPointerListener-class.html">RenderPointerListener</a></li>
       <li><a class="" href="rendering/RenderPositionedBox-class.html">RenderPositionedBox</a></li>
       <li><a class="" href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
+      <li><a class="" href="rendering/RenderShaderMask-class.html">RenderShaderMask</a></li>
       <li><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
       <li><a class="" href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></li>
       <li><a class="" href="rendering/RenderStack-class.html">RenderStack</a></li>
@@ -249,6 +252,7 @@
       <li><a class="" href="rendering/RenderViewport-class.html">RenderViewport</a></li>
       <li><a class="" href="rendering/Size-class.html">Size</a></li>
       <li><a class="" href="rendering/StackParentData-class.html">StackParentData</a></li>
+      <li><a class="" href="rendering/StatisticsLayer-class.html">StatisticsLayer</a></li>
       <li><a class="" href="rendering/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="rendering/TextPainter-class.html">TextPainter</a></li>
       <li><a class="" href="rendering/TextSpan-class.html">TextSpan</a></li>
@@ -413,6 +417,16 @@
     </div>
     <p>Whether this render object paints using a composited layer<a href="rendering/RenderObject/hasLayer.html">&hellip;</a>
 </p>
+            </dd>
+            <dt id="hasSize" class="property">
+                <span class="name"><a class="" href="rendering/RenderBox/hasSize.html">hasSize</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+    <p></p>
             </dd>
             <dt id="horizontal" class="property">
                 <span class="name"><a class="" href="rendering/RenderPositionedBox/horizontal.html">horizontal</a></span>
@@ -1058,6 +1072,7 @@ will be prefixed by that string.</p>
       <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
+      <li><a class="" href="rendering/RenderBox/hasSize.html">hasSize</a></li>
       <li><a class="" href="rendering/RenderPositionedBox/horizontal.html">horizontal</a></li>
       <li><a class="" href="rendering/RenderObject/layer.html">layer</a></li>
       <li><a class="" href="rendering/RenderObject/needsCompositing.html">needsCompositing</a></li>
@@ -1130,7 +1145,7 @@ will be prefixed by that string.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

@@ -164,7 +164,7 @@
             </dt>
             <dd>
                 <div class="features">const</div>
-                <p>A cubic animation cuve that speeds up quickly and ends slowly</p>
+                <p>A cubic animation curve that speeds up quickly and ends slowly</p>
             </dd>
             <dt id="easeIn" class="constant">
                 <span class="top-level-variable-type"><a class="" href="animation/Cubic-class.html">Cubic</a></span>
@@ -173,7 +173,7 @@
             </dt>
             <dd>
                 <div class="features">const</div>
-                <p>A cubic animation cuve that starts slowly and ends quickly</p>
+                <p>A cubic animation curve that starts slowly and ends quickly</p>
             </dd>
             <dt id="easeInOut" class="constant">
                 <span class="top-level-variable-type"><a class="" href="animation/Cubic-class.html">Cubic</a></span>
@@ -182,7 +182,7 @@
             </dt>
             <dd>
                 <div class="features">const</div>
-                <p>A cubic animation cuve that starts slowly, speeds up, and then and ends slowly</p>
+                <p>A cubic animation curve that starts slowly, speeds up, and then and ends slowly</p>
             </dd>
             <dt id="easeOut" class="constant">
                 <span class="top-level-variable-type"><a class="" href="animation/Cubic-class.html">Cubic</a></span>
@@ -191,7 +191,7 @@
             </dt>
             <dd>
                 <div class="features">const</div>
-                <p>A cubic animation cuve that starts quickly and ends slowly</p>
+                <p>A cubic animation curve that starts quickly and ends slowly</p>
             </dd>
             <dt id="elasticIn" class="constant">
                 <span class="top-level-variable-type"><a class="" href="animation/ElasticInCurve-class.html">ElasticInCurve</a></span>
@@ -220,6 +220,15 @@
                 <div class="features">const</div>
                 <p>An oscillating curve that shrinks in magnitude while overshootings its bounds</p>
             </dd>
+            <dt id="fastOutSlowIn" class="constant">
+                <span class="top-level-variable-type"><a class="" href="animation/Curve-class.html">Curve</a></span>
+                <span class="name "><a class="" href="animation/fastOutSlowIn.html">fastOutSlowIn</a></span>
+                <span class="signature">= const Cubic(0.4, 0.0, 0.2, 1.0)</span>
+            </dt>
+            <dd>
+                <div class="features">const</div>
+                <p>A curve that starts quickly and eases into its final position. Over the course of the animation, the object spends more time near its final destination. As a result, the user isn’t left waiting for the animation to finish, and the negative effects of motion are minimized.</p>
+            </dd>
             <dt id="linear" class="constant">
                 <span class="top-level-variable-type"><a class="" href="animation/Linear-class.html">Linear</a></span>
                 <span class="name "><a class="" href="animation/linear.html">linear</a></span>
@@ -236,8 +245,8 @@
         <h2>Typedefs</h2>
 
         <dl class="callables">
-            <dt id="AnimationPerformanceListener" class="callable">
-                <span class="name "><a class="" href="animation/AnimationPerformanceListener.html">AnimationPerformanceListener</a></span><span class="signature">(<wbr>)
+            <dt id="PerformanceListener" class="callable">
+                <span class="name "><a class="" href="animation/PerformanceListener.html">PerformanceListener</a></span><span class="signature">(<wbr>)
                     &#8594;
                     <span class="returntype">void</span>
                 </span>
@@ -245,8 +254,8 @@
             <dd>
                 <p></p>
             </dd>
-            <dt id="AnimationPerformanceStatusListener" class="callable">
-                <span class="name "><a class="" href="animation/AnimationPerformanceStatusListener.html">AnimationPerformanceStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="AnimationPerformanceStatusListener-param-status"><span class="type-annotation"><a class="" href="animation/AnimationStatus-class.html">AnimationStatus</a></span> <span class="parameter-name">status</span></span>)
+            <dt id="PerformanceStatusListener" class="callable">
+                <span class="name "><a class="" href="animation/PerformanceStatusListener.html">PerformanceStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="PerformanceStatusListener-param-status"><span class="type-annotation"><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></span> <span class="parameter-name">status</span></span>)
                     &#8594;
                     <span class="returntype">void</span>
                 </span>
@@ -255,7 +264,7 @@
                 <p></p>
             </dd>
             <dt id="SchedulerCallback" class="callable">
-                <span class="name "><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></span><span class="signature">(<wbr><span class="parameter" id="SchedulerCallback-param-timeStamp"><span class="type-annotation">double</span> <span class="parameter-name">timeStamp</span></span>)
+                <span class="name "><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></span><span class="signature">(<wbr><span class="parameter" id="SchedulerCallback-param-timeStamp"><span class="type-annotation">Duration</span> <span class="parameter-name">timeStamp</span></span>)
                     &#8594;
                     <span class="returntype">void</span>
                 </span>
@@ -263,6 +272,24 @@
             <dd>
                 <p>A callback from the scheduler<a href="animation/SchedulerCallback.html">&hellip;</a>
 </p>
+            </dd>
+            <dt id="TickerCallback" class="callable">
+                <span class="name "><a class="" href="animation/TickerCallback.html">TickerCallback</a></span><span class="signature">(<wbr><span class="parameter" id="TickerCallback-param-elapsed"><span class="type-annotation">Duration</span> <span class="parameter-name">elapsed</span></span>)
+                    &#8594;
+                    <span class="returntype">dynamic</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="TimelineCallback" class="callable">
+                <span class="name "><a class="" href="animation/TimelineCallback.html">TimelineCallback</a></span><span class="signature">(<wbr><span class="parameter" id="TimelineCallback-param-value"><span class="type-annotation">double</span> <span class="parameter-name">value</span></span>)
+                    &#8594;
+                    <span class="returntype">dynamic</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
             </dd>
         </dl>
     </section>
@@ -309,17 +336,17 @@
         <h2>Enums</h2>
 
         <dl>
-            <dt id="AnimationStatus">
-                <a class="" href="animation/AnimationStatus-class.html">AnimationStatus</a>
-            </dt>
-            <dd>
-                <p>The status of an animation</p>
-            </dd>
-            <dt id="Direction">
-                <a class="" href="animation/Direction-class.html">Direction</a>
+            <dt id="AnimationDirection">
+                <a class="" href="animation/AnimationDirection-class.html">AnimationDirection</a>
             </dt>
             <dd>
                 <p>The direction in which an animation is running</p>
+            </dd>
+            <dt id="PerformanceStatus">
+                <a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a>
+            </dt>
+            <dd>
+                <p>The status of an animation</p>
             </dd>
         </dl>
     </section>
@@ -328,6 +355,13 @@
         <h2>Classes</h2>
 
         <dl>
+            <dt id="Animatable">
+                <span class="name "><a class="" href="animation/Animatable-class.html">Animatable</a></span>
+            </dt>
+            <dd>
+                <p>An interface describing a variable that changes as an animation progresses.<a href="animation/Animatable-class.html">&hellip;</a>
+</p>
+            </dd>
             <dt id="AnimatedColorValue">
                 <span class="name "><a class="" href="animation/AnimatedColorValue-class.html">AnimatedColorValue</a></span>
             </dt>
@@ -335,24 +369,12 @@
                 <p>An animated variable containing a color<a href="animation/AnimatedColorValue-class.html">&hellip;</a>
 </p>
             </dd>
-            <dt id="AnimatedList">
-                <span class="name "><a class="" href="animation/AnimatedList-class.html">AnimatedList</a></span>
+            <dt id="AnimatedRectValue">
+                <span class="name "><a class="" href="animation/AnimatedRectValue-class.html">AnimatedRectValue</a></span>
             </dt>
             <dd>
-                <p>A list of animated variables</p>
-            </dd>
-            <dt id="AnimatedRect">
-                <span class="name "><a class="" href="animation/AnimatedRect-class.html">AnimatedRect</a></span>
-            </dt>
-            <dd>
-                <p>An animated variable containing a rectangle<a href="animation/AnimatedRect-class.html">&hellip;</a>
+                <p>An animated variable containing a rectangle<a href="animation/AnimatedRectValue-class.html">&hellip;</a>
 </p>
-            </dd>
-            <dt id="AnimatedSimulation">
-                <span class="name "><a class="" href="animation/AnimatedSimulation-class.html">AnimatedSimulation</a></span>
-            </dt>
-            <dd>
-                <p>Ticks a simulation once per frame</p>
             </dd>
             <dt id="AnimatedValue">
                 <span class="name "><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a></span>
@@ -360,25 +382,11 @@
             <dd>
                 <p>An animated variable with a concrete type</p>
             </dd>
-            <dt id="AnimatedVariable">
-                <span class="name "><a class="" href="animation/AnimatedVariable-class.html">AnimatedVariable</a></span>
-            </dt>
-            <dd>
-                <p>An interface describing a variable that changes as an animation progresses.<a href="animation/AnimatedVariable-class.html">&hellip;</a>
-</p>
-            </dd>
-            <dt id="AnimationPerformance">
-                <span class="name "><a class="" href="animation/AnimationPerformance-class.html">AnimationPerformance</a></span>
-            </dt>
-            <dd>
-                <p>A timeline that can be reversed and used to update <a class="" href="animation/AnimatedVariable-class.html">AnimatedVariable</a>s.<a href="animation/AnimationPerformance-class.html">&hellip;</a>
-</p>
-            </dd>
             <dt id="AnimationTiming">
                 <span class="name "><a class="" href="animation/AnimationTiming-class.html">AnimationTiming</a></span>
             </dt>
             <dd>
-                <p>Used by <code>AnimationPerformance</code> to convert the timing of a performance to a different timescale.
+                <p>Used by <code>Performance</code> to convert the timing of a performance to a different timescale.
 For example, by setting different values for the interval and reverseInterval, a performance
 can be made to take longer in one direction that the other.</p>
             </dd>
@@ -459,7 +467,7 @@ can be made to take longer in one direction that the other.</p>
                 <span class="name "><a class="" href="animation/Interval-class.html">Interval</a></span>
             </dt>
             <dd>
-                <p>A curve that is 0.0 until start, then linear from 0.0 to 1.0 at end, then 1.0</p>
+                <p>A curve that is 0.0 until start, then curved from 0.0 to 1.0 at end, then 1.0</p>
             </dd>
             <dt id="Linear">
                 <span class="name "><a class="" href="animation/Linear-class.html">Linear</a></span>
@@ -479,6 +487,22 @@ can be made to take longer in one direction that the other.</p>
             <dd>
                 <p>A scroll behavior that lets the user scroll beyond the scroll bounds only when the bounds are disjoint</p>
             </dd>
+            <dt id="Performance">
+                <span class="name "><a class="" href="animation/Performance-class.html">Performance</a></span>
+            </dt>
+            <dd>
+                <p>A timeline that can be reversed and used to update <a class="" href="animation/Animatable-class.html">Animatable</a>s.<a href="animation/Performance-class.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="PerformanceView">
+                <span class="name "><a class="" href="animation/PerformanceView-class.html">PerformanceView</a></span>
+            </dt>
+            <dd>
+                <p>An interface that is implemented by <a class="" href="animation/Performance-class.html">Performance</a> that exposes a
+read-only view of the underlying performance. This is used by classes that
+want to watch a performance but should not be able to change the
+performance's state.</p>
+            </dd>
             <dt id="Scheduler">
                 <span class="name "><a class="" href="animation/Scheduler-class.html">Scheduler</a></span>
             </dt>
@@ -490,6 +514,12 @@ can be made to take longer in one direction that the other.</p>
             </dt>
             <dd>
                 <p>An interface for controlling the behavior of scrollable widgets</p>
+            </dd>
+            <dt id="SimulationStepper">
+                <span class="name "><a class="" href="animation/SimulationStepper-class.html">SimulationStepper</a></span>
+            </dt>
+            <dd>
+                <p>Steps a simulation one per frame</p>
             </dd>
             <dt id="SpringForce">
                 <span class="name "><a class="" href="animation/SpringForce-class.html">SpringForce</a></span>
@@ -503,38 +533,17 @@ can be made to take longer in one direction that the other.</p>
             <dd>
                 <p>Calls its callback once per animation frame</p>
             </dd>
-            <dt id="Timeline">
-                <span class="name "><a class="" href="animation/Timeline-class.html">Timeline</a></span>
-            </dt>
-            <dd>
-                <p>A timeline for an animation</p>
-            </dd>
-            <dt id="TweenSimulation">
-                <span class="name "><a class="" href="animation/TweenSimulation-class.html">TweenSimulation</a></span>
-            </dt>
-            <dd>
-                <p>A simulation that linearly varies from <a class="" href="animation/TweenSimulation/begin.html">begin</a> to <a class="" href="animation/TweenSimulation/end.html">end</a> over <code>duration</code></p>
-            </dd>
             <dt id="UnboundedBehavior">
                 <span class="name "><a class="" href="animation/UnboundedBehavior-class.html">UnboundedBehavior</a></span>
             </dt>
             <dd>
                 <p>A scroll behavior that does not prevent the user from exeeding scroll bounds</p>
             </dd>
-            <dt id="ValueAnimation">
-                <span class="name "><a class="" href="animation/ValueAnimation-class.html">ValueAnimation</a></span>
+            <dt id="ValuePerformance">
+                <span class="name "><a class="" href="animation/ValuePerformance-class.html">ValuePerformance</a></span>
             </dt>
             <dd>
                 <p>An animation performance with an animated variable with a concrete type</p>
-            </dd>
-            <dt id="WatchableAnimationPerformance">
-                <span class="name "><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></span>
-            </dt>
-            <dd>
-                <p>An interface that is implemented by <a class="" href="animation/AnimationPerformance-class.html">AnimationPerformance</a> that exposes a
-read-only view of the underlying performance. This is used by classes that
-want to watch a performance but should not be able to change the
-performance's state.</p>
             </dd>
         </dl>
     </section>
@@ -556,12 +565,15 @@ performance's state.</p>
       <li><a class="" href="animation/elasticIn.html">elasticIn</a></li>
       <li><a class="" href="animation/elasticInOut.html">elasticInOut</a></li>
       <li><a class="" href="animation/elasticOut.html">elasticOut</a></li>
+      <li><a class="" href="animation/fastOutSlowIn.html">fastOutSlowIn</a></li>
       <li><a class="" href="animation/linear.html">linear</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="animation/AnimationPerformanceListener.html">AnimationPerformanceListener</a></li>
-      <li><a class="" href="animation/AnimationPerformanceStatusListener.html">AnimationPerformanceStatusListener</a></li>
+      <li><a class="" href="animation/PerformanceListener.html">PerformanceListener</a></li>
+      <li><a class="" href="animation/PerformanceStatusListener.html">PerformanceStatusListener</a></li>
       <li><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></li>
+      <li><a class="" href="animation/TickerCallback.html">TickerCallback</a></li>
+      <li><a class="" href="animation/TimelineCallback.html">TimelineCallback</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#properties">Properties</a></li>
       <li><a class="" href="animation/kDefaultSpringForce.html">kDefaultSpringForce</a></li>
@@ -570,17 +582,14 @@ performance's state.</p>
     
     
       <li class="section-title"><a href="animation/animation-library.html#enums">Enums</a></li>
-      <li><a class="" href="animation/AnimationStatus-class.html">AnimationStatus</a></li>
-      <li><a class="" href="animation/Direction-class.html">Direction</a></li>
+      <li><a class="" href="animation/AnimationDirection-class.html">AnimationDirection</a></li>
+      <li><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#classes">Classes</a></li>
+      <li><a class="" href="animation/Animatable-class.html">Animatable</a></li>
       <li><a class="" href="animation/AnimatedColorValue-class.html">AnimatedColorValue</a></li>
-      <li><a class="" href="animation/AnimatedList-class.html">AnimatedList</a></li>
-      <li><a class="" href="animation/AnimatedRect-class.html">AnimatedRect</a></li>
-      <li><a class="" href="animation/AnimatedSimulation-class.html">AnimatedSimulation</a></li>
+      <li><a class="" href="animation/AnimatedRectValue-class.html">AnimatedRectValue</a></li>
       <li><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a></li>
-      <li><a class="" href="animation/AnimatedVariable-class.html">AnimatedVariable</a></li>
-      <li><a class="" href="animation/AnimationPerformance-class.html">AnimationPerformance</a></li>
       <li><a class="" href="animation/AnimationTiming-class.html">AnimationTiming</a></li>
       <li><a class="" href="animation/BounceInCurve-class.html">BounceInCurve</a></li>
       <li><a class="" href="animation/BounceInOutCurve-class.html">BounceInOutCurve</a></li>
@@ -598,15 +607,15 @@ performance's state.</p>
       <li><a class="" href="animation/Linear-class.html">Linear</a></li>
       <li><a class="" href="animation/OverscrollBehavior-class.html">OverscrollBehavior</a></li>
       <li><a class="" href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></li>
+      <li><a class="" href="animation/Performance-class.html">Performance</a></li>
+      <li><a class="" href="animation/PerformanceView-class.html">PerformanceView</a></li>
       <li><a class="" href="animation/Scheduler-class.html">Scheduler</a></li>
       <li><a class="" href="animation/ScrollBehavior-class.html">ScrollBehavior</a></li>
+      <li><a class="" href="animation/SimulationStepper-class.html">SimulationStepper</a></li>
       <li><a class="" href="animation/SpringForce-class.html">SpringForce</a></li>
       <li><a class="" href="animation/Ticker-class.html">Ticker</a></li>
-      <li><a class="" href="animation/Timeline-class.html">Timeline</a></li>
-      <li><a class="" href="animation/TweenSimulation-class.html">TweenSimulation</a></li>
       <li><a class="" href="animation/UnboundedBehavior-class.html">UnboundedBehavior</a></li>
-      <li><a class="" href="animation/ValueAnimation-class.html">ValueAnimation</a></li>
-      <li><a class="" href="animation/WatchableAnimationPerformance-class.html">WatchableAnimationPerformance</a></li>
+      <li><a class="" href="animation/ValuePerformance-class.html">ValuePerformance</a></li>
     
     </ol>
   </div><!--/sidebar-offcanvas-right-->
@@ -620,7 +629,7 @@ performance's state.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

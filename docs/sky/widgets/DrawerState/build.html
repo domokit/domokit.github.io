@@ -123,7 +123,7 @@
       <li class="section-title"><a href="widgets/DrawerState-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/DrawerState/build.html">build</a></li>
       <li><a class="" href="widgets/State/debugFillDescription.html">debugFillDescription</a></li>
-      <li><a class="" href="widgets/DrawerState/didUpdateConfig.html">didUpdateConfig</a></li>
+      <li><a class="" href="widgets/State/didUpdateConfig.html">didUpdateConfig</a></li>
       <li><a class="" href="widgets/State/dispose.html">dispose</a></li>
       <li><a class="" href="widgets/DrawerState/initState.html">initState</a></li>
       <li><a class="" href="widgets/State/setState.html">setState</a></li>
@@ -157,28 +157,26 @@ provides the set of inherited widgets for this location in the tree.</p>
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
-  var mask = new GestureDetector(
+  Widget mask = new GestureDetector(
+    onTap: _close,
     child: new ColorTransition(
       performance: _performance.view,
-      color: new AnimatedColorValue(Colors.transparent, end: const Color(0x7F000000)),
+      color: new AnimatedColorValue(Colors.transparent, end: Colors.black54),
       child: new Container()
-    ),
-    onTap: () {
-      _performance.reverse();
-    }
+    )
   );
 
   Widget content = new SlideTransition(
     performance: _performance.view,
     position: new AnimatedValue&lt;Point&gt;(_kClosedPosition, end: _kOpenPosition),
-    // TODO(abarth): Use AnimatedContainer
-    child: new Container(
-      // behavior: implicitlyAnimate(const Duration(milliseconds: 200)),
+    child: new AnimatedContainer(
+      curve: ease,
+      duration: _kThemeChangeDuration,
       decoration: new BoxDecoration(
         backgroundColor: Theme.of(context).canvasColor,
         boxShadow: shadows[config.level]),
       width: _kWidth,
-      child: new Block(config.children)
+      child: config.child
     )
   );
 
@@ -186,7 +184,15 @@ provides the set of inherited widgets for this location in the tree.</p>
     onHorizontalDragStart: _performance.stop,
     onHorizontalDragUpdate: _handleDragUpdate,
     onHorizontalDragEnd: _handleDragEnd,
-    child: new Stack([ mask, content ])
+    child: new Stack([
+      mask,
+      new Positioned(
+        top: 0.0,
+        left: 0.0,
+        bottom: 0.0,
+        child: content
+      )
+    ])
   );
 }</code></pre>
     </section>
@@ -201,7 +207,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

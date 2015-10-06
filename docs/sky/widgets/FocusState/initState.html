@@ -110,9 +110,6 @@
     <ol>
     
     
-      <li class="section-title"><a href="widgets/FocusState-class.html#static-methods">Static methods</a></li>
-      <li><a class="" href="widgets/FocusState/at.html">at</a></li>
-      <li><a class="" href="widgets/FocusState/moveTo.html">moveTo</a></li>
     
       <li class="section-title"><a href="widgets/FocusState-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="widgets/State/config.html">config</a></li>
@@ -157,7 +154,7 @@ super.initState().</p>
       <pre><code class="prettyprint lang-dart">void initState() {
   super.initState();
   if (config.autofocus)
-    FocusState._moveScopeTo(context, config);
+    Focus._moveScopeTo(context, config);
   _updateWidgetRemovalListener(_focusedWidget);
   _updateScopeRemovalListener(_focusedScope);
 }</code></pre>
@@ -173,7 +170,7 @@ super.initState().</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

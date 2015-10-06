@@ -127,14 +127,17 @@
     
     
       <li class="section-title"><a href="widgets/BuildableElement-class.html#instance-methods">Methods</a></li>
-      <li><a class="" href="widgets/BuildableElement/deactivate.html">deactivate</a></li>
+      <li><a class="" href="widgets/Element/attachRenderObject.html">attachRenderObject</a></li>
+      <li><a class="" href="widgets/Element/deactivate.html">deactivate</a></li>
       <li><a class="" href="widgets/BuildableElement/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/BuildableElement/dependenciesChanged.html">dependenciesChanged</a></li>
+      <li><a class="" href="widgets/BuildableElement/detachChild.html">detachChild</a></li>
       <li><a class="" href="widgets/Element/detachRenderObject.html">detachRenderObject</a></li>
       <li><a class="" href="widgets/Element/findRenderObject.html">findRenderObject</a></li>
       <li><a class="" href="widgets/Element/inheritedWidgetOfType.html">inheritedWidgetOfType</a></li>
       <li><a class="" href="widgets/BuildableElement/markNeedsBuild.html">markNeedsBuild</a></li>
       <li><a class="" href="widgets/BuildableElement/mount.html">mount</a></li>
+      <li><a class="" href="widgets/Element/reactivate.html">reactivate</a></li>
       <li><a class="" href="widgets/BuildableElement/rebuild.html">rebuild</a></li>
       <li><a class="" href="widgets/Element/toString.html">toString</a></li>
       <li><a class="" href="widgets/Element/toStringDeep.html">toStringDeep</a></li>
@@ -143,6 +146,7 @@
       <li><a class="" href="widgets/Element/updateChild.html">updateChild</a></li>
       <li><a class="" href="widgets/Element/updateSlotForChild.html">updateSlotForChild</a></li>
       <li><a class="" href="widgets/Element/visitAncestorElements.html">visitAncestorElements</a></li>
+      <li><a class="" href="widgets/Element/visitChildElements.html">visitChildElements</a></li>
       <li><a class="" href="widgets/BuildableElement/visitChildren.html">visitChildren</a></li>
     </ol>
 
@@ -155,7 +159,7 @@
             <span class="name ">lockState</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="lockState-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>()</span>
+                <span class="parameter" id="lockState-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>()</span>,<br>{<span class="parameter" id="lockState-param-building"><span class="type-annotation">bool</span> <span class="parameter-name">building</span>: <span class="default-value">false</span></span>}
             </div>
             )    </section>
 
@@ -184,13 +188,31 @@ changes to global keys.</p>
 /// After unwinding the last build scope on the stack, the framework verifies
 /// that each global key is used at most once and notifies listeners about
 /// changes to global keys.
-static void lockState(void callback()) {
-  _debugStateLockLevel += 1;
+static void lockState(void callback(), { bool building: false }) {
+  assert(_debugStateLockLevel &gt;= 0);
+  assert(() {
+    if (building) {
+      assert(!_debugBuilding);
+      assert(_debugCurrentBuildTarget == null);
+      _debugBuilding = true;
+    }
+    _debugStateLockLevel += 1;
+    return true;
+  });
   try {
     callback();
   } finally {
-    _debugStateLockLevel -= 1;
+    assert(() {
+      _debugStateLockLevel -= 1;
+      if (building) {
+        assert(_debugBuilding);
+        assert(_debugCurrentBuildTarget == null);
+        _debugBuilding = false;
+      }
+      return true;
+    });
   }
+  assert(_debugStateLockLevel &gt;= 0);
 }</code></pre>
     </section>
 
@@ -204,7 +226,7 @@ static void lockState(void callback()) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

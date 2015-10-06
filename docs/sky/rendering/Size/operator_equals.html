@@ -113,6 +113,8 @@
       <li><a class="" href="rendering/Size/zero.html">zero</a></li>
     
     
+      <li class="section-title"><a href="rendering/Size-class.html#static-methods">Static methods</a></li>
+      <li><a class="" href="rendering/Size/lerp.html">lerp</a></li>
     
       <li class="section-title"><a href="rendering/Size-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="rendering/Size/hashCode.html">hashCode</a></li>
@@ -164,35 +166,14 @@
 
     <section class="desc markdown">
     
-          <p>The equality operator.</p>
-<p>The default behavior for all <code>Object</code>s is to return true if and
-only if <code>this</code> and <code>other</code> are the same object.</p>
-<p>Override this method to specify a different equality relation on
-a class. The overriding method must still be an equivalence relation.
-That is, it must be:</p>
-<p>Total: It must return a boolean for all arguments. It should never throw
-or return <code>null</code>.</p>
-<p>Reflexive: For all objects <code>o</code>, <code>o == o</code> must be true.</p>
-<p>Symmetric: For all objects <code>o1</code> and <code>o2</code>, <code>o1 == o2</code> and <code>o2 == o1</code> must
-either both be true, or both be false.</p>
-<p>Transitive: For all objects <code>o1</code>, <code>o2</code>, and <code>o3</code>, if <code>o1 == o2</code> and
-<code>o2 == o3</code> are true, then <code>o1 == o3</code> must be true.</p>
-<p>The method should also be consistent over time, so equality of two objects
-should not change over time, or at least only change if one of the objects
-was modified.</p>
-<p>If a subclass overrides the equality operator it should override
-the <code>hashCode</code> method as well to maintain consistency.</p>
+          <p>Compares two Sizes for equality.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">bool operator ==(other) {
-  return other is OffsetBase &amp;&amp;
-         other.runtimeType == runtimeType &amp;&amp;
-         other._dx == _dx &amp;&amp;
-         other._dy == _dy;
-}</code></pre>
+      <pre><code class="prettyprint lang-dart">/// Compares two Sizes for equality.
+bool operator ==(other) =&gt; other is Size &amp;&amp; super == other;</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -205,7 +186,7 @@ the <code>hashCode</code> method as well to maintain consistency.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

@@ -123,6 +123,7 @@
       <li class="section-title"><a href="widgets/PopupMenuItem-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/PopupMenuItem/build.html">build</a></li>
       <li><a class="" href="widgets/StatelessComponent/createElement.html">createElement</a></li>
+      <li><a class="" href="widgets/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
     </ol>
 
@@ -153,15 +154,13 @@ provides the set of inherited widgets for this location in the tree.</p>
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
-  return new InkWell(
-    child: new Container(
-      height: _kMenuItemHeight,
-      child: new DefaultTextStyle(
-        style: Theme.of(context).text.subhead,
-        child: new Baseline(
-          baseline: _kMenuItemHeight - _kBaselineOffsetFromBottom,
-          child: child
-        )
+  return new Container(
+    height: _kMenuItemHeight,
+    child: new DefaultTextStyle(
+      style: Theme.of(context).text.subhead,
+      child: new Baseline(
+        baseline: _kMenuItemHeight - _kBaselineOffsetFromBottom,
+        child: child
       )
     )
   );
@@ -178,7 +177,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

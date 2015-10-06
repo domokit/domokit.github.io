@@ -165,12 +165,12 @@
     return new Future.value();
 
   if (duration == null) {
-    _stopAnimations();
+    _animation.stop();
     _setScrollOffset(newScrollOffset);
     return new Future.value();
   }
 
-  return _startToOffsetAnimation(newScrollOffset, duration, curve);
+  return _animateTo(newScrollOffset, duration, curve);
 }</code></pre>
     </section>
 
@@ -184,7 +184,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

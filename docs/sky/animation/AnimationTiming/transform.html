@@ -113,9 +113,7 @@
     
       <li class="section-title"><a href="animation/AnimationTiming-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="animation/AnimationTiming/curve.html">curve</a></li>
-      <li><a class="" href="animation/AnimationTiming/interval.html">interval</a></li>
       <li><a class="" href="animation/AnimationTiming/reverseCurve.html">reverseCurve</a></li>
-      <li><a class="" href="animation/AnimationTiming/reverseInterval.html">reverseInterval</a></li>
     
       <li class="section-title"><a href="animation/AnimationTiming-class.html#constructors">Constructors</a></li>
       <li><a href="animation/AnimationTiming/AnimationTiming.html">AnimationTiming</a></li>
@@ -134,7 +132,7 @@
             <span class="name ">transform</span>(
             <br>
             <div class="parameters">
-                <span class="parameter" id="transform-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>,<br><span class="parameter" id="transform-param-direction"><span class="type-annotation"><a class="" href="animation/Direction-class.html">Direction</a></span> <span class="parameter-name">direction</span></span>
+                <span class="parameter" id="transform-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>,<br><span class="parameter" id="transform-param-direction"><span class="type-annotation"><a class="" href="animation/AnimationDirection-class.html">AnimationDirection</a></span> <span class="parameter-name">direction</span></span>
             </div>
             )    </section>
 
@@ -147,16 +145,15 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">/// Applies this timing to the given animation clock value in the given direction
-double transform(double t, Direction direction) {
-  Interval interval = _getInterval(direction);
-  if (interval != null)
-    t = interval.transform(t);
-  if (t == 1.0) // Or should we support inverse curves?
+double transform(double t, AnimationDirection direction) {
+  Curve activeCurve = _getActiveCurve(direction);
+  if (activeCurve == null)
     return t;
-  Curve curve = _getCurve(direction);
-  if (curve != null)
-    t = curve.transform(t);
-  return t;
+  if (t == 0.0 || t == 1.0) {
+    assert(activeCurve.transform(t).round() == t);
+    return t;
+  }
+  return activeCurve.transform(t);
 }</code></pre>
     </section>
 
@@ -170,7 +167,7 @@ double transform(double t, Direction direction) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

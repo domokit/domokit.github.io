@@ -120,6 +120,7 @@
     
       <li class="section-title"><a href="widgets/Widget-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/Widget/createElement.html">createElement</a></li>
+      <li><a class="" href="widgets/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
     </ol>
 
@@ -140,7 +141,14 @@
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">String toString() =&gt; &apos;$runtimeType&apos;;</code></pre>
+      <pre><code class="prettyprint lang-dart">String toString() {
+  final String name = key == null ? &apos;$runtimeType&apos; : &apos;$runtimeType-$key&apos;;
+  final List&lt;String&gt; data = &lt;String&gt;[];
+  debugFillDescription(data);
+  if (data.isEmpty)
+    return &apos;$name&apos;;
+  return &apos;$name(${data.join(&quot;; &quot;)})&apos;;
+ }</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -153,7 +161,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

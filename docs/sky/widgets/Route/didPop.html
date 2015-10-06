@@ -128,7 +128,7 @@
       <li><a class="" href="widgets/Route/build.html">build</a></li>
       <li><a class="" href="widgets/Route/createPerformance.html">createPerformance</a></li>
       <li><a class="" href="widgets/Route/didPop.html">didPop</a></li>
-      <li><a class="" href="widgets/Route/ensurePerformance.html">ensurePerformance</a></li>
+      <li><a class="" href="widgets/Route/didPush.html">didPush</a></li>
       <li><a class="" href="widgets/Route/toString.html">toString</a></li>
     </ol>
 
@@ -154,8 +154,9 @@
     <section class="summary source-code" id="source">
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void didPop([dynamic result]) {
-  if (performance == null &amp;&amp; _onDismissed != null)
-    _onDismissed();
+  _performance?.reverse();
+  if (performance == null &amp;&amp; _onRemoveRoute != null)
+    _onRemoveRoute(this);
 }</code></pre>
     </section>
 
@@ -169,7 +170,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

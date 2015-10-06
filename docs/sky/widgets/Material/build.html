@@ -125,7 +125,7 @@
       <li class="section-title"><a href="widgets/Material-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/Material/build.html">build</a></li>
       <li><a class="" href="widgets/StatelessComponent/createElement.html">createElement</a></li>
-      <li><a class="" href="widgets/Material/getBackgroundColor.html">getBackgroundColor</a></li>
+      <li><a class="" href="widgets/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
     </ol>
 
@@ -162,21 +162,22 @@ provides the set of inherited widgets for this location in the tree.</p>
       style: Theme.of(context).text.body1,
       child: contents
     );
-    if (edges[type] != null) {
+    if (_kEdges[type] != null) {
       contents = new ClipRRect(
-        xRadius: edges[type],
-        yRadius: edges[type],
+        xRadius: _kEdges[type],
+        yRadius: _kEdges[type],
         child: contents
       );
     }
   }
-  // TODO(abarth): This should use AnimatedContainer.
   return new DefaultTextStyle(
     style: Theme.of(context).text.body1,
-    child: new Container(
+    child: new AnimatedContainer(
+      curve: ease,
+      duration: kThemeChangeDuration,
       decoration: new BoxDecoration(
-        backgroundColor: getBackgroundColor(context),
-        borderRadius: edges[type],
+        backgroundColor: _getBackgroundColor(context),
+        borderRadius: _kEdges[type],
         boxShadow: level == 0 ? null : shadows[level],
         shape: type == MaterialType.circle ? Shape.circle : Shape.rectangle
       ),
@@ -196,7 +197,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

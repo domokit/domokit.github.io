@@ -203,32 +203,6 @@
           message.payload);
       _impl.setRequestedOrientation(params.orientation);
       break;
-    case kActivity_getFilesDir_name:
-      var params = ActivityGetFilesDirParams.deserialize(
-          message.payload);
-      return _impl.getFilesDir(_ActivityGetFilesDirResponseParamsFactory).then((response) {
-        if (response != null) {
-          return buildResponseWithId(
-              response,
-              kActivity_getFilesDir_name,
-              message.header.requestId,
-              bindings.MessageHeader.kMessageIsResponse);
-        }
-      });
-      break;
-    case kActivity_getCacheDir_name:
-      var params = ActivityGetCacheDirParams.deserialize(
-          message.payload);
-      return _impl.getCacheDir(_ActivityGetCacheDirResponseParamsFactory).then((response) {
-        if (response != null) {
-          return buildResponseWithId(
-              response,
-              kActivity_getCacheDir_name,
-              message.header.requestId,
-              bindings.MessageHeader.kMessageIsResponse);
-        }
-      });
-      break;
     default:
       throw new bindings.MojoCodecError(&quot;Unexpected message name&quot;);
       break;
@@ -247,7 +221,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

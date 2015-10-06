@@ -110,9 +110,6 @@
     <ol>
     
     
-      <li class="section-title"><a href="widgets/FocusState-class.html#static-methods">Static methods</a></li>
-      <li><a class="" href="widgets/FocusState/at.html">at</a></li>
-      <li><a class="" href="widgets/FocusState/moveTo.html">moveTo</a></li>
     
       <li class="section-title"><a href="widgets/FocusState-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="widgets/State/config.html">config</a></li>
@@ -162,7 +159,7 @@ provides the set of inherited widgets for this location in the tree.</p>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
   return new _FocusScope(
     focusState: this,
-    scopeFocused: FocusState._atScope(context, config),
+    scopeFocused: Focus._atScope(context, config),
     focusedScope: _focusedScope == _noFocusedScope ? null : _focusedScope,
     focusedWidget: _focusedWidget,
     child: config.child
@@ -180,7 +177,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

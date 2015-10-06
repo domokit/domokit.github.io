@@ -165,10 +165,19 @@ void buildDirtyElements() {
     return;
   BuildableElement.lockState(() {
     _dirtyElements.sort((BuildableElement a, BuildableElement b) =&gt; a.depth - b.depth);
-    for (BuildableElement element in _dirtyElements)
-      element.rebuild();
+    int dirtyCount = _dirtyElements.length;
+    int index = 0;
+    while (index &lt; dirtyCount) {
+      _dirtyElements[index].rebuild();
+      index += 1;
+      if (dirtyCount &lt; _dirtyElements.length) {
+        _dirtyElements.sort((BuildableElement a, BuildableElement b) =&gt; a.depth - b.depth);
+        dirtyCount = _dirtyElements.length;
+      }
+    }
+    assert(!_dirtyElements.any((BuildableElement element) =&gt; element.dirty));
     _dirtyElements.clear();
-  });
+  }, building: true);
   assert(_dirtyElements.isEmpty);
 }</code></pre>
     </section>
@@ -183,7 +192,7 @@ void buildDirtyElements() {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

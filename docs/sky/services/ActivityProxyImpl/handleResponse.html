@@ -168,34 +168,6 @@
       <h2>Source</h2>
       <pre><code class="prettyprint lang-dart">void handleResponse(bindings.ServiceMessage message) {
   switch (message.header.type) {
-    case kActivity_getFilesDir_name:
-      var r = ActivityGetFilesDirResponseParams.deserialize(
-          message.payload);
-      if (!message.header.hasRequestId) {
-        throw &apos;Expected a message with a valid request Id.&apos;;
-      }
-      Completer c = completerMap[message.header.requestId];
-      if (c == null) {
-        throw &apos;Message had unknown request Id: ${message.header.requestId}&apos;;
-      }
-      completerMap.remove(message.header.requestId);
-      assert(!c.isCompleted);
-      c.complete(r);
-      break;
-    case kActivity_getCacheDir_name:
-      var r = ActivityGetCacheDirResponseParams.deserialize(
-          message.payload);
-      if (!message.header.hasRequestId) {
-        throw &apos;Expected a message with a valid request Id.&apos;;
-      }
-      Completer c = completerMap[message.header.requestId];
-      if (c == null) {
-        throw &apos;Message had unknown request Id: ${message.header.requestId}&apos;;
-      }
-      completerMap.remove(message.header.requestId);
-      assert(!c.isCompleted);
-      c.complete(r);
-      break;
     default:
       throw new bindings.MojoCodecError(&quot;Unexpected message name&quot;);
       break;
@@ -213,7 +185,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

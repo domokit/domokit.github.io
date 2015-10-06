@@ -114,6 +114,8 @@
       <li class="section-title"><a href="widgets/InkWell-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="widgets/OneChildRenderObjectWidget/child.html">child</a></li>
       <li><a class="" href="widgets/Widget/key.html">key</a></li>
+      <li><a class="" href="widgets/InkWell/onLongPress.html">onLongPress</a></li>
+      <li><a class="" href="widgets/InkWell/onTap.html">onTap</a></li>
     
       <li class="section-title"><a href="widgets/InkWell-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/InkWell/InkWell.html">InkWell</a></li>
@@ -122,9 +124,10 @@
       <li class="section-title"><a href="widgets/InkWell-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/OneChildRenderObjectWidget/createElement.html">createElement</a></li>
       <li><a class="" href="widgets/InkWell/createRenderObject.html">createRenderObject</a></li>
+      <li><a class="" href="widgets/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/RenderObjectWidget/didUnmountRenderObject.html">didUnmountRenderObject</a></li>
       <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/RenderObjectWidget/updateRenderObject.html">updateRenderObject</a></li>
+      <li><a class="" href="widgets/InkWell/updateRenderObject.html">updateRenderObject</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -132,7 +135,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-            <span class="returntype"><a class="" href="widgets/RenderInkWell-class.html">RenderInkWell</a></span>
+            <span class="returntype">_RenderInkWell</span>
             <span class="name ">createRenderObject</span>(
             )    </section>
 
@@ -146,7 +149,7 @@ RenderObjectWidget.</p>
 
     <section class="summary source-code" id="source">
       <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">RenderInkWell createRenderObject() =&gt; new RenderInkWell();</code></pre>
+      <pre><code class="prettyprint lang-dart">_RenderInkWell createRenderObject() =&gt; new _RenderInkWell(onTap: onTap, onLongPress: onLongPress);</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -159,7 +162,7 @@ RenderObjectWidget.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.52 api docs
+                  sky 0.0.53 api docs
                 </span>
                 &bull;
                 <span class="copyright no-break">

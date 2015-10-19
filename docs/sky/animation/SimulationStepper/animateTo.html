@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="animation/animation-library.html">animation</a></li>
                   <li><a href="animation/SimulationStepper-class.html">SimulationStepper</a></li>
                   <li class="self-crumb">animateTo</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="animation/animation-library.html">animation</a></li>
               <li><a href="animation/SimulationStepper-class.html">SimulationStepper</a></li>
               <li class="self-crumb">animateTo</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="animation/animation-library.html">animation</a></h5>
     <h5><a href="animation/SimulationStepper-class.html">SimulationStepper</a></h5>
 
@@ -112,47 +112,42 @@
     
     
       <li class="section-title"><a href="animation/SimulationStepper-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/SimulationStepper/hashCode.html">hashCode</a></li>
       <li><a class="" href="animation/SimulationStepper/isAnimating.html">isAnimating</a></li>
+      <li><a class="" href="animation/SimulationStepper/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="animation/SimulationStepper/value.html">value</a></li>
     
       <li class="section-title"><a href="animation/SimulationStepper-class.html#constructors">Constructors</a></li>
       <li><a href="animation/SimulationStepper/SimulationStepper.html">SimulationStepper</a></li>
     
+      <li class="section-title"><a href="animation/SimulationStepper-class.html#operators">Operators</a></li>
+      <li><a class="" href="animation/SimulationStepper/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="animation/SimulationStepper-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="animation/SimulationStepper/animateTo.html">animateTo</a></li>
       <li><a class="" href="animation/SimulationStepper/animateWith.html">animateWith</a></li>
+      <li><a class="" href="animation/SimulationStepper/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="animation/SimulationStepper/stop.html">stop</a></li>
+      <li><a class="" href="animation/SimulationStepper/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">Future</span>
-            <span class="name ">animateTo</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="animateTo-param-target"><span class="type-annotation">double</span> <span class="parameter-name">target</span></span>,<br>{<span class="parameter" id="animateTo-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>,<br><span class="parameter" id="animateTo-param-curve"><span class="type-annotation"><a class="" href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span>: <span class="default-value">linear</span></span>}
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
-          <p>Animate value of the timeline to the given target over the given duration</p>
-<p>Returns a future that resolves when the timeline stops animating,
-typically when the timeline arives at the target value.</p>
+          <p>Animate value of the timeline to the given target over the given duration
+  ///
+  /// Returns a future that resolves when the timeline stops animating,
+  /// typically when the timeline arives at the target value.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Animate value of the timeline to the given target over the given duration
-///
-/// Returns a future that resolves when the timeline stops animating,
-/// typically when the timeline arives at the target value.
-Future animateTo(double target, { Duration duration, Curve curve: linear }) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">Future animateTo(double target, { Duration duration, Curve curve: linear }) {
   assert(duration &gt; Duration.ZERO);
   assert(!isAnimating);
   return _start(new _TweenSimulation(value, target, duration, curve));
@@ -169,10 +164,10 @@ Future animateTo(double target, { Duration duration, Curve curve: linear }) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -193,7 +188,7 @@ Future animateTo(double target, { Duration duration, Curve curve: linear }) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

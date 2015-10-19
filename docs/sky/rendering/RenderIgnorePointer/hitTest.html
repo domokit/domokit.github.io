@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
                   <li class="self-crumb">hitTest</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
               <li class="self-crumb">hitTest</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></h5>
 
@@ -123,6 +123,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
       <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
+      <li><a class="" href="rendering/RenderIgnorePointer/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
       <li><a class="" href="rendering/RenderBox/hasSize.html">hasSize</a></li>
       <li><a class="" href="rendering/RenderIgnorePointer/ignoring.html">ignoring</a></li>
@@ -133,18 +134,20 @@
       <li><a class="" href="rendering/RenderBox/paintBounds.html">paintBounds</a></li>
       <li><a class="" href="rendering/AbstractNode/parent.html">parent</a></li>
       <li><a class="" href="rendering/RenderObject/parentData.html">parentData</a></li>
+      <li><a class="" href="rendering/RenderIgnorePointer/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/RenderBox/size.html">size</a></li>
       <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
     
       <li class="section-title"><a href="rendering/RenderIgnorePointer-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderIgnorePointer/RenderIgnorePointer.html">RenderIgnorePointer</a></li>
     
+      <li class="section-title"><a href="rendering/RenderIgnorePointer-class.html#operators">Operators</a></li>
+      <li><a class="" href="rendering/RenderIgnorePointer/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="rendering/RenderIgnorePointer-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
       <li><a class="" href="rendering/RenderBox/applyPaintTransform.html">applyPaintTransform</a></li>
-      <li><a class="" href="rendering/AbstractNode/attach.html">attach</a></li>
-      <li><a class="" href="rendering/RenderObjectWithChildMixin/attachChildren.html">attachChildren</a></li>
+      <li><a class="" href="rendering/RenderObjectWithChildMixin/attach.html">attach</a></li>
       <li><a class="" href="rendering/RenderProxyBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/debugDescribeChildren.html">debugDescribeChildren</a></li>
@@ -153,8 +156,8 @@
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
-      <li><a class="" href="rendering/AbstractNode/detach.html">detach</a></li>
-      <li><a class="" href="rendering/RenderObjectWithChildMixin/detachChildren.html">detachChildren</a></li>
+      <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
+      <li><a class="" href="rendering/RenderObjectWithChildMixin/detach.html">detach</a></li>
       <li><a class="" href="rendering/RenderObject/dropChild.html">dropChild</a></li>
       <li><a class="" href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a></li>
@@ -171,6 +174,7 @@
       <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
       <li><a class="" href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
+      <li><a class="" href="rendering/RenderIgnorePointer/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/RenderProxyBox/paint.html">paint</a></li>
       <li><a class="" href="rendering/RenderProxyBox/performLayout.html">performLayout</a></li>
       <li><a class="" href="rendering/RenderBox/performResize.html">performResize</a></li>
@@ -190,29 +194,23 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">bool</span>
-            <span class="name ">hitTest</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a class="" href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>,<br>{<span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>}
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
-          <p>Determines the set of render objects located at the given position</p>
-<p>Returns true if the given point is contained in this render object or one
-of its descendants. Adds any render objects that contain the point to the
-given hit test result.</p>
-<p>The caller is responsible for transforming <code>position</code> into the local
-coordinate space of the callee.  The callee is responsible for checking
-whether the given position is within its bounds.</p>
+          <p>Determines the set of render objects located at the given position
+///
+/// Returns true if the given point is contained in this render object or one
+/// of its descendants. Adds any render objects that contain the point to the
+/// given hit test result.
+///
+/// The caller is responsible for transforming <code>position</code> into the local
+/// coordinate space of the callee.  The callee is responsible for checking
+/// whether the given position is within its bounds.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
+      <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">bool hitTest(HitTestResult result, { Point position }) {
   return ignoring ? false : super.hitTest(result, position: position);
 }</code></pre>
@@ -228,10 +226,10 @@ whether the given position is within its bounds.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -252,7 +250,7 @@ whether the given position is within its bounds.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

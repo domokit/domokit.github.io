@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
                   <li class="self-crumb">paintBounds</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
               <li class="self-crumb">paintBounds</li>
@@ -102,7 +102,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/RenderObject-class.html">RenderObject</a></h5>
 
@@ -128,6 +128,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
       <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
+      <li><a class="" href="rendering/RenderObject/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
       <li><a class="" href="rendering/RenderObject/layer.html">layer</a></li>
       <li><a class="" href="rendering/RenderObject/needsCompositing.html">needsCompositing</a></li>
@@ -136,30 +137,33 @@
       <li><a class="" href="rendering/RenderObject/paintBounds.html">paintBounds</a></li>
       <li><a class="" href="rendering/AbstractNode/parent.html">parent</a></li>
       <li><a class="" href="rendering/RenderObject/parentData.html">parentData</a></li>
+      <li><a class="" href="rendering/RenderObject/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
     
       <li class="section-title"><a href="rendering/RenderObject-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderObject/RenderObject.html">RenderObject</a></li>
     
+      <li class="section-title"><a href="rendering/RenderObject-class.html#operators">Operators</a></li>
+      <li><a class="" href="rendering/RenderObject/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="rendering/RenderObject-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
       <li><a class="" href="rendering/RenderObject/applyPaintTransform.html">applyPaintTransform</a></li>
       <li><a class="" href="rendering/AbstractNode/attach.html">attach</a></li>
-      <li><a class="" href="rendering/AbstractNode/attachChildren.html">attachChildren</a></li>
       <li><a class="" href="rendering/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/debugDescribeChildren.html">debugDescribeChildren</a></li>
       <li><a class="" href="rendering/RenderObject/debugDescribeSettings.html">debugDescribeSettings</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderObject/debugPaint.html">debugPaint</a></li>
+      <li><a class="" href="rendering/RenderObject/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/AbstractNode/detach.html">detach</a></li>
-      <li><a class="" href="rendering/AbstractNode/detachChildren.html">detachChildren</a></li>
       <li><a class="" href="rendering/RenderObject/dropChild.html">dropChild</a></li>
       <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
       <li><a class="" href="rendering/RenderObject/layout.html">layout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsLayout.html">markNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
+      <li><a class="" href="rendering/RenderObject/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/RenderObject/paint.html">paint</a></li>
       <li><a class="" href="rendering/RenderObject/performLayout.html">performLayout</a></li>
       <li><a class="" href="rendering/RenderObject/performResize.html">performResize</a></li>
@@ -182,18 +186,20 @@
       <section id="getter">
       
       <section class="multi-line-signature">
-        <span class="returntype"><a class="" href="rendering/Rect-class.html">Rect</a></span>
+        <span class="returntype"><a class="" href="material/Rect-class.html">Rect</a></span>
         <span class="name ">paintBounds</span></section>
       
       <section class="desc markdown">
 
-      <p>The bounds within which this render object will paint</p>
-<p>A render object is permitted to paint outside the region it occupies
-during layout but is not permitted to paint outside these paints bounds.
-These paint bounds are used to construct memory-efficient composited
-layers, which means attempting to paint outside these bounds can attempt
-to write to pixels that do not exist in this render object's composited
-layer.</p>
+      <p>The bounds within which this render object will paint
+  ///
+  /// A render object is permitted to paint outside the region it occupies
+  /// during layout but is not permitted to paint outside these paints bounds.
+  /// These paint bounds are used to construct memory-efficient composited
+  /// layers, which means attempting to paint outside these bounds can attempt
+  /// to write to pixels that do not exist in this render object's composited
+  /// layer.</p>
+
 
 </section>
 </section>
@@ -209,10 +215,10 @@ layer.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -233,7 +239,7 @@ layer.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

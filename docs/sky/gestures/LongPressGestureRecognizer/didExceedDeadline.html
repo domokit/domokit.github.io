@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="gestures/gestures-library.html">gestures</a></li>
                   <li><a href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
                   <li class="self-crumb">didExceedDeadline</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="gestures/gestures-library.html">gestures</a></li>
               <li><a href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
               <li class="self-crumb">didExceedDeadline</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="gestures/gestures-library.html">gestures</a></h5>
     <h5><a href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></h5>
 
@@ -113,14 +113,18 @@
     
       <li class="section-title"><a href="gestures/LongPressGestureRecognizer-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/deadline.html">deadline</a></li>
+      <li><a class="" href="gestures/LongPressGestureRecognizer/hashCode.html">hashCode</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/initialPosition.html">initialPosition</a></li>
       <li><a class="" href="gestures/LongPressGestureRecognizer/onLongPress.html">onLongPress</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/primaryPointer.html">primaryPointer</a></li>
+      <li><a class="" href="gestures/LongPressGestureRecognizer/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/state.html">state</a></li>
     
       <li class="section-title"><a href="gestures/LongPressGestureRecognizer-class.html#constructors">Constructors</a></li>
       <li><a href="gestures/LongPressGestureRecognizer/LongPressGestureRecognizer.html">LongPressGestureRecognizer</a></li>
     
+      <li class="section-title"><a href="gestures/LongPressGestureRecognizer-class.html#operators">Operators</a></li>
+      <li><a class="" href="gestures/LongPressGestureRecognizer/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="gestures/LongPressGestureRecognizer-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="gestures/GestureRecognizer/acceptGesture.html">acceptGesture</a></li>
@@ -130,31 +134,30 @@
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/dispose.html">dispose</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="gestures/LongPressGestureRecognizer/handlePrimaryPointer.html">handlePrimaryPointer</a></li>
+      <li><a class="" href="gestures/LongPressGestureRecognizer/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/rejectGesture.html">rejectGesture</a></li>
       <li><a class="" href="gestures/GestureRecognizer/resolve.html">resolve</a></li>
       <li><a class="" href="gestures/GestureRecognizer/startTrackingPointer.html">startTrackingPointer</a></li>
       <li><a class="" href="gestures/GestureRecognizer/stopTrackingIfPointerNoLongerDown.html">stopTrackingIfPointerNoLongerDown</a></li>
       <li><a class="" href="gestures/GestureRecognizer/stopTrackingPointer.html">stopTrackingPointer</a></li>
+      <li><a class="" href="gestures/LongPressGestureRecognizer/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">void</span>
-            <span class="name ">didExceedDeadline</span>(
-            )    </section>
-
     <section class="desc markdown">
     
-          <p>Override to be notified with <code>deadline</code> is exceeded.</p>
-<p>You must override this function if you supply a <code>deadline</code>.</p>
+          <p>Override to be notified with <code>deadline</code> is exceeded.
+///
+/// You must override this function if you supply a <code>deadline</code>.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
+      <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void didExceedDeadline() {
   resolve(GestureDisposition.accepted);
   onLongPress();
@@ -171,10 +174,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -195,7 +198,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

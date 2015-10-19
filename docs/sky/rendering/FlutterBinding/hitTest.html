@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/FlutterBinding-class.html">FlutterBinding</a></li>
                   <li class="self-crumb">hitTest</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/FlutterBinding-class.html">FlutterBinding</a></li>
               <li class="self-crumb">hitTest</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/FlutterBinding-class.html">FlutterBinding</a></h5>
 
@@ -114,12 +114,16 @@
     
     
       <li class="section-title"><a href="rendering/FlutterBinding-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="rendering/FlutterBinding/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/FlutterBinding/pointerRouter.html">pointerRouter</a></li>
       <li><a class="" href="rendering/FlutterBinding/renderView.html">renderView</a></li>
+      <li><a class="" href="rendering/FlutterBinding/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="rendering/FlutterBinding-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/FlutterBinding/FlutterBinding.html">FlutterBinding</a></li>
     
+      <li class="section-title"><a href="rendering/FlutterBinding-class.html#operators">Operators</a></li>
+      <li><a class="" href="rendering/FlutterBinding/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="rendering/FlutterBinding-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/FlutterBinding/addEventListener.html">addEventListener</a></li>
@@ -127,32 +131,25 @@
       <li><a class="" href="rendering/FlutterBinding/dispatchEvent.html">dispatchEvent</a></li>
       <li><a class="" href="rendering/FlutterBinding/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/FlutterBinding/hitTest.html">hitTest</a></li>
+      <li><a class="" href="rendering/FlutterBinding/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/FlutterBinding/removeEventListener.html">removeEventListener</a></li>
+      <li><a class="" href="rendering/FlutterBinding/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype"><a class="" href="rendering/HitTestResult-class.html">HitTestResult</a></span>
-            <span class="name ">hitTest</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Determine which <a class="" href="rendering/HitTestTarget-class.html">HitTestTarget</a> objects are located at a given position</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Determine which [HitTestTarget] objects are located at a given position
-HitTestResult hitTest(Point position) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">HitTestResult hitTest(Point position) {
   HitTestResult result = new HitTestResult();
   _renderView.hitTest(result, position: position);
   result.add(new BindingHitTestEntry(this, result));
@@ -170,10 +167,10 @@ HitTestResult hitTest(Point position) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -194,7 +191,7 @@ HitTestResult hitTest(Point position) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

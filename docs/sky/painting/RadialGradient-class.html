@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="painting/painting-library.html">painting</a></li>
                   <li class="self-crumb">RadialGradient</li>
               </ol>
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="painting/painting-library.html">painting</a></li>
               <li class="self-crumb">RadialGradient</li>
           </ol>
@@ -91,6 +91,7 @@
           <ul class="subnav">
               <li><a href="painting/RadialGradient-class.html#instance-properties">Properties</a></li>
               <li><a href="painting/RadialGradient-class.html#constructors">Constructors</a></li>
+              <li><a href="painting/RadialGradient-class.html#operators">Operators</a></li>
               <li><a href="painting/RadialGradient-class.html#instance-methods">Methods</a></li>
           </ul>
         </div> <!-- /col -->
@@ -103,7 +104,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="painting/painting-library.html">painting</a></h5>
 
     <ol>
@@ -139,13 +140,20 @@
       <li><a class="" href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
       <li><a class="" href="painting/BoxPainter-class.html">BoxPainter</a></li>
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
+      <li><a class="" href="painting/Color-class.html">Color</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a class="" href="painting/Offset-class.html">Offset</a></li>
+      <li><a class="" href="painting/Paint-class.html">Paint</a></li>
+      <li><a class="" href="painting/Path-class.html">Path</a></li>
       <li><a class="" href="painting/PlainTextSpan-class.html">PlainTextSpan</a></li>
+      <li><a class="" href="painting/Point-class.html">Point</a></li>
       <li><a class="" href="painting/RadialGradient-class.html">RadialGradient</a></li>
-      <li><a class="" href="painting/RadialReaction-class.html">RadialReaction</a></li>
+      <li><a class="" href="painting/Rect-class.html">Rect</a></li>
       <li><a class="" href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></li>
+      <li><a class="" href="painting/Size-class.html">Size</a></li>
       <li><a class="" href="painting/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="painting/TextPainter-class.html">TextPainter</a></li>
       <li><a class="" href="painting/TextSpan-class.html">TextSpan</a></li>
@@ -159,6 +167,7 @@
     <section class="desc markdown">
     
           <p>A 2D radial gradient</p>
+
     
     </section>
 
@@ -167,7 +176,7 @@
           <dt>Inheritance</dt>
           <dd><ul class="gt-separated dark clazz-relationships">
               <li>Object</li>
-              <li><a class="" href="rendering/Gradient-class.html">Gradient</a></li>
+              <li><a class="" href="material/Gradient-class.html">Gradient</a></li>
               <li>RadialGradient</li>
           </ul></dd>
 
@@ -186,56 +195,75 @@
         <dl class="properties">
             <dt id="center" class="property">
                 <span class="name"><a class="" href="painting/RadialGradient/center.html">center</a></span>
-                <span class="signature">&#8594; <a class="" href="rendering/Point-class.html">Point</a></span>
+                <span class="signature">&#8594; <a class="" href="material/Point-class.html">Point</a></span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>The center of the gradient</p>
-            </dd>
+</dd>
             <dt id="colors" class="property">
                 <span class="name"><a class="" href="painting/RadialGradient/colors.html">colors</a></span>
-                <span class="signature">&#8594; List&lt;Color&gt;</span>
+                <span class="signature">&#8594; List&lt;<a class="" href="material/Color-class.html">Color</a>&gt;</span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>The colors the gradient should obtain at each of the stops<a href="painting/RadialGradient/colors.html">&hellip;</a>
+</dd>
+            <dt id="hashCode" class="property">
+                <span class="name"><a class="" href="painting/RadialGradient/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <p>Get a hash code for this object.<a href="painting/RadialGradient/hashCode.html">&hellip;</a>
 </p>
-            </dd>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
             <dt id="radius" class="property">
                 <span class="name"><a class="" href="painting/RadialGradient/radius.html">radius</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>The radius at which stop 1.0 is placed</p>
-            </dd>
+</dd>
+            <dt id="runtimeType" class="property">
+                <span class="name"><a class="" href="painting/RadialGradient/runtimeType.html">runtimeType</a></span>
+                <span class="signature">&#8594; Type</span>
+            </dt>
+            <dd>
+                <p>A representation of the runtime type of the object.</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
             <dt id="stops" class="property">
                 <span class="name"><a class="" href="painting/RadialGradient/stops.html">stops</a></span>
                 <span class="signature">&#8594; List&lt;double&gt;</span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>A list of values from 0.0 to 1.0 that denote concentric rings<a href="painting/RadialGradient/stops.html">&hellip;</a>
-</p>
-            </dd>
+</dd>
             <dt id="tileMode" class="property">
                 <span class="name"><a class="" href="painting/RadialGradient/tileMode.html">tileMode</a></span>
                 <span class="signature">&#8594; TileMode</span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>How this gradient should tile the plane</p>
-            </dd>
+</dd>
         </dl>
     </section>
 
@@ -244,7 +272,7 @@
 
         <dl class="constructor-summary-list">
             <dt id="RadialGradient" class="callable">
-                <span class="name"><a class="" href="painting/RadialGradient/RadialGradient.html">RadialGradient</a></span><span class="signature">({<span class="parameter" id="-param-center"><span class="type-annotation"><a class="" href="rendering/Point-class.html">Point</a></span> <span class="parameter-name">center</span></span>, <span class="parameter" id="-param-radius"><span class="type-annotation">double</span> <span class="parameter-name">radius</span></span>, <span class="parameter" id="-param-colors"><span class="type-annotation">List&lt;Color&gt;</span> <span class="parameter-name">colors</span></span>, <span class="parameter" id="-param-stops"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">stops</span></span>, <span class="parameter" id="-param-tileMode"><span class="type-annotation">TileMode</span> <span class="parameter-name">tileMode</span>: <span class="default-value">sky.TileMode.clamp</span></span>})</span>
+                <span class="name"><a class="" href="painting/RadialGradient/RadialGradient.html">RadialGradient</a></span><span class="signature">({<span class="parameter" id="-param-center"><span class="type-annotation"><a class="" href="material/Point-class.html">Point</a></span> <span class="parameter-name">center</span></span>, <span class="parameter" id="-param-radius"><span class="type-annotation">double</span> <span class="parameter-name">radius</span></span>, <span class="parameter" id="-param-colors"><span class="type-annotation">List&lt;<a class="" href="material/Color-class.html">Color</a>&gt;</span> <span class="parameter-name">colors</span></span>, <span class="parameter" id="-param-stops"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">stops</span></span>, <span class="parameter" id="-param-tileMode"><span class="type-annotation">TileMode</span> <span class="parameter-name">tileMode</span>: <span class="default-value">ui.TileMode.clamp</span></span>})</span>
             </dt>
             <dd>
                 <p></p>
@@ -252,23 +280,50 @@
         </dl>
       </section>
 
+      <section class="summary offset-anchor" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <span class="name "><a class="" href="painting/RadialGradient/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      <span class="returntype parameter">&#8594; bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.<a href="painting/RadialGradient/operator_equals.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
+          </dl>
+      </section>
 
       <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="createShader" class="callable">
                   <span class="name "><a class="" href="painting/RadialGradient/createShader.html">createShader</a></span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype">Shader</span>
+                      <span class="returntype parameter">&#8594; Shader</span>
                   </span>
               </dt>
               <dd>
                   <p></p>
               </dd>
+              <dt id="noSuchMethod" class="callable">
+                  <span class="name "><a class="" href="painting/RadialGradient/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                      <span class="returntype parameter">&#8594; dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
+If <code>noSuchMethod</code> returns a value, that value becomes the result of
+the original invocation.<a href="painting/RadialGradient/noSuchMethod.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
               <dt id="toString" class="callable">
                   <span class="name "><a class="" href="painting/RadialGradient/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype">String</span>
+                      <span class="returntype parameter">&#8594; String</span>
                   </span>
               </dt>
               <dd>
@@ -288,16 +343,21 @@
       <li class="section-title"><a href="painting/RadialGradient-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="painting/RadialGradient/center.html">center</a></li>
       <li><a class="" href="painting/RadialGradient/colors.html">colors</a></li>
+      <li><a class="" href="painting/RadialGradient/hashCode.html">hashCode</a></li>
       <li><a class="" href="painting/RadialGradient/radius.html">radius</a></li>
+      <li><a class="" href="painting/RadialGradient/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="painting/RadialGradient/stops.html">stops</a></li>
       <li><a class="" href="painting/RadialGradient/tileMode.html">tileMode</a></li>
     
       <li class="section-title"><a href="painting/RadialGradient-class.html#constructors">Constructors</a></li>
       <li><a href="painting/RadialGradient/RadialGradient.html">RadialGradient</a></li>
     
+      <li class="section-title"><a href="painting/RadialGradient-class.html#operators">Operators</a></li>
+      <li><a class="" href="painting/RadialGradient/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="painting/RadialGradient-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="painting/RadialGradient/createShader.html">createShader</a></li>
+      <li><a class="" href="painting/RadialGradient/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="painting/RadialGradient/toString.html">toString</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
@@ -310,10 +370,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -334,7 +394,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

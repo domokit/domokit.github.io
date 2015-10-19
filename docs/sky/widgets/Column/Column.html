@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="widgets/widgets-library.html">widgets</a></li>
                   <li><a href="widgets/Column-class.html">Column</a></li>
                   <li class="self-crumb">Column</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="widgets/widgets-library.html">widgets</a></li>
               <li><a href="widgets/Column-class.html">Column</a></li>
               <li class="self-crumb">Column</li>
@@ -91,6 +91,7 @@
               </h1>
           </div>
           <ul class="subnav">
+              <li><a href="widgets/Column/Column.html#source">Source</a></li>
           </ul>
         </div> <!-- /col -->
       </div> <!-- /row -->
@@ -103,7 +104,7 @@
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
 
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="widgets/widgets-library.html">widgets</a></h5>
     <h5><a href="widgets/Column-class.html">Column</a></h5>
 
@@ -112,39 +113,35 @@
     
     
       <li class="section-title"><a href="widgets/Column-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="widgets/Flex/alignItems.html">alignItems</a></li>
-      <li><a class="" href="widgets/MultiChildRenderObjectWidget/children.html">children</a></li>
-      <li><a class="" href="widgets/Flex/direction.html">direction</a></li>
-      <li><a class="" href="widgets/Flex/justifyContent.html">justifyContent</a></li>
-      <li><a class="" href="widgets/Widget/key.html">key</a></li>
-      <li><a class="" href="widgets/Flex/textBaseline.html">textBaseline</a></li>
+      <li><a class="" href="material/Flex/alignItems.html">alignItems</a></li>
+      <li><a class="" href="material/MultiChildRenderObjectWidget/children.html">children</a></li>
+      <li><a class="" href="material/Flex/direction.html">direction</a></li>
+      <li><a class="" href="widgets/Column/hashCode.html">hashCode</a></li>
+      <li><a class="" href="material/Flex/justifyContent.html">justifyContent</a></li>
+      <li><a class="" href="material/Widget/key.html">key</a></li>
+      <li><a class="" href="widgets/Column/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="material/Flex/textBaseline.html">textBaseline</a></li>
     
       <li class="section-title"><a href="widgets/Column-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Column/Column.html">Column</a></li>
     
+      <li class="section-title"><a href="widgets/Column-class.html#operators">Operators</a></li>
+      <li><a class="" href="widgets/Column/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="widgets/Column-class.html#instance-methods">Methods</a></li>
-      <li><a class="" href="widgets/MultiChildRenderObjectWidget/createElement.html">createElement</a></li>
-      <li><a class="" href="widgets/Flex/createRenderObject.html">createRenderObject</a></li>
-      <li><a class="" href="widgets/Widget/debugFillDescription.html">debugFillDescription</a></li>
-      <li><a class="" href="widgets/RenderObjectWidget/didUnmountRenderObject.html">didUnmountRenderObject</a></li>
-      <li><a class="" href="widgets/Widget/toString.html">toString</a></li>
-      <li><a class="" href="widgets/Flex/updateRenderObject.html">updateRenderObject</a></li>
+      <li><a class="" href="material/MultiChildRenderObjectWidget/createElement.html">createElement</a></li>
+      <li><a class="" href="material/Flex/createRenderObject.html">createRenderObject</a></li>
+      <li><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></li>
+      <li><a class="" href="material/RenderObjectWidget/didUnmountRenderObject.html">didUnmountRenderObject</a></li>
+      <li><a class="" href="widgets/Column/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="material/Widget/toString.html">toString</a></li>
+      <li><a class="" href="material/Flex/updateRenderObject.html">updateRenderObject</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-        
-                <span class="name ">Column</span>(
-        <br>
-        <div class="parameters">
-            <span class="parameter" id="-param-children"><span class="type-annotation">List&lt;Widget&gt;</span> <span class="parameter-name">children</span></span>,<br>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="widgets/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>,<br><span class="parameter" id="-param-justifyContent"><span class="parameter-name">justifyContent</span>: <span class="default-value">FlexJustifyContent.start</span></span>,<br><span class="parameter" id="-param-alignItems"><span class="parameter-name">alignItems</span>: <span class="default-value">FlexAlignItems.center</span></span>,<br><span class="parameter" id="-param-textBaseline"><span class="parameter-name">textBaseline</span></span>}
-        </div>
-        )
-    </section>
 
     <section class="desc markdown">
     
@@ -152,6 +149,15 @@
     
     </section>
 
+      <section class="summary source-code" id="source">
+        <h2><span>Source</span> </h2>
+        <pre><code class="prettyprint lang-dart">Column(List&lt;Widget&gt; children, {
+  Key key,
+  justifyContent: FlexJustifyContent.start,
+  alignItems: FlexAlignItems.center,
+  textBaseline
+}) : super(children, key: key, direction: FlexDirection.vertical, justifyContent: justifyContent, alignItems: alignItems, textBaseline: textBaseline);</code></pre>
+      </section>
 
   </div> <!-- /.main-content -->
 
@@ -163,10 +169,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -187,7 +193,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

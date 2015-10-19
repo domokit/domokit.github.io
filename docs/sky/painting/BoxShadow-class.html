@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="painting/painting-library.html">painting</a></li>
                   <li class="self-crumb">BoxShadow</li>
               </ol>
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="painting/painting-library.html">painting</a></li>
               <li class="self-crumb">BoxShadow</li>
           </ol>
@@ -92,6 +92,7 @@
               <li><a href="painting/BoxShadow-class.html#static-methods">Static Methods</a></li>
               <li><a href="painting/BoxShadow-class.html#instance-properties">Properties</a></li>
               <li><a href="painting/BoxShadow-class.html#constructors">Constructors</a></li>
+              <li><a href="painting/BoxShadow-class.html#operators">Operators</a></li>
               <li><a href="painting/BoxShadow-class.html#instance-methods">Methods</a></li>
           </ul>
         </div> <!-- /col -->
@@ -104,7 +105,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="painting/painting-library.html">painting</a></h5>
 
     <ol>
@@ -140,13 +141,20 @@
       <li><a class="" href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
       <li><a class="" href="painting/BoxPainter-class.html">BoxPainter</a></li>
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
+      <li><a class="" href="painting/Color-class.html">Color</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a class="" href="painting/Offset-class.html">Offset</a></li>
+      <li><a class="" href="painting/Paint-class.html">Paint</a></li>
+      <li><a class="" href="painting/Path-class.html">Path</a></li>
       <li><a class="" href="painting/PlainTextSpan-class.html">PlainTextSpan</a></li>
+      <li><a class="" href="painting/Point-class.html">Point</a></li>
       <li><a class="" href="painting/RadialGradient-class.html">RadialGradient</a></li>
-      <li><a class="" href="painting/RadialReaction-class.html">RadialReaction</a></li>
+      <li><a class="" href="painting/Rect-class.html">Rect</a></li>
       <li><a class="" href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></li>
+      <li><a class="" href="painting/Size-class.html">Size</a></li>
       <li><a class="" href="painting/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="painting/TextPainter-class.html">TextPainter</a></li>
       <li><a class="" href="painting/TextSpan-class.html">TextSpan</a></li>
@@ -162,6 +170,7 @@
           <p>A shadow cast by a box</p>
 <p>Note: BoxShadow can cast non-rectangular shadows if the box is
 non-rectangular (e.g., has a border radius or a circular shape).</p>
+
     
     </section>
 
@@ -172,24 +181,26 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
         <h2>Static Methods</h2>
         <dl class="callables">
             <dt id="lerp" class="callable">
-                <span class="name "><a class="" href="painting/BoxShadow/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
-                    &#8594;
-                    <span class="returntype"><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></span>
+                <span class="name "><a class="" href="painting/BoxShadow/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a class="" href="material/BoxShadow-class.html">BoxShadow</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a class="" href="material/BoxShadow-class.html">BoxShadow</a></span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
+                    <span class="returntype parameter">&#8594; <a class="" href="material/BoxShadow-class.html">BoxShadow</a></span>
                 </span>
             </dt>
             <dd>
-                <p>Linearly interpolate between two box shadows<a href="painting/BoxShadow/lerp.html">&hellip;</a>
-</p>
+                <p>Linearly interpolate between two box shadows
+  ///
+  /// If either box shadow is null, this function linearly interpolates from a
+  /// a box shadow that matches the other box shadow in color but has a zero
+  /// offset and a zero blur.</p>
             </dd>
             <dt id="lerpList" class="callable">
-                <span class="name "><a class="" href="painting/BoxShadow/lerpList.html">lerpList</a></span><span class="signature">(<wbr><span class="parameter" id="lerpList-param-a"><span class="type-annotation">List&lt;BoxShadow&gt;</span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerpList-param-b"><span class="type-annotation">List&lt;BoxShadow&gt;</span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerpList-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
-                    &#8594;
-                    <span class="returntype">List&lt;BoxShadow&gt;</span>
+                <span class="name "><a class="" href="painting/BoxShadow/lerpList.html">lerpList</a></span><span class="signature">(<wbr><span class="parameter" id="lerpList-param-a"><span class="type-annotation">List&lt;<a class="" href="material/BoxShadow-class.html">BoxShadow</a>&gt;</span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerpList-param-b"><span class="type-annotation">List&lt;<a class="" href="material/BoxShadow-class.html">BoxShadow</a>&gt;</span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerpList-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
+                    <span class="returntype parameter">&#8594; List&lt;<a class="" href="material/BoxShadow-class.html">BoxShadow</a>&gt;</span>
                 </span>
             </dt>
             <dd>
-                <p>Linearly interpolate between two lists of box shadows<a href="painting/BoxShadow/lerpList.html">&hellip;</a>
-</p>
+                <p>Linearly interpolate between two lists of box shadows
+  ///
+  /// If the lists differ in length, excess items are lerped with null.</p>
             </dd>
         </dl>
     </section>
@@ -203,31 +214,52 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>The standard deviation of the Gaussian to convolve with the box's shape</p>
-            </dd>
+</dd>
             <dt id="color" class="property">
                 <span class="name"><a class="" href="painting/BoxShadow/color.html">color</a></span>
-                <span class="signature">&#8594; <a class="" href="rendering/Color-class.html">Color</a></span>
+                <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>The color of the shadow</p>
-            </dd>
+</dd>
+            <dt id="hashCode" class="property">
+                <span class="name"><a class="" href="painting/BoxShadow/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <p>Get a hash code for this object.<a href="painting/BoxShadow/hashCode.html">&hellip;</a>
+</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
             <dt id="offset" class="property">
                 <span class="name"><a class="" href="painting/BoxShadow/offset.html">offset</a></span>
-                <span class="signature">&#8594; <a class="" href="rendering/Offset-class.html">Offset</a></span>
+                <span class="signature">&#8594; <a class="" href="material/Offset-class.html">Offset</a></span>
             </dt>
             <dd>
+                <p></p>
                 <div class="features">
         read-only
     </div>
-    <p>The displacement of the shadow from the box</p>
-            </dd>
+</dd>
+            <dt id="runtimeType" class="property">
+                <span class="name"><a class="" href="painting/BoxShadow/runtimeType.html">runtimeType</a></span>
+                <span class="signature">&#8594; Type</span>
+            </dt>
+            <dd>
+                <p>A representation of the runtime type of the object.</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
         </dl>
     </section>
 
@@ -236,25 +268,51 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
 
         <dl class="constructor-summary-list">
             <dt id="BoxShadow" class="callable">
-                <span class="name"><a class="" href="painting/BoxShadow/BoxShadow.html">BoxShadow</a></span><span class="signature">({<span class="parameter" id="-param-color"><span class="type-annotation"><a class="" href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>, <span class="parameter" id="-param-offset"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="-param-blur"><span class="type-annotation">double</span> <span class="parameter-name">blur</span></span>})</span>
+                <span class="name"><a class="" href="painting/BoxShadow/BoxShadow.html">BoxShadow</a></span><span class="signature">({<span class="parameter" id="-param-color"><span class="type-annotation"><a class="" href="material/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>, <span class="parameter" id="-param-offset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>, <span class="parameter" id="-param-blur"><span class="type-annotation">double</span> <span class="parameter-name">blur</span></span>})</span>
             </dt>
             <dd>
-                <div class="constructor-modifier">
-                    const
-                </div>
                 <p></p>
+                <div class="constructor-modifier features">const</div>
             </dd>
         </dl>
       </section>
 
+      <section class="summary offset-anchor" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <span class="name "><a class="" href="painting/BoxShadow/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      <span class="returntype parameter">&#8594; bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.<a href="painting/BoxShadow/operator_equals.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
+          </dl>
+      </section>
 
       <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
+              <dt id="noSuchMethod" class="callable">
+                  <span class="name "><a class="" href="painting/BoxShadow/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                      <span class="returntype parameter">&#8594; dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
+If <code>noSuchMethod</code> returns a value, that value becomes the result of
+the original invocation.<a href="painting/BoxShadow/noSuchMethod.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
               <dt id="scale" class="callable">
                   <span class="name "><a class="" href="painting/BoxShadow/scale.html">scale</a></span><span class="signature">(<wbr><span class="parameter" id="scale-param-factor"><span class="type-annotation">double</span> <span class="parameter-name">factor</span></span>)
-                      &#8594;
-                      <span class="returntype"><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></span>
+                      <span class="returntype parameter">&#8594; <a class="" href="material/BoxShadow-class.html">BoxShadow</a></span>
                   </span>
               </dt>
               <dd>
@@ -262,8 +320,7 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
               </dd>
               <dt id="toString" class="callable">
                   <span class="name "><a class="" href="painting/BoxShadow/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype">String</span>
+                      <span class="returntype parameter">&#8594; String</span>
                   </span>
               </dt>
               <dd>
@@ -286,13 +343,18 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
       <li class="section-title"><a href="painting/BoxShadow-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="painting/BoxShadow/blur.html">blur</a></li>
       <li><a class="" href="painting/BoxShadow/color.html">color</a></li>
+      <li><a class="" href="painting/BoxShadow/hashCode.html">hashCode</a></li>
       <li><a class="" href="painting/BoxShadow/offset.html">offset</a></li>
+      <li><a class="" href="painting/BoxShadow/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="painting/BoxShadow-class.html#constructors">Constructors</a></li>
       <li><a href="painting/BoxShadow/BoxShadow.html">BoxShadow</a></li>
     
+      <li class="section-title"><a href="painting/BoxShadow-class.html#operators">Operators</a></li>
+      <li><a class="" href="painting/BoxShadow/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="painting/BoxShadow-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="painting/BoxShadow/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="painting/BoxShadow/scale.html">scale</a></li>
       <li><a class="" href="painting/BoxShadow/toString.html">toString</a></li>
     </ol>
@@ -306,10 +368,10 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -330,7 +392,7 @@ non-rectangular (e.g., has a border radius or a circular shape).</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

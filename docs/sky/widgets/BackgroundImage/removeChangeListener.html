@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="widgets/widgets-library.html">widgets</a></li>
                   <li><a href="widgets/BackgroundImage-class.html">BackgroundImage</a></li>
                   <li class="self-crumb">removeChangeListener</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="widgets/widgets-library.html">widgets</a></li>
               <li><a href="widgets/BackgroundImage-class.html">BackgroundImage</a></li>
               <li class="self-crumb">removeChangeListener</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="widgets/widgets-library.html">widgets</a></h5>
     <h5><a href="widgets/BackgroundImage-class.html">BackgroundImage</a></h5>
 
@@ -112,17 +112,23 @@
     
     
       <li class="section-title"><a href="widgets/BackgroundImage-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="widgets/BackgroundImage/centerSlice.html">centerSlice</a></li>
       <li><a class="" href="widgets/BackgroundImage/colorFilter.html">colorFilter</a></li>
       <li><a class="" href="widgets/BackgroundImage/fit.html">fit</a></li>
+      <li><a class="" href="widgets/BackgroundImage/hashCode.html">hashCode</a></li>
       <li><a class="" href="widgets/BackgroundImage/image.html">image</a></li>
       <li><a class="" href="widgets/BackgroundImage/repeat.html">repeat</a></li>
+      <li><a class="" href="widgets/BackgroundImage/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="widgets/BackgroundImage-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/BackgroundImage/BackgroundImage.html">BackgroundImage</a></li>
     
+      <li class="section-title"><a href="widgets/BackgroundImage-class.html#operators">Operators</a></li>
+      <li><a class="" href="widgets/BackgroundImage/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="widgets/BackgroundImage-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/BackgroundImage/addChangeListener.html">addChangeListener</a></li>
+      <li><a class="" href="widgets/BackgroundImage/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="widgets/BackgroundImage/removeChangeListener.html">removeChangeListener</a></li>
       <li><a class="" href="widgets/BackgroundImage/toString.html">toString</a></li>
     </ol>
@@ -131,25 +137,16 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">void</span>
-            <span class="name ">removeChangeListener</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="removeChangeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
-          <p>No longer call listener when the background image changes</p>
+          <p>No longer call listener when the background image changes.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// No longer call listener when the background image changes
-void removeChangeListener(BackgroundImageChangeListener listener) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">void removeChangeListener(BackgroundImageChangeListener listener) {
   _listeners.remove(listener);
   // We need to remove ourselves as listeners from the _imageResource so that
   // we&apos;re not kept alive by the image_cache.
@@ -168,10 +165,10 @@ void removeChangeListener(BackgroundImageChangeListener listener) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -192,7 +189,7 @@ void removeChangeListener(BackgroundImageChangeListener listener) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

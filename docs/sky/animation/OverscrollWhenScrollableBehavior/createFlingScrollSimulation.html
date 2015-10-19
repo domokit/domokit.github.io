@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="animation/animation-library.html">animation</a></li>
                   <li><a href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></li>
                   <li class="self-crumb">createFlingScrollSimulation</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="animation/animation-library.html">animation</a></li>
               <li><a href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></li>
               <li class="self-crumb">createFlingScrollSimulation</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="animation/animation-library.html">animation</a></h5>
     <h5><a href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></h5>
 
@@ -114,18 +114,24 @@
       <li class="section-title"><a href="animation/OverscrollWhenScrollableBehavior-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="animation/ExtentScrollBehavior/containerExtent.html">containerExtent</a></li>
       <li><a class="" href="animation/ExtentScrollBehavior/contentExtent.html">contentExtent</a></li>
+      <li><a class="" href="animation/OverscrollWhenScrollableBehavior/hashCode.html">hashCode</a></li>
       <li><a class="" href="animation/OverscrollWhenScrollableBehavior/isScrollable.html">isScrollable</a></li>
       <li><a class="" href="animation/BoundedBehavior/maxScrollOffset.html">maxScrollOffset</a></li>
       <li><a class="" href="animation/BoundedBehavior/minScrollOffset.html">minScrollOffset</a></li>
+      <li><a class="" href="animation/OverscrollWhenScrollableBehavior/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="animation/OverscrollWhenScrollableBehavior-class.html#constructors">Constructors</a></li>
       <li><a href="animation/OverscrollWhenScrollableBehavior/OverscrollWhenScrollableBehavior.html">OverscrollWhenScrollableBehavior</a></li>
     
+      <li class="section-title"><a href="animation/OverscrollWhenScrollableBehavior-class.html#operators">Operators</a></li>
+      <li><a class="" href="animation/OverscrollWhenScrollableBehavior/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="animation/OverscrollWhenScrollableBehavior-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="animation/OverscrollWhenScrollableBehavior/applyCurve.html">applyCurve</a></li>
       <li><a class="" href="animation/OverscrollWhenScrollableBehavior/createFlingScrollSimulation.html">createFlingScrollSimulation</a></li>
       <li><a class="" href="animation/OverscrollBehavior/createSnapScrollSimulation.html">createSnapScrollSimulation</a></li>
+      <li><a class="" href="animation/OverscrollWhenScrollableBehavior/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="animation/OverscrollWhenScrollableBehavior/toString.html">toString</a></li>
       <li><a class="" href="animation/ExtentScrollBehavior/updateExtents.html">updateExtents</a></li>
     </ol>
 
@@ -133,24 +139,16 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">Simulation</span>
-            <span class="name ">createFlingScrollSimulation</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="createFlingScrollSimulation-param-position"><span class="type-annotation">double</span> <span class="parameter-name">position</span></span>,<br><span class="parameter" id="createFlingScrollSimulation-param-velocity"><span class="type-annotation">double</span> <span class="parameter-name">velocity</span></span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Called when a drag gesture ends. Returns a simulation that
-propels the scrollOffset.</p>
+/// propels the scrollOffset.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
+      <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Simulation createFlingScrollSimulation(double position, double velocity) {
   if (isScrollable || position &lt; minScrollOffset || position &gt; maxScrollOffset)
     return super.createFlingScrollSimulation(position, velocity);
@@ -168,10 +166,10 @@ propels the scrollOffset.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -192,7 +190,7 @@ propels the scrollOffset.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

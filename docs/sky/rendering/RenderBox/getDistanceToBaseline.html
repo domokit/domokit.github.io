@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
                   <li class="self-crumb">getDistanceToBaseline</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
               <li class="self-crumb">getDistanceToBaseline</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/RenderBox-class.html">RenderBox</a></h5>
 
@@ -121,6 +121,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
       <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
+      <li><a class="" href="rendering/RenderBox/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
       <li><a class="" href="rendering/RenderBox/hasSize.html">hasSize</a></li>
       <li><a class="" href="rendering/RenderObject/layer.html">layer</a></li>
@@ -130,18 +131,20 @@
       <li><a class="" href="rendering/RenderBox/paintBounds.html">paintBounds</a></li>
       <li><a class="" href="rendering/AbstractNode/parent.html">parent</a></li>
       <li><a class="" href="rendering/RenderObject/parentData.html">parentData</a></li>
+      <li><a class="" href="rendering/RenderBox/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/RenderBox/size.html">size</a></li>
       <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
     
       <li class="section-title"><a href="rendering/RenderBox-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderBox/RenderBox.html">RenderBox</a></li>
     
+      <li class="section-title"><a href="rendering/RenderBox-class.html#operators">Operators</a></li>
+      <li><a class="" href="rendering/RenderBox/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="rendering/RenderBox-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
       <li><a class="" href="rendering/RenderBox/applyPaintTransform.html">applyPaintTransform</a></li>
       <li><a class="" href="rendering/AbstractNode/attach.html">attach</a></li>
-      <li><a class="" href="rendering/AbstractNode/attachChildren.html">attachChildren</a></li>
       <li><a class="" href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/debugDescribeChildren.html">debugDescribeChildren</a></li>
@@ -150,8 +153,8 @@
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
+      <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/AbstractNode/detach.html">detach</a></li>
-      <li><a class="" href="rendering/AbstractNode/detachChildren.html">detachChildren</a></li>
       <li><a class="" href="rendering/RenderObject/dropChild.html">dropChild</a></li>
       <li><a class="" href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a></li>
@@ -168,6 +171,7 @@
       <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
       <li><a class="" href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
+      <li><a class="" href="rendering/RenderBox/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/RenderObject/paint.html">paint</a></li>
       <li><a class="" href="rendering/RenderBox/performLayout.html">performLayout</a></li>
       <li><a class="" href="rendering/RenderBox/performResize.html">performResize</a></li>
@@ -187,51 +191,31 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">double</span>
-            <span class="name ">getDistanceToBaseline</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a class="" href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>,<br>{<span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span>}
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Returns the distance from the y-coordinate of the position of the box to
-the y-coordinate of the first given baseline in the box's contents.</p>
-<p>Used by certain layout models to align adjacent boxes on a common
-baseline, regardless of padding, font size differences, etc. If there is
-no baseline, this function returns the distance from the y-coordinate of
-the position of the box to the y-coordinate of the bottom of the box
-(i.e., the height of the box) unless the the caller passes true
-for <code>onlyReal</code>, in which case the function returns null.</p>
-<p>Only call this function calling <a class="" href="rendering/RenderObject/layout.html">layout</a> on this box. You are only
-allowed to call this from the parent of this box during that parent's
-<a class="" href="rendering/RenderBox/performLayout.html">performLayout</a> or <a class="" href="rendering/RenderObject/paint.html">paint</a> functions.</p>
+  /// the y-coordinate of the first given baseline in the box's contents.
+  ///
+  /// Used by certain layout models to align adjacent boxes on a common
+  /// baseline, regardless of padding, font size differences, etc. If there is
+  /// no baseline, this function returns the distance from the y-coordinate of
+  /// the position of the box to the y-coordinate of the bottom of the box
+  /// (i.e., the height of the box) unless the the caller passes true
+  /// for <code>onlyReal</code>, in which case the function returns null.
+  ///
+  /// Only call this function calling <a class="" href="rendering/RenderObject/layout.html">layout</a> on this box. You are only
+  /// allowed to call this from the parent of this box during that parent's
+  /// <a class="" href="rendering/RenderBox/performLayout.html">performLayout</a> or <a class="" href="rendering/RenderObject/paint.html">paint</a> functions.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Returns the distance from the y-coordinate of the position of the box to
-/// the y-coordinate of the first given baseline in the box&apos;s contents.
-///
-/// Used by certain layout models to align adjacent boxes on a common
-/// baseline, regardless of padding, font size differences, etc. If there is
-/// no baseline, this function returns the distance from the y-coordinate of
-/// the position of the box to the y-coordinate of the bottom of the box
-/// (i.e., the height of the box) unless the the caller passes true
-/// for `onlyReal`, in which case the function returns null.
-///
-/// Only call this function calling [layout] on this box. You are only
-/// allowed to call this from the parent of this box during that parent&apos;s
-/// [performLayout] or [paint] functions.
-double getDistanceToBaseline(TextBaseline baseline, { bool onlyReal: false }) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">double getDistanceToBaseline(TextBaseline baseline, { bool onlyReal: false }) {
   assert(!needsLayout);
   assert(!_debugDoingBaseline);
-  final parent = this.parent; // TODO(ianh): Remove this once the analyzer is cleverer
-  assert(parent is RenderObject);
+  final RenderObject parent = this.parent;
   assert(() {
     if (RenderObject.debugDoingLayout)
       return (RenderObject.debugActiveLayout == parent) &amp;&amp; parent.debugDoingThisLayout;
@@ -243,7 +227,7 @@ double getDistanceToBaseline(TextBaseline baseline, { bool onlyReal: false }) {
   assert(_debugSetDoingBaseline(true));
   double result = getDistanceToActualBaseline(baseline);
   assert(_debugSetDoingBaseline(false));
-  assert(parent == this.parent); // TODO(ianh): Remove this once the analyzer is cleverer
+  assert(parent == this.parent);
   if (result == null &amp;&amp; !onlyReal)
     return size.height;
   return result;
@@ -260,10 +244,10 @@ double getDistanceToBaseline(TextBaseline baseline, { bool onlyReal: false }) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -284,7 +268,7 @@ double getDistanceToBaseline(TextBaseline baseline, { bool onlyReal: false }) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/Color-class.html">Color</a></li>
                   <li class="self-crumb">lerp</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/Color-class.html">Color</a></li>
               <li class="self-crumb">lerp</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/Color-class.html">Color</a></h5>
 
@@ -119,6 +119,7 @@
       <li><a class="" href="rendering/Color/green.html">green</a></li>
       <li><a class="" href="rendering/Color/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/Color/red.html">red</a></li>
+      <li><a class="" href="rendering/Color/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/Color/value.html">value</a></li>
     
       <li class="section-title"><a href="rendering/Color-class.html#constructors">Constructors</a></li>
@@ -129,6 +130,7 @@
       <li><a class="" href="rendering/Color/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="rendering/Color-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="rendering/Color/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/Color/toString.html">toString</a></li>
       <li><a class="" href="rendering/Color/withAlpha.html">withAlpha</a></li>
       <li><a class="" href="rendering/Color/withBlue.html">withBlue</a></li>
@@ -140,30 +142,19 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype"><a class="" href="rendering/Color-class.html">Color</a></span>
-            <span class="name ">lerp</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="lerp-param-a"><span class="type-annotation"><a class="" href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">a</span></span>,<br><span class="parameter" id="lerp-param-b"><span class="type-annotation"><a class="" href="rendering/Color-class.html">Color</a></span> <span class="parameter-name">b</span></span>,<br><span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
-          <p>Linearly interpolate between two colors</p>
-<p>If either color is null, this function linearly interpolates from a
-transparent instance of the other color.</p>
+          <p>Linearly interpolate between two colors
+  ///
+  /// If either color is null, this function linearly interpolates from a
+  /// transparent instance of the other color.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Linearly interpolate between two colors
-///
-/// If either color is null, this function linearly interpolates from a
-/// transparent instance of the other color.
-static Color lerp(Color a, Color b, double t) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">static Color lerp(Color a, Color b, double t) {
   if (a == null &amp;&amp; b == null)
     return null;
   if (a == null)
@@ -189,10 +180,10 @@ static Color lerp(Color a, Color b, double t) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -213,7 +204,7 @@ static Color lerp(Color a, Color b, double t) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

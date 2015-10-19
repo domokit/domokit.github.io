@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="widgets/widgets-library.html">widgets</a></li>
                   <li><a href="widgets/Rect-class.html">Rect</a></li>
                   <li class="self-crumb">Rect.fromLTWH</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="widgets/widgets-library.html">widgets</a></li>
               <li><a href="widgets/Rect-class.html">Rect</a></li>
               <li class="self-crumb">Rect.fromLTWH</li>
@@ -91,6 +91,7 @@
               </h1>
           </div>
           <ul class="subnav">
+              <li><a href="widgets/Rect/Rect.fromLTWH.html#source">Source</a></li>
           </ul>
         </div> <!-- /col -->
       </div> <!-- /row -->
@@ -103,7 +104,7 @@
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
 
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="widgets/widgets-library.html">widgets</a></h5>
     <h5><a href="widgets/Rect-class.html">Rect</a></h5>
 
@@ -122,8 +123,10 @@
       <li><a class="" href="widgets/Rect/center.html">center</a></li>
       <li><a class="" href="widgets/Rect/hashCode.html">hashCode</a></li>
       <li><a class="" href="widgets/Rect/height.html">height</a></li>
+      <li><a class="" href="widgets/Rect/isEmpty.html">isEmpty</a></li>
       <li><a class="" href="widgets/Rect/left.html">left</a></li>
       <li><a class="" href="widgets/Rect/right.html">right</a></li>
+      <li><a class="" href="widgets/Rect/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="widgets/Rect/shortestSide.html">shortestSide</a></li>
       <li><a class="" href="widgets/Rect/size.html">size</a></li>
       <li><a class="" href="widgets/Rect/top.html">top</a></li>
@@ -144,6 +147,7 @@
       <li><a class="" href="widgets/Rect/deflate.html">deflate</a></li>
       <li><a class="" href="widgets/Rect/inflate.html">inflate</a></li>
       <li><a class="" href="widgets/Rect/intersect.html">intersect</a></li>
+      <li><a class="" href="widgets/Rect/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="widgets/Rect/shift.html">shift</a></li>
       <li><a class="" href="widgets/Rect/toString.html">toString</a></li>
     </ol>
@@ -152,22 +156,24 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-        
-                <span class="name ">Rect.fromLTWH</span>(
-        <br>
-        <div class="parameters">
-            <span class="parameter" id="fromLTWH-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>,<br><span class="parameter" id="fromLTWH-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>,<br><span class="parameter" id="fromLTWH-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>,<br><span class="parameter" id="fromLTWH-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>
-        </div>
-        )
-    </section>
 
     <section class="desc markdown">
     
           <p>Construct a rectangle from left, top edges and a width and height</p>
+
     
     </section>
 
+      <section class="summary source-code" id="source">
+        <h2><span>Source</span> </h2>
+        <pre><code class="prettyprint lang-dart">Rect.fromLTWH(double left, double top, double width, double height) {
+  _value
+    ..[0] = left
+    ..[1] = top
+    ..[2] = left + width
+    ..[3] = top + height;
+}</code></pre>
+      </section>
 
   </div> <!-- /.main-content -->
 
@@ -179,10 +185,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -203,7 +209,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

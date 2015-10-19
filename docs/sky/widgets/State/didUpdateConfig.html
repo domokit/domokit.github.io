@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="widgets/widgets-library.html">widgets</a></li>
                   <li><a href="widgets/State-class.html">State</a></li>
                   <li class="self-crumb">didUpdateConfig</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="widgets/widgets-library.html">widgets</a></li>
               <li><a href="widgets/State-class.html">State</a></li>
               <li class="self-crumb">didUpdateConfig</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="widgets/widgets-library.html">widgets</a></h5>
     <h5><a href="widgets/State-class.html">State</a></h5>
 
@@ -114,11 +114,15 @@
       <li class="section-title"><a href="widgets/State-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="widgets/State/config.html">config</a></li>
       <li><a class="" href="widgets/State/context.html">context</a></li>
+      <li><a class="" href="widgets/State/hashCode.html">hashCode</a></li>
       <li><a class="" href="widgets/State/mounted.html">mounted</a></li>
+      <li><a class="" href="widgets/State/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="widgets/State-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/State/State.html">State</a></li>
     
+      <li class="section-title"><a href="widgets/State-class.html#operators">Operators</a></li>
+      <li><a class="" href="widgets/State/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="widgets/State-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/State/build.html">build</a></li>
@@ -126,6 +130,7 @@
       <li><a class="" href="widgets/State/didUpdateConfig.html">didUpdateConfig</a></li>
       <li><a class="" href="widgets/State/dispose.html">dispose</a></li>
       <li><a class="" href="widgets/State/initState.html">initState</a></li>
+      <li><a class="" href="widgets/State/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="widgets/State/setState.html">setState</a></li>
       <li><a class="" href="widgets/State/toString.html">toString</a></li>
     </ol>
@@ -134,27 +139,17 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">void</span>
-            <span class="name ">didUpdateConfig</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="didUpdateConfig-param-oldConfig"><span class="type-annotation">T</span> <span class="parameter-name">oldConfig</span></span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Called whenever the configuration changes. Override this method to update
-additional state when the config field's value is changed.</p>
+  /// additional state when the config field's value is changed.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Called whenever the configuration changes. Override this method to update
-/// additional state when the config field&apos;s value is changed.
-void didUpdateConfig(T oldConfig) { }</code></pre>
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">void didUpdateConfig(T oldConfig) { }</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -167,10 +162,10 @@ void didUpdateConfig(T oldConfig) { }</code></pre>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -191,7 +186,7 @@ void didUpdateConfig(T oldConfig) { }</code></pre>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

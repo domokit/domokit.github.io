@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/Rect-class.html">Rect</a></li>
                   <li class="self-crumb">shift</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/Rect-class.html">Rect</a></li>
               <li class="self-crumb">shift</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/Rect-class.html">Rect</a></h5>
 
@@ -122,8 +122,10 @@
       <li><a class="" href="rendering/Rect/center.html">center</a></li>
       <li><a class="" href="rendering/Rect/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/Rect/height.html">height</a></li>
+      <li><a class="" href="rendering/Rect/isEmpty.html">isEmpty</a></li>
       <li><a class="" href="rendering/Rect/left.html">left</a></li>
       <li><a class="" href="rendering/Rect/right.html">right</a></li>
+      <li><a class="" href="rendering/Rect/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/Rect/shortestSide.html">shortestSide</a></li>
       <li><a class="" href="rendering/Rect/size.html">size</a></li>
       <li><a class="" href="rendering/Rect/top.html">top</a></li>
@@ -144,6 +146,7 @@
       <li><a class="" href="rendering/Rect/deflate.html">deflate</a></li>
       <li><a class="" href="rendering/Rect/inflate.html">inflate</a></li>
       <li><a class="" href="rendering/Rect/intersect.html">intersect</a></li>
+      <li><a class="" href="rendering/Rect/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/Rect/shift.html">shift</a></li>
       <li><a class="" href="rendering/Rect/toString.html">toString</a></li>
     </ol>
@@ -152,25 +155,16 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype"><a class="" href="rendering/Rect-class.html">Rect</a></span>
-            <span class="name ">shift</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="shift-param-offset"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Returns a new rectangle translated by the given offset</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Returns a new rectangle translated by the given offset
-Rect shift(Offset offset) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">Rect shift(Offset offset) {
   return new Rect.fromLTRB(left + offset.dx, top + offset.dy, right + offset.dx, bottom + offset.dy);
 }</code></pre>
     </section>
@@ -185,10 +179,10 @@ Rect shift(Offset offset) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -209,7 +203,7 @@ Rect shift(Offset offset) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

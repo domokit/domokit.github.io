@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="animation/animation-library.html">animation</a></li>
                   <li class="self-crumb">PerformanceView</li>
               </ol>
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="animation/animation-library.html">animation</a></li>
               <li class="self-crumb">PerformanceView</li>
           </ol>
@@ -89,7 +89,9 @@
               </h1>
           </div>
           <ul class="subnav">
+              <li><a href="animation/PerformanceView-class.html#instance-properties">Properties</a></li>
               <li><a href="animation/PerformanceView-class.html#constructors">Constructors</a></li>
+              <li><a href="animation/PerformanceView-class.html#operators">Operators</a></li>
               <li><a href="animation/PerformanceView-class.html#instance-methods">Methods</a></li>
           </ul>
         </div> <!-- /col -->
@@ -102,7 +104,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="animation/animation-library.html">animation</a></h5>
 
     <ol>
@@ -180,13 +182,94 @@
 read-only view of the underlying performance. This is used by classes that
 want to watch a performance but should not be able to change the
 performance's state.</p>
+
     
+    </section>
+
+    <section>
+        <dl class="dl-horizontal">
+
+
+
+          <dt>Implemented by</dt>
+          <dd><ul class="comma-separated clazz-relationships">
+              <li><a class="" href="animation/Performance-class.html">Performance</a></li>
+          </ul></dd>
+
+        </dl>
     </section>
 
 
 
 
+    <section class="summary offset-anchor" id="instance-properties">
+        <h2>Properties</h2>
 
+        <dl class="properties">
+            <dt id="hashCode" class="property">
+                <span class="name"><a class="" href="animation/PerformanceView/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <p>Get a hash code for this object.<a href="animation/PerformanceView/hashCode.html">&hellip;</a>
+</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+            <dt id="isCompleted" class="property">
+                <span class="name"><a class="" href="animation/PerformanceView/isCompleted.html">isCompleted</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <p>Whether this animation is stopped at the end</p>
+                <div class="features">
+        read-only
+    </div>
+</dd>
+            <dt id="isDismissed" class="property">
+                <span class="name"><a class="" href="animation/PerformanceView/isDismissed.html">isDismissed</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <p>Whether this animation is stopped at the beginning</p>
+                <div class="features">
+        read-only
+    </div>
+</dd>
+            <dt id="progress" class="property">
+                <span class="name"><a class="" href="animation/PerformanceView/progress.html">progress</a></span>
+                <span class="signature">&#8594; double</span>
+            </dt>
+            <dd>
+                <p>The current progress of this animation (a value from 0.0 to 1.0).
+/// This is the value that is used to update any variables when using updateVariable().</p>
+                <div class="features">
+        read-only
+    </div>
+</dd>
+            <dt id="runtimeType" class="property">
+                <span class="name"><a class="" href="animation/PerformanceView/runtimeType.html">runtimeType</a></span>
+                <span class="signature">&#8594; Type</span>
+            </dt>
+            <dd>
+                <p>A representation of the runtime type of the object.</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+            <dt id="status" class="property">
+                <span class="name"><a class="" href="animation/PerformanceView/status.html">status</a></span>
+                <span class="signature">&#8594; <a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></span>
+            </dt>
+            <dd>
+                <p>The current status of this animation</p>
+                <div class="features">
+        read-only
+    </div>
+</dd>
+        </dl>
+    </section>
 
     <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
@@ -197,18 +280,33 @@ performance's state.</p>
             </dt>
             <dd>
                 <p></p>
+                <div class="constructor-modifier features">const</div>
             </dd>
         </dl>
       </section>
 
+      <section class="summary offset-anchor" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <span class="name "><a class="" href="animation/PerformanceView/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      <span class="returntype parameter">&#8594; bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.<a href="animation/PerformanceView/operator_equals.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
+          </dl>
+      </section>
 
       <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="addListener" class="callable">
                   <span class="name "><a class="" href="animation/PerformanceView/addListener.html">addListener</a></span><span class="signature">(<wbr><span class="parameter" id="addListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
@@ -216,17 +314,29 @@ performance's state.</p>
               </dd>
               <dt id="addStatusListener" class="callable">
                   <span class="name "><a class="" href="animation/PerformanceView/addStatusListener.html">addStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="addStatusListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>(<span class="parameter" id="PerformanceStatusListener-param-status"><span class="type-annotation"><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></span> <span class="parameter-name">status</span></span>)</span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
                   <p>Calls listener every time the status of the performance changes</p>
               </dd>
+              <dt id="noSuchMethod" class="callable">
+                  <span class="name "><a class="" href="animation/PerformanceView/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                      <span class="returntype parameter">&#8594; dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
+If <code>noSuchMethod</code> returns a value, that value becomes the result of
+the original invocation.<a href="animation/PerformanceView/noSuchMethod.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
               <dt id="removeListener" class="callable">
                   <span class="name "><a class="" href="animation/PerformanceView/removeListener.html">removeListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
@@ -234,17 +344,24 @@ performance's state.</p>
               </dd>
               <dt id="removeStatusListener" class="callable">
                   <span class="name "><a class="" href="animation/PerformanceView/removeStatusListener.html">removeStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeStatusListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>(<span class="parameter" id="PerformanceStatusListener-param-status"><span class="type-annotation"><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></span> <span class="parameter-name">status</span></span>)</span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
                   <p>Stops calling the listener every time the status of the performance changes</p>
               </dd>
+              <dt id="toString" class="callable">
+                  <span class="name "><a class="" href="animation/PerformanceView/toString.html">toString</a></span><span class="signature">(<wbr>)
+                      <span class="returntype parameter">&#8594; String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+                  <div class="features">inherited</div>
+              </dd>
               <dt id="updateVariable" class="callable">
                   <span class="name "><a class="" href="animation/PerformanceView/updateVariable.html">updateVariable</a></span><span class="signature">(<wbr><span class="parameter" id="updateVariable-param-variable"><span class="type-annotation"><a class="" href="animation/Animatable-class.html">Animatable</a></span> <span class="parameter-name">variable</span></span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
@@ -261,16 +378,27 @@ performance's state.</p>
     
     
     
+      <li class="section-title"><a href="animation/PerformanceView-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/PerformanceView/hashCode.html">hashCode</a></li>
+      <li><a class="" href="animation/PerformanceView/isCompleted.html">isCompleted</a></li>
+      <li><a class="" href="animation/PerformanceView/isDismissed.html">isDismissed</a></li>
+      <li><a class="" href="animation/PerformanceView/progress.html">progress</a></li>
+      <li><a class="" href="animation/PerformanceView/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="animation/PerformanceView/status.html">status</a></li>
     
       <li class="section-title"><a href="animation/PerformanceView-class.html#constructors">Constructors</a></li>
       <li><a href="animation/PerformanceView/PerformanceView.html">PerformanceView</a></li>
     
+      <li class="section-title"><a href="animation/PerformanceView-class.html#operators">Operators</a></li>
+      <li><a class="" href="animation/PerformanceView/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="animation/PerformanceView-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="animation/PerformanceView/addListener.html">addListener</a></li>
       <li><a class="" href="animation/PerformanceView/addStatusListener.html">addStatusListener</a></li>
+      <li><a class="" href="animation/PerformanceView/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="animation/PerformanceView/removeListener.html">removeListener</a></li>
       <li><a class="" href="animation/PerformanceView/removeStatusListener.html">removeStatusListener</a></li>
+      <li><a class="" href="animation/PerformanceView/toString.html">toString</a></li>
       <li><a class="" href="animation/PerformanceView/updateVariable.html">updateVariable</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
@@ -283,10 +411,10 @@ performance's state.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -307,7 +435,7 @@ performance's state.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

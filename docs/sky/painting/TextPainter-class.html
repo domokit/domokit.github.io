@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="painting/painting-library.html">painting</a></li>
                   <li class="self-crumb">TextPainter</li>
               </ol>
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="painting/painting-library.html">painting</a></li>
               <li class="self-crumb">TextPainter</li>
           </ol>
@@ -91,6 +91,7 @@
           <ul class="subnav">
               <li><a href="painting/TextPainter-class.html#instance-properties">Properties</a></li>
               <li><a href="painting/TextPainter-class.html#constructors">Constructors</a></li>
+              <li><a href="painting/TextPainter-class.html#operators">Operators</a></li>
               <li><a href="painting/TextPainter-class.html#instance-methods">Methods</a></li>
           </ul>
         </div> <!-- /col -->
@@ -103,7 +104,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="painting/painting-library.html">painting</a></h5>
 
     <ol>
@@ -139,13 +140,20 @@
       <li><a class="" href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
       <li><a class="" href="painting/BoxPainter-class.html">BoxPainter</a></li>
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
+      <li><a class="" href="painting/Color-class.html">Color</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a class="" href="painting/Offset-class.html">Offset</a></li>
+      <li><a class="" href="painting/Paint-class.html">Paint</a></li>
+      <li><a class="" href="painting/Path-class.html">Path</a></li>
       <li><a class="" href="painting/PlainTextSpan-class.html">PlainTextSpan</a></li>
+      <li><a class="" href="painting/Point-class.html">Point</a></li>
       <li><a class="" href="painting/RadialGradient-class.html">RadialGradient</a></li>
-      <li><a class="" href="painting/RadialReaction-class.html">RadialReaction</a></li>
+      <li><a class="" href="painting/Rect-class.html">Rect</a></li>
       <li><a class="" href="painting/ShadowDrawLooperBuilder-class.html">ShadowDrawLooperBuilder</a></li>
+      <li><a class="" href="painting/Size-class.html">Size</a></li>
       <li><a class="" href="painting/StyledTextSpan-class.html">StyledTextSpan</a></li>
       <li><a class="" href="painting/TextPainter-class.html">TextPainter</a></li>
       <li><a class="" href="painting/TextSpan-class.html">TextSpan</a></li>
@@ -158,7 +166,7 @@
 
     <section class="desc markdown">
     
-          <p>An object that paints a <a class="" href="painting/TextSpan-class.html">TextSpan</a> into a canvas</p>
+          <p class="no-docs">Not documented.</p>
     
     </section>
 
@@ -170,86 +178,109 @@
         <h2>Properties</h2>
 
         <dl class="properties">
+            <dt id="hashCode" class="property">
+                <span class="name"><a class="" href="painting/TextPainter/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <p>Get a hash code for this object.<a href="painting/TextPainter/hashCode.html">&hellip;</a>
+</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
             <dt id="height" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/height.html">height</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The height required to paint the text completely within its bounds</p>
                 <div class="features">
         read-only
     </div>
-    <p>The height required to paint the text completely within its bounds</p>
-            </dd>
+</dd>
             <dt id="maxContentWidth" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/maxContentWidth.html">maxContentWidth</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The width at which increasing the width of the text no longer decreases
+/// the height</p>
                 <div class="features">
         read-only
     </div>
-    <p>The width at which increasing the width of the text no longer decreases the height</p>
-            </dd>
+</dd>
             <dt id="maxHeight" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/maxHeight.html">maxHeight</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The maximum height at which to layout the text</p>
                 <div class="features">
         read / write
     </div>
-    <p>The maximum height at which to layout the text</p>
-            </dd>
+</dd>
             <dt id="maxWidth" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/maxWidth.html">maxWidth</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The maximum width at which to layout the text</p>
                 <div class="features">
         read / write
     </div>
-    <p>The maximum width at which to layout the text</p>
-            </dd>
+</dd>
             <dt id="minContentWidth" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/minContentWidth.html">minContentWidth</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The width at which decreasing the width of the text would prevent it from
+/// painting itself completely within its bounds</p>
                 <div class="features">
         read-only
     </div>
-    <p>The width at which decreasing the width of the text would prevent it from painting itself completely within its bounds</p>
-            </dd>
+</dd>
             <dt id="minHeight" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/minHeight.html">minHeight</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The minimum height at which to layout the text</p>
                 <div class="features">
         read / write
     </div>
-    <p>The minimum height at which to layout the text</p>
-            </dd>
+</dd>
             <dt id="minWidth" class="property">
                 <span class="name"><a class="" href="painting/TextPainter/minWidth.html">minWidth</a></span>
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
+                <p>The minimum width at which to layout the text</p>
                 <div class="features">
         read / write
     </div>
-    <p>The minimum width at which to layout the text</p>
-            </dd>
-            <dt id="text" class="property">
-                <span class="name"><a class="" href="painting/TextPainter/text.html">text</a></span>
-                <span class="signature">&#8594; <a class="" href="rendering/TextSpan-class.html">TextSpan</a></span>
+</dd>
+            <dt id="runtimeType" class="property">
+                <span class="name"><a class="" href="painting/TextPainter/runtimeType.html">runtimeType</a></span>
+                <span class="signature">&#8594; Type</span>
             </dt>
             <dd>
+                <p>A representation of the runtime type of the object.</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+            <dt id="text" class="property">
+                <span class="name"><a class="" href="painting/TextPainter/text.html">text</a></span>
+                <span class="signature">&#8594; <a class="" href="material/TextSpan-class.html">TextSpan</a></span>
+            </dt>
+            <dd>
+                <p>The (potentially styled) text to paint</p>
                 <div class="features">
         read / write
     </div>
-    <p>The (potentially styled) text to paint</p>
-            </dd>
+</dd>
         </dl>
     </section>
 
@@ -258,7 +289,7 @@
 
         <dl class="constructor-summary-list">
             <dt id="TextPainter" class="callable">
-                <span class="name"><a class="" href="painting/TextPainter/TextPainter.html">TextPainter</a></span><span class="signature">(<span class="parameter" id="-param-text"><span class="type-annotation"><a class="" href="rendering/TextSpan-class.html">TextSpan</a></span> <span class="parameter-name">text</span></span>)</span>
+                <span class="name"><a class="" href="painting/TextPainter/TextPainter.html">TextPainter</a></span><span class="signature">(<span class="parameter" id="-param-text"><span class="type-annotation"><a class="" href="material/TextSpan-class.html">TextSpan</a></span> <span class="parameter-name">text</span></span>)</span>
             </dt>
             <dd>
                 <p></p>
@@ -266,36 +297,72 @@
         </dl>
       </section>
 
+      <section class="summary offset-anchor" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <span class="name "><a class="" href="painting/TextPainter/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      <span class="returntype parameter">&#8594; bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.<a href="painting/TextPainter/operator_equals.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
+          </dl>
+      </section>
 
       <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="computeDistanceToActualBaseline" class="callable">
-                  <span class="name "><a class="" href="painting/TextPainter/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a class="" href="painting/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
-                      &#8594;
-                      <span class="returntype">double</span>
+                  <span class="name "><a class="" href="painting/TextPainter/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a class="" href="material/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+                      <span class="returntype parameter">&#8594; double</span>
                   </span>
               </dt>
               <dd>
-                  <p>The distance from the top of the text to the first baseline of the given type</p>
+                  <p>The distance from the top of the text to the first baseline of the given
+  /// type</p>
               </dd>
               <dt id="layout" class="callable">
                   <span class="name "><a class="" href="painting/TextPainter/layout.html">layout</a></span><span class="signature">(<wbr>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
                   <p>Compute the visual position of the glyphs for painting the text</p>
               </dd>
+              <dt id="noSuchMethod" class="callable">
+                  <span class="name "><a class="" href="painting/TextPainter/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                      <span class="returntype parameter">&#8594; dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
+If <code>noSuchMethod</code> returns a value, that value becomes the result of
+the original invocation.<a href="painting/TextPainter/noSuchMethod.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
               <dt id="paint" class="callable">
-                  <span class="name "><a class="" href="painting/TextPainter/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a class="" href="rendering/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                  <span class="name "><a class="" href="painting/TextPainter/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-canvas"><span class="type-annotation"><a class="" href="material/Canvas-class.html">Canvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
                   <p>Paint the text onto the given canvas at the given offset</p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <span class="name "><a class="" href="painting/TextPainter/toString.html">toString</a></span><span class="signature">(<wbr>)
+                      <span class="returntype parameter">&#8594; String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+                  <div class="features">inherited</div>
               </dd>
           </dl>
       </section>
@@ -309,6 +376,7 @@
     
     
       <li class="section-title"><a href="painting/TextPainter-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="painting/TextPainter/hashCode.html">hashCode</a></li>
       <li><a class="" href="painting/TextPainter/height.html">height</a></li>
       <li><a class="" href="painting/TextPainter/maxContentWidth.html">maxContentWidth</a></li>
       <li><a class="" href="painting/TextPainter/maxHeight.html">maxHeight</a></li>
@@ -316,16 +384,21 @@
       <li><a class="" href="painting/TextPainter/minContentWidth.html">minContentWidth</a></li>
       <li><a class="" href="painting/TextPainter/minHeight.html">minHeight</a></li>
       <li><a class="" href="painting/TextPainter/minWidth.html">minWidth</a></li>
+      <li><a class="" href="painting/TextPainter/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="painting/TextPainter/text.html">text</a></li>
     
       <li class="section-title"><a href="painting/TextPainter-class.html#constructors">Constructors</a></li>
       <li><a href="painting/TextPainter/TextPainter.html">TextPainter</a></li>
     
+      <li class="section-title"><a href="painting/TextPainter-class.html#operators">Operators</a></li>
+      <li><a class="" href="painting/TextPainter/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="painting/TextPainter-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="painting/TextPainter/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
       <li><a class="" href="painting/TextPainter/layout.html">layout</a></li>
+      <li><a class="" href="painting/TextPainter/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="painting/TextPainter/paint.html">paint</a></li>
+      <li><a class="" href="painting/TextPainter/toString.html">toString</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
 
@@ -337,10 +410,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -361,7 +434,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

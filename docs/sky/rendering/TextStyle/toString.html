@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/TextStyle-class.html">TextStyle</a></li>
                   <li class="self-crumb">toString</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/TextStyle-class.html">TextStyle</a></li>
               <li class="self-crumb">toString</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/TextStyle-class.html">TextStyle</a></h5>
 
@@ -122,8 +122,11 @@
       <li><a class="" href="rendering/TextStyle/fontWeight.html">fontWeight</a></li>
       <li><a class="" href="rendering/TextStyle/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/TextStyle/height.html">height</a></li>
+      <li><a class="" href="rendering/TextStyle/paragraphStyle.html">paragraphStyle</a></li>
+      <li><a class="" href="rendering/TextStyle/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/TextStyle/textAlign.html">textAlign</a></li>
       <li><a class="" href="rendering/TextStyle/textBaseline.html">textBaseline</a></li>
+      <li><a class="" href="rendering/TextStyle/textStyle.html">textStyle</a></li>
     
       <li class="section-title"><a href="rendering/TextStyle-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/TextStyle/TextStyle.html">TextStyle</a></li>
@@ -136,6 +139,7 @@
       <li><a class="" href="rendering/TextStyle/applyToCSSStyle.html">applyToCSSStyle</a></li>
       <li><a class="" href="rendering/TextStyle/copyWith.html">copyWith</a></li>
       <li><a class="" href="rendering/TextStyle/merge.html">merge</a></li>
+      <li><a class="" href="rendering/TextStyle/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/TextStyle/toString.html">toString</a></li>
     </ol>
 
@@ -143,48 +147,146 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">String</span>
-            <span class="name ">toString</span>(
-            <br>
-            <div class="parameters">
-                [<span class="parameter" id="toString-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span> = <span class="default-value">''</span></span>]
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Returns a string representation of this object.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
+      <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">String toString([String prefix = &apos;&apos;]) {
-  List&lt;String&gt; result = [];
+  List&lt;String&gt; result = &lt;String&gt;[];
   if (color != null)
     result.add(&apos;${prefix}color: $color&apos;);
-  // TODO(hansmuller): escape the fontFamily string.
   if (fontFamily != null)
-    result.add(&apos;${prefix}fontFamily: &quot;${fontFamily}&quot;&apos;);
+    result.add(&apos;${prefix}family: &quot;$fontFamily&quot;&apos;);
   if (fontSize != null)
-    result.add(&apos;${prefix}fontSize: $fontSize&apos;);
-  if (fontWeight != null)
-    result.add(&apos;${prefix}fontWeight: $fontWeight&apos;);
-  if (fontStyle != null)
-    result.add(&apos;${prefix}fontStyle: $fontStyle&apos;);
-  if (textAlign != null)
-    result.add(&apos;${prefix}textAlign: $textAlign&apos;);
-  if (textBaseline != null)
-    result.add(&apos;${prefix}textBaseline: $textBaseline&apos;);
-  if (decoration != null)
-    result.add(&apos;${prefix}decoration: $decoration&apos;);
-  if (decorationColor != null)
-    result.add(&apos;${prefix}decorationColor: $decorationColor&apos;);
-  if (decorationStyle != null)
-    result.add(&apos;${prefix}decorationStyle: $decorationStyle&apos;);
+    result.add(&apos;${prefix}size: $fontSize&apos;);
+  if (fontWeight != null) {
+    switch (fontWeight) {
+      case FontWeight.w100:
+        result.add(&apos;${prefix}weight: 100&apos;);
+        break;
+      case FontWeight.w200:
+        result.add(&apos;${prefix}weight: 200&apos;);
+        break;
+      case FontWeight.w300:
+        result.add(&apos;${prefix}weight: 300&apos;);
+        break;
+      case FontWeight.w400:
+        result.add(&apos;${prefix}weight: 400&apos;);
+        break;
+      case FontWeight.w500:
+        result.add(&apos;${prefix}weight: 500&apos;);
+        break;
+      case FontWeight.w600:
+        result.add(&apos;${prefix}weight: 600&apos;);
+        break;
+      case FontWeight.w700:
+        result.add(&apos;${prefix}weight: 700&apos;);
+        break;
+      case FontWeight.w800:
+        result.add(&apos;${prefix}weight: 800&apos;);
+        break;
+      case FontWeight.w900:
+        result.add(&apos;${prefix}weight: 900&apos;);
+        break;
+    }
+  }
+  if (fontStyle != null) {
+    switch (fontStyle) {
+      case FontStyle.normal:
+        result.add(&apos;${prefix}style: normal&apos;);
+        break;
+      case FontStyle.italic:
+        result.add(&apos;${prefix}style: italic&apos;);
+        break;
+    }
+  }
+  if (textAlign != null) {
+    switch (textAlign) {
+      case TextAlign.left:
+        result.add(&apos;${prefix}align: left&apos;);
+        break;
+      case TextAlign.right:
+        result.add(&apos;${prefix}align: right&apos;);
+        break;
+      case TextAlign.center:
+        result.add(&apos;${prefix}align: center&apos;);
+        break;
+    }
+  }
+  if (textBaseline != null) {
+    switch (textBaseline) {
+      case TextBaseline.alphabetic:
+        result.add(&apos;${prefix}baseline: alphabetic&apos;);
+        break;
+      case TextBaseline.ideographic:
+        result.add(&apos;${prefix}baseline: ideographic&apos;);
+        break;
+    }
+  }
+  if (decoration != null || decorationColor != null || decorationStyle != null) {
+    String decorationDescription = &apos;${prefix}decoration: &apos;;
+    bool haveDecorationDescription = false;
+    if (decorationStyle != null) {
+      switch (decorationStyle) {
+        case TextDecorationStyle.solid:
+          decorationDescription += &apos;solid&apos;;
+          break;
+        case TextDecorationStyle.double:
+          decorationDescription += &apos;double&apos;;
+          break;
+        case TextDecorationStyle.dotted:
+          decorationDescription += &apos;dotted&apos;;
+          break;
+        case TextDecorationStyle.dashed:
+          decorationDescription += &apos;dashed&apos;;
+          break;
+        case TextDecorationStyle.wavy:
+          decorationDescription += &apos;wavy&apos;;
+          break;
+      }
+      haveDecorationDescription = true;
+    }
+    if (decorationColor != null) {
+      if (haveDecorationDescription)
+        decorationDescription += &apos; &apos;;
+      decorationDescription += &apos;$decorationColor&apos;;
+      haveDecorationDescription = true;
+    }
+    if (decoration != null) {
+      if (haveDecorationDescription)
+        decorationDescription += &apos; &apos;;
+      bool multipleDecorations = false;
+      for (TextDecoration value in decoration) {
+        if (multipleDecorations)
+          decorationDescription += &apos;+&apos;;
+        switch (value) {
+          case TextDecoration.none:
+            decorationDescription += &apos;none&apos;;
+            break;
+          case TextDecoration.underline:
+            decorationDescription += &apos;underline&apos;;
+            break;
+          case TextDecoration.overline:
+            decorationDescription += &apos;overline&apos;;
+            break;
+          case TextDecoration.lineThrough:
+            decorationDescription += &apos;line-through&apos;;
+            break;
+        }
+        multipleDecorations = true;
+      }
+      haveDecorationDescription = true;
+    }
+    assert(haveDecorationDescription);
+    result.add(decorationDescription);
+  }
   if (result.isEmpty)
-    return &apos;${prefix}&lt;no style specified&gt;&apos;;
+    return &apos;$prefix&lt;no style specified&gt;&apos;;
   return result.join(&apos;\n&apos;);
 }</code></pre>
     </section>
@@ -199,10 +301,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -223,7 +325,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

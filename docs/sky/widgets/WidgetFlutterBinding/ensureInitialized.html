@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="widgets/widgets-library.html">widgets</a></li>
                   <li><a href="widgets/WidgetFlutterBinding-class.html">WidgetFlutterBinding</a></li>
                   <li class="self-crumb">ensureInitialized</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="widgets/widgets-library.html">widgets</a></li>
               <li><a href="widgets/WidgetFlutterBinding-class.html">WidgetFlutterBinding</a></li>
               <li class="self-crumb">ensureInitialized</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="widgets/widgets-library.html">widgets</a></h5>
     <h5><a href="widgets/WidgetFlutterBinding-class.html">WidgetFlutterBinding</a></h5>
 
@@ -116,13 +116,17 @@
       <li><a class="" href="widgets/WidgetFlutterBinding/ensureInitialized.html">ensureInitialized</a></li>
     
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/FlutterBinding/pointerRouter.html">pointerRouter</a></li>
       <li><a class="" href="rendering/FlutterBinding/renderView.html">renderView</a></li>
       <li><a class="" href="widgets/WidgetFlutterBinding/renderViewElement.html">renderViewElement</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/WidgetFlutterBinding/WidgetFlutterBinding.html">WidgetFlutterBinding</a></li>
     
+      <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#operators">Operators</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="widgets/WidgetFlutterBinding-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/FlutterBinding/addEventListener.html">addEventListener</a></li>
@@ -132,29 +136,26 @@
       <li><a class="" href="rendering/FlutterBinding/dispatchEvent.html">dispatchEvent</a></li>
       <li><a class="" href="rendering/FlutterBinding/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/FlutterBinding/hitTest.html">hitTest</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/FlutterBinding/removeEventListener.html">removeEventListener</a></li>
       <li><a class="" href="widgets/WidgetFlutterBinding/scheduleBuildFor.html">scheduleBuildFor</a></li>
+      <li><a class="" href="widgets/WidgetFlutterBinding/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">void</span>
-            <span class="name ">ensureInitialized</span>(
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Ensures that there is a FlutterBinding object instantiated.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Ensures that there is a FlutterBinding object instantiated.
-static void ensureInitialized() {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">static void ensureInitialized() {
   if (FlutterBinding.instance == null)
     new WidgetFlutterBinding();
   assert(FlutterBinding.instance is WidgetFlutterBinding);
@@ -171,10 +172,10 @@ static void ensureInitialized() {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -195,7 +196,7 @@ static void ensureInitialized() {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

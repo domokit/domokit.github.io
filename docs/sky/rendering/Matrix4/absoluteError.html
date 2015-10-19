@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
                   <li class="self-crumb">absoluteError</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
               <li class="self-crumb">absoluteError</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/Matrix4-class.html">Matrix4</a></h5>
 
@@ -118,11 +118,13 @@
       <li class="section-title"><a href="rendering/Matrix4-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="rendering/Matrix4/dimension.html">dimension</a></li>
       <li><a class="" href="rendering/Matrix4/forward.html">forward</a></li>
+      <li><a class="" href="rendering/Matrix4/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/Matrix4/right.html">right</a></li>
       <li><a class="" href="rendering/Matrix4/row0.html">row0</a></li>
       <li><a class="" href="rendering/Matrix4/row1.html">row1</a></li>
       <li><a class="" href="rendering/Matrix4/row2.html">row2</a></li>
       <li><a class="" href="rendering/Matrix4/row3.html">row3</a></li>
+      <li><a class="" href="rendering/Matrix4/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/Matrix4/storage.html">storage</a></li>
       <li><a class="" href="rendering/Matrix4/up.html">up</a></li>
     
@@ -147,6 +149,7 @@
       <li><a class="" href="rendering/Matrix4/operator_multiply.html">operator *</a></li>
       <li><a class="" href="rendering/Matrix4/operator_plus.html">operator +</a></li>
       <li><a class="" href="rendering/Matrix4/operator_minus.html">operator -</a></li>
+      <li><a class="" href="rendering/Matrix4/operator_equals.html">operator ==</a></li>
       <li><a class="" href="rendering/Matrix4/operator_unary_minus.html">operator unary-</a></li>
       <li><a class="" href="rendering/Matrix4/operator_get.html">operator []</a></li>
       <li><a class="" href="rendering/Matrix4/operator_put.html">operator []=</a></li>
@@ -176,6 +179,7 @@
       <li><a class="" href="rendering/Matrix4/multiply.html">multiply</a></li>
       <li><a class="" href="rendering/Matrix4/multiplyTranspose.html">multiplyTranspose</a></li>
       <li><a class="" href="rendering/Matrix4/negate.html">negate</a></li>
+      <li><a class="" href="rendering/Matrix4/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/Matrix4/relativeError.html">relativeError</a></li>
       <li><a class="" href="rendering/Matrix4/rotate.html">rotate</a></li>
       <li><a class="" href="rendering/Matrix4/rotate3.html">rotate3</a></li>
@@ -221,25 +225,16 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">double</span>
-            <span class="name ">absoluteError</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="absoluteError-param-correct"><span class="type-annotation"><a class="" href="rendering/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">correct</span></span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Returns absolute error between <code>this</code> and <code>correct</code></p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Returns absolute error between [this] and [correct]
-double absoluteError(Matrix4 correct) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">double absoluteError(Matrix4 correct) {
   double this_norm = infinityNorm();
   double correct_norm = correct.infinityNorm();
   double diff_norm = (this_norm - correct_norm).abs();
@@ -257,10 +252,10 @@ double absoluteError(Matrix4 correct) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -281,7 +276,7 @@ double absoluteError(Matrix4 correct) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

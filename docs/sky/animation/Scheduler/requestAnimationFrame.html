@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="animation/animation-library.html">animation</a></li>
                   <li><a href="animation/Scheduler-class.html">Scheduler</a></li>
                   <li class="self-crumb">requestAnimationFrame</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="animation/animation-library.html">animation</a></li>
               <li><a href="animation/Scheduler-class.html">Scheduler</a></li>
               <li class="self-crumb">requestAnimationFrame</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="animation/animation-library.html">animation</a></h5>
     <h5><a href="animation/Scheduler-class.html">Scheduler</a></h5>
 
@@ -111,58 +111,48 @@
     
     
     
+      <li class="section-title"><a href="animation/Scheduler-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/Scheduler/hashCode.html">hashCode</a></li>
+      <li><a class="" href="animation/Scheduler/runtimeType.html">runtimeType</a></li>
     
     
+      <li class="section-title"><a href="animation/Scheduler-class.html#operators">Operators</a></li>
+      <li><a class="" href="animation/Scheduler/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="animation/Scheduler-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="animation/Scheduler/addPersistentFrameCallback.html">addPersistentFrameCallback</a></li>
       <li><a class="" href="animation/Scheduler/beginFrame.html">beginFrame</a></li>
       <li><a class="" href="animation/Scheduler/cancelAnimationFrame.html">cancelAnimationFrame</a></li>
       <li><a class="" href="animation/Scheduler/ensureVisualUpdate.html">ensureVisualUpdate</a></li>
+      <li><a class="" href="animation/Scheduler/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="animation/Scheduler/requestAnimationFrame.html">requestAnimationFrame</a></li>
+      <li><a class="" href="animation/Scheduler/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">int</span>
-            <span class="name ">requestAnimationFrame</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="requestAnimationFrame-param-callback"><span class="type-annotation">void</span> <span class="parameter-name">callback</span>(<span class="parameter" id="SchedulerCallback-param-timeStamp"><span class="type-annotation">Duration</span> <span class="parameter-name">timeStamp</span></span>)</span>
-            </div>
-            )    </section>
-
     <section class="desc markdown">
     
-          <p>Schedule a callback for the next frame.</p>
-<p>The callback will be run prior to flushing the main rendering pipeline.
-Typically, requestAnimationFrame is used to throttle writes into the
-rendering pipeline until the system is ready to accept a new frame. For
-example, if you wanted to tick through an animation, you should use
-requestAnimation frame to determine when to tick the animation. The callback
-is passed a timeStamp that you can use to determine how far along the
-timeline to advance your animation.</p>
-<p>Returns an id that can be used to unschedule this callback.</p>
+          <p>Schedule a callback for the next frame.
+  ///
+  /// The callback will be run prior to flushing the main rendering pipeline.
+  /// Typically, requestAnimationFrame is used to throttle writes into the
+  /// rendering pipeline until the system is ready to accept a new frame. For
+  /// example, if you wanted to tick through an animation, you should use
+  /// requestAnimation frame to determine when to tick the animation. The callback
+  /// is passed a timeStamp that you can use to determine how far along the
+  /// timeline to advance your animation.
+  ///
+  /// Returns an id that can be used to unschedule this callback.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Schedule a callback for the next frame.
-///
-/// The callback will be run prior to flushing the main rendering pipeline.
-/// Typically, requestAnimationFrame is used to throttle writes into the
-/// rendering pipeline until the system is ready to accept a new frame. For
-/// example, if you wanted to tick through an animation, you should use
-/// requestAnimation frame to determine when to tick the animation. The callback
-/// is passed a timeStamp that you can use to determine how far along the
-/// timeline to advance your animation.
-///
-/// Returns an id that can be used to unschedule this callback.
-int requestAnimationFrame(SchedulerCallback callback) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">int requestAnimationFrame(SchedulerCallback callback) {
   int id = _nextCallbackId++;
   _transientCallbacks[id] = callback;
   ensureVisualUpdate();
@@ -180,10 +170,10 @@ int requestAnimationFrame(SchedulerCallback callback) {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -204,7 +194,7 @@ int requestAnimationFrame(SchedulerCallback callback) {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="gestures/gestures-library.html">gestures</a></li>
                   <li><a href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
                   <li class="self-crumb">handleEvent</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="gestures/gestures-library.html">gestures</a></li>
               <li><a href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
               <li class="self-crumb">handleEvent</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="gestures/gestures-library.html">gestures</a></h5>
     <h5><a href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></h5>
 
@@ -112,14 +112,18 @@
     
     
       <li class="section-title"><a href="gestures/HorizontalDragGestureRecognizer-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="gestures/HorizontalDragGestureRecognizer/hashCode.html">hashCode</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/onEnd.html">onEnd</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/onStart.html">onStart</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/onUpdate.html">onUpdate</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/onUpdate.html">onUpdate</a></li>
+      <li><a class="" href="gestures/HorizontalDragGestureRecognizer/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="gestures/HorizontalDragGestureRecognizer-class.html#constructors">Constructors</a></li>
       <li><a href="gestures/HorizontalDragGestureRecognizer/HorizontalDragGestureRecognizer.html">HorizontalDragGestureRecognizer</a></li>
     
+      <li class="section-title"><a href="gestures/HorizontalDragGestureRecognizer-class.html#operators">Operators</a></li>
+      <li><a class="" href="gestures/HorizontalDragGestureRecognizer/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="gestures/HorizontalDragGestureRecognizer-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/acceptGesture.html">acceptGesture</a></li>
@@ -127,25 +131,18 @@
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/didStopTrackingLastPointer.html">didStopTrackingLastPointer</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/dispose.html">dispose</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="gestures/HorizontalDragGestureRecognizer/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="gestures/GestureRecognizer/rejectGesture.html">rejectGesture</a></li>
       <li><a class="" href="gestures/GestureRecognizer/resolve.html">resolve</a></li>
       <li><a class="" href="gestures/GestureRecognizer/startTrackingPointer.html">startTrackingPointer</a></li>
       <li><a class="" href="gestures/GestureRecognizer/stopTrackingIfPointerNoLongerDown.html">stopTrackingIfPointerNoLongerDown</a></li>
       <li><a class="" href="gestures/GestureRecognizer/stopTrackingPointer.html">stopTrackingPointer</a></li>
+      <li><a class="" href="gestures/HorizontalDragGestureRecognizer/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-    <section class="multi-line-signature">
-            <span class="returntype">void</span>
-            <span class="name ">handleEvent</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="handleEvent-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span></span>
-            </div>
-            )    </section>
 
     <section class="desc markdown">
     
@@ -154,8 +151,8 @@
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">void handleEvent(sky.PointerEvent event) {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">void handleEvent(PointerInputEvent event) {
   assert(_state != DragState.ready);
   if (event.type == &apos;pointermove&apos;) {
     _velocityTracker.addPosition(_eventTime(event), event.pointer, event.x, event.y);
@@ -183,10 +180,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -207,7 +204,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

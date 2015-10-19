@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
                   <li class="self-crumb">callback</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
               <li class="self-crumb">callback</li>
@@ -102,7 +102,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></h5>
 
@@ -123,6 +123,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
       <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
+      <li><a class="" href="rendering/RenderCustomPaint/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
       <li><a class="" href="rendering/RenderBox/hasSize.html">hasSize</a></li>
       <li><a class="" href="rendering/RenderObject/layer.html">layer</a></li>
@@ -132,18 +133,20 @@
       <li><a class="" href="rendering/RenderBox/paintBounds.html">paintBounds</a></li>
       <li><a class="" href="rendering/AbstractNode/parent.html">parent</a></li>
       <li><a class="" href="rendering/RenderObject/parentData.html">parentData</a></li>
+      <li><a class="" href="rendering/RenderCustomPaint/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/RenderBox/size.html">size</a></li>
       <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
     
       <li class="section-title"><a href="rendering/RenderCustomPaint-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderCustomPaint/RenderCustomPaint.html">RenderCustomPaint</a></li>
     
+      <li class="section-title"><a href="rendering/RenderCustomPaint-class.html#operators">Operators</a></li>
+      <li><a class="" href="rendering/RenderCustomPaint/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="rendering/RenderCustomPaint-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
       <li><a class="" href="rendering/RenderBox/applyPaintTransform.html">applyPaintTransform</a></li>
       <li><a class="" href="rendering/RenderCustomPaint/attach.html">attach</a></li>
-      <li><a class="" href="rendering/RenderObjectWithChildMixin/attachChildren.html">attachChildren</a></li>
       <li><a class="" href="rendering/RenderProxyBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/debugDescribeChildren.html">debugDescribeChildren</a></li>
@@ -152,8 +155,8 @@
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
-      <li><a class="" href="rendering/AbstractNode/detach.html">detach</a></li>
-      <li><a class="" href="rendering/RenderObjectWithChildMixin/detachChildren.html">detachChildren</a></li>
+      <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
+      <li><a class="" href="rendering/RenderObjectWithChildMixin/detach.html">detach</a></li>
       <li><a class="" href="rendering/RenderObject/dropChild.html">dropChild</a></li>
       <li><a class="" href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a></li>
@@ -170,6 +173,7 @@
       <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
       <li><a class="" href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
+      <li><a class="" href="rendering/RenderCustomPaint/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/RenderCustomPaint/paint.html">paint</a></li>
       <li><a class="" href="rendering/RenderProxyBox/performLayout.html">performLayout</a></li>
       <li><a class="" href="rendering/RenderBox/performResize.html">performResize</a></li>
@@ -197,9 +201,11 @@
       
       <section class="desc markdown">
 
-      <p>The callback to which this render object delegates its painting</p>
-<p>The callback must be non-null whenever the render object is attached to
-the render tree.</p>
+      <p>The callback to which this render object delegates its painting
+  ///
+  /// The callback must be non-null whenever the render object is attached to
+  /// the render tree.</p>
+
 
 </section>
 </section>
@@ -208,7 +214,7 @@ the render tree.</p>
       
       <section class="multi-line-signature">
         <span class="returntype">void</span>
-          <span class="name ">callback=</span><span class="signature">(<wbr><span class="parameter" id="callback=-param-newCallback"><span class="type-annotation">void</span> <span class="parameter-name">newCallback</span>(<span class="parameter" id="CustomPaintCallback-param-canvas"><span class="type-annotation"><a class="" href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="CustomPaintCallback-param-size"><span class="type-annotation"><a class="" href="rendering/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>)
+          <span class="name ">callback=</span><span class="signature">(<wbr><span class="parameter" id="callback=-param-newCallback"><span class="type-annotation">void</span> <span class="parameter-name">newCallback</span>(<span class="parameter" id="CustomPaintCallback-param-canvas"><span class="type-annotation"><a class="" href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="CustomPaintCallback-param-size"><span class="type-annotation"><a class="" href="material/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>)
       </section>
       
       <section class="desc markdown">
@@ -228,10 +234,10 @@ the render tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -252,7 +258,7 @@ the render tree.</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="animation/animation-library.html">animation</a></li>
                   <li><a href="animation/Scheduler-class.html">Scheduler</a></li>
                   <li class="self-crumb">ensureVisualUpdate</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="animation/animation-library.html">animation</a></li>
               <li><a href="animation/Scheduler-class.html">Scheduler</a></li>
               <li class="self-crumb">ensureVisualUpdate</li>
@@ -103,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="animation/animation-library.html">animation</a></h5>
     <h5><a href="animation/Scheduler-class.html">Scheduler</a></h5>
 
@@ -111,39 +111,41 @@
     
     
     
+      <li class="section-title"><a href="animation/Scheduler-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/Scheduler/hashCode.html">hashCode</a></li>
+      <li><a class="" href="animation/Scheduler/runtimeType.html">runtimeType</a></li>
     
     
+      <li class="section-title"><a href="animation/Scheduler-class.html#operators">Operators</a></li>
+      <li><a class="" href="animation/Scheduler/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="animation/Scheduler-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="animation/Scheduler/addPersistentFrameCallback.html">addPersistentFrameCallback</a></li>
       <li><a class="" href="animation/Scheduler/beginFrame.html">beginFrame</a></li>
       <li><a class="" href="animation/Scheduler/cancelAnimationFrame.html">cancelAnimationFrame</a></li>
       <li><a class="" href="animation/Scheduler/ensureVisualUpdate.html">ensureVisualUpdate</a></li>
+      <li><a class="" href="animation/Scheduler/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="animation/Scheduler/requestAnimationFrame.html">requestAnimationFrame</a></li>
+      <li><a class="" href="animation/Scheduler/toString.html">toString</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-            <span class="returntype">void</span>
-            <span class="name ">ensureVisualUpdate</span>(
-            )    </section>
-
     <section class="desc markdown">
     
           <p>Ensure that a frame will be produced after this function is called.</p>
+
     
     </section>
 
     <section class="summary source-code" id="source">
-      <h2>Source</h2>
-      <pre><code class="prettyprint lang-dart">/// Ensure that a frame will be produced after this function is called.
-void ensureVisualUpdate() {
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">void ensureVisualUpdate() {
   if (_haveScheduledVisualUpdate)
     return;
-  sky.view.scheduleFrame();
+  ui.view.scheduleFrame();
   _haveScheduledVisualUpdate = true;
 }</code></pre>
     </section>
@@ -158,10 +160,10 @@ void ensureVisualUpdate() {
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -182,7 +184,7 @@ void ensureVisualUpdate() {
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

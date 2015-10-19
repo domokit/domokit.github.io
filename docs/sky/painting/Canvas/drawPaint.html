@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>drawPaint method - Canvas class - painting library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="../..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the drawPaint method from the Canvas class, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">flutter</a></li>
+                  <li><a href="painting/painting-library.html">painting</a></li>
+                  <li><a href="painting/Canvas-class.html">Canvas</a></li>
+                  <li class="self-crumb">drawPaint</li>
+              </ol>
+              <div class="self-name">drawPaint</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">flutter</a></li>
+              <li><a href="painting/painting-library.html">painting</a></li>
+              <li><a href="painting/Canvas-class.html">Canvas</a></li>
+              <li class="self-crumb">drawPaint</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">method</div> drawPaint
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="painting/Canvas/drawPaint.html#source">Source</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">flutter</a></h5>
+    <h5><a href="painting/painting-library.html">painting</a></h5>
+    <h5><a href="painting/Canvas-class.html">Canvas</a></h5>
+
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="painting/Canvas-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="painting/Canvas/hashCode.html">hashCode</a></li>
+      <li><a class="" href="painting/Canvas/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="painting/Canvas-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/Canvas/Canvas.html">Canvas</a></li>
+    
+      <li class="section-title"><a href="painting/Canvas-class.html#operators">Operators</a></li>
+      <li><a class="" href="painting/Canvas/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="painting/Canvas-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="painting/Canvas/clipPath.html">clipPath</a></li>
+      <li><a class="" href="painting/Canvas/clipRect.html">clipRect</a></li>
+      <li><a class="" href="painting/Canvas/clipRRect.html">clipRRect</a></li>
+      <li><a class="" href="painting/Canvas/concat.html">concat</a></li>
+      <li><a class="" href="painting/Canvas/drawAtlas.html">drawAtlas</a></li>
+      <li><a class="" href="painting/Canvas/drawCircle.html">drawCircle</a></li>
+      <li><a class="" href="painting/Canvas/drawColor.html">drawColor</a></li>
+      <li><a class="" href="painting/Canvas/drawDrawable.html">drawDrawable</a></li>
+      <li><a class="" href="painting/Canvas/drawDRRect.html">drawDRRect</a></li>
+      <li><a class="" href="painting/Canvas/drawImage.html">drawImage</a></li>
+      <li><a class="" href="painting/Canvas/drawImageNine.html">drawImageNine</a></li>
+      <li><a class="" href="painting/Canvas/drawImageRect.html">drawImageRect</a></li>
+      <li><a class="" href="painting/Canvas/drawLine.html">drawLine</a></li>
+      <li><a class="" href="painting/Canvas/drawOval.html">drawOval</a></li>
+      <li><a class="" href="painting/Canvas/drawPaint.html">drawPaint</a></li>
+      <li><a class="" href="painting/Canvas/drawPath.html">drawPath</a></li>
+      <li><a class="" href="painting/Canvas/drawPicture.html">drawPicture</a></li>
+      <li><a class="" href="painting/Canvas/drawRect.html">drawRect</a></li>
+      <li><a class="" href="painting/Canvas/drawRRect.html">drawRRect</a></li>
+      <li><a class="" href="painting/Canvas/drawVertices.html">drawVertices</a></li>
+      <li><a class="" href="painting/Canvas/getSaveCount.html">getSaveCount</a></li>
+      <li><a class="" href="painting/Canvas/getTotalMatrix.html">getTotalMatrix</a></li>
+      <li><a class="" href="painting/Canvas/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="painting/Canvas/restore.html">restore</a></li>
+      <li><a class="" href="painting/Canvas/rotate.html">rotate</a></li>
+      <li><a class="" href="painting/Canvas/save.html">save</a></li>
+      <li><a class="" href="painting/Canvas/saveLayer.html">saveLayer</a></li>
+      <li><a class="" href="painting/Canvas/scale.html">scale</a></li>
+      <li><a class="" href="painting/Canvas/setMatrix.html">setMatrix</a></li>
+      <li><a class="" href="painting/Canvas/skew.html">skew</a></li>
+      <li><a class="" href="painting/Canvas/toString.html">toString</a></li>
+      <li><a class="" href="painting/Canvas/translate.html">translate</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">void drawPaint(Paint paint) native &quot;Canvas_drawPaint_Callback&quot;;</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  flutter 0.0.7
+                </span>
+                &bull;
+                <span class="no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.0 -->
+</body>
+
+</html>

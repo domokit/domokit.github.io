@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="gestures/gestures-library.html">gestures</a></li>
                   <li class="self-crumb">PointerRouter</li>
               </ol>
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="gestures/gestures-library.html">gestures</a></li>
               <li class="self-crumb">PointerRouter</li>
           </ol>
@@ -90,6 +90,7 @@
           </div>
           <ul class="subnav">
               <li><a href="gestures/PointerRouter-class.html#constructors">Constructors</a></li>
+              <li><a href="gestures/PointerRouter-class.html#operators">Operators</a></li>
               <li><a href="gestures/PointerRouter-class.html#instance-methods">Methods</a></li>
           </ul>
         </div> <!-- /col -->
@@ -102,7 +103,7 @@
   <div class="row">
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="gestures/gestures-library.html">gestures</a></h5>
 
     <ol>
@@ -155,8 +156,10 @@
       <li><a class="" href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
       <li><a class="" href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
+      <li><a class="" href="gestures/InputEvent-class.html">InputEvent</a></li>
       <li><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
+      <li><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></li>
       <li><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
       <li><a class="" href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></li>
@@ -171,7 +174,8 @@
 
     <section class="desc markdown">
     
-          <p>A routing table for <code>sky.PointerEvent</code> events.</p>
+          <p>A routing table for <a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a> events.</p>
+
     
     </section>
 
@@ -179,6 +183,33 @@
 
 
 
+    <section class="summary offset-anchor" id="instance-properties">
+        <h2>Properties</h2>
+
+        <dl class="properties">
+            <dt id="hashCode" class="property">
+                <span class="name"><a class="" href="gestures/PointerRouter/hashCode.html">hashCode</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <p>Get a hash code for this object.<a href="gestures/PointerRouter/hashCode.html">&hellip;</a>
+</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+            <dt id="runtimeType" class="property">
+                <span class="name"><a class="" href="gestures/PointerRouter/runtimeType.html">runtimeType</a></span>
+                <span class="signature">&#8594; Type</span>
+            </dt>
+            <dd>
+                <p>A representation of the runtime type of the object.</p>
+                <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        </dl>
+    </section>
 
     <section class="summary offset-anchor" id="constructors">
         <h2>Constructors</h2>
@@ -193,39 +224,79 @@
         </dl>
       </section>
 
+      <section class="summary offset-anchor" id="operators">
+          <h2>Operators</h2>
+          <dl class="callables">
+              <dt id="operator ==" class="callable">
+                  <span class="name "><a class="" href="gestures/PointerRouter/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                      <span class="returntype parameter">&#8594; bool</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>The equality operator.<a href="gestures/PointerRouter/operator_equals.html">&hellip;</a>
+</p>
+                  <div class="features">inherited</div>
+              </dd>
+          </dl>
+      </section>
 
       <section class="summary offset-anchor" id="instance-methods">
           <h2>Methods</h2>
           <dl class="callables">
               <dt id="addRoute" class="callable">
-                  <span class="name "><a class="" href="gestures/PointerRouter/addRoute.html">addRoute</a></span><span class="signature">(<wbr><span class="parameter" id="addRoute-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>, <span class="parameter" id="addRoute-param-route"><span class="type-annotation">void</span> <span class="parameter-name">route</span>(<span class="parameter" id="PointerRoute-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span></span>)</span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                  <span class="name "><a class="" href="gestures/PointerRouter/addRoute.html">addRoute</a></span><span class="signature">(<wbr><span class="parameter" id="addRoute-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>, <span class="parameter" id="addRoute-param-route"><span class="type-annotation">void</span> <span class="parameter-name">route</span>(<span class="parameter" id="PointerRoute-param-event"><span class="type-annotation"><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></span> <span class="parameter-name">event</span></span>)</span>)
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
-                  <p>Adds a route to the routing table<a href="gestures/PointerRouter/addRoute.html">&hellip;</a>
+                  <p>Adds a route to the routing table
+  ///
+  /// Whenever this object routes a <a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a> corresponding to
+  /// pointer, call route.</p>
+              </dd>
+              <dt id="noSuchMethod" class="callable">
+                  <span class="name "><a class="" href="gestures/PointerRouter/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                      <span class="returntype parameter">&#8594; dynamic</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
+If <code>noSuchMethod</code> returns a value, that value becomes the result of
+the original invocation.<a href="gestures/PointerRouter/noSuchMethod.html">&hellip;</a>
 </p>
+                  <div class="features">inherited</div>
               </dd>
               <dt id="removeRoute" class="callable">
-                  <span class="name "><a class="" href="gestures/PointerRouter/removeRoute.html">removeRoute</a></span><span class="signature">(<wbr><span class="parameter" id="removeRoute-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>, <span class="parameter" id="removeRoute-param-route"><span class="type-annotation">void</span> <span class="parameter-name">route</span>(<span class="parameter" id="PointerRoute-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span></span>)</span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                  <span class="name "><a class="" href="gestures/PointerRouter/removeRoute.html">removeRoute</a></span><span class="signature">(<wbr><span class="parameter" id="removeRoute-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>, <span class="parameter" id="removeRoute-param-route"><span class="type-annotation">void</span> <span class="parameter-name">route</span>(<span class="parameter" id="PointerRoute-param-event"><span class="type-annotation"><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></span> <span class="parameter-name">event</span></span>)</span>)
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
-                  <p>Removes a route from the routing table<a href="gestures/PointerRouter/removeRoute.html">&hellip;</a>
-</p>
+                  <p>Removes a route from the routing table
+  ///
+  /// No longer call route when routing a <a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a> corresponding to
+  /// pointer. Requires that this route was previously added to the router.</p>
               </dd>
               <dt id="route" class="callable">
-                  <span class="name "><a class="" href="gestures/PointerRouter/route.html">route</a></span><span class="signature">(<wbr><span class="parameter" id="route-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span></span>)
-                      &#8594;
-                      <span class="returntype">void</span>
+                  <span class="name "><a class="" href="gestures/PointerRouter/route.html">route</a></span><span class="signature">(<wbr><span class="parameter" id="route-param-event"><span class="type-annotation"><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></span> <span class="parameter-name">event</span></span>)
+                      <span class="returntype parameter">&#8594; void</span>
                   </span>
               </dt>
               <dd>
-                  <p>Call the routes registed for this pointer event.<a href="gestures/PointerRouter/route.html">&hellip;</a>
-</p>
+                  <p>Call the routes registed for this pointer event.
+  ///
+  /// Calls the routes in the order in which they were added to the route.</p>
+              </dd>
+              <dt id="toString" class="callable">
+                  <span class="name "><a class="" href="gestures/PointerRouter/toString.html">toString</a></span><span class="signature">(<wbr>)
+                      <span class="returntype parameter">&#8594; String</span>
+                  </span>
+              </dt>
+              <dd>
+                  <p>Returns a string representation of this object.</p>
+                  <div class="features">inherited</div>
               </dd>
           </dl>
       </section>
@@ -238,15 +309,22 @@
     
     
     
+      <li class="section-title"><a href="gestures/PointerRouter-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="gestures/PointerRouter/hashCode.html">hashCode</a></li>
+      <li><a class="" href="gestures/PointerRouter/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="gestures/PointerRouter-class.html#constructors">Constructors</a></li>
       <li><a href="gestures/PointerRouter/PointerRouter.html">PointerRouter</a></li>
     
+      <li class="section-title"><a href="gestures/PointerRouter-class.html#operators">Operators</a></li>
+      <li><a class="" href="gestures/PointerRouter/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="gestures/PointerRouter-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="gestures/PointerRouter/addRoute.html">addRoute</a></li>
+      <li><a class="" href="gestures/PointerRouter/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="gestures/PointerRouter/removeRoute.html">removeRoute</a></li>
       <li><a class="" href="gestures/PointerRouter/route.html">route</a></li>
+      <li><a class="" href="gestures/PointerRouter/toString.html">toString</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
 
@@ -258,10 +336,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -282,7 +360,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

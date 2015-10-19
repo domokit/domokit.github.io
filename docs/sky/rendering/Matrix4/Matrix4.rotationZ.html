@@ -62,7 +62,7 @@
             <div class="col-sm-12 contents">
               <button id="sidenav-left-toggle" type="button">&nbsp;</button>
               <ol class="breadcrumbs gt-separated hidden-xs">
-                  <li><a href="index.html">sky</a></li>
+                  <li><a href="index.html">flutter</a></li>
                   <li><a href="rendering/rendering-library.html">rendering</a></li>
                   <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
                   <li class="self-crumb">Matrix4.rotationZ</li>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-sm-12 contents">
           <ol class="breadcrumbs gt-separated visible-xs">
-              <li><a href="index.html">sky</a></li>
+              <li><a href="index.html">flutter</a></li>
               <li><a href="rendering/rendering-library.html">rendering</a></li>
               <li><a href="rendering/Matrix4-class.html">Matrix4</a></li>
               <li class="self-crumb">Matrix4.rotationZ</li>
@@ -91,6 +91,7 @@
               </h1>
           </div>
           <ul class="subnav">
+              <li><a href="rendering/Matrix4/Matrix4.rotationZ.html#source">Source</a></li>
           </ul>
         </div> <!-- /col -->
       </div> <!-- /row -->
@@ -103,7 +104,7 @@
 
   <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
 
-    <h5><a href="index.html">sky</a></h5>
+    <h5><a href="index.html">flutter</a></h5>
     <h5><a href="rendering/rendering-library.html">rendering</a></h5>
     <h5><a href="rendering/Matrix4-class.html">Matrix4</a></h5>
 
@@ -118,11 +119,13 @@
       <li class="section-title"><a href="rendering/Matrix4-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="rendering/Matrix4/dimension.html">dimension</a></li>
       <li><a class="" href="rendering/Matrix4/forward.html">forward</a></li>
+      <li><a class="" href="rendering/Matrix4/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/Matrix4/right.html">right</a></li>
       <li><a class="" href="rendering/Matrix4/row0.html">row0</a></li>
       <li><a class="" href="rendering/Matrix4/row1.html">row1</a></li>
       <li><a class="" href="rendering/Matrix4/row2.html">row2</a></li>
       <li><a class="" href="rendering/Matrix4/row3.html">row3</a></li>
+      <li><a class="" href="rendering/Matrix4/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="rendering/Matrix4/storage.html">storage</a></li>
       <li><a class="" href="rendering/Matrix4/up.html">up</a></li>
     
@@ -147,6 +150,7 @@
       <li><a class="" href="rendering/Matrix4/operator_multiply.html">operator *</a></li>
       <li><a class="" href="rendering/Matrix4/operator_plus.html">operator +</a></li>
       <li><a class="" href="rendering/Matrix4/operator_minus.html">operator -</a></li>
+      <li><a class="" href="rendering/Matrix4/operator_equals.html">operator ==</a></li>
       <li><a class="" href="rendering/Matrix4/operator_unary_minus.html">operator unary-</a></li>
       <li><a class="" href="rendering/Matrix4/operator_get.html">operator []</a></li>
       <li><a class="" href="rendering/Matrix4/operator_put.html">operator []=</a></li>
@@ -176,6 +180,7 @@
       <li><a class="" href="rendering/Matrix4/multiply.html">multiply</a></li>
       <li><a class="" href="rendering/Matrix4/multiplyTranspose.html">multiplyTranspose</a></li>
       <li><a class="" href="rendering/Matrix4/negate.html">negate</a></li>
+      <li><a class="" href="rendering/Matrix4/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="rendering/Matrix4/relativeError.html">relativeError</a></li>
       <li><a class="" href="rendering/Matrix4/rotate.html">rotate</a></li>
       <li><a class="" href="rendering/Matrix4/rotate3.html">rotate3</a></li>
@@ -221,22 +226,21 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-    <section class="multi-line-signature">
-        
-                <span class="name ">Matrix4.rotationZ</span>(
-        <br>
-        <div class="parameters">
-            <span class="parameter" id="rotationZ-param-radians_"><span class="type-annotation">double</span> <span class="parameter-name">radians_</span></span>
-        </div>
-        )
-    </section>
 
     <section class="desc markdown">
     
           <p>Rotation of <code>radians_</code> around Z.</p>
+
     
     </section>
 
+      <section class="summary source-code" id="source">
+        <h2><span>Source</span> </h2>
+        <pre><code class="prettyprint lang-dart">Matrix4.rotationZ(double radians_) : storage = new Float64List(16) {
+  storage[15] = 1.0;
+  setRotationZ(radians_);
+}</code></pre>
+      </section>
 
   </div> <!-- /.main-content -->
 
@@ -248,10 +252,10 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  sky 0.0.53 api docs
+                  flutter 0.0.7
                 </span>
                 &bull;
-                <span class="copyright no-break">
+                <span class="no-break">
                   <a href="https://www.dartlang.org">
                     <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
                   </a>
@@ -272,7 +276,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.6.3 -->
+<!-- Made with <3 by dartdoc version 0.7.0 -->
 </body>
 
 </html>

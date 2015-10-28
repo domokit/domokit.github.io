@@ -118,6 +118,7 @@
       <li><a class="" href="gestures/TapGestureRecognizer/onTap.html">onTap</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/onTapCancel.html">onTapCancel</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/onTapDown.html">onTapDown</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/onTapUp.html">onTapUp</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/primaryPointer.html">primaryPointer</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/state.html">state</a></li>
@@ -129,7 +130,7 @@
       <li><a class="" href="gestures/TapGestureRecognizer/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="gestures/TapGestureRecognizer-class.html#instance-methods">Methods</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/acceptGesture.html">acceptGesture</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/acceptGesture.html">acceptGesture</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/addPointer.html">addPointer</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/didExceedDeadline.html">didExceedDeadline</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/didStopTrackingLastPointer.html">didStopTrackingLastPointer</a></li>
@@ -149,10 +150,14 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">handlePrimaryPointer</span>(<wbr><span class="parameter" id="handlePrimaryPointer-param-event"><span class="type-annotation"><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></span> <span class="parameter-name">event</span></span>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Override to provide behavior for the primary pointer when the gesture is still possible.</p>
-
     
     </section>
 
@@ -161,11 +166,10 @@
       <pre><code class="prettyprint lang-dart">void handlePrimaryPointer(PointerInputEvent event) {
   if (event.type == &apos;pointerdown&apos;) {
     if (onTapDown != null)
-      onTapDown();
+      onTapDown(event.position);
   } else if (event.type == &apos;pointerup&apos;) {
-    resolve(GestureDisposition.accepted);
-    if (onTap != null)
-      onTap();
+    _finalPosition = event.position;
+    _check();
   }
 }</code></pre>
     </section>
@@ -180,12 +184,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -204,7 +208,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

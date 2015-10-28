@@ -112,10 +112,10 @@
     
     
       <li class="section-title"><a href="widgets/SizeObserver-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="widgets/SizeObserver/callback.html">callback</a></li>
       <li><a class="" href="material/OneChildRenderObjectWidget/child.html">child</a></li>
       <li><a class="" href="widgets/SizeObserver/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
+      <li><a class="" href="widgets/SizeObserver/onSizeChanged.html">onSizeChanged</a></li>
       <li><a class="" href="widgets/SizeObserver/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="widgets/SizeObserver-class.html#constructors">Constructors</a></li>
@@ -131,6 +131,7 @@
       <li><a class="" href="widgets/SizeObserver/didUnmountRenderObject.html">didUnmountRenderObject</a></li>
       <li><a class="" href="widgets/SizeObserver/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="material/Widget/toString.html">toString</a></li>
+      <li><a class="" href="material/Widget/toStringShort.html">toStringShort</a></li>
       <li><a class="" href="widgets/SizeObserver/updateRenderObject.html">updateRenderObject</a></li>
     </ol>
 
@@ -138,18 +139,22 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype"><a class="" href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></span>
+        <span class="name ">createRenderObject</span>(<wbr>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Constructs an instance of the RenderObject class that this
-/// RenderObjectWidget represents, using the configuration described by this
-/// RenderObjectWidget.</p>
-
+RenderObjectWidget represents, using the configuration described by this
+RenderObjectWidget.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">RenderSizeObserver createRenderObject() =&gt; new RenderSizeObserver(callback: callback);</code></pre>
+      <pre><code class="prettyprint lang-dart">RenderSizeObserver createRenderObject() =&gt; new RenderSizeObserver(onSizeChanged: onSizeChanged);</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -162,12 +167,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -186,7 +191,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

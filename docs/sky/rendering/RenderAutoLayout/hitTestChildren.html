@@ -169,6 +169,7 @@
       <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
       <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToFirstActualBaseline.html">defaultComputeDistanceToFirstActualBaseline</a></li>
@@ -184,7 +185,7 @@
       <li><a class="" href="rendering/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
       <li><a class="" href="rendering/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
       <li><a class="" href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
-      <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
       <li><a class="" href="rendering/RenderAutoLayout/hitTestChildren.html">hitTestChildren</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
@@ -215,15 +216,18 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">hitTestChildren</span>(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a class="" href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
+    </section>
+
     <section class="desc markdown">
     
           <p>Override this function to check whether any children are located at the
-/// given position
-///
-/// Typically children should be hit tested in reverse paint order so that
-/// hit tests at locations where children overlap hit the child that is
-/// visually "on top" (i.e., paints later).</p>
-
+given position</p>
+<p>Typically children should be hit tested in reverse paint order so that
+hit tests at locations where children overlap hit the child that is
+visually "on top" (i.e., paints later).</p>
     
     </section>
 
@@ -244,12 +248,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -268,7 +272,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

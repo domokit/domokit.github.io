@@ -154,31 +154,29 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype"></span>
+        <span class="name ">updateChild</span>(<wbr><span class="parameter" id="updateChild-param-child"><span class="parameter-name">child</span></span>, <span class="parameter" id="updateChild-param-newWidget"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">newWidget</span></span>, <span class="parameter" id="updateChild-param-newSlot"><span class="parameter-name">newSlot</span></span>)
+    </section>
+
     <section class="desc markdown">
     
-          <p>This method is the core of the system.
-  ///
-  /// It is called each time we are to add, update, or remove a child based on
-  /// an updated configuration.
-  ///
-  /// If the child is null, and the newWidget is not null, then we have a new
-  /// child for which we need to create an Element, configured with newWidget.
-  ///
-  /// If the newWidget is null, and the child is not null, then we need to
-  /// remove it because it no longer has a configuration.
-  ///
-  /// If neither are null, then we need to update the child's configuration to
-  /// be the new configuration given by newWidget. If newWidget can be given to
-  /// the existing child, then it is so given. Otherwise, the old child needs
-  /// to be disposed and a new child created for the new configuration.
-  ///
-  /// If both are null, then we don't have a child and won't have a child, so
-  /// we do nothing.
-  ///
-  /// The updateChild() method returns the new child, if it had to create one,
-  /// or the child that was passed in, if it just had to update the child, or
-  /// null, if it removed the child and did not replace it.</p>
-
+          <p>This method is the core of the system.</p>
+<p>It is called each time we are to add, update, or remove a child based on
+an updated configuration.</p>
+<p>If the child is null, and the newWidget is not null, then we have a new
+child for which we need to create an Element, configured with newWidget.</p>
+<p>If the newWidget is null, and the child is not null, then we need to
+remove it because it no longer has a configuration.</p>
+<p>If neither are null, then we need to update the child's configuration to
+be the new configuration given by newWidget. If newWidget can be given to
+the existing child, then it is so given. Otherwise, the old child needs
+to be disposed and a new child created for the new configuration.</p>
+<p>If both are null, then we don't have a child and won't have a child, so
+we do nothing.</p>
+<p>The updateChild() method returns the new child, if it had to create one,
+or the child that was passed in, if it just had to update the child, or
+null, if it removed the child and did not replace it.</p>
     
     </section>
 
@@ -220,12 +218,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -244,7 +242,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

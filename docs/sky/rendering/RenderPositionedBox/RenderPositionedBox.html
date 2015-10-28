@@ -113,6 +113,7 @@
     
     
       <li class="section-title"><a href="rendering/RenderPositionedBox-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="rendering/RenderPositionedBox/alignment.html">alignment</a></li>
       <li><a class="" href="rendering/AbstractNode/attached.html">attached</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/child.html">child</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/child.html">child</a></li>
@@ -127,7 +128,6 @@
       <li><a class="" href="rendering/RenderPositionedBox/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
       <li><a class="" href="rendering/RenderBox/hasSize.html">hasSize</a></li>
-      <li><a class="" href="rendering/RenderPositionedBox/horizontal.html">horizontal</a></li>
       <li><a class="" href="rendering/RenderObject/layer.html">layer</a></li>
       <li><a class="" href="rendering/RenderObject/needsCompositing.html">needsCompositing</a></li>
       <li><a class="" href="rendering/RenderObject/needsLayout.html">needsLayout</a></li>
@@ -139,7 +139,6 @@
       <li><a class="" href="rendering/RenderPositionedBox/shrinkWrap.html">shrinkWrap</a></li>
       <li><a class="" href="rendering/RenderBox/size.html">size</a></li>
       <li><a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a></li>
-      <li><a class="" href="rendering/RenderPositionedBox/vertical.html">vertical</a></li>
     
       <li class="section-title"><a href="rendering/RenderPositionedBox-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/RenderPositionedBox/RenderPositionedBox.html">RenderPositionedBox</a></li>
@@ -158,6 +157,7 @@
       <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
       <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/detach.html">detach</a></li>
@@ -169,7 +169,7 @@
       <li><a class="" href="rendering/RenderShiftedBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
       <li><a class="" href="rendering/RenderShiftedBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
       <li><a class="" href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
-      <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
       <li><a class="" href="rendering/RenderShiftedBox/hitTestChildren.html">hitTestChildren</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
@@ -197,6 +197,10 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+      <section class="multi-line-signature">
+        
+                <span class="name ">RenderPositionedBox</span>(<wbr>{<span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="rendering/RenderBox-class.html">RenderBox</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="-param-alignment"><span class="type-annotation"><a class="" href="material/FractionalOffset-class.html">FractionalOffset</a></span> <span class="parameter-name">alignment</span>: <span class="default-value">const FractionalOffset(0.5, 0.5)</span></span>, <span class="parameter" id="-param-shrinkWrap"><span class="type-annotation"><a class="" href="material/ShrinkWrap-class.html">ShrinkWrap</a></span> <span class="parameter-name">shrinkWrap</span>: <span class="default-value">ShrinkWrap.none</span></span>})
+      </section>
 
     <section class="desc markdown">
     
@@ -208,15 +212,12 @@
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">RenderPositionedBox({
   RenderBox child,
-  double horizontal: 0.5,
-  double vertical: 0.5,
+  FractionalOffset alignment: const FractionalOffset(0.5, 0.5),
   ShrinkWrap shrinkWrap: ShrinkWrap.none
-}) : _horizontal = horizontal,
-     _vertical = vertical,
+}) : _alignment = alignment,
      _shrinkWrap = shrinkWrap,
      super(child) {
-  assert(horizontal != null);
-  assert(vertical != null);
+  assert(alignment != null);
   assert(shrinkWrap != null);
 }</code></pre>
       </section>
@@ -231,12 +232,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -255,7 +256,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

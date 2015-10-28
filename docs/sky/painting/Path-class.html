@@ -115,7 +115,7 @@
       <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/VoidCallback.html">VoidCallback</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
@@ -141,6 +141,7 @@
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
       <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
       <li><a class="" href="painting/Color-class.html">Color</a></li>
+      <li><a class="" href="painting/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
@@ -173,141 +174,149 @@
 
 
 
-    <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
 
-        <dl class="properties">
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="painting/Path/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="painting/Path/hashCode.html">&hellip;</a>
-</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="painting/Path/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-        </dl>
+      <dl class="constructor-summary-list">
+        <dt id="Path" class="callable">
+          <span class="name"><a class="" href="painting/Path/Path.html">Path</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
     </section>
 
-    <section class="summary offset-anchor" id="constructors">
-        <h2>Constructors</h2>
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
 
-        <dl class="constructor-summary-list">
-            <dt id="Path" class="callable">
-                <span class="name"><a class="" href="painting/Path/Path.html">Path</a></span><span class="signature">()</span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-        </dl>
-      </section>
-
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="painting/Path/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="painting/Path/operator_equals.html">&hellip;</a>
+      <dl class="properties">
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="painting/Path/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p>Get a hash code for this object.<a href="painting/Path/hashCode.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="painting/Path/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="addOval" class="callable">
-                  <span class="name "><a class="" href="painting/Path/addOval.html">addOval</a></span><span class="signature">(<wbr><span class="parameter" id="addOval-param-oval"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">oval</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="arcTo" class="callable">
-                  <span class="name "><a class="" href="painting/Path/arcTo.html">arcTo</a></span><span class="signature">(<wbr><span class="parameter" id="arcTo-param-rect"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="arcTo-param-startAngle"><span class="type-annotation">double</span> <span class="parameter-name">startAngle</span></span>, <span class="parameter" id="arcTo-param-sweepAngle"><span class="type-annotation">double</span> <span class="parameter-name">sweepAngle</span></span>, <span class="parameter" id="arcTo-param-forceMoveTo"><span class="type-annotation">bool</span> <span class="parameter-name">forceMoveTo</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="close" class="callable">
-                  <span class="name "><a class="" href="painting/Path/close.html">close</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="lineTo" class="callable">
-                  <span class="name "><a class="" href="painting/Path/lineTo.html">lineTo</a></span><span class="signature">(<wbr><span class="parameter" id="lineTo-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="lineTo-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="moveTo" class="callable">
-                  <span class="name "><a class="" href="painting/Path/moveTo.html">moveTo</a></span><span class="signature">(<wbr><span class="parameter" id="moveTo-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="moveTo-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="painting/Path/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="painting/Path/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="painting/Path/operator_equals.html">&hellip;</a>
+</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addOval" class="callable">
+            <span class="name "><a class="" href="painting/Path/addOval.html">addOval</a></span><span class="signature">(<wbr><span class="parameter" id="addOval-param-oval"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">oval</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="arcTo" class="callable">
+            <span class="name "><a class="" href="painting/Path/arcTo.html">arcTo</a></span><span class="signature">(<wbr><span class="parameter" id="arcTo-param-rect"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="arcTo-param-startAngle"><span class="type-annotation">double</span> <span class="parameter-name">startAngle</span></span>, <span class="parameter" id="arcTo-param-sweepAngle"><span class="type-annotation">double</span> <span class="parameter-name">sweepAngle</span></span>, <span class="parameter" id="arcTo-param-forceMoveTo"><span class="type-annotation">bool</span> <span class="parameter-name">forceMoveTo</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="close" class="callable">
+            <span class="name "><a class="" href="painting/Path/close.html">close</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="lineTo" class="callable">
+            <span class="name "><a class="" href="painting/Path/lineTo.html">lineTo</a></span><span class="signature">(<wbr><span class="parameter" id="lineTo-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="lineTo-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="moveTo" class="callable">
+            <span class="name "><a class="" href="painting/Path/moveTo.html">moveTo</a></span><span class="signature">(<wbr><span class="parameter" id="moveTo-param-x"><span class="type-annotation">double</span> <span class="parameter-name">x</span></span>, <span class="parameter" id="moveTo-param-y"><span class="type-annotation">double</span> <span class="parameter-name">y</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="painting/Path/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="painting/Path/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="shift" class="callable">
-                  <span class="name "><a class="" href="painting/Path/shift.html">shift</a></span><span class="signature">(<wbr><span class="parameter" id="shift-param-offset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/Path-class.html">Path</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="painting/Path/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="reset" class="callable">
+            <span class="name "><a class="" href="painting/Path/reset.html">reset</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="shift" class="callable">
+            <span class="name "><a class="" href="painting/Path/shift.html">shift</a></span><span class="signature">(<wbr><span class="parameter" id="shift-param-offset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/Path-class.html">Path</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="painting/Path/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>Path</h5>
@@ -332,6 +341,7 @@ the original invocation.<a href="painting/Path/noSuchMethod.html">&hellip;</a>
       <li><a class="" href="painting/Path/lineTo.html">lineTo</a></li>
       <li><a class="" href="painting/Path/moveTo.html">moveTo</a></li>
       <li><a class="" href="painting/Path/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="painting/Path/reset.html">reset</a></li>
       <li><a class="" href="painting/Path/shift.html">shift</a></li>
       <li><a class="" href="painting/Path/toString.html">toString</a></li>
     </ol>
@@ -345,12 +355,12 @@ the original invocation.<a href="painting/Path/noSuchMethod.html">&hellip;</a>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -369,7 +379,7 @@ the original invocation.<a href="painting/Path/noSuchMethod.html">&hellip;</a>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

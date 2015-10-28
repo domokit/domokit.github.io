@@ -146,15 +146,18 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">initState</span>(<wbr>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Called when this object is inserted into the tree. Override this function
-/// to perform initialization that depends on the location at which this
-/// object was inserted into the tree or on the widget configuration object.
-///
-/// If you override this, make sure your method starts with a call to
-/// super.initState().</p>
-
+to perform initialization that depends on the location at which this
+object was inserted into the tree or on the widget configuration object.</p>
+<p>If you override this, make sure your method starts with a call to
+super.initState().</p>
     
     </section>
 
@@ -162,8 +165,9 @@
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void initState() {
   super.initState();
-  PageRoute route = new PageRoute(config.routes[&apos;/&apos;]);
-  assert(route != null);
+  _activeHeroes = new HeroParty(onQuestFinished: _handleHeroQuestFinished);
+  PageRoute route = new PageRoute(config.routes[kDefaultRouteName], name: kDefaultRouteName);
+  assert(route.hasContent);
   assert(!route.ephemeral);
   _insertRoute(route);
 }</code></pre>
@@ -179,12 +183,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -203,7 +207,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

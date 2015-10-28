@@ -122,8 +122,7 @@
 
     <section class="desc markdown">
     
-          <p>The Flutter rendering tree.</p>
-
+          <p class="no-docs">Not documented.</p>
     
     </section>
 
@@ -136,10 +135,10 @@
                 <span class="signature">&#8594; dynamic</span>
             </dt>
             <dd>
-                <p></p>
+                <p>A bold font weight</p>
                 <div>
                   <span class="features">const</span>
-                  <span class="signature"><code>FontWeight.w700</code><span>
+                  <span class="signature"><code>FontWeight.w700</code></span>
                 </div>
             </dd>
             <dt id="lineThrough" class="constant">
@@ -147,10 +146,10 @@
                 <span class="signature">&#8594; dynamic</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Draw a line through each line of text</p>
                 <div>
                   <span class="features">const</span>
-                  <span class="signature"><code>const <TextDecoration> [TextDecoration.lineThrough]</code><span>
+                  <span class="signature"><code>const <TextDecoration> [TextDecoration.lineThrough]</code></span>
                 </div>
             </dd>
             <dt id="normal" class="constant">
@@ -158,10 +157,10 @@
                 <span class="signature">&#8594; dynamic</span>
             </dt>
             <dd>
-                <p></p>
+                <p>A normal font weight</p>
                 <div>
                   <span class="features">const</span>
-                  <span class="signature"><code>FontWeight.w400</code><span>
+                  <span class="signature"><code>FontWeight.w400</code></span>
                 </div>
             </dd>
             <dt id="overline" class="constant">
@@ -169,10 +168,10 @@
                 <span class="signature">&#8594; dynamic</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Draw a line above each line of text</p>
                 <div>
                   <span class="features">const</span>
-                  <span class="signature"><code>const <TextDecoration> [TextDecoration.overline]</code><span>
+                  <span class="signature"><code>const <TextDecoration> [TextDecoration.overline]</code></span>
                 </div>
             </dd>
             <dt id="underline" class="constant">
@@ -180,10 +179,10 @@
                 <span class="signature">&#8594; dynamic</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Draw a line underneath each line of text</p>
                 <div>
                   <span class="features">const</span>
-                  <span class="signature"><code>const <TextDecoration> [TextDecoration.underline]</code><span>
+                  <span class="signature"><code>const <TextDecoration> [TextDecoration.underline]</code></span>
                 </div>
             </dd>
         </dl>
@@ -193,14 +192,6 @@
         <h2>Typedefs</h2>
 
         <dl class="callables">
-            <dt id="BackgroundImageChangeListener" class="callable">
-                <span class="name "><a class="" href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></span><span class="signature">(<wbr>)
-                    <span class="returntype parameter">&#8594; void</span>
-                </span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
             <dt id="CustomPaintCallback" class="callable">
                 <span class="name "><a class="" href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></span><span class="signature">(<wbr><span class="parameter" id="CustomPaintCallback-param-canvas"><span class="type-annotation"><a class="" href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="CustomPaintCallback-param-size"><span class="type-annotation"><a class="" href="material/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
                     <span class="returntype parameter">&#8594; void</span>
@@ -227,6 +218,14 @@
             </dd>
             <dt id="LayoutCallback" class="callable">
                 <span class="name "><a class="" href="rendering/LayoutCallback.html">LayoutCallback</a></span><span class="signature">(<wbr><span class="parameter" id="LayoutCallback-param-constraints"><span class="type-annotation"><a class="" href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span></span>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="MetricListener" class="callable">
+                <span class="name "><a class="" href="rendering/MetricListener.html">MetricListener</a></span><span class="signature">(<wbr><span class="parameter" id="MetricListener-param-size"><span class="type-annotation"><a class="" href="material/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
                     <span class="returntype parameter">&#8594; void</span>
                 </span>
             </dt>
@@ -274,7 +273,15 @@
                 <p>Called when a size changes</p>
             </dd>
             <dt id="ValueChanged" class="callable">
-                <span class="name "><a class="" href="rendering/ValueChanged.html">ValueChanged</a></span><span class="signature">(<wbr><span class="parameter" id="ValueChanged-param-value"><span class="type-annotation">bool</span> <span class="parameter-name">value</span></span>)
+                <span class="name "><a class="" href="rendering/ValueChanged.html">ValueChanged</a></span><span class="signature">(<wbr><span class="parameter" id="ValueChanged-param-value"><span class="type-annotation">T</span> <span class="parameter-name">value</span></span>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="VoidCallback" class="callable">
+                <span class="name "><a class="" href="rendering/VoidCallback.html">VoidCallback</a></span><span class="signature">(<wbr>)
                     <span class="returntype parameter">&#8594; void</span>
                 </span>
             </dt>
@@ -293,7 +300,7 @@
                 <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>The color to use when painting RenderError boxes in checked mode.</p>
                 <div class="features">
         read / write
     </div>
@@ -303,7 +310,7 @@
                 <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>The color to use when painting alphabetic baselines.</p>
                 <div class="features">
         read / write
     </div>
@@ -313,7 +320,7 @@
                 <span class="signature">&#8594; bool</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Causes each RenderBox to paint a line at each of its baselines.</p>
                 <div class="features">
         read / write
     </div>
@@ -323,7 +330,7 @@
                 <span class="signature">&#8594; bool</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Causes RenderObjects to paint warnings when painting outside their bounds.</p>
                 <div class="features">
         read / write
     </div>
@@ -333,7 +340,7 @@
                 <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>The color ot use when painting ideographic baselines.</p>
                 <div class="features">
         read / write
     </div>
@@ -343,7 +350,7 @@
                 <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>The color to use when painting Layer borders.</p>
                 <div class="features">
         read / write
     </div>
@@ -353,7 +360,27 @@
                 <span class="signature">&#8594; bool</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Causes each Layer to paint a box around its bounds.</p>
+                <div class="features">
+        read / write
+    </div>
+</dd>
+            <dt id="debugPaintPointersColorValue" class="property">
+                <span class="name"><a class="" href="rendering/debugPaintPointersColorValue.html">debugPaintPointersColorValue</a></span>
+                <span class="signature">&#8594; int</span>
+            </dt>
+            <dd>
+                <p>The color to use when reporting pointers.</p>
+                <div class="features">
+        read / write
+    </div>
+</dd>
+            <dt id="debugPaintPointersEnabled" class="property">
+                <span class="name"><a class="" href="rendering/debugPaintPointersEnabled.html">debugPaintPointersEnabled</a></span>
+                <span class="signature">&#8594; bool</span>
+            </dt>
+            <dd>
+                <p>Causes RenderBox objects to flash while they are being tapped</p>
                 <div class="features">
         read / write
     </div>
@@ -363,7 +390,7 @@
                 <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>The color to use when painting RenderObject bounds.</p>
                 <div class="features">
         read / write
     </div>
@@ -373,7 +400,7 @@
                 <span class="signature">&#8594; bool</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Causes each RenderBox to paint a box around its bounds.</p>
                 <div class="features">
         read / write
     </div>
@@ -383,7 +410,14 @@
                 <span class="signature">&#8594; <a class="" href="rendering/RenderingExceptionHandler.html">RenderingExceptionHandler</a></span>
             </dt>
             <dd>
-                <p></p>
+                <p>This callback is invoked whenever an exception is caught by the rendering
+system. The 'source' argument is the <a class="" href="rendering/RenderObject-class.html">RenderObject</a> object that caught the
+exception. The 'method' argument is the method in which the exception
+occurred; it will be one of 'performResize', 'performLayout, or 'paint'. The
+'exception' argument contains the object that was thrown, and the 'stack'
+argument contains the stack trace. The callback is invoked after the
+information is printed to the console, and could be used to print additional
+information, such as from <code>debugDumpRenderTree()</code>.</p>
                 <div class="features">
         read / write
     </div>
@@ -422,7 +456,7 @@ tool's "logs" command ("flutter logs").<a href="rendering/debugPrint.html">&hell
 </p>
             </dd>
             <dt id="paintImage" class="callable">
-                <span class="name "><a class="" href="rendering/paintImage.html">paintImage</a></span><span class="signature">(<wbr>{<span class="parameter" id="paintImage-param-canvas"><span class="type-annotation"><a class="" href="material/Canvas-class.html">Canvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paintImage-param-rect"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="paintImage-param-image"><span class="type-annotation">Image</span> <span class="parameter-name">image</span></span>, <span class="parameter" id="paintImage-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>, <span class="parameter" id="paintImage-param-fit"><span class="type-annotation"><a class="" href="material/ImageFit-class.html">ImageFit</a></span> <span class="parameter-name">fit</span></span>, <span class="parameter" id="paintImage-param-repeat"><span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="paintImage-param-centerSlice"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">centerSlice</span></span>, <span class="parameter" id="paintImage-param-positionX"><span class="type-annotation">double</span> <span class="parameter-name">positionX</span>: <span class="default-value">0.5</span></span>, <span class="parameter" id="paintImage-param-positionY"><span class="type-annotation">double</span> <span class="parameter-name">positionY</span>: <span class="default-value">0.5</span></span>})
+                <span class="name "><a class="" href="rendering/paintImage.html">paintImage</a></span><span class="signature">(<wbr>{<span class="parameter" id="paintImage-param-canvas"><span class="type-annotation"><a class="" href="material/Canvas-class.html">Canvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="paintImage-param-rect"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>, <span class="parameter" id="paintImage-param-image"><span class="type-annotation">Image</span> <span class="parameter-name">image</span></span>, <span class="parameter" id="paintImage-param-colorFilter"><span class="type-annotation"><a class="" href="material/ColorFilter-class.html">ColorFilter</a></span> <span class="parameter-name">colorFilter</span></span>, <span class="parameter" id="paintImage-param-fit"><span class="type-annotation"><a class="" href="material/ImageFit-class.html">ImageFit</a></span> <span class="parameter-name">fit</span></span>, <span class="parameter" id="paintImage-param-repeat"><span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="paintImage-param-centerSlice"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">centerSlice</span></span>, <span class="parameter" id="paintImage-param-positionX"><span class="type-annotation">double</span> <span class="parameter-name">positionX</span>: <span class="default-value">0.5</span></span>, <span class="parameter" id="paintImage-param-positionY"><span class="type-annotation">double</span> <span class="parameter-name">positionY</span>: <span class="default-value">0.5</span></span>})
                     <span class="returntype parameter">&#8594; void</span>
                 </span>
             </dt>
@@ -659,11 +693,11 @@ transfer modes behave.</p>
             <dd>
                 <p>An immutable 32 bit color value in ARGB</p>
             </dd>
-            <dt id="ColorFilterLayer">
-                <span class="name "><a class="" href="rendering/ColorFilterLayer-class.html">ColorFilterLayer</a></span>
+            <dt id="ColorFilter">
+                <span class="name "><a class="" href="rendering/ColorFilter-class.html">ColorFilter</a></span>
             </dt>
             <dd>
-                <p>A composited layer that applies a color filter to its children</p>
+                <p>Extends the generated _ColorFilter interface via the PrivateDart attribute.</p>
             </dd>
             <dt id="Constraints">
                 <span class="name "><a class="" href="rendering/Constraints-class.html">Constraints</a></span>
@@ -788,6 +822,12 @@ Values are stored in column major order.</p>
                 <p>An immutable 2D floating-point offset<a href="rendering/Offset-class.html">&hellip;</a>
 </p>
             </dd>
+            <dt id="OneChildLayoutDelegate">
+                <span class="name "><a class="" href="rendering/OneChildLayoutDelegate-class.html">OneChildLayoutDelegate</a></span>
+            </dt>
+            <dd>
+                <p>A delegate for computing the layout of a render object with a single child.</p>
+            </dd>
             <dt id="OpacityLayer">
                 <span class="name "><a class="" href="rendering/OpacityLayer-class.html">OpacityLayer</a></span>
             </dt>
@@ -867,7 +907,8 @@ Values are stored in column major order.</p>
                 <span class="name "><a class="" href="rendering/Rect-class.html">Rect</a></span>
             </dt>
             <dd>
-                <p>An immutable 2D, axis-aligned, floating-point rectangle</p>
+                <p>An immutable 2D, axis-aligned, floating-point rectangle whose coordinates
+are relative to an origin point.</p>
             </dd>
             <dt id="RelativeRect">
                 <span class="name "><a class="" href="rendering/RelativeRect-class.html">RelativeRect</a></span>
@@ -955,13 +996,6 @@ managed by the <a class="" href="rendering/ContainerRenderObjectMixin-class.html
                 <p>Clips its child using a rounded rectangle<a href="rendering/RenderClipRRect-class.html">&hellip;</a>
 </p>
             </dd>
-            <dt id="RenderColorFilter">
-                <span class="name "><a class="" href="rendering/RenderColorFilter-class.html">RenderColorFilter</a></span>
-            </dt>
-            <dd>
-                <p>Applies a color filter when painting its child<a href="rendering/RenderColorFilter-class.html">&hellip;</a>
-</p>
-            </dd>
             <dt id="RenderConstrainedBox">
                 <span class="name "><a class="" href="rendering/RenderConstrainedBox-class.html">RenderConstrainedBox</a></span>
             </dt>
@@ -969,11 +1003,17 @@ managed by the <a class="" href="rendering/ContainerRenderObjectMixin-class.html
                 <p>A render object that imposes additional constraints on its child<a href="rendering/RenderConstrainedBox-class.html">&hellip;</a>
 </p>
             </dd>
+            <dt id="RenderCustomOneChildLayoutBox">
+                <span class="name "><a class="" href="rendering/RenderCustomOneChildLayoutBox-class.html">RenderCustomOneChildLayoutBox</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="RenderCustomPaint">
                 <span class="name "><a class="" href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></span>
             </dt>
             <dd>
-                <p>Delegates its painting to <a class="" href="rendering/RenderCustomPaint/callback.html">callback</a><a href="rendering/RenderCustomPaint-class.html">&hellip;</a>
+                <p>Delegates its painting to <a class="" href="rendering/RenderCustomPaint/onPaint.html">onPaint</a><a href="rendering/RenderCustomPaint-class.html">&hellip;</a>
 </p>
             </dd>
             <dt id="RenderDecoratedBox">
@@ -1078,6 +1118,14 @@ still O(N), like an ordinary stack.</p>
                 <p>Generic mixin for render objects with one child<a href="rendering/RenderObjectWithChildMixin-class.html">&hellip;</a>
 </p>
             </dd>
+            <dt id="RenderOffStage">
+                <span class="name "><a class="" href="rendering/RenderOffStage-class.html">RenderOffStage</a></span>
+            </dt>
+            <dd>
+                <p>Lays the child out as if it was in the tree, but without painting anything,
+without making the child available for hit testing, and without taking any
+room in the parent.</p>
+            </dd>
             <dt id="RenderOpacity">
                 <span class="name "><a class="" href="rendering/RenderOpacity-class.html">RenderOpacity</a></span>
             </dt>
@@ -1136,11 +1184,17 @@ from its parent, possibly allowing the child to overflow the parent.<a href="ren
             <dd>
                 <p></p>
             </dd>
+            <dt id="RenderSizedOverflowBox">
+                <span class="name "><a class="" href="rendering/RenderSizedOverflowBox-class.html">RenderSizedOverflowBox</a></span>
+            </dt>
+            <dd>
+                <p>A render box that's a specific size but passes its original constraints through to its child, which will probably overflow</p>
+            </dd>
             <dt id="RenderSizeObserver">
                 <span class="name "><a class="" href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></span>
             </dt>
             <dd>
-                <p>Calls <a class="" href="rendering/RenderSizeObserver/callback.html">callback</a> whenever the child's layout size changes<a href="rendering/RenderSizeObserver-class.html">&hellip;</a>
+                <p>Calls <a class="" href="rendering/RenderSizeObserver/onSizeChanged.html">onSizeChanged</a> whenever the child's layout size changes<a href="rendering/RenderSizeObserver-class.html">&hellip;</a>
 </p>
             </dd>
             <dt id="RenderStack">
@@ -1255,17 +1309,18 @@ certain statistics within it</p>
       <li><a class="" href="rendering/underline.html">underline</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="rendering/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
       <li><a class="" href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
       <li><a class="" href="rendering/EventListener.html">EventListener</a></li>
       <li><a class="" href="rendering/ExtentCallback.html">ExtentCallback</a></li>
       <li><a class="" href="rendering/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a class="" href="rendering/MetricListener.html">MetricListener</a></li>
       <li><a class="" href="rendering/PointerEventListener.html">PointerEventListener</a></li>
       <li><a class="" href="rendering/RenderingExceptionHandler.html">RenderingExceptionHandler</a></li>
       <li><a class="" href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
       <li><a class="" href="rendering/ShaderCallback.html">ShaderCallback</a></li>
       <li><a class="" href="rendering/SizeChangedCallback.html">SizeChangedCallback</a></li>
       <li><a class="" href="rendering/ValueChanged.html">ValueChanged</a></li>
+      <li><a class="" href="rendering/VoidCallback.html">VoidCallback</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
       <li><a class="" href="rendering/debugErrorBoxColor.html">debugErrorBoxColor</a></li>
@@ -1275,6 +1330,8 @@ certain statistics within it</p>
       <li><a class="" href="rendering/debugPaintIdeographicBaselineColor.html">debugPaintIdeographicBaselineColor</a></li>
       <li><a class="" href="rendering/debugPaintLayerBordersColor.html">debugPaintLayerBordersColor</a></li>
       <li><a class="" href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a class="" href="rendering/debugPaintPointersColorValue.html">debugPaintPointersColorValue</a></li>
+      <li><a class="" href="rendering/debugPaintPointersEnabled.html">debugPaintPointersEnabled</a></li>
       <li><a class="" href="rendering/debugPaintSizeColor.html">debugPaintSizeColor</a></li>
       <li><a class="" href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
       <li><a class="" href="rendering/debugRenderingExceptionHandler.html">debugRenderingExceptionHandler</a></li>
@@ -1323,7 +1380,7 @@ certain statistics within it</p>
       <li><a class="" href="rendering/ClipRectLayer-class.html">ClipRectLayer</a></li>
       <li><a class="" href="rendering/ClipRRectLayer-class.html">ClipRRectLayer</a></li>
       <li><a class="" href="rendering/Color-class.html">Color</a></li>
-      <li><a class="" href="rendering/ColorFilterLayer-class.html">ColorFilterLayer</a></li>
+      <li><a class="" href="rendering/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="rendering/Constraints-class.html">Constraints</a></li>
       <li><a class="" href="rendering/ContainerBoxParentDataMixin-class.html">ContainerBoxParentDataMixin</a></li>
       <li><a class="" href="rendering/ContainerLayer-class.html">ContainerLayer</a></li>
@@ -1343,6 +1400,7 @@ certain statistics within it</p>
       <li><a class="" href="rendering/LinearGradient-class.html">LinearGradient</a></li>
       <li><a class="" href="rendering/Matrix4-class.html">Matrix4</a></li>
       <li><a class="" href="rendering/Offset-class.html">Offset</a></li>
+      <li><a class="" href="rendering/OneChildLayoutDelegate-class.html">OneChildLayoutDelegate</a></li>
       <li><a class="" href="rendering/OpacityLayer-class.html">OpacityLayer</a></li>
       <li><a class="" href="rendering/Paint-class.html">Paint</a></li>
       <li><a class="" href="rendering/Painter-class.html">Painter</a></li>
@@ -1368,8 +1426,8 @@ certain statistics within it</p>
       <li><a class="" href="rendering/RenderClipOval-class.html">RenderClipOval</a></li>
       <li><a class="" href="rendering/RenderClipRect-class.html">RenderClipRect</a></li>
       <li><a class="" href="rendering/RenderClipRRect-class.html">RenderClipRRect</a></li>
-      <li><a class="" href="rendering/RenderColorFilter-class.html">RenderColorFilter</a></li>
       <li><a class="" href="rendering/RenderConstrainedBox-class.html">RenderConstrainedBox</a></li>
+      <li><a class="" href="rendering/RenderCustomOneChildLayoutBox-class.html">RenderCustomOneChildLayoutBox</a></li>
       <li><a class="" href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
       <li><a class="" href="rendering/RenderDecoratedBox-class.html">RenderDecoratedBox</a></li>
       <li><a class="" href="rendering/RenderEditableParagraph-class.html">RenderEditableParagraph</a></li>
@@ -1385,6 +1443,7 @@ certain statistics within it</p>
       <li><a class="" href="rendering/RenderMetaData-class.html">RenderMetaData</a></li>
       <li><a class="" href="rendering/RenderObject-class.html">RenderObject</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+      <li><a class="" href="rendering/RenderOffStage-class.html">RenderOffStage</a></li>
       <li><a class="" href="rendering/RenderOpacity-class.html">RenderOpacity</a></li>
       <li><a class="" href="rendering/RenderOverflowBox-class.html">RenderOverflowBox</a></li>
       <li><a class="" href="rendering/RenderPadding-class.html">RenderPadding</a></li>
@@ -1394,6 +1453,7 @@ certain statistics within it</p>
       <li><a class="" href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
       <li><a class="" href="rendering/RenderShaderMask-class.html">RenderShaderMask</a></li>
       <li><a class="" href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
+      <li><a class="" href="rendering/RenderSizedOverflowBox-class.html">RenderSizedOverflowBox</a></li>
       <li><a class="" href="rendering/RenderSizeObserver-class.html">RenderSizeObserver</a></li>
       <li><a class="" href="rendering/RenderStack-class.html">RenderStack</a></li>
       <li><a class="" href="rendering/RenderStackBase-class.html">RenderStackBase</a></li>
@@ -1423,12 +1483,12 @@ certain statistics within it</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -1447,7 +1507,7 @@ certain statistics within it</p>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

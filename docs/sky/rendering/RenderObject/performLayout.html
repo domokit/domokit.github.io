@@ -184,28 +184,29 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">performLayout</span>(<wbr>)
+    </section>
+
     <section class="desc markdown">
     
-          <p>Do the work of computing the layout for this render object
-  ///
-  /// Do not call this function directly: call <a class="" href="rendering/RenderObject/layout.html">layout</a> instead. This function
-  /// is called by <a class="" href="rendering/RenderObject/layout.html">layout</a> when there is actually work to be done by this
-  /// render object during layout. The layout constraints provided by your
-  /// parent are available via the <a class="" href="rendering/RenderObject/constraints.html">constraints</a> getter.
-  ///
-  /// If <a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a> is true, then this function should not actually change
-  /// the dimensions of this render object. Instead, that work should be done by
-  /// <a class="" href="rendering/RenderObject/performResize.html">performResize</a>. If <a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a> is false, then this function should
-  /// both change the dimensions of this render object and instruct its children
-  /// to layout.
-  ///
-  /// In implementing this function, you must call <a class="" href="rendering/RenderObject/layout.html">layout</a> on each of your
-  /// children, passing true for parentUsesSize if your layout information is
-  /// dependent on your child's layout information. Passing true for
-  /// parentUsesSize ensures that this render object will undergo layout if the
-  /// child undergoes layout. Otherwise, the child can changes its layout
-  /// information without informing this render object.</p>
-
+          <p>Do the work of computing the layout for this render object</p>
+<p>Do not call this function directly: call <a class="" href="rendering/RenderObject/layout.html">layout</a> instead. This function
+is called by <a class="" href="rendering/RenderObject/layout.html">layout</a> when there is actually work to be done by this
+render object during layout. The layout constraints provided by your
+parent are available via the <a class="" href="rendering/RenderObject/constraints.html">constraints</a> getter.</p>
+<p>If <a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a> is true, then this function should not actually change
+the dimensions of this render object. Instead, that work should be done by
+<a class="" href="rendering/RenderObject/performResize.html">performResize</a>. If <a class="" href="rendering/RenderObject/sizedByParent.html">sizedByParent</a> is false, then this function should
+both change the dimensions of this render object and instruct its children
+to layout.</p>
+<p>In implementing this function, you must call <a class="" href="rendering/RenderObject/layout.html">layout</a> on each of your
+children, passing true for parentUsesSize if your layout information is
+dependent on your child's layout information. Passing true for
+parentUsesSize ensures that this render object will undergo layout if the
+child undergoes layout. Otherwise, the child can changes its layout
+information without informing this render object.</p>
     
     </section>
 
@@ -224,12 +225,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -248,7 +249,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

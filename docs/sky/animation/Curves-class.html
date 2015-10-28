@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curves class - animation library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="API docs for the Curves class from the animation library, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- style overrides for dartdoc -->
+<style>
+  header {
+    background-color: #917FFF;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  pre > code {
+    font-size: 14px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">flutter</a></li>
+                  <li><a href="animation/animation-library.html">animation</a></li>
+                  <li class="self-crumb">Curves</li>
+              </ol>
+              <div class="self-name">Curves</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">flutter</a></li>
+              <li><a href="animation/animation-library.html">animation</a></li>
+              <li class="self-crumb">Curves</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">class</div> Curves
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="animation/Curves-class.html#constants">Constants</a></li>
+              <li><a href="animation/Curves-class.html#operators">Operators</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">flutter</a></h5>
+    <h5><a href="animation/animation-library.html">animation</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="animation/animation-library.html#constants">Constants</a></li>
+      <li><a class="" href="animation/alwaysCompletePerformance.html">alwaysCompletePerformance</a></li>
+    
+      <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="animation/PerformanceStatusListener.html">PerformanceStatusListener</a></li>
+      <li><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></li>
+      <li><a class="" href="animation/SchedulerExceptionHandler.html">SchedulerExceptionHandler</a></li>
+      <li><a class="" href="animation/TickerCallback.html">TickerCallback</a></li>
+      <li><a class="" href="animation/TimelineCallback.html">TimelineCallback</a></li>
+    
+      <li class="section-title"><a href="animation/animation-library.html#properties">Properties</a></li>
+      <li><a class="" href="animation/debugSchedulerExceptionHandler.html">debugSchedulerExceptionHandler</a></li>
+      <li><a class="" href="animation/kDefaultSpringForce.html">kDefaultSpringForce</a></li>
+      <li><a class="" href="animation/scheduler.html">scheduler</a></li>
+      <li><a class="" href="animation/timeDilation.html">timeDilation</a></li>
+    
+    
+      <li class="section-title"><a href="animation/animation-library.html#enums">Enums</a></li>
+      <li><a class="" href="animation/AnimationDirection-class.html">AnimationDirection</a></li>
+      <li><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></li>
+    
+      <li class="section-title"><a href="animation/animation-library.html#classes">Classes</a></li>
+      <li><a class="" href="animation/AlwaysCompletePerformance-class.html">AlwaysCompletePerformance</a></li>
+      <li><a class="" href="animation/Animatable-class.html">Animatable</a></li>
+      <li><a class="" href="animation/AnimatedColorValue-class.html">AnimatedColorValue</a></li>
+      <li><a class="" href="animation/AnimatedRectValue-class.html">AnimatedRectValue</a></li>
+      <li><a class="" href="animation/AnimatedSizeValue-class.html">AnimatedSizeValue</a></li>
+      <li><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a></li>
+      <li><a class="" href="animation/AnimationTiming-class.html">AnimationTiming</a></li>
+      <li><a class="" href="animation/BounceInCurve-class.html">BounceInCurve</a></li>
+      <li><a class="" href="animation/BounceInOutCurve-class.html">BounceInOutCurve</a></li>
+      <li><a class="" href="animation/BounceOutCurve-class.html">BounceOutCurve</a></li>
+      <li><a class="" href="animation/BoundedBehavior-class.html">BoundedBehavior</a></li>
+      <li><a class="" href="animation/ClampedSimulation-class.html">ClampedSimulation</a></li>
+      <li><a class="" href="animation/Cubic-class.html">Cubic</a></li>
+      <li><a class="" href="animation/Curve-class.html">Curve</a></li>
+      <li><a class="" href="animation/Curves-class.html">Curves</a></li>
+      <li><a class="" href="animation/ElasticInCurve-class.html">ElasticInCurve</a></li>
+      <li><a class="" href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></li>
+      <li><a class="" href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></li>
+      <li><a class="" href="animation/ExtentScrollBehavior-class.html">ExtentScrollBehavior</a></li>
+      <li><a class="" href="animation/Force-class.html">Force</a></li>
+      <li><a class="" href="animation/Interval-class.html">Interval</a></li>
+      <li><a class="" href="animation/Linear-class.html">Linear</a></li>
+      <li><a class="" href="animation/OverscrollBehavior-class.html">OverscrollBehavior</a></li>
+      <li><a class="" href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></li>
+      <li><a class="" href="animation/Performance-class.html">Performance</a></li>
+      <li><a class="" href="animation/PerformanceView-class.html">PerformanceView</a></li>
+      <li><a class="" href="animation/ReversePerformance-class.html">ReversePerformance</a></li>
+      <li><a class="" href="animation/Scheduler-class.html">Scheduler</a></li>
+      <li><a class="" href="animation/ScrollBehavior-class.html">ScrollBehavior</a></li>
+      <li><a class="" href="animation/SimulationStepper-class.html">SimulationStepper</a></li>
+      <li><a class="" href="animation/SpringForce-class.html">SpringForce</a></li>
+      <li><a class="" href="animation/Ticker-class.html">Ticker</a></li>
+      <li><a class="" href="animation/UnboundedBehavior-class.html">UnboundedBehavior</a></li>
+      <li><a class="" href="animation/ValuePerformance-class.html">ValuePerformance</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p>A collection of common animation curves.</p>
+    
+    </section>
+
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="bounceIn" class="constant">
+            <span class="name "><a class="" href="animation/Curves/bounceIn.html">bounceIn</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/BounceInCurve-class.html">BounceInCurve</a></span>
+        </dt>
+        <dd>
+            <p>An oscillating curve that grows in magnitude</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/BounceInCurve-class.html">BounceInCurve</a>()</code></span>
+            </div>
+        </dd>
+        <dt id="bounceInOut" class="constant">
+            <span class="name "><a class="" href="animation/Curves/bounceInOut.html">bounceInOut</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/BounceInOutCurve-class.html">BounceInOutCurve</a></span>
+        </dt>
+        <dd>
+            <p>An oscillating curve that first grows and then shrink in magnitude</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/BounceInOutCurve-class.html">BounceInOutCurve</a>()</code></span>
+            </div>
+        </dd>
+        <dt id="bounceOut" class="constant">
+            <span class="name "><a class="" href="animation/Curves/bounceOut.html">bounceOut</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/BounceOutCurve-class.html">BounceOutCurve</a></span>
+        </dt>
+        <dd>
+            <p>An oscillating curve that first grows and then shrink in magnitude</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/BounceOutCurve-class.html">BounceOutCurve</a>()</code></span>
+            </div>
+        </dd>
+        <dt id="ease" class="constant">
+            <span class="name "><a class="" href="animation/Curves/ease.html">ease</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/Cubic-class.html">Cubic</a></span>
+        </dt>
+        <dd>
+            <p>A cubic animation curve that speeds up quickly and ends slowly</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/Cubic-class.html">Cubic</a>(0.25, 0.1, 0.25, 1.0)</code></span>
+            </div>
+        </dd>
+        <dt id="easeIn" class="constant">
+            <span class="name "><a class="" href="animation/Curves/easeIn.html">easeIn</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/Cubic-class.html">Cubic</a></span>
+        </dt>
+        <dd>
+            <p>A cubic animation curve that starts slowly and ends quickly</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/Cubic-class.html">Cubic</a>(0.42, 0.0, 1.0, 1.0)</code></span>
+            </div>
+        </dd>
+        <dt id="easeInOut" class="constant">
+            <span class="name "><a class="" href="animation/Curves/easeInOut.html">easeInOut</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/Cubic-class.html">Cubic</a></span>
+        </dt>
+        <dd>
+            <p>A cubic animation curve that starts slowly, speeds up, and then and ends slowly</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/Cubic-class.html">Cubic</a>(0.42, 0.0, 0.58, 1.0)</code></span>
+            </div>
+        </dd>
+        <dt id="easeOut" class="constant">
+            <span class="name "><a class="" href="animation/Curves/easeOut.html">easeOut</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/Cubic-class.html">Cubic</a></span>
+        </dt>
+        <dd>
+            <p>A cubic animation curve that starts quickly and ends slowly</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/Cubic-class.html">Cubic</a>(0.0, 0.0, 0.58, 1.0)</code></span>
+            </div>
+        </dd>
+        <dt id="elasticIn" class="constant">
+            <span class="name "><a class="" href="animation/Curves/elasticIn.html">elasticIn</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/ElasticInCurve-class.html">ElasticInCurve</a></span>
+        </dt>
+        <dd>
+            <p>An oscillating curve that grows in magnitude while overshootings its bounds</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/ElasticInCurve-class.html">ElasticInCurve</a>()</code></span>
+            </div>
+        </dd>
+        <dt id="elasticInOut" class="constant">
+            <span class="name "><a class="" href="animation/Curves/elasticInOut.html">elasticInOut</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></span>
+        </dt>
+        <dd>
+            <p>An oscillating curve that grows and then shrinks in magnitude while overshootings its bounds</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a>()</code></span>
+            </div>
+        </dd>
+        <dt id="elasticOut" class="constant">
+            <span class="name "><a class="" href="animation/Curves/elasticOut.html">elasticOut</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></span>
+        </dt>
+        <dd>
+            <p>An oscillating curve that shrinks in magnitude while overshootings its bounds</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a>()</code></span>
+            </div>
+        </dd>
+        <dt id="fastOutSlowIn" class="constant">
+            <span class="name "><a class="" href="animation/Curves/fastOutSlowIn.html">fastOutSlowIn</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/Curve-class.html">Curve</a></span>
+        </dt>
+        <dd>
+            <p>A curve that starts quickly and eases into its final position. Over the course of the animation, the object spends more time near its final destination. As a result, the user isn’t left waiting for the animation to finish, and the negative effects of motion are minimized.</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const Cubic(0.4, 0.0, 0.2, 1.0)</code></span>
+            </div>
+        </dd>
+        <dt id="linear" class="constant">
+            <span class="name "><a class="" href="animation/Curves/linear.html">linear</a></span>
+            <span class="signature">&#8594; <a class="" href="animation/Linear-class.html">Linear</a></span>
+        </dt>
+        <dd>
+            <p>A linear animation curve</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="animation/Linear-class.html">Linear</a>()</code></span>
+            </div>
+        </dd>
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="animation/Curves/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p>Get a hash code for this object.<a href="animation/Curves/hashCode.html">&hellip;</a>
+</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="animation/Curves/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="animation/Curves/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="animation/Curves/operator_equals.html">&hellip;</a>
+</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="animation/Curves/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+on an object. The name of the method and the arguments of the
+invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
+If <code>noSuchMethod</code> returns a value, that value becomes the result of
+the original invocation.<a href="animation/Curves/noSuchMethod.html">&hellip;</a>
+</p>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="animation/Curves/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Curves</h5>
+    <ol>
+      <li class="section-title"><a href="animation/Curves-class.html#constants">Constants</a></li>
+      <li><a class="" href="animation/Curves/bounceIn.html">bounceIn</a></li>
+      <li><a class="" href="animation/Curves/bounceInOut.html">bounceInOut</a></li>
+      <li><a class="" href="animation/Curves/bounceOut.html">bounceOut</a></li>
+      <li><a class="" href="animation/Curves/ease.html">ease</a></li>
+      <li><a class="" href="animation/Curves/easeIn.html">easeIn</a></li>
+      <li><a class="" href="animation/Curves/easeInOut.html">easeInOut</a></li>
+      <li><a class="" href="animation/Curves/easeOut.html">easeOut</a></li>
+      <li><a class="" href="animation/Curves/elasticIn.html">elasticIn</a></li>
+      <li><a class="" href="animation/Curves/elasticInOut.html">elasticInOut</a></li>
+      <li><a class="" href="animation/Curves/elasticOut.html">elasticOut</a></li>
+      <li><a class="" href="animation/Curves/fastOutSlowIn.html">fastOutSlowIn</a></li>
+      <li><a class="" href="animation/Curves/linear.html">linear</a></li>
+    
+    
+    
+      <li class="section-title"><a href="animation/Curves-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/Curves/hashCode.html">hashCode</a></li>
+      <li><a class="" href="animation/Curves/runtimeType.html">runtimeType</a></li>
+    
+    
+      <li class="section-title"><a href="animation/Curves-class.html#operators">Operators</a></li>
+      <li><a class="" href="animation/Curves/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="animation/Curves-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="animation/Curves/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="animation/Curves/toString.html">toString</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  flutter 0.0.14
+                </span>
+                &bull;
+                <span class="no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.4 -->
+</body>
+
+</html>

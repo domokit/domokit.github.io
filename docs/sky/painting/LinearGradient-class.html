@@ -116,7 +116,7 @@
       <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/VoidCallback.html">VoidCallback</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
@@ -142,6 +142,7 @@
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
       <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
       <li><a class="" href="painting/Color-class.html">Color</a></li>
+      <li><a class="" href="painting/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
@@ -167,172 +168,172 @@
     <section class="desc markdown">
     
           <p>A 2D linear gradient</p>
-
     
     </section>
 
     <section>
-        <dl class="dl-horizontal">
-          <dt>Inheritance</dt>
-          <dd><ul class="gt-separated dark clazz-relationships">
-              <li>Object</li>
-              <li><a class="" href="material/Gradient-class.html">Gradient</a></li>
-              <li>LinearGradient</li>
-          </ul></dd>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a class="" href="material/Gradient-class.html">Gradient</a></li>
+          <li>LinearGradient</li>
+        </ul></dd>
 
 
 
 
-        </dl>
+      </dl>
     </section>
 
 
 
-
-    <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
-
-        <dl class="properties">
-            <dt id="begin" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/begin.html">begin</a></span>
-                <span class="signature">&#8594; <a class="" href="material/Point-class.html">Point</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="colors" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/colors.html">colors</a></span>
-                <span class="signature">&#8594; List&lt;<a class="" href="material/Color-class.html">Color</a>&gt;</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="end" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/end.html">end</a></span>
-                <span class="signature">&#8594; <a class="" href="material/Point-class.html">Point</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="painting/LinearGradient/hashCode.html">&hellip;</a>
-</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="stops" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/stops.html">stops</a></span>
-                <span class="signature">&#8594; List&lt;double&gt;</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="tileMode" class="property">
-                <span class="name"><a class="" href="painting/LinearGradient/tileMode.html">tileMode</a></span>
-                <span class="signature">&#8594; TileMode</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-        </dl>
-    </section>
 
     <section class="summary offset-anchor" id="constructors">
-        <h2>Constructors</h2>
+      <h2>Constructors</h2>
 
-        <dl class="constructor-summary-list">
-            <dt id="LinearGradient" class="callable">
-                <span class="name"><a class="" href="painting/LinearGradient/LinearGradient.html">LinearGradient</a></span><span class="signature">({<span class="parameter" id="-param-begin"><span class="type-annotation"><a class="" href="material/Point-class.html">Point</a></span> <span class="parameter-name">begin</span></span>, <span class="parameter" id="-param-end"><span class="type-annotation"><a class="" href="material/Point-class.html">Point</a></span> <span class="parameter-name">end</span></span>, <span class="parameter" id="-param-colors"><span class="type-annotation">List&lt;<a class="" href="material/Color-class.html">Color</a>&gt;</span> <span class="parameter-name">colors</span></span>, <span class="parameter" id="-param-stops"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">stops</span></span>, <span class="parameter" id="-param-tileMode"><span class="type-annotation">TileMode</span> <span class="parameter-name">tileMode</span>: <span class="default-value">ui.TileMode.clamp</span></span>})</span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-        </dl>
-      </section>
+      <dl class="constructor-summary-list">
+        <dt id="LinearGradient" class="callable">
+          <span class="name"><a class="" href="painting/LinearGradient/LinearGradient.html">LinearGradient</a></span><span class="signature">({<span class="parameter" id="-param-begin"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">begin</span></span>, <span class="parameter" id="-param-end"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">end</span></span>, <span class="parameter" id="-param-colors"><span class="type-annotation">List&lt;<a class="" href="material/Color-class.html">Color</a>&gt;</span> <span class="parameter-name">colors</span></span>, <span class="parameter" id="-param-stops"><span class="type-annotation">List&lt;double&gt;</span> <span class="parameter-name">stops</span></span>, <span class="parameter" id="-param-tileMode"><span class="type-annotation">TileMode</span> <span class="parameter-name">tileMode</span>: <span class="default-value">ui.TileMode.clamp</span></span>})</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="painting/LinearGradient/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="painting/LinearGradient/operator_equals.html">&hellip;</a>
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="begin" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/begin.html">begin</a></span>
+            <span class="signature">&#8594; <a class="" href="gestures/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+            <p>The point at which stop 0.0 of the gradient is placed</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="colors" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/colors.html">colors</a></span>
+            <span class="signature">&#8594; List&lt;<a class="" href="material/Color-class.html">Color</a>&gt;</span>
+        </dt>
+        <dd>
+            <p>The colors the gradient should obtain at each of the stops<a href="painting/LinearGradient/colors.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="end" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/end.html">end</a></span>
+            <span class="signature">&#8594; <a class="" href="gestures/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+            <p>The point at which stop 1.0 of the gradient is placed</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="stops" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/stops.html">stops</a></span>
+            <span class="signature">&#8594; List&lt;double&gt;</span>
+        </dt>
+        <dd>
+            <p>A list of values from 0.0 to 1.0 that denote fractions of the vector from start to end<a href="painting/LinearGradient/stops.html">&hellip;</a>
+</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="tileMode" class="property">
+            <span class="name"><a class="" href="painting/LinearGradient/tileMode.html">tileMode</a></span>
+            <span class="signature">&#8594; TileMode</span>
+        </dt>
+        <dd>
+            <p>How this gradient should tile the plane</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="createShader" class="callable">
-                  <span class="name "><a class="" href="painting/LinearGradient/createShader.html">createShader</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; Shader</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="painting/LinearGradient/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="painting/LinearGradient/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="painting/LinearGradient/operator_equals.html">&hellip;</a>
+</p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="createShader" class="callable">
+            <span class="name "><a class="" href="painting/LinearGradient/createShader.html">createShader</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; Shader</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="painting/LinearGradient/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="painting/LinearGradient/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="painting/LinearGradient/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="painting/LinearGradient/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>LinearGradient</h5>
@@ -370,12 +371,12 @@ the original invocation.<a href="painting/LinearGradient/noSuchMethod.html">&hel
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -394,7 +395,7 @@ the original invocation.<a href="painting/LinearGradient/noSuchMethod.html">&hel
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

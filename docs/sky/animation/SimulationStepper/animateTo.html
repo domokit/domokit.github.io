@@ -135,19 +135,22 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype"></span>
+        <span class="name ">animateTo</span>(<wbr><span class="parameter" id="animateTo-param-target"><span class="type-annotation">double</span> <span class="parameter-name">target</span></span>, {<span class="parameter" id="animateTo-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="animateTo-param-curve"><span class="type-annotation"><a class="" href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span>: <span class="default-value">Curves.linear</span></span>})
+    </section>
+
     <section class="desc markdown">
     
-          <p>Animate value of the timeline to the given target over the given duration
-  ///
-  /// Returns a future that resolves when the timeline stops animating,
-  /// typically when the timeline arives at the target value.</p>
-
+          <p>Animate value of the timeline to the given target over the given duration</p>
+<p>Returns a future that resolves when the timeline stops animating,
+typically when the timeline arives at the target value.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">Future animateTo(double target, { Duration duration, Curve curve: linear }) {
+      <pre><code class="prettyprint lang-dart">Future animateTo(double target, { Duration duration, Curve curve: Curves.linear }) {
   assert(duration &gt; Duration.ZERO);
   assert(!isAnimating);
   return _start(new _TweenSimulation(value, target, duration, curve));
@@ -164,12 +167,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -188,7 +191,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

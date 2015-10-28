@@ -85,7 +85,7 @@
           </ol>
           <div class="title-description">
               <h1 class="title">
-                  <div class="kind">class</div> ScrollableWidgetList
+                  <div class="kind">abstract class</div> ScrollableWidgetList
               </h1>
           </div>
           <ul class="subnav">
@@ -109,7 +109,7 @@
     <ol>
       <li class="section-title"><a href="material/material-library.html#constants">Constants</a></li>
       <li><a class="" href="material/bold.html">bold</a></li>
-      <li><a class="" href="material/edges.html">edges</a></li>
+      <li><a class="" href="material/kDefaultRouteName.html">kDefaultRouteName</a></li>
       <li><a class="" href="material/kFadingEdgeLength.html">kFadingEdgeLength</a></li>
       <li><a class="" href="material/kListSubtitleHeight.html">kListSubtitleHeight</a></li>
       <li><a class="" href="material/kListTitleHeight.html">kListTitleHeight</a></li>
@@ -136,10 +136,7 @@
       <li><a class="" href="material/BuilderFunction.html">BuilderFunction</a></li>
       <li><a class="" href="material/BuildScheduler.html">BuildScheduler</a></li>
       <li><a class="" href="material/DatePickerModeChanged.html">DatePickerModeChanged</a></li>
-      <li><a class="" href="material/DatePickerValueChanged.html">DatePickerValueChanged</a></li>
       <li><a class="" href="material/DialogBuilder.html">DialogBuilder</a></li>
-      <li><a class="" href="material/DismissedCallback.html">DismissedCallback</a></li>
-      <li><a class="" href="material/DragFinishedNotification.html">DragFinishedNotification</a></li>
       <li><a class="" href="material/DragTargetAccept.html">DragTargetAccept</a></li>
       <li><a class="" href="material/DragTargetBuilder.html">DragTargetBuilder</a></li>
       <li><a class="" href="material/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
@@ -158,6 +155,9 @@
       <li><a class="" href="material/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
       <li><a class="" href="material/GestureShowPressCallback.html">GestureShowPressCallback</a></li>
       <li><a class="" href="material/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a class="" href="material/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a class="" href="material/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a class="" href="material/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
       <li><a class="" href="material/GlobalKeyRemoveListener.html">GlobalKeyRemoveListener</a></li>
       <li><a class="" href="material/IndexedBuilder.html">IndexedBuilder</a></li>
       <li><a class="" href="material/InvalidatorAvailableCallback.html">InvalidatorAvailableCallback</a></li>
@@ -165,25 +165,23 @@
       <li><a class="" href="material/ItemBuilder.html">ItemBuilder</a></li>
       <li><a class="" href="material/ListBuilder.html">ListBuilder</a></li>
       <li><a class="" href="material/PageChangedCallback.html">PageChangedCallback</a></li>
-      <li><a class="" href="material/PopupMenuItemsBuilder.html">PopupMenuItemsBuilder</a></li>
-      <li><a class="" href="material/RadioValueChanged.html">RadioValueChanged</a></li>
-      <li><a class="" href="material/ResizedCallback.html">ResizedCallback</a></li>
       <li><a class="" href="material/RouteBuilder.html">RouteBuilder</a></li>
       <li><a class="" href="material/RouteGenerator.html">RouteGenerator</a></li>
       <li><a class="" href="material/ScrollListener.html">ScrollListener</a></li>
       <li><a class="" href="material/SnapOffsetCallback.html">SnapOffsetCallback</a></li>
       <li><a class="" href="material/StateRouteCallback.html">StateRouteCallback</a></li>
-      <li><a class="" href="material/StringSubmitted.html">StringSubmitted</a></li>
-      <li><a class="" href="material/StringUpdated.html">StringUpdated</a></li>
-      <li><a class="" href="material/StringValueChanged.html">StringValueChanged</a></li>
-      <li><a class="" href="material/StringValueSubmitted.html">StringValueSubmitted</a></li>
       <li><a class="" href="material/TabLayoutChanged.html">TabLayoutChanged</a></li>
       <li><a class="" href="material/TabSelectedIndexChanged.html">TabSelectedIndexChanged</a></li>
+      <li><a class="" href="material/TransitionBuilderCallback.html">TransitionBuilderCallback</a></li>
       <li><a class="" href="material/ValueChanged.html">ValueChanged</a></li>
+      <li><a class="" href="material/VoidCallback.html">VoidCallback</a></li>
       <li><a class="" href="material/WidgetBuilder.html">WidgetBuilder</a></li>
       <li><a class="" href="material/WidgetsExceptionHandler.html">WidgetsExceptionHandler</a></li>
     
       <li class="section-title"><a href="material/material-library.html#properties">Properties</a></li>
+      <li><a class="" href="material/centerOfAttentionHeroTag.html">centerOfAttentionHeroTag</a></li>
+      <li><a class="" href="material/debugGridColor.html">debugGridColor</a></li>
+      <li><a class="" href="material/debugShowGrid.html">debugShowGrid</a></li>
       <li><a class="" href="material/debugWidgetsExceptionHandler.html">debugWidgetsExceptionHandler</a></li>
     
       <li class="section-title"><a href="material/material-library.html#functions">Functions</a></li>
@@ -195,6 +193,7 @@
       <li><a class="" href="material/showDialog.html">showDialog</a></li>
       <li><a class="" href="material/showDrawer.html">showDrawer</a></li>
       <li><a class="" href="material/showMenu.html">showMenu</a></li>
+      <li><a class="" href="material/showModalBottomSheet.html">showModalBottomSheet</a></li>
       <li><a class="" href="material/showSnackBar.html">showSnackBar</a></li>
     
       <li class="section-title"><a href="material/material-library.html#enums">Enums</a></li>
@@ -211,12 +210,13 @@
       <li><a class="" href="material/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
       <li><a class="" href="material/FontStyle-class.html">FontStyle</a></li>
       <li><a class="" href="material/FontWeight-class.html">FontWeight</a></li>
+      <li><a class="" href="material/IconSize-class.html">IconSize</a></li>
       <li><a class="" href="material/IconThemeColor-class.html">IconThemeColor</a></li>
       <li><a class="" href="material/ImageFit-class.html">ImageFit</a></li>
       <li><a class="" href="material/ImageRepeat-class.html">ImageRepeat</a></li>
-      <li><a class="" href="material/MaterialEdge-class.html">MaterialEdge</a></li>
       <li><a class="" href="material/MaterialListType-class.html">MaterialListType</a></li>
       <li><a class="" href="material/MaterialType-class.html">MaterialType</a></li>
+      <li><a class="" href="material/Orientation-class.html">Orientation</a></li>
       <li><a class="" href="material/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a class="" href="material/Shape-class.html">Shape</a></li>
       <li><a class="" href="material/ShrinkWrap-class.html">ShrinkWrap</a></li>
@@ -268,10 +268,12 @@
       <li><a class="" href="material/ComponentElement-class.html">ComponentElement</a></li>
       <li><a class="" href="material/ConstrainedBox-class.html">ConstrainedBox</a></li>
       <li><a class="" href="material/Container-class.html">Container</a></li>
+      <li><a class="" href="material/CustomOneChildLayout-class.html">CustomOneChildLayout</a></li>
       <li><a class="" href="material/CustomPaint-class.html">CustomPaint</a></li>
       <li><a class="" href="material/DatePicker-class.html">DatePicker</a></li>
       <li><a class="" href="material/DayPicker-class.html">DayPicker</a></li>
       <li><a class="" href="material/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a class="" href="material/DefaultAssetBundle-class.html">DefaultAssetBundle</a></li>
       <li><a class="" href="material/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
       <li><a class="" href="material/Dialog-class.html">Dialog</a></li>
       <li><a class="" href="material/Dismissable-class.html">Dismissable</a></li>
@@ -282,11 +284,14 @@
       <li><a class="" href="material/DrawerDivider-class.html">DrawerDivider</a></li>
       <li><a class="" href="material/DrawerHeader-class.html">DrawerHeader</a></li>
       <li><a class="" href="material/DrawerItem-class.html">DrawerItem</a></li>
+      <li><a class="" href="material/DropdownButton-class.html">DropdownButton</a></li>
+      <li><a class="" href="material/DropdownMenuItem-class.html">DropdownMenuItem</a></li>
       <li><a class="" href="material/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="material/EditableString-class.html">EditableString</a></li>
       <li><a class="" href="material/EditableText-class.html">EditableText</a></li>
       <li><a class="" href="material/EditableTextState-class.html">EditableTextState</a></li>
       <li><a class="" href="material/Element-class.html">Element</a></li>
+      <li><a class="" href="material/EnterExitTransition-class.html">EnterExitTransition</a></li>
       <li><a class="" href="material/ErrorWidget-class.html">ErrorWidget</a></li>
       <li><a class="" href="material/FadeTransition-class.html">FadeTransition</a></li>
       <li><a class="" href="material/FlatButton-class.html">FlatButton</a></li>
@@ -302,6 +307,11 @@
       <li><a class="" href="material/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
       <li><a class="" href="material/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="material/Grid-class.html">Grid</a></li>
+      <li><a class="" href="material/GridPaper-class.html">GridPaper</a></li>
+      <li><a class="" href="material/Hero-class.html">Hero</a></li>
+      <li><a class="" href="material/HeroHandle-class.html">HeroHandle</a></li>
+      <li><a class="" href="material/HeroParty-class.html">HeroParty</a></li>
+      <li><a class="" href="material/HeroState-class.html">HeroState</a></li>
       <li><a class="" href="material/HomogeneousViewport-class.html">HomogeneousViewport</a></li>
       <li><a class="" href="material/Icon-class.html">Icon</a></li>
       <li><a class="" href="material/IconButton-class.html">IconButton</a></li>
@@ -316,6 +326,7 @@
       <li><a class="" href="material/InkWell-class.html">InkWell</a></li>
       <li><a class="" href="material/Input-class.html">Input</a></li>
       <li><a class="" href="material/InputEvent-class.html">InputEvent</a></li>
+      <li><a class="" href="material/InputState-class.html">InputState</a></li>
       <li><a class="" href="material/IntrinsicHeight-class.html">IntrinsicHeight</a></li>
       <li><a class="" href="material/IntrinsicWidth-class.html">IntrinsicWidth</a></li>
       <li><a class="" href="material/Key-class.html">Key</a></li>
@@ -334,6 +345,8 @@
       <li><a class="" href="material/MaterialButtonState-class.html">MaterialButtonState</a></li>
       <li><a class="" href="material/MaterialList-class.html">MaterialList</a></li>
       <li><a class="" href="material/Matrix4-class.html">Matrix4</a></li>
+      <li><a class="" href="material/MediaQuery-class.html">MediaQuery</a></li>
+      <li><a class="" href="material/MediaQueryData-class.html">MediaQueryData</a></li>
       <li><a class="" href="material/MenuPosition-class.html">MenuPosition</a></li>
       <li><a class="" href="material/MetaData-class.html">MetaData</a></li>
       <li><a class="" href="material/Mimic-class.html">Mimic</a></li>
@@ -349,6 +362,8 @@
       <li><a class="" href="material/NetworkImage-class.html">NetworkImage</a></li>
       <li><a class="" href="material/ObjectKey-class.html">ObjectKey</a></li>
       <li><a class="" href="material/Offset-class.html">Offset</a></li>
+      <li><a class="" href="material/OffStage-class.html">OffStage</a></li>
+      <li><a class="" href="material/OneChildLayoutDelegate-class.html">OneChildLayoutDelegate</a></li>
       <li><a class="" href="material/OneChildRenderObjectElement-class.html">OneChildRenderObjectElement</a></li>
       <li><a class="" href="material/OneChildRenderObjectWidget-class.html">OneChildRenderObjectWidget</a></li>
       <li><a class="" href="material/Opacity-class.html">Opacity</a></li>
@@ -385,6 +400,7 @@
       <li><a class="" href="material/RenderObjectToWidgetAdapter-class.html">RenderObjectToWidgetAdapter</a></li>
       <li><a class="" href="material/RenderObjectToWidgetElement-class.html">RenderObjectToWidgetElement</a></li>
       <li><a class="" href="material/RenderObjectWidget-class.html">RenderObjectWidget</a></li>
+      <li><a class="" href="material/RotationTransition-class.html">RotationTransition</a></li>
       <li><a class="" href="material/Route-class.html">Route</a></li>
       <li><a class="" href="material/RouteArguments-class.html">RouteArguments</a></li>
       <li><a class="" href="material/Row-class.html">Row</a></li>
@@ -404,8 +420,10 @@
       <li><a class="" href="material/ShaderMask-class.html">ShaderMask</a></li>
       <li><a class="" href="material/Size-class.html">Size</a></li>
       <li><a class="" href="material/SizedBox-class.html">SizedBox</a></li>
+      <li><a class="" href="material/SizedOverflowBox-class.html">SizedOverflowBox</a></li>
       <li><a class="" href="material/SizeObserver-class.html">SizeObserver</a></li>
       <li><a class="" href="material/SlideTransition-class.html">SlideTransition</a></li>
+      <li><a class="" href="material/SmoothlyResizingOverflowBox-class.html">SmoothlyResizingOverflowBox</a></li>
       <li><a class="" href="material/SnackBar-class.html">SnackBar</a></li>
       <li><a class="" href="material/SnackBarAction-class.html">SnackBarAction</a></li>
       <li><a class="" href="material/SquashTransition-class.html">SquashTransition</a></li>
@@ -439,6 +457,7 @@
       <li><a class="" href="material/TransitionWithChild-class.html">TransitionWithChild</a></li>
       <li><a class="" href="material/Typography-class.html">Typography</a></li>
       <li><a class="" href="material/UniqueComponent-class.html">UniqueComponent</a></li>
+      <li><a class="" href="material/UniqueKey-class.html">UniqueKey</a></li>
       <li><a class="" href="material/ValueKey-class.html">ValueKey</a></li>
       <li><a class="" href="material/Viewport-class.html">Viewport</a></li>
       <li><a class="" href="material/Widget-class.html">Widget</a></li>
@@ -457,276 +476,283 @@
 the same size (extent) in the scrollDirection. For example for
 ScrollDirection.vertical itemExtent is the height of each item. Use this
 widget when you have a large number of children or when you are concerned</p>
-
     
     </section>
 
     <section>
-        <dl class="dl-horizontal">
-          <dt>Inheritance</dt>
-          <dd><ul class="gt-separated dark clazz-relationships">
-              <li>Object</li>
-              <li><a class="" href="material/Widget-class.html">Widget</a></li>
-              <li><a class="" href="material/StatefulComponent-class.html">StatefulComponent</a></li>
-              <li><a class="" href="material/Scrollable-class.html">Scrollable</a></li>
-              <li>ScrollableWidgetList</li>
-          </ul></dd>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a class="" href="material/Widget-class.html">Widget</a></li>
+          <li><a class="" href="material/StatefulComponent-class.html">StatefulComponent</a></li>
+          <li><a class="" href="material/Scrollable-class.html">Scrollable</a></li>
+          <li>ScrollableWidgetList</li>
+        </ul></dd>
 
 
 
-          <dt>Implemented by</dt>
-          <dd><ul class="comma-separated clazz-relationships">
-              <li><a class="" href="material/MonthPicker-class.html">MonthPicker</a></li>
-              <li><a class="" href="material/ScrollableList-class.html">ScrollableList</a></li>
-              <li><a class="" href="material/YearPicker-class.html">YearPicker</a></li>
-          </ul></dd>
+        <dt>Implemented by</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a class="" href="material/MonthPicker-class.html">MonthPicker</a></li>
+          <li><a class="" href="material/ScrollableList-class.html">ScrollableList</a></li>
+          <li><a class="" href="material/YearPicker-class.html">YearPicker</a></li>
+        </ul></dd>
 
-        </dl>
+      </dl>
     </section>
 
 
 
-
-    <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
-
-        <dl class="properties">
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="material/ScrollableWidgetList/hashCode.html">&hellip;</a>
-</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="initialScrollOffset" class="property">
-                <span class="name"><a class="" href="material/Scrollable/initialScrollOffset.html">initialScrollOffset</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="itemExtent" class="property">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/itemExtent.html">itemExtent</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="itemsWrap" class="property">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/itemsWrap.html">itemsWrap</a></span>
-                <span class="signature">&#8594; bool</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="key" class="property">
-                <span class="name"><a class="" href="material/Widget/key.html">key</a></span>
-                <span class="signature">&#8594; <a class="" href="material/Key-class.html">Key</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="onScroll" class="property">
-                <span class="name"><a class="" href="material/Scrollable/onScroll.html">onScroll</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ScrollListener.html">ScrollListener</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="onScrollEnd" class="property">
-                <span class="name"><a class="" href="material/Scrollable/onScrollEnd.html">onScrollEnd</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ScrollListener.html">ScrollListener</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="onScrollStart" class="property">
-                <span class="name"><a class="" href="material/Scrollable/onScrollStart.html">onScrollStart</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ScrollListener.html">ScrollListener</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="padding" class="property">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/padding.html">padding</a></span>
-                <span class="signature">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="scrollableListPainter" class="property">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/scrollableListPainter.html">scrollableListPainter</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ScrollableListPainter-class.html">ScrollableListPainter</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="scrollDirection" class="property">
-                <span class="name"><a class="" href="material/Scrollable/scrollDirection.html">scrollDirection</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ScrollDirection-class.html">ScrollDirection</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="snapAlignmentOffset" class="property">
-                <span class="name"><a class="" href="material/Scrollable/snapAlignmentOffset.html">snapAlignmentOffset</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="snapOffsetCallback" class="property">
-                <span class="name"><a class="" href="material/Scrollable/snapOffsetCallback.html">snapOffsetCallback</a></span>
-                <span class="signature">&#8594; <a class="" href="material/SnapOffsetCallback.html">SnapOffsetCallback</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-        </dl>
-    </section>
 
     <section class="summary offset-anchor" id="constructors">
-        <h2>Constructors</h2>
+      <h2>Constructors</h2>
 
-        <dl class="constructor-summary-list">
-            <dt id="ScrollableWidgetList" class="callable">
-                <span class="name"><a class="" href="material/ScrollableWidgetList/ScrollableWidgetList.html">ScrollableWidgetList</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-initialScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">initialScrollOffset</span></span>, <span class="parameter" id="-param-scrollDirection"><span class="type-annotation"><a class="" href="material/ScrollDirection-class.html">ScrollDirection</a></span> <span class="parameter-name">scrollDirection</span>: <span class="default-value">ScrollDirection.vertical</span></span>, <span class="parameter" id="-param-onScroll"><span class="type-annotation">void</span> <span class="parameter-name">onScroll</span>(<span class="parameter" id="ScrollListener-param-scrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">scrollOffset</span></span>)</span>, <span class="parameter" id="-param-snapOffsetCallback"><span class="type-annotation">double</span> <span class="parameter-name">snapOffsetCallback</span>(<span class="parameter" id="SnapOffsetCallback-param-scrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">scrollOffset</span></span>)</span>, <span class="parameter" id="-param-snapAlignmentOffset"><span class="type-annotation">double</span> <span class="parameter-name">snapAlignmentOffset</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="-param-itemsWrap"><span class="type-annotation">bool</span> <span class="parameter-name">itemsWrap</span>: <span class="default-value">false</span></span>, <span class="parameter" id="-param-itemExtent"><span class="type-annotation">double</span> <span class="parameter-name">itemExtent</span></span>, <span class="parameter" id="-param-padding"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">padding</span></span>, <span class="parameter" id="-param-scrollableListPainter"><span class="type-annotation"><a class="" href="material/ScrollableListPainter-class.html">ScrollableListPainter</a></span> <span class="parameter-name">scrollableListPainter</span></span>})</span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-        </dl>
-      </section>
+      <dl class="constructor-summary-list">
+        <dt id="ScrollableWidgetList" class="callable">
+          <span class="name"><a class="" href="material/ScrollableWidgetList/ScrollableWidgetList.html">ScrollableWidgetList</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-initialScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">initialScrollOffset</span></span>, <span class="parameter" id="-param-scrollDirection"><span class="type-annotation"><a class="" href="material/ScrollDirection-class.html">ScrollDirection</a></span> <span class="parameter-name">scrollDirection</span>: <span class="default-value">ScrollDirection.vertical</span></span>, <span class="parameter" id="-param-onScroll"><span class="type-annotation">void</span> <span class="parameter-name">onScroll</span>(<span class="parameter" id="ScrollListener-param-scrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">scrollOffset</span></span>)</span>, <span class="parameter" id="-param-snapOffsetCallback"><span class="type-annotation">double</span> <span class="parameter-name">snapOffsetCallback</span>(<span class="parameter" id="SnapOffsetCallback-param-scrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">scrollOffset</span></span>)</span>, <span class="parameter" id="-param-snapAlignmentOffset"><span class="type-annotation">double</span> <span class="parameter-name">snapAlignmentOffset</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="-param-itemsWrap"><span class="type-annotation">bool</span> <span class="parameter-name">itemsWrap</span>: <span class="default-value">false</span></span>, <span class="parameter" id="-param-itemExtent"><span class="type-annotation">double</span> <span class="parameter-name">itemExtent</span></span>, <span class="parameter" id="-param-padding"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">padding</span></span>, <span class="parameter" id="-param-scrollableListPainter"><span class="type-annotation"><a class="" href="material/ScrollableListPainter-class.html">ScrollableListPainter</a></span> <span class="parameter-name">scrollableListPainter</span></span>})</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="material/ScrollableWidgetList/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="material/ScrollableWidgetList/operator_equals.html">&hellip;</a>
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="material/ScrollableWidgetList/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p>Get a hash code for this object.<a href="material/ScrollableWidgetList/hashCode.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="initialScrollOffset" class="property">
+            <span class="name"><a class="" href="material/Scrollable/initialScrollOffset.html">initialScrollOffset</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="itemExtent" class="property">
+            <span class="name"><a class="" href="material/ScrollableWidgetList/itemExtent.html">itemExtent</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="itemsWrap" class="property">
+            <span class="name"><a class="" href="material/ScrollableWidgetList/itemsWrap.html">itemsWrap</a></span>
+            <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="key" class="property">
+            <span class="name"><a class="" href="material/Widget/key.html">key</a></span>
+            <span class="signature">&#8594; <a class="" href="material/Key-class.html">Key</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="onScroll" class="property">
+            <span class="name"><a class="" href="material/Scrollable/onScroll.html">onScroll</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ScrollListener.html">ScrollListener</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="onScrollEnd" class="property">
+            <span class="name"><a class="" href="material/Scrollable/onScrollEnd.html">onScrollEnd</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ScrollListener.html">ScrollListener</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="onScrollStart" class="property">
+            <span class="name"><a class="" href="material/Scrollable/onScrollStart.html">onScrollStart</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ScrollListener.html">ScrollListener</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="padding" class="property">
+            <span class="name"><a class="" href="material/ScrollableWidgetList/padding.html">padding</a></span>
+            <span class="signature">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="material/ScrollableWidgetList/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="scrollableListPainter" class="property">
+            <span class="name"><a class="" href="material/ScrollableWidgetList/scrollableListPainter.html">scrollableListPainter</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ScrollableListPainter-class.html">ScrollableListPainter</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="scrollDirection" class="property">
+            <span class="name"><a class="" href="material/Scrollable/scrollDirection.html">scrollDirection</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ScrollDirection-class.html">ScrollDirection</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="snapAlignmentOffset" class="property">
+            <span class="name"><a class="" href="material/Scrollable/snapAlignmentOffset.html">snapAlignmentOffset</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="snapOffsetCallback" class="property">
+            <span class="name"><a class="" href="material/Scrollable/snapOffsetCallback.html">snapOffsetCallback</a></span>
+            <span class="signature">&#8594; <a class="" href="material/SnapOffsetCallback.html">SnapOffsetCallback</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="createElement" class="callable">
-                  <span class="name "><a class="" href="material/StatefulComponent/createElement.html">createElement</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; </span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>StatefulComponents always use StatefulComponentElements to represent
-  /// themselves in the Element tree.</p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="createState" class="callable">
-                  <span class="name "><a class="" href="material/StatefulComponent/createState.html">createState</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; </span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns an instance of the state to which this StatefulComponent is
-  /// related, using this object as the configuration. Subclasses should
-  /// override this to return a new instance of the State class associated with
-  /// this StatefulComponent class, like this:
-  ///
-  ///   MyState createState() =&gt; new MyState(this);</p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="debugFillDescription" class="callable">
-                  <span class="name "><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillDescription-param-description"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">description</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="material/ScrollableWidgetList/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="material/ScrollableWidgetList/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="material/ScrollableWidgetList/operator_equals.html">&hellip;</a>
+</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="createElement" class="callable">
+            <span class="name "><a class="" href="material/StatefulComponent/createElement.html">createElement</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; </span>
+            </span>
+        </dt>
+        <dd>
+            <p>StatefulComponents always use StatefulComponentElements to represent
+themselves in the Element tree.</p>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="createState" class="callable">
+            <span class="name "><a class="" href="material/StatefulComponent/createState.html">createState</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; </span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns an instance of the state to which this StatefulComponent is
+related, using this object as the configuration. Subclasses should
+override this to return a new instance of the State class associated with
+this StatefulComponent class, like this:<a href="material/StatefulComponent/createState.html">&hellip;</a>
+</p>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="debugFillDescription" class="callable">
+            <span class="name "><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillDescription-param-description"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">description</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="material/ScrollableWidgetList/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="material/ScrollableWidgetList/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="material/Widget/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="material/Widget/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toStringShort" class="callable">
+            <span class="name "><a class="" href="material/Widget/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>ScrollableWidgetList</h5>
@@ -762,6 +788,7 @@ the original invocation.<a href="material/ScrollableWidgetList/noSuchMethod.html
       <li><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="material/ScrollableWidgetList/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="material/Widget/toString.html">toString</a></li>
+      <li><a class="" href="material/Widget/toStringShort.html">toStringShort</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
 
@@ -773,12 +800,12 @@ the original invocation.<a href="material/ScrollableWidgetList/noSuchMethod.html
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -797,7 +824,7 @@ the original invocation.<a href="material/ScrollableWidgetList/noSuchMethod.html
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

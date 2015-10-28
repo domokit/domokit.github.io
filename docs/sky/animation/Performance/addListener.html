@@ -112,7 +112,9 @@
     
     
       <li class="section-title"><a href="animation/Performance-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="animation/Performance/curveDirection.html">curveDirection</a></li>
       <li><a class="" href="animation/Performance/debugLabel.html">debugLabel</a></li>
+      <li><a class="" href="animation/Performance/direction.html">direction</a></li>
       <li><a class="" href="animation/Performance/duration.html">duration</a></li>
       <li><a class="" href="animation/Performance/hashCode.html">hashCode</a></li>
       <li><a class="" href="animation/Performance/isAnimating.html">isAnimating</a></li>
@@ -151,16 +153,20 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">addListener</span>(<wbr><span class="parameter" id="addListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Calls the listener every time the progress of this performance changes</p>
-
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">void addListener(PerformanceListener listener) {
+      <pre><code class="prettyprint lang-dart">void addListener(VoidCallback listener) {
   _listeners.add(listener);
 }</code></pre>
     </section>
@@ -175,12 +181,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -199,7 +205,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

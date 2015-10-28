@@ -117,8 +117,8 @@
       <li><a class="" href="gestures/kMinFlingVelocity.html">kMinFlingVelocity</a></li>
       <li><a class="" href="gestures/kPagingTouchSlop.html">kPagingTouchSlop</a></li>
       <li><a class="" href="gestures/kPanSlop.html">kPanSlop</a></li>
+      <li><a class="" href="gestures/kPressTimeout.html">kPressTimeout</a></li>
       <li><a class="" href="gestures/kScaleSlop.html">kScaleSlop</a></li>
-      <li><a class="" href="gestures/kTapTimeout.html">kTapTimeout</a></li>
       <li><a class="" href="gestures/kTouchSlop.html">kTouchSlop</a></li>
       <li><a class="" href="gestures/kWindowTouchSlop.html">kWindowTouchSlop</a></li>
       <li><a class="" href="gestures/kZoomControlsTimeout.html">kZoomControlsTimeout</a></li>
@@ -136,6 +136,9 @@
       <li><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
       <li><a class="" href="gestures/GestureShowPressCallback.html">GestureShowPressCallback</a></li>
       <li><a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a class="" href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a class="" href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a class="" href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
       <li><a class="" href="gestures/PointerRoute.html">PointerRoute</a></li>
     
     
@@ -147,6 +150,8 @@
       <li><a class="" href="gestures/ScaleState-class.html">ScaleState</a></li>
     
       <li class="section-title"><a href="gestures/gestures-library.html#classes">Classes</a></li>
+      <li><a class="" href="gestures/DisposableArenaMember-class.html">DisposableArenaMember</a></li>
+      <li><a class="" href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></li>
       <li><a class="" href="gestures/GestureArena-class.html">GestureArena</a></li>
       <li><a class="" href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></li>
       <li><a class="" href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
@@ -154,7 +159,9 @@
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
       <li><a class="" href="gestures/InputEvent-class.html">InputEvent</a></li>
       <li><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
+      <li><a class="" href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
+      <li><a class="" href="gestures/Point-class.html">Point</a></li>
       <li><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></li>
       <li><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
@@ -170,12 +177,7 @@
 
     <section class="multi-line-signature">
             <span class="returntype">void</span>
-            <span class="name ">GestureDragUpdateCallback</span>(
-            <br>
-            <div class="parameters">
-                <span class="parameter" id="GestureDragUpdateCallback-param-delta"><span class="type-annotation">double</span> <span class="parameter-name">delta</span></span>
-            </div>
-            )
+            <span class="name ">GestureDragUpdateCallback</span>(<wbr><span class="parameter" id="GestureDragUpdateCallback-param-delta"><span class="type-annotation">double</span> <span class="parameter-name">delta</span></span>)
     </section>
 
     <section class="desc markdown">
@@ -194,12 +196,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -218,7 +220,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

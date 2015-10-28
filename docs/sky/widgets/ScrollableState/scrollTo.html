@@ -151,6 +151,11 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype"></span>
+        <span class="name ">scrollTo</span>(<wbr><span class="parameter" id="scrollTo-param-newScrollOffset"><span class="type-annotation">double</span> <span class="parameter-name">newScrollOffset</span></span>, {<span class="parameter" id="scrollTo-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span></span>, <span class="parameter" id="scrollTo-param-curve"><span class="type-annotation"><a class="" href="animation/Curve-class.html">Curve</a></span> <span class="parameter-name">curve</span>: <span class="default-value">Curves.ease</span></span>})
+    </section>
+
     <section class="desc markdown">
     
           <p class="no-docs">Not documented.</p>
@@ -159,7 +164,7 @@
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">Future scrollTo(double newScrollOffset, { Duration duration, Curve curve: ease }) {
+      <pre><code class="prettyprint lang-dart">Future scrollTo(double newScrollOffset, { Duration duration, Curve curve: Curves.ease }) {
   if (newScrollOffset == _scrollOffset)
     return new Future.value();
 
@@ -183,12 +188,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -207,7 +212,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

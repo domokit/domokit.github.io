@@ -112,17 +112,22 @@
     
     
       <li class="section-title"><a href="widgets/StateRoute-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="widgets/StateRoute/callback.html">callback</a></li>
+      <li><a class="" href="material/Route/canHaveHeroes.html">canHaveHeroes</a></li>
+      <li><a class="" href="material/Route/debugLabel.html">debugLabel</a></li>
       <li><a class="" href="material/Route/ephemeral.html">ephemeral</a></li>
       <li><a class="" href="widgets/StateRoute/hasContent.html">hasContent</a></li>
       <li><a class="" href="widgets/StateRoute/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Route/isActuallyOpaque.html">isActuallyOpaque</a></li>
       <li><a class="" href="widgets/StateRoute/modal.html">modal</a></li>
+      <li><a class="" href="material/Route/mostValuableKeys.html">mostValuableKeys</a></li>
+      <li><a class="" href="material/Route/navigator.html">navigator</a></li>
+      <li><a class="" href="widgets/StateRoute/onPop.html">onPop</a></li>
       <li><a class="" href="widgets/StateRoute/opaque.html">opaque</a></li>
       <li><a class="" href="widgets/StateRoute/owner.html">owner</a></li>
       <li><a class="" href="material/Route/performance.html">performance</a></li>
       <li><a class="" href="widgets/StateRoute/route.html">route</a></li>
       <li><a class="" href="widgets/StateRoute/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="material/Route/subtreeContext.html">subtreeContext</a></li>
     
       <li class="section-title"><a href="widgets/StateRoute-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/StateRoute/StateRoute.html">StateRoute</a></li>
@@ -134,14 +139,23 @@
       <li><a class="" href="widgets/StateRoute/build.html">build</a></li>
       <li><a class="" href="widgets/StateRoute/didPop.html">didPop</a></li>
       <li><a class="" href="material/Route/didPush.html">didPush</a></li>
+      <li><a class="" href="material/Route/getHeroesToAnimate.html">getHeroesToAnimate</a></li>
+      <li><a class="" href="material/Route/keySubtree.html">keySubtree</a></li>
       <li><a class="" href="widgets/StateRoute/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="material/Route/readState.html">readState</a></li>
       <li><a class="" href="material/Route/setState.html">setState</a></li>
       <li><a class="" href="material/Route/toString.html">toString</a></li>
+      <li><a class="" href="material/Route/writeState.html">writeState</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">didPop</span>(<wbr>[<span class="parameter" id="didPop-param-result"><span class="parameter-name">result</span></span>])
+    </section>
 
     <section class="desc markdown">
     
@@ -153,8 +167,8 @@
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void didPop([dynamic result]) {
   assert(result == null);
-  if (callback != null)
-    callback(this);
+  if (onPop != null)
+    onPop(this);
   super.didPop(result);
 }</code></pre>
     </section>
@@ -169,12 +183,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -193,7 +207,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

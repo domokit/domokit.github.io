@@ -111,6 +111,8 @@
     <ol>
     
     
+      <li class="section-title"><a href="material/Navigator-class.html#static-methods">Static methods</a></li>
+      <li><a class="" href="material/Navigator/of.html">of</a></li>
     
       <li class="section-title"><a href="material/Navigator-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="material/Navigator/hashCode.html">hashCode</a></li>
@@ -132,12 +134,17 @@
       <li><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="material/Navigator/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="material/Widget/toString.html">toString</a></li>
+      <li><a class="" href="material/Widget/toStringShort.html">toStringShort</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+      <section class="multi-line-signature">
+        
+                <span class="name ">Navigator</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-routes"><span class="type-annotation">Map&lt;String, <a class="" href="material/RouteBuilder.html">RouteBuilder</a>&gt;</span> <span class="parameter-name">routes</span></span>, <span class="parameter" id="-param-onGenerateRoute"><span class="type-annotation"><a class="" href="material/RouteBuilder.html">RouteBuilder</a></span> <span class="parameter-name">onGenerateRoute</span>(<span class="parameter" id="RouteGenerator-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)</span>, <span class="parameter" id="-param-onUnknownRoute"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">onUnknownRoute</span>(<span class="parameter" id="RouteBuilder-param-args"><span class="type-annotation"><a class="" href="material/RouteArguments-class.html">RouteArguments</a></span> <span class="parameter-name">args</span></span>)</span>})
+      </section>
 
     <section class="desc markdown">
     
@@ -154,7 +161,8 @@
   this.onUnknownRoute // 404 generator. You only need to implement this if you have a way to navigate to arbitrary names.
 }) : super(key: key) {
   // To use a navigator, you must at a minimum define the route with the name &apos;/&apos;.
-  assert(routes.containsKey(&apos;/&apos;));
+  assert(routes != null);
+  assert(routes.containsKey(kDefaultRouteName));
 }</code></pre>
       </section>
 
@@ -168,12 +176,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -192,7 +200,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

@@ -119,6 +119,7 @@
       <li><a class="" href="gestures/TapGestureRecognizer/onTap.html">onTap</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/onTapCancel.html">onTapCancel</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/onTapDown.html">onTapDown</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/onTapUp.html">onTapUp</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/primaryPointer.html">primaryPointer</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/state.html">state</a></li>
@@ -130,7 +131,7 @@
       <li><a class="" href="gestures/TapGestureRecognizer/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="gestures/TapGestureRecognizer-class.html#instance-methods">Methods</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/acceptGesture.html">acceptGesture</a></li>
+      <li><a class="" href="gestures/TapGestureRecognizer/acceptGesture.html">acceptGesture</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/addPointer.html">addPointer</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/didExceedDeadline.html">didExceedDeadline</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer/didStopTrackingLastPointer.html">didStopTrackingLastPointer</a></li>
@@ -150,6 +151,10 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+      <section class="multi-line-signature">
+        
+                <span class="name ">TapGestureRecognizer</span>(<wbr>{<span class="parameter" id="-param-router"><span class="type-annotation"><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></span> <span class="parameter-name">router</span></span>, <span class="parameter" id="-param-onTapDown"><span class="type-annotation">void</span> <span class="parameter-name">onTapDown</span>(<span class="parameter" id="GestureTapDownCallback-param-globalPosition"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">globalPosition</span></span>)</span>, <span class="parameter" id="-param-onTapUp"><span class="type-annotation">void</span> <span class="parameter-name">onTapUp</span>(<span class="parameter" id="GestureTapDownCallback-param-globalPosition"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">globalPosition</span></span>)</span>, <span class="parameter" id="-param-onTap"><span class="type-annotation">void</span> <span class="parameter-name">onTap</span>()</span>, <span class="parameter" id="-param-onTapCancel"><span class="type-annotation">void</span> <span class="parameter-name">onTapCancel</span>()</span>})
+      </section>
 
     <section class="desc markdown">
     
@@ -159,8 +164,13 @@
 
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">TapGestureRecognizer({ PointerRouter router, this.onTap })
-  : super(router: router);</code></pre>
+        <pre><code class="prettyprint lang-dart">TapGestureRecognizer({
+  PointerRouter router,
+  this.onTapDown,
+  this.onTapUp,
+  this.onTap,
+  this.onTapCancel
+}) : super(router: router);</code></pre>
       </section>
 
   </div> <!-- /.main-content -->
@@ -173,12 +183,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -197,7 +207,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

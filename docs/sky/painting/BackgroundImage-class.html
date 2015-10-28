@@ -116,7 +116,7 @@
       <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/VoidCallback.html">VoidCallback</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
@@ -142,6 +142,7 @@
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
       <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
       <li><a class="" href="painting/Color-class.html">Color</a></li>
+      <li><a class="" href="painting/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
@@ -167,7 +168,6 @@
     <section class="desc markdown">
     
           <p>A background image for a box.</p>
-
     
     </section>
 
@@ -175,158 +175,157 @@
 
 
 
-    <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
 
-        <dl class="properties">
-            <dt id="centerSlice" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/centerSlice.html">centerSlice</a></span>
-                <span class="signature">&#8594; <a class="" href="material/Rect-class.html">Rect</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="colorFilter" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/colorFilter.html">colorFilter</a></span>
-                <span class="signature">&#8594; ColorFilter</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="fit" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/fit.html">fit</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ImageFit-class.html">ImageFit</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="painting/BackgroundImage/hashCode.html">&hellip;</a>
-</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="image" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/image.html">image</a></span>
-                <span class="signature">&#8594; Image</span>
-            </dt>
-            <dd>
-                <p>The image to be painted into the background.</p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="repeat" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/repeat.html">repeat</a></span>
-                <span class="signature">&#8594; <a class="" href="material/ImageRepeat-class.html">ImageRepeat</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="painting/BackgroundImage/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-        </dl>
+      <dl class="constructor-summary-list">
+        <dt id="BackgroundImage" class="callable">
+          <span class="name"><a class="" href="painting/BackgroundImage/BackgroundImage.html">BackgroundImage</a></span><span class="signature">({<span class="parameter" id="-param-image"><span class="type-annotation"><a class="" href="services/ImageResource-class.html">ImageResource</a></span> <span class="parameter-name">image</span></span>, <span class="parameter" id="-param-fit"><span class="type-annotation"><a class="" href="material/ImageFit-class.html">ImageFit</a></span> <span class="parameter-name">fit</span></span>, <span class="parameter" id="-param-repeat"><span class="type-annotation"><a class="" href="material/ImageRepeat-class.html">ImageRepeat</a></span> <span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="-param-centerSlice"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">centerSlice</span></span>, <span class="parameter" id="-param-colorFilter"><span class="type-annotation"><a class="" href="material/ColorFilter-class.html">ColorFilter</a></span> <span class="parameter-name">colorFilter</span></span>})</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
     </section>
 
-    <section class="summary offset-anchor" id="constructors">
-        <h2>Constructors</h2>
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
 
-        <dl class="constructor-summary-list">
-            <dt id="BackgroundImage" class="callable">
-                <span class="name"><a class="" href="painting/BackgroundImage/BackgroundImage.html">BackgroundImage</a></span><span class="signature">({<span class="parameter" id="-param-image"><span class="type-annotation"><a class="" href="services/ImageResource-class.html">ImageResource</a></span> <span class="parameter-name">image</span></span>, <span class="parameter" id="-param-fit"><span class="type-annotation"><a class="" href="material/ImageFit-class.html">ImageFit</a></span> <span class="parameter-name">fit</span></span>, <span class="parameter" id="-param-repeat"><span class="type-annotation"><a class="" href="material/ImageRepeat-class.html">ImageRepeat</a></span> <span class="parameter-name">repeat</span>: <span class="default-value">ImageRepeat.noRepeat</span></span>, <span class="parameter" id="-param-centerSlice"><span class="type-annotation"><a class="" href="material/Rect-class.html">Rect</a></span> <span class="parameter-name">centerSlice</span></span>, <span class="parameter" id="-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>})</span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-        </dl>
-      </section>
-
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="painting/BackgroundImage/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="painting/BackgroundImage/operator_equals.html">&hellip;</a>
+      <dl class="properties">
+        <dt id="centerSlice" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/centerSlice.html">centerSlice</a></span>
+            <span class="signature">&#8594; <a class="" href="material/Rect-class.html">Rect</a></span>
+        </dt>
+        <dd>
+            <p>The center slice for a nine-patch image.<a href="painting/BackgroundImage/centerSlice.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="colorFilter" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/colorFilter.html">colorFilter</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ColorFilter-class.html">ColorFilter</a></span>
+        </dt>
+        <dd>
+            <p>A color filter to apply to the background image before painting it.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="fit" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/fit.html">fit</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ImageFit-class.html">ImageFit</a></span>
+        </dt>
+        <dd>
+            <p>How the background image should be inscribed into the box.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="image" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/image.html">image</a></span>
+            <span class="signature">&#8594; Image</span>
+        </dt>
+        <dd>
+            <p>The image to be painted into the background.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="repeat" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/repeat.html">repeat</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ImageRepeat-class.html">ImageRepeat</a></span>
+        </dt>
+        <dd>
+            <p>How to paint any portions of the box not covered by the background image.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="painting/BackgroundImage/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="addChangeListener" class="callable">
-                  <span class="name "><a class="" href="painting/BackgroundImage/addChangeListener.html">addChangeListener</a></span><span class="signature">(<wbr><span class="parameter" id="addChangeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Call listener when the background images changes (e.g., arrives from the network).</p>
-              </dd>
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="painting/BackgroundImage/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="painting/BackgroundImage/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="painting/BackgroundImage/operator_equals.html">&hellip;</a>
+</p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addChangeListener" class="callable">
+            <span class="name "><a class="" href="painting/BackgroundImage/addChangeListener.html">addChangeListener</a></span><span class="signature">(<wbr><span class="parameter" id="addChangeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Call listener when the background images changes (e.g., arrives from the network).</p>
+        </dd>
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="painting/BackgroundImage/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="painting/BackgroundImage/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="removeChangeListener" class="callable">
-                  <span class="name "><a class="" href="painting/BackgroundImage/removeChangeListener.html">removeChangeListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeChangeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>No longer call listener when the background image changes.</p>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="painting/BackgroundImage/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChangeListener" class="callable">
+            <span class="name "><a class="" href="painting/BackgroundImage/removeChangeListener.html">removeChangeListener</a></span><span class="signature">(<wbr><span class="parameter" id="removeChangeListener-param-listener"><span class="type-annotation">void</span> <span class="parameter-name">listener</span>()</span>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p>No longer call listener when the background image changes.</p>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="painting/BackgroundImage/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>BackgroundImage</h5>
@@ -365,12 +364,12 @@ the original invocation.<a href="painting/BackgroundImage/noSuchMethod.html">&he
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -389,7 +388,7 @@ the original invocation.<a href="painting/BackgroundImage/noSuchMethod.html">&he
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

@@ -135,7 +135,6 @@
       <li><a class="" href="rendering/PaintingContext/paintChildWithClipPath.html">paintChildWithClipPath</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithClipRect.html">paintChildWithClipRect</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithClipRRect.html">paintChildWithClipRRect</a></li>
-      <li><a class="" href="rendering/PaintingContext/paintChildWithColorFilter.html">paintChildWithColorFilter</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithOpacity.html">paintChildWithOpacity</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithShaderMask.html">paintChildWithShaderMask</a></li>
       <li><a class="" href="rendering/PaintingContext/paintChildWithTransform.html">paintChildWithTransform</a></li>
@@ -147,13 +146,16 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">compositeChild</span>(<wbr><span class="parameter" id="compositeChild-param-child"><span class="type-annotation"><a class="" href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>, {<span class="parameter" id="compositeChild-param-childOffset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">childOffset</span>: <span class="default-value">Offset.zero</span></span>, <span class="parameter" id="compositeChild-param-parentLayer"><span class="type-annotation"><a class="" href="rendering/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">parentLayer</span></span>})
+    </section>
+
     <section class="desc markdown">
     
-          <p>Instructs the child to paint itself into a new composited layer using this context
-  ///
-  /// Do not call directly. This function is visible so that it can be
-  /// overridden in tests.</p>
-
+          <p>Instructs the child to paint itself into a new composited layer using this context</p>
+<p>Do not call directly. This function is visible so that it can be
+overridden in tests.</p>
     
     </section>
 
@@ -209,12 +211,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -233,7 +235,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

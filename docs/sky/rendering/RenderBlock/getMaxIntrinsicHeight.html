@@ -162,6 +162,7 @@
       <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
       <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/RenderBoxContainerDefaultsMixin/defaultComputeDistanceToFirstActualBaseline.html">defaultComputeDistanceToFirstActualBaseline</a></li>
@@ -177,7 +178,7 @@
       <li><a class="" href="rendering/RenderBlock/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
       <li><a class="" href="rendering/RenderBlock/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
       <li><a class="" href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
-      <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
       <li><a class="" href="rendering/RenderBlock/hitTestChildren.html">hitTestChildren</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
@@ -208,17 +209,19 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">double</span>
+        <span class="name ">getMaxIntrinsicHeight</span>(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-constraints"><span class="type-annotation"><a class="" href="material/BoxConstraints-class.html">BoxConstraints</a></span> <span class="parameter-name">constraints</span></span>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Returns the smallest height beyond which increasing the height never
-/// decreases the width.
-///
-/// If the layout algorithm used is width-in-height-out, i.e. the height
-/// depends on the width and not vice versa, then this will return the same
-/// as getMinIntrinsicHeight().
-///
-/// Override in subclasses that implement <code>performLayout</code>.</p>
-
+decreases the width.</p>
+<p>If the layout algorithm used is width-in-height-out, i.e. the height
+depends on the width and not vice versa, then this will return the same
+as getMinIntrinsicHeight().</p>
+<p>Override in subclasses that implement <code>performLayout</code>.</p>
     
     </section>
 
@@ -244,12 +247,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -268,7 +271,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

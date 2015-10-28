@@ -137,6 +137,10 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+      <section class="multi-line-signature">
+        
+                <span class="name ">RadialReaction</span>(<wbr>{<span class="parameter" id="-param-center"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">center</span></span>, <span class="parameter" id="-param-radius"><span class="type-annotation">double</span> <span class="parameter-name">radius</span></span>, <span class="parameter" id="-param-startPosition"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">startPosition</span></span>})
+      </section>
 
     <section class="desc markdown">
     
@@ -151,9 +155,9 @@
   this.radius,
   Point startPosition
 }) {
-  _outerOpacity = new AnimatedValue&lt;double&gt;(0.0, end: _kMaxOpacity, curve: easeOut);
-  _innerCenter = new AnimatedValue&lt;Point&gt;(startPosition, end: center, curve: easeOut);
-  _innerRadius = new AnimatedValue&lt;double&gt;(0.0, end: radius, curve: easeOut);
+  _outerOpacity = new AnimatedValue&lt;double&gt;(0.0, end: _kMaxOpacity, curve: Curves.easeOut);
+  _innerCenter = new AnimatedValue&lt;Point&gt;(startPosition, end: center, curve: Curves.easeOut);
+  _innerRadius = new AnimatedValue&lt;double&gt;(0.0, end: radius, curve: Curves.easeOut);
   _showPerformance = new Performance(duration: _kShowDuration)
     ..addListener(() {
       _showPerformance.updateVariable(_outerOpacity);
@@ -161,7 +165,7 @@
       _showPerformance.updateVariable(_innerRadius);
     });
   _fade = new ValuePerformance&lt;double&gt;(
-    variable: new AnimatedValue&lt;double&gt;(1.0, end: 0.0, curve: easeIn),
+    variable: new AnimatedValue&lt;double&gt;(1.0, end: 0.0, curve: Curves.easeIn),
     duration: _kHideDuration
   );
 }</code></pre>
@@ -177,12 +181,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -201,7 +205,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

@@ -118,7 +118,7 @@
       <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/VoidCallback.html">VoidCallback</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
@@ -144,6 +144,7 @@
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
       <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
       <li><a class="" href="painting/Color-class.html">Color</a></li>
+      <li><a class="" href="painting/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
@@ -171,260 +172,258 @@
           <p>An immutable set of offsets in each of the four cardinal directions.</p>
 <p>Typically used for an offset from each of the four sides of a box. For
 example, the padding inside a box can be represented using this class.</p>
-
     
     </section>
 
 
     <section class="summary offset-anchor" id="constants">
-        <h2>Constants</h2>
+      <h2>Constants</h2>
 
-        <dl class="properties">
-            <dt id="zero" class="constant">
-                <span class="name "><a class="" href="painting/EdgeDims/zero.html">zero</a></span>
-                <span class="signature">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const <a class="" href="material/EdgeDims-class.html">EdgeDims</a>.TRBL(0.0, 0.0, 0.0, 0.0)</code><span>
-                </div>
-            </dd>
-        </dl>
+      <dl class="properties">
+        <dt id="zero" class="constant">
+            <span class="name "><a class="" href="painting/EdgeDims/zero.html">zero</a></span>
+            <span class="signature">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+        </dt>
+        <dd>
+            <p>An EdgeDims with zero offsets in each direction.</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const <a class="" href="material/EdgeDims-class.html">EdgeDims</a>.TRBL(0.0, 0.0, 0.0, 0.0)</code></span>
+            </div>
+        </dd>
+      </dl>
     </section>
 
 
     <section class="summary offset-anchor" id="static-methods">
-        <h2>Static Methods</h2>
-        <dl class="callables">
-            <dt id="lerp" class="callable">
-                <span class="name "><a class="" href="painting/EdgeDims/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
-                    <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                </span>
-            </dt>
-            <dd>
-                <p>Linearly interpolate between two EdgeDims.
-  ///
-  /// If either is null, this function interpolates from <a class="" href="material/EdgeDims/zero.html">EdgeDims.zero</a>.</p>
-            </dd>
-        </dl>
-    </section>
-
-    <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
-
-        <dl class="properties">
-            <dt id="bottom" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/bottom.html">bottom</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="collapsedSize" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/collapsedSize.html">collapsedSize</a></span>
-                <span class="signature">&#8594; <a class="" href="material/Size-class.html">Size</a></span>
-            </dt>
-            <dd>
-                <p>The size that this edge dims would occupy with an empty interior.</p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="isNonNegative" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/isNonNegative.html">isNonNegative</a></span>
-                <span class="signature">&#8594; bool</span>
-            </dt>
-            <dd>
-                <p>Whether every dimension is non-negative.</p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="left" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/left.html">left</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="right" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/right.html">right</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="top" class="property">
-                <span class="name"><a class="" href="painting/EdgeDims/top.html">top</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-        </dl>
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="lerp" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">a</span></span>, <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">b</span></span>, <span class="parameter" id="lerp-param-t"><span class="type-annotation">double</span> <span class="parameter-name">t</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p>Linearly interpolate between two EdgeDims.<a href="painting/EdgeDims/lerp.html">&hellip;</a>
+</p>
+        </dd>
+      </dl>
     </section>
 
     <section class="summary offset-anchor" id="constructors">
-        <h2>Constructors</h2>
+      <h2>Constructors</h2>
 
-        <dl class="constructor-summary-list">
-            <dt id="EdgeDims.all" class="callable">
-                <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.all.html">EdgeDims.all</a></span><span class="signature">(<span class="parameter" id="all-param-value"><span class="type-annotation">double</span> <span class="parameter-name">value</span></span>)</span>
-            </dt>
-            <dd>
-                <p>Constructs an EdgeDims where all the offsets are value.</p>
-                <div class="constructor-modifier features">const</div>
-            </dd>
-            <dt id="EdgeDims.only" class="callable">
-                <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.only.html">EdgeDims.only</a></span><span class="signature">({<span class="parameter" id="only-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="only-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="only-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="only-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span>: <span class="default-value">0.0</span></span>})</span>
-            </dt>
-            <dd>
-                <p>Constructs an EdgeDims with only the given values non-zero.</p>
-                <div class="constructor-modifier features">const</div>
-            </dd>
-            <dt id="EdgeDims.symmetric" class="callable">
-                <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.symmetric.html">EdgeDims.symmetric</a></span><span class="signature">({<span class="parameter" id="symmetric-param-vertical"><span class="type-annotation">double</span> <span class="parameter-name">vertical</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="symmetric-param-horizontal"><span class="type-annotation">double</span> <span class="parameter-name">horizontal</span>: <span class="default-value">0.0</span></span>})</span>
-            </dt>
-            <dd>
-                <p>Constructs an EdgeDims with symmetrical vertical and horizontal offsets.</p>
-                <div class="constructor-modifier features">const</div>
-            </dd>
-            <dt id="EdgeDims.TRBL" class="callable">
-                <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.TRBL.html">EdgeDims.TRBL</a></span><span class="signature">(<span class="parameter" id="TRBL-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="TRBL-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span></span>, <span class="parameter" id="TRBL-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span></span>, <span class="parameter" id="TRBL-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>)</span>
-            </dt>
-            <dd>
-                <p>Constructs an EdgeDims from offsets from the top, right, bottom and left.</p>
-                <div class="constructor-modifier features">const</div>
-            </dd>
-        </dl>
-      </section>
+      <dl class="constructor-summary-list">
+        <dt id="EdgeDims.all" class="callable">
+          <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.all.html">EdgeDims.all</a></span><span class="signature">(<span class="parameter" id="all-param-value"><span class="type-annotation">double</span> <span class="parameter-name">value</span></span>)</span>
+        </dt>
+        <dd>
+          <p>Constructs an EdgeDims where all the offsets are value.</p>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="EdgeDims.only" class="callable">
+          <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.only.html">EdgeDims.only</a></span><span class="signature">({<span class="parameter" id="only-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="only-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="only-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="only-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span>: <span class="default-value">0.0</span></span>})</span>
+        </dt>
+        <dd>
+          <p>Constructs an EdgeDims with only the given values non-zero.</p>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="EdgeDims.symmetric" class="callable">
+          <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.symmetric.html">EdgeDims.symmetric</a></span><span class="signature">({<span class="parameter" id="symmetric-param-vertical"><span class="type-annotation">double</span> <span class="parameter-name">vertical</span>: <span class="default-value">0.0</span></span>, <span class="parameter" id="symmetric-param-horizontal"><span class="type-annotation">double</span> <span class="parameter-name">horizontal</span>: <span class="default-value">0.0</span></span>})</span>
+        </dt>
+        <dd>
+          <p>Constructs an EdgeDims with symmetrical vertical and horizontal offsets.</p>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="EdgeDims.TRBL" class="callable">
+          <span class="name"><a class="" href="painting/EdgeDims/EdgeDims.TRBL.html">EdgeDims.TRBL</a></span><span class="signature">(<span class="parameter" id="TRBL-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="TRBL-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span></span>, <span class="parameter" id="TRBL-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span></span>, <span class="parameter" id="TRBL-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>)</span>
+        </dt>
+        <dd>
+          <p>Constructs an EdgeDims from offsets from the top, right, bottom and left.</p>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator %" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_modulo.html">operator %</a></span><span class="signature">(<wbr><span class="parameter" id="%-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="operator *" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_multiply.html">operator *</a></span><span class="signature">(<wbr><span class="parameter" id="*-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="operator +" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_plus.html">operator +</a></span><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="operator -" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_minus.html">operator -</a></span><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="operator /" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_divide.html">operator /</a></span><span class="signature">(<wbr><span class="parameter" id="/-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="painting/EdgeDims/operator_equals.html">&hellip;</a>
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="bottom" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/bottom.html">bottom</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p>The offset from the bottom.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="collapsedSize" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/collapsedSize.html">collapsedSize</a></span>
+            <span class="signature">&#8594; <a class="" href="material/Size-class.html">Size</a></span>
+        </dt>
+        <dd>
+            <p>The size that this edge dims would occupy with an empty interior.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="isNonNegative" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/isNonNegative.html">isNonNegative</a></span>
+            <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+            <p>Whether every dimension is non-negative.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="left" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/left.html">left</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p>The offset from the left.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="right" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/right.html">right</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p>The offset from the right.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="top" class="property">
+            <span class="name"><a class="" href="painting/EdgeDims/top.html">top</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p>The offset from the top.</p>
+            <div class="features">
+        read-only
+    </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator %" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_modulo.html">operator %</a></span><span class="signature">(<wbr><span class="parameter" id="%-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="operator *" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_multiply.html">operator *</a></span><span class="signature">(<wbr><span class="parameter" id="*-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="operator +" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_plus.html">operator +</a></span><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="operator -" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_minus.html">operator -</a></span><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a class="" href="material/EdgeDims-class.html">EdgeDims</a></span> <span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="operator /" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_divide.html">operator /</a></span><span class="signature">(<wbr><span class="parameter" id="/-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="painting/EdgeDims/operator_equals.html">&hellip;</a>
 </p>
-              </dd>
-              <dt id="operator ~/" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/operator_truncate_divide.html">operator ~/</a></span><span class="signature">(<wbr><span class="parameter" id="~/-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-          </dl>
-      </section>
+        </dd>
+        <dt id="operator ~/" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/operator_truncate_divide.html">operator ~/</a></span><span class="signature">(<wbr><span class="parameter" id="~/-param-other"><span class="type-annotation">double</span> <span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; <a class="" href="material/EdgeDims-class.html">EdgeDims</a></span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+        </dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="painting/EdgeDims/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="painting/EdgeDims/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="painting/EdgeDims/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>EdgeDims</h5>
@@ -475,12 +474,12 @@ the original invocation.<a href="painting/EdgeDims/noSuchMethod.html">&hellip;</
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -499,7 +498,7 @@ the original invocation.<a href="painting/EdgeDims/noSuchMethod.html">&hellip;</
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

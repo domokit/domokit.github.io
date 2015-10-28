@@ -110,16 +110,23 @@
     <ol>
     
     
+      <li class="section-title"><a href="widgets/Route-class.html#static-methods">Static methods</a></li>
+      <li><a class="" href="widgets/Route/of.html">of</a></li>
     
       <li class="section-title"><a href="widgets/Route-class.html#instance-properties">Properties</a></li>
+      <li><a class="" href="widgets/Route/canHaveHeroes.html">canHaveHeroes</a></li>
+      <li><a class="" href="widgets/Route/debugLabel.html">debugLabel</a></li>
       <li><a class="" href="widgets/Route/ephemeral.html">ephemeral</a></li>
       <li><a class="" href="widgets/Route/hasContent.html">hasContent</a></li>
       <li><a class="" href="widgets/Route/hashCode.html">hashCode</a></li>
       <li><a class="" href="widgets/Route/isActuallyOpaque.html">isActuallyOpaque</a></li>
       <li><a class="" href="widgets/Route/modal.html">modal</a></li>
+      <li><a class="" href="widgets/Route/mostValuableKeys.html">mostValuableKeys</a></li>
+      <li><a class="" href="widgets/Route/navigator.html">navigator</a></li>
       <li><a class="" href="widgets/Route/opaque.html">opaque</a></li>
       <li><a class="" href="widgets/Route/performance.html">performance</a></li>
       <li><a class="" href="widgets/Route/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="widgets/Route/subtreeContext.html">subtreeContext</a></li>
     
       <li class="section-title"><a href="widgets/Route-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Route/Route.html">Route</a></li>
@@ -131,14 +138,23 @@
       <li><a class="" href="widgets/Route/build.html">build</a></li>
       <li><a class="" href="widgets/Route/didPop.html">didPop</a></li>
       <li><a class="" href="widgets/Route/didPush.html">didPush</a></li>
+      <li><a class="" href="widgets/Route/getHeroesToAnimate.html">getHeroesToAnimate</a></li>
+      <li><a class="" href="widgets/Route/keySubtree.html">keySubtree</a></li>
       <li><a class="" href="widgets/Route/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="widgets/Route/readState.html">readState</a></li>
       <li><a class="" href="widgets/Route/setState.html">setState</a></li>
       <li><a class="" href="widgets/Route/toString.html">toString</a></li>
+      <li><a class="" href="widgets/Route/writeState.html">writeState</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">didPop</span>(<wbr>[<span class="parameter" id="didPop-param-result"><span class="parameter-name">result</span></span>])
+    </section>
 
     <section class="desc markdown">
     
@@ -149,9 +165,9 @@
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void didPop([dynamic result]) {
-  assert(_navigator != null);
+  assert(navigator != null);
   if (performance == null)
-    _navigator._removeRoute(this);
+    navigator._removeRoute(this);
 }</code></pre>
     </section>
 
@@ -165,12 +181,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -189,7 +205,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

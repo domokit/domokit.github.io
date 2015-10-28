@@ -146,49 +146,110 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype"><a class="" href="material/Widget-class.html">Widget</a></span>
+        <span class="name ">build</span>(<wbr><span class="parameter" id="build-param-context"><span class="type-annotation"><a class="" href="material/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Returns another Widget out of which this StatefulComponent is built.
-/// Typically that Widget will have been configured with further children,
-/// such that really this function returns a tree of configuration.
-///
-/// The given build context object contains information about the location in
-/// the tree at which this component is being built. For example, the context
-/// provides the set of inherited widgets for this location in the tree.</p>
-
+Typically that Widget will have been configured with further children,
+such that really this function returns a tree of configuration.</p>
+<p>The given build context object contains information about the location in
+the tree at which this component is being built. For example, the context
+provides the set of inherited widgets for this location in the tree.</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
-  List&lt;Widget&gt; visibleRoutes = new List&lt;Widget&gt;();
-  bool alreadyInsertModalBarrier = false;
-  PerformanceView nextPerformance;
+  List&lt;Widget&gt; visibleRoutes = &lt;Widget&gt;[];
+
+  assert(() {
+    if (debugShowGrid)
+      visibleRoutes.add(new GridPaper(color: debugGridColor));
+    return true;
+  });
+
+
+  bool alreadyInsertedHeroes = false;
+  bool alreadyInsertedModalBarrier = false;
+  Route nextContentRoute;
+  PerformanceView nextHeroPerformance;
   for (int i = _history.length-1; i &gt;= 0; i -= 1) {
-    Route route = _history[i];
+    final Route route = _history[i];
     if (!route.hasContent) {
       assert(!route.modal);
+      assert(!_desiredHeroes.hasInstructions || (_desiredHeroes.from != route &amp;&amp; _desiredHeroes.to != route));
+      assert(!route._hasActiveHeroes);
       continue;
     }
-    visibleRoutes.add(
-      new KeyedSubtree(
-        key: new ObjectKey(route),
-        child: route.build(this, nextPerformance)
-      )
-    );
-    if (route.isActuallyOpaque)
+    if (route._hasActiveHeroes &amp;&amp; !alreadyInsertedHeroes) {
+      visibleRoutes.addAll(_activeHeroes.getWidgets(context, _currentHeroPerformance));
+      alreadyInsertedHeroes = true;
+    }
+    if (_desiredHeroes.hasInstructions) {
+      if ((_desiredHeroes.to == route || _desiredHeroes.from == route) &amp;&amp; nextHeroPerformance == null)
+        nextHeroPerformance = route.performance;
+      visibleRoutes.add(new _RouteWidget(route: route, nextRoute: nextContentRoute, buildTargetHeroes: _desiredHeroes.to == route));
+    } else {
+      visibleRoutes.add(new _RouteWidget(route: route, nextRoute: nextContentRoute));
+    }
+    if (route.isActuallyOpaque) {
+      assert(!_desiredHeroes.hasInstructions ||
+             (_history.indexOf(_desiredHeroes.from) &gt;= i &amp;&amp; _history.indexOf(_desiredHeroes.to) &gt;= i));
       break;
+    }
     assert(route.modal || route.ephemeral);
-    if (route.modal &amp;&amp; i &gt; 0 &amp;&amp; !alreadyInsertModalBarrier) {
+    if (route.modal &amp;&amp; i &gt; 0 &amp;&amp; !alreadyInsertedModalBarrier) {
       visibleRoutes.add(new Listener(
         onPointerDown: (_) { pop(); },
         child: new Container()
       ));
-      alreadyInsertModalBarrier = true;
+      alreadyInsertedModalBarrier = true;
     }
-    nextPerformance = route.performance;
+    nextContentRoute = route;
   }
+
+  if (_desiredHeroes.hasInstructions) {
+    assert(nextHeroPerformance != null);
+    scheduler.requestPostFrameCallback((Duration timestamp) {
+      Map&lt;Object, HeroHandle&gt; heroesFrom;
+      Map&lt;Object, HeroHandle&gt; heroesTo;
+      Set&lt;Key&gt; mostValuableKeys = new Set&lt;Key&gt;();
+      if (_desiredHeroes.from.mostValuableKeys != null)
+        mostValuableKeys.addAll(_desiredHeroes.from.mostValuableKeys);
+      if (_desiredHeroes.to.mostValuableKeys != null)
+        mostValuableKeys.addAll(_desiredHeroes.to.mostValuableKeys);
+      if (_activeHeroes.isEmpty) {
+        assert(!_desiredHeroes.from._hasActiveHeroes);
+        heroesFrom = _desiredHeroes.from.getHeroesToAnimate(mostValuableKeys);
+        _desiredHeroes.from._hasActiveHeroes = heroesFrom.length &gt; 0;
+      } else {
+        assert(_desiredHeroes.from._hasActiveHeroes);
+        heroesFrom = _activeHeroes.getHeroesToAnimate();
+      }
+      heroesTo = _desiredHeroes.to.getHeroesToAnimate(mostValuableKeys);
+      _desiredHeroes.to._hasActiveHeroes = heroesTo.length &gt; 0;
+      _desiredHeroes.reset();
+      setState(() {
+        final RenderBox renderObject = context.findRenderObject();
+        final Point animationTopLeft = renderObject.localToGlobal(Point.origin);
+        final Point animationBottomRight = renderObject.localToGlobal(renderObject.size.bottomRight(Point.origin));
+        final Rect animationArea = new Rect.fromLTRB(animationTopLeft.x, animationTopLeft.y, animationBottomRight.x, animationBottomRight.y);
+        Curve curve = Curves.ease;
+        if (nextHeroPerformance.status == PerformanceStatus.reverse) {
+          nextHeroPerformance = new ReversePerformance(nextHeroPerformance);
+          curve = new Interval(nextHeroPerformance.progress, 1.0, curve: curve);
+        }
+        _activeHeroes.animate(heroesFrom, heroesTo, animationArea, curve);
+        _currentHeroPerformance = nextHeroPerformance;
+      });
+    });
+  }
+
   return new Focus(child: new Stack(visibleRoutes.reversed.toList()));
 }</code></pre>
     </section>
@@ -203,12 +264,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -227,7 +288,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

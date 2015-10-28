@@ -160,6 +160,7 @@
       <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
       <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/RenderToggleable/detach.html">detach</a></li>
@@ -199,6 +200,10 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+      <section class="multi-line-signature">
+        
+                <span class="name ">RenderToggleable</span>(<wbr>{<span class="parameter" id="-param-value"><span class="type-annotation">bool</span> <span class="parameter-name">value</span></span>, <span class="parameter" id="-param-size"><span class="type-annotation"><a class="" href="material/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>, <span class="parameter" id="-param-onChanged"><span class="type-annotation">void</span> <span class="parameter-name">onChanged</span>(<span class="parameter" id="ValueChanged-param-value"><span class="type-annotation">T</span> <span class="parameter-name">value</span></span>)</span>})
+      </section>
 
     <section class="desc markdown">
     
@@ -208,12 +213,14 @@
 
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">RenderToggleable({bool value, Size size, ValueChanged onChanged})
-    : _value = value,
-      _onChanged = onChanged,
-      super(additionalConstraints: new BoxConstraints.tight(size)) {
+        <pre><code class="prettyprint lang-dart">RenderToggleable({
+  bool value,
+  Size size,
+  this.onChanged
+}) : _value = value,
+     super(additionalConstraints: new BoxConstraints.tight(size)) {
   _performance = new ValuePerformance&lt;double&gt;(
-    variable: new AnimatedValue&lt;double&gt;(0.0, end: 1.0, curve: easeIn, reverseCurve: easeOut),
+    variable: new AnimatedValue&lt;double&gt;(0.0, end: 1.0, curve: Curves.easeIn, reverseCurve: Curves.easeOut),
     duration: _kToggleDuration,
     progress: _value ? 1.0 : 0.0
   )..addListener(markNeedsPaint);
@@ -230,12 +237,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -254,7 +261,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

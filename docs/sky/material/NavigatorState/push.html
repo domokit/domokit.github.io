@@ -146,6 +146,11 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">push</span>(<wbr><span class="parameter" id="push-param-route"><span class="type-annotation"><a class="" href="material/Route-class.html">Route</a></span> <span class="parameter-name">route</span></span>)
+    </section>
+
     <section class="desc markdown">
     
           <p class="no-docs">Not documented.</p>
@@ -157,10 +162,20 @@
       <pre><code class="prettyprint lang-dart">void push(Route route) {
   assert(!_debugCurrentlyHaveRoute(route));
   setState(() {
+    // pop ephemeral routes (like popup menus)
     while (currentRoute.ephemeral) {
       currentRoute.didPop(null);
       _currentPosition -= 1;
     }
+    // find the most recent active route that might have heroes
+    if (route.hasContent) {
+      int index = _currentPosition;
+      while (index &gt; 0 &amp;&amp; !_history[index].hasContent)
+        index -= 1;
+      assert(_history[index].hasContent);
+      _desiredHeroes.update(_history[index], route);
+    }
+    // add the new route
     _currentPosition += 1;
     _insertRoute(route);
   });
@@ -177,12 +192,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -201,7 +216,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

@@ -104,27 +104,17 @@
     <h5><a href="animation/animation-library.html">animation</a></h5>
     <ol>
       <li class="section-title"><a href="animation/animation-library.html#constants">Constants</a></li>
-      <li><a class="" href="animation/bounceIn.html">bounceIn</a></li>
-      <li><a class="" href="animation/bounceInOut.html">bounceInOut</a></li>
-      <li><a class="" href="animation/bounceOut.html">bounceOut</a></li>
-      <li><a class="" href="animation/ease.html">ease</a></li>
-      <li><a class="" href="animation/easeIn.html">easeIn</a></li>
-      <li><a class="" href="animation/easeInOut.html">easeInOut</a></li>
-      <li><a class="" href="animation/easeOut.html">easeOut</a></li>
-      <li><a class="" href="animation/elasticIn.html">elasticIn</a></li>
-      <li><a class="" href="animation/elasticInOut.html">elasticInOut</a></li>
-      <li><a class="" href="animation/elasticOut.html">elasticOut</a></li>
-      <li><a class="" href="animation/fastOutSlowIn.html">fastOutSlowIn</a></li>
-      <li><a class="" href="animation/linear.html">linear</a></li>
+      <li><a class="" href="animation/alwaysCompletePerformance.html">alwaysCompletePerformance</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="animation/PerformanceListener.html">PerformanceListener</a></li>
       <li><a class="" href="animation/PerformanceStatusListener.html">PerformanceStatusListener</a></li>
       <li><a class="" href="animation/SchedulerCallback.html">SchedulerCallback</a></li>
+      <li><a class="" href="animation/SchedulerExceptionHandler.html">SchedulerExceptionHandler</a></li>
       <li><a class="" href="animation/TickerCallback.html">TickerCallback</a></li>
       <li><a class="" href="animation/TimelineCallback.html">TimelineCallback</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#properties">Properties</a></li>
+      <li><a class="" href="animation/debugSchedulerExceptionHandler.html">debugSchedulerExceptionHandler</a></li>
       <li><a class="" href="animation/kDefaultSpringForce.html">kDefaultSpringForce</a></li>
       <li><a class="" href="animation/scheduler.html">scheduler</a></li>
       <li><a class="" href="animation/timeDilation.html">timeDilation</a></li>
@@ -135,9 +125,11 @@
       <li><a class="" href="animation/PerformanceStatus-class.html">PerformanceStatus</a></li>
     
       <li class="section-title"><a href="animation/animation-library.html#classes">Classes</a></li>
+      <li><a class="" href="animation/AlwaysCompletePerformance-class.html">AlwaysCompletePerformance</a></li>
       <li><a class="" href="animation/Animatable-class.html">Animatable</a></li>
       <li><a class="" href="animation/AnimatedColorValue-class.html">AnimatedColorValue</a></li>
       <li><a class="" href="animation/AnimatedRectValue-class.html">AnimatedRectValue</a></li>
+      <li><a class="" href="animation/AnimatedSizeValue-class.html">AnimatedSizeValue</a></li>
       <li><a class="" href="animation/AnimatedValue-class.html">AnimatedValue</a></li>
       <li><a class="" href="animation/AnimationTiming-class.html">AnimationTiming</a></li>
       <li><a class="" href="animation/BounceInCurve-class.html">BounceInCurve</a></li>
@@ -147,6 +139,7 @@
       <li><a class="" href="animation/ClampedSimulation-class.html">ClampedSimulation</a></li>
       <li><a class="" href="animation/Cubic-class.html">Cubic</a></li>
       <li><a class="" href="animation/Curve-class.html">Curve</a></li>
+      <li><a class="" href="animation/Curves-class.html">Curves</a></li>
       <li><a class="" href="animation/ElasticInCurve-class.html">ElasticInCurve</a></li>
       <li><a class="" href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></li>
       <li><a class="" href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></li>
@@ -158,6 +151,7 @@
       <li><a class="" href="animation/OverscrollWhenScrollableBehavior-class.html">OverscrollWhenScrollableBehavior</a></li>
       <li><a class="" href="animation/Performance-class.html">Performance</a></li>
       <li><a class="" href="animation/PerformanceView-class.html">PerformanceView</a></li>
+      <li><a class="" href="animation/ReversePerformance-class.html">ReversePerformance</a></li>
       <li><a class="" href="animation/Scheduler-class.html">Scheduler</a></li>
       <li><a class="" href="animation/ScrollBehavior-class.html">ScrollBehavior</a></li>
       <li><a class="" href="animation/SimulationStepper-class.html">SimulationStepper</a></li>
@@ -171,32 +165,19 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
-      <section id="getter">
-      
-      <section class="multi-line-signature">
+      <section class="multi-line-signature">     
         <span class="returntype">double</span>
-        <span class="name ">timeDilation</span></section>
-      
-      <section class="desc markdown">
-
-      <p class="no-docs">Not documented.</p>
-
-</section>
-</section>
-
-      <section id="setter">
-      
-      <section class="multi-line-signature">
-        <span class="returntype">void</span>
-          <span class="name ">timeDilation=</span><span class="signature">(<wbr><span class="parameter" id="timeDilation=-param-_timeDilation"><span class="type-annotation">double</span> <span class="parameter-name">_timeDilation</span></span>)
+          <span class="name ">timeDilation</span>          <div class="features">
+              read / write
+          </div>
       </section>
-      
+  	
       <section class="desc markdown">
+      
+            <p>Slows down animations by this factor to help in development.</p>
+      
+      </section>
 
-      <p class="no-docs">Not documented.</p>
-
-</section>
-</section>
 
   </div> <!-- /.main-content -->
 
@@ -208,12 +189,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -232,7 +213,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

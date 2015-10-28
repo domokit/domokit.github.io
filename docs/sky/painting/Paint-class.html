@@ -116,7 +116,7 @@
       <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/VoidCallback.html">VoidCallback</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
@@ -142,6 +142,7 @@
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
       <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
       <li><a class="" href="painting/Color-class.html">Color</a></li>
+      <li><a class="" href="painting/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
@@ -174,248 +175,192 @@
 
 
 
-    <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
 
-        <dl class="properties">
-            <dt id="color" class="property">
-                <span class="name"><a class="" href="painting/Paint/color.html">color</a></span>
-                <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="colorFilter" class="property">
-                <span class="name"><a class="" href="painting/Paint/colorFilter.html">colorFilter</a></span>
-                <span class="signature">&#8594; ColorFilter</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="drawLooper" class="property">
-                <span class="name"><a class="" href="painting/Paint/drawLooper.html">drawLooper</a></span>
-                <span class="signature">&#8594; DrawLooper</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="filterQuality" class="property">
-                <span class="name"><a class="" href="painting/Paint/filterQuality.html">filterQuality</a></span>
-                <span class="signature">&#8594; FilterQuality</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="painting/Paint/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="painting/Paint/hashCode.html">&hellip;</a>
-</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="isAntiAlias" class="property">
-                <span class="name"><a class="" href="painting/Paint/isAntiAlias.html">isAntiAlias</a></span>
-                <span class="signature">&#8594; bool</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="maskFilter" class="property">
-                <span class="name"><a class="" href="painting/Paint/maskFilter.html">maskFilter</a></span>
-                <span class="signature">&#8594; MaskFilter</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="painting/Paint/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
-        read-only, inherited
-    </div>
-</dd>
-            <dt id="shader" class="property">
-                <span class="name"><a class="" href="painting/Paint/shader.html">shader</a></span>
-                <span class="signature">&#8594; Shader</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="strokeWidth" class="property">
-                <span class="name"><a class="" href="painting/Paint/strokeWidth.html">strokeWidth</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="style" class="property">
-                <span class="name"><a class="" href="painting/Paint/style.html">style</a></span>
-                <span class="signature">&#8594; PaintingStyle</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-            <dt id="transferMode" class="property">
-                <span class="name"><a class="" href="painting/Paint/transferMode.html">transferMode</a></span>
-                <span class="signature">&#8594; <a class="" href="material/TransferMode-class.html">TransferMode</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read / write
-    </div>
-</dd>
-        </dl>
+      <dl class="constructor-summary-list">
+        <dt id="Paint" class="callable">
+          <span class="name"><a class="" href="painting/Paint/Paint.html">Paint</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
     </section>
 
-    <section class="summary offset-anchor" id="constructors">
-        <h2>Constructors</h2>
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
 
-        <dl class="constructor-summary-list">
-            <dt id="Paint" class="callable">
-                <span class="name"><a class="" href="painting/Paint/Paint.html">Paint</a></span><span class="signature">()</span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-        </dl>
-      </section>
-
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="painting/Paint/operator_equals.html">&hellip;</a>
+      <dl class="properties">
+        <dt id="color" class="property">
+            <span class="name"><a class="" href="painting/Paint/color.html">color</a></span>
+            <span class="signature">&#8594; <a class="" href="material/Color-class.html">Color</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="colorFilter" class="property">
+            <span class="name"><a class="" href="painting/Paint/colorFilter.html">colorFilter</a></span>
+            <span class="signature">&#8594; <a class="" href="material/ColorFilter-class.html">ColorFilter</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="drawLooper" class="property">
+            <span class="name"><a class="" href="painting/Paint/drawLooper.html">drawLooper</a></span>
+            <span class="signature">&#8594; DrawLooper</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="filterQuality" class="property">
+            <span class="name"><a class="" href="painting/Paint/filterQuality.html">filterQuality</a></span>
+            <span class="signature">&#8594; FilterQuality</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="painting/Paint/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p>Get a hash code for this object.<a href="painting/Paint/hashCode.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="isAntiAlias" class="property">
+            <span class="name"><a class="" href="painting/Paint/isAntiAlias.html">isAntiAlias</a></span>
+            <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="maskFilter" class="property">
+            <span class="name"><a class="" href="painting/Paint/maskFilter.html">maskFilter</a></span>
+            <span class="signature">&#8594; MaskFilter</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="painting/Paint/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
+        <dt id="shader" class="property">
+            <span class="name"><a class="" href="painting/Paint/shader.html">shader</a></span>
+            <span class="signature">&#8594; Shader</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="strokeWidth" class="property">
+            <span class="name"><a class="" href="painting/Paint/strokeWidth.html">strokeWidth</a></span>
+            <span class="signature">&#8594; double</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="style" class="property">
+            <span class="name"><a class="" href="painting/Paint/style.html">style</a></span>
+            <span class="signature">&#8594; PaintingStyle</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+        <dt id="transferMode" class="property">
+            <span class="name"><a class="" href="painting/Paint/transferMode.html">transferMode</a></span>
+            <span class="signature">&#8594; <a class="" href="material/TransferMode-class.html">TransferMode</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read / write
+    </div>
+</dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="painting/Paint/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="painting/Paint/operator_equals.html">&hellip;</a>
+</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="painting/Paint/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="painting/Paint/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="setColorFilter" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setColorFilter.html">setColorFilter</a></span><span class="signature">(<wbr><span class="parameter" id="setColorFilter-param-colorFilter"><span class="type-annotation">ColorFilter</span> <span class="parameter-name">colorFilter</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="setDrawLooper" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setDrawLooper.html">setDrawLooper</a></span><span class="signature">(<wbr><span class="parameter" id="setDrawLooper-param-drawLooper"><span class="type-annotation">DrawLooper</span> <span class="parameter-name">drawLooper</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="setFilterQuality" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setFilterQuality.html">setFilterQuality</a></span><span class="signature">(<wbr><span class="parameter" id="setFilterQuality-param-filterQuality"><span class="type-annotation">FilterQuality</span> <span class="parameter-name">filterQuality</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="setMaskFilter" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setMaskFilter.html">setMaskFilter</a></span><span class="signature">(<wbr><span class="parameter" id="setMaskFilter-param-maskFilter"><span class="type-annotation">MaskFilter</span> <span class="parameter-name">maskFilter</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="setShader" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setShader.html">setShader</a></span><span class="signature">(<wbr><span class="parameter" id="setShader-param-shader"><span class="type-annotation">Shader</span> <span class="parameter-name">shader</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="setStyle" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setStyle.html">setStyle</a></span><span class="signature">(<wbr><span class="parameter" id="setStyle-param-style"><span class="type-annotation">PaintingStyle</span> <span class="parameter-name">style</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="setTransferMode" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/setTransferMode.html">setTransferMode</a></span><span class="signature">(<wbr><span class="parameter" id="setTransferMode-param-transferMode"><span class="type-annotation"><a class="" href="material/TransferMode-class.html">TransferMode</a></span> <span class="parameter-name">transferMode</span></span>)
-                      <span class="returntype parameter">&#8594; void</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p></p>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="painting/Paint/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="painting/Paint/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>Paint</h5>
@@ -445,13 +390,6 @@ the original invocation.<a href="painting/Paint/noSuchMethod.html">&hellip;</a>
     
       <li class="section-title"><a href="painting/Paint-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="painting/Paint/noSuchMethod.html">noSuchMethod</a></li>
-      <li><a class="" href="painting/Paint/setColorFilter.html">setColorFilter</a></li>
-      <li><a class="" href="painting/Paint/setDrawLooper.html">setDrawLooper</a></li>
-      <li><a class="" href="painting/Paint/setFilterQuality.html">setFilterQuality</a></li>
-      <li><a class="" href="painting/Paint/setMaskFilter.html">setMaskFilter</a></li>
-      <li><a class="" href="painting/Paint/setShader.html">setShader</a></li>
-      <li><a class="" href="painting/Paint/setStyle.html">setStyle</a></li>
-      <li><a class="" href="painting/Paint/setTransferMode.html">setTransferMode</a></li>
       <li><a class="" href="painting/Paint/toString.html">toString</a></li>
     </ol>
   </div><!--/.sidebar-offcanvas-->
@@ -464,12 +402,12 @@ the original invocation.<a href="painting/Paint/noSuchMethod.html">&hellip;</a>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -488,7 +426,7 @@ the original invocation.<a href="painting/Paint/noSuchMethod.html">&hellip;</a>
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

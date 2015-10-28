@@ -127,23 +127,28 @@
       <li><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="material/Widget/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="material/Widget/toString.html">toString</a></li>
+      <li><a class="" href="material/Widget/toStringShort.html">toStringShort</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">String</span>
+        <span class="name ">toString</span>(<wbr>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Returns a string representation of this object.</p>
-
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">String toString() {
-  final String name = key == null ? &apos;$runtimeType&apos; : &apos;$runtimeType-$key&apos;;
+  final String name = toStringShort();
   final List&lt;String&gt; data = &lt;String&gt;[];
   debugFillDescription(data);
   if (data.isEmpty)
@@ -162,12 +167,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -186,7 +191,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

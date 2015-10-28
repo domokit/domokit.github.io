@@ -114,7 +114,7 @@
       <li><a class="" href="painting/underline.html">underline</a></li>
     
       <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
-      <li><a class="" href="painting/BackgroundImageChangeListener.html">BackgroundImageChangeListener</a></li>
+      <li><a class="" href="painting/VoidCallback.html">VoidCallback</a></li>
     
     
       <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
@@ -140,6 +140,7 @@
       <li><a class="" href="painting/BoxShadow-class.html">BoxShadow</a></li>
       <li><a class="" href="painting/Canvas-class.html">Canvas</a></li>
       <li><a class="" href="painting/Color-class.html">Color</a></li>
+      <li><a class="" href="painting/ColorFilter-class.html">ColorFilter</a></li>
       <li><a class="" href="painting/EdgeDims-class.html">EdgeDims</a></li>
       <li><a class="" href="painting/Gradient-class.html">Gradient</a></li>
       <li><a class="" href="painting/LinearGradient-class.html">LinearGradient</a></li>
@@ -165,149 +166,148 @@
     <section class="desc markdown">
     
           <p>Whether to align text horizontally</p>
-
     
     </section>
 
 
     <section class="summary offset-anchor" id="constants">
-        <h2>Constants</h2>
+      <h2>Constants</h2>
 
-        <dl class="properties">
-            <dt id="center" class="constant">
-                <span class="name ">center</span>
-                <span class="signature">&#8594; <a class="" href="material/TextAlign-class.html">TextAlign</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const TextAlign(3)</code><span>
-                </div>
-            </dd>
-            <dt id="left" class="constant">
-                <span class="name ">left</span>
-                <span class="signature">&#8594; <a class="" href="material/TextAlign-class.html">TextAlign</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const TextAlign(1)</code><span>
-                </div>
-            </dd>
-            <dt id="right" class="constant">
-                <span class="name ">right</span>
-                <span class="signature">&#8594; <a class="" href="material/TextAlign-class.html">TextAlign</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const TextAlign(2)</code><span>
-                </div>
-            </dd>
-            <dt id="values" class="constant">
-                <span class="name ">values</span>
-                <span class="signature">&#8594; List&lt;<a class="" href="material/TextAlign-class.html">TextAlign</a>&gt;</span>
-            </dt>
-            <dd>
-                <p>A constant List of the values in this enum, in order of their declaration.</p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const List&lt;TextAlign&gt;</code><span>
-                </div>
-            </dd>
-        </dl>
+      <dl class="properties">
+        <dt id="center" class="constant">
+            <span class="name ">center</span>
+            <span class="signature">&#8594; <a class="" href="material/TextAlign-class.html">TextAlign</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const TextAlign(3)</code></span>
+            </div>
+        </dd>
+        <dt id="left" class="constant">
+            <span class="name ">left</span>
+            <span class="signature">&#8594; <a class="" href="material/TextAlign-class.html">TextAlign</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const TextAlign(1)</code></span>
+            </div>
+        </dd>
+        <dt id="right" class="constant">
+            <span class="name ">right</span>
+            <span class="signature">&#8594; <a class="" href="material/TextAlign-class.html">TextAlign</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const TextAlign(2)</code></span>
+            </div>
+        </dd>
+        <dt id="values" class="constant">
+            <span class="name ">values</span>
+            <span class="signature">&#8594; List&lt;<a class="" href="material/TextAlign-class.html">TextAlign</a>&gt;</span>
+        </dt>
+        <dd>
+            <p>A constant List of the values in this enum, in order of their declaration.</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const List&lt;TextAlign&gt;</code></span>
+            </div>
+        </dd>
+      </dl>
     </section>
+
 
 
 
     <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
+      <h2>Properties</h2>
 
-        <dl class="properties">
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="painting/TextAlign/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="painting/TextAlign/hashCode.html">&hellip;</a>
+      <dl class="properties">
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="painting/TextAlign/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p>Get a hash code for this object.<a href="painting/TextAlign/hashCode.html">&hellip;</a>
 </p>
-                <div class="features">
+            <div class="features">
         read-only, inherited
     </div>
 </dd>
-            <dt id="index" class="property">
-                <span class="name">index</span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
+        <dt id="index" class="property">
+            <span class="name">index</span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
         read-only
     </div>
 </dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="painting/TextAlign/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="painting/TextAlign/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
         read-only, inherited
     </div>
 </dd>
-        </dl>
+      </dl>
     </section>
 
-
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="painting/TextAlign/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="painting/TextAlign/operator_equals.html">&hellip;</a>
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="painting/TextAlign/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="painting/TextAlign/operator_equals.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="painting/TextAlign/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="painting/TextAlign/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="painting/TextAlign/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="painting/TextAlign/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="painting/TextAlign/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>TextAlign</h5>
@@ -343,12 +343,12 @@ the original invocation.<a href="painting/TextAlign/noSuchMethod.html">&hellip;<
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -367,7 +367,7 @@ the original invocation.<a href="painting/TextAlign/noSuchMethod.html">&hellip;<
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

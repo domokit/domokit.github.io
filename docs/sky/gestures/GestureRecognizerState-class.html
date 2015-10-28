@@ -120,8 +120,8 @@
       <li><a class="" href="gestures/kMinFlingVelocity.html">kMinFlingVelocity</a></li>
       <li><a class="" href="gestures/kPagingTouchSlop.html">kPagingTouchSlop</a></li>
       <li><a class="" href="gestures/kPanSlop.html">kPanSlop</a></li>
+      <li><a class="" href="gestures/kPressTimeout.html">kPressTimeout</a></li>
       <li><a class="" href="gestures/kScaleSlop.html">kScaleSlop</a></li>
-      <li><a class="" href="gestures/kTapTimeout.html">kTapTimeout</a></li>
       <li><a class="" href="gestures/kTouchSlop.html">kTouchSlop</a></li>
       <li><a class="" href="gestures/kWindowTouchSlop.html">kWindowTouchSlop</a></li>
       <li><a class="" href="gestures/kZoomControlsTimeout.html">kZoomControlsTimeout</a></li>
@@ -139,6 +139,9 @@
       <li><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
       <li><a class="" href="gestures/GestureShowPressCallback.html">GestureShowPressCallback</a></li>
       <li><a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a class="" href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a class="" href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a class="" href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
       <li><a class="" href="gestures/PointerRoute.html">PointerRoute</a></li>
     
     
@@ -150,6 +153,8 @@
       <li><a class="" href="gestures/ScaleState-class.html">ScaleState</a></li>
     
       <li class="section-title"><a href="gestures/gestures-library.html#classes">Classes</a></li>
+      <li><a class="" href="gestures/DisposableArenaMember-class.html">DisposableArenaMember</a></li>
+      <li><a class="" href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></li>
       <li><a class="" href="gestures/GestureArena-class.html">GestureArena</a></li>
       <li><a class="" href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></li>
       <li><a class="" href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
@@ -157,7 +162,9 @@
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
       <li><a class="" href="gestures/InputEvent-class.html">InputEvent</a></li>
       <li><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
+      <li><a class="" href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
+      <li><a class="" href="gestures/Point-class.html">Point</a></li>
       <li><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></li>
       <li><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
@@ -179,143 +186,143 @@
 
 
     <section class="summary offset-anchor" id="constants">
-        <h2>Constants</h2>
+      <h2>Constants</h2>
 
-        <dl class="properties">
-            <dt id="defunct" class="constant">
-                <span class="name ">defunct</span>
-                <span class="signature">&#8594; <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const GestureRecognizerState(3)</code><span>
-                </div>
-            </dd>
-            <dt id="possible" class="constant">
-                <span class="name ">possible</span>
-                <span class="signature">&#8594; <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const GestureRecognizerState(2)</code><span>
-                </div>
-            </dd>
-            <dt id="ready" class="constant">
-                <span class="name ">ready</span>
-                <span class="signature">&#8594; <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const GestureRecognizerState(1)</code><span>
-                </div>
-            </dd>
-            <dt id="values" class="constant">
-                <span class="name ">values</span>
-                <span class="signature">&#8594; List&lt;<a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a>&gt;</span>
-            </dt>
-            <dd>
-                <p>A constant List of the values in this enum, in order of their declaration.</p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>const List&lt;GestureRecognizerState&gt;</code><span>
-                </div>
-            </dd>
-        </dl>
+      <dl class="properties">
+        <dt id="defunct" class="constant">
+            <span class="name ">defunct</span>
+            <span class="signature">&#8594; <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const GestureRecognizerState(3)</code></span>
+            </div>
+        </dd>
+        <dt id="possible" class="constant">
+            <span class="name ">possible</span>
+            <span class="signature">&#8594; <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const GestureRecognizerState(2)</code></span>
+            </div>
+        </dd>
+        <dt id="ready" class="constant">
+            <span class="name ">ready</span>
+            <span class="signature">&#8594; <a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></span>
+        </dt>
+        <dd>
+            <p></p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const GestureRecognizerState(1)</code></span>
+            </div>
+        </dd>
+        <dt id="values" class="constant">
+            <span class="name ">values</span>
+            <span class="signature">&#8594; List&lt;<a class="" href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a>&gt;</span>
+        </dt>
+        <dd>
+            <p>A constant List of the values in this enum, in order of their declaration.</p>
+            <div>
+              <span class="features">const</span>
+              <span class="signature"><code>const List&lt;GestureRecognizerState&gt;</code></span>
+            </div>
+        </dd>
+      </dl>
     </section>
+
 
 
 
     <section class="summary offset-anchor" id="instance-properties">
-        <h2>Properties</h2>
+      <h2>Properties</h2>
 
-        <dl class="properties">
-            <dt id="hashCode" class="property">
-                <span class="name"><a class="" href="gestures/GestureRecognizerState/hashCode.html">hashCode</a></span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p>Get a hash code for this object.<a href="gestures/GestureRecognizerState/hashCode.html">&hellip;</a>
+      <dl class="properties">
+        <dt id="hashCode" class="property">
+            <span class="name"><a class="" href="gestures/GestureRecognizerState/hashCode.html">hashCode</a></span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p>Get a hash code for this object.<a href="gestures/GestureRecognizerState/hashCode.html">&hellip;</a>
 </p>
-                <div class="features">
+            <div class="features">
         read-only, inherited
     </div>
 </dd>
-            <dt id="index" class="property">
-                <span class="name">index</span>
-                <span class="signature">&#8594; int</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
+        <dt id="index" class="property">
+            <span class="name">index</span>
+            <span class="signature">&#8594; int</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
         read-only
     </div>
 </dd>
-            <dt id="runtimeType" class="property">
-                <span class="name"><a class="" href="gestures/GestureRecognizerState/runtimeType.html">runtimeType</a></span>
-                <span class="signature">&#8594; Type</span>
-            </dt>
-            <dd>
-                <p>A representation of the runtime type of the object.</p>
-                <div class="features">
+        <dt id="runtimeType" class="property">
+            <span class="name"><a class="" href="gestures/GestureRecognizerState/runtimeType.html">runtimeType</a></span>
+            <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd>
+            <p>A representation of the runtime type of the object.</p>
+            <div class="features">
         read-only, inherited
     </div>
 </dd>
-        </dl>
+      </dl>
     </section>
 
-
-      <section class="summary offset-anchor" id="operators">
-          <h2>Operators</h2>
-          <dl class="callables">
-              <dt id="operator ==" class="callable">
-                  <span class="name "><a class="" href="gestures/GestureRecognizerState/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
-                      <span class="returntype parameter">&#8594; bool</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>The equality operator.<a href="gestures/GestureRecognizerState/operator_equals.html">&hellip;</a>
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+            <span class="name "><a class="" href="gestures/GestureRecognizerState/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+                <span class="returntype parameter">&#8594; bool</span>
+            </span>
+        </dt>
+        <dd>
+            <p>The equality operator.<a href="gestures/GestureRecognizerState/operator_equals.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
 
-      <section class="summary offset-anchor" id="instance-methods">
-          <h2>Methods</h2>
-          <dl class="callables">
-              <dt id="noSuchMethod" class="callable">
-                  <span class="name "><a class="" href="gestures/GestureRecognizerState/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-                      <span class="returntype parameter">&#8594; dynamic</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable">
+            <span class="name "><a class="" href="gestures/GestureRecognizerState/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+                <span class="returntype parameter">&#8594; dynamic</span>
+            </span>
+        </dt>
+        <dd>
+            <p><code>noSuchMethod</code> is invoked when users invoke a non-existent method
 on an object. The name of the method and the arguments of the
 invocation are passed to <code>noSuchMethod</code> in an <code>Invocation</code>.
 If <code>noSuchMethod</code> returns a value, that value becomes the result of
 the original invocation.<a href="gestures/GestureRecognizerState/noSuchMethod.html">&hellip;</a>
 </p>
-                  <div class="features">inherited</div>
-              </dd>
-              <dt id="toString" class="callable">
-                  <span class="name "><a class="" href="gestures/GestureRecognizerState/toString.html">toString</a></span><span class="signature">(<wbr>)
-                      <span class="returntype parameter">&#8594; String</span>
-                  </span>
-              </dt>
-              <dd>
-                  <p>Returns a string representation of this object.</p>
-                  <div class="features">inherited</div>
-              </dd>
-          </dl>
-      </section>
+            <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable">
+            <span class="name "><a class="" href="gestures/GestureRecognizerState/toString.html">toString</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; String</span>
+            </span>
+        </dt>
+        <dd>
+            <p>Returns a string representation of this object.</p>
+            <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
 
-    </div> <!-- /.main-content -->
+  </div> <!-- /.main-content -->
 
   <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
     <h5>GestureRecognizerState</h5>
@@ -351,12 +358,12 @@ the original invocation.<a href="gestures/GestureRecognizerState/noSuchMethod.ht
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -375,7 +382,7 @@ the original invocation.<a href="gestures/GestureRecognizerState/noSuchMethod.ht
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

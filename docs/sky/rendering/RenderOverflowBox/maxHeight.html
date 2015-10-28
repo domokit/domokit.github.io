@@ -150,14 +150,14 @@
       <li><a class="" href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
       <li><a class="" href="rendering/RenderBox/applyPaintTransform.html">applyPaintTransform</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/attach.html">attach</a></li>
-      <li><a class="" href="rendering/RenderOverflowBox/childConstraints.html">childConstraints</a></li>
-      <li><a class="" href="rendering/RenderProxyBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
+      <li><a class="" href="rendering/RenderOverflowBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
       <li><a class="" href="rendering/RenderObject/debugAncestorsAlreadyMarkedNeedsLayout.html">debugAncestorsAlreadyMarkedNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/debugDescribeChildren.html">debugDescribeChildren</a></li>
       <li><a class="" href="rendering/RenderOverflowBox/debugDescribeSettings.html">debugDescribeSettings</a></li>
       <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
       <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/RenderObjectWithChildMixin/detach.html">detach</a></li>
@@ -169,16 +169,16 @@
       <li><a class="" href="rendering/RenderOverflowBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
       <li><a class="" href="rendering/RenderOverflowBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
       <li><a class="" href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
-      <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
-      <li><a class="" href="rendering/RenderProxyBox/hitTestChildren.html">hitTestChildren</a></li>
+      <li><a class="" href="rendering/RenderOverflowBox/hitTestChildren.html">hitTestChildren</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
       <li><a class="" href="rendering/RenderObject/layout.html">layout</a></li>
       <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
       <li><a class="" href="rendering/RenderBox/markNeedsLayout.html">markNeedsLayout</a></li>
       <li><a class="" href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
       <li><a class="" href="rendering/RenderOverflowBox/noSuchMethod.html">noSuchMethod</a></li>
-      <li><a class="" href="rendering/RenderProxyBox/paint.html">paint</a></li>
+      <li><a class="" href="rendering/RenderOverflowBox/paint.html">paint</a></li>
       <li><a class="" href="rendering/RenderOverflowBox/performLayout.html">performLayout</a></li>
       <li><a class="" href="rendering/RenderOverflowBox/performResize.html">performResize</a></li>
       <li><a class="" href="rendering/AbstractNode/redepthChild.html">redepthChild</a></li>
@@ -196,36 +196,34 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-
-      <section id="getter">
-      
-      <section class="multi-line-signature">
-        <span class="returntype">double</span>
-        <span class="name ">maxHeight</span></section>
-      
-      <section class="desc markdown">
+	  
+        <section id="getter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype">double</span>
+          <span class="name ">maxHeight</span></section>
+        
+        <section class="desc markdown">
 
       <p>The maximum height constraint to give the child. Set this to null (the
-  /// default) to use the constraint from the parent instead.</p>
-
+default) to use the constraint from the parent instead.</p>
 
 </section>
 </section>
 
-      <section id="setter">
-      
-      <section class="multi-line-signature">
-        <span class="returntype">void</span>
-          <span class="name ">maxHeight=</span><span class="signature">(<wbr><span class="parameter" id="maxHeight=-param-value"><span class="type-annotation">double</span> <span class="parameter-name">value</span></span>)
-      </section>
-      
-      <section class="desc markdown">
+        <section id="setter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype">void</span>
+            <span class="name ">maxHeight=</span><span class="signature">(<wbr><span class="parameter" id="maxHeight=-param-value"><span class="type-annotation">double</span> <span class="parameter-name">value</span></span>)</span>
+        </section>
+        
+        <section class="desc markdown">
 
       <p class="no-docs">Not documented.</p>
 
 </section>
 </section>
-
   </div> <!-- /.main-content -->
 
   </div> <!-- row -->
@@ -236,12 +234,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -260,7 +258,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

@@ -240,6 +240,11 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">Future&lt;<a class="" href="services/UrlResponse-class.html">UrlResponse</a>&gt;</span>
+        <span class="name ">fetch</span>(<wbr><span class="parameter" id="fetch-param-request"><span class="type-annotation">UrlRequest</span> <span class="parameter-name">request</span></span>)
+    </section>
+
     <section class="desc markdown">
     
           <p class="no-docs">Not documented.</p>
@@ -249,15 +254,16 @@
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Future&lt;UrlResponse&gt; fetch(UrlRequest request) async {
+  UrlLoaderProxy loader = new UrlLoaderProxy.unbound();
   try {
-    UrlLoaderProxy loader = new UrlLoaderProxy.unbound();
     _networkService.ptr.createUrlLoader(loader);
     UrlResponse response = (await loader.ptr.start(request)).response;
-    loader.close();
     return response;
   } catch (e) {
     print(&quot;NetworkService unavailable $e&quot;);
     return new UrlResponse()..statusCode = 500;
+  } finally {
+    loader.close();
   }
 }</code></pre>
     </section>
@@ -272,12 +278,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -296,7 +302,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

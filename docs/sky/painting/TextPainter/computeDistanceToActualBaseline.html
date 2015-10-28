@@ -113,14 +113,14 @@
     
       <li class="section-title"><a href="painting/TextPainter-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="painting/TextPainter/hashCode.html">hashCode</a></li>
-      <li><a class="" href="painting/TextPainter/height.html">height</a></li>
-      <li><a class="" href="painting/TextPainter/maxContentWidth.html">maxContentWidth</a></li>
       <li><a class="" href="painting/TextPainter/maxHeight.html">maxHeight</a></li>
+      <li><a class="" href="painting/TextPainter/maxIntrinsicWidth.html">maxIntrinsicWidth</a></li>
       <li><a class="" href="painting/TextPainter/maxWidth.html">maxWidth</a></li>
-      <li><a class="" href="painting/TextPainter/minContentWidth.html">minContentWidth</a></li>
       <li><a class="" href="painting/TextPainter/minHeight.html">minHeight</a></li>
+      <li><a class="" href="painting/TextPainter/minIntrinsicWidth.html">minIntrinsicWidth</a></li>
       <li><a class="" href="painting/TextPainter/minWidth.html">minWidth</a></li>
       <li><a class="" href="painting/TextPainter/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="painting/TextPainter/size.html">size</a></li>
       <li><a class="" href="painting/TextPainter/text.html">text</a></li>
     
       <li class="section-title"><a href="painting/TextPainter-class.html#constructors">Constructors</a></li>
@@ -141,17 +141,28 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">double</span>
+        <span class="name ">computeDistanceToActualBaseline</span>(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a class="" href="material/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+    </section>
+
     <section class="desc markdown">
     
-          <p>The distance from the top of the text to the first baseline of the given
-  /// type</p>
-
+          <p>The distance from the top of the text to the first baseline of the given type</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">double computeDistanceToActualBaseline(TextBaseline baseline);</code></pre>
+      <pre><code class="prettyprint lang-dart">double computeDistanceToActualBaseline(TextBaseline baseline) {
+  assert(!_needsLayout);
+  switch (baseline) {
+    case TextBaseline.alphabetic:
+      return _paragraph.alphabeticBaseline;
+    case TextBaseline.ideographic:
+      return _paragraph.ideographicBaseline;
+  }
+}</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -164,12 +175,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -188,7 +199,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

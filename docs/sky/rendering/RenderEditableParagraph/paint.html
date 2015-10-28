@@ -159,6 +159,7 @@
       <li><a class="" href="rendering/RenderBox/debugDoesMeetConstraints.html">debugDoesMeetConstraints</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li><a class="" href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
       <li><a class="" href="rendering/RenderBox/debugPaintSize.html">debugPaintSize</a></li>
       <li><a class="" href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
       <li><a class="" href="rendering/AbstractNode/detach.html">detach</a></li>
@@ -170,7 +171,7 @@
       <li><a class="" href="rendering/RenderParagraph/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
       <li><a class="" href="rendering/RenderEditableParagraph/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
       <li><a class="" href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
-      <li><a class="" href="rendering/RenderObject/handleEvent.html">handleEvent</a></li>
+      <li><a class="" href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
       <li><a class="" href="rendering/RenderBox/hitTestChildren.html">hitTestChildren</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
@@ -199,26 +200,27 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">paint</span>(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a class="" href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span></span>, <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+    </section>
+
     <section class="desc markdown">
     
-          <p>Paint this render object into the given context at the given offset
-///
-/// Subclasses should override this function to provide a visual appearance
-/// for themselves. The render object's local coordinate system is
-/// axis-aligned with the coordinate system of the context's canvas and the
-/// render object's local origin (i.e, x=0 and y=0) is placed at the given
-/// offset in the context's canvas.
-///
-/// Do not call this function directly. If you wish to paint yourself, call
-/// <code>markNeedsPaint</code> instead to schedule a call to this function. If you wish
-/// to paint one of your children, call one of the paint child functions on
-/// the given context, such as <code>paintChild</code> or <code>paintChildWithClipRect</code>.
-///
-/// When painting one of your children (via a paint child function on the
-/// given context), the current canvas held by the context might change
-/// because draw operations before and after painting children might need to
-/// be recorded on separate compositing layers.</p>
-
+          <p>Paint this render object into the given context at the given offset</p>
+<p>Subclasses should override this function to provide a visual appearance
+for themselves. The render object's local coordinate system is
+axis-aligned with the coordinate system of the context's canvas and the
+render object's local origin (i.e, x=0 and y=0) is placed at the given
+offset in the context's canvas.</p>
+<p>Do not call this function directly. If you wish to paint yourself, call
+<code>markNeedsPaint</code> instead to schedule a call to this function. If you wish
+to paint one of your children, call one of the paint child functions on
+the given context, such as <code>paintChild</code> or <code>paintChildWithClipRect</code>.</p>
+<p>When painting one of your children (via a paint child function on the
+given context), the current canvas held by the context might change
+because draw operations before and after painting children might need to
+be recorded on separate compositing layers.</p>
     
     </section>
 
@@ -237,7 +239,7 @@
 
   if (_showCursor) {
     Rect cursorRect =  new Rect.fromLTWH(
-      textPainter.maxContentWidth + _kCursorGap,
+      textPainter.size.width + _kCursorGap,
       _kCursorHeightOffset,
       _kCursorWidth,
       size.height - 2.0 * _kCursorHeightOffset
@@ -263,12 +265,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -287,7 +289,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

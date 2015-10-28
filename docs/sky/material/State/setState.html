@@ -139,17 +139,19 @@
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">setState</span>(<wbr><span class="parameter" id="setState-param-fn"><span class="type-annotation">void</span> <span class="parameter-name">fn</span>()</span>)
+    </section>
+
     <section class="desc markdown">
     
           <p>Whenever you need to change internal state for a State object, make the
-  /// change in a function that you pass to setState(), as in:
-  ///
-  ///    setState(() { myState = newValue });
-  ///
-  /// If you just change the state directly without calling setState(), then the
-  /// component will not be scheduled for rebuilding, meaning that its rendering
-  /// will not be updated.</p>
-
+change in a function that you pass to setState(), as in:</p>
+<p>   setState(() { myState = newValue });</p>
+<p>If you just change the state directly without calling setState(), then the
+component will not be scheduled for rebuilding, meaning that its rendering
+will not be updated.</p>
     
     </section>
 
@@ -172,12 +174,12 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.7
+                  flutter 0.0.14
                 </span>
                 &bull;
                 <span class="no-break">
                   <a href="https://www.dartlang.org">
-                    <img src="static-assets/favicon.png" alt="Dart" title="Dart"width="16" height="16">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
                   </a>
                 </span>
                 &bull;
@@ -196,7 +198,7 @@
 <!-- Do not remove placeholder -->
 <!-- Footer Placeholder -->
 
-<!-- Made with <3 by dartdoc version 0.7.0 -->
+<!-- Made with <3 by dartdoc version 0.7.4 -->
 </body>
 
 </html>

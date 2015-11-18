@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -109,6 +78,8 @@
     <h5><a href="material/Navigator-class.html">Navigator</a></h5>
 
     <ol>
+      <li class="section-title"><a href="material/Navigator-class.html#constants">Constants</a></li>
+      <li><a class="" href="material/Navigator/defaultRouteName.html">defaultRouteName</a></li>
     
     
       <li class="section-title"><a href="material/Navigator-class.html#static-methods">Static methods</a></li>
@@ -117,9 +88,9 @@
       <li class="section-title"><a href="material/Navigator-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="material/Navigator/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
+      <li><a class="" href="material/Navigator/observer.html">observer</a></li>
       <li><a class="" href="material/Navigator/onGenerateRoute.html">onGenerateRoute</a></li>
       <li><a class="" href="material/Navigator/onUnknownRoute.html">onUnknownRoute</a></li>
-      <li><a class="" href="material/Navigator/routes.html">routes</a></li>
       <li><a class="" href="material/Navigator/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="material/Navigator-class.html#constructors">Constructors</a></li>
@@ -143,7 +114,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">Navigator</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-routes"><span class="type-annotation">Map&lt;String, <a class="" href="material/RouteBuilder.html">RouteBuilder</a>&gt;</span> <span class="parameter-name">routes</span></span>, <span class="parameter" id="-param-onGenerateRoute"><span class="type-annotation"><a class="" href="material/RouteBuilder.html">RouteBuilder</a></span> <span class="parameter-name">onGenerateRoute</span>(<span class="parameter" id="RouteGenerator-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)</span>, <span class="parameter" id="-param-onUnknownRoute"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">onUnknownRoute</span>(<span class="parameter" id="RouteBuilder-param-args"><span class="type-annotation"><a class="" href="material/RouteArguments-class.html">RouteArguments</a></span> <span class="parameter-name">args</span></span>)</span>})
+                <span class="name ">Navigator</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-onGenerateRoute"><span class="type-annotation"><a class="" href="material/Route-class.html">Route</a></span> <span class="parameter-name">onGenerateRoute</span>(<span class="parameter" id="RouteFactory-param-settings"><span class="type-annotation"><a class="" href="material/NamedRouteSettings-class.html">NamedRouteSettings</a></span> <span class="parameter-name">settings</span></span>)</span>, <span class="parameter" id="-param-onUnknownRoute"><span class="type-annotation"><a class="" href="material/Route-class.html">Route</a></span> <span class="parameter-name">onUnknownRoute</span>(<span class="parameter" id="RouteFactory-param-settings"><span class="type-annotation"><a class="" href="material/NamedRouteSettings-class.html">NamedRouteSettings</a></span> <span class="parameter-name">settings</span></span>)</span>, <span class="parameter" id="-param-observer"><span class="type-annotation"><a class="" href="material/NavigatorObserver-class.html">NavigatorObserver</a></span> <span class="parameter-name">observer</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -156,13 +127,11 @@
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">Navigator({
   Key key,
-  this.routes,
-  this.onGenerateRoute, // you need to implement this if you pushNamed() to names that might not be in routes.
-  this.onUnknownRoute // 404 generator. You only need to implement this if you have a way to navigate to arbitrary names.
+  this.onGenerateRoute,
+  this.onUnknownRoute,
+  this.observer
 }) : super(key: key) {
-  // To use a navigator, you must at a minimum define the route with the name &apos;/&apos;.
-  assert(routes != null);
-  assert(routes.containsKey(kDefaultRouteName));
+  assert(onGenerateRoute != null);
 }</code></pre>
       </section>
 
@@ -176,7 +145,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

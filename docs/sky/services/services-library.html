@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -109,10 +78,12 @@
       <li class="section-title"><a href="index.html">Libraries</a></li>
       <li><a href="animation/animation-library.html">animation</a></li>
       <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="http/http-library.html">http</a></li>
       <li><a href="material/material-library.html">material</a></li>
       <li><a href="painting/painting-library.html">painting</a></li>
       <li><a href="rendering/rendering-library.html">rendering</a></li>
       <li><a href="services/services-library.html">services</a></li>
+      <li><a href="task/task-library.html">task</a></li>
       <li><a href="widgets/widgets-library.html">widgets</a></li>
     </ol>
   </div>
@@ -497,8 +468,8 @@
             <dd>
                 <p>A callback for when the image is available.</p>
             </dd>
-            <dt id="OverrideRequestService" class="callable">
-                <span class="name "><a class="" href="services/OverrideRequestService.html">OverrideRequestService</a></span><span class="signature">(<wbr><span class="parameter" id="OverrideRequestService-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span></span>, <span class="parameter" id="OverrideRequestService-param-proxy"><span class="type-annotation">Object</span> <span class="parameter-name">proxy</span></span>)
+            <dt id="OverrideConnectToService" class="callable">
+                <span class="name "><a class="" href="services/OverrideConnectToService.html">OverrideConnectToService</a></span><span class="signature">(<wbr><span class="parameter" id="OverrideConnectToService-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span></span>, <span class="parameter" id="OverrideConnectToService-param-proxy"><span class="type-annotation">Object</span> <span class="parameter-name">proxy</span></span>)
                     <span class="returntype parameter">&#8594; bool</span>
                 </span>
             </dt>
@@ -515,16 +486,6 @@
             <dt id="activity" class="property">
                 <span class="name"><a class="" href="services/activity.html">activity</a></span>
                 <span class="signature">&#8594; <a class="" href="services/Activity-class.html">Activity</a></span>
-            </dt>
-            <dd>
-                <p></p>
-                <div class="features">
-        read-only
-    </div>
-</dd>
-            <dt id="embedder" class="property">
-                <span class="name"><a class="" href="services/embedder.html">embedder</a></span>
-                <span class="signature">&#8594; _EmbedderImpl</span>
             </dt>
             <dd>
                 <p></p>
@@ -552,9 +513,9 @@
         read-only
     </div>
 </dd>
-            <dt id="overrideRequestService" class="property">
-                <span class="name"><a class="" href="services/overrideRequestService.html">overrideRequestService</a></span>
-                <span class="signature">&#8594; <a class="" href="services/OverrideRequestService.html">OverrideRequestService</a></span>
+            <dt id="overrideConnectToService" class="property">
+                <span class="name"><a class="" href="services/overrideConnectToService.html">overrideConnectToService</a></span>
+                <span class="signature">&#8594; <a class="" href="services/OverrideConnectToService.html">OverrideConnectToService</a></span>
             </dt>
             <dd>
                 <p></p>
@@ -582,9 +543,19 @@
         read-only
     </div>
 </dd>
+            <dt id="serviceRegistry" class="property">
+                <span class="name"><a class="" href="services/serviceRegistry.html">serviceRegistry</a></span>
+                <span class="signature">&#8594; ServiceRegistry</span>
+            </dt>
+            <dd>
+                <p></p>
+                <div class="features">
+        read-only
+    </div>
+</dd>
             <dt id="shell" class="property">
                 <span class="name"><a class="" href="services/shell.html">shell</a></span>
-                <span class="signature">&#8594; _ShellImpl</span>
+                <span class="signature">&#8594; _Shell</span>
             </dt>
             <dd>
                 <p></p>
@@ -618,7 +589,7 @@
                 <p></p>
             </dd>
             <dt id="decodeImageFromList" class="callable">
-                <span class="name "><a class="" href="services/decodeImageFromList.html">decodeImageFromList</a></span><span class="signature">(<wbr><span class="parameter" id="decodeImageFromList-param-list"><span class="type-annotation">Uint8List</span> <span class="parameter-name">list</span></span>)
+                <span class="name "><a class="" href="services/decodeImageFromList.html">decodeImageFromList</a></span><span class="signature">(<wbr><span class="parameter" id="decodeImageFromList-param-list"><span class="type-annotation"><a class="" href="material/Uint8List-class.html">Uint8List</a></span> <span class="parameter-name">list</span></span>)
                     <span class="returntype parameter">&#8594; Future&lt;Image&gt;</span>
                 </span>
             </dt>
@@ -628,22 +599,6 @@
             <dt id="fetch" class="callable">
                 <span class="name "><a class="" href="services/fetch.html">fetch</a></span><span class="signature">(<wbr><span class="parameter" id="fetch-param-request"><span class="type-annotation">UrlRequest</span> <span class="parameter-name">request</span></span>)
                     <span class="returntype parameter">&#8594; Future&lt;<a class="" href="services/UrlResponse-class.html">UrlResponse</a>&gt;</span>
-                </span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-            <dt id="fetchBody" class="callable">
-                <span class="name "><a class="" href="services/fetchBody.html">fetchBody</a></span><span class="signature">(<wbr><span class="parameter" id="fetchBody-param-relativeUrl"><span class="type-annotation">String</span> <span class="parameter-name">relativeUrl</span></span>)
-                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="services/Response-class.html">Response</a>&gt;</span>
-                </span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-            <dt id="fetchString" class="callable">
-                <span class="name "><a class="" href="services/fetchString.html">fetchString</a></span><span class="signature">(<wbr><span class="parameter" id="fetchString-param-relativeUrl"><span class="type-annotation">String</span> <span class="parameter-name">relativeUrl</span></span>)
-                    <span class="returntype parameter">&#8594; Future&lt;String&gt;</span>
                 </span>
             </dt>
             <dd>
@@ -1022,12 +977,6 @@
             <dd>
                 <p></p>
             </dd>
-            <dt id="Response">
-                <span class="name "><a class="" href="services/Response-class.html">Response</a></span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
             <dt id="ScreenOrientation">
                 <span class="name "><a class="" href="services/ScreenOrientation-class.html">ScreenOrientation</a></span>
             </dt>
@@ -1145,16 +1094,16 @@
     
       <li class="section-title"><a href="services/services-library.html#typedefs">Typedefs</a></li>
       <li><a class="" href="services/ImageListener.html">ImageListener</a></li>
-      <li><a class="" href="services/OverrideRequestService.html">OverrideRequestService</a></li>
+      <li><a class="" href="services/OverrideConnectToService.html">OverrideConnectToService</a></li>
     
       <li class="section-title"><a href="services/services-library.html#properties">Properties</a></li>
       <li><a class="" href="services/activity.html">activity</a></li>
-      <li><a class="" href="services/embedder.html">embedder</a></li>
       <li><a class="" href="services/imageCache.html">imageCache</a></li>
       <li><a class="" href="services/keyboard.html">keyboard</a></li>
-      <li><a class="" href="services/overrideRequestService.html">overrideRequestService</a></li>
+      <li><a class="" href="services/overrideConnectToService.html">overrideConnectToService</a></li>
       <li><a class="" href="services/pathService.html">pathService</a></li>
       <li><a class="" href="services/rootBundle.html">rootBundle</a></li>
+      <li><a class="" href="services/serviceRegistry.html">serviceRegistry</a></li>
       <li><a class="" href="services/shell.html">shell</a></li>
       <li><a class="" href="services/userFeedback.html">userFeedback</a></li>
     
@@ -1162,8 +1111,6 @@
       <li><a class="" href="services/decodeImageFromDataPipe.html">decodeImageFromDataPipe</a></li>
       <li><a class="" href="services/decodeImageFromList.html">decodeImageFromList</a></li>
       <li><a class="" href="services/fetch.html">fetch</a></li>
-      <li><a class="" href="services/fetchBody.html">fetchBody</a></li>
-      <li><a class="" href="services/fetchString.html">fetchString</a></li>
       <li><a class="" href="services/fetchUrl.html">fetchUrl</a></li>
       <li><a class="" href="services/getAppDataDir.html">getAppDataDir</a></li>
       <li><a class="" href="services/getCacheDir.html">getCacheDir</a></li>
@@ -1226,7 +1173,6 @@
       <li><a class="" href="services/PathServiceProxy-class.html">PathServiceProxy</a></li>
       <li><a class="" href="services/PathServiceProxyImpl-class.html">PathServiceProxyImpl</a></li>
       <li><a class="" href="services/PathServiceStub-class.html">PathServiceStub</a></li>
-      <li><a class="" href="services/Response-class.html">Response</a></li>
       <li><a class="" href="services/ScreenOrientation-class.html">ScreenOrientation</a></li>
       <li><a class="" href="services/StringExtra-class.html">StringExtra</a></li>
       <li><a class="" href="services/SubmitAction-class.html">SubmitAction</a></li>
@@ -1252,7 +1198,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

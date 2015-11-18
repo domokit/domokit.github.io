@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -114,10 +83,10 @@
       <li class="section-title"><a href="widgets/NavigatorState-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="material/State/config.html">config</a></li>
       <li><a class="" href="material/State/context.html">context</a></li>
-      <li><a class="" href="widgets/NavigatorState/currentRoute.html">currentRoute</a></li>
       <li><a class="" href="widgets/NavigatorState/hashCode.html">hashCode</a></li>
       <li><a class="" href="widgets/NavigatorState/hasPreviousRoute.html">hasPreviousRoute</a></li>
       <li><a class="" href="material/State/mounted.html">mounted</a></li>
+      <li><a class="" href="widgets/NavigatorState/overlay.html">overlay</a></li>
       <li><a class="" href="widgets/NavigatorState/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="widgets/NavigatorState-class.html#constructors">Constructors</a></li>
@@ -129,15 +98,14 @@
       <li class="section-title"><a href="widgets/NavigatorState-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/NavigatorState/build.html">build</a></li>
       <li><a class="" href="material/State/debugFillDescription.html">debugFillDescription</a></li>
-      <li><a class="" href="material/State/didUpdateConfig.html">didUpdateConfig</a></li>
-      <li><a class="" href="material/State/dispose.html">dispose</a></li>
+      <li><a class="" href="widgets/NavigatorState/didUpdateConfig.html">didUpdateConfig</a></li>
+      <li><a class="" href="widgets/NavigatorState/dispose.html">dispose</a></li>
       <li><a class="" href="widgets/NavigatorState/initState.html">initState</a></li>
       <li><a class="" href="widgets/NavigatorState/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="widgets/NavigatorState/pop.html">pop</a></li>
-      <li><a class="" href="widgets/NavigatorState/popRoute.html">popRoute</a></li>
       <li><a class="" href="widgets/NavigatorState/push.html">push</a></li>
+      <li><a class="" href="widgets/NavigatorState/pushEphemeral.html">pushEphemeral</a></li>
       <li><a class="" href="widgets/NavigatorState/pushNamed.html">pushNamed</a></li>
-      <li><a class="" href="widgets/NavigatorState/pushState.html">pushState</a></li>
       <li><a class="" href="material/State/setState.html">setState</a></li>
       <li><a class="" href="material/State/toString.html">toString</a></li>
     </ol>
@@ -165,11 +133,9 @@ super.initState().</p>
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void initState() {
   super.initState();
-  _activeHeroes = new HeroParty(onQuestFinished: _handleHeroQuestFinished);
-  PageRoute route = new PageRoute(config.routes[kDefaultRouteName], name: kDefaultRouteName);
-  assert(route.hasContent);
-  assert(!route.ephemeral);
-  _insertRoute(route);
+  assert(config.observer == null || config.observer.navigator == null);
+  config.observer?._navigator = this;
+  push(config.onGenerateRoute(new NamedRouteSettings(name: Navigator.defaultRouteName)));
 }</code></pre>
     </section>
 
@@ -183,7 +149,7 @@ super.initState().</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

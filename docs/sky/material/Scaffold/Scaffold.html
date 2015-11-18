@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -114,12 +83,12 @@
     
       <li class="section-title"><a href="material/Scaffold-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="material/Scaffold/body.html">body</a></li>
+      <li><a class="" href="material/Scaffold/bottomSheet.html">bottomSheet</a></li>
       <li><a class="" href="material/Scaffold/floatingActionButton.html">floatingActionButton</a></li>
       <li><a class="" href="material/Scaffold/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
       <li><a class="" href="material/Scaffold/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="material/Scaffold/snackBar.html">snackBar</a></li>
-      <li><a class="" href="material/Scaffold/statusBar.html">statusBar</a></li>
       <li><a class="" href="material/Scaffold/toolBar.html">toolBar</a></li>
     
       <li class="section-title"><a href="material/Scaffold-class.html#constructors">Constructors</a></li>
@@ -143,7 +112,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">Scaffold</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-body"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">body</span></span>, <span class="parameter" id="-param-statusBar"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">statusBar</span></span>, <span class="parameter" id="-param-toolBar"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">toolBar</span></span>, <span class="parameter" id="-param-snackBar"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">snackBar</span></span>, <span class="parameter" id="-param-floatingActionButton"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">floatingActionButton</span></span>})
+                <span class="name ">Scaffold</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-body"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">body</span></span>, <span class="parameter" id="-param-toolBar"><span class="type-annotation"><a class="" href="material/ToolBar-class.html">ToolBar</a></span> <span class="parameter-name">toolBar</span></span>, <span class="parameter" id="-param-snackBar"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">snackBar</span></span>, <span class="parameter" id="-param-floatingActionButton"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">floatingActionButton</span></span>, <span class="parameter" id="-param-bottomSheet"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">bottomSheet</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -157,10 +126,10 @@
         <pre><code class="prettyprint lang-dart">Scaffold({
   Key key,
   this.body,
-  this.statusBar,
   this.toolBar,
   this.snackBar,
-  this.floatingActionButton
+  this.floatingActionButton,
+  this.bottomSheet
 }) : super(key: key);</code></pre>
       </section>
 
@@ -174,7 +143,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

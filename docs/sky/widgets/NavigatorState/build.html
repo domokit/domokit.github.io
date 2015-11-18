@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -114,10 +83,10 @@
       <li class="section-title"><a href="widgets/NavigatorState-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="material/State/config.html">config</a></li>
       <li><a class="" href="material/State/context.html">context</a></li>
-      <li><a class="" href="widgets/NavigatorState/currentRoute.html">currentRoute</a></li>
       <li><a class="" href="widgets/NavigatorState/hashCode.html">hashCode</a></li>
       <li><a class="" href="widgets/NavigatorState/hasPreviousRoute.html">hasPreviousRoute</a></li>
       <li><a class="" href="material/State/mounted.html">mounted</a></li>
+      <li><a class="" href="widgets/NavigatorState/overlay.html">overlay</a></li>
       <li><a class="" href="widgets/NavigatorState/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="widgets/NavigatorState-class.html#constructors">Constructors</a></li>
@@ -129,15 +98,14 @@
       <li class="section-title"><a href="widgets/NavigatorState-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="widgets/NavigatorState/build.html">build</a></li>
       <li><a class="" href="material/State/debugFillDescription.html">debugFillDescription</a></li>
-      <li><a class="" href="material/State/didUpdateConfig.html">didUpdateConfig</a></li>
-      <li><a class="" href="material/State/dispose.html">dispose</a></li>
+      <li><a class="" href="widgets/NavigatorState/didUpdateConfig.html">didUpdateConfig</a></li>
+      <li><a class="" href="widgets/NavigatorState/dispose.html">dispose</a></li>
       <li><a class="" href="widgets/NavigatorState/initState.html">initState</a></li>
       <li><a class="" href="widgets/NavigatorState/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="widgets/NavigatorState/pop.html">pop</a></li>
-      <li><a class="" href="widgets/NavigatorState/popRoute.html">popRoute</a></li>
       <li><a class="" href="widgets/NavigatorState/push.html">push</a></li>
+      <li><a class="" href="widgets/NavigatorState/pushEphemeral.html">pushEphemeral</a></li>
       <li><a class="" href="widgets/NavigatorState/pushNamed.html">pushNamed</a></li>
-      <li><a class="" href="widgets/NavigatorState/pushState.html">pushState</a></li>
       <li><a class="" href="material/State/setState.html">setState</a></li>
       <li><a class="" href="material/State/toString.html">toString</a></li>
     </ol>
@@ -165,92 +133,10 @@ provides the set of inherited widgets for this location in the tree.</p>
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
-  List&lt;Widget&gt; visibleRoutes = &lt;Widget&gt;[];
-
-  assert(() {
-    if (debugShowGrid)
-      visibleRoutes.add(new GridPaper(color: debugGridColor));
-    return true;
-  });
-
-
-  bool alreadyInsertedHeroes = false;
-  bool alreadyInsertedModalBarrier = false;
-  Route nextContentRoute;
-  PerformanceView nextHeroPerformance;
-  for (int i = _history.length-1; i &gt;= 0; i -= 1) {
-    final Route route = _history[i];
-    if (!route.hasContent) {
-      assert(!route.modal);
-      assert(!_desiredHeroes.hasInstructions || (_desiredHeroes.from != route &amp;&amp; _desiredHeroes.to != route));
-      assert(!route._hasActiveHeroes);
-      continue;
-    }
-    if (route._hasActiveHeroes &amp;&amp; !alreadyInsertedHeroes) {
-      visibleRoutes.addAll(_activeHeroes.getWidgets(context, _currentHeroPerformance));
-      alreadyInsertedHeroes = true;
-    }
-    if (_desiredHeroes.hasInstructions) {
-      if ((_desiredHeroes.to == route || _desiredHeroes.from == route) &amp;&amp; nextHeroPerformance == null)
-        nextHeroPerformance = route.performance;
-      visibleRoutes.add(new _RouteWidget(route: route, nextRoute: nextContentRoute, buildTargetHeroes: _desiredHeroes.to == route));
-    } else {
-      visibleRoutes.add(new _RouteWidget(route: route, nextRoute: nextContentRoute));
-    }
-    if (route.isActuallyOpaque) {
-      assert(!_desiredHeroes.hasInstructions ||
-             (_history.indexOf(_desiredHeroes.from) &gt;= i &amp;&amp; _history.indexOf(_desiredHeroes.to) &gt;= i));
-      break;
-    }
-    assert(route.modal || route.ephemeral);
-    if (route.modal &amp;&amp; i &gt; 0 &amp;&amp; !alreadyInsertedModalBarrier) {
-      visibleRoutes.add(new Listener(
-        onPointerDown: (_) { pop(); },
-        child: new Container()
-      ));
-      alreadyInsertedModalBarrier = true;
-    }
-    nextContentRoute = route;
-  }
-
-  if (_desiredHeroes.hasInstructions) {
-    assert(nextHeroPerformance != null);
-    scheduler.requestPostFrameCallback((Duration timestamp) {
-      Map&lt;Object, HeroHandle&gt; heroesFrom;
-      Map&lt;Object, HeroHandle&gt; heroesTo;
-      Set&lt;Key&gt; mostValuableKeys = new Set&lt;Key&gt;();
-      if (_desiredHeroes.from.mostValuableKeys != null)
-        mostValuableKeys.addAll(_desiredHeroes.from.mostValuableKeys);
-      if (_desiredHeroes.to.mostValuableKeys != null)
-        mostValuableKeys.addAll(_desiredHeroes.to.mostValuableKeys);
-      if (_activeHeroes.isEmpty) {
-        assert(!_desiredHeroes.from._hasActiveHeroes);
-        heroesFrom = _desiredHeroes.from.getHeroesToAnimate(mostValuableKeys);
-        _desiredHeroes.from._hasActiveHeroes = heroesFrom.length &gt; 0;
-      } else {
-        assert(_desiredHeroes.from._hasActiveHeroes);
-        heroesFrom = _activeHeroes.getHeroesToAnimate();
-      }
-      heroesTo = _desiredHeroes.to.getHeroesToAnimate(mostValuableKeys);
-      _desiredHeroes.to._hasActiveHeroes = heroesTo.length &gt; 0;
-      _desiredHeroes.reset();
-      setState(() {
-        final RenderBox renderObject = context.findRenderObject();
-        final Point animationTopLeft = renderObject.localToGlobal(Point.origin);
-        final Point animationBottomRight = renderObject.localToGlobal(renderObject.size.bottomRight(Point.origin));
-        final Rect animationArea = new Rect.fromLTRB(animationTopLeft.x, animationTopLeft.y, animationBottomRight.x, animationBottomRight.y);
-        Curve curve = Curves.ease;
-        if (nextHeroPerformance.status == PerformanceStatus.reverse) {
-          nextHeroPerformance = new ReversePerformance(nextHeroPerformance);
-          curve = new Interval(nextHeroPerformance.progress, 1.0, curve: curve);
-        }
-        _activeHeroes.animate(heroesFrom, heroesTo, animationArea, curve);
-        _currentHeroPerformance = nextHeroPerformance;
-      });
-    });
-  }
-
-  return new Focus(child: new Stack(visibleRoutes.reversed.toList()));
+  return new Overlay(
+    key: _overlayKey,
+    initialEntries: _modal.first.overlayEntries
+  );
 }</code></pre>
     </section>
 
@@ -264,7 +150,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

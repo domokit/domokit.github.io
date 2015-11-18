@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -115,14 +84,17 @@
       <li><a class="" href="widgets/Positioned/bottom.html">bottom</a></li>
       <li><a class="" href="material/ProxyComponent/child.html">child</a></li>
       <li><a class="" href="widgets/Positioned/hashCode.html">hashCode</a></li>
+      <li><a class="" href="widgets/Positioned/height.html">height</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
       <li><a class="" href="widgets/Positioned/left.html">left</a></li>
       <li><a class="" href="widgets/Positioned/right.html">right</a></li>
       <li><a class="" href="widgets/Positioned/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="widgets/Positioned/top.html">top</a></li>
+      <li><a class="" href="widgets/Positioned/width.html">width</a></li>
     
       <li class="section-title"><a href="widgets/Positioned-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Positioned/Positioned.html">Positioned</a></li>
+      <li><a href="widgets/Positioned/Positioned.fromRect.html">fromRect</a></li>
     
       <li class="section-title"><a href="widgets/Positioned-class.html#operators">Operators</a></li>
       <li><a class="" href="widgets/Positioned/operator_equals.html">operator ==</a></li>
@@ -179,6 +151,16 @@
     needsLayout = true;
   }
 
+  if (parentData.width != width) {
+    parentData.width = width;
+    needsLayout = true;
+  }
+
+  if (parentData.height != height) {
+    parentData.height = height;
+    needsLayout = true;
+  }
+
   if (needsLayout) {
     AbstractNode targetParent = renderObject.parent;
     if (targetParent is RenderObject)
@@ -197,7 +179,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

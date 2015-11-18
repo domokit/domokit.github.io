@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -142,7 +111,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">MaterialApp</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-title"><span class="type-annotation">String</span> <span class="parameter-name">title</span></span>, <span class="parameter" id="-param-theme"><span class="type-annotation"><a class="" href="material/ThemeData-class.html">ThemeData</a></span> <span class="parameter-name">theme</span></span>, <span class="parameter" id="-param-routes"><span class="type-annotation">Map&lt;String, <a class="" href="material/RouteBuilder.html">RouteBuilder</a>&gt;</span> <span class="parameter-name">routes</span></span>, <span class="parameter" id="-param-onGenerateRoute"><span class="type-annotation"><a class="" href="material/RouteBuilder.html">RouteBuilder</a></span> <span class="parameter-name">onGenerateRoute</span>(<span class="parameter" id="RouteGenerator-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)</span>})
+                <span class="name ">MaterialApp</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-title"><span class="type-annotation">String</span> <span class="parameter-name">title</span></span>, <span class="parameter" id="-param-theme"><span class="type-annotation"><a class="" href="material/ThemeData-class.html">ThemeData</a></span> <span class="parameter-name">theme</span></span>, <span class="parameter" id="-param-routes"><span class="type-annotation">Map&lt;String, <a class="" href="material/RouteBuilder.html">RouteBuilder</a>&gt;</span> <span class="parameter-name">routes</span>: <span class="default-value">const <String, RouteBuilder> {}</span></span>, <span class="parameter" id="-param-onGenerateRoute"><span class="type-annotation"><a class="" href="material/RouteBuilder.html">RouteBuilder</a></span> <span class="parameter-name">onGenerateRoute</span>(<span class="parameter" id="RouteGenerator-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)</span>})
       </section>
 
     <section class="desc markdown">
@@ -157,9 +126,12 @@
   Key key,
   this.title,
   this.theme,
-  this.routes,
+  this.routes: const &lt;String, RouteBuilder&gt;{},
   this.onGenerateRoute
-}) : super(key: key);</code></pre>
+}) : super(key: key) {
+  assert(routes != null);
+  assert(routes.containsKey(Navigator.defaultRouteName) || onGenerateRoute != null);
+}</code></pre>
       </section>
 
   </div> <!-- /.main-content -->
@@ -172,7 +144,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

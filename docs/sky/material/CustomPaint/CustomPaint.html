@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -116,6 +85,7 @@
       <li><a class="" href="material/OneChildRenderObjectWidget/child.html">child</a></li>
       <li><a class="" href="material/CustomPaint/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
+      <li><a class="" href="material/CustomPaint/onHitTest.html">onHitTest</a></li>
       <li><a class="" href="material/CustomPaint/onPaint.html">onPaint</a></li>
       <li><a class="" href="material/CustomPaint/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="material/CustomPaint/token.html">token</a></li>
@@ -143,7 +113,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">CustomPaint</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-onPaint"><span class="type-annotation">void</span> <span class="parameter-name">onPaint</span>(<span class="parameter" id="CustomPaintCallback-param-canvas"><span class="type-annotation"><a class="" href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="CustomPaintCallback-param-size"><span class="type-annotation"><a class="" href="material/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>, <span class="parameter" id="-param-token"><span class="type-annotation">Object</span> <span class="parameter-name">token</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>})
+                <span class="name ">CustomPaint</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-onPaint"><span class="type-annotation">void</span> <span class="parameter-name">onPaint</span>(<span class="parameter" id="CustomPaintCallback-param-canvas"><span class="type-annotation"><a class="" href="rendering/PaintingCanvas-class.html">PaintingCanvas</a></span> <span class="parameter-name">canvas</span></span>, <span class="parameter" id="CustomPaintCallback-param-size"><span class="type-annotation"><a class="" href="material/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)</span>, <span class="parameter" id="-param-onHitTest"><span class="type-annotation">bool</span> <span class="parameter-name">onHitTest</span>(<span class="parameter" id="CustomHitTestCallback-param-position"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>)</span>, <span class="parameter" id="-param-token"><span class="type-annotation">Object</span> <span class="parameter-name">token</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -154,7 +124,7 @@
 
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">CustomPaint({ Key key, this.onPaint, this.token, Widget child })
+        <pre><code class="prettyprint lang-dart">CustomPaint({ Key key, this.onPaint, this.onHitTest, this.token, Widget child })
   : super(key: key, child: child) {
   assert(onPaint != null);
 }</code></pre>
@@ -170,7 +140,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

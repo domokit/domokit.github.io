@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -113,12 +82,12 @@
     
       <li class="section-title"><a href="material/Scaffold-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="material/Scaffold/body.html">body</a></li>
+      <li><a class="" href="material/Scaffold/bottomSheet.html">bottomSheet</a></li>
       <li><a class="" href="material/Scaffold/floatingActionButton.html">floatingActionButton</a></li>
       <li><a class="" href="material/Scaffold/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
       <li><a class="" href="material/Scaffold/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="material/Scaffold/snackBar.html">snackBar</a></li>
-      <li><a class="" href="material/Scaffold/statusBar.html">statusBar</a></li>
       <li><a class="" href="material/Scaffold/toolBar.html">toolBar</a></li>
     
       <li class="section-title"><a href="material/Scaffold-class.html#constructors">Constructors</a></li>
@@ -159,71 +128,25 @@ provides the set of inherited widgets for this location in the tree.</p>
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">Widget build(BuildContext context) {
-  double toolBarHeight = 0.0;
-  if (toolBar != null)
-    toolBarHeight = kToolBarHeight + ui.window.padding.top;
-
-  double statusBarHeight = 0.0;
-  if (statusBar != null)
-    statusBarHeight = kStatusBarHeight;
-
-  List&lt;Widget&gt; children = &lt;Widget&gt;[];
-
-  if (body != null) {
-    children.add(new Positioned(
-      top: toolBarHeight, right: 0.0, bottom: statusBarHeight, left: 0.0,
-      child: new Material(
-        child: body
-      )
-    ));
-  }
-
-  if (statusBar != null) {
-    children.add(new Positioned(
-      right: 0.0, bottom: 0.0, left: 0.0,
-      child: new SizedBox(
-        height: statusBarHeight,
-        child: statusBar
-      )
-    ));
-  }
-
-  if (toolBar != null) {
-    children.add(new Positioned(
-      top: 0.0, right: 0.0, left: 0.0,
-      child: new SizedBox(
-        height: toolBarHeight,
-        child: toolBar
-      )
-    ));
-  }
-
-  if (snackBar != null || floatingActionButton != null) {
-    List&lt;Widget&gt; floatingChildren = &lt;Widget&gt;[];
-
-    if (floatingActionButton != null) {
-      floatingChildren.add(new Padding(
-        // TODO(eseidel): These change based on device size!
-        padding: const EdgeDims.only(right: 16.0, bottom: 16.0),
-        child: floatingActionButton
-      ));
-    }
-
+  final Widget paddedToolBar = toolBar?.withPadding(new EdgeDims.only(top: ui.window.padding.top));
+  final Widget materialBody = body != null ? new Material(child: body) : null;
+  Widget constrainedSnackBar;
+  if (snackBar != null) {
     // TODO(jackson): On tablet/desktop, minWidth = 288, maxWidth = 568
-    if (snackBar != null) {
-      floatingChildren.add(new ConstrainedBox(
-        constraints: const BoxConstraints(maxHeight: kSnackBarHeight),
-        child: snackBar
-      ));
-    }
-
-    children.add(new Positioned(
-      right: 0.0, bottom: statusBarHeight, left: 0.0,
-      child: new Column(floatingChildren, alignItems: FlexAlignItems.end)
-    ));
+    constrainedSnackBar = new ConstrainedBox(
+      constraints: const BoxConstraints(maxHeight: kSnackBarHeight),
+      child: snackBar
+    );
   }
 
-  return new Stack(children);
+  final List&lt;LayoutId&gt;children = new List&lt;LayoutId&gt;();
+  _addIfNonNull(children, materialBody, _Child.body);
+  _addIfNonNull(children, paddedToolBar, _Child.toolBar);
+  _addIfNonNull(children, bottomSheet, _Child.bottomSheet);
+  _addIfNonNull(children, constrainedSnackBar, _Child.snackBar);
+  _addIfNonNull(children, floatingActionButton, _Child.floatingActionButton);
+
+  return new CustomMultiChildLayout(children, delegate: _scaffoldLayout);
 }</code></pre>
     </section>
 
@@ -237,7 +160,7 @@ provides the set of inherited widgets for this location in the tree.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

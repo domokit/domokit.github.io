@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -135,7 +104,7 @@
 
       <section class="multi-line-signature">
         const
-                <span class="name ">InputEvent</span>(<wbr>{<span class="parameter" id="-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span></span>, <span class="parameter" id="-param-timeStamp"><span class="type-annotation">double</span> <span class="parameter-name">timeStamp</span>: <span class="default-value">0.0</span></span>})
+                <span class="name ">InputEvent</span>(<wbr>{<span class="parameter" id="-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span></span>, <span class="parameter" id="-param-timeStamp"><span class="type-annotation">Duration</span> <span class="parameter-name">timeStamp</span>: <span class="default-value">const Duration()</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -146,7 +115,7 @@
 
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">const InputEvent({ this.type, this.timeStamp: 0.0 });</code></pre>
+        <pre><code class="prettyprint lang-dart">const InputEvent({ this.type, this.timeStamp: const Duration() });</code></pre>
       </section>
 
   </div> <!-- /.main-content -->
@@ -159,7 +128,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

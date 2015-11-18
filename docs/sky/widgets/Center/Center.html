@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -116,9 +85,10 @@
       <li><a class="" href="material/Align/alignment.html">alignment</a></li>
       <li><a class="" href="material/OneChildRenderObjectWidget/child.html">child</a></li>
       <li><a class="" href="widgets/Center/hashCode.html">hashCode</a></li>
+      <li><a class="" href="material/Align/heightFactor.html">heightFactor</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
       <li><a class="" href="widgets/Center/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="material/Align/shrinkWrap.html">shrinkWrap</a></li>
+      <li><a class="" href="material/Align/widthFactor.html">widthFactor</a></li>
     
       <li class="section-title"><a href="widgets/Center-class.html#constructors">Constructors</a></li>
       <li><a href="widgets/Center/Center.html">Center</a></li>
@@ -143,7 +113,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">Center</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-shrinkWrap"><span class="type-annotation"><a class="" href="material/ShrinkWrap-class.html">ShrinkWrap</a></span> <span class="parameter-name">shrinkWrap</span>: <span class="default-value">ShrinkWrap.none</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>})
+                <span class="name ">Center</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-widthFactor"><span class="parameter-name">widthFactor</span></span>, <span class="parameter" id="-param-heightFactor"><span class="parameter-name">heightFactor</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -154,8 +124,8 @@
 
       <section class="summary source-code" id="source">
         <h2><span>Source</span> </h2>
-        <pre><code class="prettyprint lang-dart">Center({ Key key, ShrinkWrap shrinkWrap: ShrinkWrap.none, Widget child })
-  : super(key: key, shrinkWrap: shrinkWrap, child: child);</code></pre>
+        <pre><code class="prettyprint lang-dart">Center({ Key key, widthFactor, heightFactor, Widget child })
+  : super(key: key, widthFactor: widthFactor, heightFactor: heightFactor, child: child);</code></pre>
       </section>
 
   </div> <!-- /.main-content -->
@@ -168,7 +138,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

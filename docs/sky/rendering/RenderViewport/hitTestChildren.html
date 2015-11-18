@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -121,7 +90,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
-      <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
+      <li><a class="" href="rendering/RenderObject/debugOwner.html">debugOwner</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
       <li><a class="" href="rendering/RenderViewport/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
@@ -171,6 +140,7 @@
       <li><a class="" href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="rendering/RenderBox/hitTest.html">hitTest</a></li>
       <li><a class="" href="rendering/RenderViewport/hitTestChildren.html">hitTestChildren</a></li>
+      <li><a class="" href="rendering/RenderBox/hitTestSelf.html">hitTestSelf</a></li>
       <li><a class="" href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
       <li><a class="" href="rendering/RenderObject/layout.html">layout</a></li>
       <li><a class="" href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
@@ -197,7 +167,7 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-        <span class="returntype">void</span>
+        <span class="returntype">bool</span>
         <span class="name ">hitTestChildren</span>(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a class="" href="rendering/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span></span>, {<span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>})
     </section>
 
@@ -213,12 +183,13 @@ visually "on top" (i.e., paints later).</p>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">void hitTestChildren(HitTestResult result, { Point position }) {
+      <pre><code class="prettyprint lang-dart">bool hitTestChildren(HitTestResult result, { Point position }) {
   if (child != null) {
     assert(child.parentData is BoxParentData);
     Point transformed = position + _scrollOffsetRoundedToIntegerDevicePixels;
-    child.hitTest(result, position: transformed);
+    return child.hitTest(result, position: transformed);
   }
+  return false;
 }</code></pre>
     </section>
 
@@ -232,7 +203,7 @@ visually "on top" (i.e., paints later).</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

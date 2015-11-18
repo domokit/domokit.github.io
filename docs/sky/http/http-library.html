@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>http library - Dart API</title>
+    <!-- required because all the links are pseudo-absolute -->
+    <base href="..">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static-assets/prettify.css">
+    <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static-assets/styles.css">
+
+    <meta name="description" content="http library API docs, for the Dart programming language.">
+    <link rel="icon" href="static-assets/favicon.png">
+
+    <!-- Do not remove placeholder -->
+    <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 contents">
+              <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+              <ol class="breadcrumbs gt-separated hidden-xs">
+                  <li><a href="index.html">flutter</a></li>
+                  <li class="self-crumb">http</li>
+              </ol>
+              <div class="self-name">http</div>
+              <form class="search navbar-right" role="search">
+                <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+              </form>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="container masthead">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated visible-xs">
+              <li><a href="index.html">flutter</a></li>
+              <li class="self-crumb">http</li>
+          </ol>
+          <div class="title-description">
+              <h1 class="title">
+                  <div class="kind">library</div> http
+              </h1>
+          </div>
+          <ul class="subnav">
+              <li><a href="http/http-library.html#functions">Functions</a></li>
+              <li><a href="http/http-library.html#classes">Classes</a></li>
+          </ul>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">flutter</a></h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html">Libraries</a></li>
+      <li><a href="animation/animation-library.html">animation</a></li>
+      <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="http/http-library.html">http</a></li>
+      <li><a href="material/material-library.html">material</a></li>
+      <li><a href="painting/painting-library.html">painting</a></li>
+      <li><a href="rendering/rendering-library.html">rendering</a></li>
+      <li><a href="services/services-library.html">services</a></li>
+      <li><a href="task/task-library.html">task</a></li>
+      <li><a href="widgets/widgets-library.html">widgets</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+    
+          <p class="no-docs">Not documented.</p>
+    
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="functions">
+        <h2>Functions</h2>
+
+        <dl class="callables">
+            <dt id="delete" class="callable">
+                <span class="name "><a class="" href="http/delete.html">delete</a></span><span class="signature">(<wbr><span class="parameter" id="delete-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="delete-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="http/Response-class.html">Response</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP DELETE request with the given headers to the given URL, which
+can be a <code>Uri</code> or a <code>String</code>.<a href="http/delete.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="get" class="callable">
+                <span class="name "><a class="" href="http/get.html">get</a></span><span class="signature">(<wbr><span class="parameter" id="get-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="get-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="http/Response-class.html">Response</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP GET request with the given headers to the given URL, which can
+be a <code>Uri</code> or a <code>String</code>.<a href="http/get.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="head" class="callable">
+                <span class="name "><a class="" href="http/head.html">head</a></span><span class="signature">(<wbr><span class="parameter" id="head-param-url"><span class="parameter-name">url</span></span>)
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="http/Response-class.html">Response</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP HEAD request with the given headers to the given URL, which
+can be a <code>Uri</code> or a <code>String</code>.<a href="http/head.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="patch" class="callable">
+                <span class="name "><a class="" href="http/patch.html">patch</a></span><span class="signature">(<wbr><span class="parameter" id="patch-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="patch-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>, <span class="parameter" id="patch-param-body"><span class="parameter-name">body</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="http/Response-class.html">Response</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP PATCH request with the given headers and body to the given
+URL, which can be a <code>Uri</code> or a <code>String</code>.<a href="http/patch.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="post" class="callable">
+                <span class="name "><a class="" href="http/post.html">post</a></span><span class="signature">(<wbr><span class="parameter" id="post-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="post-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>, <span class="parameter" id="post-param-body"><span class="parameter-name">body</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="http/Response-class.html">Response</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP POST request with the given headers and body to the given URL,
+which can be a <code>Uri</code> or a <code>String</code>.<a href="http/post.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="put" class="callable">
+                <span class="name "><a class="" href="http/put.html">put</a></span><span class="signature">(<wbr><span class="parameter" id="put-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="put-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>, <span class="parameter" id="put-param-body"><span class="parameter-name">body</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="http/Response-class.html">Response</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP PUT request with the given headers and body to the given URL,
+which can be a <code>Uri</code> or a <code>String</code>.<a href="http/put.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="read" class="callable">
+                <span class="name "><a class="" href="http/read.html">read</a></span><span class="signature">(<wbr><span class="parameter" id="read-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="read-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;String&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP GET request with the given headers to the given URL, which can
+be a <code>Uri</code> or a <code>String</code>, and returns a Future that completes to the body of
+the response as a <code>String</code>.<a href="http/read.html">&hellip;</a>
+</p>
+            </dd>
+            <dt id="readBytes" class="callable">
+                <span class="name "><a class="" href="http/readBytes.html">readBytes</a></span><span class="signature">(<wbr><span class="parameter" id="readBytes-param-url"><span class="parameter-name">url</span></span>, {<span class="parameter" id="readBytes-param-headers"><span class="type-annotation">Map&lt;String, String&gt;</span> <span class="parameter-name">headers</span></span>})
+                    <span class="returntype parameter">&#8594; Future&lt;<a class="" href="material/Uint8List-class.html">Uint8List</a>&gt;</span>
+                </span>
+            </dt>
+            <dd>
+                <p>Sends an HTTP GET request with the given headers to the given URL, which can
+be a <code>Uri</code> or a <code>String</code>, and returns a Future that completes to the body of
+the response as a list of bytes.<a href="http/readBytes.html">&hellip;</a>
+</p>
+            </dd>
+        </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="classes">
+        <h2>Classes</h2>
+
+        <dl>
+            <dt id="Response">
+                <span class="name "><a class="" href="http/Response-class.html">Response</a></span>
+            </dt>
+            <dd>
+                <p>An HTTP response where the entire response body is known in advance.</p>
+            </dd>
+        </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>http</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="http/http-library.html#functions">Functions</a></li>
+      <li><a class="" href="http/delete.html">delete</a></li>
+      <li><a class="" href="http/get.html">get</a></li>
+      <li><a class="" href="http/head.html">head</a></li>
+      <li><a class="" href="http/patch.html">patch</a></li>
+      <li><a class="" href="http/post.html">post</a></li>
+      <li><a class="" href="http/put.html">put</a></li>
+      <li><a class="" href="http/read.html">read</a></li>
+      <li><a class="" href="http/readBytes.html">readBytes</a></li>
+    
+    
+      <li class="section-title"><a href="http/http-library.html#classes">Classes</a></li>
+      <li><a class="" href="http/Response-class.html">Response</a></li>
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-center">
+                <span class="no-break">
+                  flutter 0.0.20
+                </span>
+                &bull;
+                <span class="no-break">
+                  <a href="https://www.dartlang.org">
+                    <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+                  </a>
+                </span>
+                &bull;
+                <span class="copyright no-break">
+                  <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+<!-- Made with <3 by dartdoc version 0.7.4 -->
+</body>
+
+</html>

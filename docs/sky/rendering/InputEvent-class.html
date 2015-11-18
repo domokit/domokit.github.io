@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -115,6 +84,7 @@
       <li><a class="" href="rendering/underline.html">underline</a></li>
     
       <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="rendering/CustomHitTestCallback.html">CustomHitTestCallback</a></li>
       <li><a class="" href="rendering/CustomPaintCallback.html">CustomPaintCallback</a></li>
       <li><a class="" href="rendering/EventListener.html">EventListener</a></li>
       <li><a class="" href="rendering/ExtentCallback.html">ExtentCallback</a></li>
@@ -156,11 +126,11 @@
       <li><a class="" href="rendering/FlexJustifyContent-class.html">FlexJustifyContent</a></li>
       <li><a class="" href="rendering/FontStyle-class.html">FontStyle</a></li>
       <li><a class="" href="rendering/FontWeight-class.html">FontWeight</a></li>
+      <li><a class="" href="rendering/HitTestBehavior-class.html">HitTestBehavior</a></li>
       <li><a class="" href="rendering/ImageFit-class.html">ImageFit</a></li>
       <li><a class="" href="rendering/ImageRepeat-class.html">ImageRepeat</a></li>
       <li><a class="" href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
       <li><a class="" href="rendering/Shape-class.html">Shape</a></li>
-      <li><a class="" href="rendering/ShrinkWrap-class.html">ShrinkWrap</a></li>
       <li><a class="" href="rendering/TextAlign-class.html">TextAlign</a></li>
       <li><a class="" href="rendering/TextBaseline-class.html">TextBaseline</a></li>
       <li><a class="" href="rendering/TextDecoration-class.html">TextDecoration</a></li>
@@ -169,9 +139,9 @@
     
       <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
       <li><a class="" href="rendering/AbstractNode-class.html">AbstractNode</a></li>
+      <li><a class="" href="rendering/AnimatedFractionalOffsetValue-class.html">AnimatedFractionalOffsetValue</a></li>
       <li><a class="" href="rendering/AutoLayoutParentData-class.html">AutoLayoutParentData</a></li>
       <li><a class="" href="rendering/BackgroundImage-class.html">BackgroundImage</a></li>
-      <li><a class="" href="rendering/BindingHitTestEntry-class.html">BindingHitTestEntry</a></li>
       <li><a class="" href="rendering/BlockParentData-class.html">BlockParentData</a></li>
       <li><a class="" href="rendering/Border-class.html">Border</a></li>
       <li><a class="" href="rendering/BorderSide-class.html">BorderSide</a></li>
@@ -205,6 +175,8 @@
       <li><a class="" href="rendering/Layer-class.html">Layer</a></li>
       <li><a class="" href="rendering/LinearGradient-class.html">LinearGradient</a></li>
       <li><a class="" href="rendering/Matrix4-class.html">Matrix4</a></li>
+      <li><a class="" href="rendering/MultiChildLayoutDelegate-class.html">MultiChildLayoutDelegate</a></li>
+      <li><a class="" href="rendering/MultiChildLayoutParentData-class.html">MultiChildLayoutParentData</a></li>
       <li><a class="" href="rendering/Offset-class.html">Offset</a></li>
       <li><a class="" href="rendering/OneChildLayoutDelegate-class.html">OneChildLayoutDelegate</a></li>
       <li><a class="" href="rendering/OpacityLayer-class.html">OpacityLayer</a></li>
@@ -233,6 +205,7 @@
       <li><a class="" href="rendering/RenderClipRect-class.html">RenderClipRect</a></li>
       <li><a class="" href="rendering/RenderClipRRect-class.html">RenderClipRRect</a></li>
       <li><a class="" href="rendering/RenderConstrainedBox-class.html">RenderConstrainedBox</a></li>
+      <li><a class="" href="rendering/RenderCustomMultiChildLayoutBox-class.html">RenderCustomMultiChildLayoutBox</a></li>
       <li><a class="" href="rendering/RenderCustomOneChildLayoutBox-class.html">RenderCustomOneChildLayoutBox</a></li>
       <li><a class="" href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
       <li><a class="" href="rendering/RenderDecoratedBox-class.html">RenderDecoratedBox</a></li>
@@ -297,7 +270,7 @@
 
       <dl class="constructor-summary-list">
         <dt id="InputEvent" class="callable">
-          <span class="name"><a class="" href="rendering/InputEvent/InputEvent.html">InputEvent</a></span><span class="signature">({<span class="parameter" id="-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span></span>, <span class="parameter" id="-param-timeStamp"><span class="type-annotation">double</span> <span class="parameter-name">timeStamp</span>: <span class="default-value">0.0</span></span>})</span>
+          <span class="name"><a class="" href="rendering/InputEvent/InputEvent.html">InputEvent</a></span><span class="signature">({<span class="parameter" id="-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span></span>, <span class="parameter" id="-param-timeStamp"><span class="type-annotation">Duration</span> <span class="parameter-name">timeStamp</span>: <span class="default-value">const Duration()</span></span>})</span>
         </dt>
         <dd>
           <p></p>
@@ -333,7 +306,7 @@
 </dd>
         <dt id="timeStamp" class="property">
             <span class="name"><a class="" href="rendering/InputEvent/timeStamp.html">timeStamp</a></span>
-            <span class="signature">&#8594; double</span>
+            <span class="signature">&#8594; Duration</span>
         </dt>
         <dd>
             <p></p>
@@ -433,7 +406,7 @@ the original invocation.<a href="rendering/InputEvent/noSuchMethod.html">&hellip
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

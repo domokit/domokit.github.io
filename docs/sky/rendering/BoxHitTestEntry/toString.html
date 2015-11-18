@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -115,7 +84,7 @@
       <li><a class="" href="rendering/BoxHitTestEntry/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/BoxHitTestEntry/localPosition.html">localPosition</a></li>
       <li><a class="" href="rendering/BoxHitTestEntry/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="rendering/HitTestEntry/target.html">target</a></li>
+      <li><a class="" href="rendering/BoxHitTestEntry/target.html">target</a></li>
     
       <li class="section-title"><a href="rendering/BoxHitTestEntry-class.html#constructors">Constructors</a></li>
       <li><a href="rendering/BoxHitTestEntry/BoxHitTestEntry.html">BoxHitTestEntry</a></li>
@@ -145,7 +114,7 @@
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">external String toString();</code></pre>
+      <pre><code class="prettyprint lang-dart">String toString() =&gt; &apos;${target.runtimeType}@$localPosition&apos;;</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -158,7 +127,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

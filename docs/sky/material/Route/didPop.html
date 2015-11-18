@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -110,23 +79,11 @@
     <ol>
     
     
-      <li class="section-title"><a href="material/Route-class.html#static-methods">Static methods</a></li>
-      <li><a class="" href="material/Route/of.html">of</a></li>
     
       <li class="section-title"><a href="material/Route-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="material/Route/canHaveHeroes.html">canHaveHeroes</a></li>
-      <li><a class="" href="material/Route/debugLabel.html">debugLabel</a></li>
-      <li><a class="" href="material/Route/ephemeral.html">ephemeral</a></li>
-      <li><a class="" href="material/Route/hasContent.html">hasContent</a></li>
       <li><a class="" href="material/Route/hashCode.html">hashCode</a></li>
-      <li><a class="" href="material/Route/isActuallyOpaque.html">isActuallyOpaque</a></li>
-      <li><a class="" href="material/Route/modal.html">modal</a></li>
-      <li><a class="" href="material/Route/mostValuableKeys.html">mostValuableKeys</a></li>
-      <li><a class="" href="material/Route/navigator.html">navigator</a></li>
-      <li><a class="" href="material/Route/opaque.html">opaque</a></li>
-      <li><a class="" href="material/Route/performance.html">performance</a></li>
+      <li><a class="" href="material/Route/overlayEntries.html">overlayEntries</a></li>
       <li><a class="" href="material/Route/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="material/Route/subtreeContext.html">subtreeContext</a></li>
     
       <li class="section-title"><a href="material/Route-class.html#constructors">Constructors</a></li>
       <li><a href="material/Route/Route.html">Route</a></li>
@@ -135,16 +92,12 @@
       <li><a class="" href="material/Route/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="material/Route-class.html#instance-methods">Methods</a></li>
-      <li><a class="" href="material/Route/build.html">build</a></li>
       <li><a class="" href="material/Route/didPop.html">didPop</a></li>
+      <li><a class="" href="material/Route/didPopNext.html">didPopNext</a></li>
       <li><a class="" href="material/Route/didPush.html">didPush</a></li>
-      <li><a class="" href="material/Route/getHeroesToAnimate.html">getHeroesToAnimate</a></li>
-      <li><a class="" href="material/Route/keySubtree.html">keySubtree</a></li>
       <li><a class="" href="material/Route/noSuchMethod.html">noSuchMethod</a></li>
-      <li><a class="" href="material/Route/readState.html">readState</a></li>
-      <li><a class="" href="material/Route/setState.html">setState</a></li>
       <li><a class="" href="material/Route/toString.html">toString</a></li>
-      <li><a class="" href="material/Route/writeState.html">writeState</a></li>
+      <li><a class="" href="material/Route/willPushNext.html">willPushNext</a></li>
     </ol>
 
   </div><!--/.sidebar-offcanvas-->
@@ -153,7 +106,7 @@
 
     <section class="multi-line-signature">
         <span class="returntype">void</span>
-        <span class="name ">didPop</span>(<wbr>[<span class="parameter" id="didPop-param-result"><span class="parameter-name">result</span></span>])
+        <span class="name ">didPop</span>(<wbr><span class="parameter" id="didPop-param-result"><span class="parameter-name">result</span></span>)
     </section>
 
     <section class="desc markdown">
@@ -164,11 +117,7 @@
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">void didPop([dynamic result]) {
-  assert(navigator != null);
-  if (performance == null)
-    navigator._removeRoute(this);
-}</code></pre>
+      <pre><code class="prettyprint lang-dart">void didPop(dynamic result) { }</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -181,7 +130,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

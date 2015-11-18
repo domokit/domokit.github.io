@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -116,14 +85,15 @@
       <li class="section-title"><a href="services/ActivityProxyImpl-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="services/ActivityProxyImpl/completerMap.html">completerMap</a></li>
       <li><a class="" href="services/ActivityProxyImpl/endpoint.html">endpoint</a></li>
+      <li><a class="" href="services/ActivityProxyImpl/errorFuture.html">errorFuture</a></li>
       <li><a class="" href="services/ActivityProxyImpl/hashCode.html">hashCode</a></li>
       <li><a class="" href="services/ActivityProxyImpl/isBound.html">isBound</a></li>
       <li><a class="" href="services/ActivityProxyImpl/isInHandler.html">isInHandler</a></li>
       <li><a class="" href="services/ActivityProxyImpl/isOpen.html">isOpen</a></li>
+      <li><a class="" href="services/ActivityProxyImpl/isPeerClosed.html">isPeerClosed</a></li>
       <li><a class="" href="services/ActivityProxyImpl/name.html">name</a></li>
       <li><a class="" href="services/ActivityProxyImpl/onError.html">onError</a></li>
       <li><a class="" href="services/ActivityProxyImpl/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="services/ActivityProxyImpl/subscription.html">subscription</a></li>
       <li><a class="" href="services/ActivityProxyImpl/version.html">version</a></li>
     
       <li class="section-title"><a href="services/ActivityProxyImpl-class.html#constructors">Constructors</a></li>
@@ -135,16 +105,18 @@
       <li><a class="" href="services/ActivityProxyImpl/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="services/ActivityProxyImpl-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="services/ActivityProxyImpl/beginHandlingEvents.html">beginHandlingEvents</a></li>
       <li><a class="" href="services/ActivityProxyImpl/bind.html">bind</a></li>
       <li><a class="" href="services/ActivityProxyImpl/bindFromHandle.html">bindFromHandle</a></li>
       <li><a class="" href="services/ActivityProxyImpl/close.html">close</a></li>
       <li><a class="" href="services/ActivityProxyImpl/handleRead.html">handleRead</a></li>
       <li><a class="" href="services/ActivityProxyImpl/handleResponse.html">handleResponse</a></li>
       <li><a class="" href="services/ActivityProxyImpl/handleWrite.html">handleWrite</a></li>
-      <li><a class="" href="services/ActivityProxyImpl/listen.html">listen</a></li>
       <li><a class="" href="services/ActivityProxyImpl/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="services/ActivityProxyImpl/proxyError.html">proxyError</a></li>
       <li><a class="" href="services/ActivityProxyImpl/queryVersion.html">queryVersion</a></li>
       <li><a class="" href="services/ActivityProxyImpl/requireVersion.html">requireVersion</a></li>
+      <li><a class="" href="services/ActivityProxyImpl/responseOrError.html">responseOrError</a></li>
       <li><a class="" href="services/ActivityProxyImpl/sendMessage.html">sendMessage</a></li>
       <li><a class="" href="services/ActivityProxyImpl/sendMessageWithRequestId.html">sendMessageWithRequestId</a></li>
       <li><a class="" href="services/ActivityProxyImpl/toString.html">toString</a></li>
@@ -168,7 +140,7 @@
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void handleWrite() {
-  throw &apos;Unexpected write signal in proxy.&apos;;
+  proxyError(&quot;Unexpected writable signal&quot;);
 }</code></pre>
     </section>
 
@@ -182,7 +154,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

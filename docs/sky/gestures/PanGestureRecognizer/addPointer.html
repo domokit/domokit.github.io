@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -132,11 +101,11 @@
       <li><a class="" href="gestures/PanGestureRecognizer/dispose.html">dispose</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer/handleEvent.html">handleEvent</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer/noSuchMethod.html">noSuchMethod</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/rejectGesture.html">rejectGesture</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/resolve.html">resolve</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/startTrackingPointer.html">startTrackingPointer</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/stopTrackingIfPointerNoLongerDown.html">stopTrackingIfPointerNoLongerDown</a></li>
-      <li><a class="" href="gestures/GestureRecognizer/stopTrackingPointer.html">stopTrackingPointer</a></li>
+      <li><a class="" href="gestures/OneSequenceGestureRecognizer/rejectGesture.html">rejectGesture</a></li>
+      <li><a class="" href="gestures/OneSequenceGestureRecognizer/resolve.html">resolve</a></li>
+      <li><a class="" href="gestures/OneSequenceGestureRecognizer/startTrackingPointer.html">startTrackingPointer</a></li>
+      <li><a class="" href="gestures/OneSequenceGestureRecognizer/stopTrackingIfPointerNoLongerDown.html">stopTrackingIfPointerNoLongerDown</a></li>
+      <li><a class="" href="gestures/OneSequenceGestureRecognizer/stopTrackingPointer.html">stopTrackingPointer</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer/toString.html">toString</a></li>
     </ol>
 
@@ -151,7 +120,10 @@
 
     <section class="desc markdown">
     
-          <p>The primary entry point for users of this class.</p>
+          <p>Call this with the pointerdown event of each pointer that should be
+considered for this gesture. (It's the GestureRecognizer's responsibility
+to then add itself to the global pointer router to receive subsequent
+events for this pointer.)</p>
     
     </section>
 
@@ -159,7 +131,7 @@
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void addPointer(PointerInputEvent event) {
   startTrackingPointer(event.pointer);
-  _velocityTrackers[event.pointer] = new ui.VelocityTracker();
+  _velocityTrackers[event.pointer] = new VelocityTracker();
   if (_state == DragState.ready) {
     _state = DragState.possible;
     _initialPosition = event.position;
@@ -178,7 +150,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

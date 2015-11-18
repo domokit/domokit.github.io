@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -113,11 +82,11 @@
     
     
       <li class="section-title"><a href="widgets/Draggable-class.html#instance-properties">Properties</a></li>
-      <li><a class="" href="widgets/Draggable/child.html">child</a></li>
-      <li><a class="" href="widgets/Draggable/data.html">data</a></li>
-      <li><a class="" href="widgets/Draggable/dragAnchor.html">dragAnchor</a></li>
-      <li><a class="" href="widgets/Draggable/feedback.html">feedback</a></li>
-      <li><a class="" href="widgets/Draggable/feedbackOffset.html">feedbackOffset</a></li>
+      <li><a class="" href="material/DraggableBase/child.html">child</a></li>
+      <li><a class="" href="material/DraggableBase/data.html">data</a></li>
+      <li><a class="" href="material/DraggableBase/dragAnchor.html">dragAnchor</a></li>
+      <li><a class="" href="material/DraggableBase/feedback.html">feedback</a></li>
+      <li><a class="" href="material/DraggableBase/feedbackOffset.html">feedbackOffset</a></li>
       <li><a class="" href="widgets/Draggable/hashCode.html">hashCode</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
       <li><a class="" href="widgets/Draggable/runtimeType.html">runtimeType</a></li>
@@ -130,7 +99,8 @@
     
       <li class="section-title"><a href="widgets/Draggable-class.html#instance-methods">Methods</a></li>
       <li><a class="" href="material/StatefulComponent/createElement.html">createElement</a></li>
-      <li><a class="" href="widgets/Draggable/createState.html">createState</a></li>
+      <li><a class="" href="widgets/Draggable/createRecognizer.html">createRecognizer</a></li>
+      <li><a class="" href="material/DraggableBase/createState.html">createState</a></li>
       <li><a class="" href="material/Widget/debugFillDescription.html">debugFillDescription</a></li>
       <li><a class="" href="widgets/Draggable/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="material/Widget/toString.html">toString</a></li>
@@ -143,7 +113,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">Draggable</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-data"><span class="parameter-name">data</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="-param-feedback"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">feedback</span></span>, <span class="parameter" id="-param-feedbackOffset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">feedbackOffset</span>: <span class="default-value">Offset.zero</span></span>, <span class="parameter" id="-param-dragAnchor"><span class="type-annotation"><a class="" href="material/DragAnchor-class.html">DragAnchor</a></span> <span class="parameter-name">dragAnchor</span>: <span class="default-value">DragAnchor.child</span></span>})
+                <span class="name ">Draggable</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-data"><span class="type-annotation">T</span> <span class="parameter-name">data</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="-param-feedback"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">feedback</span></span>, <span class="parameter" id="-param-feedbackOffset"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">feedbackOffset</span>: <span class="default-value">Offset.zero</span></span>, <span class="parameter" id="-param-dragAnchor"><span class="type-annotation"><a class="" href="material/DragAnchor-class.html">DragAnchor</a></span> <span class="parameter-name">dragAnchor</span>: <span class="default-value">DragAnchor.child</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -156,15 +126,19 @@
         <h2><span>Source</span> </h2>
         <pre><code class="prettyprint lang-dart">Draggable({
   Key key,
-  this.data,
-  this.child,
-  this.feedback,
-  this.feedbackOffset: Offset.zero,
-  this.dragAnchor: DragAnchor.child
-}) : super(key: key) {
-  assert(child != null);
-  assert(feedback != null);
-}</code></pre>
+  T data,
+  Widget child,
+  Widget feedback,
+  Offset feedbackOffset: Offset.zero,
+  DragAnchor dragAnchor: DragAnchor.child
+}) : super(
+  key: key,
+  data: data,
+  child: child,
+  feedback: feedback,
+  feedbackOffset: feedbackOffset,
+  dragAnchor: dragAnchor
+);</code></pre>
       </section>
 
   </div> <!-- /.main-content -->
@@ -177,7 +151,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

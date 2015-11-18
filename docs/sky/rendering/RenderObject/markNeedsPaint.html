@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -127,7 +96,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
-      <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
+      <li><a class="" href="rendering/RenderObject/debugOwner.html">debugOwner</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
       <li><a class="" href="rendering/RenderObject/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
@@ -206,13 +175,15 @@ writes are coalesced, removing redundant computation.</p>
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void markNeedsPaint() {
   assert(!debugDoingPaint);
-  if (!attached) return; // Don&apos;t try painting things that aren&apos;t in the hierarchy
-  if (_needsPaint) return;
+  if (!attached)
+    return; // Don&apos;t try painting things that aren&apos;t in the hierarchy
+  if (_needsPaint)
+    return;
+  _needsPaint = true;
   if (hasLayer) {
     // If we always have our own layer, then we can just repaint
     // ourselves without involving any other nodes.
     assert(_layer != null);
-    _needsPaint = true;
     _nodesNeedingPaint.add(this);
     scheduler.ensureVisualUpdate();
   } else if (parent is RenderObject) {
@@ -228,7 +199,6 @@ writes are coalesced, removing redundant computation.</p>
     // then we have to paint ourselves, since nobody else can paint
     // us. We don&apos;t add ourselves to _nodesNeedingPaint in this
     // case, because the root is always told to paint regardless.
-    _needsPaint = true;
     scheduler.ensureVisualUpdate();
   }
 }</code></pre>
@@ -244,7 +214,7 @@ writes are coalesced, removing redundant computation.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

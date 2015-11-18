@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -127,7 +96,7 @@
       <li><a class="" href="rendering/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></li>
       <li><a class="" href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
-      <li><a class="" href="rendering/RenderObject/debugExceptionContext.html">debugExceptionContext</a></li>
+      <li><a class="" href="rendering/RenderObject/debugOwner.html">debugOwner</a></li>
       <li><a class="" href="rendering/AbstractNode/depth.html">depth</a></li>
       <li><a class="" href="rendering/RenderObject/hashCode.html">hashCode</a></li>
       <li><a class="" href="rendering/RenderObject/hasLayer.html">hasLayer</a></li>
@@ -185,21 +154,26 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
 
     <section class="multi-line-signature">
-        <span class="returntype">String</span>
-        <span class="name ">debugDescribeSettings</span>(<wbr><span class="parameter" id="debugDescribeSettings-param-prefix"><span class="type-annotation">String</span> <span class="parameter-name">prefix</span></span>)
+        <span class="returntype">void</span>
+        <span class="name ">debugDescribeSettings</span>(<wbr><span class="parameter" id="debugDescribeSettings-param-settings"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">settings</span></span>)
     </section>
 
     <section class="desc markdown">
     
-          <p>Returns a string describing the current node's fields, one field per line,
-with each line prefixed by the prefix argument. Subclasses should override
-this to have their information included in toStringDeep().</p>
+          <p>Returns a list of strings describing the current node's fields, one field
+per string. Subclasses should override this to have their information
+included in toStringDeep().</p>
     
     </section>
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">String debugDescribeSettings(String prefix) =&gt; &apos;${prefix}parentData: $parentData\n${prefix}constraints: $constraints\n&apos;;</code></pre>
+      <pre><code class="prettyprint lang-dart">void debugDescribeSettings(List&lt;String&gt; settings) {
+  settings.add(&apos;parentData: $parentData&apos;);
+  settings.add(&apos;constraints: $constraints&apos;);
+  if (debugOwner != &apos;&apos;)
+    settings.add(&apos;owner: $debugOwner&apos;);
+}</code></pre>
     </section>
 
   </div> <!-- /.main-content -->
@@ -212,7 +186,7 @@ this to have their information included in toStringDeep().</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

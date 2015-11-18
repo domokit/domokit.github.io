@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -144,7 +113,7 @@
 
     <section class="multi-line-signature">
         <span class="returntype">void</span>
-        <span class="name ">beginFrame</span>(<wbr><span class="parameter" id="beginFrame-param-timeStamp"><span class="type-annotation">Duration</span> <span class="parameter-name">timeStamp</span></span>)
+        <span class="name ">beginFrame</span>(<wbr>)
     </section>
 
     <section class="desc markdown">
@@ -155,7 +124,7 @@
 
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
-      <pre><code class="prettyprint lang-dart">void beginFrame(Duration timeStamp) {
+      <pre><code class="prettyprint lang-dart">void beginFrame() {
   RenderObject.flushLayout();
   _renderView.updateCompositingBits();
   RenderObject.flushPaint();
@@ -173,7 +142,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

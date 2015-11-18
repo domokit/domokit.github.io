@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -108,10 +77,12 @@
       <li class="section-title"><a href="index.html">Libraries</a></li>
       <li><a href="animation/animation-library.html">animation</a></li>
       <li><a href="gestures/gestures-library.html">gestures</a></li>
+      <li><a href="http/http-library.html">http</a></li>
       <li><a href="material/material-library.html">material</a></li>
       <li><a href="painting/painting-library.html">painting</a></li>
       <li><a href="rendering/rendering-library.html">rendering</a></li>
       <li><a href="services/services-library.html">services</a></li>
+      <li><a href="task/task-library.html">task</a></li>
       <li><a href="widgets/widgets-library.html">widgets</a></li>
     </ol>
   </div>
@@ -133,7 +104,9 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The minimum time from the end of the first tap to the start of the second
+tap in a double-tap gesture. (Currently not honored by the
+DoubleTapGestureRecognizer.)</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 40)</code></span>
@@ -144,7 +117,9 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Distance between the initial position of the first touch and the start
+position of a potential second touch for the second touch to be considered
+the second touch of a double-tap gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>100.0</code></span>
@@ -155,7 +130,8 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The maximum time from the start of the first tap to the start of the second
+tap in a double-tap gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 300)</code></span>
@@ -166,21 +142,12 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The maximum distance that the first touch in a double-tap gesture can travel
+before deciding that it is not part of a double-tap gesture.
+DoubleTapGestureRecognizer also restricts the second touch to this distance.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>kTouchSlop</code></span>
-                </div>
-            </dd>
-            <dt id="kEdgeSlop" class="constant">
-                <span class="name "><a class="" href="gestures/kEdgeSlop.html">kEdgeSlop</a></span>
-                <span class="signature">&#8594; double</span>
-            </dt>
-            <dd>
-                <p></p>
-                <div>
-                  <span class="features">const</span>
-                  <span class="signature"><code>12.0</code></span>
                 </div>
             </dd>
             <dt id="kHoverTapSlop" class="constant">
@@ -188,7 +155,9 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Maximum distance between the down and up pointers for a tap. (Currently not
+honored by the <code>TapGestureRecognizer</code>; <code>PrimaryPointerGestureRecognizer</code>,
+which TapGestureRecognizer inherits from, uses <a class="" href="gestures/kTouchSlop.html">kTouchSlop</a>.)</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>20.0</code></span>
@@ -199,7 +168,8 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>Maximum length of time between a tap down and a tap up for the gesture to be
+considered a tap. (Currently not honored by the TapGestureRecognizer.)</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 150)</code></span>
@@ -210,7 +180,8 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The maximum time from the start of the first tap to the start of the second
+tap in a jump-tap gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 500)</code></span>
@@ -221,7 +192,7 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The time before a long press gesture attempts to win.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 500)</code></span>
@@ -232,7 +203,8 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The maximum velocity of a touch to consider that touch to trigger a fling
+gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>8000.0</code></span>
@@ -243,7 +215,8 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The minimum velocity for a touch to consider that touch to trigger a fling
+gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>50.0</code></span>
@@ -254,7 +227,9 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The distance a touch has to travel for us to be confident that the gesture
+is a paging gesture. (Currently not used, because paging uses a regular drag
+gesture, which uses kTouchSlop.)</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>kTouchSlop * 2.0</code></span>
@@ -265,7 +240,8 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The distance a touch has to travel for us to be confident that the gesture
+is a panning gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>kTouchSlop * 2.0</code></span>
@@ -276,7 +252,8 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The time that must elapse before a tap gesture sends onTapDown, if there's
+any doubt that the gesture is a tap.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 100)</code></span>
@@ -287,7 +264,8 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The distance a touch has to travel for us to be confident that the gesture
+is a scale gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>kTouchSlop</code></span>
@@ -298,7 +276,8 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The distance a touch has to travel for us to be confident that the gesture
+is a scroll gesture.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>8.0</code></span>
@@ -309,7 +288,8 @@
                 <span class="signature">&#8594; double</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The margin around a dialog, popup menu, or other window-like widget inside
+which we do not consider a tap to dismiss the widget. (Not currently used.)</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>16.0</code></span>
@@ -320,7 +300,8 @@
                 <span class="signature">&#8594; Duration</span>
             </dt>
             <dd>
-                <p></p>
+                <p>The time for which zoom controls (e.g. in a map interface) are to be
+displayed on the screen, from the moment they were last requested.</p>
                 <div>
                   <span class="features">const</span>
                   <span class="signature"><code>const Duration(milliseconds: 3000)</code></span>
@@ -333,6 +314,14 @@
         <h2>Typedefs</h2>
 
         <dl class="callables">
+            <dt id="GestureDoubleTapCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureDoubleTapCallback.html">GestureDoubleTapCallback</a></span><span class="signature">(<wbr>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="GestureDragEndCallback" class="callable">
                 <span class="name "><a class="" href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureDragEndCallback-param-velocity"><span class="type-annotation"><a class="" href="material/Offset-class.html">Offset</a></span> <span class="parameter-name">velocity</span></span>)
                     <span class="returntype parameter">&#8594; void</span>
@@ -359,6 +348,38 @@
             </dd>
             <dt id="GestureLongPressCallback" class="callable">
                 <span class="name "><a class="" href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></span><span class="signature">(<wbr>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureMultiTapCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureMultiTapCallback.html">GestureMultiTapCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapCallback-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureMultiTapCancelCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureMultiTapCancelCallback.html">GestureMultiTapCancelCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapCancelCallback-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureMultiTapDownCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureMultiTapDownCallback.html">GestureMultiTapDownCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapDownCallback-param-globalPosition"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">globalPosition</span></span>, <span class="parameter" id="GestureMultiTapDownCallback-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>)
+                    <span class="returntype parameter">&#8594; void</span>
+                </span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
+            <dt id="GestureMultiTapUpCallback" class="callable">
+                <span class="name "><a class="" href="gestures/GestureMultiTapUpCallback.html">GestureMultiTapUpCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureMultiTapUpCallback-param-globalPosition"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">globalPosition</span></span>, <span class="parameter" id="GestureMultiTapUpCallback-param-pointer"><span class="type-annotation">int</span> <span class="parameter-name">pointer</span></span>)
                     <span class="returntype parameter">&#8594; void</span>
                 </span>
             </dt>
@@ -407,14 +428,6 @@
             </dd>
             <dt id="GestureScaleUpdateCallback" class="callable">
                 <span class="name "><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></span><span class="signature">(<wbr><span class="parameter" id="GestureScaleUpdateCallback-param-scale"><span class="type-annotation">double</span> <span class="parameter-name">scale</span></span>, <span class="parameter" id="GestureScaleUpdateCallback-param-focalPoint"><span class="type-annotation"><a class="" href="gestures/Point-class.html">Point</a></span> <span class="parameter-name">focalPoint</span></span>)
-                    <span class="returntype parameter">&#8594; void</span>
-                </span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
-            <dt id="GestureShowPressCallback" class="callable">
-                <span class="name "><a class="" href="gestures/GestureShowPressCallback.html">GestureShowPressCallback</a></span><span class="signature">(<wbr>)
                     <span class="returntype parameter">&#8594; void</span>
                 </span>
             </dt>
@@ -501,12 +514,6 @@
         <h2>Classes</h2>
 
         <dl>
-            <dt id="DisposableArenaMember">
-                <span class="name "><a class="" href="gestures/DisposableArenaMember-class.html">DisposableArenaMember</a></span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
             <dt id="DoubleTapGestureRecognizer">
                 <span class="name "><a class="" href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></span>
             </dt>
@@ -539,6 +546,12 @@
             <dd>
                 <p></p>
             </dd>
+            <dt id="GestureVelocity">
+                <span class="name "><a class="" href="gestures/GestureVelocity-class.html">GestureVelocity</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="HorizontalDragGestureRecognizer">
                 <span class="name "><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></span>
             </dt>
@@ -550,6 +563,12 @@
             </dt>
             <dd>
                 <p>Base class for input events.</p>
+            </dd>
+            <dt id="LeastSquaresSolver">
+                <span class="name "><a class="" href="gestures/LeastSquaresSolver-class.html">LeastSquaresSolver</a></span>
+            </dt>
+            <dd>
+                <p></p>
             </dd>
             <dt id="LongPressGestureRecognizer">
                 <span class="name "><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></span>
@@ -565,6 +584,12 @@
 independently. That is, each pointer sequence that could resolve to a tap
 does so independently of others: down-1, down-2, up-1, up-2 produces two
 taps, on up-1 and up-2.</p>
+            </dd>
+            <dt id="OneSequenceGestureRecognizer">
+                <span class="name "><a class="" href="gestures/OneSequenceGestureRecognizer-class.html">OneSequenceGestureRecognizer</a></span>
+            </dt>
+            <dd>
+                <p></p>
             </dd>
             <dt id="PanGestureRecognizer">
                 <span class="name "><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></span>
@@ -590,6 +615,12 @@ taps, on up-1 and up-2.</p>
             <dd>
                 <p>A routing table for <a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a> events.</p>
             </dd>
+            <dt id="PolynomialFit">
+                <span class="name "><a class="" href="gestures/PolynomialFit-class.html">PolynomialFit</a></span>
+            </dt>
+            <dd>
+                <p></p>
+            </dd>
             <dt id="PrimaryPointerGestureRecognizer">
                 <span class="name "><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></span>
             </dt>
@@ -602,12 +633,6 @@ taps, on up-1 and up-2.</p>
             <dd>
                 <p></p>
             </dd>
-            <dt id="ShowPressGestureRecognizer">
-                <span class="name "><a class="" href="gestures/ShowPressGestureRecognizer-class.html">ShowPressGestureRecognizer</a></span>
-            </dt>
-            <dd>
-                <p></p>
-            </dd>
             <dt id="TapGestureRecognizer">
                 <span class="name "><a class="" href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></span>
             </dt>
@@ -615,6 +640,12 @@ taps, on up-1 and up-2.</p>
                 <p>TapGestureRecognizer is a tap recognizer that tracks only one primary
 pointer per gesture. That is, during tap recognition, extra pointer events
 are ignored: down-1, down-2, up-1, up-2 produces only one tap on up-1.</p>
+            </dd>
+            <dt id="VelocityTracker">
+                <span class="name "><a class="" href="gestures/VelocityTracker-class.html">VelocityTracker</a></span>
+            </dt>
+            <dd>
+                <p></p>
             </dd>
             <dt id="VerticalDragGestureRecognizer">
                 <span class="name "><a class="" href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></span>
@@ -636,7 +667,6 @@ are ignored: down-1, down-2, up-1, up-2 produces only one tap on up-1.</p>
       <li><a class="" href="gestures/kDoubleTapSlop.html">kDoubleTapSlop</a></li>
       <li><a class="" href="gestures/kDoubleTapTimeout.html">kDoubleTapTimeout</a></li>
       <li><a class="" href="gestures/kDoubleTapTouchSlop.html">kDoubleTapTouchSlop</a></li>
-      <li><a class="" href="gestures/kEdgeSlop.html">kEdgeSlop</a></li>
       <li><a class="" href="gestures/kHoverTapSlop.html">kHoverTapSlop</a></li>
       <li><a class="" href="gestures/kHoverTapTimeout.html">kHoverTapTimeout</a></li>
       <li><a class="" href="gestures/kJumpTapTimeout.html">kJumpTapTimeout</a></li>
@@ -652,17 +682,21 @@ are ignored: down-1, down-2, up-1, up-2 produces only one tap on up-1.</p>
       <li><a class="" href="gestures/kZoomControlsTimeout.html">kZoomControlsTimeout</a></li>
     
       <li class="section-title"><a href="gestures/gestures-library.html#typedefs">Typedefs</a></li>
+      <li><a class="" href="gestures/GestureDoubleTapCallback.html">GestureDoubleTapCallback</a></li>
       <li><a class="" href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
       <li><a class="" href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
       <li><a class="" href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
       <li><a class="" href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></li>
+      <li><a class="" href="gestures/GestureMultiTapCallback.html">GestureMultiTapCallback</a></li>
+      <li><a class="" href="gestures/GestureMultiTapCancelCallback.html">GestureMultiTapCancelCallback</a></li>
+      <li><a class="" href="gestures/GestureMultiTapDownCallback.html">GestureMultiTapDownCallback</a></li>
+      <li><a class="" href="gestures/GestureMultiTapUpCallback.html">GestureMultiTapUpCallback</a></li>
       <li><a class="" href="gestures/GesturePanEndCallback.html">GesturePanEndCallback</a></li>
       <li><a class="" href="gestures/GesturePanStartCallback.html">GesturePanStartCallback</a></li>
       <li><a class="" href="gestures/GesturePanUpdateCallback.html">GesturePanUpdateCallback</a></li>
       <li><a class="" href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
       <li><a class="" href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
       <li><a class="" href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
-      <li><a class="" href="gestures/GestureShowPressCallback.html">GestureShowPressCallback</a></li>
       <li><a class="" href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
       <li><a class="" href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
       <li><a class="" href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
@@ -678,24 +712,27 @@ are ignored: down-1, down-2, up-1, up-2 produces only one tap on up-1.</p>
       <li><a class="" href="gestures/ScaleState-class.html">ScaleState</a></li>
     
       <li class="section-title"><a href="gestures/gestures-library.html#classes">Classes</a></li>
-      <li><a class="" href="gestures/DisposableArenaMember-class.html">DisposableArenaMember</a></li>
       <li><a class="" href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></li>
       <li><a class="" href="gestures/GestureArena-class.html">GestureArena</a></li>
       <li><a class="" href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></li>
       <li><a class="" href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
       <li><a class="" href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></li>
+      <li><a class="" href="gestures/GestureVelocity-class.html">GestureVelocity</a></li>
       <li><a class="" href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
       <li><a class="" href="gestures/InputEvent-class.html">InputEvent</a></li>
+      <li><a class="" href="gestures/LeastSquaresSolver-class.html">LeastSquaresSolver</a></li>
       <li><a class="" href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
       <li><a class="" href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a></li>
+      <li><a class="" href="gestures/OneSequenceGestureRecognizer-class.html">OneSequenceGestureRecognizer</a></li>
       <li><a class="" href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
       <li><a class="" href="gestures/Point-class.html">Point</a></li>
       <li><a class="" href="gestures/PointerInputEvent-class.html">PointerInputEvent</a></li>
       <li><a class="" href="gestures/PointerRouter-class.html">PointerRouter</a></li>
+      <li><a class="" href="gestures/PolynomialFit-class.html">PolynomialFit</a></li>
       <li><a class="" href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
       <li><a class="" href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></li>
-      <li><a class="" href="gestures/ShowPressGestureRecognizer-class.html">ShowPressGestureRecognizer</a></li>
       <li><a class="" href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></li>
+      <li><a class="" href="gestures/VelocityTracker-class.html">VelocityTracker</a></li>
       <li><a class="" href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></li>
     
     </ol>
@@ -710,7 +747,7 @@ are ignored: down-1, down-2, up-1, up-2 produces only one tap on up-1.</p>
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

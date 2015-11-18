@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -146,16 +115,16 @@
     
       <li class="section-title"><a href="services/services-library.html#typedefs">Typedefs</a></li>
       <li><a class="" href="services/ImageListener.html">ImageListener</a></li>
-      <li><a class="" href="services/OverrideRequestService.html">OverrideRequestService</a></li>
+      <li><a class="" href="services/OverrideConnectToService.html">OverrideConnectToService</a></li>
     
       <li class="section-title"><a href="services/services-library.html#properties">Properties</a></li>
       <li><a class="" href="services/activity.html">activity</a></li>
-      <li><a class="" href="services/embedder.html">embedder</a></li>
       <li><a class="" href="services/imageCache.html">imageCache</a></li>
       <li><a class="" href="services/keyboard.html">keyboard</a></li>
-      <li><a class="" href="services/overrideRequestService.html">overrideRequestService</a></li>
+      <li><a class="" href="services/overrideConnectToService.html">overrideConnectToService</a></li>
       <li><a class="" href="services/pathService.html">pathService</a></li>
       <li><a class="" href="services/rootBundle.html">rootBundle</a></li>
+      <li><a class="" href="services/serviceRegistry.html">serviceRegistry</a></li>
       <li><a class="" href="services/shell.html">shell</a></li>
       <li><a class="" href="services/userFeedback.html">userFeedback</a></li>
     
@@ -163,8 +132,6 @@
       <li><a class="" href="services/decodeImageFromDataPipe.html">decodeImageFromDataPipe</a></li>
       <li><a class="" href="services/decodeImageFromList.html">decodeImageFromList</a></li>
       <li><a class="" href="services/fetch.html">fetch</a></li>
-      <li><a class="" href="services/fetchBody.html">fetchBody</a></li>
-      <li><a class="" href="services/fetchString.html">fetchString</a></li>
       <li><a class="" href="services/fetchUrl.html">fetchUrl</a></li>
       <li><a class="" href="services/getAppDataDir.html">getAppDataDir</a></li>
       <li><a class="" href="services/getCacheDir.html">getCacheDir</a></li>
@@ -227,7 +194,6 @@
       <li><a class="" href="services/PathServiceProxy-class.html">PathServiceProxy</a></li>
       <li><a class="" href="services/PathServiceProxyImpl-class.html">PathServiceProxyImpl</a></li>
       <li><a class="" href="services/PathServiceStub-class.html">PathServiceStub</a></li>
-      <li><a class="" href="services/Response-class.html">Response</a></li>
       <li><a class="" href="services/ScreenOrientation-class.html">ScreenOrientation</a></li>
       <li><a class="" href="services/StringExtra-class.html">StringExtra</a></li>
       <li><a class="" href="services/SubmitAction-class.html">SubmitAction</a></li>
@@ -257,7 +223,7 @@
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
           <li>Object</li>
-          <li>MojoEventStreamListener</li>
+          <li>MojoEventHandler</li>
           <li>Stub</li>
           <li>UserFeedbackStub</li>
         </ul></dd>
@@ -391,6 +357,16 @@
         read-only, inherited
     </div>
 </dd>
+        <dt id="isPeerClosed" class="property">
+            <span class="name"><a class="" href="services/UserFeedbackStub/isPeerClosed.html">isPeerClosed</a></span>
+            <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">
+        read-only, inherited
+    </div>
+</dd>
         <dt id="onError" class="property">
             <span class="name"><a class="" href="services/UserFeedbackStub/onError.html">onError</a></span>
             <span class="signature">&#8594; ErrorHandler</span>
@@ -409,16 +385,6 @@
             <p>A representation of the runtime type of the object.</p>
             <div class="features">
         read-only, inherited
-    </div>
-</dd>
-        <dt id="subscription" class="property">
-            <span class="name"><a class="" href="services/UserFeedbackStub/subscription.html">subscription</a></span>
-            <span class="signature">&#8594; </span>
-        </dt>
-        <dd>
-            <p></p>
-            <div class="features">
-        read / write, inherited
     </div>
 </dd>
         <dt id="version" class="property">
@@ -453,6 +419,15 @@
     <section class="summary offset-anchor" id="instance-methods">
       <h2>Methods</h2>
       <dl class="callables">
+        <dt id="beginHandlingEvents" class="callable">
+            <span class="name "><a class="" href="services/UserFeedbackStub/beginHandlingEvents.html">beginHandlingEvents</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; void</span>
+            </span>
+        </dt>
+        <dd>
+            <p></p>
+            <div class="features">inherited</div>
+        </dd>
         <dt id="bind" class="callable">
             <span class="name "><a class="" href="services/UserFeedbackStub/bind.html">bind</a></span><span class="signature">(<wbr><span class="parameter" id="bind-param-endpoint"><span class="type-annotation">MojoMessagePipeEndpoint</span> <span class="parameter-name">endpoint</span></span>)
                 <span class="returntype parameter">&#8594; void</span>
@@ -524,15 +499,6 @@
             <p></p>
             <div class="features">inherited</div>
         </dd>
-        <dt id="listen" class="callable">
-            <span class="name "><a class="" href="services/UserFeedbackStub/listen.html">listen</a></span><span class="signature">(<wbr>)
-                <span class="returntype parameter">&#8594; StreamSubscription&lt;List&lt;int&gt;&gt;</span>
-            </span>
-        </dt>
-        <dd>
-            <p></p>
-            <div class="features">inherited</div>
-        </dd>
         <dt id="noSuchMethod" class="callable">
             <span class="name "><a class="" href="services/UserFeedbackStub/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
                 <span class="returntype parameter">&#8594; dynamic</span>
@@ -577,9 +543,9 @@ the original invocation.<a href="services/UserFeedbackStub/noSuchMethod.html">&h
       <li><a class="" href="services/UserFeedbackStub/isBound.html">isBound</a></li>
       <li><a class="" href="services/UserFeedbackStub/isInHandler.html">isInHandler</a></li>
       <li><a class="" href="services/UserFeedbackStub/isOpen.html">isOpen</a></li>
+      <li><a class="" href="services/UserFeedbackStub/isPeerClosed.html">isPeerClosed</a></li>
       <li><a class="" href="services/UserFeedbackStub/onError.html">onError</a></li>
       <li><a class="" href="services/UserFeedbackStub/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="services/UserFeedbackStub/subscription.html">subscription</a></li>
       <li><a class="" href="services/UserFeedbackStub/version.html">version</a></li>
     
       <li class="section-title"><a href="services/UserFeedbackStub-class.html#constructors">Constructors</a></li>
@@ -591,6 +557,7 @@ the original invocation.<a href="services/UserFeedbackStub/noSuchMethod.html">&h
       <li><a class="" href="services/UserFeedbackStub/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="services/UserFeedbackStub-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="services/UserFeedbackStub/beginHandlingEvents.html">beginHandlingEvents</a></li>
       <li><a class="" href="services/UserFeedbackStub/bind.html">bind</a></li>
       <li><a class="" href="services/UserFeedbackStub/bindFromHandle.html">bindFromHandle</a></li>
       <li><a class="" href="services/UserFeedbackStub/buildResponse.html">buildResponse</a></li>
@@ -599,7 +566,6 @@ the original invocation.<a href="services/UserFeedbackStub/noSuchMethod.html">&h
       <li><a class="" href="services/UserFeedbackStub/handleMessage.html">handleMessage</a></li>
       <li><a class="" href="services/UserFeedbackStub/handleRead.html">handleRead</a></li>
       <li><a class="" href="services/UserFeedbackStub/handleWrite.html">handleWrite</a></li>
-      <li><a class="" href="services/UserFeedbackStub/listen.html">listen</a></li>
       <li><a class="" href="services/UserFeedbackStub/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="services/UserFeedbackStub/toString.html">toString</a></li>
     </ol>
@@ -613,7 +579,7 @@ the original invocation.<a href="services/UserFeedbackStub/noSuchMethod.html">&h
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

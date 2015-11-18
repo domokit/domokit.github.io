@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -122,9 +91,9 @@
       <li><a class="" href="services/PathServiceStub/isBound.html">isBound</a></li>
       <li><a class="" href="services/PathServiceStub/isInHandler.html">isInHandler</a></li>
       <li><a class="" href="services/PathServiceStub/isOpen.html">isOpen</a></li>
+      <li><a class="" href="services/PathServiceStub/isPeerClosed.html">isPeerClosed</a></li>
       <li><a class="" href="services/PathServiceStub/onError.html">onError</a></li>
       <li><a class="" href="services/PathServiceStub/runtimeType.html">runtimeType</a></li>
-      <li><a class="" href="services/PathServiceStub/subscription.html">subscription</a></li>
       <li><a class="" href="services/PathServiceStub/version.html">version</a></li>
     
       <li class="section-title"><a href="services/PathServiceStub-class.html#constructors">Constructors</a></li>
@@ -136,6 +105,7 @@
       <li><a class="" href="services/PathServiceStub/operator_equals.html">operator ==</a></li>
     
       <li class="section-title"><a href="services/PathServiceStub-class.html#instance-methods">Methods</a></li>
+      <li><a class="" href="services/PathServiceStub/beginHandlingEvents.html">beginHandlingEvents</a></li>
       <li><a class="" href="services/PathServiceStub/bind.html">bind</a></li>
       <li><a class="" href="services/PathServiceStub/bindFromHandle.html">bindFromHandle</a></li>
       <li><a class="" href="services/PathServiceStub/buildResponse.html">buildResponse</a></li>
@@ -144,7 +114,6 @@
       <li><a class="" href="services/PathServiceStub/handleMessage.html">handleMessage</a></li>
       <li><a class="" href="services/PathServiceStub/handleRead.html">handleRead</a></li>
       <li><a class="" href="services/PathServiceStub/handleWrite.html">handleWrite</a></li>
-      <li><a class="" href="services/PathServiceStub/listen.html">listen</a></li>
       <li><a class="" href="services/PathServiceStub/noSuchMethod.html">noSuchMethod</a></li>
       <li><a class="" href="services/PathServiceStub/toString.html">toString</a></li>
     </ol>
@@ -167,27 +136,22 @@
     <section class="summary source-code" id="source">
       <h2><span>Source</span> </h2>
       <pre><code class="prettyprint lang-dart">void handleRead() {
-  // Query how many bytes are available.
-  var result = endpoint.query();
-  assert(result.status.isOk || result.status.isResourceExhausted);
-  if (result.bytesRead == 0) {
-    throw new MojoCodecError(&apos;Unexpected empty message: $this&apos;);
+  var result = endpoint.queryAndRead();
+  if ((result.data == null) || (result.dataLength == 0)) {
+    throw new MojoCodecError(&apos;Unexpected empty message or error: $result&apos;);
   }
-
-  // Read the data and view as a message.
-  var bytes = new ByteData(result.bytesRead);
-  var handles = new List&lt;core.MojoHandle&gt;(result.handlesRead);
-  result = endpoint.read(bytes, result.bytesRead, handles);
-  assert(result.status.isOk || result.status.isResourceExhausted);
 
   // Prepare the response.
   var message;
   var response;
   try {
-    message = new ServiceMessage.fromMessage(new Message(bytes, handles));
+    message = new ServiceMessage.fromMessage(new Message(result.data,
+        result.handles, result.dataLength, result.handlesLength));
     response = _isClosing ? null : handleMessage(message);
   } catch (e) {
-    handles.forEach((h) =&gt; h.close());
+    if (result.handles != null) {
+      result.handles.forEach((h) =&gt; h.close());
+    }
     rethrow;
   }
 
@@ -226,7 +190,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

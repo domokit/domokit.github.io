@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -116,14 +85,17 @@
       <li><a class="" href="material/Positioned/bottom.html">bottom</a></li>
       <li><a class="" href="material/ProxyComponent/child.html">child</a></li>
       <li><a class="" href="material/Positioned/hashCode.html">hashCode</a></li>
+      <li><a class="" href="material/Positioned/height.html">height</a></li>
       <li><a class="" href="material/Widget/key.html">key</a></li>
       <li><a class="" href="material/Positioned/left.html">left</a></li>
       <li><a class="" href="material/Positioned/right.html">right</a></li>
       <li><a class="" href="material/Positioned/runtimeType.html">runtimeType</a></li>
       <li><a class="" href="material/Positioned/top.html">top</a></li>
+      <li><a class="" href="material/Positioned/width.html">width</a></li>
     
       <li class="section-title"><a href="material/Positioned-class.html#constructors">Constructors</a></li>
       <li><a href="material/Positioned/Positioned.html">Positioned</a></li>
+      <li><a href="material/Positioned/Positioned.fromRect.html">fromRect</a></li>
     
       <li class="section-title"><a href="material/Positioned-class.html#operators">Operators</a></li>
       <li><a class="" href="material/Positioned/operator_equals.html">operator ==</a></li>
@@ -144,7 +116,7 @@
 
       <section class="multi-line-signature">
         
-                <span class="name ">Positioned</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span></span>, <span class="parameter" id="-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span></span>, <span class="parameter" id="-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>})
+                <span class="name ">Positioned</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation"><a class="" href="material/Key-class.html">Key</a></span> <span class="parameter-name">key</span></span>, <span class="parameter" id="-param-child"><span class="type-annotation"><a class="" href="material/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span>, <span class="parameter" id="-param-top"><span class="type-annotation">double</span> <span class="parameter-name">top</span></span>, <span class="parameter" id="-param-right"><span class="type-annotation">double</span> <span class="parameter-name">right</span></span>, <span class="parameter" id="-param-bottom"><span class="type-annotation">double</span> <span class="parameter-name">bottom</span></span>, <span class="parameter" id="-param-left"><span class="type-annotation">double</span> <span class="parameter-name">left</span></span>, <span class="parameter" id="-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>, <span class="parameter" id="-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>})
       </section>
 
     <section class="desc markdown">
@@ -161,8 +133,13 @@
   this.top,
   this.right,
   this.bottom,
-  this.left
-}) : super(key: key, child: child);</code></pre>
+  this.left,
+  this.width,
+  this.height
+}) : super(key: key, child: child) {
+  assert(top == null || bottom == null || height == null);
+  assert(left == null || right == null || width == null);
+}</code></pre>
       </section>
 
   </div> <!-- /.main-content -->
@@ -175,7 +152,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

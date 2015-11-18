@@ -17,38 +17,7 @@
     <link rel="icon" href="static-assets/favicon.png">
 
     <!-- Do not remove placeholder -->
-    <!-- style overrides for dartdoc -->
-<style>
-  header {
-    background-color: #917FFF;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
-    background-color: #fdfdfd;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 42px !important;
-    letter-spacing: -1px;
-    line-height: 1;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  pre > code {
-    font-size: 14px;
-  }
-</style>
-
+    <!-- Header Placeholder -->
 </head>
 
 <body>
@@ -114,7 +83,6 @@
       <li class="section-title"><a href="gestures/DoubleTapGestureRecognizer-class.html#instance-properties">Properties</a></li>
       <li><a class="" href="gestures/DoubleTapGestureRecognizer/hashCode.html">hashCode</a></li>
       <li><a class="" href="gestures/DoubleTapGestureRecognizer/onDoubleTap.html">onDoubleTap</a></li>
-      <li><a class="" href="gestures/DoubleTapGestureRecognizer/router.html">router</a></li>
       <li><a class="" href="gestures/DoubleTapGestureRecognizer/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="gestures/DoubleTapGestureRecognizer-class.html#constructors">Constructors</a></li>
@@ -144,7 +112,10 @@
 
     <section class="desc markdown">
     
-          <p class="no-docs">Not documented.</p>
+          <p>Call this with the pointerdown event of each pointer that should be
+considered for this gesture. (It's the GestureRecognizer's responsibility
+to then add itself to the global pointer router to receive subsequent
+events for this pointer.)</p>
     
     </section>
 
@@ -153,7 +124,7 @@
       <pre><code class="prettyprint lang-dart">void addPointer(PointerInputEvent event) {
   // Ignore out-of-bounds second taps
   if (_firstTap != null &amp;&amp;
-      !_firstTap.isWithinTolerance(event, kDoubleTapTouchSlop))
+      !_firstTap.isWithinTolerance(event, kDoubleTapSlop))
     return;
   _stopDoubleTapTimer();
   _TapTracker tracker = new _TapTracker(
@@ -161,7 +132,7 @@
     entry: GestureArena.instance.add(event.pointer, this)
   );
   _trackers[event.pointer] = tracker;
-  tracker.startTrackingPointer(router, handleEvent);
+  tracker.startTrackingPointer(_router, handleEvent);
 }</code></pre>
     </section>
 
@@ -175,7 +146,7 @@
         <div class="container">
             <p class="text-center">
                 <span class="no-break">
-                  flutter 0.0.14
+                  flutter 0.0.20
                 </span>
                 &bull;
                 <span class="no-break">

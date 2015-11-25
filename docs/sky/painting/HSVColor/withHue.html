@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.8.0">
+  <title>withHue method - HSVColor class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+
+  <meta name="description" content="API docs for the withHue method from the HSVColor class, for the Dart programming language.">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">flutter</a></li>
+            <li><a href="painting/painting-library.html">painting</a></li>
+            <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+            <li class="self-crumb">withHue</li>
+          </ol>
+          <div class="self-name">withHue</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">flutter</a></li>
+          <li><a href="painting/painting-library.html">painting</a></li>
+          <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+          <li class="self-crumb">withHue</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">method</span> withHue
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="painting/HSVColor/withHue.html#source">Source</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">flutter</a></h5>
+    <h5><a href="painting/painting-library.html">painting</a></h5>
+    <h5><a href="painting/HSVColor-class.html">HSVColor</a></h5>
+
+    <ol>
+    
+    
+      <li class="section-title"><a href="painting/HSVColor-class.html#static-methods">Static methods</a></li>
+      <li><a class="" href="painting/HSVColor/lerp.html">lerp</a></li>
+    
+      <li class="section-title"><a href="painting/HSVColor-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/HSVColor/HSVColor.fromAHSV.html">fromAHSV</a></li>
+    
+      <li class="section-title">
+        <a href="painting/HSVColor-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a class="" href="painting/HSVColor/alpha.html">alpha</a></li>
+      <li><a class="" href="painting/HSVColor/hashCode.html">hashCode</a></li>
+      <li><a class="" href="painting/HSVColor/hue.html">hue</a></li>
+      <li class="inherited"><a class="" href="painting/HSVColor/runtimeType.html">runtimeType</a></li>
+      <li><a class="" href="painting/HSVColor/saturation.html">saturation</a></li>
+      <li><a class="" href="painting/HSVColor/value.html">value</a></li>
+    
+      <li class="section-title"><a href="painting/HSVColor-class.html#operators">Operators</a></li>
+      <li><a class="" href="painting/HSVColor/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="painting/HSVColor-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a class="" href="painting/HSVColor/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a class="" href="painting/HSVColor/toColor.html">toColor</a></li>
+      <li><a class="" href="painting/HSVColor/toString.html">toString</a></li>
+      <li><a class="" href="painting/HSVColor/withAlpha.html">withAlpha</a></li>
+      <li><a class="" href="painting/HSVColor/withHue.html">withHue</a></li>
+      <li><a class="" href="painting/HSVColor/withSaturation.html">withSaturation</a></li>
+      <li><a class="" href="painting/HSVColor/withValue.html">withValue</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="multi-line-signature">
+        <span class="returntype"><a class="" href="painting/HSVColor-class.html">HSVColor</a></span>
+        <span class="name ">withHue</span>(<wbr><span class="parameter" id="withHue-param-hue"><span class="type-annotation">double</span> <span class="parameter-name">hue</span></span>)
+    </section>
+
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">HSVColor withHue(double hue) {
+  return new HSVColor.fromAHSV(alpha, hue, saturation, value);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          flutter 0.0.20
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>
